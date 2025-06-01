@@ -1,19 +1,744 @@
-[WEAPON_TITAN_GIANT_SWORD]
-name="Titan's Desolator"
-description=""
+# Shop Weapons
 
-[RANGED_TITANS_HARPOON]
-name="Titan's Harpoon"
-description=""
+# Act 1
+Knives
+Knuckles
+Sai
+Steel Batons
+Ninja Sword
+Machetes
+Death's Jaw (Nintendo Switch)
+Daggers
+Blood Reaper
 
-[MAGIC_MIND_THROW]
-name="Mind Throw"
-description=""
+# Act 2
+Crescent Knives
+Tonfas
+Imhotep Pounders
+Staff
+Caramel Boom (Nintendo Switch)
+Krises
+Harrier Hooks
+Swords
+Shuang Gou
+Steel Nunchaku
+The Sting
+Grim Scythe
+Dissector of Hopes (Special Edition and Nintendo Switch only)
 
-[BODY_TITAN]
-name="Titan's Body"
-description=""
+# Act 3
+Stilettos
+Heavy Staff
+Panda Cuddles (Nintendo Switch only)
+Axes
+Big Swords
+Steel Claws
+Devastator
+Oriental Sabers
+Pain and Panic (Special Edition and Nintendo Switch only)
+Yari
+Sapphire Fang
 
-[HEAD_TITAN]
-name="Titan's Head"
-description=""
+# Act 4
+Butterfly Swords
+Voodoo Spine (Nintendo Switch)
+Labryses
+Fans of Passion (Special Edition and Nintendo Switch only)
+Golden Katana
+Pharaoh's Khopeshes
+Maces
+Two-handed Cudgel
+Glaive
+Chinese Dragon Staff (Nintendo Switch)
+Kusarigama
+Coral Prickles
+
+# Act 5
+Sickles
+Surprise Waffles (Nintendo Switch)
+Moon Sabers
+Vermeil Fangs (Special Edition and Nintendo Switch only)
+Two-handed Mace
+Staff of Night
+Magari Yari
+Silver Glaive
+Dadao
+Battle Hammers
+Harbinger Sai
+
+# Act 6
+Northern Hammer
+Silver Spear
+Katars
+Heavy Nunchaku
+Fatemaker (Special Edition and Nintendo Switch only)
+Meteorite Knives
+Trident
+Blade Tonfas
+
+# Gates of Shadows
+Ceremonial Shuang Gou
+Ornamental Sabers
+Daisho
+
+# Interlude
+Morning Stars
+Leeches
+Elegant Staff
+Barbed Glaive
+Dragon Teeth
+Kukris
+Flayer Claws
+Quenched Sai
+Keen Katana
+Emerald Cutters
+
+# Act 7.1
+Hack Knives
+Reaver
+Mowers
+Fretsaw
+Blaster Tonfas
+
+# Act 7.2
+Telescopic Staff
+Thruster
+Pneumo Fists
+Shocker Claws
+Composite Sword
+
+# Act 7.3
+Orbs of Pain
+Cobra's Tooth
+Thunder Hammers
+Plasma Rifle
+Flame Clubs
+
+
+# Special Miniboss Weapons
+Nunchaku
+Naginata
+Katana
+Wanderer's Staff
+Heavy Kusarigama
+Ronin's Dadao
+Spiny Knuckles
+
+
+# Boss Weapons
+Lynx's Claws
+Hermit's Swords
+Butcher's Knives
+Wasp's Naginata
+Widow's Fans
+Shogun's Katana
+
+
+# Set Weapons
+Monk's Katars
+Sentinel's Hand
+Shepherd's Staff
+Beast's Fury
+Rage of Indra
+Wolf's Grin
+Don't cross the director!
+Snowpiercers
+Neutron Howl
+Guardian's Wrath
+Phoenix Song
+Claws of Perversity
+
+# Special Event Weapons
+Broomstick
+Candy Canes
+Devil's Broom
+Blade Of Death
+Caramel Shuang Gou
+Dissector of Hopes
+Pain and Panic
+Candy Rage
+Ringing Spruce Whirl
+Fans Of Passion
+Fatemaker
+Vermeil Fangs
+Death's Jaw
+Voodoo Spine
+Surprise Waffles
+Caramel Boom
+Panda Cuddles
+Chinese Dragon Staff
+Winged Darkness Claws
+Blade of the Eternal Pain
+Candy Rage (X-MAS/NY 2020)
+Ringing Spruce Whirl (X-MAS/NY 2020)
+Surprise Waffles (X-MAS/NY 2020)
+Caramel Boom (X-MAS/NY 2020)
+Victorious Jian
+Festive Fans
+Fruit Icicle
+Krises of an Intercessor
+Demon Slayer
+Hand of Prairie
+Conqueror of the Seas
+Tiger's Roar
+Finger of God
+Spore Bane
+Insatiable Blades
+Fury of Austerlitz
+Sunstroke
+Soul's Lot
+Hope Eater
+Loa Twins
+
+
+# Offer Exclusive Weapons
+Rabid Tonfas
+Lynx's Claws Replica
+Hermit's Swords Replica
+Butcher's Knives Replica
+Lord of the Flame's Swords
+Beach Punisher
+Devotion
+Hero's Will
+Vulture's Feather
+Matter Splitter
+Weeper's Sorrow
+False Gods
+Judge's Cleaver
+Lost Desire
+Witch's Cantata
+Striking Falcon
+Hadronic Decay
+God Eater
+Ashes of Generation
+Dance of Static
+
+# Unavailable Weapons
+Desolator
+Batons
+Crusher
+Imhotep Axes
+Club
+Chinese Swords
+Dragon Knives
+Titan's Desolator
+Fans Poleaxe
+Super Knives
+
+
+# Shop Armors
+# Act 1
+Robe
+Old Leather Jacket
+Kendo Breastplate
+Fury Carapace
+Red Doublet
+Riveted Jacket
+Leather Jacket
+Snake Harness
+
+# Act 2
+Barbarian Armor
+Bronze Armor
+Apprentice's Chainmail
+Padded Jacket (Nintendo Switch)
+Ronin Doublet
+Crow's Bane
+Kendo Armor
+Scarlet Leather
+Guard's Harness
+Gane Fan's Hoodie (Nintendo Switch)
+Chainmail
+Voodoo Vest (Nintendo Switch)
+
+# Act 3
+Centurion Mail
+Imhotep Cuirass
+Sturdy Barbarian Armor
+Poetic Mantle (Special Edition and Nintendo Switch only)
+Mantis Harness
+Dragon Scale (Nintendo Switch)
+Grand Chainmail
+Spike Breastplate
+Gilded Centurion Mail
+Legionnaire Armor
+Ravenheart
+
+# Act 4
+Raven Mantle
+Emerald Mail
+Assassin's Robe
+Red Platemail
+Moon Shroud
+Shadow Armor
+Radiant Platemail
+Mantle of Night
+Sentinel Coat
+
+# Act 5
+Hawk Mantle
+Twilight Shroud
+Beast Shell
+Gilded Platemail
+Red Lotus
+Aegis of Winds
+Dark Cuirass
+Dragon Blood
+Hallow Aegis
+
+# Act 6
+Shadow Carapace
+Heraldic Cuirass
+Black Buffalo
+Scale Breastplate
+Shamanic Harness
+Spider-Kind Coat (Special Edition and Nintendo Switch only)
+O-yoroi
+Harbinger Cuirass
+Celestial Gown
+Death Mark
+Banshee's Cry
+
+# Gates of Shadows
+Ceremonial Armor
+
+# Interlude
+Patriarch Mantle
+Oriental Wrappings
+Pit Master
+Sunrise Cuirass
+Adamantine Platemail
+Vindicator Mail
+Nightfall Cuirass
+Viper Armor
+Brute Breastplate
+
+# Act 7.1
+Luminosity Plate
+Redshift
+Alloy Armor
+Fusion Core
+Inferno Carapace
+
+# Act 7.2
+Polytoxine Lorica
+Space Gown
+Galaxy Tunic
+Mercenary Vest
+Alien Cloak
+
+# Act 7.3
+Faceless's Tunic
+Outworld Vest
+Half-life Armor
+Membrane Cuirass
+Navigator's Coat
+
+# Set Armors
+Monk's Robe
+Sentinel's Armor
+Evening Sunset
+Deadfall
+Heart of Kshatriya
+Shaman's Whisper
+Fourth Wall
+Biting Frost
+Electrostatic
+Mycelium Guardian
+Ash Whisper
+Legarthy
+
+# Special Event Armors
+Wicked Veil
+Mist Cloak
+Spider-King Coat
+Voodoo Vest
+Christmas Spirit
+Frosty Breastplate
+Winter Breath Jacket
+Padded Jacket
+Poetic Mantle
+Game Fan's Hoodie
+Dragon Scale
+Grim Mantle
+Winter Breath Jacket (X-MAS/NY 2019)
+Padded Jacket (X-MAS/NY 2019)
+Armor of Majesty
+Grim Baron's Coat
+Sweet Cuirass
+Unbreakable Gift of Gods
+Festive Hoodie
+Robe of Courage
+Jacket of Icy Tenancy
+Coastal Sunset
+Berserk's Legacy
+Root of Grief
+
+# Offer Exclusive Armors
+Snow Blind
+Poison Petal
+Ancestral Pride
+Fate Cocoon
+Will's Prisoner
+Crimson Hunter
+Scarab's Dream
+
+# Unavailable Armors
+Dragon Armor
+
+# Shop Helms
+# Act 1
+Light Helm
+Kendo Mask
+Conical Hat
+Soldier's Kabuto
+Pointed Helm
+Snake Mask
+Close Helm
+Sacral Mask
+
+# Act 2
+Lobster Helm
+Longhorn
+Blood Casque
+Hat of Generous Gifts (Nintendo Switch)
+Parade Helm
+Plumed Headpiece
+Kabuto
+Fur Ear-Flap (Nintendo Switch)
+Hardened Helm
+Bronze Casque
+Goldenhorn
+
+# Act 3
+Steel Helm
+Adorable Panda (Nintendo Switch)
+Mantis Helm
+Spike Helm
+General's Kabuto
+Jester's Benediction
+Crescent Helm
+Moon Crown
+Horned Helm
+Legionnaire Helm
+
+# Act 4
+Iron Casque
+Assassin's Cowl
+Dawn Tiara
+Radiant Headpiece
+Emerald Cap
+Copper Helm
+Scarab Shell
+Silver Kabuto
+Crown of Night
+
+# Act 5
+Snow Cap
+Beast Helm
+Dark Legionnaire Helm
+Dark Mask
+Samurai Helm
+Nightmare Hat (Special Edition and Nintendo Switch only)
+Two-Faced Helm
+Doom Crest
+Dreadening Mask
+Twilight Crown
+
+# Act 6
+Gilded Helm
+Ritual Headpiece
+Paragon Armet
+Helm of Inspiration (Special Edition and Nintendo Switch only)
+Ifrit Shell
+Celestial Crown
+Avian Sallet
+Demon Crest
+Mempo
+Spartan Coif
+Imperial Plume
+
+# Gates of Shadows
+Ceremonial Helmet
+
+# Interlude
+Tailed Casque
+Hexapod
+Nightfall Headpiece
+Second Wind
+Guardian Helm
+Stout Casque
+Adamantine Armet
+Mask of Horror
+Ascendancy Helm
+
+# Act 7.1
+Inferno Headpiece
+Advanced Conical Hat
+Mask of Prey
+Quasar
+Marauder
+
+# Act 7.2
+Crystalloid Visor
+Laserbeam Mask
+Xenon Helm
+Mandible Mask
+Formics Headgear
+
+# Act 7.3
+Faceless's Mask
+Protector's Headgear
+Elder's Visor
+Navigator's Breath Mask
+
+# Set Helms
+Monk's Helm
+Sentinel's Conical Helm
+Face of Tragedy
+Heartwood
+Crown of Kali
+Furious Bull
+Lights, camera, action!
+Stonecold
+Solar Corona
+All-Seeing Eye
+Burning Wreath
+Comatosis
+
+# Special Event Helms
+Pumpkinhead
+Witch Hat
+Witch Hat (HW 2015)
+Obsessed Pumpkin
+Pumpkin of Madness
+Nightmare Hat
+Baroness Cylinder
+Beard of Frost
+Reindeer Horns
+Face of Christmas
+Antlers of the Forest Spirit
+Christmas Trophy
+Christmas Trophy (X-MAS/NY 2019)
+Frost Beard
+Fur Ear-Flap
+Helm of Inspiration
+Adorable Panda
+Hat of Generous Gift
+Feisty Vegetable
+Ghostly Cap
+Frost Beard (X-MAS/NY 2019)
+Fur Ear Flap (X-MAS/NY 2019)
+Helmen of Ferocity
+Face of the Grim Baron
+Croissant Hat
+Ice Crown
+Helm of Heaven Keeper
+Festive Turban
+Unyielding Face of Winter
+Grenadier's Shako
+Daybreak's Visage
+Poisoned Wisdom
+
+# Underworld Exclusive Helms
+Crown of Harmony
+Crown of Chaos
+
+# Offer Exclusive Helms
+Iron Helm (has Critical Protection Enchantment)
+Sachem's Roach
+Dragon's Thirst
+Lunatic's Eye
+Face of Metztli
+Satyr's Amusement
+Blinding Truth
+Chimera Paradox
+GlitchMask
+Agni's Seal
+
+
+# Unavailable Helms
+Dragon Helm
+
+# Shop Ranged Weapons
+# Act 2
+Throwing Daggers
+Demon's Wings (Special Edition and Nintendo Switch only)
+Shurikens
+Harvester of Souls
+Kunai
+Cursed Pins (Nintendo Switch)
+
+# Act 3
+Assassin's Kunai
+Hunter's Knives
+Broken Hearts (Special Edition and Nintendo Switch only)
+Silver Shuriken
+Star Blade
+Steel Darts
+Juicy Donut (Nintendo Switch)
+
+# Act 4
+Chakram
+Weighted Shurikens
+Throwing Spikes
+Bat Wings
+Needles
+
+# Act 5
+Shurikens of Night
+Assassin's Daggers
+Lunar Knives
+
+# Act 6
+Ancient Chakram
+Beast Axes
+Kunai of the Wind
+Crystalline Spikes
+Dragon Wings
+Keen Chakram
+
+# Interlude
+Weighed Kunai
+Throwing Sickles
+Piercers
+Throwing Axes
+
+# Act 7.1
+Circular Saws
+Incinerator
+
+# Act 7.2
+Landmines
+
+# Act 7.3
+Lotos of Pain
+Mortal Thorns
+Dissecting Blade
+
+# Set Ranged Weapons
+Monk's Shuriken
+Sentinel's Blades
+Morning Star
+Marten's Bite
+Sky Shard
+Tears of the Wind
+Film Damage
+Chronos Razor
+Photons
+Spore Carriers
+Dragon's Tear
+Snake Reaper
+
+# Special Event Ranged Weapons
+Snowballs
+Flame Skulls
+Snow Charges
+Demon's Wing
+Gingerbread Surprises
+Juicy Donut
+Broken Hearts
+Cursed Pins
+Harbinger of Madness
+Gingerbread Surprises (X-MAS/NY 2019)
+Juicy Donut (X-MAS/NY 2019)
+Burning Battle Citrus
+Grim Baron's Mark
+Fluffy Snowflakes
+Blade of the Dawn
+Chieftain's Tomahawk
+Breakwaters
+Steal Fang
+Hel's Kiss
+
+# Offer Exclusive Ranged Weapons
+Chakrams of Overlord
+Whirlpool of Petals
+Harpy's Bite
+Zenith
+Pain Bound
+Furious Mafia
+Sons of the Eclipse
+Rogue's Fortune
+
+# Unavailable Ranged Weapons
+Dragon Boomerang
+
+
+# Shop Magic
+# Act 3
+Fire Ball
+Energy Ball
+Dark Blood Magic (Nintendo Switch)
+
+# Act 4
+Dark Blast
+Shard of Eternal Ice (Special Edition and Nintendo Switch only)
+Dark Implosion
+Sugar Flash (Nintendo Switch)
+
+# Act 5
+Lightning Arrow
+Fire Pillar
+Water Ball
+Asteroid
+
+# Interlude
+Force Wave
+Fire Splash
+
+# Act 7.1
+Force Ray
+
+# Act 7.2
+Toxic Cloud
+
+# Act 7.3
+Wrath of Flame
+Torturer's Rage
+
+# Set Magic
+Monk's Amulet
+Sentinel's Spirit
+Sloe Thorn
+Death Grip
+Kundalini
+Eye of the Storm
+Smoke and mirrors
+Continuum
+Quantum Leap
+Spores of Discord
+Roaring Caldera
+
+# Special Event Magic
+Shard of Eternal Ice
+Dark Blood Magic
+Sugar Flash
+Shard of Eternal Ice (X-MAS/NY 2019)
+Sugar Flash (X-MAS/NY 2019)
+Prisoned Blizzard
+Spirit's Wrath
+Tamer of the Elements
+Cold Fusion
+Star's Breath
+Highest Measure
+
+# Offer Exclusive Magic
+Isotope Reactor
+Shivering Earth
+Inmate's Shackles
+Major Arcana
+Redemptive Gift
+Martyr's Sacrifice
+Requiem
+Plasma Cutter
+Thorn Dome
+Gaze of the Void
+
+# Unavaiable Magic
+Ice Ball
+Ice Pillar
+Earth Strike
+Mind Throw
+Lightning
+Dragon Lava
