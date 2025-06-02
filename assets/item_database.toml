@@ -71,17 +71,8 @@ name = ""
 [WEAPON_REAl_CLAWS]
 name = ""
 
-[WEAPON_DEFAULT_RANDOM]
-name = "Hero's default weapon"
-
 [WEAPON_DIRECTOR_HUNGER]
 name = ""
-
-[WEAPON_LEVEL_RESTRICTION]
-name = "Weapon level {0}"
-
-[WEAPON_RANDOM]
-name = "Random weapon"
 
 [WEAPON_SHOCKER_CLAWS_ARC]
 name = ""
@@ -220,9 +211,6 @@ name = ""
 
 [ARMOR_XENOMORPH]
 name = "Alien Cloak"
-
-[ARMOR_LEVEL_RESTRICTION]
-name = "Armor level {0}"
 
 [ARMOR_EGYPT_25]
 name = "Scarab's Dream"
@@ -422,9 +410,6 @@ name = "Head damage only, enemy regenerates"
 [HEAD_C3_z3]
 name = ""
 
-[HELM_LEVEL_RESTRICTION]
-name = "Helm level {0}"
-
 [HELM_UNKNOWN]
 name = "Unknown Helm"
 
@@ -445,9 +430,6 @@ name = ""
 
 [RANGED_C3_z3]
 name = ""
-
-[RANGED_LEVEL_RESTRICTION]
-name = "Ranged weapon level {0}"
 
 [RANGED_ONLY]
 name = "Given ranged weapon only"
@@ -487,9 +469,6 @@ name = ""
 
 [MAGIC_HUNGER_CLAWS]
 name = ""
-
-[MAGIC_LEVEL_RESTRICTION]
-name = "Magic level {0}"
 
 [MAGIC_MINE]
 name = ""
