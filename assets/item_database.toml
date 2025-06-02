@@ -1,1430 +1,541 @@
-# Shop Weapons
-
-# Act 1
-[WEAPON_KNIVES]
-Knives
-[WEAPON_KNUCKLES]
-Knuckles
-[WEAPON_SAI]
-Sai
-[WEAPON_STEEL_BATONS]
-Steel Batons
-[WEAPON_NINJA_SWORD]
-Ninja Sword
-[WEAPON_MACHETE]
-Machetes
-[WEAPON_HW17_DAGGERS]
-Death's Jaw (Nintendo Switch)
-[WEAPON_DAGGERS]
-Daggers
-[WEAPON_SUPER_KUSARIGAMA]
-Blood Reaper
-
-# Act 2
-[WEAPON_CRESCENT_KNIVES]
-Crescent Knives
-[WEAPON_TONFA]
-Tonfas
-[WEAPON_SUPER_HAMMERS]
-Imhotep Pounders
-[WEAPON_STAFF]
-Staff
-[WEAPON_NY18_MACE]
-Caramel Boom (Nintendo Switch)
-[WEAPON_KERIS]
-Krises
-[WEAPON_SUPER_AXES]
-Harrier Hooks
-[WEAPON_SWORDS]
-Swords
-[WEAPON_SHUANG_GOU]
-Shuang Gou
-[WEAPON_STEEL_NUNCHAKU]
-Steel Nunchaku
-[WEAPON_SUPER_SPEAR]
-The Sting
-[WEAPON_HW14_SCYTHE]
-Grim Scythe
-[WEAPON_1_HW16_SET]
-Dissector of Hopes (Special Edition and Nintendo Switch only)
-
-# Act 3
-[WEAPON_STILETTOS]
-Stilettos
-[WEAPON_HEAVY_STAFF]
-Heavy Staff
-[WEAPON_VAL18_PANDA]
-Panda Cuddles (Nintendo Switch only)
-[WEAPON_AXES]
-Axes
-[WEAPON_BIG_SWORDS]
-Big Swords
-[WEAPON_STEEL_CLAWS]
-Steel Claws
-
-Devastator
-[WEAPON_CHINESE_SABERS]
-Oriental Sabers
-[WEAPON_2_HW16_SET]
-Pain and Panic (Special Edition and Nintendo Switch only)
-[WEAPON_YARI]
-Yari
-[WEAPON_SUPER_GLAIVE]
-Sapphire Fang
-
-# Act 4
-[WEAPON_BUTTERFLY_SWORDS]
-Butterfly Swords
-[WEAPON_HW17_STAFF]
-Voodoo Spine (Nintendo Switch)
-[WEAPON_LABRYS_AXES]
-Labryses
-[WEAPON_VAL17_FANS]
-Fans of Passion (Special Edition and Nintendo Switch only)
-[WEAPON_GOLDEN_KATANA]
-Golden Katana
-[WEAPON_SUPER_KHOPESH]
-Pharaoh's Khopeshes
-[WEAPON_MACES]
-Maces
-[WEAPON_TWO_HANDED_CUDGEL]
-Two-handed Cudgel
-[WEAPON_GLAIVE]
-Glaive
-[WEAPON_CHNY18_STAFF]
-Chinese Dragon Staff (Nintendo Switch)
-[WEAPON_KUSARIGAMA]
-Kusarigama
-[WEAPON_SUPER_KNUCKLES]
-Coral Prickles
-
-# Act 5
-[WEAPON_SICKLES]
-Sickles
-[WEAPON_NY18_AXES]
-Surprise Waffles (Nintendo Switch)
-[WEAPON_MOON_SABERS]
-Moon Sabers
-[WEAPON_VAL17_SAI]
-Vermeil Fangs (Special Edition and Nintendo Switch only)
-[WEAPON_TWO_HANDED_MACE]
-Two-handed Mace
-[WEAPON_SUPER_STAFF]
-Staff of Night
-[WEAPON_MAGARI_YARI]
-Magari Yari
-[WEAPON_SILVER_GLAIVE]
-Silver Glaive
-[WEAPON_DADAO]
-Dadao
-[WEAPON_BATTLE_HAMMERS]
-Battle Hammers
-[WEAPON_SUPER_SAI]
-Harbinger Sai
-
-# Act 6
-[WEAPON_NORTHERN_HAMMER]
-Northern Hammer
-[WEAPON_SILVER_SPEAR]
-Silver Spear
-[WEAPON_INDIAN_KATAR]
-Katars
-[WEAPON_Z6_NUNCHAKU]
-Heavy Nunchaku
-[WEAPON_VAL17_TRIDENT]
-Fatemaker (Special Edition and Nintendo Switch only)
-[WEAPON_Z6_KNIVES]
-Meteorite Knives
-[WEAPON_TRIDENT]
-Trident
-[WEAPON_SHARP_TONFA]
-Blade Tonfas
-
-# Gates of Shadows
-[WEAPON_CEREMONIAL_SHUANG_GOU]
-Ceremonial Shuang Gou
-[WEAPON_SUPER_SABERS]
-Ornamental Sabers
-[WEAPON_SUPER_DAISHO]
-Daisho
-
-# Interlude
-[WEAPON_MORNING_STARS]
-Morning Stars
-[WEAPON_SUPER_LEECHES]
-Leeches
-[WEAPON_ELEGANT_STAFF]
-Elegant Staff
-[WEAPON_BARBED_GLAIVE]
-Barbed Glaive
-[WEAPON_SUPER_DRAGON_TEETH]
-Dragon Teeth
-[WEAPON_KUKRIS]
-Kukris
-[WEAPON_FLAYER_CLAWS]
-Flayer Claws
-[WEAPON_QUENCHED_SAI]
-Quenched Sai
-[WEAPON_KEEN_KATANA]
-Keen Katana
-[WEAPON_SUPER_FANS]
-Emerald Cutters
-
-# Act 7.1
-[WEAPON_TEC_KNIVES]
-Hack Knives
-[WEAPON_COMPOSITE_SCYTHE]
-Reaver
-[WEAPON_SECTIONAL_SCYTHE]
-Mowers
-[WEAPON_TEC_GLAIVE]
-Fretsaw
-[WEAPON_TONFA_GUNS]
-Blaster Tonfas
-
-# Act 7.2
-[WEAPON_COMPOSITE_STAFF]
-Telescopic Staff
-[WEAPON_COMPOSITE_SPEAR]
-Thruster
-[WEAPON_POWER_FISTS]
-Pneumo Fists
-[WEAPON_SHOCKER_CLAWS]
-Shocker Claws
-[WEAPON_SUPER_COMPOSITE_SWORD]
-Composite Sword
-
-# Act 7.3
-
-Orbs of Pain
-[WEAPON_GLAIVEBOW]
-Cobra's Tooth
-[WEAPON_ELECTRO_HAMMERS]
-Thunder Hammers
-[WEAPON_RIFLE]
-Plasma Rifle
-[WEAPON_FIRE_BATONS]
-Flame Clubs
-
-
-# Special Miniboss Weapons
-[WEAPON_NUNCHAKU]
-Nunchaku
-[WEAPON_NAGINATA]
-Naginata
-[WEAPON_KATANA]
-Katana
-[WEAPON_WANDERER_STAFF]
-Wanderer's Staff
-[WEAPON_HEAVY_KUSARIGAMA]
-Heavy Kusarigama
-[WEAPON_DADAO_JANISSARY]
-Ronin's Dadao
-[WEAPON_STRANGER_KNUCKLES]
-Spiny Knuckles
-
-
-# Boss Weapons
-[WEAPON_LYNX_CLAWS]
-Lynx's Claws
-[WEAPON_HERMIT_SWORDS]
-Hermit's Swords
-[WEAPON_BUTCHER_KNIVES]
-Butcher's Knives
-[WEAPON_WASP_NAGINATA]
-Wasp's Naginata
-[WEAPON_WIDOW_FANS]
-Widow's Fans
-[WEAPON_SHOGUN_KATANA]
-Shogun's Katana
-
-
-# Set Weapons
-[WEAPON_C2_Z2_MONK_KATAR]
-Monk's Katars
-[WEAPON_C2_Z3_SENTINEL_SPEAR]
-Sentinel's Hand
-[WEAPON_C4_Z1_WARLOCK_STAFF]
-Shepherd's Staff
-[WEAPON_BP_S1_GUARDIAN]
-Beast's Fury
-[WEAPON_BP_S2_SKANDA]
-Rage of Indra
-[WEAPON_BP_S3_WIND_MAKER]
-Wolf's Grin
-[WEAPON_DIRECTOR_HUNGER]
-Don't cross the director!
-[WEAPON_BP_S5_TIME_SHIFTER]
-Snowpiercers
-[WEAPON_C1_Z4_NEO_WANDERER]
-Neutron Howl
-[WEAPON_RAID_FUNGUS_SET]
-Guardian's Wrath
-[WEAPON_RAID_VOLCANO_SET]
-Phoenix Song
-[WEAPON_RAID_KARCER_SET]
-Claws of Perversity
-
-# Special Event Weapons
-[WEAPON_HW14_BROOM]
-Broomstick
-[WEAPON_XMAS14_CANES]
-Candy Canes
-[WEAPON_HW15_BROOM]
-Devil's Broom
-[WEAPON_HW15_SCYTHE]
-Blade Of Death
-[WEAPON_XMAS15_CANES]
-Caramel Shuang Gou
-[WEAPON_1_HW16_SET]
-Dissector of Hopes
-[WEAPON_2_HW16_SET]
-Pain and Panic
-[WEAPON_XMAS16_CANDY]
-Candy Rage
-[WEAPON_XMAS16_GLAIVE]
-Ringing Spruce Whirl
-[WEAPON_VAL17_FANS]
-Fans Of Passion
-[WEAPON_VAL17_TRIDENT]
-Fatemaker
-[WEAPON_VAL17_SAI]
-Vermeil Fangs
-[WEAPON_HW17_DAGGERS]
-Death's Jaw
-[WEAPON_HW17_STAFF]
-Voodoo Spine
-[WEAPON_NY18_AXES]
-Surprise Waffles
-[WEAPON_NY18_MACE]
-Caramel Boom
-[WEAPON_VAL18_PANDA]
-Panda Cuddles
-[WEAPON_CHNY18_STAFF]
-Chinese Dragon Staff
-[WEAPON_1_HW19_SET]
-Winged Darkness Claws
-[WEAPON_2_HW19_SET]
-Blade of the Eternal Pain
-
-Candy Rage (X-MAS/NY 2020)
-
-Ringing Spruce Whirl (X-MAS/NY 2020)
-
-Surprise Waffles (X-MAS/NY 2020)
-
-Caramel Boom (X-MAS/NY 2020)
-[WEAPON_CHNY21_JIAN]
-Victorious Jian
-[WEAPON_CHNY21_FAN]
-Festive Fans
-
-Fruit Icicle
-[WEAPON_IND21_KERIS]
-Krises of an Intercessor
-[WEAPON_IND21_GLAIVEBOW]
-Demon Slayer
-[WEAPON_AE21_SPEAR]
-Hand of Prairie
-[WEAPON_SUMMER21_TRIDENT]
-Conqueror of the Seas
-[WEAPON_CHNY22_SPEAR]
-Tiger's Roar
-[WEAPON_MINI_EVENT_PERNACH]
-Finger of God
-[WEAPON_MINI_EVENT_STUFF]
-Spore Bane
-[WEAPON_MINI_EVENT_KNIFE]
-Insatiable Blades
-[WEAPON_NY2024_MUSKET]
-Fury of Austerlitz
-[WEAPON_CNY2024]
-Sunstroke
-[WEAPON_INDIA_24]
-Soul's Lot
-
-Hope Eater
-[WEAPON_DAGGERS_HW_24]
-Loa Twins
-
-
-# Offer Exclusive Weapons
-[WEAPON_STARTER_PACK_TONFA]
-Rabid Tonfas
-[WEAPON_LYNX_CLAWS_PAID]
-Lynx's Claws Replica
-[WEAPON_HERMIT_SWORDS_PAID]
-Hermit's Swords Replica
-[WEAPON_BUTCHER_KNIVES_PAID]
-Butcher's Knives Replica
-[WEAPON_RAIDSTARTER_SUPER_SABERS]
-Lord of the Flame's Swords
-[WEAPON_SUMMER21_SWORD]
-Beach Punisher
-[WEAPON_SWORD_NY23_PAID_OFFER]
-Devotion
-[WEAPON_SHADOW_DAISHO]
-Hero's Will
-[WEAPON_ANNIVERSARY_10TH]
-Vulture's Feather
-[WEAPON_CYBER_DRAGON_KUSARIGAMA]
-Matter Splitter
-[WEAPON_8MARCH_24]
-Weeper's Sorrow
-
-False Gods
-[WEAPON_AZTEC_24]
-Judge's Cleaver
-[WEAPON_NEW_YEAR_25]
-Lost Desire
-[WEAPON_FOREST_DEMON_25]
-Witch's Cantata
-[WEAPON_KUSARIGAMA_STRIKING_FALKON_25]
-Striking Falcon
-[WEAPON_FUTURIST_25]
-Hadronic Decay
-[WEAPON_GLAIVE_25]
-God Eater
-Ashes of Generation
-[WEAPON_NUNCHAKU_DANCEOFSTATIC_25]
-Dance of Static
-
 # Unavailable Weapons
 [WEAPON_HUNGER_SCYTHE]
+name=""
+
 [WEAPON_WAR_SHUANG_GOU]
+name=""
+
 [WEAPON_ELECTRO_BATONS]
+name=""
+
 [WEAPON_TRIANGLE_KNIVES]
-Kunai
+name=""
+
 [WEAPON_TWO_HANDED_SWORD]
+name=""
+
 [WEAPON_HEAVY_HAMMER]
+name=""
+
 [WEAPON_SENTINEL_KUSARIGAMA]
+name=""
+
 [WEAPON_BG_YARI]
+name=""
+
 [WEAPON_NODACHI]
-Nodachi
+name=""
+
 [WEAPON_WAKIDZASHI]
+name=""
+
 [WEAPON_BG_NAGINATA]
+name=""
+
 [WEAPON_BG_GLAIVE]
+name=""
+
 [WEAPON_MERCENARY_CLAWS]
-Mercenary's Claws
+name=""
+
 [WEAPON_MERCENARY_AXES]
-Mercenary's Axes
+name=""
+
 [WEAPON_SAWBLADE]
-Chainsaw
+name=""
+
 [WEAPON_GIANT_SWORD]
-Desolator
+name=""
+
 [WEAPON_BATON]
-Batons
+name=""
+
 [WEAPON_CRUSHER]
-Crusher
+name=""
+
 [WEAPON_DRAGON_KNIVES]
-Dragon Knives
+name=""
+
 [WEAPON_TITAN_GIANT_SWORD]
-Titan's Desolator
+name=""
 
+[WEAPON_WAKIDZASHI-RangedBlade_1]
+name=""
 
-# Shop Armors
-# Act 1
-[ARMOR_ROBE]
-Robe
-[ARMOR_OLD_LEATHER]
-Old Leather Jacket
-[ARMOR_KENDO]
-Kendo Breastplate
-[ARMOR_SUPER_SPIKED]
-Fury Carapace
-[ARMOR_FOREIGN]
-Red Doublet
-[ARMOR_QUILTED]
-Riveted Jacket
-[ARMOR_LEATHER]
-Leather Jacket
-[ARMOR_GREEN]
-Snake Harness
+[WEAPON_RAVANA]
+name=""
 
-# Act 2
-[ARMOR_BARBARIAN]
-Barbarian Armor
-[ARMOR_BRONZE]
-Bronze Armor
-[ARMOR_CHAIN_ROBE]
-Apprentice's Chainmail
-[ARMOR_NY18_MANTLE]
-Padded Jacket (Nintendo Switch)
-[ARMOR_RONIN]
-Ronin Doublet
-[ARMOR_SUPER_CROW]
-Crow's Bane
-[ARMOR_SENSEI_KENDO]
-Kendo Armor
-[ARMOR_BLOOD_MASTER]
-Scarlet Leather
-[ARMOR_GUARD]
-Guard's Harness
-[ARMOR_VAL18_HOODIE]
-Game Fan's Hoodie (Nintendo Switch)
-[ARMOR_CHAIN]
-Chainmail
-[ARMOR_HW17_CLOAK]
-Voodoo Vest (Nintendo Switch)
+[WEAPON_MORGANA_SCYTHE]
+name=""
 
-# Act 3
-[ARMOR_CENTURION]
-Centurion Mail
-[ARMOR_IMHOTEP]
-Imhotep Cuirass
-[ARMOR_STRONG_BARBARIAN]
-Sturdy Barbarian Armor
-[ARMOR_VAL17_MANTLE]
-Poetic Mantle (Special Edition and Nintendo Switch only)
-[ARMOR_MANTIS]
-Mantis Harness
-[ARMOR_CHNY18_TRADITIONAL]
-Dragon Scale (Nintendo Switch)
-[ARMOR_GRAND_CHAIN]
-Grand Chainmail
-[ARMOR_SPIKE]
-Spike Breastplate
-[ARMOR_GILDED_CENTURION]
-Gilded Centurion Mail
-[ARMOR_LEGIONER]
-Legionnaire Armor
-[ARMOR_SUPER_FEATHERED]
-Ravenheart
+[WEAPON_REAl_CLAWS]
+name=""
 
-# Act 4
-[ARMOR_RAVEN]
-Raven Mantle
-[ARMOR_EMERALD_BREASTPLATE]
-Emerald Mail
-[ARMOR_ASSASSIN]
-Assassin's Robe
-[ARMOR_RED_STEEL]
-Red Platemail
-[ARMOR_MOON]
-Moon Shroud
-[ARMOR_SHADOW]
-Shadow Armor
-[ARMOR_DRAGON]
-Radiant Platemail
-[ARMOR_MANTLE_OF_NIGHT]
-Mantle of Night
-[ARMOR_SUPER_CLOAK]
-Sentinel Coat
+[WEAPON_DEFAULT_RANDOM]
+name=""
 
-# Act 5
-[ARMOR_HAWK]
-Hawk Mantle
-[ARMOR_TWILIGHT]
-Twilight Shroud
-[ARMOR_BEAST_SHELL]
-Beast Shell
-[ARMOR_GILDED]
-Gilded Platemail
-[ARMOR_RED_LOTUS]
-Red Lotus
-[ARMOR_STORM_CUIRASS]
-Aegis of Winds
-[ARMOR_DARK]
-Dark Cuirass
-[ARMOR_DRAGONS_BLOOD]
-Dragon Blood
-[ARMOR_SUPER_HALO]
-Hallow Aegis
+[WEAPON_DIRECTOR_HUNGER]
+name=""
 
-# Act 6
-[ARMOR_SHADOW_MASTER]
-Shadow Carapace
-[ARMOR_ROYAL_BREASTPLATE]
-Heraldic Cuirass
-[ARMOR_BLACK_BUFFALO]
-Black Buffalo
-[ARMOR_DRAGON_JAWS]
-Scale Breastplate
-[ARMOR_SHAMAN]
-Shamanic Harness
-[ARMOR_HW16_SET]
-Spider-Kind Coat (Special Edition and Nintendo Switch only)
-[ARMOR_SUPER_SAMURAI]
-O-yoroi
-[ARMOR_HARBINGER_CUIRASS]
-Harbinger Cuirass
-[ARMOR_CELESTIAL]
-Celestial Gown
-[ARMOR_NECROMANCER]
-Death Mark
-[ARMOR_SUPER_BANSHEE]
-Banshee's Cry
+[WEAPON_LEVEL_RESTRICTION]
+name=""
 
-# Gates of Shadows
-[ARMOR_CEREMONIAL]
-Ceremonial Armor
+[WEAPON_RANDOM]
+name=""
 
-# Interlude
-[ARMOR_PATRIARCH_MANTLE]
-Patriarch Mantle
-[ARMOR_ORIENTAL_WRAPPINGS]
-Oriental Wrappings
-[ARMOR_PIT_MASTER]
-Pit Master
-[ARMOR_SUNRISE_CUIRASS]
-Sunrise Cuirass
-[ARMOR_ADAMANTINE_PLATEMAIL]
-Adamantine Platemail
-[ARMOR_VINDICATOR_MAIL]
-Vindicator Mail
-[ARMOR_SUPER_NIGHTFALL]
-Nightfall Cuirass
-[ARMOR_VIPER]
-Viper Armor
-[ARMOR_BRUTE_BREASTPLATE]
-Brute Breastplate
+[WEAPON_SHOCKER_CLAWS_ARC]
+name=""
 
-# Act 7.1
-[ARMOR_LUMINOSITY]
-Luminosity Plate
-[ARMOR_REDSHIFT]
-Redshift
-[ARMOR_ALLOY]
-Alloy Armor
-[ARMOR_SUPER_FUSION]
-Fusion Core
-[ARMOR_INFERNO]
-Inferno Carapace
+[WEAPON_SUPER_BIG_SWORD]
+name=""
 
-# Act 7.2
-[ARMOR_POLYTOXINE_LORICA]
-Polytoxine Lorica
-[ARMOR_SPACE_GOWN]
-Space Gown
-[ARMOR_GALAXY_TUNIC]
-Galaxy Tunic
-[ARMOR_SUPER_MERC_SUIT]
-Mercenary Vest
+[WEAPON_TITAN_SWORD]
+name=""
 
-Alien Cloak
+[WEAPON_UNKNOWN]
+name=""
 
-# Act 7.3
-[ARMOR_FACELESS_TUNIC]
-Faceless's Tunic
-[ARMOR_OUTWORLD_VEST]
-Outworld Vest
-[ARMOR_HALF-LIFE]
-Half-life Armor
-[ARMOR_MEMBRANE_CUIRASS]
-Membrane Cuirass
-[ARMOR_NAVIGATORS_COAT]
-Navigator's Coat
+[WEAPON_RAID_KARCER_SET]
+name="Claws of Perversity"
 
-# Set Armors
-[ARMOR_C2_Z2_MONK]
-Monk's Robe
-[ARMOR_C2_Z3_SENTINEL]
-Sentinel's Armor
-[ARMOR_C4_Z1_WARLOCK]
-Evening Sunset
-[ARMOR_BP_S1_GUARDIAN]
-Deadfall
-[ARMOR_BP_S2_SKANDA]
-Heart of Kshatriya
-[ARMOR_BP_S3_WIND_MAKER]
-Shaman's Whisper
-[ARMOR_BP_S4_SCRIPTWRITER]
-Fourth Wall
-[ARMOR_BP_S5_TIME_SHIFTER]
-Biting Frost
-[ARMOR_C1_Z4_NEO_WANDERER]
-Electrostatic
-[ARMOR_RAID_FUNGUS_SET]
-Mycelium Guardian
-[ARMOR_RAID_VOLCANO_SET]
-Ash Whisper
-[ARMOR_RAID_KARCER_SET]
-Legarthy
+[WEAPON_C3_z3]
+name=""
 
-# Special Event Armors
-[ARMOR_HW14_WICKED_VEIL]
-Wicked Veil
-[ARMOR_HW15_WICKED_VEIL]
-Mist Cloak
-[ARMOR_HW16_SET]
-Spider-King Coat
-[ARMOR_HW17_CLOAK]
-Voodoo Vest
-[ARMOR_XMAS14_SANTA]
-Christmas Spirit
-[ARMOR_XMAS15_SANTA]
-Frosty Breastplate
-[ARMOR_XMAS16_SANTA]
-Winter Breath Jacket
-[ARMOR_NY18_MANTLE]
-Padded Jacket
-[ARMOR_VAL17_MANTLE]
-Poetic Mantle
-[ARMOR_VAL18_HOODIE]
-Game Fan's Hoodie
-[ARMOR_CHNY18_TRADITIONAL]
-Dragon Scale
-[ARMOR_HW19_SET]
-Grim Mantle
+[WEAPON_GLAIVE_25]
+name="God Eater"
 
-Winter Breath Jacket (X-MAS/NY 2019)
+[WEAPON_HUNTER_CLAWS]
+name=""
 
-Padded Jacket (X-MAS/NY 2019)
+[WEAPON_NUNCHAKU_DANCEOFSTATIC_25]
+name="Dance of Static"
 
-Armor of Majesty
-[ARMOR_WOODOO_HW20]
-Grim Baron's Coat
-
-Sweet Cuirass
-[ARMOR_IND21_TWILIGHT]
-Unbreakable Gift of Gods
-[ARMOR_IND21_HOODIE]
-Festive Hoodie
-[ARMOR_AE21_WARRIOR]
-Robe of Courage
-[ARMOR_SUMMER21_SANTA]
-Jacket of Icy Tenancy
-[ARMOR_SUMMER21_LEGIONER]
-Coastal Sunset
-[ARMOR_NY2024_VIKING_CLOTHES]
-Berserk's Legacy
-[ARMOR_INDIA_24]
-Root of Grief
-
-# Offer Exclusive Armors
-[ARMOR_ANNIVERSARY_10TH]
-Snow Blind
-[ARMOR_8MARCH_24]
-Poison Petal
-[ARMOR_AZTEC_24]
-Ancestral Pride
-[ARMOR_HOAXEN_25]
-Fate Cocoon
-[ARMOR_REVENANT_25]
-Will's Prisoner
-[ARMOR_FUTURIST_25]
-Crimson Hunter
-[ARMOR_EGYPT_25]
-Scarab's Dream
 
 # Unavailable Armors
 [BODY_BRICK]
+name=""
+
 [BODY_CANDY]
+name=""
+
 [BODY_FEAR]
+name=""
+
 [BODY_HUNTER]
+name=""
+
 [BODY_INVISIBLE]
+name=""
+
 [BODY_KENJI]
+name=""
+
 [BODY_MONKEY]
+name=""
+
 [BODY_SCAVENGER_1]
+name=""
+
 [BODY_SCAVENGER_2]
+name=""
+
 [BODY_SCAVENGER_4]
+name=""
+
 [BODY_SHIN]
+name=""
+
 [BODY_SMOTHER]
+name=""
+
 [BODY_SON_OF_THE_SUN]
+name=""
+
 [BODY_TENTACLE_SKELETON]
+name=""
+
 [BODY_WOMAN]
+name=""
+
 [BODY_LYNX]
+name=""
+
 [BODY_BUTCHER]
+name=""
+
 [ARMOR_WASP]
+name=""
+
 [ARMOR_HUNTRESS]
+name=""
+
 [ARMOR_SHOGUN]
+name=""
+
 [BODY_FUTURE_MAY]
+name=""
+
 [BODY_TITAN]
+name=""
+
 [ARMOR_UNKNOWN]
+name=""
+
+[ARMOR_C3_z3]
+name=""
+
 [ARMOR_WOMAN_RONIN]
+name=""
+
 [ARMOR_WOMAN_LUMINOSITY]
+name=""
+
 [ARMOR_WOMAN_ALLOY]
+name=""
+
 [ARMOR_WOMAN_GREEN]
+name=""
+
 [ARMOR_WOMAN_REDSHIFT]
+name=""
+
 [ARMOR_WOMAN_BARBARIAN]
+name=""
+
+[ARMOR_BIG_BEAST_SHELL]
+name=""
+
+[ARMOR_BIG_CENTURION]
+name=""
+
+[ARMOR_BIG_QUILTED]
+name=""
+
+[ARMOR_BIG_SHROUD]
+name=""
+
+[ARMOR_BIG_SPIKE]
+name=""
+
+[ARMOR_REDSHIFT_BIG]
+name=""
+
+[ARMOR_XENOMORPH]
+name=""
+
+[ARMOR_LEVEL_RESTRICTION]
+name=""
+
+[ARMOR_EGYPT_25]
+name="Scarab's Dream"
+
+[ARMOR_RAID_KARCER_SET]
+name="Legarthy"
+
 [ARMOR_ZONE7_HERO1]
+name=""
+
+[ARMOR_ANCIENT]
+name=""
+
 [BODY_VULCAN]
+name=""
+
 [BODY_MEGALITH]
+name=""
+
 [BODY_FUNGUS]
+name=""
+
 [BODY_FISH]
+name=""
+
 [BODY_HUNGER]
+name=""
+
 [BODY_HOAXEN]
+name=""
+
 [BODY_WAR]
+name=""
+
 [BODY_GATEKEEPER]
+name=""
+
 [BODY_SATURN]
+name=""
+
 [BODY_RAVANA]
+name=""
+
 [BODY_WHISPER]
-
-# Shop Helms
-# Act 1
-[HELM_LIGHT]
-Light Helm
-[HELM_KENDO_MASK]
-Kendo Mask
-[HELM_CONICAL_HAT]
-Conical Hat
-[HELM_SOLDIER_KABUTO]
-Soldier's Kabuto
-[HELM_GABLED]
-Pointed Helm
-[HELM_GREEN_MASK]
-Snake Mask
-[HELM_CLOSED]
-Close Helm
-[HELM_SUPER_MASK]
-Sacral Mask
-
-# Act 2
-[HELM_LOBSTER]
-Lobster Helm
-[HELM_VIKING]
-Longhorn
-[HELM_BLOOD]
-Blood Casque
-
-Hat of Generous Gifts (Nintendo Switch)
-[HELM_SMART_GABLED]
-Parade Helm
-[HELM_TAIL]
-Plumed Headpiece
-[HELM_KABUTO]
-Kabuto
-
-Fur Ear-Flap (Nintendo Switch)
-[HELM_HARDENED]
-Hardened Helm
-[HELM_BRONZE]
-Bronze Casque
-[HELM_SUPER_STRIPS]
-Goldenhorn
-
-# Act 3
-[HELM_STEEL]
-Steel Helm
-
-Adorable Panda (Nintendo Switch)
-[HELM_MANTIS]
-Mantis Helm
-[HELM_SPIKE]
-Spike Helm
-[HELM_GENERAL]
-General's Kabuto
-[HELM_SUPER_JOKER]
-Jester's Benediction
-[HELM_CRESCENT]
-Crescent Helm
-[HELM_MOON]
-Moon Crown
-[HELM_HORNED]
-Horned Helm
-[HELM_LEGIONER]
-Legionnaire Helm
-
-# Act 4
-[HELM_IRON]
-Iron Casque
-[HELM_ASSASSIN]
-Assassin's Cowl
-[HELM_DAWN]
-Dawn Tiara
-[HELM_SUN]
-Radiant Headpiece
-[HELM_EMERALD]
-Emerald Cap
-[HELM_CRIMSON]
-Copper Helm
-[HELM_SUPER_SCARAB]
-Scarab Shell
-[HELM_SILVER]
-Silver Kabuto
-[HELM_CROWN_OF_NIGHT]
-Crown of Night
-
-# Act 5
-[HELM_SNOW]
-Snow Cap
-[HELM_BEAST]
-Beast Helm
-[HELM_DARK_LEGIONER]
-Dark Legionnaire Helm
-[HELM_DARK]
-Dark Mask
-[HELM_SAMURAIS]
-Samurai Helm
-
-Nightmare Hat (Special Edition and Nintendo Switch only)
-[HELM_TWO_FACE]
-Two-Faced Helm
-[HELM_SUPER_HORNED]
-Doom Crest
-[HELM_TRITON]
-Dreadening Mask
-[HELM_DARKNESS]
-Twilight Crown
-
-# Act 6
-[HELM_GOLDEN]
-Gilded Helm
-[HELM_RITUAL]
-Ritual Headpiece
-[HELM_KNIGHTLY]
-Paragon Armet
-
-Helm of Inspiration (Special Edition and Nintendo Switch only)
-[HELM_IFRIT]
-Ifrit Shell
-[HELM_CELESTIAL]
-Celestial Crown
-[HELM_ICARUS]
-Avian Sallet
-[HELM_DEMON]
-Demon Crest
-[HELM_SUPER_SAMURAI]
-Mempo
-[HELM_SPARTIAN]
-Spartan Coif
-[HELM_SUPER_PLUMED]
-Imperial Plume
-
-# Gates of Shadows
-[HELM_CEREMONIAL]
-Ceremonial Helmet
-
-# Interlude
-[HELM_TAILED_CASQUE]
-Tailed Casque
-[HELM_HEXAPOD]
-Hexapod
-[HELM_NIGHTFALL_HEADPIECE]
-Nightfall Headpiece
-[HELM_SUPER_SECOND_WIND]
-Second Wind
-[HELM_GUARDIAN]
-Guardian Helm
-[HELM_STOUT_CASQUE]
-Stout Casque
-[HELM_ADAMANTINE_ARMET]
-Adamantine Armet
-[HELM_MASK_OF_HORROR]
-Mask of Horror
-[HELM_ASCENDANCY]
-Ascendancy Helm
-
-# Act 7.1
-[HELM_INFERNO]
-Inferno Headpiece
-[HELM_ADVANCED_CONICAL]
-Advanced Conical Hat
-[HELM_SUPER_PREDATOR]
-Mask of Prey
-[HELM_QUASAR]
-Quasar
-[HELM_ANGER]
-Marauder
-
-# Act 7.2
-[HELM_CRYSTALLINE]
-Crystalloid Visor
-[HELM_SUPER_LASER]
-Laserbeam Mask
-[HELM_TUBES]
-Xenon Helm
-[HELM_CYBER_MASK]
-Mandible Mask
-[HELM_CYBER_SAMURAI]
-Formics Headgear
-
-# Act 7.3
-[HELM_FACELESS_MASK]
-Faceless's Mask
-[HELM_PROTECTOR]
-Protector's Headgear
-[HELM_VISOR]
-Elder's Visor
-[HELM_NAVIGATORS_BREATH_MASK]
-Navigator's Breath Mask
-
-# Set Helms
-[HELM_C2_Z2_MONK]
-Monk's Helm
-[HELM_C2_Z3_SENTINEL]
-Sentinel's Conical Helm
-[HELM_C4_Z1_WARLOCK]
-Face of Tragedy
-[HELM_BP_S1_GUARDIAN]
-Heartwood
-[HELM_BP_S2_SKANDA]
-Crown of Kali
-[HELM_BP_S3_WIND_MAKER]
-Furious Bull
-[HELM_BP_S4_SCRIPTWRITER]
-Lights, camera, action!
-[HELM_BP_S5_TIME_SHIFTER]
-Stonecold
-[HELM_C1_Z4_NEO_WANDERER]
-Solar Corona
-[HELM_RAID_FUNGUS_SET]
-All-Seeing Eye
-[HELM_RAID_VOLCANO_SET]
-Burning Wreath
-[HELM_RAID_KARCER_SET]
-Comatosis
-
-# Special Event Helms
-[HELM_HW14_PUMPKIN]
-Pumpkinhead
-[HELM_HW14_WITCH]
-Witch Hat
-[HELM_HW15_WITCH]
-Witch Hat (HW 2015)
-[HELM_HW15_PUMPKIN]
-Obsessed Pumpkin
-[HELM_1_HW16_SET]
-Pumpkin of Madness
-[HELM_2_HW16_SET]
-Nightmare Hat
-[HELM_HW17_CYLINDER]
-Baroness Cylinder
-[HELM_XMAS14_SANTA]
-Beard of Frost
-[HELM_XMAS14_HORNS]
-Reindeer Horns
-[HELM_XMAS15_SANTA]
-Face of Christmas
-[HELM_XMAS15_HORNS]
-Antlers of the Forest Spirit
-[HELM_XMAS16_HORNS]
-Christmas Trophy
-
-Christmas Trophy (X-MAS/NY 2019)
-[HELM_XMAS16_SANTA]
-Frost Beard
-[HELM_NY18_HAT]
-Fur Ear-Flap
-[HELM_VAL17_WINGS]
-Helm of Inspiration
-[HELM_VAL18_PANDA]
-Adorable Panda
-[HELM_CHNY18_TRADITIONAL]
-Hat of Generous Gift
-[HELM_1_HW19_SET]
-Feisty Vegetable
-[HELM_2_HW19_SET]
-Ghostly Cap
-
-Frost Beard (X-MAS/NY 2019)
-
-Fur Ear Flap (X-MAS/NY 2019)
-
-Helmet of Ferocity
-[HELM_WOODOO_HW20]
-Face of the Grim Baron
-
-Croissant Hat
-
-Ice Crown
-[HELM_IND21_BLOOD]
-Helm of Heaven Keeper
-[HELM_IND21_TURBAN]
-Festive Turban
-[HELM_SUMMER21_SANTA]
-Unyielding Face of Winter
-[HELM_NY2024_SHAKO]
-Grenadier's Shako
-[HELM_CNY2024_MASK]
-Daybreak's Visage
-
-Poisoned Wisdom
-
-# Underworld Exclusive Helms
-[HELM_FINAL_HARMONY]
-Crown of Harmony
-[HELM_FINAL_CHAOS]
-Crown of Chaos
-
-# Offer Exclusive Helms
-[HELM_STARTER_PACK]
-Iron Helm (has Critical Protection Enchantment)
-[HELM_AE21_ROACH]
-Sachem's Roach
-[HELM_CYBER_DRAGON_HEAD]
-Dragon's Thirst
-[HELM_ANNIVERSARY_10TH]
-Lunatic's Eye
-[HELM_AZTEC_24]
-Face of Metztli
-
-Satyr's Amusement
-[HELM_NEW_YEAR_25]
-Blinding Truth
-[HELM_HOAXEN_25]
-Chimera Paradox
-[HELM_FUTURIST_25]
-GlitchMask
-
-Agni's Seal
+name=""
 
 
 # Unavailable Helms
 [HEAD_SCAVENGER_1]
+name=""
+
 [HEAD_SCAVENGER_2]
+name=""
+
 [HEAD_SCAVENGER_4]
+name=""
+
 [HEAD_SCAVEN]
+name=""
+
 [HEAD_DISCIPLE]
+name=""
+
 [HEAD_KENJI]
+name=""
+
 [HEAD_RAVANA]
+name=""
+
 [HEAD_SATURN]
+name=""
+
 [HEAD_MEPHISTO]
+name=""
+
 [HEAD_LYNX]
+name=""
+
 [HEAD_HERMIT]
+name=""
+
 [HEAD_BUTCHER]
+name=""
+
 [HEAD_RHINO]
+name=""
+
 [HEAD_WASP]
+name=""
+
 [HEAD_HUNTRESS]
+name=""
+
 [HEAD_TITAN]
+name=""
+
 [HEAD_SHROUD]
+name=""
+
 [HEAD_CYPHER]
+name=""
+
 [HEAD_ANCIENT]
+name=""
+
 [HEAD_CORSAIR]
+name=""
+
 [HEAD_FUTURE_MAY]
+name=""
+
 [HEAD_TITANS_ARMY1]
+name=""
+
 [HEAD_TITANS_ARMY2]
+name=""
+
 [HEAD_TITANS_ARMY3]
+name=""
+
 [HEAD_TITANS_ARMY4]
+name=""
+
 [HEAD_VULCAN]
+name=""
+
 [HEAD_MEGALITH]
+name=""
+
 [HEAD_FUNGUS]
+name=""
+
 [HEAD_FISH]
+name=""
+
 [HEAD_FATUM]
+name=""
+
 [HEAD_HOAXEN]
+name=""
+
 [HEAD_HUNGER]
+name=""
+
 [HEAD_WAR]
+name=""
+
 [HEAD_SATURN]
+name=""
+
 [HEAD_HUNTER]
+name=""
+
 [HEAD_ZONE7_HERO1]
+name=""
+
 [HEAD_ZONE7_HERO2]
+name=""
+
 [HEAD_ZONE7_HERO3]
+name=""
+
 [HEAD_BISON_V2]
+name=""
+
 [HEAD_BISON_SPIRIT]
+name=""
+
 [HEAD_CANDY]
+name=""
+
 [HEAD_NIGHT]
+name=""
+
 [HEAD_SMOTHER]
+name=""
+
 [HEAD_VILLAIN]
+name=""
+
 [HEAD_WHISPER]
+name=""
+
 [HEAD_MONKEY]
+name=""
+
 [HEAD_BRICK]
+name=""
+
 [HEAD_HYPERION]
+name=""
+
 [HEAD_INVISIBLE]
+name=""
+
 [HEAD_HIT]
+name=""
+
 [HEAD_HIT_ENEMY_REGENERATES]
+name=""
 
+[HEAD_C3_z3]
+name=""
 
-# Shop Ranged Weapons
-# Act 2
-[RANGED_THROWING_DAGGERS]
-Throwing Daggers
+[HELM_LEVEL_RESTRICTION]
+name=""
 
-Demon's Wings (Special Edition and Nintendo Switch only)
-[RANGED_SHURIKENS]
-Shurikens
-[RANGED_SUPER_CHAKRAM_BLADES]
-Harvester of Souls
-[RANGED_KUNAI]
-Kunai
+[HELM_UNKNOWN]
+name=""
 
-Cursed Pins (Nintendo Switch)
+[HELM_AGNISSEAL]
+name="Agni's Seal"
 
-# Act 3
-[RANGED_ASSASSIN_KUNAI]
-Assassin's Kunai
-[RANGED_HUNTERS_KNIVES]
-Hunter's Knives
+[HELM_RAID_KARCER_SET]
+name="Comatosis"
 
-Broken Hearts (Special Edition and Nintendo Switch only)
-[RANGED_SILVER_SHURIKENS]
-Silver Shuriken
-[RANGED_SUPER_SHURIKEN]
-Star Blade
-[RANGED_HUNTING_KUNAI]
-Steel Darts
-
-Juicy Donut (Nintendo Switch)
-
-# Act 4
-[RANGED_CHAKRAM]
-Chakram
-[RANGED_HEAVY_SHURIKENS]
-Weighted Shurikens
-[RANGED_THROWING_SPIKES]
-Throwing Spikes
-[RANGED_SUPER_AXES]
-Bat Wings
-[RANGED_NEEDLE]
-Needles
-
-# Act 5
-[RANGED_SHURIKEN_OF_DARKNESS]
-Shurikens of Night
-[RANGED_ASSASSINS_DAGGER]
-Assassin's Daggers
-[RANGED_SUPER_KUNAI]
-Lunar Knives
-
-# Act 6
-[RANGED_ANCIENT_CHAKRAM]
-Ancient Chakram
-[RANGED_BEAST_AXES]
-Beast Axes
-[RANGED_KUNAI_OF_WIND]
-Kunai of the Wind
-[RANGED_SUPER_DAGGERS]
-Crystalline Spikes
-[RANGED_DRAGON_WINGS]
-Dragon Wings
-[RANGED_CHAKRAM_OF_MASTER]
-Keen Chakram
-
-# Interlude
-[RANGED_WEIGHED_KUNAI]
-Weighed Kunai
-[RANGED_THROWING_SICKLES]
-Throwing Sickles
-[RANGED_SUPER_BOOMERANG]
-Piercers
-[RANGED_THROWING_AXE]
-Throwing Axes
-
-# Act 7.1
-[RANGED_CIRCULAR_SAW]
-Circular Saws
-[RANGED_BLASTER]
-Incinerator
-
-# Act 7.2
-[RANGED_SUPER_MINE]
-Landmines
-
-# Act 7.3
-[RANGED_LOTOS]
-Lotos of Pain
-[RANGED_THORNS]
-Mortal Thorns
-[RANGED_SUPER_BLADE]
-Dissecting Blade
-
-# Set Ranged Weapons
-[RANGED_C2_Z2_MONK_SHURIKEN]
-Monk's Shuriken
-[RANGED_C2_Z3_SENTINEL_SHURIKEN]
-Sentinel's Blades
-[RANGED_C4_Z1_WARLOCK_SHURIKEN]
-Morning Star
-[RANGED_BP_S1_GUARDIAN]
-Marten's Bite
-[RANGED_BP_S2_SKANDA]
-Sky Shard
-[RANGED_BP_S3_WIND_MAKER]
-Tears of the Wind
-[RANGED_BP_S4_SCRIPTWRITER]
-Film Damage
-[RANGED_BP_S5_TIME_SHIFTER]
-Chronos Razor
-[RANGED_C1_Z4_NEO_WANDERER]
-Photons
-[RANGED_RAID_FUNGUS_SET]
-Spore Carriers
-[RANGED_RAID_VOLCANO_SET]
-Dragon's Tear
-[RANGED_KARCER_HUNGER_SET]
-Snake Reaper
-
-# Special Event Ranged Weapons
-[RANGED_XMAS14_SNOWBALLS]
-Snowballs
-[RANGED_HW15_SKULL]
-Flame Skulls
-[RANGED_XMAS15_SNOWBALLS]
-Snow Charges
-[RANGED_HW16_SET]
-Demon's Wing
-[RANGED_XMAS16_COOKIE]
-Gingerbread Surprises
-
-Juicy Donut
-[RANGED_VAL17_AXE]
-Broken Hearts
-[RANGED_HW17_NEEDLES]
-Cursed Pins
-[RANGED_HW19_SET]
-Harbinger of Madness
-
-Gingerbread Surprises (X-MAS/NY 2019)
-
-Juicy Donut (X-MAS/NY 2019)
-[RANGED_CHNY20_TRADITIONAL]
-Burning Battle Citrus
-[RANGED_HW20_SKULL]
-Grim Baron's Mark
-
-Fluffy Snowflakes
-[RANGED_IND21_KUNAI]
-Blade of the Dawn
-[RANGED_AE21_TOMAHAWK]
-Chieftain's Tomahawk
-[RANGED_SUMMER21_ANCIENT_CHAKRAM]
-Breakwaters
-[RANGED_CHNY22_WEIGHED_KUNAI]
-Steal Fang
-[RANGED_NY2024_AXE]
-Hel's Kiss
-
-# Offer Exclusive Ranged Weapons
-[RANGED_SUPER_CHAKRAM_JEWELS]
-Chakrams of Overlord
-[RANGED_BOAT_FESTIVAL_SUPER_SHURIKEN]
-Whirlpool of Petals
-[RANGED_ANNIVERSARY_10TH]
-Harpy's Bite
-
-Zenith
-
-Pain Bound
-[RANGED_FUTURIST_25]
-Furious Mafia
-
-Sons of the Eclipse
-[RANGED_BLASTER_ROGUESFORTUNE_25]
-Rogue's Fortune
 
 # Unavailable Ranged Weapons
 [RANGED_TITANS_HARPOON]
-Titan's Harpoon
+name=""
+
 [RANGED_WAR_AXES]
+name=""
+
 [RANGED_FISH]
+name=""
 
+[RANGED_C3_z3]
+name=""
 
-# Shop Magic
-# Act 3
-[MAGIC_FIRE_BALL]
-Fire Ball
-[MAGIC_ENERGY_BALL]
-Energy Ball
+[RANGED_LEVEL_RESTRICTION]
+name=""
 
-Dark Blood Magic (Nintendo Switch)
+[RANGED_ONLY]
+name=""
 
-# Act 4
-[MAGIC_BOMB]
-Dark Blast
+[RANGED_UNKNOWN]
+name=""
 
-Shard of Eternal Ice (Special Edition and Nintendo Switch only)
-[MAGIC_MASS_BOMB]
-Dark Implosion
+[RANGED_BLASTER_ROGUESFORTUNE_25]
+name="Rogue's Fortune"
 
-Sugar Flash (Nintendo Switch)
+[RANGED_RAID_KARCER_SET]
+name="Snake Repear"
 
-# Act 5
-[MAGIC_LIGHTNING_ARROW]
-Lightning Arrow
-[MAGIC_FIRE_PILLAR]
-Fire Pillar
-
-# Act 6
-[MAGIC_WATER_BALL]
-Water Ball
-[MAGIC_ASTEROID]
-Asteroid
-
-# Interlude
-[MAGIC_WAVE]
-Force Wave
-[MAGIC_FIRE_SPLASH]
-Fire Splash
-
-# Act 7.1
-[MAGIC_DEATH_RAY]
-Force Ray
-
-# Act 7.2
-[MAGIC_ACID_CLOUD]
-Toxic Cloud
-
-# Act 7.3
-[MAGIC_FIRE_AURA]
-Wrath of Flame
-[MAGIC_SAWMILL]
-Torturer's Rage
-
-# Set Magic
-[MAGIC_C2_Z2_MONK_ROOT_STUN]
-Monk's Amulet
-[MAGIC_C2_Z3_SENTINEL_DRAGON]
-Sentinel's Spirit
-[MAGIC_C4_Z1_WARLOCK_DARK_WAVE]
-Sloe Thorn
-[MAGIC_BP_S1_GUARDIAN]
-Death Grip
-[MAGIC_BP_S2_SKANDA]
-Kundalini
-[MAGIC_BP_S3_WIND_MAKER]
-Eye of the Storm
-[MAGIC_BP_S4_SCRIPTWRITER]
-Smoke and mirrors
-[MAGIC_BP_S5_TIME_SHIFTER]
-Continuum
-[MAGIC_C1_Z4_NEO_WANDERER]
-Quantum Leap
-[MAGIC_RAID_FUNGUS_SET]
-Spores of Discord
-[MAGIC_RAID_VOLCANO_SET]
-Roaring Caldera
-
-
-# Special Event Magic
-[MAGIC_XMAS16_ICEBALL]
-Shard of Eternal Ice
-[MAGIC_HW17_VOODOO]
-Dark Blood Magic
-[MAGIC_NY18_SNOWBALL]
-Sugar Flash
-
-Shard of Eternal Ice (X-MAS/NY 2019)
-
-Sugar Flash (X-MAS/NY 2019)
-
-Prisoned Blizzard
-[MAGIC_AE21_SPIRIT_PILLAR]
-Spirit's Wrath
-[MAGIC_CHNY22_WATERBALL]
-Tamer of the Elements
-[MAGIC_NY2024_AMULET]
-Cold Fusion
-[MAGIC_CNY2024]
-Star's Breath
-[MAGIC_INDIA_24]
-Highest Measure
-
-# Offer Exclusive Magic
-[MAGIC_CYBER_DRAGON_RAY]
-Isotope Reactor
-[MAGIC_8MARCH_24]
-Shivering Earth
-[MAGIC_ANNIVERSARY_10TH]
-Inmate's Shackles
-[MAGIC_CARDS_HW_24]
-Major Arcana
-
-Redemptive Gift
-
-Martyr's Sacrifice
-
-Requiem
-[MAGIC_FUTURIST_25]
-Plasma Cutter
-[MAGIC_ENERGY_BALL_PINK_25]
-Thorn Dome
-[MAGIC_GAZEOFTHEVOID_25]
-Gaze of the Void
 
 # Unavaiable Magic
-Ice Ball
 [MAGIC_ICE_PINS]
-Ice Pillar
+name=""
+
 [MAGIC_MIND_THROW]
-Mind Throw
+name=""
+
 [MAGIC_BUTCHER_EARTHQUAKE]
-Butcher's Stomp
+name=""
+
+[MAGIC_ARCANE_BALL]
+name=""
+
+[MAGIC_ASTEROID-Node2]
+name=""
+
+[MAGIC_ASTEROID-Node4]
+name=""
+
+[MAGIC_C3_z3]
+name=""
+
+[MAGIC_HIT_BOX]
+name=""
+
+[MAGIC_HUNGER_CLAWS]
+name=""
+
+[MAGIC_LEVEL_RESTRICTION]
+name=""
+
+[MAGIC_MINE]
+name=""
+
+[MAGIC_RAT_WAVE]
+name=""
+
+[MAGIC_RESURRECTED_25]
+name=""
+
+[MAGIC_UNKNOWN]
+name=""
+
+[MAGIC_VERTICAL_TRIGGER]
+name=""
+
+[MAGIC_WAR_WHIRL]
+name=""
+
+[MAGIC_DARK_WAVE]
+name=""
+
+[MAGIC_ENERGY_BALL_PINK_25]
+name="Thorn Dome"
+
+[MAGIC_FEAR_RAY]
+name=""
+
+[MAGIC_ICE_BALL]
+name=""
+
+[MAGIC_PROJECTILE]
+name=""
+
+[MAGIC_GAZEOFTHEVOID_25]
+name="Gaze of the Void"
+
+
