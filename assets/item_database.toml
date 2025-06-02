@@ -1,1662 +1,2112 @@
-[WEAPON_TITAN_GIANT_SWORD]
-name="Titan's Desolator"
-description="Titan's Desolator is an unobtainable boss weapon used by Titan in his fight against Shadow at the conclusion of Act VII: Revelation. It is a big, heavy sword enchanted with Lifesteal. There is a handle attached on its side to aid in its usage, since the weapon is so heavy that even Titan, despite being aided by his suit, usually only makes slow swings with it."
+[WEAPON_HUNGER_SCYTHE]
+name = ""
 
-[RANGED_TITANS_HARPOON]
-name="Titan's Harpoon"
+[WEAPON_WAR_SHUANG_GOU]
+name = ""
 
-[MAGIC_MIND_THROW]
-name="Mind Throw"
+[WEAPON_ELECTRO_BATONS]
+name = ""
 
-[BODY_TITAN]
-name="Titan's Body"
+[WEAPON_TRIANGLE_KNIVES]
+name = ""
 
-[HEAD_TITAN]
-name="Titan's Head"
+[WEAPON_TWO_HANDED_SWORD]
+name = ""
 
-[HELM_FINAL_HARMONY]
-name="Crown of Harmony"
+[WEAPON_HEAVY_HAMMER]
+name = ""
 
-[HELM_FINAL_CHAOS]
-name="Crown of Chaos"
+[WEAPON_SENTINEL_KUSARIGAMA]
+name = ""
 
-[WEAPON_C2_Z3_SENTINEL_SPEAR]
-name="Sentinel`s Hand"
+[WEAPON_BG_YARI]
+name = ""
 
-[ARMOR_C2_Z3_SENTINEL]
-name="Sentinel`s Armor"
+[WEAPON_NODACHI]
+name = ""
 
-[HELM_C2_Z3_SENTINEL]
-name="Sentinel`s Conical Helm"
+[WEAPON_WAKIDZASHI]
+name = ""
 
-[RANGED_C2_Z3_SENTINEL_SHURIKEN]
-name="Sentinel`s Blades"
+[WEAPON_BG_NAGINATA]
+name = ""
 
-[MAGIC_C2_Z3_SENTINEL_DRAGON]
-name="Sentinel`s Spirit"
+[WEAPON_BG_GLAIVE]
+name = ""
 
-[WEAPON_DEFAULT_RANDOM]
-name="Hero's default weapon"
+[WEAPON_MERCENARY_CLAWS]
+name = ""
 
-[WEAPON_RANDOM]
-name="Random weapon"
+[WEAPON_MERCENARY_AXES]
+name = ""
 
-[ARMOR_XMAS16_SANTA]
-name="Winter Breath Jacket"
+[WEAPON_SAWBLADE]
+name = ""
 
-[HELM_XMAS16_HORNS]
-name="Christmas Trophy"
+[WEAPON_GIANT_SWORD]
+name = ""
 
-[HELM_XMAS16_SANTA]
-name="Frost Beard"
-
-[WEAPON_XMAS16_CANDY]
-name="Candy Rage"
-
-[WEAPON_XMAS16_GLAIVE]
-name="Ringing Spruce Whirl"
-
-[RANGED_XMAS16_COOKIE]
-name="Gingerbread Surprises"
-
-[ARMOR_VAL18_HOODIE]
-name="Game Fan`s Hoodie"
-
-[HELM_VAL18_PANDA]
-name="Adorable Panda"
-
-[WEAPON_VAL18_PANDA]
-name="Panda Cuddles"
-
-[WEAPON_CHNY18_STAFF]
-name="Chinese Dragon Staff"
-
-[ARMOR_CHNY18_TRADITIONAL]
-name="Dragon's Scale"
-
-[HELM_CHNY18_TRADITIONAL]
-name="Hat of Generous Gifts"
-
-[ARMOR_NY18_MANTLE]
-name="Padded Jacket"
-
-[HELM_NY18_HAT]
-name="Fur Ear-Flap"
-
-[WEAPON_NY18_AXES]
-name="Surprise Waffles"
-
-[WEAPON_NY18_MACE]
-name="Caramel Boom"
-
-[RANGED_NY18_DONUT]
-name="Juicy Donut"
-
-[MAGIC_NY18_SNOWBALL]
-name="Sugar Flash"
-
-[ARMOR_HW16_SET]
-name="Spider-king coat"
-
-[HELM_1_HW16_SET]
-name="Pumpkin of madness"
-
-[HELM_2_HW16_SET]
-name="Nightmare hat"
-
-[RANGED_HW16_SET]
-name="Demon`s wing"
-
-[WEAPON_1_HW16_SET]
-name="Dissector of hopes"
-
-[WEAPON_2_HW16_SET]
-name="Pain and Panic"
-
-[MAGIC_XMAS16_ICEBALL]
-name="Shard of Eternal Ice"
-
-[RANGED_VAL17_AXE]
-name="Broken Hearts"
-
-[WEAPON_VAL17_FANS]
-name="Fans Of Passion"
-
-[WEAPON_VAL17_TRIDENT]
-name="Fatemaker"
-
-[WEAPON_VAL17_SAI]
-name="Vermeil Fangs"
-
-[HELM_VAL17_WINGS]
-name="Helm of Inspiration"
-
-[ARMOR_VAL17_MANTLE]
-name="Poetic Mantle"
-
-[WEAPON_C2_Z2_MONK_KATAR]
-name="Monk's Katars"
-
-[ARMOR_C2_Z2_MONK]
-name="Monk's Robe"
-
-[HELM_C2_Z2_MONK]
-name="Monk's Helm"
-
-[RANGED_C2_Z2_MONK_SHURIKEN]
-name="Monk's Shurikens"
-
-[MAGIC_C2_Z2_MONK_ROOT_STUN]
-name="Monk's Amulet"
-
-[WEAPON_KNIVES]
-name="Knives"
-
-[WEAPON_KNUCKLES]
-name="Knuckles"
-
-[WEAPON_SAI]
-name="Sai"
-
-[WEAPON_STEEL_BATONS]
-name="Steel Batons"
-
-[WEAPON_MACHETE]
-name="Machetes"
-
-[WEAPON_DAGGERS]
-name="Daggers"
-
-[WEAPON_NINJA_SWORD]
-name="Ninja Sword"
-
-[WEAPON_STAFF]
-name="Staff"
-
-[WEAPON_SWORDS]
-name="Swords"
-
-[WEAPON_NUNCHAKU]
-name="Nunchacku"
-
-[WEAPON_STEEL_NUNCHAKU]
-name="Steel Nunchacku"
-
-[WEAPON_SHUANG_GOU]
-name="Shuang Gou"
-
-[WEAPON_YARI]
-name="Yari"
-
-[WEAPON_CRESCENT_KNIVES]
-name="Crescent Knives"
-
-[WEAPON_STILETTOS]
-name="Stilettos"
-
-[WEAPON_HEAVY_STAFF]
-name="Heavy Staff"
-
-[WEAPON_AXES]
-name="Axes"
-
-[WEAPON_STEEL_CLAWS]
-name="Steel Claws"
-
-[WEAPON_KATANA]
-name="Katana"
-
-[WEAPON_BIG_SWORDS]
-name="Big Swords"
-
-[WEAPON_NAGINATA]
-name="Naginata"
-
-[WEAPON_CHINESE_SWORDS]
-name="Chinese Swords"
-
-[WEAPON_BUTTERFLY_SWORDS]
-name="Butterfly Swords"
-
-[WEAPON_GOLDEN_KATANA]
-name="Golden Katana"
-
-[WEAPON_MACES]
-name="Maces"
-
-[WEAPON_GLAIVE]
-name="Glaive"
-
-[WEAPON_KUSARIGAMA]
-name="Kusarigama"
-
-[WEAPON_SICKLES]
-name="Sickles"
-
-[WEAPON_MOON_SABERS]
-name="Moon Sabers"
-
-[WEAPON_TWO_HANDED_MACE]
-name="Two-handed Mace"
-
-[WEAPON_DADAO]
-name="Dadao"
-
-[WEAPON_MAGARI_YARI]
-name="Magari Yari"
-
-[WEAPON_BATTLE_HAMMERS]
-name="Battle Hammers"
-
-[WEAPON_SILVER_GLAIVE]
-name="Silver Glaive"
-
-[WEAPON_HEAVY_KUSARIGAMA]
-name="Heavy Kusarigama"
-
-[WEAPON_SUPER_KUSARIGAMA]
-name="Blood Reaper"
-
-[WEAPON_SUPER_AXES]
-name="Harrier Hooks"
-
-[WEAPON_SUPER_BIG_SWORD]
-name="Devastator"
-
-[WEAPON_SUPER_KHOPESH]
-name="Pharaoh’s Khopeshes"
-
-[WEAPON_SUPER_STAFF]
-name="Staff of Night"
+[WEAPON_BATON]
+name = ""
 
 [WEAPON_CRUSHER]
-name="Crusher"
+name = "Crusher"
 
-[ARMOR_ROBE]
-name="Robe"
+[WEAPON_DRAGON_KNIVES]
+name = ""
 
-[ARMOR_OLD_LEATHER]
-name="Old Leather Jacket"
+[WEAPON_TITAN_GIANT_SWORD]
+name = "Titan's Desolator"
+description = "Titan's Desolator is an unobtainable boss weapon used by Titan in his fight against Shadow at the conclusion of Act VII: Revelation. It is a big, heavy sword enchanted with Lifesteal. There is a handle attached on its side to aid in its usage, since the weapon is so heavy that even Titan, despite being aided by his suit, usually only makes slow swings with it."
 
-[ARMOR_KENDO]
-name="Kendo Breastplate"
+[WEAPON_WAKIDZASHI-RangedBlade_1]
+name = ""
 
-[ARMOR_LEATHER]
-name="Leather Jacket"
+[WEAPON_RAVANA]
+name = ""
 
-[ARMOR_BARBARIAN]
-name="Barbarian Armor"
+[WEAPON_MORGANA_SCYTHE]
+name = ""
 
-[ARMOR_CHAIN_ROBE]
-name="Apprentice’s Chainmail"
+[WEAPON_REAl_CLAWS]
+name = ""
 
-[ARMOR_BRONZE]
-name="Bronze Armor"
+[WEAPON_DEFAULT_RANDOM]
+name = "Hero's default weapon"
 
-[ARMOR_IMHOTEP]
-name="Imhotep Cuirass"
-
-[ARMOR_SHADOW]
-name="Shadow Armor"
-
-[ARMOR_MANTLE_OF_NIGHT]
-name="Mantle of Night"
-
-[ARMOR_RED_LOTUS]
-name="Red Lotus"
-
-[ARMOR_DRAGONS_BLOOD]
-name="Dragon Blood"
-
-[ARMOR_BEAST_SHELL]
-name="Beast Shell"
-
-[ARMOR_SUPER_CROW]
-name="Crow’s Bane"
-
-[ARMOR_SUPER_CLOAK]
-name="Sentinel Coat"
-
-[HELM_KENDO_MASK]
-name="Kendo Mask"
-
-[HELM_CONICAL_HAT]
-name="Conical Hat"
-
-[HELM_SOLDIER_KABUTO]
-name="Soldier’s Kabuto"
-
-[HELM_GABLED]
-name="Pointed Helm"
-
-[HELM_GREEN_MASK]
-name="Snake Mask"
-
-[HELM_LOBSTER]
-name="Lobster Helm"
-
-[HELM_KABUTO]
-name="Kabuto"
-
-[HELM_HARDENED]
-name="Hardened Helm"
-
-[HELM_STEEL]
-name="Steel Helm"
-
-[HELM_HORNED]
-name="Horned Helm"
-
-[HELM_CRESCENT]
-name="Crescent Helm"
-
-[HELM_SPIKE]
-name="Spike Helm"
-
-[HELM_DAWN]
-name="Dawn Tiara"
-
-[HELM_CROWN_OF_NIGHT]
-name="Crown of Night"
-
-[HELM_SAMURAIS]
-name="Samurai Helm"
-
-[HELM_TWO_FACED]
-name="Two-faced Helm"
-
-[HELM_BEAST]
-name="Beast Helm"
-
-[HELM_SUPER_MASK]
-name="Sacral Mask"
-
-[HELM_SUPER_JOKER]
-name="Jester’s Benediction"
-
-[RANGED_SHURIKENS]
-name="Shurikens"
-
-[RANGED_THROWING_DAGGERS]
-name="Throwing Daggers"
-
-[RANGED_KUNAI]
-name="Kunai"
-
-[RANGED_HUNTERS_KNIVES]
-name="Hunter's Knives"
-
-[RANGED_SILVER_SHURIKENS]
-name="Silver Shurikens"
-
-[RANGED_THROWING_SPIKES]
-name="Throwing Spikes"
-
-[RANGED_CHAKRAM]
-name="Chakram"
-
-[RANGED_GHOST_KUNAI]
-name="Ghostly Kunai"
-
-[RANGED_ANCIENT_CHAKRAM]
-name="Ancient Chakram"
-
-[RANGED_SUPER_SHURIKEN]
-name="Star Blade"
-
-[RANGED_SUPER_AXES]
-name="Bat Wings"
-
-[RANGED_SUPER_CHAKRAM_JEWELS]
-name="Jewel of the East"
-
-[RANGED_SUPER_CHAKRAM_BLADES]
-name="Harvester of Souls"
-
-[MAGIC_ENERGY_BALL]
-name="Energy Ball"
-
-[MAGIC_FIRE_BALL]
-name="Fire Ball"
-
-[MAGIC_LIGHTNING_ARROW]
-name="Lightning Arrow"
-
-[MAGIC_FIRE_PILLAR]
-name="Fire Pillar"
+[WEAPON_DIRECTOR_HUNGER]
+name = ""
 
 [WEAPON_LEVEL_RESTRICTION]
-name="Weapon level {0}"
+name = "Weapon level {0}"
 
-[HELM_LEVEL_RESTRICTION]
-name="Helm level {0}"
+[WEAPON_RANDOM]
+name = "Random weapon"
 
-[RANGED_LEVEL_RESTRICTION]
-name="Ranged weapon level {0}"
+[WEAPON_SHOCKER_CLAWS_ARC]
+name = ""
 
-[ARMOR_LEVEL_RESTRICTION]
-name="Armor level {0}"
-
-[HEAD_HIT]
-name="Head damage only"
-
-[HEAD_HIT_ENEMY_REGENERATES]
-name="Head damage only, enemy regenerates"
-
-[WEAPON_KERIS]
-name="Krises"
-
-[WEAPON_TONFA]
-name="Tonfas"
-
-[WEAPON_LABRYS_AXES]
-name="Labryses"
-
-[WEAPON_TWO_HANDED_CUDGEL]
-name="Two-handed Cudgel"
-
-[WEAPON_WANDERER_STAFF]
-name="Wanderer's Staff"
-
-[ARMOR_RONIN]
-name="Ronin Doublet"
-
-[ARMOR_GUARD]
-name="Guard's Harness"
-
-[ARMOR_CHAIN]
-name="Chainmail"
-
-[ARMOR_BLOOD_MASTER]
-name="Scarlet Leather"
-
-[ARMOR_STRONG_BARBARIAN]
-name="Sturdy Barbarian Armor"
-
-[ARMOR_MANTIS]
-name="Mantis Harness"
-
-[ARMOR_LEGIONER]
-name="Legionnaire Armor"
-
-[ARMOR_EMERALD_BREASTPLATE]
-name="Emerald Mail"
-
-[ARMOR_RED_STEEL]
-name="Red Platemail"
-
-[ARMOR_MOON]
-name="Moon Shroud"
-
-[ARMOR_DRAGON]
-name="Radiant Platemail"
-
-[ARMOR_ASSASSIN]
-name="Assassin's Robe"
-
-[ARMOR_HAWK]
-name="Hawk Mantle"
-
-[ARMOR_TWILIGHT]
-name="Twilight Shroud"
-
-[ARMOR_GILDED]
-name="Gilded Platemail"
-
-[ARMOR_STORM_CUIRASS]
-name="Aegis of Winds"
-
-[HELM_BLOOD]
-name="Blood Casque"
-
-[HELM_TAIL]
-name="Plumed Headpiece"
-
-[HELM_BRONZE]
-name="Bronze Casque"
-
-[HELM_VIKING]
-name="Longhorn"
-
-[HELM_MANTIS]
-name="Mantis Cap"
-
-[HELM_GENERAL]
-name="General’s Kabuto"
-
-[HELM_MOON]
-name="Moon Crown"
-
-[HELM_LEGIONER]
-name="Legionnaire Helm"
-
-[HELM_IRON]
-name="Iron Casque"
-
-[HELM_SUN]
-name="Radiant Headpiece"
-
-[HELM_EMERALD]
-name="Emerald Cap"
-
-[HELM_SILVER]
-name="Silver Kabuto"
-
-[HELM_ASSASSIN]
-name="Assassin's Cowl"
-
-[HELM_SNOW]
-name="Snow Cap"
-
-[HELM_DARKNESS]
-name="Twilight Crown"
-
-[HELM_SUPER_HORNED]
-name="Doom Crest"
-
-[RANGED_ASSASSIN_KUNAI]
-name="Assassin's Kunai"
-
-[RANGED_HUNTING_KUNAI]
-name="Steel Darts"
-
-[HELM_STARTER_PACK]
-name="Iron Mask"
-
-[HELM_LIGHT]
-name="Light Helm"
-
-[HELM_CLOSED]
-name="Close Helm"
-
-[ARMOR_QUILTED]
-name="Riveted Jacket"
-
-[ARMOR_FOREIGN]
-name="Red Doublet"
-
-[ARMOR_GREEN]
-name="Snake Harness"
-
-[WEAPON_INDIAN_KATAR]
-name="Katars"
-
-[WEAPON_CEREMONIAL_SHUANG_GOU]
-name="Ceremonial Shuang Gou"
-
-[WEAPON_SHARP_TONFA]
-name="Blade Tonfas"
-
-[WEAPON_NORTHERN_HAMMER]
-name="Northern Hammer"
-
-[WEAPON_DADAO_JANISSARY]
-name="Ronin's Dadao"
-
-[WEAPON_SILVER_SPEAR]
-name="Silver Spear"
-
-[WEAPON_TRIDENT]
-name="Trident"
-
-[WEAPON_Z6_KNIVES]
-name="Meteorite Knives"
-
-[WEAPON_SUPER_SABERS]
-name="Ornamental Sabers"
-
-[WEAPON_CHINESE_SABERS]
-name="Oriental Sabers"
-
-[ARMOR_SENSEI_KENDO]
-name="Kendo Armor"
-
-[ARMOR_CENTURION]
-name="Centurion Mail"
-
-[ARMOR_GRAND_CHAIN]
-name="Grand Chainmail"
-
-[ARMOR_SPIKE]
-name="Spike Breastplate"
-
-[ARMOR_GILDED_CENTURION]
-name="Gilded Centurion Mail"
-
-[ARMOR_RAVEN]
-name="Raven Mantle"
-
-[ARMOR_DARK]
-name="Dark Cuirass"
-
-[ARMOR_SHADOW_MASTER]
-name="Shadow Carapace"
-
-[ARMOR_ROYAL_BREASTPLATE]
-name="Heraldic Cuirass"
-
-[ARMOR_DRAGON_JAWS]
-name="Scale Breastplate"
-
-[ARMOR_CELESTIAL]
-name="Celestial Gown"
-
-[ARMOR_HARBINGER_CUIRASS]
-name="Harbinger Cuirass"
-
-[ARMOR_NECROMANCER]
-name="Death Mark"
-
-[ARMOR_BLACK_BUFFALO]
-name="Black Buffalo"
-
-[ARMOR_SUPER_BANSHEE]
-name="Banshee's Cry"
-
-[ARMOR_CEREMONIAL]
-name="Ceremonial Armor"
-
-[HELM_SMART_GABLED]
-name="Parade Helm"
-
-[HELM_CRIMSON]
-name="Copper Helm"
-
-[HELM_DARK_LEGIONER]
-name="Dark Legionnaire Helm"
-
-[HELM_TRITON]
-name="Dreadening Mask"
-
-[HELM_DARK]
-name="Dark Mask"
-
-[HELM_GOLDEN]
-name="Gilded Helm"
-
-[HELM_KNIGHTLY]
-name="Paragon Armet"
-
-[HELM_ICARUS]
-name="Avian Sallet"
-
-[HELM_IFRIT]
-name="Ifrit Shell"
-
-[HELM_CELESTIAL]
-name="Celestial Crown"
-
-[HELM_DEMON]
-name="Demon Crest"
-
-[HELM_SPARTIAN]
-name="Spartan Coif"
-
-[HELM_RITUAL]
-name="Ritual Headpiece"
-
-[HELM_CEREMONIAL]
-name="Ceremonial Mask"
-
-[RANGED_NEEDLE]
-name="Needles"
-
-[RANGED_HEAVY_SHURIKENS]
-name="Weighted Shurikens"
-
-[RANGED_SHURIKEN_OF_DARKNESS]
-name="Shurikens of Night"
-
-[RANGED_ASSASSINS_DAGGER]
-name="Assassin's Daggers"
-
-[RANGED_SUPER_KUNAI]
-name="Lunar Knives"
-
-[RANGED_BEAST_AXES]
-name="Beast Axes"
-
-[RANGED_KUNAI_OF_WIND]
-name="Kunai of the Wind"
-
-[RANGED_DRAGON_WINGS]
-name="Dragon Wings"
-
-[RANGED_CHAKRAM_OF_MASTER]
-name="Keen Chakram"
-
-[RANGED_SUPER_DAGGERS]
-name="Crystalline Spikes"
-
-[MAGIC_BOMB]
-name="Dark Blast"
-
-[MAGIC_MASS_BOMB]
-name="Dark Implosion"
-
-[MAGIC_WATER_BALL]
-name="Water Ball"
-
-[MAGIC_ASTEROID]
-name="Asteroid"
-
-[WEAPON_SUPER_HAMMERS]
-name="Imhotep Pounders"
-
-[WEAPON_SUPER_KNUCKLES]
-name="Coral Prickles"
-
-[WEAPON_SUPER_FANS]
-name="Emerald Cutters"
-
-[WEAPON_Z6_NUNCHAKU]
-name="Heavy Nunchacku"
-
-[WEAPON_SUPER_SPEAR]
-name="The Sting"
-
-[WEAPON_SUPER_GLAIVE]
-name="Sapphire Fang"
-
-[WEAPON_SUPER_SAI]
-name="Harbinger Sai"
-
-[ARMOR_SUPER_SPIKED]
-name="Fury Carapace"
-
-[ARMOR_SUPER_HALO]
-name="Hallow Aegis"
-
-[ARMOR_SUPER_FEATHERED]
-name="Ravenheart"
-
-[HELM_SUPER_SCARAB]
-name="Scarab Shell"
-
-[HELM_SUPER_STRIPS]
-name="Goldenhorn"
-
-[HELM_SUPER_PLUMED]
-name="Imperial Plume"
-
-[WEAPON_STARTER_PACK_TONFA]
-name="Rabid Tonfas"
-
-[WEAPON_STRANGER_KNUCKLES]
-name="Spiny Knuckles"
-
-[WEAPON_MORNING_STARS]
-name="Morning Stars"
-
-[WEAPON_SUPER_LEECHES]
-name="Leeches"
-
-[WEAPON_ELEGANT_STAFF]
-name="Elegant Staff"
-
-[WEAPON_FLAYER_CLAWS]
-name="Flayer Claws"
-
-[WEAPON_BARBED_GLAIVE]
-name="Barbed Glaive"
-
-[WEAPON_SUPER_DRAGON_TEETH]
-name="Dragon Teeth"
-
-[WEAPON_KUKRIS]
-name="Kukris"
-
-[WEAPON_QUENCHED_SAI]
-name="Quenched Sai"
-
-[WEAPON_KEEN_KATANA]
-name="Keen Katana"
-
-[WEAPON_SUPER_DAISHO]
-name="Daisho"
-
-[ARMOR_PIT_MASTER]
-name="Pit Master"
-
-[ARMOR_PATRIARCH_MANTLE]
-name="Patriarch Mantle"
-
-[ARMOR_ORIENTAL_WRAPPINGS]
-name="Oriental Wrappings"
-
-[ARMOR_SUNRISE_CUIRASS]
-name="Sunrise Cuirass"
-
-[ARMOR_ADAMANTINE_PLATEMAIL]
-name="Adamantine Platemail"
-
-[ARMOR_BRUTE_BREASTPLATE]
-name="Brute Breastplate"
-
-[ARMOR_VINDICATOR_MAIL]
-name="Vindicator Mail"
-
-[ARMOR_SUPER_NIGHTFALL]
-name="Nightfall Cuirass"
-
-[ARMOR_VIPER]
-name="Viper Armor"
-
-[ARMOR_SUPER_SAMURAI]
-name="O-yoroi"
-
-[ARMOR_SHAMAN]
-name="Shamanic Harness"
-
-[HELM_TAILED_CASQUE]
-name="Tailed Casque"
-
-[HELM_NIGHTFALL_HEADPIECE]
-name="Nightfall Headpiece"
-
-[HELM_SUPER_SECOND_WIND]
-name="Second Wind"
-
-[HELM_GUARDIAN]
-name="Guardian Helm"
-
-[HELM_HEXAPOD]
-name="Hexapod"
-
-[HELM_STOUT_CASQUE]
-name="Stout Casque"
-
-[HELM_ADAMANTINE_ARMET]
-name="Adamantine Armet"
-
-[HELM_MASK_OF_HORROR]
-name="Mask of Horror"
-
-[HELM_ASCENDANCY]
-name="Ascendancy Helm"
-
-[HELM_SUPER_SAMURAI]
-name="Mempo"
-
-[RANGED_WEIGHED_KUNAI]
-name="Weighed Kunai"
-
-[RANGED_THROWING_SICKLES]
-name="Throwing Sickles"
-
-[RANGED_THROWING_AXE]
-name="Throwing Axes"
-
-[RANGED_SUPER_BOOMERANG]
-name="Piercers"
-
-[MAGIC_WAVE]
-name="Force Wave"
-
-[MAGIC_FIRE_SPLASH]
-name="Fire Splash"
-
-[WEAPON_HW14_BROOM]
-name="Broomstick"
-
-[ARMOR_HW14_WICKED_VEIL]
-name="Wicked Veil"
-
-[HELM_HW14_PUMPKIN]
-name="Pumpkinhead"
-
-[HELM_HW14_WITCH]
-name="Witch Hat"
-
-[WEAPON_HW14_SCYTHE]
-name="Grim Scythe"
-
-[RANGED_ONLY]
-name="Given ranged weapon only"
-
-[WEAPON_LYNX_CLAWS]
-name="Lynx's Claws"
-
-[WEAPON_HERMIT_SWORDS]
-name="Hermit's Swords"
-
-[WEAPON_BUTCHER_KNIVES]
-name="Butcher's Cleavers"
-
-[WEAPON_WASP_NAGINATA]
-name="Wasp's Naginata"
-
-[WEAPON_WIDOW_FANS]
-name="Widow's Fans"
-
-[WEAPON_SHOGUN_KATANA]
-name="Shogun's Katana"
+[WEAPON_SUPER_BIG_SWORD]
+name = "Devastator"
 
 [WEAPON_TITAN_SWORD]
-name="Titan's Desolator"
-
-[WEAPON_SECTIONAL_SCYTHE]
-name="Mowers"
-
-[WEAPON_TONFA_GUNS]
-name="Blaster Tonfas"
-
-[WEAPON_TEC_GLAIVE]
-name="Fretsaw"
-
-[ARMOR_LUMINOSITY]
-name="Luminosity Plate"
-
-[ARMOR_REDSHIFT]
-name="Redshift"
-
-[ARMOR_ALLOY]
-name="Alloy Armor"
-
-[ARMOR_SUPER_FUSION]
-name="Fusion Core"
-
-[ARMOR_INFERNO]
-name="Inferno Carapace"
-
-[HELM_INFERNO]
-name="Inferno Headpiece"
-
-[HELM_ADVANCED_CONICAL]
-name="Advanced Conical Helmet"
-
-[HELM_SUPER_PREDATOR]
-name="Mask of Prey"
-
-[HELM_QUASAR]
-name="Quasar"
-
-[HELM_ANGER]
-name="Marauder"
+name = "Titan's Desolator"
 
 [WEAPON_UNKNOWN]
-name="Unknown Weapon"
+name = "Unknown Weapon"
+
+[WEAPON_RAID_KARCER_SET]
+name = "Claws of Perversity"
+
+[WEAPON_C3_z3]
+name = ""
+
+[WEAPON_GLAIVE_25]
+name = "God Eater"
+
+[WEAPON_HUNTER_CLAWS]
+name = ""
+
+[WEAPON_NUNCHAKU_DANCEOFSTATIC_25]
+name = "Dance of Static"
+
+[BODY_BRICK]
+name = ""
+
+[BODY_CANDY]
+name = ""
+
+[BODY_FEAR]
+name = ""
+
+[BODY_HUNTER]
+name = ""
+
+[BODY_INVISIBLE]
+name = ""
+
+[BODY_KENJI]
+name = ""
+
+[BODY_MONKEY]
+name = ""
+
+[BODY_SCAVENGER_1]
+name = ""
+
+[BODY_SCAVENGER_2]
+name = ""
+
+[BODY_SCAVENGER_4]
+name = ""
+
+[BODY_SHIN]
+name = ""
+
+[BODY_SMOTHER]
+name = ""
+
+[BODY_SON_OF_THE_SUN]
+name = ""
+
+[BODY_TENTACLE_SKELETON]
+name = ""
+
+[BODY_WOMAN]
+name = ""
+
+[BODY_LYNX]
+name = ""
+
+[BODY_BUTCHER]
+name = ""
+
+[ARMOR_WASP]
+name = ""
+
+[ARMOR_HUNTRESS]
+name = ""
+
+[ARMOR_SHOGUN]
+name = ""
+
+[BODY_FUTURE_MAY]
+name = ""
+
+[BODY_TITAN]
+name = "Titan's Body"
 
 [ARMOR_UNKNOWN]
-name="Unknown Armor"
+name = "Unknown Armor"
 
-[HELM_UNKNOWN]
-name="Unknown Helm"
+[ARMOR_C3_z3]
+name = ""
 
-[RANGED_UNKNOWN]
-name="Unknown Ranged Weapon"
+[ARMOR_WOMAN_RONIN]
+name = ""
 
-[MAGIC_UNKNOWN]
-name="Unknown Power"
+[ARMOR_WOMAN_LUMINOSITY]
+name = ""
 
-[WEAPON_XMAS15_CANES]
-name="Caramel Shuang Gou"
+[ARMOR_WOMAN_ALLOY]
+name = ""
 
-[ARMOR_XMAS15_SANTA]
-name="Frosty Breastplace"
+[ARMOR_WOMAN_GREEN]
+name = ""
 
-[HELM_XMAS15_HORNS]
-name="Antlers Of The Forest Spirit"
+[ARMOR_WOMAN_REDSHIFT]
+name = ""
 
-[HELM_XMAS15_SANTA]
-name="Face of Christmas"
+[ARMOR_WOMAN_BARBARIAN]
+name = ""
 
-[RANGED_XMAS15_SNOWBALLS]
-name="Snow charges"
+[ARMOR_BIG_BEAST_SHELL]
+name = ""
 
-[WEAPON_XMAS14_CANES]
-name="Candy Canes"
+[ARMOR_BIG_CENTURION]
+name = ""
 
-[ARMOR_XMAS14_SANTA]
-name="Christmas Spirit"
+[ARMOR_BIG_QUILTED]
+name = ""
 
-[HELM_XMAS14_HORNS]
-name="Reindeer Horns"
+[ARMOR_BIG_SHROUD]
+name = ""
 
-[HELM_XMAS14_SANTA]
-name="Beard of Frost"
+[ARMOR_BIG_SPIKE]
+name = ""
 
-[RANGED_XMAS14_SNOWBALLS]
-name="Snowballs"
-
-[MAGIC_LEVEL_RESTRICTION]
-name="Magic level {0}"
-
-[HELM_CRYSTALLINE]
-name="Crystalloid Visor"
-
-[HELM_SUPER_LASER]
-name="Laserbeam Mask"
-
-[HELM_TUBES]
-name="Xenon Helm"
-
-[HELM_CYBER_MASK]
-name="Mandible Mask"
-
-[HELM_CYBER_SAMURAI]
-name="Formics Headgear"
-
-[MAGIC_DEATH_RAY]
-name="Force Ray"
-
-[MAGIC_ACID_CLOUD]
-name="Toxic Cloud"
-
-[RANGED_CIRCULAR_SAW]
-name="Circular Saws"
-
-[RANGED_SUPER_MINE]
-name="Landmines"
-
-[ARMOR_POLYTOXINE_LORICA]
-name="Polytoxine Lorica"
-
-[ARMOR_SPACE_GOWN]
-name="Space Gown"
-
-[ARMOR_GALAXY_TUNIC]
-name="Galaxy Tunic"
-
-[WEAPON_TEC_KNIVES]
-name="Hack Knives"
-
-[WEAPON_COMPOSITE_SCYTHE]
-name="Reaver"
-
-[WEAPON_COMPOSITE_STAFF]
-name="Telescopic Staff"
-
-[WEAPON_COMPOSITE_SPEAR]
-name="Thruster"
-
-[WEAPON_POWER_FISTS]
-name="Pneumo Fists"
-
-[WEAPON_SUPER_COMPOSITE_SWORD]
-name="Composite Sword"
-
-[WEAPON_SHOCKER_CLAWS]
-name="Shocker Claws"
-
-[ARMOR_SUPER_MERC_SUIT]
-name="Mercenary Vest"
+[ARMOR_REDSHIFT_BIG]
+name = ""
 
 [ARMOR_XENOMORPH]
-name="Alien Cloak"
+name = "Alien Cloak"
 
-[RANGED_BLASTER]
-name="Incinerator"
+[ARMOR_LEVEL_RESTRICTION]
+name = "Armor level {0}"
 
-[ARMOR_HALF-LIFE]
-name="Half-life Armor"
+[ARMOR_EGYPT_25]
+name = "Scarab's Dream"
 
-[ARMOR_OUTWORLD_VEST]
-name="Outworld Vest"
+[ARMOR_RAID_KARCER_SET]
+name = "Legarthy"
 
-[ARMOR_FACELESS_TUNIC]
-name="Faceless's Tunic"
+[ARMOR_ZONE7_HERO1]
+name = ""
 
-[ARMOR_MEMBRANE_CUIRASS]
-name="Membrane Cuirass"
+[ARMOR_ANCIENT]
+name = ""
 
-[ARMOR_NAVIGATORS_COAT]
-name="Navigator's Coat"
+[BODY_VULCAN]
+name = ""
 
-[HELM_NAVIGATORS_BREATH_MASK]
-name="Navigator's Breath Mask"
+[BODY_MEGALITH]
+name = ""
 
-[HELM_FACELESS_MASK]
-name="Faceless's Mask"
+[BODY_FUNGUS]
+name = ""
 
-[HELM_VISOR]
-name="Elders' Visor"
+[BODY_FISH]
+name = ""
 
-[HELM_PROTECTOR]
-name="Protector's Headgear"
+[BODY_HUNGER]
+name = ""
 
-[RANGED_SUPER_BLADE]
-name="Dissecting Blade"
+[BODY_HOAXEN]
+name = ""
 
-[RANGED_THORNS]
-name="Mortal Thorns"
+[BODY_WAR]
+name = ""
 
-[RANGED_LOTOS]
-name="Lotos of Pain"
+[BODY_GATEKEEPER]
+name = ""
 
-[MAGIC_SAWMILL]
-name="Torturer's Rage"
+[BODY_SATURN]
+name = ""
 
-[MAGIC_FIRE_AURA]
-name="Wrath of Flame"
+[BODY_RAVANA]
+name = ""
 
-[WEAPON_ELECTRO_HAMMERS]
-name="Thunder Hammers"
+[BODY_WHISPER]
+name = ""
 
-[WEAPON_FIRE_BATONS]
-name="Flame clubs"
+[HEAD_SCAVENGER_1]
+name = ""
 
-[WEAPON_KNOBSTICKS]
-name="Orbs of pain"
+[HEAD_SCAVENGER_2]
+name = ""
 
-[WEAPON_GLAIVEBOW]
-name="Cobra's Tooth"
+[HEAD_SCAVENGER_4]
+name = ""
 
-[WEAPON_RIFLE]
-name="Plasma rifle"
+[HEAD_SCAVEN]
+name = ""
 
-[WEAPON_HW15_SCYTHE]
-name="Blade Of Death"
+[HEAD_DISCIPLE]
+name = ""
 
-[WEAPON_HW15_BROOM]
-name="Devil's broom"
+[HEAD_KENJI]
+name = ""
 
-[ARMOR_HW15_WICKED_VEIL]
-name="Mist Cloak"
+[HEAD_RAVANA]
+name = ""
 
-[HELM_HW15_WITCH]
-name="Witch Hat"
+[HEAD_MEPHISTO]
+name = ""
 
-[HELM_HW15_PUMPKIN]
-name="Obsessed Pumpkin"
+[HEAD_LYNX]
+name = ""
 
-[RANGED_HW15_SKULL]
-name="Flame skull"
+[HEAD_HERMIT]
+name = ""
 
-[ARMOR_HW19_SET]
-name="Grim Mantle"
+[HEAD_BUTCHER]
+name = ""
 
-[HELM_1_HW19_SET]
-name="Feisty Vegetable"
+[HEAD_RHINO]
+name = ""
 
-[HELM_2_HW19_SET]
-name="Ghost Cap"
+[HEAD_WASP]
+name = ""
 
-[RANGED_HW19_SET]
-name="Harbinger of Madness"
+[HEAD_HUNTRESS]
+name = ""
 
-[WEAPON_1_HW19_SET]
-name="Winged Darkness` Claws"
+[HEAD_TITAN]
+name = "Titan's Head"
 
-[WEAPON_2_HW19_SET]
-name="Blade of Eternal Pain"
+[HEAD_SHROUD]
+name = ""
 
-[ARMOR_CHNY20_HOODIE]
-name="Game Fan`s Hoodie"
+[HEAD_CYPHER]
+name = ""
 
-[HELM_CHNY20_PANDA]
-name="Adorable Panda"
+[HEAD_ANCIENT]
+name = ""
 
-[WEAPON_CHNY20_PANDA]
-name="Panda Cuddles"
+[HEAD_CORSAIR]
+name = ""
 
-[WEAPON_CHNY20_STAFF]
-name="Chinese Dragon Staff"
+[HEAD_FUTURE_MAY]
+name = ""
 
-[ARMOR_CHNY20_TRADITIONAL]
-name="Dragon's Scale"
+[HEAD_TITANS_ARMY1]
+name = ""
 
-[HELM_CHNY20_TRADITIONAL]
-name="Hat of Generous Gifts"
+[HEAD_TITANS_ARMY2]
+name = ""
 
-[RANGED_CHNY20_TRADITIONAL]
-name="Burning Battle Citrus"
+[HEAD_TITANS_ARMY3]
+name = ""
 
-[RANGED_VAL20_AXE]
-name="Broken Hearts"
+[HEAD_TITANS_ARMY4]
+name = ""
 
-[WEAPON_VAL20_FANS]
-name="Fans Of Passion"
+[HEAD_VULCAN]
+name = ""
 
-[WEAPON_VAL20_TRIDENT]
-name="Fatemaker"
+[HEAD_MEGALITH]
+name = ""
 
-[WEAPON_VAL20_SAI]
-name="Vermeil Fangs"
+[HEAD_FUNGUS]
+name = ""
 
-[HELM_VAL20_WINGS]
-name="Helm of Inspiration"
+[HEAD_FISH]
+name = ""
 
-[ARMOR_VAL20_MANTLE]
-name="Poetic Mantle"
+[HEAD_FATUM]
+name = ""
 
-[WEAPON_HW17_DAGGERS]
-name="Death's Jaw"
+[HEAD_HOAXEN]
+name = ""
 
-[WEAPON_HW17_STAFF]
-name="Voodoo Spine"
+[HEAD_HUNGER]
+name = ""
 
-[RANGED_HW17_NEEDLES]
-name="Cursed Pins"
+[HEAD_WAR]
+name = ""
 
-[HELM_HW17_CYLINDER]
-name="Baroness Cylinder"
+[HEAD_SATURN]
+name = ""
 
-[ARMOR_HW17_CLOAK]
-name="Voodoo Vest"
+[HEAD_HUNTER]
+name = ""
 
-[MAGIC_HW17_VOODOO]
-name="Dark Blood Magic"
+[HEAD_ZONE7_HERO1]
+name = ""
 
-[HELM_WOODOO_HW20]
-name="Face of the Grim Baron"
+[HEAD_ZONE7_HERO2]
+name = ""
 
-[ARMOR_WOODOO_HW20]
-name="Grim Baron's Coat"
+[HEAD_ZONE7_HERO3]
+name = ""
 
-[RANGED_HW20_SKULL]
-name="Grim Baron's Mark"
+[HEAD_BISON_V2]
+name = ""
 
-[ARMOR_CHNY21_BULL]
-name="Armor of majesty"
+[HEAD_BISON_SPIRIT]
+name = ""
 
-[HELM_CHNY21_BULL]
-name="Helmet of ferocity"
+[HEAD_CANDY]
+name = ""
 
-[WEAPON_CHNY21_FAN]
-name="Festive fans"
+[HEAD_NIGHT]
+name = ""
 
-[WEAPON_CHNY21_JIAN]
-name="Victorious jian"
+[HEAD_SMOTHER]
+name = ""
 
-[RANGED_IND21_CHAKRAM]
-name="Chackrams of Overlord"
+[HEAD_VILLAIN]
+name = ""
 
-[ARMOR_IND21_TWILIGHT]
-name="Unbreakable Gift of Gods"
+[HEAD_WHISPER]
+name = ""
 
-[ARMOR_IND21_HOODIE]
-name="Festive Hoody"
+[HEAD_MONKEY]
+name = ""
 
-[HELM_IND21_BLOOD]
-name="Helm of Heaven Keeper"
+[HEAD_BRICK]
+name = ""
 
-[HELM_IND21_TURBAN]
-name="Festive Turban"
+[HEAD_HYPERION]
+name = ""
 
-[WEAPON_IND21_KERIS]
-name="Krises of an Intercessor"
+[HEAD_INVISIBLE]
+name = ""
 
-[WEAPON_IND21_GLAIVEBOW]
-name="Demon Slayer"
+[HEAD_HIT]
+name = "Head damage only"
 
-[RANGED_IND21_KUNAI]
-name="Blades of the Dawn"
+[HEAD_HIT_ENEMY_REGENERATES]
+name = "Head damage only, enemy regenerates"
 
-[WEAPON_AE21_SPEAR]
-name="Hand of Prairie"
+[HEAD_C3_z3]
+name = ""
 
-[RANGED_AE21_TOMAHAWK]
-name="Сhieftain's Tomahawk"
+[HELM_LEVEL_RESTRICTION]
+name = "Helm level {0}"
 
-[ARMOR_AE21_WARRIOR]
-name="Robe of Courage"
+[HELM_UNKNOWN]
+name = "Unknown Helm"
 
-[HELM_AE21_ROACH]
-name="Sachem's  Roach"
-
-[MAGIC_AE21_SPIRIT_PILLAR]
-name="Spirits' Wrath"
-
-[ARMOR_SUMMER21_SANTA]
-name="Jacket of Icy Tenacity"
-
-[HELM_SUMMER21_SANTA]
-name="Unyielding Face of Winter"
-
-[WEAPON_SUMMER21_CANDY]
-name="Caramel Fervor"
-
-[WEAPON_SUMMER21_SWORD]
-name="Beach Punisher"
-
-[RANGED_SUMMER21_DONUT]
-name="Unbroken Donut"
-
-[RANGED_SUMMER21_SQUID]
-name="Furious Squid"
-
-[WEAPON_SUMMER21_TRIDENT]
-name="Conqueror Of The Seas"
-
-[RANGED_SUMMER21_ANCIENT_CHAKRAM]
-name="Breakwaters"
-
-[ARMOR_SUMMER21_LEGIONER]
-name="Coastal Sunset"
-
-[WEAPON_C4_Z1_WARLOCK_STAFF]
-name="Shepherd's Staff"
-
-[ARMOR_C4_Z1_WARLOCK]
-name="Evening Sunset"
-
-[HELM_C4_Z1_WARLOCK]
-name="Face of Tragedy"
-
-[RANGED_C4_Z1_WARLOCK_SHURIKEN]
-name="Morning Star"
-
-[MAGIC_C4_Z1_WARLOCK_DARK_WAVE]
-name="Sloe Thorn"
-
-[WEAPON_LYNX_CLAWS_PAID]
-name="Lynx Claws Replica"
-
-[WEAPON_HERMIT_SWORDS_PAID]
-name="HERMIT'S SWORDS"
-
-[WEAPON_BUTCHER_KNIVES_PAID]
-name="Butcher's Cleavers Replica"
-
-[WEAPON_RAIDSTARTER_SUPER_SABERS]
-name="Lord of the Flame's Swords"
-
-[HELM_BP_S1_GUARDIAN]
-name="Heartwood"
-
-[ARMOR_BP_S1_GUARDIAN]
-name="Deadfall"
-
-[WEAPON_BP_S1_GUARDIAN]
-name="Beast's Fury"
-
-[MAGIC_BP_S1_GUARDIAN]
-name="Death Grip"
-
-[RANGED_BP_S1_GUARDIAN]
-name="Marten's Bite"
-
-[WEAPON_CHNY22_SPEAR]
-name="Tiger's Roar"
-
-[MAGIC_CHNY22_WATERBALL]
-name="Tamer of the Elements"
-
-[RANGED_CHNY22_WEIGHED_KUNAI]
-name="Steal Fang"
-
-[HELM_BP_S2_SKANDA]
-name="Crown of Kali"
-
-[ARMOR_BP_S2_SKANDA]
-name="Heart of Kshatriya"
-
-[WEAPON_BP_S2_SKANDA]
-name="Rage of Indra"
-
-[MAGIC_BP_S2_SKANDA]
-name="Kundalini"
-
-[RANGED_BP_S2_SKANDA]
-name="Sky Shard"
-
-[WEAPON_MINI_EVENT_PERNACH]
-name="Finger of God"
-
-[RANGED_BOAT_FESTIVAL_SUPER_SHURIKEN]
-name="Whirlpool of Petals"
-
-[HELM_BP_S3_WIND_MAKER]
-name="Furious Bull"
-
-[ARMOR_BP_S3_WIND_MAKER]
-name="Shaman's Whisper"
-
-[WEAPON_BP_S3_WIND_MAKER]
-name="Wolf's Grin"
-
-[MAGIC_BP_S3_WIND_MAKER]
-name="Eye of the Storm"
-
-[RANGED_BP_S3_WIND_MAKER]
-name="Tears of the Wind"
-
-[WEAPON_MINI_EVENT_STUFF]
-name="Bane Spore"
-
-[HELM_BP_S4_SCRIPTWRITER]
-name="Lights, camera, action!"
-
-[ARMOR_BP_S4_SCRIPTWRITER]
-name="Fourth Wall"
-
-[WEAPON_BP_S4_SCRIPTWRITER]
-name="Don't cross the director!"
-
-[MAGIC_BP_S4_SCRIPTWRITER]
-name="Smoke and mirrors"
-
-[RANGED_BP_S4_SCRIPTWRITER]
-name="Film Damage"
-
-[WEAPON_MINI_EVENT_KNIFE]
-name="Insatiable Blades"
-
-[RANGED_BP_S5_TIME_SHIFTER]
-name="Chronos's Razor"
-
-[HELM_BP_S5_TIME_SHIFTER]
-name="Stonecold"
-
-[ARMOR_BP_S5_TIME_SHIFTER]
-name="Biting Frost"
-
-[WEAPON_BP_S5_TIME_SHIFTER]
-name="Snowpiercer"
-
-[MAGIC_BP_S5_TIME_SHIFTER]
-name="Continuum"
-
-[WEAPON_SWORD_NY23_PAID_OFFER]
-name="Devotion"
-
-[WEAPON_C1_Z4_NEO_WANDERER]
-name="Neutron Howl"
-
-[ARMOR_C1_Z4_NEO_WANDERER]
-name="Electrostatic"
-
-[HELM_C1_Z4_NEO_WANDERER]
-name="Solar Corona"
-
-[RANGED_C1_Z4_NEO_WANDERER]
-name="Photons"
-
-[MAGIC_C1_Z4_NEO_WANDERER]
-name="Quantum Leap"
-
-[MAGIC_ANNIVERSARY_10TH]
-name="Inmate's Shackles"
-
-[HELM_ANNIVERSARY_10TH]
-name="Lunatic's Eye"
-
-[ARMOR_ANNIVERSARY_10TH]
-name="Snow Blind"
-
-[WEAPON_ANNIVERSARY_10TH]
-name="Vulture's Feather"
-
-[RANGED_ANNIVERSARY_10TH]
-name="Harpy's Bite"
-
-[RANGED_SUN_CHAKRAM]
-name="Zenith"
-
-[WEAPON_SHADOW_DAISHO]
-name="Hero's Will"
-
-[RANGED_NY2024_AXE]
-name="Hel's Kiss"
-
-[HELM_NY2024_SHAKO]
-name="Grenadier's Shako"
-
-[ARMOR_NY2024_VIKING_CLOTHES]
-name="Berserk's Legacy"
-
-[WEAPON_NY2024_MUSKET]
-name="Fury of Austerlitz"
-
-[MAGIC_NY2024_AMULET]
-name="Cold Fusion"
-
-[MAGIC_CYBER_DRAGON_RAY]
-name="Isotope Reactor"
-
-[HELM_CYBER_DRAGON_HEAD]
-name="Dragon's Thirst"
-
-[WEAPON_CYBER_DRAGON_KUSARIGAMA]
-name="Matter Splitter"
-
-[WEAPON_CNY2024]
-name="Sunstroke"
-
-[HELM_CNY2024_MASK]
-name="Daybreak's Visage"
-
-[MAGIC_CNY2024]
-name="Star's Breath"
-
-[WEAPON_8MARCH_24]
-name="Weeper's Sorrow"
-
-[ARMOR_8MARCH_24]
-name="Poison Petal"
-
-[MAGIC_8MARCH_24]
-name="Shivering Earth"
-
-[HELM_RAID_FUNGUS_SET]
-name="All-Seeing Eye"
-
-[ARMOR_RAID_FUNGUS_SET]
-name="Mycelium Guardian"
-
-[MAGIC_INDIA_24]
-name="Highest Measure"
-
-[WEAPON_INDIA_24]
-name="Soul's Lot"
-
-[ARMOR_INDIA_24]
-name="Root of Grief"
-
-[RANGED_RAID_FUNGUS_SET]
-name="Spore Carriers"
-
-[WEAPON_RAID_FUNGUS_SET]
-name="Guardian's Wrath"
-
-[ARMOR_RAID_VOLCANO_SET]
-name="Ash Whisper"
-
-[HELM_RAID_VOLCANO_SET]
-name="Burning Wreath"
-
-[MAGIC_RAID_FUNGUS_SET]
-name="Spores of Discord"
-
-[WEAPON_SICKLE_FALL_24]
-name="False Gods"
-
-[WEAPON_SCYTHE_FALL_24]
-name="Hope Eater"
-
-[HELM_FALL_24]
-name="Poisonеd Wisdom"
-
-[WEAPON_DAGGERS_HW_24]
-name="Loa Twins"
-
-[ARMOR_TRIBAL_HW_24]
-name="Mist Lord"
-
-[MAGIC_CARDS_HW_24]
-name="Major Arcana"
-
-[ARMOR_AZTEC_24]
-name="Ancestral Pride"
-
-[HELM_AZTEC_24]
-name="Face of Metztli"
-
-[WEAPON_RAID_VOLCANO_SET]
-name="Phoenix Song"
-
-[RANGED_RAID_VOLCANO_SET]
-name="Dragon's Tear"
-
-[WEAPON_AZTEC_24]
-name="Judge's Cleaver"
-
-[HELM_FOREST_DEMON_25]
-name="Satyr's Amusement"
-
-[MAGIC_FOREST_DEMON_25]
-name="Requiem"
-
-[WEAPON_FOREST_DEMON_25]
-name="Witch's Cantata"
-
-[HELM_NEW_YEAR_25]
-name="Blinding Truth"
-
-[ARMOR_NEW_YEAR_25]
-name="Will's Prisoner"
-
-[WEAPON_NEW_YEAR_25]
-name="Lost Desire"
-
-[MAGIC_NEW_YEAR_25]
-name="Martyr's Sacrifice"
-
-[MAGIC_AZTEC_24]
-name="Redemptive Gift"
-
-[MAGIC_RESURRECTED_25]
-name="Inner Rebellion"
-
-[MAGIC_RAID_VOLCANO_SET]
-name="Roaring Caldera"
-
-[RANGED_AZTEC_24]
-name="Pain Bound"
-
-[WEAPON_KUSARIGAMA_STRIKING_FALKON_25]
-name="Striking Falcon"
-
-[HELM_HOAXEN_25]
-name="Сhimera Paradox"
-
-[ARMOR_HOAXEN_25]
-name="Fate Cocoon"
-
-[HELM_FUTURIST_25]
-name="GlitchMask"
-
-[ARMOR_REVENANT_25]
-name="Will's Prisoner"
-
-[RANGED_KARCER_HUNGER_SET]
-name="Snake Reaper"
-
-[WEAPON_FUTURIST_25]
-name="Hadronic Decay"
-
-[ARMOR_FUTURIST_25]
-name="Crimson Hunter"
+[HELM_AGNISSEAL]
+name = "Agni's Seal"
 
 [HELM_RAID_KARCER_SET]
-name="Comatosis"
+name = "Comatosis"
+
+[RANGED_TITANS_HARPOON]
+name = "Titan's Harpoon"
+
+[RANGED_WAR_AXES]
+name = ""
+
+[RANGED_FISH]
+name = ""
+
+[RANGED_C3_z3]
+name = ""
+
+[RANGED_LEVEL_RESTRICTION]
+name = "Ranged weapon level {0}"
+
+[RANGED_ONLY]
+name = "Given ranged weapon only"
+
+[RANGED_UNKNOWN]
+name = "Unknown Ranged Weapon"
+
+[RANGED_BLASTER_ROGUESFORTUNE_25]
+name = "Rogue's Fortune"
+
+[RANGED_RAID_KARCER_SET]
+name = "Snake Repear"
+
+[MAGIC_ICE_PINS]
+name = ""
+
+[MAGIC_MIND_THROW]
+name = "Mind Throw"
+
+[MAGIC_BUTCHER_EARTHQUAKE]
+name = ""
+
+[MAGIC_ARCANE_BALL]
+name = ""
+
+[MAGIC_ASTEROID-Node2]
+name = ""
+
+[MAGIC_ASTEROID-Node4]
+name = ""
+
+[MAGIC_C3_z3]
+name = ""
+
+[MAGIC_HIT_BOX]
+name = ""
+
+[MAGIC_HUNGER_CLAWS]
+name = ""
+
+[MAGIC_LEVEL_RESTRICTION]
+name = "Magic level {0}"
+
+[MAGIC_MINE]
+name = ""
+
+[MAGIC_RAT_WAVE]
+name = ""
+
+[MAGIC_RESURRECTED_25]
+name = "Inner Rebellion"
+
+[MAGIC_UNKNOWN]
+name = "Unknown Power"
+
+[MAGIC_VERTICAL_TRIGGER]
+name = ""
+
+[MAGIC_WAR_WHIRL]
+name = ""
+
+[MAGIC_DARK_WAVE]
+name = ""
+
+[MAGIC_ENERGY_BALL_PINK_25]
+name = "Thorn Dome"
+
+[MAGIC_FEAR_RAY]
+name = ""
+
+[MAGIC_ICE_BALL]
+name = ""
+
+[MAGIC_PROJECTILE]
+name = ""
+
+[MAGIC_GAZEOFTHEVOID_25]
+name = "Gaze of the Void"
+
+[HELM_FINAL_HARMONY]
+name = "Crown of Harmony"
+
+[HELM_FINAL_CHAOS]
+name = "Crown of Chaos"
+
+[WEAPON_C2_Z3_SENTINEL_SPEAR]
+name = "Sentinel`s Hand"
+
+[ARMOR_C2_Z3_SENTINEL]
+name = "Sentinel`s Armor"
+
+[HELM_C2_Z3_SENTINEL]
+name = "Sentinel`s Conical Helm"
+
+[RANGED_C2_Z3_SENTINEL_SHURIKEN]
+name = "Sentinel`s Blades"
+
+[MAGIC_C2_Z3_SENTINEL_DRAGON]
+name = "Sentinel`s Spirit"
+
+[ARMOR_XMAS16_SANTA]
+name = "Winter Breath Jacket"
+
+[HELM_XMAS16_HORNS]
+name = "Christmas Trophy"
+
+[HELM_XMAS16_SANTA]
+name = "Frost Beard"
+
+[WEAPON_XMAS16_CANDY]
+name = "Candy Rage"
+
+[WEAPON_XMAS16_GLAIVE]
+name = "Ringing Spruce Whirl"
+
+[RANGED_XMAS16_COOKIE]
+name = "Gingerbread Surprises"
+
+[ARMOR_VAL18_HOODIE]
+name = "Game Fan`s Hoodie"
+
+[HELM_VAL18_PANDA]
+name = "Adorable Panda"
+
+[WEAPON_VAL18_PANDA]
+name = "Panda Cuddles"
+
+[WEAPON_CHNY18_STAFF]
+name = "Chinese Dragon Staff"
+
+[ARMOR_CHNY18_TRADITIONAL]
+name = "Dragon's Scale"
+
+[HELM_CHNY18_TRADITIONAL]
+name = "Hat of Generous Gifts"
+
+[ARMOR_NY18_MANTLE]
+name = "Padded Jacket"
+
+[HELM_NY18_HAT]
+name = "Fur Ear-Flap"
+
+[WEAPON_NY18_AXES]
+name = "Surprise Waffles"
+
+[WEAPON_NY18_MACE]
+name = "Caramel Boom"
+
+[RANGED_NY18_DONUT]
+name = "Juicy Donut"
+
+[MAGIC_NY18_SNOWBALL]
+name = "Sugar Flash"
+
+[ARMOR_HW16_SET]
+name = "Spider-king coat"
+
+[HELM_1_HW16_SET]
+name = "Pumpkin of madness"
+
+[HELM_2_HW16_SET]
+name = "Nightmare hat"
+
+[RANGED_HW16_SET]
+name = "Demon`s wing"
+
+[WEAPON_1_HW16_SET]
+name = "Dissector of hopes"
+
+[WEAPON_2_HW16_SET]
+name = "Pain and Panic"
+
+[MAGIC_XMAS16_ICEBALL]
+name = "Shard of Eternal Ice"
+
+[RANGED_VAL17_AXE]
+name = "Broken Hearts"
+
+[WEAPON_VAL17_FANS]
+name = "Fans Of Passion"
+
+[WEAPON_VAL17_TRIDENT]
+name = "Fatemaker"
+
+[WEAPON_VAL17_SAI]
+name = "Vermeil Fangs"
+
+[HELM_VAL17_WINGS]
+name = "Helm of Inspiration"
+
+[ARMOR_VAL17_MANTLE]
+name = "Poetic Mantle"
+
+[WEAPON_C2_Z2_MONK_KATAR]
+name = "Monk's Katars"
+
+[ARMOR_C2_Z2_MONK]
+name = "Monk's Robe"
+
+[HELM_C2_Z2_MONK]
+name = "Monk's Helm"
+
+[RANGED_C2_Z2_MONK_SHURIKEN]
+name = "Monk's Shurikens"
+
+[MAGIC_C2_Z2_MONK_ROOT_STUN]
+name = "Monk's Amulet"
+
+[WEAPON_KNIVES]
+name = "Knives"
+
+[WEAPON_KNUCKLES]
+name = "Knuckles"
+
+[WEAPON_SAI]
+name = "Sai"
+
+[WEAPON_STEEL_BATONS]
+name = "Steel Batons"
+
+[WEAPON_MACHETE]
+name = "Machetes"
+
+[WEAPON_DAGGERS]
+name = "Daggers"
+
+[WEAPON_NINJA_SWORD]
+name = "Ninja Sword"
+
+[WEAPON_STAFF]
+name = "Staff"
+
+[WEAPON_SWORDS]
+name = "Swords"
+
+[WEAPON_NUNCHAKU]
+name = "Nunchacku"
+
+[WEAPON_STEEL_NUNCHAKU]
+name = "Steel Nunchacku"
+
+[WEAPON_SHUANG_GOU]
+name = "Shuang Gou"
+
+[WEAPON_YARI]
+name = "Yari"
+
+[WEAPON_CRESCENT_KNIVES]
+name = "Crescent Knives"
+
+[WEAPON_STILETTOS]
+name = "Stilettos"
+
+[WEAPON_HEAVY_STAFF]
+name = "Heavy Staff"
+
+[WEAPON_AXES]
+name = "Axes"
+
+[WEAPON_STEEL_CLAWS]
+name = "Steel Claws"
+
+[WEAPON_KATANA]
+name = "Katana"
+
+[WEAPON_BIG_SWORDS]
+name = "Big Swords"
+
+[WEAPON_NAGINATA]
+name = "Naginata"
+
+[WEAPON_CHINESE_SWORDS]
+name = "Chinese Swords"
+
+[WEAPON_BUTTERFLY_SWORDS]
+name = "Butterfly Swords"
+
+[WEAPON_GOLDEN_KATANA]
+name = "Golden Katana"
+
+[WEAPON_MACES]
+name = "Maces"
+
+[WEAPON_GLAIVE]
+name = "Glaive"
+
+[WEAPON_KUSARIGAMA]
+name = "Kusarigama"
+
+[WEAPON_SICKLES]
+name = "Sickles"
+
+[WEAPON_MOON_SABERS]
+name = "Moon Sabers"
+
+[WEAPON_TWO_HANDED_MACE]
+name = "Two-handed Mace"
+
+[WEAPON_DADAO]
+name = "Dadao"
+
+[WEAPON_MAGARI_YARI]
+name = "Magari Yari"
+
+[WEAPON_BATTLE_HAMMERS]
+name = "Battle Hammers"
+
+[WEAPON_SILVER_GLAIVE]
+name = "Silver Glaive"
+
+[WEAPON_HEAVY_KUSARIGAMA]
+name = "Heavy Kusarigama"
+
+[WEAPON_SUPER_KUSARIGAMA]
+name = "Blood Reaper"
+
+[WEAPON_SUPER_AXES]
+name = "Harrier Hooks"
+
+[WEAPON_SUPER_KHOPESH]
+name = "Pharaoh’s Khopeshes"
+
+[WEAPON_SUPER_STAFF]
+name = "Staff of Night"
+
+[ARMOR_ROBE]
+name = "Robe"
+
+[ARMOR_OLD_LEATHER]
+name = "Old Leather Jacket"
+
+[ARMOR_KENDO]
+name = "Kendo Breastplate"
+
+[ARMOR_LEATHER]
+name = "Leather Jacket"
+
+[ARMOR_BARBARIAN]
+name = "Barbarian Armor"
+
+[ARMOR_CHAIN_ROBE]
+name = "Apprentice’s Chainmail"
+
+[ARMOR_BRONZE]
+name = "Bronze Armor"
+
+[ARMOR_IMHOTEP]
+name = "Imhotep Cuirass"
+
+[ARMOR_SHADOW]
+name = "Shadow Armor"
+
+[ARMOR_MANTLE_OF_NIGHT]
+name = "Mantle of Night"
+
+[ARMOR_RED_LOTUS]
+name = "Red Lotus"
+
+[ARMOR_DRAGONS_BLOOD]
+name = "Dragon Blood"
+
+[ARMOR_BEAST_SHELL]
+name = "Beast Shell"
+
+[ARMOR_SUPER_CROW]
+name = "Crow’s Bane"
+
+[ARMOR_SUPER_CLOAK]
+name = "Sentinel Coat"
+
+[HELM_KENDO_MASK]
+name = "Kendo Mask"
+
+[HELM_CONICAL_HAT]
+name = "Conical Hat"
+
+[HELM_SOLDIER_KABUTO]
+name = "Soldier’s Kabuto"
+
+[HELM_GABLED]
+name = "Pointed Helm"
+
+[HELM_GREEN_MASK]
+name = "Snake Mask"
+
+[HELM_LOBSTER]
+name = "Lobster Helm"
+
+[HELM_KABUTO]
+name = "Kabuto"
+
+[HELM_HARDENED]
+name = "Hardened Helm"
+
+[HELM_STEEL]
+name = "Steel Helm"
+
+[HELM_HORNED]
+name = "Horned Helm"
+
+[HELM_CRESCENT]
+name = "Crescent Helm"
+
+[HELM_SPIKE]
+name = "Spike Helm"
+
+[HELM_DAWN]
+name = "Dawn Tiara"
+
+[HELM_CROWN_OF_NIGHT]
+name = "Crown of Night"
+
+[HELM_SAMURAIS]
+name = "Samurai Helm"
+
+[HELM_TWO_FACED]
+name = "Two-faced Helm"
+
+[HELM_BEAST]
+name = "Beast Helm"
+
+[HELM_SUPER_MASK]
+name = "Sacral Mask"
+
+[HELM_SUPER_JOKER]
+name = "Jester’s Benediction"
+
+[RANGED_SHURIKENS]
+name = "Shurikens"
+
+[RANGED_THROWING_DAGGERS]
+name = "Throwing Daggers"
+
+[RANGED_KUNAI]
+name = "Kunai"
+
+[RANGED_HUNTERS_KNIVES]
+name = "Hunter's Knives"
+
+[RANGED_SILVER_SHURIKENS]
+name = "Silver Shurikens"
+
+[RANGED_THROWING_SPIKES]
+name = "Throwing Spikes"
+
+[RANGED_CHAKRAM]
+name = "Chakram"
+
+[RANGED_GHOST_KUNAI]
+name = "Ghostly Kunai"
+
+[RANGED_ANCIENT_CHAKRAM]
+name = "Ancient Chakram"
+
+[RANGED_SUPER_SHURIKEN]
+name = "Star Blade"
+
+[RANGED_SUPER_AXES]
+name = "Bat Wings"
+
+[RANGED_SUPER_CHAKRAM_JEWELS]
+name = "Jewel of the East"
+
+[RANGED_SUPER_CHAKRAM_BLADES]
+name = "Harvester of Souls"
+
+[MAGIC_ENERGY_BALL]
+name = "Energy Ball"
+
+[MAGIC_FIRE_BALL]
+name = "Fire Ball"
+
+[MAGIC_LIGHTNING_ARROW]
+name = "Lightning Arrow"
+
+[MAGIC_FIRE_PILLAR]
+name = "Fire Pillar"
+
+[WEAPON_KERIS]
+name = "Krises"
+
+[WEAPON_TONFA]
+name = "Tonfas"
+
+[WEAPON_LABRYS_AXES]
+name = "Labryses"
+
+[WEAPON_TWO_HANDED_CUDGEL]
+name = "Two-handed Cudgel"
+
+[WEAPON_WANDERER_STAFF]
+name = "Wanderer's Staff"
+
+[ARMOR_RONIN]
+name = "Ronin Doublet"
+
+[ARMOR_GUARD]
+name = "Guard's Harness"
+
+[ARMOR_CHAIN]
+name = "Chainmail"
+
+[ARMOR_BLOOD_MASTER]
+name = "Scarlet Leather"
+
+[ARMOR_STRONG_BARBARIAN]
+name = "Sturdy Barbarian Armor"
+
+[ARMOR_MANTIS]
+name = "Mantis Harness"
+
+[ARMOR_LEGIONER]
+name = "Legionnaire Armor"
+
+[ARMOR_EMERALD_BREASTPLATE]
+name = "Emerald Mail"
+
+[ARMOR_RED_STEEL]
+name = "Red Platemail"
+
+[ARMOR_MOON]
+name = "Moon Shroud"
+
+[ARMOR_DRAGON]
+name = "Radiant Platemail"
+
+[ARMOR_ASSASSIN]
+name = "Assassin's Robe"
+
+[ARMOR_HAWK]
+name = "Hawk Mantle"
+
+[ARMOR_TWILIGHT]
+name = "Twilight Shroud"
+
+[ARMOR_GILDED]
+name = "Gilded Platemail"
+
+[ARMOR_STORM_CUIRASS]
+name = "Aegis of Winds"
+
+[HELM_BLOOD]
+name = "Blood Casque"
+
+[HELM_TAIL]
+name = "Plumed Headpiece"
+
+[HELM_BRONZE]
+name = "Bronze Casque"
+
+[HELM_VIKING]
+name = "Longhorn"
+
+[HELM_MANTIS]
+name = "Mantis Cap"
+
+[HELM_GENERAL]
+name = "General’s Kabuto"
+
+[HELM_MOON]
+name = "Moon Crown"
+
+[HELM_LEGIONER]
+name = "Legionnaire Helm"
+
+[HELM_IRON]
+name = "Iron Casque"
+
+[HELM_SUN]
+name = "Radiant Headpiece"
+
+[HELM_EMERALD]
+name = "Emerald Cap"
+
+[HELM_SILVER]
+name = "Silver Kabuto"
+
+[HELM_ASSASSIN]
+name = "Assassin's Cowl"
+
+[HELM_SNOW]
+name = "Snow Cap"
+
+[HELM_DARKNESS]
+name = "Twilight Crown"
+
+[HELM_SUPER_HORNED]
+name = "Doom Crest"
+
+[RANGED_ASSASSIN_KUNAI]
+name = "Assassin's Kunai"
+
+[RANGED_HUNTING_KUNAI]
+name = "Steel Darts"
+
+[HELM_STARTER_PACK]
+name = "Iron Mask"
+
+[HELM_LIGHT]
+name = "Light Helm"
+
+[HELM_CLOSED]
+name = "Close Helm"
+
+[ARMOR_QUILTED]
+name = "Riveted Jacket"
+
+[ARMOR_FOREIGN]
+name = "Red Doublet"
+
+[ARMOR_GREEN]
+name = "Snake Harness"
+
+[WEAPON_INDIAN_KATAR]
+name = "Katars"
+
+[WEAPON_CEREMONIAL_SHUANG_GOU]
+name = "Ceremonial Shuang Gou"
+
+[WEAPON_SHARP_TONFA]
+name = "Blade Tonfas"
+
+[WEAPON_NORTHERN_HAMMER]
+name = "Northern Hammer"
+
+[WEAPON_DADAO_JANISSARY]
+name = "Ronin's Dadao"
+
+[WEAPON_SILVER_SPEAR]
+name = "Silver Spear"
+
+[WEAPON_TRIDENT]
+name = "Trident"
+
+[WEAPON_Z6_KNIVES]
+name = "Meteorite Knives"
+
+[WEAPON_SUPER_SABERS]
+name = "Ornamental Sabers"
+
+[WEAPON_CHINESE_SABERS]
+name = "Oriental Sabers"
+
+[ARMOR_SENSEI_KENDO]
+name = "Kendo Armor"
+
+[ARMOR_CENTURION]
+name = "Centurion Mail"
+
+[ARMOR_GRAND_CHAIN]
+name = "Grand Chainmail"
+
+[ARMOR_SPIKE]
+name = "Spike Breastplate"
+
+[ARMOR_GILDED_CENTURION]
+name = "Gilded Centurion Mail"
+
+[ARMOR_RAVEN]
+name = "Raven Mantle"
+
+[ARMOR_DARK]
+name = "Dark Cuirass"
+
+[ARMOR_SHADOW_MASTER]
+name = "Shadow Carapace"
+
+[ARMOR_ROYAL_BREASTPLATE]
+name = "Heraldic Cuirass"
+
+[ARMOR_DRAGON_JAWS]
+name = "Scale Breastplate"
+
+[ARMOR_CELESTIAL]
+name = "Celestial Gown"
+
+[ARMOR_HARBINGER_CUIRASS]
+name = "Harbinger Cuirass"
+
+[ARMOR_NECROMANCER]
+name = "Death Mark"
+
+[ARMOR_BLACK_BUFFALO]
+name = "Black Buffalo"
+
+[ARMOR_SUPER_BANSHEE]
+name = "Banshee's Cry"
+
+[ARMOR_CEREMONIAL]
+name = "Ceremonial Armor"
+
+[HELM_SMART_GABLED]
+name = "Parade Helm"
+
+[HELM_CRIMSON]
+name = "Copper Helm"
+
+[HELM_DARK_LEGIONER]
+name = "Dark Legionnaire Helm"
+
+[HELM_TRITON]
+name = "Dreadening Mask"
+
+[HELM_DARK]
+name = "Dark Mask"
+
+[HELM_GOLDEN]
+name = "Gilded Helm"
+
+[HELM_KNIGHTLY]
+name = "Paragon Armet"
+
+[HELM_ICARUS]
+name = "Avian Sallet"
+
+[HELM_IFRIT]
+name = "Ifrit Shell"
+
+[HELM_CELESTIAL]
+name = "Celestial Crown"
+
+[HELM_DEMON]
+name = "Demon Crest"
+
+[HELM_SPARTIAN]
+name = "Spartan Coif"
+
+[HELM_RITUAL]
+name = "Ritual Headpiece"
+
+[HELM_CEREMONIAL]
+name = "Ceremonial Mask"
+
+[RANGED_NEEDLE]
+name = "Needles"
+
+[RANGED_HEAVY_SHURIKENS]
+name = "Weighted Shurikens"
+
+[RANGED_SHURIKEN_OF_DARKNESS]
+name = "Shurikens of Night"
+
+[RANGED_ASSASSINS_DAGGER]
+name = "Assassin's Daggers"
+
+[RANGED_SUPER_KUNAI]
+name = "Lunar Knives"
+
+[RANGED_BEAST_AXES]
+name = "Beast Axes"
+
+[RANGED_KUNAI_OF_WIND]
+name = "Kunai of the Wind"
+
+[RANGED_DRAGON_WINGS]
+name = "Dragon Wings"
+
+[RANGED_CHAKRAM_OF_MASTER]
+name = "Keen Chakram"
+
+[RANGED_SUPER_DAGGERS]
+name = "Crystalline Spikes"
+
+[MAGIC_BOMB]
+name = "Dark Blast"
+
+[MAGIC_MASS_BOMB]
+name = "Dark Implosion"
+
+[MAGIC_WATER_BALL]
+name = "Water Ball"
+
+[MAGIC_ASTEROID]
+name = "Asteroid"
+
+[WEAPON_SUPER_HAMMERS]
+name = "Imhotep Pounders"
+
+[WEAPON_SUPER_KNUCKLES]
+name = "Coral Prickles"
+
+[WEAPON_SUPER_FANS]
+name = "Emerald Cutters"
+
+[WEAPON_Z6_NUNCHAKU]
+name = "Heavy Nunchacku"
+
+[WEAPON_SUPER_SPEAR]
+name = "The Sting"
+
+[WEAPON_SUPER_GLAIVE]
+name = "Sapphire Fang"
+
+[WEAPON_SUPER_SAI]
+name = "Harbinger Sai"
+
+[ARMOR_SUPER_SPIKED]
+name = "Fury Carapace"
+
+[ARMOR_SUPER_HALO]
+name = "Hallow Aegis"
+
+[ARMOR_SUPER_FEATHERED]
+name = "Ravenheart"
+
+[HELM_SUPER_SCARAB]
+name = "Scarab Shell"
+
+[HELM_SUPER_STRIPS]
+name = "Goldenhorn"
+
+[HELM_SUPER_PLUMED]
+name = "Imperial Plume"
+
+[WEAPON_STARTER_PACK_TONFA]
+name = "Rabid Tonfas"
+
+[WEAPON_STRANGER_KNUCKLES]
+name = "Spiny Knuckles"
+
+[WEAPON_MORNING_STARS]
+name = "Morning Stars"
+
+[WEAPON_SUPER_LEECHES]
+name = "Leeches"
+
+[WEAPON_ELEGANT_STAFF]
+name = "Elegant Staff"
+
+[WEAPON_FLAYER_CLAWS]
+name = "Flayer Claws"
+
+[WEAPON_BARBED_GLAIVE]
+name = "Barbed Glaive"
+
+[WEAPON_SUPER_DRAGON_TEETH]
+name = "Dragon Teeth"
+
+[WEAPON_KUKRIS]
+name = "Kukris"
+
+[WEAPON_QUENCHED_SAI]
+name = "Quenched Sai"
+
+[WEAPON_KEEN_KATANA]
+name = "Keen Katana"
+
+[WEAPON_SUPER_DAISHO]
+name = "Daisho"
+
+[ARMOR_PIT_MASTER]
+name = "Pit Master"
+
+[ARMOR_PATRIARCH_MANTLE]
+name = "Patriarch Mantle"
+
+[ARMOR_ORIENTAL_WRAPPINGS]
+name = "Oriental Wrappings"
+
+[ARMOR_SUNRISE_CUIRASS]
+name = "Sunrise Cuirass"
+
+[ARMOR_ADAMANTINE_PLATEMAIL]
+name = "Adamantine Platemail"
+
+[ARMOR_BRUTE_BREASTPLATE]
+name = "Brute Breastplate"
+
+[ARMOR_VINDICATOR_MAIL]
+name = "Vindicator Mail"
+
+[ARMOR_SUPER_NIGHTFALL]
+name = "Nightfall Cuirass"
+
+[ARMOR_VIPER]
+name = "Viper Armor"
+
+[ARMOR_SUPER_SAMURAI]
+name = "O-yoroi"
+
+[ARMOR_SHAMAN]
+name = "Shamanic Harness"
+
+[HELM_TAILED_CASQUE]
+name = "Tailed Casque"
+
+[HELM_NIGHTFALL_HEADPIECE]
+name = "Nightfall Headpiece"
+
+[HELM_SUPER_SECOND_WIND]
+name = "Second Wind"
+
+[HELM_GUARDIAN]
+name = "Guardian Helm"
+
+[HELM_HEXAPOD]
+name = "Hexapod"
+
+[HELM_STOUT_CASQUE]
+name = "Stout Casque"
+
+[HELM_ADAMANTINE_ARMET]
+name = "Adamantine Armet"
+
+[HELM_MASK_OF_HORROR]
+name = "Mask of Horror"
+
+[HELM_ASCENDANCY]
+name = "Ascendancy Helm"
+
+[HELM_SUPER_SAMURAI]
+name = "Mempo"
+
+[RANGED_WEIGHED_KUNAI]
+name = "Weighed Kunai"
+
+[RANGED_THROWING_SICKLES]
+name = "Throwing Sickles"
+
+[RANGED_THROWING_AXE]
+name = "Throwing Axes"
+
+[RANGED_SUPER_BOOMERANG]
+name = "Piercers"
+
+[MAGIC_WAVE]
+name = "Force Wave"
+
+[MAGIC_FIRE_SPLASH]
+name = "Fire Splash"
+
+[WEAPON_HW14_BROOM]
+name = "Broomstick"
+
+[ARMOR_HW14_WICKED_VEIL]
+name = "Wicked Veil"
+
+[HELM_HW14_PUMPKIN]
+name = "Pumpkinhead"
+
+[HELM_HW14_WITCH]
+name = "Witch Hat"
+
+[WEAPON_HW14_SCYTHE]
+name = "Grim Scythe"
+
+[WEAPON_LYNX_CLAWS]
+name = "Lynx's Claws"
+
+[WEAPON_HERMIT_SWORDS]
+name = "Hermit's Swords"
+
+[WEAPON_BUTCHER_KNIVES]
+name = "Butcher's Cleavers"
+
+[WEAPON_WASP_NAGINATA]
+name = "Wasp's Naginata"
+
+[WEAPON_WIDOW_FANS]
+name = "Widow's Fans"
+
+[WEAPON_SHOGUN_KATANA]
+name = "Shogun's Katana"
+
+[WEAPON_SECTIONAL_SCYTHE]
+name = "Mowers"
+
+[WEAPON_TONFA_GUNS]
+name = "Blaster Tonfas"
+
+[WEAPON_TEC_GLAIVE]
+name = "Fretsaw"
+
+[ARMOR_LUMINOSITY]
+name = "Luminosity Plate"
+
+[ARMOR_REDSHIFT]
+name = "Redshift"
+
+[ARMOR_ALLOY]
+name = "Alloy Armor"
+
+[ARMOR_SUPER_FUSION]
+name = "Fusion Core"
+
+[ARMOR_INFERNO]
+name = "Inferno Carapace"
+
+[HELM_INFERNO]
+name = "Inferno Headpiece"
+
+[HELM_ADVANCED_CONICAL]
+name = "Advanced Conical Helmet"
+
+[HELM_SUPER_PREDATOR]
+name = "Mask of Prey"
+
+[HELM_QUASAR]
+name = "Quasar"
+
+[HELM_ANGER]
+name = "Marauder"
+
+[WEAPON_XMAS15_CANES]
+name = "Caramel Shuang Gou"
+
+[ARMOR_XMAS15_SANTA]
+name = "Frosty Breastplace"
+
+[HELM_XMAS15_HORNS]
+name = "Antlers Of The Forest Spirit"
+
+[HELM_XMAS15_SANTA]
+name = "Face of Christmas"
+
+[RANGED_XMAS15_SNOWBALLS]
+name = "Snow charges"
+
+[WEAPON_XMAS14_CANES]
+name = "Candy Canes"
+
+[ARMOR_XMAS14_SANTA]
+name = "Christmas Spirit"
+
+[HELM_XMAS14_HORNS]
+name = "Reindeer Horns"
+
+[HELM_XMAS14_SANTA]
+name = "Beard of Frost"
+
+[RANGED_XMAS14_SNOWBALLS]
+name = "Snowballs"
+
+[HELM_CRYSTALLINE]
+name = "Crystalloid Visor"
+
+[HELM_SUPER_LASER]
+name = "Laserbeam Mask"
+
+[HELM_TUBES]
+name = "Xenon Helm"
+
+[HELM_CYBER_MASK]
+name = "Mandible Mask"
+
+[HELM_CYBER_SAMURAI]
+name = "Formics Headgear"
+
+[MAGIC_DEATH_RAY]
+name = "Force Ray"
+
+[MAGIC_ACID_CLOUD]
+name = "Toxic Cloud"
+
+[RANGED_CIRCULAR_SAW]
+name = "Circular Saws"
+
+[RANGED_SUPER_MINE]
+name = "Landmines"
+
+[ARMOR_POLYTOXINE_LORICA]
+name = "Polytoxine Lorica"
+
+[ARMOR_SPACE_GOWN]
+name = "Space Gown"
+
+[ARMOR_GALAXY_TUNIC]
+name = "Galaxy Tunic"
+
+[WEAPON_TEC_KNIVES]
+name = "Hack Knives"
+
+[WEAPON_COMPOSITE_SCYTHE]
+name = "Reaver"
+
+[WEAPON_COMPOSITE_STAFF]
+name = "Telescopic Staff"
+
+[WEAPON_COMPOSITE_SPEAR]
+name = "Thruster"
+
+[WEAPON_POWER_FISTS]
+name = "Pneumo Fists"
+
+[WEAPON_SUPER_COMPOSITE_SWORD]
+name = "Composite Sword"
+
+[WEAPON_SHOCKER_CLAWS]
+name = "Shocker Claws"
+
+[ARMOR_SUPER_MERC_SUIT]
+name = "Mercenary Vest"
+
+[RANGED_BLASTER]
+name = "Incinerator"
+
+[ARMOR_HALF-LIFE]
+name = "Half-life Armor"
+
+[ARMOR_OUTWORLD_VEST]
+name = "Outworld Vest"
+
+[ARMOR_FACELESS_TUNIC]
+name = "Faceless's Tunic"
+
+[ARMOR_MEMBRANE_CUIRASS]
+name = "Membrane Cuirass"
+
+[ARMOR_NAVIGATORS_COAT]
+name = "Navigator's Coat"
+
+[HELM_NAVIGATORS_BREATH_MASK]
+name = "Navigator's Breath Mask"
+
+[HELM_FACELESS_MASK]
+name = "Faceless's Mask"
+
+[HELM_VISOR]
+name = "Elders' Visor"
+
+[HELM_PROTECTOR]
+name = "Protector's Headgear"
+
+[RANGED_SUPER_BLADE]
+name = "Dissecting Blade"
+
+[RANGED_THORNS]
+name = "Mortal Thorns"
+
+[RANGED_LOTOS]
+name = "Lotos of Pain"
+
+[MAGIC_SAWMILL]
+name = "Torturer's Rage"
+
+[MAGIC_FIRE_AURA]
+name = "Wrath of Flame"
+
+[WEAPON_ELECTRO_HAMMERS]
+name = "Thunder Hammers"
+
+[WEAPON_FIRE_BATONS]
+name = "Flame clubs"
+
+[WEAPON_KNOBSTICKS]
+name = "Orbs of pain"
+
+[WEAPON_GLAIVEBOW]
+name = "Cobra's Tooth"
+
+[WEAPON_RIFLE]
+name = "Plasma rifle"
+
+[WEAPON_HW15_SCYTHE]
+name = "Blade Of Death"
+
+[WEAPON_HW15_BROOM]
+name = "Devil's broom"
+
+[ARMOR_HW15_WICKED_VEIL]
+name = "Mist Cloak"
+
+[HELM_HW15_WITCH]
+name = "Witch Hat"
+
+[HELM_HW15_PUMPKIN]
+name = "Obsessed Pumpkin"
+
+[RANGED_HW15_SKULL]
+name = "Flame skull"
+
+[ARMOR_HW19_SET]
+name = "Grim Mantle"
+
+[HELM_1_HW19_SET]
+name = "Feisty Vegetable"
+
+[HELM_2_HW19_SET]
+name = "Ghost Cap"
+
+[RANGED_HW19_SET]
+name = "Harbinger of Madness"
+
+[WEAPON_1_HW19_SET]
+name = "Winged Darkness` Claws"
+
+[WEAPON_2_HW19_SET]
+name = "Blade of Eternal Pain"
+
+[ARMOR_CHNY20_HOODIE]
+name = "Game Fan`s Hoodie"
+
+[HELM_CHNY20_PANDA]
+name = "Adorable Panda"
+
+[WEAPON_CHNY20_PANDA]
+name = "Panda Cuddles"
+
+[WEAPON_CHNY20_STAFF]
+name = "Chinese Dragon Staff"
+
+[ARMOR_CHNY20_TRADITIONAL]
+name = "Dragon's Scale"
+
+[HELM_CHNY20_TRADITIONAL]
+name = "Hat of Generous Gifts"
+
+[RANGED_CHNY20_TRADITIONAL]
+name = "Burning Battle Citrus"
+
+[RANGED_VAL20_AXE]
+name = "Broken Hearts"
+
+[WEAPON_VAL20_FANS]
+name = "Fans Of Passion"
+
+[WEAPON_VAL20_TRIDENT]
+name = "Fatemaker"
+
+[WEAPON_VAL20_SAI]
+name = "Vermeil Fangs"
+
+[HELM_VAL20_WINGS]
+name = "Helm of Inspiration"
+
+[ARMOR_VAL20_MANTLE]
+name = "Poetic Mantle"
+
+[WEAPON_HW17_DAGGERS]
+name = "Death's Jaw"
+
+[WEAPON_HW17_STAFF]
+name = "Voodoo Spine"
+
+[RANGED_HW17_NEEDLES]
+name = "Cursed Pins"
+
+[HELM_HW17_CYLINDER]
+name = "Baroness Cylinder"
+
+[ARMOR_HW17_CLOAK]
+name = "Voodoo Vest"
+
+[MAGIC_HW17_VOODOO]
+name = "Dark Blood Magic"
+
+[HELM_WOODOO_HW20]
+name = "Face of the Grim Baron"
+
+[ARMOR_WOODOO_HW20]
+name = "Grim Baron's Coat"
+
+[RANGED_HW20_SKULL]
+name = "Grim Baron's Mark"
+
+[ARMOR_CHNY21_BULL]
+name = "Armor of majesty"
+
+[HELM_CHNY21_BULL]
+name = "Helmet of ferocity"
+
+[WEAPON_CHNY21_FAN]
+name = "Festive fans"
+
+[WEAPON_CHNY21_JIAN]
+name = "Victorious jian"
+
+[RANGED_IND21_CHAKRAM]
+name = "Chackrams of Overlord"
+
+[ARMOR_IND21_TWILIGHT]
+name = "Unbreakable Gift of Gods"
+
+[ARMOR_IND21_HOODIE]
+name = "Festive Hoody"
+
+[HELM_IND21_BLOOD]
+name = "Helm of Heaven Keeper"
+
+[HELM_IND21_TURBAN]
+name = "Festive Turban"
+
+[WEAPON_IND21_KERIS]
+name = "Krises of an Intercessor"
+
+[WEAPON_IND21_GLAIVEBOW]
+name = "Demon Slayer"
+
+[RANGED_IND21_KUNAI]
+name = "Blades of the Dawn"
+
+[WEAPON_AE21_SPEAR]
+name = "Hand of Prairie"
+
+[RANGED_AE21_TOMAHAWK]
+name = "Сhieftain's Tomahawk"
+
+[ARMOR_AE21_WARRIOR]
+name = "Robe of Courage"
+
+[HELM_AE21_ROACH]
+name = "Sachem's  Roach"
+
+[MAGIC_AE21_SPIRIT_PILLAR]
+name = "Spirits' Wrath"
+
+[ARMOR_SUMMER21_SANTA]
+name = "Jacket of Icy Tenacity"
+
+[HELM_SUMMER21_SANTA]
+name = "Unyielding Face of Winter"
+
+[WEAPON_SUMMER21_CANDY]
+name = "Caramel Fervor"
+
+[WEAPON_SUMMER21_SWORD]
+name = "Beach Punisher"
+
+[RANGED_SUMMER21_DONUT]
+name = "Unbroken Donut"
+
+[RANGED_SUMMER21_SQUID]
+name = "Furious Squid"
+
+[WEAPON_SUMMER21_TRIDENT]
+name = "Conqueror Of The Seas"
+
+[RANGED_SUMMER21_ANCIENT_CHAKRAM]
+name = "Breakwaters"
+
+[ARMOR_SUMMER21_LEGIONER]
+name = "Coastal Sunset"
+
+[WEAPON_C4_Z1_WARLOCK_STAFF]
+name = "Shepherd's Staff"
+
+[ARMOR_C4_Z1_WARLOCK]
+name = "Evening Sunset"
+
+[HELM_C4_Z1_WARLOCK]
+name = "Face of Tragedy"
+
+[RANGED_C4_Z1_WARLOCK_SHURIKEN]
+name = "Morning Star"
+
+[MAGIC_C4_Z1_WARLOCK_DARK_WAVE]
+name = "Sloe Thorn"
+
+[WEAPON_LYNX_CLAWS_PAID]
+name = "Lynx Claws Replica"
+
+[WEAPON_HERMIT_SWORDS_PAID]
+name = "HERMIT'S SWORDS"
+
+[WEAPON_BUTCHER_KNIVES_PAID]
+name = "Butcher's Cleavers Replica"
+
+[WEAPON_RAIDSTARTER_SUPER_SABERS]
+name = "Lord of the Flame's Swords"
+
+[HELM_BP_S1_GUARDIAN]
+name = "Heartwood"
+
+[ARMOR_BP_S1_GUARDIAN]
+name = "Deadfall"
+
+[WEAPON_BP_S1_GUARDIAN]
+name = "Beast's Fury"
+
+[MAGIC_BP_S1_GUARDIAN]
+name = "Death Grip"
+
+[RANGED_BP_S1_GUARDIAN]
+name = "Marten's Bite"
+
+[WEAPON_CHNY22_SPEAR]
+name = "Tiger's Roar"
+
+[MAGIC_CHNY22_WATERBALL]
+name = "Tamer of the Elements"
+
+[RANGED_CHNY22_WEIGHED_KUNAI]
+name = "Steal Fang"
+
+[HELM_BP_S2_SKANDA]
+name = "Crown of Kali"
+
+[ARMOR_BP_S2_SKANDA]
+name = "Heart of Kshatriya"
+
+[WEAPON_BP_S2_SKANDA]
+name = "Rage of Indra"
+
+[MAGIC_BP_S2_SKANDA]
+name = "Kundalini"
+
+[RANGED_BP_S2_SKANDA]
+name = "Sky Shard"
+
+[WEAPON_MINI_EVENT_PERNACH]
+name = "Finger of God"
+
+[RANGED_BOAT_FESTIVAL_SUPER_SHURIKEN]
+name = "Whirlpool of Petals"
+
+[HELM_BP_S3_WIND_MAKER]
+name = "Furious Bull"
+
+[ARMOR_BP_S3_WIND_MAKER]
+name = "Shaman's Whisper"
+
+[WEAPON_BP_S3_WIND_MAKER]
+name = "Wolf's Grin"
+
+[MAGIC_BP_S3_WIND_MAKER]
+name = "Eye of the Storm"
+
+[RANGED_BP_S3_WIND_MAKER]
+name = "Tears of the Wind"
+
+[WEAPON_MINI_EVENT_STUFF]
+name = "Bane Spore"
+
+[HELM_BP_S4_SCRIPTWRITER]
+name = "Lights, camera, action!"
+
+[ARMOR_BP_S4_SCRIPTWRITER]
+name = "Fourth Wall"
+
+[WEAPON_BP_S4_SCRIPTWRITER]
+name = "Don't cross the director!"
+
+[MAGIC_BP_S4_SCRIPTWRITER]
+name = "Smoke and mirrors"
+
+[RANGED_BP_S4_SCRIPTWRITER]
+name = "Film Damage"
+
+[WEAPON_MINI_EVENT_KNIFE]
+name = "Insatiable Blades"
+
+[RANGED_BP_S5_TIME_SHIFTER]
+name = "Chronos's Razor"
+
+[HELM_BP_S5_TIME_SHIFTER]
+name = "Stonecold"
+
+[ARMOR_BP_S5_TIME_SHIFTER]
+name = "Biting Frost"
+
+[WEAPON_BP_S5_TIME_SHIFTER]
+name = "Snowpiercer"
+
+[MAGIC_BP_S5_TIME_SHIFTER]
+name = "Continuum"
+
+[WEAPON_SWORD_NY23_PAID_OFFER]
+name = "Devotion"
+
+[WEAPON_C1_Z4_NEO_WANDERER]
+name = "Neutron Howl"
+
+[ARMOR_C1_Z4_NEO_WANDERER]
+name = "Electrostatic"
+
+[HELM_C1_Z4_NEO_WANDERER]
+name = "Solar Corona"
+
+[RANGED_C1_Z4_NEO_WANDERER]
+name = "Photons"
+
+[MAGIC_C1_Z4_NEO_WANDERER]
+name = "Quantum Leap"
+
+[MAGIC_ANNIVERSARY_10TH]
+name = "Inmate's Shackles"
+
+[HELM_ANNIVERSARY_10TH]
+name = "Lunatic's Eye"
+
+[ARMOR_ANNIVERSARY_10TH]
+name = "Snow Blind"
+
+[WEAPON_ANNIVERSARY_10TH]
+name = "Vulture's Feather"
+
+[RANGED_ANNIVERSARY_10TH]
+name = "Harpy's Bite"
+
+[RANGED_SUN_CHAKRAM]
+name = "Zenith"
+
+[WEAPON_SHADOW_DAISHO]
+name = "Hero's Will"
+
+[RANGED_NY2024_AXE]
+name = "Hel's Kiss"
+
+[HELM_NY2024_SHAKO]
+name = "Grenadier's Shako"
+
+[ARMOR_NY2024_VIKING_CLOTHES]
+name = "Berserk's Legacy"
+
+[WEAPON_NY2024_MUSKET]
+name = "Fury of Austerlitz"
+
+[MAGIC_NY2024_AMULET]
+name = "Cold Fusion"
+
+[MAGIC_CYBER_DRAGON_RAY]
+name = "Isotope Reactor"
+
+[HELM_CYBER_DRAGON_HEAD]
+name = "Dragon's Thirst"
+
+[WEAPON_CYBER_DRAGON_KUSARIGAMA]
+name = "Matter Splitter"
+
+[WEAPON_CNY2024]
+name = "Sunstroke"
+
+[HELM_CNY2024_MASK]
+name = "Daybreak's Visage"
+
+[MAGIC_CNY2024]
+name = "Star's Breath"
+
+[WEAPON_8MARCH_24]
+name = "Weeper's Sorrow"
+
+[ARMOR_8MARCH_24]
+name = "Poison Petal"
+
+[MAGIC_8MARCH_24]
+name = "Shivering Earth"
+
+[HELM_RAID_FUNGUS_SET]
+name = "All-Seeing Eye"
+
+[ARMOR_RAID_FUNGUS_SET]
+name = "Mycelium Guardian"
+
+[MAGIC_INDIA_24]
+name = "Highest Measure"
+
+[WEAPON_INDIA_24]
+name = "Soul's Lot"
+
+[ARMOR_INDIA_24]
+name = "Root of Grief"
+
+[RANGED_RAID_FUNGUS_SET]
+name = "Spore Carriers"
+
+[WEAPON_RAID_FUNGUS_SET]
+name = "Guardian's Wrath"
+
+[ARMOR_RAID_VOLCANO_SET]
+name = "Ash Whisper"
+
+[HELM_RAID_VOLCANO_SET]
+name = "Burning Wreath"
+
+[MAGIC_RAID_FUNGUS_SET]
+name = "Spores of Discord"
+
+[WEAPON_SICKLE_FALL_24]
+name = "False Gods"
+
+[WEAPON_SCYTHE_FALL_24]
+name = "Hope Eater"
+
+[HELM_FALL_24]
+name = "Poisonеd Wisdom"
+
+[WEAPON_DAGGERS_HW_24]
+name = "Loa Twins"
+
+[ARMOR_TRIBAL_HW_24]
+name = "Mist Lord"
+
+[MAGIC_CARDS_HW_24]
+name = "Major Arcana"
+
+[ARMOR_AZTEC_24]
+name = "Ancestral Pride"
+
+[HELM_AZTEC_24]
+name = "Face of Metztli"
+
+[WEAPON_RAID_VOLCANO_SET]
+name = "Phoenix Song"
+
+[RANGED_RAID_VOLCANO_SET]
+name = "Dragon's Tear"
+
+[WEAPON_AZTEC_24]
+name = "Judge's Cleaver"
+
+[HELM_FOREST_DEMON_25]
+name = "Satyr's Amusement"
+
+[MAGIC_FOREST_DEMON_25]
+name = "Requiem"
+
+[WEAPON_FOREST_DEMON_25]
+name = "Witch's Cantata"
+
+[HELM_NEW_YEAR_25]
+name = "Blinding Truth"
+
+[ARMOR_NEW_YEAR_25]
+name = "Will's Prisoner"
+
+[WEAPON_NEW_YEAR_25]
+name = "Lost Desire"
+
+[MAGIC_NEW_YEAR_25]
+name = "Martyr's Sacrifice"
+
+[MAGIC_AZTEC_24]
+name = "Redemptive Gift"
+
+[MAGIC_RAID_VOLCANO_SET]
+name = "Roaring Caldera"
+
+[RANGED_AZTEC_24]
+name = "Pain Bound"
+
+[WEAPON_KUSARIGAMA_STRIKING_FALKON_25]
+name = "Striking Falcon"
+
+[HELM_HOAXEN_25]
+name = "Сhimera Paradox"
+
+[ARMOR_HOAXEN_25]
+name = "Fate Cocoon"
+
+[HELM_FUTURIST_25]
+name = "GlitchMask"
+
+[ARMOR_REVENANT_25]
+name = "Will's Prisoner"
+
+[RANGED_KARCER_HUNGER_SET]
+name = "Snake Reaper"
+
+[WEAPON_FUTURIST_25]
+name = "Hadronic Decay"
+
+[ARMOR_FUTURIST_25]
+name = "Crimson Hunter"
 
 [RANGED_FUTURIST_25]
-name="Furious Maria"
+name = "Furious Maria"
 
 [MAGIC_FUTURIST_25]
-name="Plasma Cutter"
+name = "Plasma Cutter"
 
 [RANGED_SHADES_25]
-name="Sons of the Eclipse"
+name = "Sons of the Eclipse"

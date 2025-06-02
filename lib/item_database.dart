@@ -18,6 +18,14 @@
 
 class ItemDatabase {
   static var dictionary = {};
-  static String resolveName(String id) => dictionary[id]?["name"] ?? id;
-  static String resolveDescription(String id) => dictionary[id]?["description"] ?? "";
+  static String resolveName(String id) {
+    var name = dictionary[id]?["name"];
+    if (name == "") {
+      name = id;
+    }
+    return name ?? id;
+  }
+
+  static String resolveDescription(String id) =>
+      dictionary[id]?["description"] ?? "";
 }
