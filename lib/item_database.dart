@@ -24,6 +24,7 @@ enum ItemTrait {
   challenger,
   specialEvent,
   offer,
+  replica,
   setMonk,
   setSentinel,
   setWarlock,
@@ -36,6 +37,7 @@ enum ItemTrait {
   setSporeSoul,
   setVolcano,
   setKarcer,
+  setDragon
 }
 
 extension ItemTraitExtension on ItemTrait {
@@ -55,6 +57,8 @@ extension ItemTraitExtension on ItemTrait {
         return "Special Event Item";
       case ItemTrait.offer:
         return "Offer Exclusive Item";
+      case ItemTrait.replica:
+        return "Replica";
       case ItemTrait.setMonk:
         return "Monk Set";
       case ItemTrait.setSentinel:
@@ -79,6 +83,8 @@ extension ItemTraitExtension on ItemTrait {
         return "Volcano Set";
       case ItemTrait.setKarcer:
         return "Karcer Set";
+      case ItemTrait.setDragon:
+        return "Dragon Set";
     }
   }
 
@@ -98,6 +104,8 @@ extension ItemTraitExtension on ItemTrait {
         return 0x5409DA;
       case ItemTrait.offer:
         return 0xDC8BE0;
+      case ItemTrait.replica:
+        return 0x7F8CAA;
       case ItemTrait.setMonk:
         return 0x3CB371;
 
@@ -133,6 +141,9 @@ extension ItemTraitExtension on ItemTrait {
 
       case ItemTrait.setKarcer:
         return 0xFFFFFF;
+
+      case ItemTrait.setDragon:
+        return 0xFF3F33;
     }
   }
 }

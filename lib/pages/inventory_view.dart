@@ -68,25 +68,55 @@ class _InventoryViewState extends State<InventoryView> {
               Padding(
                   padding:
                       const EdgeInsets.only(bottom: 8.0, left: 8, right: 8),
-                  child: EquipmentSearchBar(
-                    onChanged: (text) {
-                      text = text.toLowerCase();
-                      setState(() {
-                        currentEquipment = allEquipment
-                            .where((e) =>
-                                e.id.toLowerCase().contains(text) ||
-                                e.name.toLowerCase().contains(text) ||
-                                ItemDatabase.getTraits(e.id).where((t) => t.display.toLowerCase().contains(text) || t.name.toLowerCase().contains(text)).isNotEmpty ||
-                                ("equipped".contains(text) &&
-                                    RecordsManager.activeRecord!.isEquipped(e)))
-                            .toList();
-                      });
-                    },
-                    onCleared: () {
-                      setState(() {
-                        currentEquipment = allEquipment;
-                      });
-                    },
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: EquipmentSearchBar(
+                          onChanged: (text) {
+                            text = text.toLowerCase();
+                            setState(() {
+                              currentEquipment = allEquipment
+                                  .where((e) =>
+                                      e.id.toLowerCase().contains(text) ||
+                                      e.name.toLowerCase().contains(text) ||
+                                      ItemDatabase.getTraits(e.id)
+                                          .where((t) =>
+                                              t.display
+                                                  .toLowerCase()
+                                                  .contains(text) ||
+                                              t.name
+                                                  .toLowerCase()
+                                                  .contains(text))
+                                          .isNotEmpty ||
+                                      ("equipped".contains(text) &&
+                                          RecordsManager.activeRecord!
+                                              .isEquipped(e)))
+                                  .toList();
+                            });
+                          },
+                          onCleared: () {
+                            setState(() {
+                              currentEquipment = allEquipment;
+                            });
+                          },
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      Tooltip(
+                        message: "RANGED_SUPER_MINE - Search by ID\nReaver - Search by name\nUnobtainable - Search by traits\nEquipped - Find currently equipped item",
+                        decoration: BoxDecoration(
+                          border: Border.all(width: 1),
+                          borderRadius: BorderRadius.circular(16),
+                          color: Theme.of(context).canvasColor
+                        ),
+                        textStyle: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 14
+                        ),
+                        showDuration: const Duration(seconds: 8),
+                        child: const Icon(Icons.info_outline),
+                      ),
+                    ],
                   )),
               ...entries,
               ListTile(
@@ -158,15 +188,15 @@ class _InventoryViewState extends State<InventoryView> {
             ),
             subtitle: Padding(
               padding: const EdgeInsets.only(left: 8.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Column(
-                  children: [
-                    Text(item.id),
-                    const SizedBox(
-                      height: 12,
-                    ),
-                    Wrap(
+              child: Column(
+                children: [
+                  Align(alignment: Alignment.centerLeft, child: Text(item.id)),
+                  const SizedBox(
+                    height: 12,
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Wrap(
                       spacing: 8,
                       runSpacing: 8,
                       children: ItemDatabase.getTraits(item.id)
@@ -188,9 +218,9 @@ class _InventoryViewState extends State<InventoryView> {
                                 ),
                               ))
                           .toList(),
-                    )
-                  ],
-                ),
+                    ),
+                  )
+                ],
               ),
             ),
             children: [

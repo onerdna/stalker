@@ -1,70 +1,88 @@
 [WEAPON_HUNGER_SCYTHE]
-name = ""
+name = "Hunger Sickles"
+traits = ["unobtainable"]
 
 [WEAPON_WAR_SHUANG_GOU]
-name = ""
+name = "War Shuang Gou"
+traits = ["unobtainable"]
 
 [WEAPON_ELECTRO_BATONS]
-name = ""
+name = "Electric Batons"
+traits = ["unobtainable"]
 
 [WEAPON_TRIANGLE_KNIVES]
-name = ""
+name = "Triangular Knives"
+traits = ["unobtainable"]
 
 [WEAPON_TWO_HANDED_SWORD]
 name = ""
 
 [WEAPON_HEAVY_HAMMER]
-name = ""
+name = "Heavy Hammer"
+traits = ["unobtainable"]
 
 [WEAPON_SENTINEL_KUSARIGAMA]
 name = "Sentinel Kusarigama"
+traits = ["unobtainable"]
 
 [WEAPON_BG_YARI]
-name = ""
+name = "Jumonji Yar"
+traits = ["unobtainable"]
 
 [WEAPON_NODACHI]
-name = ""
+name = "Nodachi"
+traits = ["unobtainable"]
 
 [WEAPON_WAKIDZASHI]
-name = ""
+name = "Wakidzashis"
+traits = ["unobtainable"]
 
 [WEAPON_BG_NAGINATA]
-name = ""
+name = "Bisento"
+traits = ["unobtainable"]
 
 [WEAPON_BG_GLAIVE]
-name = ""
+name = "Glaive"
+traits = ["unobtainable"]
 
 [WEAPON_MERCENARY_CLAWS]
-name = ""
+name = "Three-pronged Claws"
+traits = ["unobtainable"]
 
 [WEAPON_MERCENARY_AXES]
-name = ""
+name = "Spiked Axes"
+traits = ["unobtainable"]
 
 [WEAPON_SAWBLADE]
-name = ""
+name = "Sawblade"
+traits = ["unobtainable"]
 
 [WEAPON_GIANT_SWORD]
-name = ""
+name = "Desolator"
+description = "A weapon that appears to be a smaller version of Titan's Desolator. It has a white blade and black handles instead of metallic navy blue like Titan's. In the 2018 New Year's dojo, a Desolator wrapped in a purple ribbon can be seen on the left."
+traits = ["unobtainable"]
 
 [WEAPON_BATON]
-name = ""
+name = "Batons"
+description = "A weapon very similar to Steel Batons, albeit it is made out of wood and with handles wrapped with black cloth. It is usually depicted in the avatars of all the enemies in the game who are known to actually wield Steel Batons."
+traits = ["unobtainable"]
 
 [WEAPON_CRUSHER]
 name = "Crusher"
+traits = ["unobtainable"]
 
 [WEAPON_DRAGON_KNIVES]
-name = ""
+name = "Dragon Knives"
+traits = ["dragonSet", "unobtainable"]
 
 [WEAPON_TITAN_GIANT_SWORD]
 name = "Titan's Desolator"
 description = "Titan's Desolator is an unobtainable boss weapon used by Titan in his fight against Shadow at the conclusion of Act VII: Revelation. It is a big, heavy sword enchanted with Lifesteal. There is a handle attached on its side to aid in its usage, since the weapon is so heavy that even Titan, despite being aided by his suit, usually only makes slow swings with it."
 traits = ["boss", "unobtainable"]
 
-[WEAPON_WAKIDZASHI-RangedBlade_1]
-name = ""
-
 [WEAPON_RAVANA]
-name = ""
+name = "Ravana's Fists"
+traits = ["unobtainable"]
 
 [WEAPON_MORGANA_SCYTHE]
 name = ""
@@ -73,7 +91,8 @@ name = ""
 name = ""
 
 [WEAPON_DIRECTOR_HUNGER]
-name = ""
+name = "Architect's Sickles"
+traits = ["unobtainable"]
 
 [WEAPON_SHOCKER_CLAWS_ARC]
 name = ""
@@ -83,12 +102,14 @@ name = "Devastator"
 
 [WEAPON_TITAN_SWORD]
 name = "Titan's Desolator"
+traits = ["unobtainable"]
 
 [WEAPON_UNKNOWN]
 name = "Unknown Weapon"
 
 [WEAPON_RAID_KARCER_SET]
 name = "Claws of Perversity"
+traits = ["setKarcer"]
 
 [WEAPON_C3_z3]
 name = ""
@@ -97,49 +118,63 @@ name = ""
 name = "God Eater"
 
 [WEAPON_HUNTER_CLAWS]
-name = ""
+name = "Insectile Claws"
+traits = ["unobtainable"]
 
 [WEAPON_NUNCHAKU_DANCEOFSTATIC_25]
 name = "Dance of Static"
 
 [BODY_BRICK]
-name = ""
+name = "Brick's Body"
+traits = ["unobtainable"]
 
 [BODY_CANDY]
-name = ""
+name = "Candy's Body"
+traits = ["unobtainable"]
 
 [BODY_FEAR]
 name = ""
+traits = ["unobtainable"]
 
 [BODY_HUNTER]
-name = ""
+name = "Stalker's Body"
+traits = ["unobtainable"]
 
 [BODY_INVISIBLE]
-name = ""
+name = "Invisible's Body"
+traits = ["unobtainable"]
 
 [BODY_KENJI]
-name = ""
+name = "Kenji's Body"
+traits = ["unobtainable"]
 
 [BODY_MONKEY]
-name = ""
+name = "Monkey's Body"
+traits = ["unobtainable"]
 
 [BODY_SCAVENGER_1]
 name = ""
+traits = ["unobtainable"]
 
 [BODY_SCAVENGER_2]
 name = ""
+traits = ["unobtainable"]
 
 [BODY_SCAVENGER_4]
 name = ""
+traits = ["unobtainable"]
 
 [BODY_SHIN]
-name = ""
+name = "Shin's Body"
+traits = ["unobtainable"]
 
 [BODY_SMOTHER]
-name = ""
+name = "Smother's Body"
+traits = ["unobtainable"]
 
 [BODY_SON_OF_THE_SUN]
-name = ""
+name = "Son of the Sun's Body"
+traits = ["unobtainable"]
 
 [BODY_TENTACLE_SKELETON]
 name = ""
@@ -148,25 +183,30 @@ name = ""
 name = ""
 
 [BODY_LYNX]
-name = ""
+name = "Lynx's Body"
+traits = ["unobtainable"]
 
 [BODY_BUTCHER]
-name = ""
+name = "Butcher's Body"
+traits = ["unobtainable"]
 
 [ARMOR_WASP]
-name = ""
+name = "Wasp's Armor"
+traits = ["unobtainable"]
 
 [ARMOR_HUNTRESS]
 name = ""
 
 [ARMOR_SHOGUN]
-name = ""
+name = "Shogun's Armor"
+traits = ["unobtainable"]
 
 [BODY_FUTURE_MAY]
 name = ""
 
 [BODY_TITAN]
 name = "Titan's Body"
+traits = ["unobtainable"]
 
 [ARMOR_UNKNOWN]
 name = "Unknown Armor"
@@ -218,42 +258,52 @@ name = "Scarab's Dream"
 
 [ARMOR_RAID_KARCER_SET]
 name = "Legarthy"
+traits = ["setKarcer"]
 
 [ARMOR_ZONE7_HERO1]
 name = ""
 
 [ARMOR_ANCIENT]
-name = ""
+name = "Ancient's Armor"
+traits = ["unobtainable"]
 
 [BODY_VULCAN]
-name = ""
+name = "Vulcan's Body"
+traits = ["unobtainable"]
 
 [BODY_MEGALITH]
-name = ""
+name = "Megalith's Body"
+traits = ["unobtainable"]
 
 [BODY_FUNGUS]
-name = ""
+name = "Fungus's Body"
+traits = ["unobtainable"]
 
 [BODY_FISH]
 name = ""
 
 [BODY_HUNGER]
-name = ""
+name = "Karcer's Body"
+traits = ["unobtainable"]
 
 [BODY_HOAXEN]
-name = ""
+name = "Hoaxen's Body"
+traits = ["unobtainable"]
 
 [BODY_WAR]
 name = ""
 
 [BODY_GATEKEEPER]
-name = ""
+name = "Gatekeeper's Body"
+traits = ["unobtainable"]
 
 [BODY_SATURN]
-name = ""
+name = "Saturn's Body"
+traits = ["unobtainable"]
 
 [BODY_RAVANA]
-name = ""
+name = "Ravana's Body"
+traits = ["unobtainable"]
 
 [BODY_WHISPER]
 name = ""
@@ -271,195 +321,230 @@ name = ""
 name = ""
 
 [HEAD_DISCIPLE]
-name = ""
+name = "Disciple's Head"
+traits = ["unobtainable"]
 
 [HEAD_KENJI]
-name = ""
+name = "Kenji's Head"
+traits = ["unobtainable"]
 
 [HEAD_RAVANA]
-name = ""
+name = "Ravana's Head"
+traits = ["unobtainable"]
 
 [HEAD_MEPHISTO]
 name = ""
 
 [HEAD_LYNX]
-name = ""
+name = "Lynx's Head"
+traits = ["unobtainable"]
 
 [HEAD_HERMIT]
-name = ""
+name = "Hermit's Head"
+traits = ["unobtainable"]
 
 [HEAD_BUTCHER]
-name = ""
+name = "Butcher's Head"
+traits = ["unobtainable"]
 
 [HEAD_RHINO]
 name = ""
 
 [HEAD_WASP]
-name = ""
+name = "Wasp's Head"
+traits = ["unobtainable"]
 
 [HEAD_HUNTRESS]
 name = ""
 
 [HEAD_TITAN]
 name = "Titan's Head"
+traits = ["unobtainable"]
 
 [HEAD_SHROUD]
-name = ""
+name = "Shroud's Head"
+traits = ["unobtainable"]
 
 [HEAD_CYPHER]
-name = ""
+name = "Cypher's Head"
+traits = ["unobtainable"]
 
 [HEAD_ANCIENT]
-name = ""
+name = "Ancient's Head"
+traits = ["unobtainable"]
 
 [HEAD_CORSAIR]
-name = ""
+name = "Corsair's Head"
+traits = ["unobtainable"]
 
 [HEAD_FUTURE_MAY]
 name = ""
 
 [HEAD_TITANS_ARMY1]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_TITANS_ARMY2]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_TITANS_ARMY3]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_TITANS_ARMY4]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_VULCAN]
-name = ""
+name = "Vulcan's Head"
+traits = ["unobtainable"]
 
 [HEAD_MEGALITH]
-name = ""
+name = "Megalith's Head"
+traits = ["unobtainable"]
 
 [HEAD_FUNGUS]
-name = ""
+name = "Fungus's Head"
+traits = ["unobtainable"]
 
 [HEAD_FISH]
 name = ""
 
 [HEAD_FATUM]
-name = ""
+name = "Fatum's Head"
+traits = ["unobtainable"]
 
 [HEAD_HOAXEN]
-name = ""
+name = "Hoaxen's Head"
+traits = ["unobtainable"]
 
 [HEAD_HUNGER]
-name = ""
+name = "Karcer's Head"
+traits = ["unobtainable"]
 
 [HEAD_WAR]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_SATURN]
-name = ""
+name = "Saturn's Head"
+traits = ["unobtainable"]
 
 [HEAD_HUNTER]
-name = ""
+name = "Stalker's Head"
+traits = ["unobtainable"]
 
 [HEAD_ZONE7_HERO1]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_ZONE7_HERO2]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_ZONE7_HERO3]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_BISON_V2]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_BISON_SPIRIT]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_CANDY]
-name = ""
+name = "Candy's Head"
+traits = ["unobtainable"]
 
 [HEAD_NIGHT]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_SMOTHER]
-name = ""
+name = "Smother's Head"
+traits = ["unobtainable"]
 
 [HEAD_VILLAIN]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_WHISPER]
-name = ""
+name = "Whisper's Head"
+traits = ["unobtainable"]
 
 [HEAD_MONKEY]
-name = ""
+name = "Monkey's Head"
+traits = ["unobtainable"]
 
 [HEAD_BRICK]
-name = ""
+name = "Brick's Head"
+traits = ["unobtainable"]
 
 [HEAD_HYPERION]
 name = ""
+traits = ["unobtainable"]
 
 [HEAD_INVISIBLE]
-name = ""
-
-[HEAD_HIT]
-name = "Head damage only"
-
-[HEAD_HIT_ENEMY_REGENERATES]
-name = "Head damage only, enemy regenerates"
+name = "Invisible's Head"
+traits = ["unobtainable"]
 
 [HEAD_C3_z3]
 name = ""
 
 [HELM_UNKNOWN]
 name = "Unknown Helm"
+traits = ["unobtainable"]
 
 [HELM_AGNISSEAL]
 name = "Agni's Seal"
 
 [HELM_RAID_KARCER_SET]
 name = "Comatosis"
+traits = ["setKarcer"]
 
 [RANGED_TITANS_HARPOON]
 name = "Titan's Harpoon"
+description = "Titan uses his extendable hand as his ranged weapon. A mechanical hand shoots out from Titan's arm like a harpoon, which hooks onto Shadow and pulls him towards Titan. He then impales Shadow with his sword and kicks him, knocking him backward. In case the player manages to dodge it, the hand still can hook onto them when it is returning back to Titan."
+traits = ["unobtainable"]
 
 [RANGED_WAR_AXES]
-name = ""
+name = "War Axes"
+description = "Functions similarly to Needles; when thrown, three small axes follow a straight line spreading apart from each other the further they go, making it almost impossible to dodge at a certain distance. The axes itself are identical to Bat Wings appearance-wise. Used by Drakaina."
+traits = ["unobtainable"]
 
 [RANGED_FISH]
-name = ""
+name = "Fishes"
+description = "Big sharp-toothed fishes that will follow a straight line when thrown, similar to a dart. Used by Vortex."
+traits = ["unobtainable"]
 
 [RANGED_C3_z3]
 name = ""
 
-[RANGED_ONLY]
-name = "Given ranged weapon only"
-
 [RANGED_UNKNOWN]
 name = "Unknown Ranged Weapon"
+traits = ["unobtainable"]
 
 [RANGED_BLASTER_ROGUESFORTUNE_25]
 name = "Rogue's Fortune"
-
-[RANGED_RAID_KARCER_SET]
-name = "Snake Repear"
+traits = ["offer"]
 
 [MAGIC_ICE_PINS]
-name = ""
+name = "Ice Pillar"
+description = " Despite the name, it does not function similarly to Fire Pillar. Instead, it resembles Dark Implosion, albeit it takes longer for the user to strike the conjuration into the ground and has taller area of effect. The user smashes an ice crystal into the ground to trigger a straight chain of sharp ice stalagmites and upon hitting the opponent, forms a larger stalagmite underneath causing damage and then crumbling back to the ground. It is hard to dodge without an extremely well timed jump, like all magics with a similar function. Used by Widow, Megalith and Ninja."
+traits = ["unobtainable"]
 
 [MAGIC_MIND_THROW]
 name = "Mind Throw"
+description = "Titan forms a blue energy orb in his hand, then sends another towards the player while holding the original. On impact, Shadow is choked and becomes immobile. Titan then uses the orb to lift Shadow, hold him slightly and slam him back onto the ground."
+traits = ["unobtainable"]
 
 [MAGIC_BUTCHER_EARTHQUAKE]
 name = ""
 
 [MAGIC_ARCANE_BALL]
-name = ""
-
-[MAGIC_ASTEROID-Node2]
-name = ""
-
-[MAGIC_ASTEROID-Node4]
 name = ""
 
 [MAGIC_C3_z3]
@@ -482,6 +567,7 @@ name = "Inner Rebellion"
 
 [MAGIC_UNKNOWN]
 name = "Unknown Power"
+traits = ["unobtainable"]
 
 [MAGIC_VERTICAL_TRIGGER]
 name = ""
@@ -490,7 +576,9 @@ name = ""
 name = ""
 
 [MAGIC_DARK_WAVE]
-name = ""
+name = "Dark Wave"
+description = "Magic that looks like Force Wave, but is black in color instead of white. The magic then became available to the player as Sloe Thorn. Used by Fatum, Karcer, The Blackness, Morgana, Banshee, Puppeteer, Faradeya and Ninja."
+traits = ["unobtainable"]
 
 [MAGIC_ENERGY_BALL_PINK_25]
 name = "Thorn Dome"
@@ -499,13 +587,16 @@ name = "Thorn Dome"
 name = ""
 
 [MAGIC_ICE_BALL]
-name = ""
+name = "Ice Ball"
+description = "The user creates a spiky ice ball in both hands, then launches it towards the opponent where it shatters on impact. It functions similarly to all straight-path thrown magics like Fire Ball. Later, the magic became available as Shard of Eternal Ice and Continuum special event magics which are just functionally identical. Used by Widow and Corporal."
+traits = ["unobtainable"]
 
 [MAGIC_PROJECTILE]
 name = ""
 
 [MAGIC_GAZEOFTHEVOID_25]
 name = "Gaze of the Void"
+traits = ["offer"]
 
 [HELM_FINAL_HARMONY]
 name = "Crown of Harmony"
@@ -515,18 +606,23 @@ name = "Crown of Chaos"
 
 [WEAPON_C2_Z3_SENTINEL_SPEAR]
 name = "Sentinel`s Hand"
+traits = ["setSentinel"]
 
 [ARMOR_C2_Z3_SENTINEL]
 name = "Sentinel`s Armor"
+traits = ["setSentinel"]
 
 [HELM_C2_Z3_SENTINEL]
 name = "Sentinel`s Conical Helm"
+traits = ["setSentinel"]
 
 [RANGED_C2_Z3_SENTINEL_SHURIKEN]
 name = "Sentinel`s Blades"
+traits = ["setSentinel"]
 
 [MAGIC_C2_Z3_SENTINEL_DRAGON]
 name = "Sentinel`s Spirit"
+traits = ["setSentinel"]
 
 [ARMOR_XMAS16_SANTA]
 name = "Winter Breath Jacket"
@@ -623,18 +719,23 @@ name = "Poetic Mantle"
 
 [WEAPON_C2_Z2_MONK_KATAR]
 name = "Monk's Katars"
+traits = ["setMonk"]
 
 [ARMOR_C2_Z2_MONK]
 name = "Monk's Robe"
+traits = ["setMonk"]
 
 [HELM_C2_Z2_MONK]
 name = "Monk's Helm"
+traits = ["setMonk"]
 
 [RANGED_C2_Z2_MONK_SHURIKEN]
 name = "Monk's Shurikens"
+traits = ["setMonk"]
 
 [MAGIC_C2_Z2_MONK_ROOT_STUN]
 name = "Monk's Amulet"
+traits = ["setMonk"]
 
 [WEAPON_KNIVES]
 name = "Knives"
@@ -1376,21 +1477,27 @@ name = "Grim Scythe"
 
 [WEAPON_LYNX_CLAWS]
 name = "Lynx's Claws"
+traits = ["boss"]
 
 [WEAPON_HERMIT_SWORDS]
 name = "Hermit's Swords"
+traits = ["boss"]
 
 [WEAPON_BUTCHER_KNIVES]
 name = "Butcher's Cleavers"
+traits = ["boss"]
 
 [WEAPON_WASP_NAGINATA]
 name = "Wasp's Naginata"
+traits = ["boss"]
 
 [WEAPON_WIDOW_FANS]
 name = "Widow's Fans"
+traits = ["boss"]
 
 [WEAPON_SHOGUN_KATANA]
 name = "Shogun's Katana"
+traits = ["boss"]
 
 [WEAPON_SECTIONAL_SCYTHE]
 name = "Mowers"
@@ -1763,27 +1870,35 @@ name = "Coastal Sunset"
 
 [WEAPON_C4_Z1_WARLOCK_STAFF]
 name = "Shepherd's Staff"
+traits = ["setWarlock"]
 
 [ARMOR_C4_Z1_WARLOCK]
 name = "Evening Sunset"
+traits = ["setWarlock"]
 
 [HELM_C4_Z1_WARLOCK]
 name = "Face of Tragedy"
+traits = ["setWarlock"]
 
 [RANGED_C4_Z1_WARLOCK_SHURIKEN]
 name = "Morning Star"
+traits = ["setWarlock"]
 
 [MAGIC_C4_Z1_WARLOCK_DARK_WAVE]
 name = "Sloe Thorn"
+traits = ["setWarlock"]
 
 [WEAPON_LYNX_CLAWS_PAID]
 name = "Lynx Claws Replica"
+traits = ["replica"]
 
 [WEAPON_HERMIT_SWORDS_PAID]
-name = "HERMIT'S SWORDS"
+name = "Hermit Swords Replica"
+traits = ["replica"]
 
 [WEAPON_BUTCHER_KNIVES_PAID]
 name = "Butcher's Cleavers Replica"
+traits = ["replica"]
 
 [WEAPON_RAIDSTARTER_SUPER_SABERS]
 name = "Lord of the Flame's Swords"
@@ -1988,9 +2103,11 @@ name = "Guardian's Wrath"
 
 [ARMOR_RAID_VOLCANO_SET]
 name = "Ash Whisper"
+traits = ["setVolcano"]
 
 [HELM_RAID_VOLCANO_SET]
 name = "Burning Wreath"
+traits = ["setVolcano"]
 
 [MAGIC_RAID_FUNGUS_SET]
 name = "Spores of Discord"
@@ -2021,9 +2138,11 @@ name = "Face of Metztli"
 
 [WEAPON_RAID_VOLCANO_SET]
 name = "Phoenix Song"
+traits = ["setVolcano"]
 
 [RANGED_RAID_VOLCANO_SET]
 name = "Dragon's Tear"
+traits = ["setVolcano"]
 
 [WEAPON_AZTEC_24]
 name = "Judge's Cleaver"
@@ -2054,6 +2173,7 @@ name = "Redemptive Gift"
 
 [MAGIC_RAID_VOLCANO_SET]
 name = "Roaring Caldera"
+traits = ["setVolcano"]
 
 [RANGED_AZTEC_24]
 name = "Pain Bound"
@@ -2075,6 +2195,7 @@ name = "Will's Prisoner"
 
 [RANGED_KARCER_HUNGER_SET]
 name = "Snake Reaper"
+traits = ["setKarcer"]
 
 [WEAPON_FUTURIST_25]
 name = "Hadronic Decay"

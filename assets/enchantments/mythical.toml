@@ -1,3 +1,10 @@
+["Stone Fetters"]
+weapon = "PERK_DRAGON_SET_STONE"
+ranged = "PERK_DRAGON_SET_STONE"
+magic = "PERK_DRAGON_SET_STONE"
+armor = "PERK_DRAGON_SET_STONE"
+helm = "PERK_DRAGON_SET_STONE"
+
 ["Tempest Rage"]
 weapon = "PERK_MONK_SET_WHIRL"
 ranged = "PERK_MONK_SET_WHIRL"
