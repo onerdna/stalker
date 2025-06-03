@@ -20,15 +20,15 @@ enum EquipmentType { weapon, ranged, magic, armor, helm }
 
 extension EquipmentTypeExtension on EquipmentType {
   static EquipmentType? fromId(String prefix) {
-    if (prefix.startsWith("WEAPON")) {
+    if (prefix.contains("WEAPON")) {
       return EquipmentType.weapon;
-    } else if (prefix.startsWith("RANGED")) {
+    } else if (prefix.contains("RANGED")) {
       return EquipmentType.ranged;
-    } else if (prefix.startsWith("MAGIC")) {
+    } else if (prefix.contains("MAGIC")) {
       return EquipmentType.magic;
-    } else if (prefix.startsWith("ARMOR") || prefix.startsWith("BODY")) {
+    } else if (prefix.contains("ARMOR") || prefix.contains("BODY")) {
       return EquipmentType.armor;
-    } else if (prefix.startsWith("HELM") || prefix.startsWith("HEAD")) {
+    } else if (prefix.contains("HELM") || prefix.contains("HEAD")) {
       return EquipmentType.helm;
     } else {
       return null;

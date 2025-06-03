@@ -17,7 +17,7 @@ name = ""
 name = ""
 
 [WEAPON_SENTINEL_KUSARIGAMA]
-name = ""
+name = "Sentinel Kusarigama"
 
 [WEAPON_BG_YARI]
 name = ""
@@ -58,6 +58,7 @@ name = ""
 [WEAPON_TITAN_GIANT_SWORD]
 name = "Titan's Desolator"
 description = "Titan's Desolator is an unobtainable boss weapon used by Titan in his fight against Shadow at the conclusion of Act VII: Revelation. It is a big, heavy sword enchanted with Lifesteal. There is a handle attached on its side to aid in its usage, since the weapon is so heavy that even Titan, despite being aided by his suit, usually only makes slow swings with it."
+traits = ["boss", "unobtainable"]
 
 [WEAPON_WAKIDZASHI-RangedBlade_1]
 name = ""
@@ -2089,3 +2090,6 @@ name = "Plasma Cutter"
 
 [RANGED_SHADES_25]
 name = "Sons of the Eclipse"
+
+[WEAPON_RITUAL_25]
+name = ""

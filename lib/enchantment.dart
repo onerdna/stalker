@@ -16,9 +16,9 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:stalker/equipment_type.dart';
+import 'package:toml/toml.dart';
 import 'package:xml/xml.dart';
 
 enum EnchantmentTier { simple, medium, mythical }
@@ -30,36 +30,11 @@ class Enchantment {
 
   const Enchantment(this.name, this.tier, this.ids);
 
+  factory Enchantment.fromToml(MapEntry<String, Map<String, String>> entry, EnchantmentTier tier) {
+    return Enchantment(entry.key, tier, entry.value.map((k, v) => MapEntry(EquipmentType.values.byName(k), v)));
+  }
+
   String? idFor(EquipmentType type) => ids[type];
-
-  factory Enchantment.fromJson(
-      Map<String, dynamic> json, EnchantmentTier tier) {
-    final ids = <EquipmentType, String>{};
-    for (final entry in (json['ids'] as Map).entries) {
-      final type = _equipmentTypeFromKey(entry.key);
-      if (type != null) {
-        ids[type] = entry.value;
-      }
-    }
-    return Enchantment(json['name'], tier, ids);
-  }
-
-  static EquipmentType? _equipmentTypeFromKey(String key) {
-    switch (key) {
-      case 'weapon':
-        return EquipmentType.weapon;
-      case 'ranged':
-        return EquipmentType.ranged;
-      case 'magic':
-        return EquipmentType.magic;
-      case 'armor':
-        return EquipmentType.armor;
-      case 'helm':
-        return EquipmentType.helm;
-      default:
-        return null;
-    }
-  }
 }
 
 List<Enchantment> enchantments = [];
@@ -67,10 +42,10 @@ List<Enchantment> enchantments = [];
 Future<void> loadEnchantments() async {
   enchantments.clear();
   for (final tier in EnchantmentTier.values) {
-    final List<dynamic> jsonList = jsonDecode(await rootBundle
-        .loadString("assets/enchantments/${_mapFileNames(tier)}.json"));
-    enchantments.addAll(jsonList.map(
-        (json) => Enchantment.fromJson(json as Map<String, dynamic>, tier)));
+    final Map tomlMap = TomlDocument.parse(await rootBundle
+            .loadString("assets/enchantments/${_mapFileNames(tier)}.toml"))
+        .toMap();
+    enchantments.addAll(tomlMap.entries.map((e) => Enchantment.fromToml(MapEntry(e.key as String, (e.value as Map).cast<String, String>()), tier)));
   }
 }
 
