@@ -12,7 +12,7 @@ class ConfirmButton extends StatefulWidget {
   });
 
   @override
-  _ConfirmButtonState createState() => _ConfirmButtonState();
+  State<ConfirmButton> createState() => _ConfirmButtonState();
 }
 
 class _ConfirmButtonState extends State<ConfirmButton> {

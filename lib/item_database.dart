@@ -22,9 +22,48 @@ enum ItemTrait {
   specialEdition,
   nintendoSwitchEdition,
   challenger,
-  specialEvent,
+  hw14,
+  hw15,
+  hw16,
+  hw18,
+  hw19,
+  hw20,
+  hw21,
+  hw22,
+  hw23,
+  hw24,
+  hw25,
+  xmas14,
+  xmas15,
+  xmas16,
+  xmas17,
+  xmas18,
+  xmas19,
+  xmas20,
+  xmas21,
+  xmas22,
+  xmas23,
+  xmas24,
+  xmas25,
+  vd17,
+  vd18,
+  vd19,
+  vd20,
+  vd21,
+  vd22,
+  vd23,
+  vd24,
+  vd25,
+  chny18,
+  chny21,
+  chny22,
+  chny24,
+  ramNavami21,
+  independence21,
+  summer21,
   offer,
   replica,
+  gift,
   setMonk,
   setSentinel,
   setWarlock,
@@ -37,7 +76,8 @@ enum ItemTrait {
   setSporeSoul,
   setVolcano,
   setKarcer,
-  setDragon
+  setDragon,
+  anniversary10
 }
 
 extension ItemTraitExtension on ItemTrait {
@@ -53,8 +93,6 @@ extension ItemTraitExtension on ItemTrait {
         return "Nintendo Switch Edition";
       case ItemTrait.challenger:
         return "Challenger Weapon";
-      case ItemTrait.specialEvent:
-        return "Special Event Item";
       case ItemTrait.offer:
         return "Offer Exclusive Item";
       case ItemTrait.replica:
@@ -85,6 +123,88 @@ extension ItemTraitExtension on ItemTrait {
         return "Karcer Set";
       case ItemTrait.setDragon:
         return "Dragon Set";
+      case ItemTrait.hw14:
+        return "Halloween 2014";
+      case ItemTrait.hw15:
+        return "Halloween 2015";
+      case ItemTrait.hw16:
+        return "Halloween 2016";
+      case ItemTrait.hw18:
+        return "Halloween 2018";
+      case ItemTrait.hw19:
+        return "Halloween 2019";
+      case ItemTrait.hw20:
+        return "Halloween 2020";
+      case ItemTrait.hw21:
+        return "Halloween 2021";
+      case ItemTrait.hw22:
+        return "Halloween 2022";
+      case ItemTrait.hw23:
+        return "Halloween 2023";
+      case ItemTrait.hw24:
+        return "Halloween 2024";
+      case ItemTrait.hw25:
+        return "Halloween 2025";
+      case ItemTrait.xmas14:
+        return "Christmas 2014";
+      case ItemTrait.xmas15:
+        return "Christmas 2015";
+      case ItemTrait.xmas16:
+        return "Christmas 2016";
+      case ItemTrait.xmas17:
+        return "Christmas 2017";
+      case ItemTrait.xmas18:
+        return "Christmas 2018";
+      case ItemTrait.xmas19:
+        return "Christmas 2019";
+      case ItemTrait.xmas20:
+        return "Christmas 2020";
+      case ItemTrait.xmas21:
+        return "Christmas 2021";
+      case ItemTrait.xmas22:
+        return "Christmas 2022";
+      case ItemTrait.xmas23:
+        return "Christmas 2023";
+      case ItemTrait.xmas24:
+        return "Christmas 2024";
+      case ItemTrait.xmas25:
+        return "Christmas 2025";
+      case ItemTrait.vd17:
+        return "Valentine's Day 2017";
+      case ItemTrait.vd18:
+        return "Valentine's Day 2018";
+      case ItemTrait.vd19:
+        return "Valentine's Day 2019";
+      case ItemTrait.vd20:
+        return "Valentine's Day 2020";
+      case ItemTrait.vd21:
+        return "Valentine's Day 2021";
+      case ItemTrait.vd22:
+        return "Valentine's Day 2022";
+      case ItemTrait.vd23:
+        return "Valentine's Day 2023";
+      case ItemTrait.vd24:
+        return "Valentine's Day 2024";
+      case ItemTrait.vd25:
+        return "Valentine's Day 2025";
+      case ItemTrait.chny18:
+        return "Chinese New Year 2018";
+      case ItemTrait.chny21:
+        return "Chinese New Year 2021";
+      case ItemTrait.chny22:
+        return "Chinese New Year 2022";
+      case ItemTrait.chny24:
+        return "Chinese New Year 2024";
+      case ItemTrait.ramNavami21:
+        return "Ram Navami 2021";
+      case ItemTrait.independence21:
+        return "Independence Day 2021";
+      case ItemTrait.summer21:
+        return "Summer 2021";
+      case ItemTrait.gift:
+        return "Gift";
+      case ItemTrait.anniversary10:
+        return "10th Anniversary";
     }
   }
 
@@ -100,8 +220,6 @@ extension ItemTraitExtension on ItemTrait {
         return 0x00CAFF;
       case ItemTrait.challenger:
         return 0xFFAAAA;
-      case ItemTrait.specialEvent:
-        return 0x5409DA;
       case ItemTrait.offer:
         return 0xDC8BE0;
       case ItemTrait.replica:
@@ -144,6 +262,89 @@ extension ItemTraitExtension on ItemTrait {
 
       case ItemTrait.setDragon:
         return 0xFF3F33;
+
+      case ItemTrait.hw14:
+        return 0xFB9E3A;
+      case ItemTrait.hw15:
+        return 0xFB9E3A;
+      case ItemTrait.hw16:
+        return 0xFB9E3A;
+      case ItemTrait.hw18:
+        return 0xFB9E3A;
+      case ItemTrait.hw19:
+        return 0xFB9E3A;
+      case ItemTrait.hw20:
+        return 0xFB9E3A;
+      case ItemTrait.hw21:
+        return 0xFB9E3A;
+      case ItemTrait.hw22:
+        return 0xFB9E3A;
+      case ItemTrait.hw23:
+        return 0xFB9E3A;
+      case ItemTrait.hw24:
+        return 0xFB9E3A;
+      case ItemTrait.hw25:
+        return 0xFB9E3A;
+      case ItemTrait.xmas14:
+        return 0xA9D2F3;
+      case ItemTrait.xmas15:
+        return 0xA9D2F3;
+      case ItemTrait.xmas16:
+        return 0xA9D2F3;
+      case ItemTrait.xmas17:
+        return 0xA9D2F3;
+      case ItemTrait.xmas18:
+        return 0xA9D2F3;
+      case ItemTrait.xmas19:
+        return 0xA9D2F3;
+      case ItemTrait.xmas20:
+        return 0xA9D2F3;
+      case ItemTrait.xmas21:
+        return 0xA9D2F3;
+      case ItemTrait.xmas22:
+        return 0xA9D2F3;
+      case ItemTrait.xmas23:
+        return 0xA9D2F3;
+      case ItemTrait.xmas24:
+        return 0xA9D2F3;
+      case ItemTrait.xmas25:
+        return 0xA9D2F3;
+      case ItemTrait.vd17:
+        return 0xF7A5C1;
+      case ItemTrait.vd18:
+        return 0xF7A5C1;
+      case ItemTrait.vd19:
+        return 0xF7A5C1;
+      case ItemTrait.vd20:
+        return 0xF7A5C1;
+      case ItemTrait.vd21:
+        return 0xF7A5C1;
+      case ItemTrait.vd22:
+        return 0xF7A5C1;
+      case ItemTrait.vd23:
+        return 0xF7A5C1;
+      case ItemTrait.vd24:
+        return 0xF7A5C1;
+      case ItemTrait.vd25:
+        return 0xF7A5C1;
+      case ItemTrait.chny18:
+        return 0xE57373;
+      case ItemTrait.chny21:
+        return 0xE57373;
+      case ItemTrait.chny22:
+        return 0xE57373;
+      case ItemTrait.chny24:
+        return 0xE57373;
+      case ItemTrait.ramNavami21:
+        return 0xFFE082;
+      case ItemTrait.independence21:
+        return 0xFFE082;
+      case ItemTrait.summer21:
+        return 0xFFE082;
+      case ItemTrait.anniversary10:
+        return 0x254D70;
+      case ItemTrait.gift:
+        return 0x3F7D58;
     }
   }
 }

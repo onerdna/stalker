@@ -166,6 +166,7 @@ class _InventoryViewState extends State<InventoryView> {
                     Navigator.of(ctx).pop();
                     setState(() {
                       currentEquipment.remove(item);
+                      allEquipment.remove(item);
                     });
                   }),
                 ),

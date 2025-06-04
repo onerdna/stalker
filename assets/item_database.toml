@@ -111,11 +111,16 @@ name = "Unknown Weapon"
 name = "Claws of Perversity"
 traits = ["setKarcer"]
 
+[MAGIC_KARCER_HUNGER_SET]
+name = "Mandibula"
+traits = ["setKarcer"]
+
 [WEAPON_C3_z3]
-name = ""
+name = "" # Probably dragon set items
 
 [WEAPON_GLAIVE_25]
 name = "God Eater"
+traits = ["offer"]
 
 [WEAPON_HUNTER_CLAWS]
 name = "Insectile Claws"
@@ -123,6 +128,7 @@ traits = ["unobtainable"]
 
 [WEAPON_NUNCHAKU_DANCEOFSTATIC_25]
 name = "Dance of Static"
+traits = ["offer"]
 
 [BODY_BRICK]
 name = "Brick's Body"
@@ -133,7 +139,11 @@ name = "Candy's Body"
 traits = ["unobtainable"]
 
 [BODY_FEAR]
-name = ""
+name = "Tenebris's Body"
+traits = ["unobtainable"]
+
+[HEAD_FEAR]
+name = "Tenebris's Head"
 traits = ["unobtainable"]
 
 [BODY_HUNTER]
@@ -153,15 +163,15 @@ name = "Monkey's Body"
 traits = ["unobtainable"]
 
 [BODY_SCAVENGER_1]
-name = ""
+name = "Scavenger's Body"
 traits = ["unobtainable"]
 
 [BODY_SCAVENGER_2]
-name = ""
+name = "Scavenger's Body"
 traits = ["unobtainable"]
 
 [BODY_SCAVENGER_4]
-name = ""
+name = "Scavenger's Body"
 traits = ["unobtainable"]
 
 [BODY_SHIN]
@@ -212,7 +222,7 @@ traits = ["unobtainable"]
 name = "Unknown Armor"
 
 [ARMOR_C3_z3]
-name = ""
+name = "" # Probably dragon set item
 
 [ARMOR_WOMAN_RONIN]
 name = ""
@@ -306,16 +316,17 @@ name = "Ravana's Body"
 traits = ["unobtainable"]
 
 [BODY_WHISPER]
-name = ""
+name = "Whisper's Body"
+traits = ["unobtainable"]
 
 [HEAD_SCAVENGER_1]
-name = ""
+name = "Scavenger's Head"
 
 [HEAD_SCAVENGER_2]
-name = ""
+name = "Scavenger's Head"
 
 [HEAD_SCAVENGER_4]
-name = ""
+name = "Scavenger's Head"
 
 [HEAD_SCAVEN]
 name = ""
@@ -492,7 +503,7 @@ name = "Invisible's Head"
 traits = ["unobtainable"]
 
 [HEAD_C3_z3]
-name = ""
+name = "" # Probably dragon set item
 
 [HELM_UNKNOWN]
 name = "Unknown Helm"
@@ -521,7 +532,7 @@ description = "Big sharp-toothed fishes that will follow a straight line when th
 traits = ["unobtainable"]
 
 [RANGED_C3_z3]
-name = ""
+name = "" # Probably dragon set item
 
 [RANGED_UNKNOWN]
 name = "Unknown Ranged Weapon"
@@ -548,7 +559,7 @@ name = ""
 name = ""
 
 [MAGIC_C3_z3]
-name = ""
+name = "" # Probably dragon set item
 
 [MAGIC_HIT_BOX]
 name = ""
@@ -695,6 +706,7 @@ name = "Dissector of hopes"
 
 [WEAPON_2_HW16_SET]
 name = "Pain and Panic"
+traits = ["specialEdition"]
 
 [MAGIC_XMAS16_ICEBALL]
 name = "Shard of Eternal Ice"
@@ -1345,6 +1357,8 @@ name = "Imperial Plume"
 
 [WEAPON_STARTER_PACK_TONFA]
 name = "Rabid Tonfas"
+description = "Rabid Tonfas are a pair of weapons in Shadow Fight 2. They can be obtained only by purchasing the Starter Pack, which appears at level 3 for a limited time."
+traits = ["offer"]
 
 [WEAPON_STRANGER_KNUCKLES]
 name = "Spiny Knuckles"
@@ -1462,6 +1476,8 @@ name = "Fire Splash"
 
 [WEAPON_HW14_BROOM]
 name = "Broomstick"
+description = "Broomstick is a Halloween 2014 special weapon in Shadow Fight 2. It was available in the shop during Halloween 2014 update, and could only be bought for gems. Broomstick works like Staff."
+traits = ["hw14"]
 
 [ARMOR_HW14_WICKED_VEIL]
 name = "Wicked Veil"
@@ -1555,6 +1571,8 @@ name = "Snow charges"
 
 [WEAPON_XMAS14_CANES]
 name = "Candy Canes"
+description = "Candy Canes are the 2014 Christmas special weapon in Shadow Fight 2. Defeating Festivus during the 2014 Christmas update rewarded the players with his weapon, the Candy Canes. These weapons work like the Shuang Gou, and have a unique stance."
+traits = ["xmas14"]
 
 [ARMOR_XMAS14_SANTA]
 name = "Christmas Spirit"
@@ -1750,6 +1768,8 @@ name = "Broken Hearts"
 
 [WEAPON_VAL20_FANS]
 name = "Fans Of Passion"
+description = "Fans of Passion are a 2017 Valentine's Day special weapon in Shadow Fight 2. They were obtainable during the Valentine's Day 2017, 2020, 2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest . Fans of Passion are enchanted with Poisoning. In the Special Edition, they can be bought from the shop."
+traits = ["specialEdition", "vd17", "vd20", "vd21", "vd23"]
 
 [WEAPON_VAL20_TRIDENT]
 name = "Fatemaker"
@@ -1852,6 +1872,8 @@ name = "Caramel Fervor"
 
 [WEAPON_SUMMER21_SWORD]
 name = "Beach Punisher"
+description = "Beach Punisher is the 2021 Summer event special weapon in Shadow Fight 2. This weapon is available exclusive from an offer for $4.49 via in-game purchase. Beach Punisher is enchanted with Frenzy."
+traits = ["summer21", "offer"]
 
 [RANGED_SUMMER21_DONUT]
 name = "Unbroken Donut"
@@ -1890,33 +1912,45 @@ traits = ["setWarlock"]
 
 [WEAPON_LYNX_CLAWS_PAID]
 name = "Lynx Claws Replica"
-traits = ["replica"]
+description = "Lynx Claws Replica is a weapon in Shadow Fight 2. This weapon is available exclusive from an offer via in-game purchase. Lynx Claws Replica is enchanted with Time Bomb."
+traits = ["replica", "offer"]
 
 [WEAPON_HERMIT_SWORDS_PAID]
 name = "Hermit Swords Replica"
-traits = ["replica"]
+description = "Hermit's Swords Replica is a weapon in Shadow Fight 2. This weapon is available exclusive from an offer via in-game purchase. Hermit's Swords Replica is enchanted with Enfeeble."
+traits = ["replica", "offer"]
 
 [WEAPON_BUTCHER_KNIVES_PAID]
 name = "Butcher's Cleavers Replica"
-traits = ["replica"]
+description = "Butcher's Cleavers Replica is a weapon in Shadow Fight 2. This weapon is available exclusive from an offer via in-game purchase. Butcher's Cleavers Replica is enchanted with Bleeding."
+traits = ["replica", "offer"]
 
 [WEAPON_RAIDSTARTER_SUPER_SABERS]
 name = "Lord of the Flame's Swords"
+description = "Lord of the Flame's Swords is a weapon in Shadow Fight 2. This weapon is available exclusive from an offer via in-game purchase. Lord of the Flame's Swords is enchanted with Time Bomb."
+traits = ["offer"]
 
 [HELM_BP_S1_GUARDIAN]
 name = "Heartwood"
+traits = ["setForestGuardian"]
 
 [ARMOR_BP_S1_GUARDIAN]
 name = "Deadfall"
+traits = ["setForestGuardian"]
 
 [WEAPON_BP_S1_GUARDIAN]
 name = "Beast's Fury"
+description = "Beast's Fury is a special weapon in Shadow Fight 2. It is the weapon of the Forest Guardian Set. This weapon is obtainable through the Battle Pass during Christmas and New Year 2022 and 2025 event, by purchase Premium Pass to unlock VIP rewards. Beast's Fury was wielded by Shurale, who was the main boss of the event."
+traits = ["setForestGuardian"]
 
 [MAGIC_BP_S1_GUARDIAN]
 name = "Death Grip"
+description = "Death Grip is a special magic amulet in Shadow Fight 2. This magic is obtainable through the Battle Pass during New Year 2022 and 2025 event, by purchasing Premium Pass to unlock VIP rewards."
+traits = ["setForestGuardian"]
 
 [RANGED_BP_S1_GUARDIAN]
 name = "Marten's Bite"
+traits = ["setForestGuardian"]
 
 [WEAPON_CHNY22_SPEAR]
 name = "Tiger's Roar"
@@ -1929,18 +1963,25 @@ name = "Steal Fang"
 
 [HELM_BP_S2_SKANDA]
 name = "Crown of Kali"
+traits = ["setSkanda"]
 
 [ARMOR_BP_S2_SKANDA]
 name = "Heart of Kshatriya"
+traits = ["setSkanda"]
 
 [WEAPON_BP_S2_SKANDA]
 name = "Rage of Indra"
+description = "Rage Of Indra is a special weapon in Shadow Fight 2. It is the weapon of the Skanda Set. This weapon is obtainable through the Battle Pass during Bihu festival event 2022, by purchase Premium Pass to unlock VIP rewards. Rage Of Indra wielded by Rakshasa, main boss of the event."
+traits = ["setSkanda"]
 
 [MAGIC_BP_S2_SKANDA]
 name = "Kundalini"
+description = "Kundalini is a special magic amulet in Shadow Fight 2. It is the magic of the Skanda Set. This magic is obtainable through the Battle Pass during Bihu festival event 2022, by purchase Premium Pass to unlock VIP rewards."
+traits = ["setSkanda"]
 
 [RANGED_BP_S2_SKANDA]
 name = "Sky Shard"
+traits = ["setSkanda"]
 
 [WEAPON_MINI_EVENT_PERNACH]
 name = "Finger of God"
@@ -1950,36 +1991,53 @@ name = "Whirlpool of Petals"
 
 [HELM_BP_S3_WIND_MAKER]
 name = "Furious Bull"
+traits = ["setCreatorsOfTheWind"]
 
 [ARMOR_BP_S3_WIND_MAKER]
 name = "Shaman's Whisper"
+traits = ["setCreatorsOfTheWind"]
 
 [WEAPON_BP_S3_WIND_MAKER]
 name = "Wolf's Grin"
+description = "Wolf Grin is a special weapon. It is part of the Creator of the Winds set. This item was obtainable during an event in 2022 through a battle pass. Wolf's Grin was wielded by Wolf Wind."
+traits = ["setCreatorsOfTheWind"]
 
 [MAGIC_BP_S3_WIND_MAKER]
 name = "Eye of the Storm"
+description = "Eye of the Storm is a special magic amulet in Shadow Fight 2. It is the magic of the Creators of the Wind Set. This magic is obtainable through the Battle Pass during American Independence Day event 2022, by purchase Premium Pass to unlock VIP rewards. "
+traits = ["setCreatorsOfTheWind"]
 
 [RANGED_BP_S3_WIND_MAKER]
 name = "Tears of the Wind"
+traits = ["setCreatorsOfTheWind"]
 
 [WEAPON_MINI_EVENT_STUFF]
 name = "Bane Spore"
 
 [HELM_BP_S4_SCRIPTWRITER]
 name = "Lights, camera, action!"
+traits = ["setDirector"]
 
 [ARMOR_BP_S4_SCRIPTWRITER]
 name = "Fourth Wall"
+traits = ["setDirector"]
 
 [WEAPON_BP_S4_SCRIPTWRITER]
 name = "Don't cross the director!"
+description = """
+Don't cross the director! is a special weapon in Shadow Fight 2. It is the weapon of the Director Set. Two-handed Blunt is heavy and slow, but its attacks deal high damage, and has medium range. This weapon wielded by Architect, main boss of the event.
+This weapon is obtainable through the Battle Pass during Halloween event 2022, by purchase Premium Pass to unlock VIP rewards.
+"""
+traits = ["setDirector"]
 
 [MAGIC_BP_S4_SCRIPTWRITER]
 name = "Smoke and mirrors"
+description = "Smoke and Mirrors is a special magic amulet in Shadow Fight 2. It is the magic of the Director Set. This magic is obtainable through the Battle Pass during Halloween event 2022, by purchase Premium Pass to unlock VIP rewards."
+traits = ["setDirector"]
 
 [RANGED_BP_S4_SCRIPTWRITER]
 name = "Film Damage"
+traits = ["setDirector"]
 
 [WEAPON_MINI_EVENT_KNIFE]
 name = "Insatiable Blades"
@@ -1989,33 +2047,51 @@ name = "Chronos's Razor"
 
 [HELM_BP_S5_TIME_SHIFTER]
 name = "Stonecold"
+traits = ["setChronos"]
 
 [ARMOR_BP_S5_TIME_SHIFTER]
 name = "Biting Frost"
+traits = ["setChronos"]
 
 [WEAPON_BP_S5_TIME_SHIFTER]
 name = "Snowpiercer"
+description = """
+Snowpiercer is a special weapon in Shadow Fight 2. It is the weapon of the Director Set. This weapon wielded by Freeze Jr., main boss of the event.
+This weapon is obtainable through the Battle Pass during New Year event 2023, by purchase Premium Pass to unlock VIP rewards.
+"""
+traits = ["setChronos"]
 
 [MAGIC_BP_S5_TIME_SHIFTER]
 name = "Continuum"
+description = "Continuum is a special magic amulet in Shadow Fight 2. It is the magic of the Chronos Set. This magic is obtainable through the Battle Pass during New Year event 2023, by purchase Premium Pass to unlock VIP rewards. "
+traits = ["setChronos"]
 
 [WEAPON_SWORD_NY23_PAID_OFFER]
 name = "Devotion"
+description = "The Devotion is a weapon obtained as a new year gift by Nekki in Shadow Fight 2. Players who logged in from December 31st, 2022 to an unspecified date received this weapon along with 100 gems. This weapon has the same moveset from the unobtainable Sawblade one-handed sword wielded by the ghost Mephisto and the fighter Emerald."
+traits = ["xmas23", "gift"]
 
 [WEAPON_C1_Z4_NEO_WANDERER]
 name = "Neutron Howl"
+description = "Neutron Howl is a special weapon in Shadow Fight 2. It is the weapon of the New-wanderer Set. This weapon is obtainable only through purchasing the Neo-wanderer Chest in the raid shop for 399 gems or 8500 shards. Upon purchase, the players may receive the Neutron Howl or other Neo-wanderer item, along with some Charges of Darkness, elixirs or Mystical Coupon. Neutron Howl is enchanted with the mythical enchantment Arcane Martial Art."
+traits = ["setNeoWanderer"]
 
 [ARMOR_C1_Z4_NEO_WANDERER]
 name = "Electrostatic"
+traits = ["setNeoWanderer"]
 
 [HELM_C1_Z4_NEO_WANDERER]
 name = "Solar Corona"
+traits = ["setNeoWanderer"]
 
 [RANGED_C1_Z4_NEO_WANDERER]
 name = "Photons"
+traits = ["setNeoWanderer"]
 
 [MAGIC_C1_Z4_NEO_WANDERER]
 name = "Quantum Leap"
+description = "Quantum Leap is a special magic amulet in Shadow Fight 2. It is the magic amulet of the Neo-wanderer Set. Quantum Leap is obtainable only through purchasing the Neo-wanderer Chest in the raid shop for 399 gems or 8500 shards. Upon purchase, the players may receive the Quantum Leap or other Neo-wanderer item, along with some Charges of Darkness, elixirs or Mystical Coupon. Quantum Leap is enchanted with the mythical enchantment Arcane Martial Art."
+traits = ["setNeoWanderer"]
 
 [MAGIC_ANNIVERSARY_10TH]
 name = "Inmate's Shackles"
@@ -2028,6 +2104,8 @@ name = "Snow Blind"
 
 [WEAPON_ANNIVERSARY_10TH]
 name = "Vulture's Feather"
+description = "Vulture's Feather is a special weapon for event 10th anniversary game. It looks like a dadao with a much reduced blade, its handle is in a striped style with red and white colors."
+traits = ["anniversary10", "offer"]
 
 [RANGED_ANNIVERSARY_10TH]
 name = "Harpy's Bite"
@@ -2037,6 +2115,8 @@ name = "Zenith"
 
 [WEAPON_SHADOW_DAISHO]
 name = "Hero's Will"
+description = "Hero's Will is a weapon obtained as a 10th anniversary gift by Nekki in Shadow Fight 2. Players who logged in from September 20th, 2023 to an unspecified date received this weapon along with 200 gems. This weapon has same moveset as the other Daisho weapons."
+traits = ["gift", "anniversary10"]
 
 [RANGED_NY2024_AXE]
 name = "Hel's Kiss"
@@ -2061,6 +2141,8 @@ name = "Dragon's Thirst"
 
 [WEAPON_CYBER_DRAGON_KUSARIGAMA]
 name = "Matter Splitter"
+description = "Matter Splitter is a special paid weapon that was introduced in the New Year 2024 update of Shadow Fight 2. It can be acquired by purchasing the Cyber-Dragon Pack for $7.99, which also includes the Dragon's Thirst helm and the Isotope Reactor magic. The weapon and the bundle were initially available to all players upon the release of the New Year 2024 update. It is now only available to players who have reached level 5 or to returning players who were not there at its initial release."
+traits = ["offer"]
 
 [WEAPON_CNY2024]
 name = "Sunstroke"
@@ -2073,6 +2155,8 @@ name = "Star's Breath"
 
 [WEAPON_8MARCH_24]
 name = "Weeper's Sorrow"
+description = "Weeper's Sorrow is a special event weapon exclusively dedicated for International Women's Day 2024 in Shadow Fight 2. It can be obtained by purchasing the Women's Day special paid offer for $8.99 USD, which also comes with the armor - Poison Petal, and magic - Shivering Earth. The offer was available for a week starting from March 8, 2024."
+traits = ["offer"]
 
 [ARMOR_8MARCH_24]
 name = "Poison Petal"
@@ -2082,9 +2166,11 @@ name = "Shivering Earth"
 
 [HELM_RAID_FUNGUS_SET]
 name = "All-Seeing Eye"
+tarits = ["setSporeSoul"]
 
 [ARMOR_RAID_FUNGUS_SET]
 name = "Mycelium Guardian"
+tarits = ["setSporeSoul"]
 
 [MAGIC_INDIA_24]
 name = "Highest Measure"
@@ -2097,9 +2183,15 @@ name = "Root of Grief"
 
 [RANGED_RAID_FUNGUS_SET]
 name = "Spore Carriers"
+tarits = ["setSporeSoul"]
 
 [WEAPON_RAID_FUNGUS_SET]
 name = "Guardian's Wrath"
+description = """
+Guardian's Wrath is a special set weapon in Shadow Fight 2. It is the weapon of the Spore Soul Set, which comes with the mythical enchantment Cordyceps.
+This weapon can be acquired by chance from opening a Ritual Chest during the 3rd part of the Ritual Battles Event in 2024. Opening a chest costs 600 Blessings of the Cult, the exclusive currency of the event.
+"""
+tarits = ["setSporeSoul"]
 
 [ARMOR_RAID_VOLCANO_SET]
 name = "Ash Whisper"
@@ -2111,9 +2203,15 @@ traits = ["setVolcano"]
 
 [MAGIC_RAID_FUNGUS_SET]
 name = "Spores of Discord"
+tarits = ["setSporeSoul"]
 
 [WEAPON_SICKLE_FALL_24]
 name = "False Gods"
+description = """
+False Gods is a special event weapon exclusive to the Shadow of Eternity 2024 event in Shadow Fight 2. It can be purchased in a special paid offer for $2.99 USD.
+This weapon is used by Berstuuk, the mad scientist. 
+"""
+traits = ["offer"]
 
 [WEAPON_SCYTHE_FALL_24]
 name = "Hope Eater"
@@ -2138,6 +2236,10 @@ name = "Face of Metztli"
 
 [WEAPON_RAID_VOLCANO_SET]
 name = "Phoenix Song"
+description = """
+Phoenix Song is a special set weapon in Shadow Fight 2. It is the weapon of the Abyss Mark Set, which comes with the mythical enchantment Roaring Luminary.
+This weapon can be acquired by chance from opening a Ritual Chest during the 8th part of the Ritual Battles Event in 2024. Opening a chest costs 600 Blessings of the Cult, the exclusive currency of the event.
+"""
 traits = ["setVolcano"]
 
 [RANGED_RAID_VOLCANO_SET]
@@ -2146,6 +2248,8 @@ traits = ["setVolcano"]
 
 [WEAPON_AZTEC_24]
 name = "Judge's Cleaver"
+description = "Judge's Cleaver is a weapon that can be purchased in a special offer in Shadow Fight 2. It can be purchased for $2.99 USD."
+traits = ["offer"]
 
 [HELM_FOREST_DEMON_25]
 name = "Satyr's Amusement"
@@ -2155,6 +2259,8 @@ name = "Requiem"
 
 [WEAPON_FOREST_DEMON_25]
 name = "Witch's Cantata"
+description = "Witch's Cantata is a weapon that can be purchased in a special offer in Shadow Fight 2. It can be purchased for $4.99 USD."
+traits = ["offer"]
 
 [HELM_NEW_YEAR_25]
 name = "Blinding Truth"
@@ -2164,6 +2270,8 @@ name = "Will's Prisoner"
 
 [WEAPON_NEW_YEAR_25]
 name = "Lost Desire"
+description = "Lost Desire is a special event weapon exclusive to the New Year 2025 event in Shadow Fight 2. It can be purchased in a special paid offer for real money."
+traits = ["offer"]
 
 [MAGIC_NEW_YEAR_25]
 name = "Martyr's Sacrifice"
@@ -2180,6 +2288,8 @@ name = "Pain Bound"
 
 [WEAPON_KUSARIGAMA_STRIKING_FALKON_25]
 name = "Striking Falcon"
+description = "triking Falcon is a weapon that can be purchased in a special offer in Shadow Fight 2. It can be purchased for real money."
+traits = ["offer"]
 
 [HELM_HOAXEN_25]
 name = "Сhimera Paradox"
@@ -2199,6 +2309,8 @@ traits = ["setKarcer"]
 
 [WEAPON_FUTURIST_25]
 name = "Hadronic Decay"
+description = "triking Falcon is a weapon that can be purchased in a special offer in Shadow Fight 2. It can be purchased for real money."
+traits = ["offer"]
 
 [ARMOR_FUTURIST_25]
 name = "Crimson Hunter"
@@ -2213,4 +2325,5 @@ name = "Plasma Cutter"
 name = "Sons of the Eclipse"
 
 [WEAPON_RITUAL_25]
-name = ""
+name = "Ashes of Generation"
+traits = ["offer"]
