@@ -646,9 +646,19 @@ name = "Frost Beard"
 
 [WEAPON_XMAS16_CANDY]
 name = "Candy Rage"
+description = """
+Candy Rage are a 2016 Christmas special weapon in Shadow Fight 2. They were one of the possible rewards which could be won by defeating Freeze, the 2016 Christmas special raid-boss. They were also obtainable from the Crystal Ice Chest, which could be bought from the shop during the Christmas 2016 update. Candy Rage comes enchanted with the Stun enchantment.
+In the 2019 Christmas update, Candy Rage comes with a new appearance. It can be obtained after defeating Freeze or from the Gingerbread Chest. 
+"""
+traits = ["xmas16"]
 
 [WEAPON_XMAS16_GLAIVE]
 name = "Ringing Spruce Whirl"
+description = """
+Ringing Spruce Whirl is a 2016 Christmas special weapon in Shadow Fight 2. It is used by Freeze, the 2016 Christmas special raid-boss. It was one of the possible rewards which could be won by defeating Freeze. It was also obtainable from the Crystal Ice Chest, which could be bought from the shop during the Christmas 2016 update. Ringing Spruce Whirl functions similar to Glaive and comes enchanted with the Enfeeble enchantment.
+In the 2019 Christmas update, Ringing Spruce Whirl comes with a new appearance. It can be obtained after defeating Freeze or from the Gingerbread Chest.
+"""
+traits = ["xmas16", "xmas19"]
 
 [RANGED_XMAS16_COOKIE]
 name = "Gingerbread Surprises"
@@ -679,6 +689,11 @@ name = "Fur Ear-Flap"
 
 [WEAPON_NY18_AXES]
 name = "Surprise Waffles"
+description = """
+Surprise Waffles are a New Year 2018 and 2019 special weapon in Shadow Fight 2. They are a pair of giant rooster-shaped lollipops. Surprise Waffles could be obtained as a possible reward by purchasing the Gingerbread Chest during New Year 2018. In order to purchase the chest, players needed 250 new year coins or 199 gems. New year coins could be obtained by defeating Candy, the New Year 2018 special raid-boss. Candy herself wields these weapons. Surprise Waffles were also obtainable during New Year 2019, as a possible first place reward for defeating Karcer. The weapons come enchanted with the Stun enchantment.
+In the 2019 Christmas update, Surprise Waffles comes with a new appearance. It can be obtained after defeating Freeze or from the Gingerbread Chest. 
+"""
+traits = ["nintendoSwitchEdition", "xmas18", "xmas19"]
 
 [WEAPON_NY18_MACE]
 name = "Caramel Boom"
@@ -703,10 +718,13 @@ name = "Demon`s wing"
 
 [WEAPON_1_HW16_SET]
 name = "Dissector of hopes"
+description = "Dissector of Hopes is a 2016 Halloween special weapon in Shadow Fight 2. It was obtainable during Halloween 2016 update. It was obtained either as a drop by defeating Morgana, the Halloween 2016 special raid-boss, or by buying the Spider Chest for 149 gems. Dissector of Hopes is also available in the Special Edition, where it can be bought from the shop."
+traits = ["specialEdition", "nintendoSwitchEdition", "hw16", "hw18", "hw23"]
 
 [WEAPON_2_HW16_SET]
 name = "Pain and Panic"
-traits = ["specialEdition"]
+description = "Pain and Panic are a 2016 Halloween special weapon in Shadow Fight 2. They were obtainable during Halloween 2016 update either as a drop by defeating Morgana, the Halloween 2016 special raid-boss, or by buying the Spider Chest for 149 gems. Morgana herself also wields this weapon. In the Special Edition, Pain and Panic are available in the shop to be bought. The weapons come enchanted with the Bleeding enchantment. They function similar to the Sickles."
+traits = ["specialEdition", "nintendoSwitchEdition", "hw16", "hw18", "hw23"]
 
 [MAGIC_XMAS16_ICEBALL]
 name = "Shard of Eternal Ice"
@@ -716,12 +734,18 @@ name = "Broken Hearts"
 
 [WEAPON_VAL17_FANS]
 name = "Fans Of Passion"
+description = "Fans of Passion are a 2017 Valentine's Day special weapon in Shadow Fight 2. They were obtainable during the Valentine's Day 2017, 2020, 2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest. Fans of Passion are enchanted with Poisoning. In the Special Edition, they can be bought from the shop."
+traits = ["specialEdition", "nintendoSwitchEdition", "vd17", "vd18", "vd19", "vd20", "vd21", "vd22", "vd23", "vd24"]
 
 [WEAPON_VAL17_TRIDENT]
 name = "Fatemaker"
+description = "Fatemaker is a 2017 Valentine's Day special weapon in Shadow Fight 2. It was obtainable during the Valentine's Day 2017, 2020, 2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest. Fatemaker is enchanted with Enfeeble. In the Special Edition, it is available in the shop to be bought."
+traits = ["specialEdition", "nintendoSwitchEdition", "vd17", "vd20", "vd21", "vd23"]
 
 [WEAPON_VAL17_SAI]
 name = "Vermeil Fangs"
+description = "Vermeil Fangs are a 2017 Valentine's Day special weapon in Shadow Fight 2. They were obtainable during the Valentine's Day 2017,2020,2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest. Vermeil Fangs are enchanted with Magic Recharge. In the Special Edition, they are available in the shop to be bought."
+traits = ["specialEdition", "vd17", "vd20", "vd21", "vd23"]
 
 [HELM_VAL17_WINGS]
 name = "Helm of Inspiration"
@@ -1556,6 +1580,8 @@ name = "Marauder"
 
 [WEAPON_XMAS15_CANES]
 name = "Caramel Shuang Gou"
+description = "Caramel Shuang Gou are the 2015 Christmas special weapon in Shadow Fight 2. Defeating the challenger Festivus during the Christmas 2015 update rewarded the player with this weapon. Unlike its 2014 counterpart, they are enchanted with Lifesteal and feature a different Stance."
+traits = ["xmas15"]
 
 [ARMOR_XMAS15_SANTA]
 name = "Frosty Breastplace"
@@ -1708,9 +1734,13 @@ name = "Plasma rifle"
 
 [WEAPON_HW15_SCYTHE]
 name = "Blade Of Death"
+description = "Blade Of Death is a 2015 Halloween special weapon in Shadow Fight 2. It was one of the items that could be obtained from purchasing the Mysterious Chest during Halloween 2015 update."
+traits = ["hw15"]
 
 [WEAPON_HW15_BROOM]
 name = "Devil's broom"
+description = "Devil's Broom is a Halloween 2015 special weapon in Shadow Fight 2. Defeating Lilith during the Halloween 2015 event rewarded the player with her weapon, the Devil's Broom. The weapon works like the Staff, and comes enchanted with the Bloodrage enchantment."
+traits = ["hw15"]
 
 [ARMOR_HW15_WICKED_VEIL]
 name = "Mist Cloak"
@@ -1785,9 +1815,13 @@ name = "Poetic Mantle"
 
 [WEAPON_HW17_DAGGERS]
 name = "Death's Jaw"
+description = "Death's Jaw are a pair of Halloween 2017 special weapons in Shadow Fight 2. They were obtainable during the Halloween 2017 update, as a possible reward by purchasing the Mystical Chest. In order to purchase the chest, players needed 250 bone coins or 199 gems. Bone coins could be obtained by defeating Whisper, the Halloween 2017 special raid-boss. Whisper herself wields these weapons. These weapons came enchanted with the Bleeding enchantment. Death's Jaw have the same mechanics as the Hack Knives from Act VII. This weapon is also available on the Nintendo Switch."
+traits = ["nintendoSwitchEdition", "hw17", "hw20"]
 
 [WEAPON_HW17_STAFF]
 name = "Voodoo Spine"
+description = "Voodoo Spine is a Halloween 2017 special weapon in Shadow Fight 2. It was obtainable during Halloween 2017 update, as a possible reward by purchasing the Mystical Chest. In order to purchase the chest, players needed 250 bone coins or 199 gems. Bone coins could be obtained by defeating Whisper, the Halloween 2017 special raid-boss. Voodoo Spine is a stick with a bird's skull attached on it. The weapon came enchanted with the Magic Recharge enchantment. It functions similar to Staff."
+traits = ["nintendoSwitchEdition", "hw17", "hw20"]
 
 [RANGED_HW17_NEEDLES]
 name = "Cursed Pins"
