@@ -28,7 +28,7 @@ name = "Sentinel Kusarigama"
 traits = ["unobtainable"]
 
 [WEAPON_BG_YARI]
-name = "Jumonji Yar"
+name = "Jumonji Yari"
 traits = ["unobtainable"]
 
 [WEAPON_NODACHI]
