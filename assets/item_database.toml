@@ -1,13 +1,13 @@
 [WEAPON_HUNGER_SCYTHE]
-name = "Hunger Sickles"
+name = "Karcer's Sickles"
 traits = ["unobtainable"]
 
 [WEAPON_WAR_SHUANG_GOU]
-name = "War Shuang Gou"
+name = "Drakaina's Shuang Gou"
 traits = ["unobtainable"]
 
 [WEAPON_ELECTRO_BATONS]
-name = "Electric Batons"
+name = "Saturn's Electric Batons"
 traits = ["unobtainable"]
 
 [WEAPON_TRIANGLE_KNIVES]
@@ -26,15 +26,15 @@ name = "Sentinel Kusarigama"
 traits = ["unobtainable"]
 
 [WEAPON_BG_YARI]
-name = "Jumonji Yar"
+name = "Jumonji Yari"
 traits = ["unobtainable"]
 
 [WEAPON_NODACHI]
-name = "Nodachi"
+name = "Captain's Nodachi"
 traits = ["unobtainable"]
 
 [WEAPON_WAKIDZASHI]
-name = "Wakidzashis"
+name = "Major's Wakidzashis"
 traits = ["unobtainable"]
 
 [WEAPON_BG_NAGINATA]
@@ -46,11 +46,11 @@ name = "Glaive"
 traits = ["unobtainable"]
 
 [WEAPON_MERCENARY_CLAWS]
-name = "Three-pronged Claws"
+name = "Mercenary's Three-pronged Claws"
 traits = ["unobtainable"]
 
 [WEAPON_MERCENARY_AXES]
-name = "Spiked Axes"
+name = "Mercenary's Spiked Axes"
 traits = ["unobtainable"]
 
 [WEAPON_SAWBLADE]
@@ -88,7 +88,7 @@ traits = ["unobtainable"]
 name = ""
 
 [WEAPON_REAl_CLAWS]
-name = ""
+name = "Sharp Claws"
 
 [WEAPON_DIRECTOR_HUNGER]
 name = "Architect's Sickles"
@@ -205,14 +205,14 @@ name = "Wasp's Armor"
 traits = ["unobtainable"]
 
 [ARMOR_HUNTRESS]
-name = ""
+name = "Widow's Armor"
 
 [ARMOR_SHOGUN]
 name = "Shogun's Armor"
 traits = ["unobtainable"]
 
 [BODY_FUTURE_MAY]
-name = ""
+name = "The Blackness's Body"
 
 [BODY_TITAN]
 name = "Titan's Body"
@@ -225,40 +225,40 @@ name = "Unknown Armor"
 name = "" # Probably dragon set item
 
 [ARMOR_WOMAN_RONIN]
-name = ""
+name = "Ronin Doublet (Female)"
 
 [ARMOR_WOMAN_LUMINOSITY]
-name = ""
+name = "Luminosity Plate (Female)"
 
 [ARMOR_WOMAN_ALLOY]
-name = ""
+name = "Alloy Armor (Female)"
 
 [ARMOR_WOMAN_GREEN]
-name = ""
+name = "Snake Harness (Female)"
 
 [ARMOR_WOMAN_REDSHIFT]
-name = ""
+name = "Redshift (Female)"
 
 [ARMOR_WOMAN_BARBARIAN]
-name = ""
+name = "Barbarian Armor (Female)"
 
 [ARMOR_BIG_BEAST_SHELL]
-name = ""
+name = "Beast Shell (Female)"
 
 [ARMOR_BIG_CENTURION]
-name = ""
+name = "Centurion Mail (Large)"
 
 [ARMOR_BIG_QUILTED]
-name = ""
+name = "Riveted Jacket (Large)"
 
 [ARMOR_BIG_SHROUD]
 name = ""
 
 [ARMOR_BIG_SPIKE]
-name = ""
+name = "Spike Breastplate (Large)"
 
 [ARMOR_REDSHIFT_BIG]
-name = ""
+name = "Redshift (Large)"
 
 [ARMOR_XENOMORPH]
 name = "Alien Cloak"
@@ -290,7 +290,7 @@ name = "Fungus's Body"
 traits = ["unobtainable"]
 
 [BODY_FISH]
-name = ""
+name = "Vortex's Body"
 
 [BODY_HUNGER]
 name = "Karcer's Body"
@@ -301,7 +301,7 @@ name = "Hoaxen's Body"
 traits = ["unobtainable"]
 
 [BODY_WAR]
-name = ""
+name = "Drakaina's Body"
 
 [BODY_GATEKEEPER]
 name = "Gatekeeper's Body"
@@ -344,7 +344,7 @@ name = "Ravana's Head"
 traits = ["unobtainable"]
 
 [HEAD_MEPHISTO]
-name = ""
+name = "Mephisto's Head"
 
 [HEAD_LYNX]
 name = "Lynx's Head"
@@ -359,14 +359,14 @@ name = "Butcher's Head"
 traits = ["unobtainable"]
 
 [HEAD_RHINO]
-name = ""
+name = "Rhino's Head"
 
 [HEAD_WASP]
 name = "Wasp's Head"
 traits = ["unobtainable"]
 
 [HEAD_HUNTRESS]
-name = ""
+name = "Widow's Head"
 
 [HEAD_TITAN]
 name = "Titan's Head"
@@ -389,26 +389,26 @@ name = "Corsair's Head"
 traits = ["unobtainable"]
 
 [HEAD_FUTURE_MAY]
-name = ""
+name = "The Blackness's Head"
 
 [HEAD_TITANS_ARMY1]
-name = ""
+name = "Titan's Soldier's Head"
 traits = ["unobtainable"]
 
 [HEAD_TITANS_ARMY2]
-name = ""
+name = "Titan's Soldier's Head"
 traits = ["unobtainable"]
 
 [HEAD_TITANS_ARMY3]
-name = ""
+name = "Titan's Soldier's Head"
 traits = ["unobtainable"]
 
 [HEAD_TITANS_ARMY4]
-name = ""
+name = "Titan's Soldier's Head"
 traits = ["unobtainable"]
 
 [HEAD_VULCAN]
-name = "Vulcan's Head"
+name = "Volcano's Head"
 traits = ["unobtainable"]
 
 [HEAD_MEGALITH]
@@ -420,7 +420,7 @@ name = "Fungus's Head"
 traits = ["unobtainable"]
 
 [HEAD_FISH]
-name = ""
+name = "Vortex's Head"
 
 [HEAD_FATUM]
 name = "Fatum's Head"
@@ -435,7 +435,7 @@ name = "Karcer's Head"
 traits = ["unobtainable"]
 
 [HEAD_WAR]
-name = ""
+name = "Drakaina's Head"
 traits = ["unobtainable"]
 
 [HEAD_SATURN]
@@ -522,7 +522,7 @@ description = "Titan uses his extendable hand as his ranged weapon. A mechanical
 traits = ["unobtainable"]
 
 [RANGED_WAR_AXES]
-name = "War Axes"
+name = "Drakaina's Axes"
 description = "Functions similarly to Needles; when thrown, three small axes follow a straight line spreading apart from each other the further they go, making it almost impossible to dodge at a certain distance. The axes itself are identical to Bat Wings appearance-wise. Used by Drakaina."
 traits = ["unobtainable"]
 
@@ -565,13 +565,13 @@ name = "" # Probably dragon set item
 name = ""
 
 [MAGIC_HUNGER_CLAWS]
-name = ""
+name = "Karcer's Claws"
 
 [MAGIC_MINE]
 name = ""
 
 [MAGIC_RAT_WAVE]
-name = ""
+name = "Arkhos's Rat Wave"
 
 [MAGIC_RESURRECTED_25]
 name = "Inner Rebellion"
@@ -584,7 +584,7 @@ traits = ["unobtainable"]
 name = ""
 
 [MAGIC_WAR_WHIRL]
-name = ""
+name = "Drakaina's Whirl"
 
 [MAGIC_DARK_WAVE]
 name = "Dark Wave"
@@ -595,7 +595,7 @@ traits = ["unobtainable"]
 name = "Thorn Dome"
 
 [MAGIC_FEAR_RAY]
-name = ""
+name = "Tenebris's Ray"
 
 [MAGIC_ICE_BALL]
 name = "Ice Ball"
@@ -735,12 +735,30 @@ name = "Broken Hearts"
 [WEAPON_VAL17_FANS]
 name = "Fans Of Passion"
 description = "Fans of Passion are a 2017 Valentine's Day special weapon in Shadow Fight 2. They were obtainable during the Valentine's Day 2017, 2020, 2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest. Fans of Passion are enchanted with Poisoning. In the Special Edition, they can be bought from the shop."
-traits = ["specialEdition", "nintendoSwitchEdition", "vd17", "vd18", "vd19", "vd20", "vd21", "vd22", "vd23", "vd24"]
+traits = [
+  "specialEdition",
+  "nintendoSwitchEdition",
+  "vd17",
+  "vd18",
+  "vd19",
+  "vd20",
+  "vd21",
+  "vd22",
+  "vd23",
+  "vd24",
+]
 
 [WEAPON_VAL17_TRIDENT]
 name = "Fatemaker"
 description = "Fatemaker is a 2017 Valentine's Day special weapon in Shadow Fight 2. It was obtainable during the Valentine's Day 2017, 2020, 2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest. Fatemaker is enchanted with Enfeeble. In the Special Edition, it is available in the shop to be bought."
-traits = ["specialEdition", "nintendoSwitchEdition", "vd17", "vd20", "vd21", "vd23"]
+traits = [
+  "specialEdition",
+  "nintendoSwitchEdition",
+  "vd17",
+  "vd20",
+  "vd21",
+  "vd23",
+]
 
 [WEAPON_VAL17_SAI]
 name = "Vermeil Fangs"
