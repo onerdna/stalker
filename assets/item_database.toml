@@ -1,13 +1,13 @@
 [WEAPON_HUNGER_SCYTHE]
-name = "Karcer's Sickles"
+name = "Hunger Sickles"
 traits = ["unobtainable"]
 
 [WEAPON_WAR_SHUANG_GOU]
-name = "Drakaina's Shuang Gou"
+name = "War Shuang Gou"
 traits = ["unobtainable"]
 
 [WEAPON_ELECTRO_BATONS]
-name = "Saturn's Electric Batons"
+name = "Electric Batons"
 traits = ["unobtainable"]
 
 [WEAPON_TRIANGLE_KNIVES]
@@ -16,6 +16,8 @@ traits = ["unobtainable"]
 
 [WEAPON_TWO_HANDED_SWORD]
 name = ""
+description = ""
+traits = [""]
 
 [WEAPON_HEAVY_HAMMER]
 name = "Heavy Hammer"
@@ -26,15 +28,15 @@ name = "Sentinel Kusarigama"
 traits = ["unobtainable"]
 
 [WEAPON_BG_YARI]
-name = "Jumonji Yari"
+name = "Jumonji Yar"
 traits = ["unobtainable"]
 
 [WEAPON_NODACHI]
-name = "Captain's Nodachi"
+name = "Nodachi"
 traits = ["unobtainable"]
 
 [WEAPON_WAKIDZASHI]
-name = "Major's Wakidzashis"
+name = "Wakidzashis"
 traits = ["unobtainable"]
 
 [WEAPON_BG_NAGINATA]
@@ -46,11 +48,11 @@ name = "Glaive"
 traits = ["unobtainable"]
 
 [WEAPON_MERCENARY_CLAWS]
-name = "Mercenary's Three-pronged Claws"
+name = "Three-pronged Claws"
 traits = ["unobtainable"]
 
 [WEAPON_MERCENARY_AXES]
-name = "Mercenary's Spiked Axes"
+name = "Spiked Axes"
 traits = ["unobtainable"]
 
 [WEAPON_SAWBLADE]
@@ -86,9 +88,13 @@ traits = ["unobtainable"]
 
 [WEAPON_MORGANA_SCYTHE]
 name = ""
+description = ""
+traits = [""]
 
 [WEAPON_REAl_CLAWS]
-name = "Sharp Claws"
+name = ""
+description = ""
+traits = [""]
 
 [WEAPON_DIRECTOR_HUNGER]
 name = "Architect's Sickles"
@@ -96,9 +102,13 @@ traits = ["unobtainable"]
 
 [WEAPON_SHOCKER_CLAWS_ARC]
 name = ""
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_BIG_SWORD]
 name = "Devastator"
+description = ""
+traits = [""]
 
 [WEAPON_TITAN_SWORD]
 name = "Titan's Desolator"
@@ -106,6 +116,8 @@ traits = ["unobtainable"]
 
 [WEAPON_UNKNOWN]
 name = "Unknown Weapon"
+description = ""
+traits = [""]
 
 [WEAPON_RAID_KARCER_SET]
 name = "Claws of Perversity"
@@ -116,7 +128,9 @@ name = "Mandibula"
 traits = ["setKarcer"]
 
 [WEAPON_C3_z3]
-name = "" # Probably dragon set items
+name = ""        # Probably dragon set items
+description = ""
+traits = [""]
 
 [WEAPON_GLAIVE_25]
 name = "God Eater"
@@ -188,9 +202,13 @@ traits = ["unobtainable"]
 
 [BODY_TENTACLE_SKELETON]
 name = ""
+description = ""
+traits = [""]
 
 [BODY_WOMAN]
 name = ""
+description = ""
+traits = [""]
 
 [BODY_LYNX]
 name = "Lynx's Body"
@@ -205,14 +223,18 @@ name = "Wasp's Armor"
 traits = ["unobtainable"]
 
 [ARMOR_HUNTRESS]
-name = "Widow's Armor"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_SHOGUN]
 name = "Shogun's Armor"
 traits = ["unobtainable"]
 
 [BODY_FUTURE_MAY]
-name = "The Blackness's Body"
+name = ""
+description = ""
+traits = [""]
 
 [BODY_TITAN]
 name = "Titan's Body"
@@ -220,51 +242,83 @@ traits = ["unobtainable"]
 
 [ARMOR_UNKNOWN]
 name = "Unknown Armor"
+description = ""
+traits = [""]
 
 [ARMOR_C3_z3]
-name = "" # Probably dragon set item
+name = ""        # Probably dragon set item
+description = ""
+traits = [""]
 
 [ARMOR_WOMAN_RONIN]
-name = "Ronin Doublet (Female)"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_WOMAN_LUMINOSITY]
-name = "Luminosity Plate (Female)"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_WOMAN_ALLOY]
-name = "Alloy Armor (Female)"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_WOMAN_GREEN]
-name = "Snake Harness (Female)"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_WOMAN_REDSHIFT]
-name = "Redshift (Female)"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_WOMAN_BARBARIAN]
-name = "Barbarian Armor (Female)"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_BIG_BEAST_SHELL]
-name = "Beast Shell (Female)"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_BIG_CENTURION]
-name = "Centurion Mail (Large)"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_BIG_QUILTED]
-name = "Riveted Jacket (Large)"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_BIG_SHROUD]
 name = ""
+description = ""
+traits = [""]
 
 [ARMOR_BIG_SPIKE]
-name = "Spike Breastplate (Large)"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_REDSHIFT_BIG]
-name = "Redshift (Large)"
+name = ""
+description = ""
+traits = [""]
 
 [ARMOR_XENOMORPH]
 name = "Alien Cloak"
+description = ""
+traits = [""]
 
 [ARMOR_EGYPT_25]
 name = "Scarab's Dream"
+description = ""
+traits = [""]
 
 [ARMOR_RAID_KARCER_SET]
 name = "Legarthy"
@@ -272,6 +326,8 @@ traits = ["setKarcer"]
 
 [ARMOR_ZONE7_HERO1]
 name = ""
+description = ""
+traits = [""]
 
 [ARMOR_ANCIENT]
 name = "Ancient's Armor"
@@ -290,7 +346,9 @@ name = "Fungus's Body"
 traits = ["unobtainable"]
 
 [BODY_FISH]
-name = "Vortex's Body"
+name = ""
+description = ""
+traits = [""]
 
 [BODY_HUNGER]
 name = "Karcer's Body"
@@ -301,7 +359,9 @@ name = "Hoaxen's Body"
 traits = ["unobtainable"]
 
 [BODY_WAR]
-name = "Drakaina's Body"
+name = ""
+description = ""
+traits = [""]
 
 [BODY_GATEKEEPER]
 name = "Gatekeeper's Body"
@@ -321,15 +381,23 @@ traits = ["unobtainable"]
 
 [HEAD_SCAVENGER_1]
 name = "Scavenger's Head"
+description = ""
+traits = [""]
 
 [HEAD_SCAVENGER_2]
 name = "Scavenger's Head"
+description = ""
+traits = [""]
 
 [HEAD_SCAVENGER_4]
 name = "Scavenger's Head"
+description = ""
+traits = [""]
 
 [HEAD_SCAVEN]
 name = ""
+description = ""
+traits = [""]
 
 [HEAD_DISCIPLE]
 name = "Disciple's Head"
@@ -344,7 +412,9 @@ name = "Ravana's Head"
 traits = ["unobtainable"]
 
 [HEAD_MEPHISTO]
-name = "Mephisto's Head"
+name = ""
+description = ""
+traits = [""]
 
 [HEAD_LYNX]
 name = "Lynx's Head"
@@ -359,14 +429,18 @@ name = "Butcher's Head"
 traits = ["unobtainable"]
 
 [HEAD_RHINO]
-name = "Rhino's Head"
+name = ""
+description = ""
+traits = [""]
 
 [HEAD_WASP]
 name = "Wasp's Head"
 traits = ["unobtainable"]
 
 [HEAD_HUNTRESS]
-name = "Widow's Head"
+name = ""
+description = ""
+traits = [""]
 
 [HEAD_TITAN]
 name = "Titan's Head"
@@ -389,26 +463,28 @@ name = "Corsair's Head"
 traits = ["unobtainable"]
 
 [HEAD_FUTURE_MAY]
-name = "The Blackness's Head"
+name = ""
+description = ""
+traits = [""]
 
 [HEAD_TITANS_ARMY1]
-name = "Titan's Soldier's Head"
+name = ""
 traits = ["unobtainable"]
 
 [HEAD_TITANS_ARMY2]
-name = "Titan's Soldier's Head"
+name = ""
 traits = ["unobtainable"]
 
 [HEAD_TITANS_ARMY3]
-name = "Titan's Soldier's Head"
+name = ""
 traits = ["unobtainable"]
 
 [HEAD_TITANS_ARMY4]
-name = "Titan's Soldier's Head"
+name = ""
 traits = ["unobtainable"]
 
 [HEAD_VULCAN]
-name = "Volcano's Head"
+name = "Vulcan's Head"
 traits = ["unobtainable"]
 
 [HEAD_MEGALITH]
@@ -420,7 +496,9 @@ name = "Fungus's Head"
 traits = ["unobtainable"]
 
 [HEAD_FISH]
-name = "Vortex's Head"
+name = ""
+description = ""
+traits = [""]
 
 [HEAD_FATUM]
 name = "Fatum's Head"
@@ -435,7 +513,7 @@ name = "Karcer's Head"
 traits = ["unobtainable"]
 
 [HEAD_WAR]
-name = "Drakaina's Head"
+name = ""
 traits = ["unobtainable"]
 
 [HEAD_SATURN]
@@ -503,7 +581,9 @@ name = "Invisible's Head"
 traits = ["unobtainable"]
 
 [HEAD_C3_z3]
-name = "" # Probably dragon set item
+name = ""        # Probably dragon set item
+description = ""
+traits = [""]
 
 [HELM_UNKNOWN]
 name = "Unknown Helm"
@@ -522,7 +602,7 @@ description = "Titan uses his extendable hand as his ranged weapon. A mechanical
 traits = ["unobtainable"]
 
 [RANGED_WAR_AXES]
-name = "Drakaina's Axes"
+name = "War Axes"
 description = "Functions similarly to Needles; when thrown, three small axes follow a straight line spreading apart from each other the further they go, making it almost impossible to dodge at a certain distance. The axes itself are identical to Bat Wings appearance-wise. Used by Drakaina."
 traits = ["unobtainable"]
 
@@ -532,7 +612,9 @@ description = "Big sharp-toothed fishes that will follow a straight line when th
 traits = ["unobtainable"]
 
 [RANGED_C3_z3]
-name = "" # Probably dragon set item
+name = ""        # Probably dragon set item
+description = ""
+traits = [""]
 
 [RANGED_UNKNOWN]
 name = "Unknown Ranged Weapon"
@@ -554,27 +636,43 @@ traits = ["unobtainable"]
 
 [MAGIC_BUTCHER_EARTHQUAKE]
 name = ""
+description = ""
+traits = [""]
 
 [MAGIC_ARCANE_BALL]
 name = ""
+description = ""
+traits = [""]
 
 [MAGIC_C3_z3]
-name = "" # Probably dragon set item
+name = ""        # Probably dragon set item
+description = ""
+traits = [""]
 
 [MAGIC_HIT_BOX]
 name = ""
+description = ""
+traits = [""]
 
 [MAGIC_HUNGER_CLAWS]
-name = "Karcer's Claws"
+name = ""
+description = ""
+traits = [""]
 
 [MAGIC_MINE]
 name = ""
+description = ""
+traits = [""]
 
 [MAGIC_RAT_WAVE]
-name = "Arkhos's Rat Wave"
+name = ""
+description = ""
+traits = [""]
 
 [MAGIC_RESURRECTED_25]
 name = "Inner Rebellion"
+description = ""
+traits = [""]
 
 [MAGIC_UNKNOWN]
 name = "Unknown Power"
@@ -582,9 +680,13 @@ traits = ["unobtainable"]
 
 [MAGIC_VERTICAL_TRIGGER]
 name = ""
+description = ""
+traits = [""]
 
 [MAGIC_WAR_WHIRL]
-name = "Drakaina's Whirl"
+name = ""
+description = ""
+traits = [""]
 
 [MAGIC_DARK_WAVE]
 name = "Dark Wave"
@@ -593,9 +695,13 @@ traits = ["unobtainable"]
 
 [MAGIC_ENERGY_BALL_PINK_25]
 name = "Thorn Dome"
+description = ""
+traits = [""]
 
 [MAGIC_FEAR_RAY]
-name = "Tenebris's Ray"
+name = ""
+description = ""
+traits = [""]
 
 [MAGIC_ICE_BALL]
 name = "Ice Ball"
@@ -604,6 +710,8 @@ traits = ["unobtainable"]
 
 [MAGIC_PROJECTILE]
 name = ""
+description = ""
+traits = [""]
 
 [MAGIC_GAZEOFTHEVOID_25]
 name = "Gaze of the Void"
@@ -637,12 +745,18 @@ traits = ["setSentinel"]
 
 [ARMOR_XMAS16_SANTA]
 name = "Winter Breath Jacket"
+description = ""
+traits = [""]
 
 [HELM_XMAS16_HORNS]
 name = "Christmas Trophy"
+description = ""
+traits = [""]
 
 [HELM_XMAS16_SANTA]
 name = "Frost Beard"
+description = ""
+traits = [""]
 
 [WEAPON_XMAS16_CANDY]
 name = "Candy Rage"
@@ -662,30 +776,48 @@ traits = ["xmas16", "xmas19"]
 
 [RANGED_XMAS16_COOKIE]
 name = "Gingerbread Surprises"
+description = ""
+traits = [""]
 
 [ARMOR_VAL18_HOODIE]
 name = "Game Fan`s Hoodie"
+description = ""
+traits = [""]
 
 [HELM_VAL18_PANDA]
 name = "Adorable Panda"
+description = ""
+traits = [""]
 
 [WEAPON_VAL18_PANDA]
 name = "Panda Cuddles"
+description = ""
+traits = [""]
 
 [WEAPON_CHNY18_STAFF]
 name = "Chinese Dragon Staff"
+description = ""
+traits = [""]
 
 [ARMOR_CHNY18_TRADITIONAL]
 name = "Dragon's Scale"
+description = ""
+traits = [""]
 
 [HELM_CHNY18_TRADITIONAL]
 name = "Hat of Generous Gifts"
+description = ""
+traits = [""]
 
 [ARMOR_NY18_MANTLE]
 name = "Padded Jacket"
+description = ""
+traits = [""]
 
 [HELM_NY18_HAT]
 name = "Fur Ear-Flap"
+description = ""
+traits = [""]
 
 [WEAPON_NY18_AXES]
 name = "Surprise Waffles"
@@ -697,24 +829,38 @@ traits = ["nintendoSwitchEdition", "xmas18", "xmas19"]
 
 [WEAPON_NY18_MACE]
 name = "Caramel Boom"
+description = ""
+traits = [""]
 
 [RANGED_NY18_DONUT]
 name = "Juicy Donut"
+description = ""
+traits = [""]
 
 [MAGIC_NY18_SNOWBALL]
 name = "Sugar Flash"
+description = ""
+traits = [""]
 
 [ARMOR_HW16_SET]
 name = "Spider-king coat"
+description = ""
+traits = [""]
 
 [HELM_1_HW16_SET]
 name = "Pumpkin of madness"
+description = ""
+traits = [""]
 
 [HELM_2_HW16_SET]
 name = "Nightmare hat"
+description = ""
+traits = [""]
 
 [RANGED_HW16_SET]
 name = "Demon`s wing"
+description = ""
+traits = [""]
 
 [WEAPON_1_HW16_SET]
 name = "Dissector of hopes"
@@ -728,9 +874,13 @@ traits = ["specialEdition", "nintendoSwitchEdition", "hw16", "hw18", "hw23"]
 
 [MAGIC_XMAS16_ICEBALL]
 name = "Shard of Eternal Ice"
+description = ""
+traits = [""]
 
 [RANGED_VAL17_AXE]
 name = "Broken Hearts"
+description = ""
+traits = [""]
 
 [WEAPON_VAL17_FANS]
 name = "Fans Of Passion"
@@ -767,9 +917,13 @@ traits = ["specialEdition", "vd17", "vd20", "vd21", "vd23"]
 
 [HELM_VAL17_WINGS]
 name = "Helm of Inspiration"
+description = ""
+traits = [""]
 
 [ARMOR_VAL17_MANTLE]
 name = "Poetic Mantle"
+description = ""
+traits = [""]
 
 [WEAPON_C2_Z2_MONK_KATAR]
 name = "Monk's Katars"
@@ -793,609 +947,1013 @@ traits = ["setMonk"]
 
 [WEAPON_KNIVES]
 name = "Knives"
+description = ""
+traits = [""]
 
 [WEAPON_KNUCKLES]
 name = "Knuckles"
+description = ""
+traits = [""]
 
 [WEAPON_SAI]
 name = "Sai"
+description = ""
+traits = [""]
 
 [WEAPON_STEEL_BATONS]
 name = "Steel Batons"
+description = ""
+traits = [""]
 
 [WEAPON_MACHETE]
 name = "Machetes"
+description = ""
+traits = [""]
 
 [WEAPON_DAGGERS]
 name = "Daggers"
+description = ""
+traits = [""]
 
 [WEAPON_NINJA_SWORD]
 name = "Ninja Sword"
+description = ""
+traits = [""]
 
 [WEAPON_STAFF]
 name = "Staff"
+description = ""
+traits = [""]
 
 [WEAPON_SWORDS]
 name = "Swords"
+description = ""
+traits = [""]
 
 [WEAPON_NUNCHAKU]
 name = "Nunchacku"
+description = ""
+traits = [""]
 
 [WEAPON_STEEL_NUNCHAKU]
 name = "Steel Nunchacku"
+description = ""
+traits = [""]
 
 [WEAPON_SHUANG_GOU]
 name = "Shuang Gou"
+description = ""
+traits = [""]
 
 [WEAPON_YARI]
 name = "Yari"
+description = ""
+traits = [""]
 
 [WEAPON_CRESCENT_KNIVES]
 name = "Crescent Knives"
+description = ""
+traits = [""]
 
 [WEAPON_STILETTOS]
 name = "Stilettos"
+description = ""
+traits = [""]
 
 [WEAPON_HEAVY_STAFF]
 name = "Heavy Staff"
+description = ""
+traits = [""]
 
 [WEAPON_AXES]
 name = "Axes"
+description = ""
+traits = [""]
 
 [WEAPON_STEEL_CLAWS]
 name = "Steel Claws"
+description = ""
+traits = [""]
 
 [WEAPON_KATANA]
 name = "Katana"
+description = ""
+traits = [""]
 
 [WEAPON_BIG_SWORDS]
 name = "Big Swords"
+description = ""
+traits = [""]
 
 [WEAPON_NAGINATA]
 name = "Naginata"
+description = ""
+traits = [""]
 
 [WEAPON_CHINESE_SWORDS]
 name = "Chinese Swords"
+description = ""
+traits = [""]
 
 [WEAPON_BUTTERFLY_SWORDS]
 name = "Butterfly Swords"
+description = ""
+traits = [""]
 
 [WEAPON_GOLDEN_KATANA]
 name = "Golden Katana"
+description = ""
+traits = [""]
 
 [WEAPON_MACES]
 name = "Maces"
+description = ""
+traits = [""]
 
 [WEAPON_GLAIVE]
 name = "Glaive"
+description = ""
+traits = [""]
 
 [WEAPON_KUSARIGAMA]
 name = "Kusarigama"
+description = ""
+traits = [""]
 
 [WEAPON_SICKLES]
 name = "Sickles"
+description = ""
+traits = [""]
 
 [WEAPON_MOON_SABERS]
 name = "Moon Sabers"
+description = ""
+traits = [""]
 
 [WEAPON_TWO_HANDED_MACE]
 name = "Two-handed Mace"
+description = ""
+traits = [""]
 
 [WEAPON_DADAO]
 name = "Dadao"
+description = ""
+traits = [""]
 
 [WEAPON_MAGARI_YARI]
 name = "Magari Yari"
+description = ""
+traits = [""]
 
 [WEAPON_BATTLE_HAMMERS]
 name = "Battle Hammers"
+description = ""
+traits = [""]
 
 [WEAPON_SILVER_GLAIVE]
 name = "Silver Glaive"
+description = ""
+traits = [""]
 
 [WEAPON_HEAVY_KUSARIGAMA]
 name = "Heavy Kusarigama"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_KUSARIGAMA]
 name = "Blood Reaper"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_AXES]
 name = "Harrier Hooks"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_KHOPESH]
 name = "Pharaoh’s Khopeshes"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_STAFF]
 name = "Staff of Night"
+description = ""
+traits = [""]
 
 [ARMOR_ROBE]
 name = "Robe"
+description = ""
+traits = [""]
 
 [ARMOR_OLD_LEATHER]
 name = "Old Leather Jacket"
+description = ""
+traits = [""]
 
 [ARMOR_KENDO]
 name = "Kendo Breastplate"
+description = ""
+traits = [""]
 
 [ARMOR_LEATHER]
 name = "Leather Jacket"
+description = ""
+traits = [""]
 
 [ARMOR_BARBARIAN]
 name = "Barbarian Armor"
+description = ""
+traits = [""]
 
 [ARMOR_CHAIN_ROBE]
 name = "Apprentice’s Chainmail"
+description = ""
+traits = [""]
 
 [ARMOR_BRONZE]
 name = "Bronze Armor"
+description = ""
+traits = [""]
 
 [ARMOR_IMHOTEP]
 name = "Imhotep Cuirass"
+description = ""
+traits = [""]
 
 [ARMOR_SHADOW]
 name = "Shadow Armor"
+description = ""
+traits = [""]
 
 [ARMOR_MANTLE_OF_NIGHT]
 name = "Mantle of Night"
+description = ""
+traits = [""]
 
 [ARMOR_RED_LOTUS]
 name = "Red Lotus"
+description = ""
+traits = [""]
 
 [ARMOR_DRAGONS_BLOOD]
 name = "Dragon Blood"
+description = ""
+traits = [""]
 
 [ARMOR_BEAST_SHELL]
 name = "Beast Shell"
+description = ""
+traits = [""]
 
 [ARMOR_SUPER_CROW]
 name = "Crow’s Bane"
+description = ""
+traits = [""]
 
 [ARMOR_SUPER_CLOAK]
 name = "Sentinel Coat"
+description = ""
+traits = [""]
 
 [HELM_KENDO_MASK]
 name = "Kendo Mask"
+description = ""
+traits = [""]
 
 [HELM_CONICAL_HAT]
 name = "Conical Hat"
+description = ""
+traits = [""]
 
 [HELM_SOLDIER_KABUTO]
 name = "Soldier’s Kabuto"
+description = ""
+traits = [""]
 
 [HELM_GABLED]
 name = "Pointed Helm"
+description = ""
+traits = [""]
 
 [HELM_GREEN_MASK]
 name = "Snake Mask"
+description = ""
+traits = [""]
 
 [HELM_LOBSTER]
 name = "Lobster Helm"
+description = ""
+traits = [""]
 
 [HELM_KABUTO]
 name = "Kabuto"
+description = ""
+traits = [""]
 
 [HELM_HARDENED]
 name = "Hardened Helm"
+description = ""
+traits = [""]
 
 [HELM_STEEL]
 name = "Steel Helm"
+description = ""
+traits = [""]
 
 [HELM_HORNED]
 name = "Horned Helm"
+description = ""
+traits = [""]
 
 [HELM_CRESCENT]
 name = "Crescent Helm"
+description = ""
+traits = [""]
 
 [HELM_SPIKE]
 name = "Spike Helm"
+description = ""
+traits = [""]
 
 [HELM_DAWN]
 name = "Dawn Tiara"
+description = ""
+traits = [""]
 
 [HELM_CROWN_OF_NIGHT]
 name = "Crown of Night"
+description = ""
+traits = [""]
 
 [HELM_SAMURAIS]
 name = "Samurai Helm"
+description = ""
+traits = [""]
 
 [HELM_TWO_FACED]
 name = "Two-faced Helm"
+description = ""
+traits = [""]
 
 [HELM_BEAST]
 name = "Beast Helm"
+description = ""
+traits = [""]
 
 [HELM_SUPER_MASK]
 name = "Sacral Mask"
+description = ""
+traits = [""]
 
 [HELM_SUPER_JOKER]
 name = "Jester’s Benediction"
+description = ""
+traits = [""]
 
 [RANGED_SHURIKENS]
 name = "Shurikens"
+description = ""
+traits = [""]
 
 [RANGED_THROWING_DAGGERS]
 name = "Throwing Daggers"
+description = ""
+traits = [""]
 
 [RANGED_KUNAI]
 name = "Kunai"
+description = ""
+traits = [""]
 
 [RANGED_HUNTERS_KNIVES]
 name = "Hunter's Knives"
+description = ""
+traits = [""]
 
 [RANGED_SILVER_SHURIKENS]
 name = "Silver Shurikens"
+description = ""
+traits = [""]
 
 [RANGED_THROWING_SPIKES]
 name = "Throwing Spikes"
+description = ""
+traits = [""]
 
 [RANGED_CHAKRAM]
 name = "Chakram"
+description = ""
+traits = [""]
 
 [RANGED_GHOST_KUNAI]
 name = "Ghostly Kunai"
+description = ""
+traits = [""]
 
 [RANGED_ANCIENT_CHAKRAM]
 name = "Ancient Chakram"
+description = ""
+traits = [""]
 
 [RANGED_SUPER_SHURIKEN]
 name = "Star Blade"
+description = ""
+traits = [""]
 
 [RANGED_SUPER_AXES]
 name = "Bat Wings"
+description = ""
+traits = [""]
 
 [RANGED_SUPER_CHAKRAM_JEWELS]
 name = "Jewel of the East"
+description = ""
+traits = [""]
 
 [RANGED_SUPER_CHAKRAM_BLADES]
 name = "Harvester of Souls"
+description = ""
+traits = [""]
 
 [MAGIC_ENERGY_BALL]
 name = "Energy Ball"
+description = ""
+traits = [""]
 
 [MAGIC_FIRE_BALL]
 name = "Fire Ball"
+description = ""
+traits = [""]
 
 [MAGIC_LIGHTNING_ARROW]
 name = "Lightning Arrow"
+description = ""
+traits = [""]
 
 [MAGIC_FIRE_PILLAR]
 name = "Fire Pillar"
+description = ""
+traits = [""]
 
 [WEAPON_KERIS]
 name = "Krises"
+description = ""
+traits = [""]
 
 [WEAPON_TONFA]
 name = "Tonfas"
+description = ""
+traits = [""]
 
 [WEAPON_LABRYS_AXES]
 name = "Labryses"
+description = ""
+traits = [""]
 
 [WEAPON_TWO_HANDED_CUDGEL]
 name = "Two-handed Cudgel"
+description = ""
+traits = [""]
 
 [WEAPON_WANDERER_STAFF]
 name = "Wanderer's Staff"
+description = ""
+traits = [""]
 
 [ARMOR_RONIN]
 name = "Ronin Doublet"
+description = ""
+traits = [""]
 
 [ARMOR_GUARD]
 name = "Guard's Harness"
+description = ""
+traits = [""]
 
 [ARMOR_CHAIN]
 name = "Chainmail"
+description = ""
+traits = [""]
 
 [ARMOR_BLOOD_MASTER]
 name = "Scarlet Leather"
+description = ""
+traits = [""]
 
 [ARMOR_STRONG_BARBARIAN]
 name = "Sturdy Barbarian Armor"
+description = ""
+traits = [""]
 
 [ARMOR_MANTIS]
 name = "Mantis Harness"
+description = ""
+traits = [""]
 
 [ARMOR_LEGIONER]
 name = "Legionnaire Armor"
+description = ""
+traits = [""]
 
 [ARMOR_EMERALD_BREASTPLATE]
 name = "Emerald Mail"
+description = ""
+traits = [""]
 
 [ARMOR_RED_STEEL]
 name = "Red Platemail"
+description = ""
+traits = [""]
 
 [ARMOR_MOON]
 name = "Moon Shroud"
+description = ""
+traits = [""]
 
 [ARMOR_DRAGON]
 name = "Radiant Platemail"
+description = ""
+traits = [""]
 
 [ARMOR_ASSASSIN]
 name = "Assassin's Robe"
+description = ""
+traits = [""]
 
 [ARMOR_HAWK]
 name = "Hawk Mantle"
+description = ""
+traits = [""]
 
 [ARMOR_TWILIGHT]
 name = "Twilight Shroud"
+description = ""
+traits = [""]
 
 [ARMOR_GILDED]
 name = "Gilded Platemail"
+description = ""
+traits = [""]
 
 [ARMOR_STORM_CUIRASS]
 name = "Aegis of Winds"
+description = ""
+traits = [""]
 
 [HELM_BLOOD]
 name = "Blood Casque"
+description = ""
+traits = [""]
 
 [HELM_TAIL]
 name = "Plumed Headpiece"
+description = ""
+traits = [""]
 
 [HELM_BRONZE]
 name = "Bronze Casque"
+description = ""
+traits = [""]
 
 [HELM_VIKING]
 name = "Longhorn"
+description = ""
+traits = [""]
 
 [HELM_MANTIS]
 name = "Mantis Cap"
+description = ""
+traits = [""]
 
 [HELM_GENERAL]
 name = "General’s Kabuto"
+description = ""
+traits = [""]
 
 [HELM_MOON]
 name = "Moon Crown"
+description = ""
+traits = [""]
 
 [HELM_LEGIONER]
 name = "Legionnaire Helm"
+description = ""
+traits = [""]
 
 [HELM_IRON]
 name = "Iron Casque"
+description = ""
+traits = [""]
 
 [HELM_SUN]
 name = "Radiant Headpiece"
+description = ""
+traits = [""]
 
 [HELM_EMERALD]
 name = "Emerald Cap"
+description = ""
+traits = [""]
 
 [HELM_SILVER]
 name = "Silver Kabuto"
+description = ""
+traits = [""]
 
 [HELM_ASSASSIN]
 name = "Assassin's Cowl"
+description = ""
+traits = [""]
 
 [HELM_SNOW]
 name = "Snow Cap"
+description = ""
+traits = [""]
 
 [HELM_DARKNESS]
 name = "Twilight Crown"
+description = ""
+traits = [""]
 
 [HELM_SUPER_HORNED]
 name = "Doom Crest"
+description = ""
+traits = [""]
 
 [RANGED_ASSASSIN_KUNAI]
 name = "Assassin's Kunai"
+description = ""
+traits = [""]
 
 [RANGED_HUNTING_KUNAI]
 name = "Steel Darts"
+description = ""
+traits = [""]
 
 [HELM_STARTER_PACK]
 name = "Iron Mask"
+description = ""
+traits = [""]
 
 [HELM_LIGHT]
 name = "Light Helm"
+description = ""
+traits = [""]
 
 [HELM_CLOSED]
 name = "Close Helm"
+description = ""
+traits = [""]
 
 [ARMOR_QUILTED]
 name = "Riveted Jacket"
+description = ""
+traits = [""]
 
 [ARMOR_FOREIGN]
 name = "Red Doublet"
+description = ""
+traits = [""]
 
 [ARMOR_GREEN]
 name = "Snake Harness"
+description = ""
+traits = [""]
 
 [WEAPON_INDIAN_KATAR]
 name = "Katars"
+description = ""
+traits = [""]
 
 [WEAPON_CEREMONIAL_SHUANG_GOU]
 name = "Ceremonial Shuang Gou"
+description = ""
+traits = [""]
 
 [WEAPON_SHARP_TONFA]
 name = "Blade Tonfas"
+description = ""
+traits = [""]
 
 [WEAPON_NORTHERN_HAMMER]
 name = "Northern Hammer"
+description = ""
+traits = [""]
 
 [WEAPON_DADAO_JANISSARY]
 name = "Ronin's Dadao"
+description = ""
+traits = [""]
 
 [WEAPON_SILVER_SPEAR]
 name = "Silver Spear"
+description = ""
+traits = [""]
 
 [WEAPON_TRIDENT]
 name = "Trident"
+description = ""
+traits = [""]
 
 [WEAPON_Z6_KNIVES]
 name = "Meteorite Knives"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_SABERS]
 name = "Ornamental Sabers"
+description = ""
+traits = [""]
 
 [WEAPON_CHINESE_SABERS]
 name = "Oriental Sabers"
+description = ""
+traits = [""]
 
 [ARMOR_SENSEI_KENDO]
 name = "Kendo Armor"
+description = ""
+traits = [""]
 
 [ARMOR_CENTURION]
 name = "Centurion Mail"
+description = ""
+traits = [""]
 
 [ARMOR_GRAND_CHAIN]
 name = "Grand Chainmail"
+description = ""
+traits = [""]
 
 [ARMOR_SPIKE]
 name = "Spike Breastplate"
+description = ""
+traits = [""]
 
 [ARMOR_GILDED_CENTURION]
 name = "Gilded Centurion Mail"
+description = ""
+traits = [""]
 
 [ARMOR_RAVEN]
 name = "Raven Mantle"
+description = ""
+traits = [""]
 
 [ARMOR_DARK]
 name = "Dark Cuirass"
+description = ""
+traits = [""]
 
 [ARMOR_SHADOW_MASTER]
 name = "Shadow Carapace"
+description = ""
+traits = [""]
 
 [ARMOR_ROYAL_BREASTPLATE]
 name = "Heraldic Cuirass"
+description = ""
+traits = [""]
 
 [ARMOR_DRAGON_JAWS]
 name = "Scale Breastplate"
+description = ""
+traits = [""]
 
 [ARMOR_CELESTIAL]
 name = "Celestial Gown"
+description = ""
+traits = [""]
 
 [ARMOR_HARBINGER_CUIRASS]
 name = "Harbinger Cuirass"
+description = ""
+traits = [""]
 
 [ARMOR_NECROMANCER]
 name = "Death Mark"
+description = ""
+traits = [""]
 
 [ARMOR_BLACK_BUFFALO]
 name = "Black Buffalo"
+description = ""
+traits = [""]
 
 [ARMOR_SUPER_BANSHEE]
 name = "Banshee's Cry"
+description = ""
+traits = [""]
 
 [ARMOR_CEREMONIAL]
 name = "Ceremonial Armor"
+description = ""
+traits = [""]
 
 [HELM_SMART_GABLED]
 name = "Parade Helm"
+description = ""
+traits = [""]
 
 [HELM_CRIMSON]
 name = "Copper Helm"
+description = ""
+traits = [""]
 
 [HELM_DARK_LEGIONER]
 name = "Dark Legionnaire Helm"
+description = ""
+traits = [""]
 
 [HELM_TRITON]
 name = "Dreadening Mask"
+description = ""
+traits = [""]
 
 [HELM_DARK]
 name = "Dark Mask"
+description = ""
+traits = [""]
 
 [HELM_GOLDEN]
 name = "Gilded Helm"
+description = ""
+traits = [""]
 
 [HELM_KNIGHTLY]
 name = "Paragon Armet"
+description = ""
+traits = [""]
 
 [HELM_ICARUS]
 name = "Avian Sallet"
+description = ""
+traits = [""]
 
 [HELM_IFRIT]
 name = "Ifrit Shell"
+description = ""
+traits = [""]
 
 [HELM_CELESTIAL]
 name = "Celestial Crown"
+description = ""
+traits = [""]
 
 [HELM_DEMON]
 name = "Demon Crest"
+description = ""
+traits = [""]
 
 [HELM_SPARTIAN]
 name = "Spartan Coif"
+description = ""
+traits = [""]
 
 [HELM_RITUAL]
 name = "Ritual Headpiece"
+description = ""
+traits = [""]
 
 [HELM_CEREMONIAL]
 name = "Ceremonial Mask"
+description = ""
+traits = [""]
 
 [RANGED_NEEDLE]
 name = "Needles"
+description = ""
+traits = [""]
 
 [RANGED_HEAVY_SHURIKENS]
 name = "Weighted Shurikens"
+description = ""
+traits = [""]
 
 [RANGED_SHURIKEN_OF_DARKNESS]
 name = "Shurikens of Night"
+description = ""
+traits = [""]
 
 [RANGED_ASSASSINS_DAGGER]
 name = "Assassin's Daggers"
+description = ""
+traits = [""]
 
 [RANGED_SUPER_KUNAI]
 name = "Lunar Knives"
+description = ""
+traits = [""]
 
 [RANGED_BEAST_AXES]
 name = "Beast Axes"
+description = ""
+traits = [""]
 
 [RANGED_KUNAI_OF_WIND]
 name = "Kunai of the Wind"
+description = ""
+traits = [""]
 
 [RANGED_DRAGON_WINGS]
 name = "Dragon Wings"
+description = ""
+traits = [""]
 
 [RANGED_CHAKRAM_OF_MASTER]
 name = "Keen Chakram"
+description = ""
+traits = [""]
 
 [RANGED_SUPER_DAGGERS]
 name = "Crystalline Spikes"
+description = ""
+traits = [""]
 
 [MAGIC_BOMB]
 name = "Dark Blast"
+description = ""
+traits = [""]
 
 [MAGIC_MASS_BOMB]
 name = "Dark Implosion"
+description = ""
+traits = [""]
 
 [MAGIC_WATER_BALL]
 name = "Water Ball"
+description = ""
+traits = [""]
 
 [MAGIC_ASTEROID]
 name = "Asteroid"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_HAMMERS]
 name = "Imhotep Pounders"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_KNUCKLES]
 name = "Coral Prickles"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_FANS]
 name = "Emerald Cutters"
+description = ""
+traits = [""]
 
 [WEAPON_Z6_NUNCHAKU]
 name = "Heavy Nunchacku"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_SPEAR]
 name = "The Sting"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_GLAIVE]
 name = "Sapphire Fang"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_SAI]
 name = "Harbinger Sai"
+description = ""
+traits = [""]
 
 [ARMOR_SUPER_SPIKED]
 name = "Fury Carapace"
+description = ""
+traits = [""]
 
 [ARMOR_SUPER_HALO]
 name = "Hallow Aegis"
+description = ""
+traits = [""]
 
 [ARMOR_SUPER_FEATHERED]
 name = "Ravenheart"
+description = ""
+traits = [""]
 
 [HELM_SUPER_SCARAB]
 name = "Scarab Shell"
+description = ""
+traits = [""]
 
 [HELM_SUPER_STRIPS]
 name = "Goldenhorn"
+description = ""
+traits = [""]
 
 [HELM_SUPER_PLUMED]
 name = "Imperial Plume"
+description = ""
+traits = [""]
 
 [WEAPON_STARTER_PACK_TONFA]
 name = "Rabid Tonfas"
@@ -1404,117 +1962,193 @@ traits = ["offer"]
 
 [WEAPON_STRANGER_KNUCKLES]
 name = "Spiny Knuckles"
+description = ""
+traits = [""]
 
 [WEAPON_MORNING_STARS]
 name = "Morning Stars"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_LEECHES]
 name = "Leeches"
+description = ""
+traits = [""]
 
 [WEAPON_ELEGANT_STAFF]
 name = "Elegant Staff"
+description = ""
+traits = [""]
 
 [WEAPON_FLAYER_CLAWS]
 name = "Flayer Claws"
+description = ""
+traits = [""]
 
 [WEAPON_BARBED_GLAIVE]
 name = "Barbed Glaive"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_DRAGON_TEETH]
 name = "Dragon Teeth"
+description = ""
+traits = [""]
 
 [WEAPON_KUKRIS]
 name = "Kukris"
+description = ""
+traits = [""]
 
 [WEAPON_QUENCHED_SAI]
 name = "Quenched Sai"
+description = ""
+traits = [""]
 
 [WEAPON_KEEN_KATANA]
 name = "Keen Katana"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_DAISHO]
 name = "Daisho"
+description = ""
+traits = [""]
 
 [ARMOR_PIT_MASTER]
 name = "Pit Master"
+description = ""
+traits = [""]
 
 [ARMOR_PATRIARCH_MANTLE]
 name = "Patriarch Mantle"
+description = ""
+traits = [""]
 
 [ARMOR_ORIENTAL_WRAPPINGS]
 name = "Oriental Wrappings"
+description = ""
+traits = [""]
 
 [ARMOR_SUNRISE_CUIRASS]
 name = "Sunrise Cuirass"
+description = ""
+traits = [""]
 
 [ARMOR_ADAMANTINE_PLATEMAIL]
 name = "Adamantine Platemail"
+description = ""
+traits = [""]
 
 [ARMOR_BRUTE_BREASTPLATE]
 name = "Brute Breastplate"
+description = ""
+traits = [""]
 
 [ARMOR_VINDICATOR_MAIL]
 name = "Vindicator Mail"
+description = ""
+traits = [""]
 
 [ARMOR_SUPER_NIGHTFALL]
 name = "Nightfall Cuirass"
+description = ""
+traits = [""]
 
 [ARMOR_VIPER]
 name = "Viper Armor"
+description = ""
+traits = [""]
 
 [ARMOR_SUPER_SAMURAI]
 name = "O-yoroi"
+description = ""
+traits = [""]
 
 [ARMOR_SHAMAN]
 name = "Shamanic Harness"
+description = ""
+traits = [""]
 
 [HELM_TAILED_CASQUE]
 name = "Tailed Casque"
+description = ""
+traits = [""]
 
 [HELM_NIGHTFALL_HEADPIECE]
 name = "Nightfall Headpiece"
+description = ""
+traits = [""]
 
 [HELM_SUPER_SECOND_WIND]
 name = "Second Wind"
+description = ""
+traits = [""]
 
 [HELM_GUARDIAN]
 name = "Guardian Helm"
+description = ""
+traits = [""]
 
 [HELM_HEXAPOD]
 name = "Hexapod"
+description = ""
+traits = [""]
 
 [HELM_STOUT_CASQUE]
 name = "Stout Casque"
+description = ""
+traits = [""]
 
 [HELM_ADAMANTINE_ARMET]
 name = "Adamantine Armet"
+description = ""
+traits = [""]
 
 [HELM_MASK_OF_HORROR]
 name = "Mask of Horror"
+description = ""
+traits = [""]
 
 [HELM_ASCENDANCY]
 name = "Ascendancy Helm"
+description = ""
+traits = [""]
 
 [HELM_SUPER_SAMURAI]
 name = "Mempo"
+description = ""
+traits = [""]
 
 [RANGED_WEIGHED_KUNAI]
 name = "Weighed Kunai"
+description = ""
+traits = [""]
 
 [RANGED_THROWING_SICKLES]
 name = "Throwing Sickles"
+description = ""
+traits = [""]
 
 [RANGED_THROWING_AXE]
 name = "Throwing Axes"
+description = ""
+traits = [""]
 
 [RANGED_SUPER_BOOMERANG]
 name = "Piercers"
+description = ""
+traits = [""]
 
 [MAGIC_WAVE]
 name = "Force Wave"
+description = ""
+traits = [""]
 
 [MAGIC_FIRE_SPLASH]
 name = "Fire Splash"
+description = ""
+traits = [""]
 
 [WEAPON_HW14_BROOM]
 name = "Broomstick"
@@ -1523,15 +2157,23 @@ traits = ["hw14"]
 
 [ARMOR_HW14_WICKED_VEIL]
 name = "Wicked Veil"
+description = ""
+traits = [""]
 
 [HELM_HW14_PUMPKIN]
 name = "Pumpkinhead"
+description = ""
+traits = [""]
 
 [HELM_HW14_WITCH]
 name = "Witch Hat"
+description = ""
+traits = [""]
 
 [WEAPON_HW14_SCYTHE]
 name = "Grim Scythe"
+description = ""
+traits = [""]
 
 [WEAPON_LYNX_CLAWS]
 name = "Lynx's Claws"
@@ -1559,42 +2201,68 @@ traits = ["boss"]
 
 [WEAPON_SECTIONAL_SCYTHE]
 name = "Mowers"
+description = ""
+traits = [""]
 
 [WEAPON_TONFA_GUNS]
 name = "Blaster Tonfas"
+description = ""
+traits = [""]
 
 [WEAPON_TEC_GLAIVE]
 name = "Fretsaw"
+description = ""
+traits = [""]
 
 [ARMOR_LUMINOSITY]
 name = "Luminosity Plate"
+description = ""
+traits = [""]
 
 [ARMOR_REDSHIFT]
 name = "Redshift"
+description = ""
+traits = [""]
 
 [ARMOR_ALLOY]
 name = "Alloy Armor"
+description = ""
+traits = [""]
 
 [ARMOR_SUPER_FUSION]
 name = "Fusion Core"
+description = ""
+traits = [""]
 
 [ARMOR_INFERNO]
 name = "Inferno Carapace"
+description = ""
+traits = [""]
 
 [HELM_INFERNO]
 name = "Inferno Headpiece"
+description = ""
+traits = [""]
 
 [HELM_ADVANCED_CONICAL]
 name = "Advanced Conical Helmet"
+description = ""
+traits = [""]
 
 [HELM_SUPER_PREDATOR]
 name = "Mask of Prey"
+description = ""
+traits = [""]
 
 [HELM_QUASAR]
 name = "Quasar"
+description = ""
+traits = [""]
 
 [HELM_ANGER]
 name = "Marauder"
+description = ""
+traits = [""]
 
 [WEAPON_XMAS15_CANES]
 name = "Caramel Shuang Gou"
@@ -1603,15 +2271,23 @@ traits = ["xmas15"]
 
 [ARMOR_XMAS15_SANTA]
 name = "Frosty Breastplace"
+description = ""
+traits = [""]
 
 [HELM_XMAS15_HORNS]
 name = "Antlers Of The Forest Spirit"
+description = ""
+traits = [""]
 
 [HELM_XMAS15_SANTA]
 name = "Face of Christmas"
+description = ""
+traits = [""]
 
 [RANGED_XMAS15_SNOWBALLS]
 name = "Snow charges"
+description = ""
+traits = [""]
 
 [WEAPON_XMAS14_CANES]
 name = "Candy Canes"
@@ -1620,135 +2296,223 @@ traits = ["xmas14"]
 
 [ARMOR_XMAS14_SANTA]
 name = "Christmas Spirit"
+description = ""
+traits = [""]
 
 [HELM_XMAS14_HORNS]
 name = "Reindeer Horns"
+description = ""
+traits = [""]
 
 [HELM_XMAS14_SANTA]
 name = "Beard of Frost"
+description = ""
+traits = [""]
 
 [RANGED_XMAS14_SNOWBALLS]
 name = "Snowballs"
+description = ""
+traits = [""]
 
 [HELM_CRYSTALLINE]
 name = "Crystalloid Visor"
+description = ""
+traits = [""]
 
 [HELM_SUPER_LASER]
 name = "Laserbeam Mask"
+description = ""
+traits = [""]
 
 [HELM_TUBES]
 name = "Xenon Helm"
+description = ""
+traits = [""]
 
 [HELM_CYBER_MASK]
 name = "Mandible Mask"
+description = ""
+traits = [""]
 
 [HELM_CYBER_SAMURAI]
 name = "Formics Headgear"
+description = ""
+traits = [""]
 
 [MAGIC_DEATH_RAY]
 name = "Force Ray"
+description = ""
+traits = [""]
 
 [MAGIC_ACID_CLOUD]
 name = "Toxic Cloud"
+description = ""
+traits = [""]
 
 [RANGED_CIRCULAR_SAW]
 name = "Circular Saws"
+description = ""
+traits = [""]
 
 [RANGED_SUPER_MINE]
 name = "Landmines"
+description = ""
+traits = [""]
 
 [ARMOR_POLYTOXINE_LORICA]
 name = "Polytoxine Lorica"
+description = ""
+traits = [""]
 
 [ARMOR_SPACE_GOWN]
 name = "Space Gown"
+description = ""
+traits = [""]
 
 [ARMOR_GALAXY_TUNIC]
 name = "Galaxy Tunic"
+description = ""
+traits = [""]
 
 [WEAPON_TEC_KNIVES]
 name = "Hack Knives"
+description = ""
+traits = [""]
 
 [WEAPON_COMPOSITE_SCYTHE]
 name = "Reaver"
+description = ""
+traits = [""]
 
 [WEAPON_COMPOSITE_STAFF]
 name = "Telescopic Staff"
+description = ""
+traits = [""]
 
 [WEAPON_COMPOSITE_SPEAR]
 name = "Thruster"
+description = ""
+traits = [""]
 
 [WEAPON_POWER_FISTS]
 name = "Pneumo Fists"
+description = ""
+traits = [""]
 
 [WEAPON_SUPER_COMPOSITE_SWORD]
 name = "Composite Sword"
+description = ""
+traits = [""]
 
 [WEAPON_SHOCKER_CLAWS]
 name = "Shocker Claws"
+description = ""
+traits = [""]
 
 [ARMOR_SUPER_MERC_SUIT]
 name = "Mercenary Vest"
+description = ""
+traits = [""]
 
 [RANGED_BLASTER]
 name = "Incinerator"
+description = ""
+traits = [""]
 
 [ARMOR_HALF-LIFE]
 name = "Half-life Armor"
+description = ""
+traits = [""]
 
 [ARMOR_OUTWORLD_VEST]
 name = "Outworld Vest"
+description = ""
+traits = [""]
 
 [ARMOR_FACELESS_TUNIC]
 name = "Faceless's Tunic"
+description = ""
+traits = [""]
 
 [ARMOR_MEMBRANE_CUIRASS]
 name = "Membrane Cuirass"
+description = ""
+traits = [""]
 
 [ARMOR_NAVIGATORS_COAT]
 name = "Navigator's Coat"
+description = ""
+traits = [""]
 
 [HELM_NAVIGATORS_BREATH_MASK]
 name = "Navigator's Breath Mask"
+description = ""
+traits = [""]
 
 [HELM_FACELESS_MASK]
 name = "Faceless's Mask"
+description = ""
+traits = [""]
 
 [HELM_VISOR]
 name = "Elders' Visor"
+description = ""
+traits = [""]
 
 [HELM_PROTECTOR]
 name = "Protector's Headgear"
+description = ""
+traits = [""]
 
 [RANGED_SUPER_BLADE]
 name = "Dissecting Blade"
+description = ""
+traits = [""]
 
 [RANGED_THORNS]
 name = "Mortal Thorns"
+description = ""
+traits = [""]
 
 [RANGED_LOTOS]
 name = "Lotos of Pain"
+description = ""
+traits = [""]
 
 [MAGIC_SAWMILL]
 name = "Torturer's Rage"
+description = ""
+traits = [""]
 
 [MAGIC_FIRE_AURA]
 name = "Wrath of Flame"
+description = ""
+traits = [""]
 
 [WEAPON_ELECTRO_HAMMERS]
 name = "Thunder Hammers"
+description = ""
+traits = [""]
 
 [WEAPON_FIRE_BATONS]
 name = "Flame clubs"
+description = ""
+traits = [""]
 
 [WEAPON_KNOBSTICKS]
 name = "Orbs of pain"
+description = ""
+traits = [""]
 
 [WEAPON_GLAIVEBOW]
 name = "Cobra's Tooth"
+description = ""
+traits = [""]
 
 [WEAPON_RIFLE]
 name = "Plasma rifle"
+description = ""
+traits = [""]
 
 [WEAPON_HW15_SCYTHE]
 name = "Blade Of Death"
@@ -1762,57 +2526,93 @@ traits = ["hw15"]
 
 [ARMOR_HW15_WICKED_VEIL]
 name = "Mist Cloak"
+description = ""
+traits = [""]
 
 [HELM_HW15_WITCH]
 name = "Witch Hat"
+description = ""
+traits = [""]
 
 [HELM_HW15_PUMPKIN]
 name = "Obsessed Pumpkin"
+description = ""
+traits = [""]
 
 [RANGED_HW15_SKULL]
 name = "Flame skull"
+description = ""
+traits = [""]
 
 [ARMOR_HW19_SET]
 name = "Grim Mantle"
+description = ""
+traits = [""]
 
 [HELM_1_HW19_SET]
 name = "Feisty Vegetable"
+description = ""
+traits = [""]
 
 [HELM_2_HW19_SET]
 name = "Ghost Cap"
+description = ""
+traits = [""]
 
 [RANGED_HW19_SET]
 name = "Harbinger of Madness"
+description = ""
+traits = [""]
 
 [WEAPON_1_HW19_SET]
 name = "Winged Darkness` Claws"
+description = ""
+traits = [""]
 
 [WEAPON_2_HW19_SET]
 name = "Blade of Eternal Pain"
+description = ""
+traits = [""]
 
 [ARMOR_CHNY20_HOODIE]
 name = "Game Fan`s Hoodie"
+description = ""
+traits = [""]
 
 [HELM_CHNY20_PANDA]
 name = "Adorable Panda"
+description = ""
+traits = [""]
 
 [WEAPON_CHNY20_PANDA]
 name = "Panda Cuddles"
+description = ""
+traits = [""]
 
 [WEAPON_CHNY20_STAFF]
 name = "Chinese Dragon Staff"
+description = ""
+traits = [""]
 
 [ARMOR_CHNY20_TRADITIONAL]
 name = "Dragon's Scale"
+description = ""
+traits = [""]
 
 [HELM_CHNY20_TRADITIONAL]
 name = "Hat of Generous Gifts"
+description = ""
+traits = [""]
 
 [RANGED_CHNY20_TRADITIONAL]
 name = "Burning Battle Citrus"
+description = ""
+traits = [""]
 
 [RANGED_VAL20_AXE]
 name = "Broken Hearts"
+description = ""
+traits = [""]
 
 [WEAPON_VAL20_FANS]
 name = "Fans Of Passion"
@@ -1821,15 +2621,23 @@ traits = ["specialEdition", "vd17", "vd20", "vd21", "vd23"]
 
 [WEAPON_VAL20_TRIDENT]
 name = "Fatemaker"
+description = ""
+traits = [""]
 
 [WEAPON_VAL20_SAI]
 name = "Vermeil Fangs"
+description = ""
+traits = [""]
 
 [HELM_VAL20_WINGS]
 name = "Helm of Inspiration"
+description = ""
+traits = [""]
 
 [ARMOR_VAL20_MANTLE]
 name = "Poetic Mantle"
+description = ""
+traits = [""]
 
 [WEAPON_HW17_DAGGERS]
 name = "Death's Jaw"
@@ -1843,84 +2651,138 @@ traits = ["nintendoSwitchEdition", "hw17", "hw20"]
 
 [RANGED_HW17_NEEDLES]
 name = "Cursed Pins"
+description = ""
+traits = [""]
 
 [HELM_HW17_CYLINDER]
 name = "Baroness Cylinder"
+description = ""
+traits = [""]
 
 [ARMOR_HW17_CLOAK]
 name = "Voodoo Vest"
+description = ""
+traits = [""]
 
 [MAGIC_HW17_VOODOO]
 name = "Dark Blood Magic"
+description = ""
+traits = [""]
 
 [HELM_WOODOO_HW20]
 name = "Face of the Grim Baron"
+description = ""
+traits = [""]
 
 [ARMOR_WOODOO_HW20]
 name = "Grim Baron's Coat"
+description = ""
+traits = [""]
 
 [RANGED_HW20_SKULL]
 name = "Grim Baron's Mark"
+description = ""
+traits = [""]
 
 [ARMOR_CHNY21_BULL]
 name = "Armor of majesty"
+description = ""
+traits = [""]
 
 [HELM_CHNY21_BULL]
 name = "Helmet of ferocity"
+description = ""
+traits = [""]
 
 [WEAPON_CHNY21_FAN]
 name = "Festive fans"
+description = ""
+traits = [""]
 
 [WEAPON_CHNY21_JIAN]
 name = "Victorious jian"
+description = ""
+traits = [""]
 
 [RANGED_IND21_CHAKRAM]
 name = "Chackrams of Overlord"
+description = ""
+traits = [""]
 
 [ARMOR_IND21_TWILIGHT]
 name = "Unbreakable Gift of Gods"
+description = ""
+traits = [""]
 
 [ARMOR_IND21_HOODIE]
 name = "Festive Hoody"
+description = ""
+traits = [""]
 
 [HELM_IND21_BLOOD]
 name = "Helm of Heaven Keeper"
+description = ""
+traits = [""]
 
 [HELM_IND21_TURBAN]
 name = "Festive Turban"
+description = ""
+traits = [""]
 
 [WEAPON_IND21_KERIS]
 name = "Krises of an Intercessor"
+description = ""
+traits = [""]
 
 [WEAPON_IND21_GLAIVEBOW]
 name = "Demon Slayer"
+description = ""
+traits = [""]
 
 [RANGED_IND21_KUNAI]
 name = "Blades of the Dawn"
+description = ""
+traits = [""]
 
 [WEAPON_AE21_SPEAR]
 name = "Hand of Prairie"
+description = ""
+traits = [""]
 
 [RANGED_AE21_TOMAHAWK]
 name = "Сhieftain's Tomahawk"
+description = ""
+traits = [""]
 
 [ARMOR_AE21_WARRIOR]
 name = "Robe of Courage"
+description = ""
+traits = [""]
 
 [HELM_AE21_ROACH]
 name = "Sachem's  Roach"
+description = ""
+traits = [""]
 
 [MAGIC_AE21_SPIRIT_PILLAR]
 name = "Spirits' Wrath"
+description = ""
+traits = [""]
 
 [ARMOR_SUMMER21_SANTA]
 name = "Jacket of Icy Tenacity"
+description = ""
+traits = [""]
 
 [HELM_SUMMER21_SANTA]
 name = "Unyielding Face of Winter"
+description = ""
+traits = [""]
 
 [WEAPON_SUMMER21_CANDY]
 name = "Caramel Fervor"
+description = ""
+traits = [""]
 
 [WEAPON_SUMMER21_SWORD]
 name = "Beach Punisher"
@@ -1929,18 +2791,28 @@ traits = ["summer21", "offer"]
 
 [RANGED_SUMMER21_DONUT]
 name = "Unbroken Donut"
+description = ""
+traits = [""]
 
 [RANGED_SUMMER21_SQUID]
 name = "Furious Squid"
+description = ""
+traits = [""]
 
 [WEAPON_SUMMER21_TRIDENT]
 name = "Conqueror Of The Seas"
+description = ""
+traits = [""]
 
 [RANGED_SUMMER21_ANCIENT_CHAKRAM]
 name = "Breakwaters"
+description = ""
+traits = [""]
 
 [ARMOR_SUMMER21_LEGIONER]
 name = "Coastal Sunset"
+description = ""
+traits = [""]
 
 [WEAPON_C4_Z1_WARLOCK_STAFF]
 name = "Shepherd's Staff"
@@ -2006,12 +2878,18 @@ traits = ["setForestGuardian"]
 
 [WEAPON_CHNY22_SPEAR]
 name = "Tiger's Roar"
+description = ""
+traits = [""]
 
 [MAGIC_CHNY22_WATERBALL]
 name = "Tamer of the Elements"
+description = ""
+traits = [""]
 
 [RANGED_CHNY22_WEIGHED_KUNAI]
 name = "Steal Fang"
+description = ""
+traits = [""]
 
 [HELM_BP_S2_SKANDA]
 name = "Crown of Kali"
@@ -2037,9 +2915,13 @@ traits = ["setSkanda"]
 
 [WEAPON_MINI_EVENT_PERNACH]
 name = "Finger of God"
+description = ""
+traits = [""]
 
 [RANGED_BOAT_FESTIVAL_SUPER_SHURIKEN]
 name = "Whirlpool of Petals"
+description = ""
+traits = [""]
 
 [HELM_BP_S3_WIND_MAKER]
 name = "Furious Bull"
@@ -2065,6 +2947,8 @@ traits = ["setCreatorsOfTheWind"]
 
 [WEAPON_MINI_EVENT_STUFF]
 name = "Bane Spore"
+description = ""
+traits = [""]
 
 [HELM_BP_S4_SCRIPTWRITER]
 name = "Lights, camera, action!"
@@ -2093,9 +2977,13 @@ traits = ["setDirector"]
 
 [WEAPON_MINI_EVENT_KNIFE]
 name = "Insatiable Blades"
+description = ""
+traits = [""]
 
 [RANGED_BP_S5_TIME_SHIFTER]
 name = "Chronos's Razor"
+description = ""
+traits = [""]
 
 [HELM_BP_S5_TIME_SHIFTER]
 name = "Stonecold"
@@ -2147,12 +3035,18 @@ traits = ["setNeoWanderer"]
 
 [MAGIC_ANNIVERSARY_10TH]
 name = "Inmate's Shackles"
+description = ""
+traits = [""]
 
 [HELM_ANNIVERSARY_10TH]
 name = "Lunatic's Eye"
+description = ""
+traits = [""]
 
 [ARMOR_ANNIVERSARY_10TH]
 name = "Snow Blind"
+description = ""
+traits = [""]
 
 [WEAPON_ANNIVERSARY_10TH]
 name = "Vulture's Feather"
@@ -2161,9 +3055,13 @@ traits = ["anniversary10", "offer"]
 
 [RANGED_ANNIVERSARY_10TH]
 name = "Harpy's Bite"
+description = ""
+traits = [""]
 
 [RANGED_SUN_CHAKRAM]
 name = "Zenith"
+description = ""
+traits = [""]
 
 [WEAPON_SHADOW_DAISHO]
 name = "Hero's Will"
@@ -2172,24 +3070,38 @@ traits = ["gift", "anniversary10"]
 
 [RANGED_NY2024_AXE]
 name = "Hel's Kiss"
+description = ""
+traits = [""]
 
 [HELM_NY2024_SHAKO]
 name = "Grenadier's Shako"
+description = ""
+traits = [""]
 
 [ARMOR_NY2024_VIKING_CLOTHES]
 name = "Berserk's Legacy"
+description = ""
+traits = [""]
 
 [WEAPON_NY2024_MUSKET]
 name = "Fury of Austerlitz"
+description = ""
+traits = [""]
 
 [MAGIC_NY2024_AMULET]
 name = "Cold Fusion"
+description = ""
+traits = [""]
 
 [MAGIC_CYBER_DRAGON_RAY]
 name = "Isotope Reactor"
+description = ""
+traits = [""]
 
 [HELM_CYBER_DRAGON_HEAD]
 name = "Dragon's Thirst"
+description = ""
+traits = [""]
 
 [WEAPON_CYBER_DRAGON_KUSARIGAMA]
 name = "Matter Splitter"
@@ -2198,12 +3110,18 @@ traits = ["offer"]
 
 [WEAPON_CNY2024]
 name = "Sunstroke"
+description = ""
+traits = [""]
 
 [HELM_CNY2024_MASK]
 name = "Daybreak's Visage"
+description = ""
+traits = [""]
 
 [MAGIC_CNY2024]
 name = "Star's Breath"
+description = ""
+traits = [""]
 
 [WEAPON_8MARCH_24]
 name = "Weeper's Sorrow"
@@ -2212,30 +3130,40 @@ traits = ["offer"]
 
 [ARMOR_8MARCH_24]
 name = "Poison Petal"
+description = ""
+traits = [""]
 
 [MAGIC_8MARCH_24]
 name = "Shivering Earth"
+description = ""
+traits = [""]
 
 [HELM_RAID_FUNGUS_SET]
 name = "All-Seeing Eye"
-tarits = ["setSporeSoul"]
+traits = ["setSporeSoul"]
 
 [ARMOR_RAID_FUNGUS_SET]
 name = "Mycelium Guardian"
-tarits = ["setSporeSoul"]
+traits = ["setSporeSoul"]
 
 [MAGIC_INDIA_24]
 name = "Highest Measure"
+description = ""
+traits = [""]
 
 [WEAPON_INDIA_24]
 name = "Soul's Lot"
+description = ""
+traits = [""]
 
 [ARMOR_INDIA_24]
 name = "Root of Grief"
+description = ""
+traits = [""]
 
 [RANGED_RAID_FUNGUS_SET]
 name = "Spore Carriers"
-tarits = ["setSporeSoul"]
+traits = ["setSporeSoul"]
 
 [WEAPON_RAID_FUNGUS_SET]
 name = "Guardian's Wrath"
@@ -2243,7 +3171,7 @@ description = """
 Guardian's Wrath is a special set weapon in Shadow Fight 2. It is the weapon of the Spore Soul Set, which comes with the mythical enchantment Cordyceps.
 This weapon can be acquired by chance from opening a Ritual Chest during the 3rd part of the Ritual Battles Event in 2024. Opening a chest costs 600 Blessings of the Cult, the exclusive currency of the event.
 """
-tarits = ["setSporeSoul"]
+traits = ["setSporeSoul"]
 
 [ARMOR_RAID_VOLCANO_SET]
 name = "Ash Whisper"
@@ -2255,7 +3183,7 @@ traits = ["setVolcano"]
 
 [MAGIC_RAID_FUNGUS_SET]
 name = "Spores of Discord"
-tarits = ["setSporeSoul"]
+traits = ["setSporeSoul"]
 
 [WEAPON_SICKLE_FALL_24]
 name = "False Gods"
@@ -2267,24 +3195,38 @@ traits = ["offer"]
 
 [WEAPON_SCYTHE_FALL_24]
 name = "Hope Eater"
+description = ""
+traits = [""]
 
 [HELM_FALL_24]
 name = "Poisonеd Wisdom"
+description = ""
+traits = [""]
 
 [WEAPON_DAGGERS_HW_24]
 name = "Loa Twins"
+description = ""
+traits = [""]
 
 [ARMOR_TRIBAL_HW_24]
 name = "Mist Lord"
+description = ""
+traits = [""]
 
 [MAGIC_CARDS_HW_24]
 name = "Major Arcana"
+description = ""
+traits = [""]
 
 [ARMOR_AZTEC_24]
 name = "Ancestral Pride"
+description = ""
+traits = [""]
 
 [HELM_AZTEC_24]
 name = "Face of Metztli"
+description = ""
+traits = [""]
 
 [WEAPON_RAID_VOLCANO_SET]
 name = "Phoenix Song"
@@ -2305,9 +3247,13 @@ traits = ["offer"]
 
 [HELM_FOREST_DEMON_25]
 name = "Satyr's Amusement"
+description = ""
+traits = [""]
 
 [MAGIC_FOREST_DEMON_25]
 name = "Requiem"
+description = ""
+traits = [""]
 
 [WEAPON_FOREST_DEMON_25]
 name = "Witch's Cantata"
@@ -2316,9 +3262,13 @@ traits = ["offer"]
 
 [HELM_NEW_YEAR_25]
 name = "Blinding Truth"
+description = ""
+traits = [""]
 
 [ARMOR_NEW_YEAR_25]
 name = "Will's Prisoner"
+description = ""
+traits = [""]
 
 [WEAPON_NEW_YEAR_25]
 name = "Lost Desire"
@@ -2327,9 +3277,13 @@ traits = ["offer"]
 
 [MAGIC_NEW_YEAR_25]
 name = "Martyr's Sacrifice"
+description = ""
+traits = [""]
 
 [MAGIC_AZTEC_24]
 name = "Redemptive Gift"
+description = ""
+traits = [""]
 
 [MAGIC_RAID_VOLCANO_SET]
 name = "Roaring Caldera"
@@ -2337,6 +3291,8 @@ traits = ["setVolcano"]
 
 [RANGED_AZTEC_24]
 name = "Pain Bound"
+description = ""
+traits = [""]
 
 [WEAPON_KUSARIGAMA_STRIKING_FALKON_25]
 name = "Striking Falcon"
@@ -2345,15 +3301,23 @@ traits = ["offer"]
 
 [HELM_HOAXEN_25]
 name = "Сhimera Paradox"
+description = ""
+traits = [""]
 
 [ARMOR_HOAXEN_25]
 name = "Fate Cocoon"
+description = ""
+traits = [""]
 
 [HELM_FUTURIST_25]
 name = "GlitchMask"
+description = ""
+traits = [""]
 
 [ARMOR_REVENANT_25]
 name = "Will's Prisoner"
+description = ""
+traits = [""]
 
 [RANGED_KARCER_HUNGER_SET]
 name = "Snake Reaper"
@@ -2366,15 +3330,23 @@ traits = ["offer"]
 
 [ARMOR_FUTURIST_25]
 name = "Crimson Hunter"
+description = ""
+traits = [""]
 
 [RANGED_FUTURIST_25]
 name = "Furious Maria"
+description = ""
+traits = [""]
 
 [MAGIC_FUTURIST_25]
 name = "Plasma Cutter"
+description = ""
+traits = [""]
 
 [RANGED_SHADES_25]
 name = "Sons of the Eclipse"
+description = ""
+traits = [""]
 
 [WEAPON_RITUAL_25]
 name = "Ashes of Generation"
