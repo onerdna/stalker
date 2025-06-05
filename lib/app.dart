@@ -83,22 +83,22 @@ void showFatalErrorDialog(
   });
 }
 
-Future<void> showConfirmationDialog(Widget title, Widget content, BuildContext context, void Function(BuildContext) onConfirm) async {
-    showDialog(
-        context: context,
-        builder: (ctx) => AlertDialog(
-              title: title,
-              content: content,
-              actions: [
-                TextButton(
-                    onPressed: () => Navigator.of(ctx).pop(),
-                    child: const Text("Cancel")),
-                TextButton(
-                    onPressed: () => onConfirm(ctx),
-                    child: const Text("Confirm"))
-              ],
-            ));
-  }
+Future<void> showConfirmationDialog(Widget title, Widget content,
+    BuildContext context, void Function(BuildContext) onConfirm) async {
+  showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+            title: title,
+            content: content,
+            actions: [
+              TextButton(
+                  onPressed: () => Navigator.of(ctx).pop(),
+                  child: const Text("Cancel")),
+              TextButton(
+                  onPressed: () => onConfirm(ctx), child: const Text("Confirm"))
+            ],
+          ));
+}
 
 class _AppState extends State<App> {
   static final List<Widget> pages = [
@@ -202,7 +202,7 @@ class _AppState extends State<App> {
       await _tryToShowNotice();
       if (await _tryToConnectToShizuku(context)) {
         if (await _tryToLoadUserID(context)) {
-          loadEnchantments().then((_) async {
+          EnchantmentsManager.loadFromFiles().then((_) async {
             if (await _tryToLoadRecords(context)) {
               setState(() {
                 initialized.value = true;
@@ -210,8 +210,9 @@ class _AppState extends State<App> {
             } else {
               Fluttertoast.showToast(msg: "Unable to load save file");
             }
-          }).onError((_, __) {
+          }).onError((error, stacktrace) {
             Fluttertoast.showToast(msg: "Unable to load enchantments");
+            logger.e("$error\n$stacktrace");
           });
         }
       } else {
@@ -277,7 +278,7 @@ class _AppState extends State<App> {
 
   Future<bool> _isUpdateAvailable() async {
     final url = Uri.parse(
-        'https://api.github.com/repos/onerdna/stalker_release/releases/latest');
+        'https://api.github.com/repos/onerdna/stalker/releases/latest');
     final client = HttpClient();
 
     try {
@@ -289,10 +290,12 @@ class _AppState extends State<App> {
 
       final releaseData = jsonDecode(responseBody);
       final tagName = releaseData['tag_name'] as String?;
+      logger.i("Fetched latest version: $tagName");
 
       return Version.parse(tagName ?? '') >
           Version.parse(package.value!.version);
     } catch (e) {
+      logger.e("An error ocurred while checking for updates: $e");
       return false;
     } finally {
       client.close();
@@ -329,8 +332,10 @@ class _AppState extends State<App> {
               borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(28), topRight: Radius.circular(28)),
               child: NavigationBar(
-                backgroundColor:
-                    Theme.of(context).colorScheme.surface.withValues(alpha: 0.9),
+                backgroundColor: Theme.of(context)
+                    .colorScheme
+                    .surface
+                    .withValues(alpha: 0.9),
                 surfaceTintColor: Theme.of(context).colorScheme.surfaceTint,
                 indicatorColor:
                     Theme.of(context).colorScheme.secondaryContainer,

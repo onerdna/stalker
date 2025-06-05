@@ -1,43 +1,70 @@
-[Lifesteal]
+[lifesteal]
+name = "Lifesteal"
+
+[lifesteal.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_LIFESTEAL_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_LIFESTEAL_RANGED"
 magic = "PERK_ITEM_SPECIAL_LIFESTEAL_MAGIC"
 
-[Bleeding]
+[bleeding]
+name = "Bleeding"
+
+[bleeding.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_BLEEDING_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_BLEEDING_RANGED"
 magic = "PERK_ITEM_SPECIAL_BLEEDING_MAGIC"
 
-[Enfeeble]
+[enfeeble]
+name = "Enfeeble"
+
+[enfeeble.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_ENFEEBLE_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_ENFEEBLE_RANGED"
 magic = "PERK_ITEM_SPECIAL_ENFEEBLE_MAGIC"
 
-[Frenzy]
+[frenzy]
+name = "Frenzy"
+
+[frenzy.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_FRENZY_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_FRENZY_RANGED"
 magic = "PERK_ITEM_SPECIAL_FRENZY_MAGIC"
 armor = "PERK_ITEM_SPECIAL_FRENZY_DEFENSE_ARMOR"
 helm = "PERK_ITEM_SPECIAL_FRENZY_DEFENSE_HELM"
 
-[Stun]
+[stun]
+name = "Stun"
+
+[stun.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_STUN_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_STUN_RANGED"
 magic = "PERK_ITEM_SPECIAL_STUN_MAGIC"
 
-["Time Bomb"]
+["timeBomb"]
+name = "Time Bomb"
+
+[timeBomb.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_TIME_BOMB_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_TIME_BOMB_RANGED"
 magic = "PERK_ITEM_SPECIAL_TIME_BOMB_MAGIC"
 
-[Regeneration]
+[regeneration]
+name = "Regeneration"
+
+[regeneration.equipment_ids]
 armor = "PERK_ITEM_SPECIAL_REGENERATION_ARMOR"
 helm = "PERK_ITEM_SPECIAL_REGENERATION_HELM"
 
-[Shielding]
+[shielding]
+name = "Shielding"
+
+[shielding.equipment_ids]
 armor = "PERK_ITEM_SPECIAL_SHIELDING_ARMOR"
 helm = "PERK_ITEM_SPECIAL_SHIELDING_HELM"
 
-["Damage Return"]
+[damageReturn]
+name = "Damage Return"
+
+[damageReturn.equipment_ids]
 armor = "PERK_ITEM_SPECIAL_DAMAGE_RETURN_ARMOR"
 helm = "PERK_ITEM_SPECIAL_DAMAGE_RETURN_HELM"

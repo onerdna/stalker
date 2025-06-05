@@ -1,39 +1,63 @@
-[Precision]
+[precision]
+name = "Precision"
+
+[precision.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_PRECISION_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_PRECISION_RANGED"
 magic = "PERK_ITEM_SPECIAL_PRECISION_MAGIC"
 
-[Overheat]
+[overheat]
+name = "Overheat"
+
+[overheat.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_OVERHEAT_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_OVERHEAT_RANGED"
 magic = "PERK_ITEM_SPECIAL_OVERHEAT_MAGIC"
 armor = "PERK_ITEM_SPECIAL_OVERHEAT_DEFENSE_ARMOR"
 helm = "PERK_ITEM_SPECIAL_OVERHEAT_DEFENSE_HELM"
 
-[Poisoning]
+[poisoning]
+name = "Poisoning"
+
+[poisoning.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_INTOXICATION_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_INTOXICATION_RANGED"
 magic = "PERK_ITEM_SPECIAL_INTOXICATION_MAGIC"
 
-[Weakness]
+[weakness]
+name = "Weakness"
+
+[weakness.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_WEAKNESS_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_WEAKNESS_RANGED"
 magic = "PERK_ITEM_SPECIAL_WEAKNESS_MAGIC"
 
-["Magic Recharge"]
+["magicRecharge"]
+name = "Magic Recharge"
+
+[magicRecharge.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_MAGIC_DAMAGE_RECHARGE_WEAPON"
 armor = "PERK_ITEM_SPECIAL_MAGIC_PAIN_RECHARGE_ARMOR"
 helm = "PERK_ITEM_SPECIAL_MAGIC_PAIN_RECHARGE_HELM"
 
-[Bloodrage]
+[bloodrage]
+name = "Bloodrage"
+
+[bloodrage.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_BLOODRAGE_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_BLOODRAGE_RANGED"
 magic = "PERK_ITEM_SPECIAL_BLOODRAGE_MAGIC"
 
-[Rejuvenation]
+[rejuvenation]
+name = "Rejuvenation"
+
+[rejuvenation.equipment_ids]
 armor = "PERK_ITEM_SPECIAL_REJUVENATION_ARMOR"
 helm = "PERK_ITEM_SPECIAL_REJUVENATION_HELM"
 
-["Damage Absorption"]
+[damageAbsorption]
+name = "Damage Absorption"
+
+[damageAbsorption.equipment_ids]
 armor = "PERK_ITEM_SPECIAL_DAMAGE_ABSORPTION_BODY_ARMOR"
 helm = "PERK_ITEM_SPECIAL_DAMAGE_ABSORPTION_HEAD_HELM"

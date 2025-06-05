@@ -275,7 +275,8 @@ class _InventoryViewState extends State<InventoryView> {
                             showDialog(
                                 context: context,
                                 builder: (ctx) => NewEnchantmentDialog(
-                                    enchantments: enchantments,
+                                    enchantments:
+                                        EnchantmentsManager.enchantments,
                                     type: widget.equipmentType,
                                     onPressed: (selected) {
                                       setState(() {
@@ -344,51 +345,96 @@ class _InventoryViewState extends State<InventoryView> {
   }
 
   Iterable<Widget> _generateSuggestedEntries() {
-    return suggestedEquipment.map((e) => DecoratedBox(
-          decoration: BoxDecoration(
-              border: Border.all(
-                width: 1,
-                color: Theme.of(context).colorScheme.outline,
-              ),
-              borderRadius: BorderRadius.circular(16)),
-          child: ExpansionTile(
-            title: Row(
-              children: [
-                IconButton(
-                  onPressed: () {
-                    setState(() {
-                      RecordsManager
-                          .activeRecord!.equipment[widget.equipmentType]!
-                          .add(Equipment(widget.equipmentType, e, 1, 0));
-                      _searchEquipment(query);
-                    });
-                    Fluttertoast.showToast(msg: "Added to the inventory");
-                  },
-                  icon: const Icon(Icons.add, size: 32),
-                ),
-                Text(ItemDatabase.getName(e)),
-              ],
+    return suggestedEquipment.map((e) {
+      final enchantments = ItemDatabase.getEnchantments(e).map((ench) =>
+          DecoratedBox(
+              decoration: BoxDecoration(
+                  border: Border.all(width: 2, color: Color(ench.tier.color)),
+                  borderRadius: BorderRadius.circular(16)),
+              child: Padding(
+                padding: const EdgeInsets.only(
+                    top: 4.0, bottom: 4, right: 12, left: 12),
+                child: Text(ench.name),
+              )));
+      final description = ItemDatabase.getDescription(e);
+
+      return DecoratedBox(
+        decoration: BoxDecoration(
+            border: Border.all(
+              width: 1,
+              color: Theme.of(context).colorScheme.outline,
             ),
-            subtitle: Padding(
-              padding: const EdgeInsets.only(left: 8.0),
-              child: Column(
-                children: [
-                  Align(alignment: Alignment.centerLeft, child: Text(e)),
-                  const SizedBox(
-                    height: 12,
-                  ),
-                  _generateTraitsFor(e)
-                ],
-              ),
-            ),
+            borderRadius: BorderRadius.circular(16)),
+        child: ExpansionTile(
+          title: Row(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Text(ItemDatabase.getDescription(e)),
-              )
+              IconButton(
+                onPressed: () {
+                  final equipment = Equipment(widget.equipmentType, e, 1, 0);
+                  equipment.enchantments = ItemDatabase.getEnchantments(e).map(
+                      (ench) => AppliedEnchantment(
+                          ench, ench.tier == EnchantmentTier.mythical ? null : AppliedEnchantment.maxAspect)).toList();
+                  setState(() {
+                    RecordsManager
+                        .activeRecord!.equipment[widget.equipmentType]!
+                        .add(equipment);
+                    _searchEquipment(query);
+                  });
+                  Fluttertoast.showToast(msg: "Added to the inventory");
+                },
+                icon: const Icon(Icons.add, size: 32),
+              ),
+              Text(ItemDatabase.getName(e)),
             ],
           ),
-        ));
+          subtitle: Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Column(
+              children: [
+                Align(alignment: Alignment.centerLeft, child: Text(e)),
+                const SizedBox(
+                  height: 12,
+                ),
+                _generateTraitsFor(e)
+              ],
+            ),
+          ),
+          children: [
+            description.isEmpty
+                ? const SizedBox.shrink()
+                : Padding(
+                    padding:
+                        const EdgeInsets.only(left: 16.0, right: 16, top: 16),
+                    child: Text(description),
+                  ),
+            enchantments.isEmpty
+                ? const SizedBox.shrink()
+                : const Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 32.0),
+                      child: Text(
+                        "Enchantments: ",
+                        style: TextStyle(fontSize: 17),
+                      ),
+                    ),
+                  ),
+            enchantments.isEmpty
+                ? const SizedBox.shrink()
+                : Padding(
+                    padding:
+                        const EdgeInsets.only(left: 48.0, top: 8, bottom: 24),
+                    child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Wrap(
+                          spacing: 8,
+                          children: enchantments.toList(),
+                        )),
+                  ),
+          ],
+        ),
+      );
+    });
   }
 
   void _searchEquipment(String text) {
@@ -420,28 +466,30 @@ class _InventoryViewState extends State<InventoryView> {
         .difference(foundEquipment.map((e) => e.id).toSet());
   }
 
-  Align _generateTraitsFor(String id) {
-    return Align(
-      alignment: Alignment.centerLeft,
-      child: Wrap(
-        spacing: 8,
-        runSpacing: 8,
-        children: ItemDatabase.getTraits(id)
-            .map((trait) => Container(
-                  decoration: BoxDecoration(
-                      border: Border.all(
-                          color: Color((0xFF << 24) | trait.color), width: 2),
-                      borderRadius: BorderRadius.circular(16)),
-                  child: Padding(
-                    padding: const EdgeInsets.only(
-                        left: 16, right: 16, top: 4, bottom: 4),
-                    child: Text(
-                      trait.display,
-                      style: const TextStyle(fontWeight: FontWeight.bold),
+  Padding _generateTraitsFor(String id) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8.0),
+      child: Align(
+        alignment: Alignment.centerLeft,
+        child: Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: ItemDatabase.getTraits(id)
+              .map((trait) => Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Color(trait.color), width: 2),
+                        borderRadius: BorderRadius.circular(16)),
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                          left: 16, right: 16, top: 4, bottom: 4),
+                      child: Text(
+                        trait.display,
+                        style: const TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ),
-                  ),
-                ))
-            .toList(),
+                  ))
+              .toList(),
+        ),
       ),
     );
   }
