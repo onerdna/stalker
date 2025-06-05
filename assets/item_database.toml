@@ -75,7 +75,7 @@ traits = ["unobtainable"]
 
 [WEAPON_DRAGON_KNIVES]
 name = "Dragon Knives"
-traits = ["dragonSet", "unobtainable"]
+traits = ["setDragon", "unobtainable"]
 
 [WEAPON_TITAN_GIANT_SWORD]
 name = "Titan's Desolator"
@@ -359,9 +359,8 @@ name = "Hoaxen's Body"
 traits = ["unobtainable"]
 
 [BODY_WAR]
-name = ""
-description = ""
-traits = [""]
+name = "Drakaina's Body"
+traits = ["unobtainable"]
 
 [BODY_GATEKEEPER]
 name = "Gatekeeper's Body"
@@ -513,7 +512,7 @@ name = "Karcer's Head"
 traits = ["unobtainable"]
 
 [HEAD_WAR]
-name = ""
+name = "Drakaina's Head"
 traits = ["unobtainable"]
 
 [HEAD_SATURN]

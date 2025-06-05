@@ -31,13 +31,13 @@ import 'package:path_provider/path_provider.dart';
 import 'package:pub_semver/pub_semver.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:signals/signals_flutter.dart';
+import 'package:stalker/app_bar.dart';
 import 'package:stalker/enchantment.dart';
 import 'package:stalker/main.dart';
-import 'package:stalker/pages/about_page.dart';
 import 'package:stalker/pages/edit_xml_page.dart';
 import 'package:stalker/pages/equipment_page.dart';
 import 'package:stalker/pages/general_page.dart';
-import 'package:stalker/pages/records_page.dart';
+import 'package:stalker/pages/records_page/records_page.dart';
 import 'package:stalker/pages/report_page.dart';
 import 'package:stalker/record.dart';
 import 'package:stalker/records_manager.dart';
@@ -323,52 +323,14 @@ class _AppState extends State<App> {
     }
 
     return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 90,
-        title: Column(
-          children: [
-            Stack(
-              alignment: Alignment.center,
-              children: [
-                Align(
-                    alignment: Alignment.centerLeft,
-                    child: package.value?.version == null
-                        ? null
-                        : Text(
-                            "v${package.value?.version}",
-                            style: const TextStyle(fontSize: 16),
-                          )),
-                const Center(child: Text("Stalker")),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: IconButton(
-                    onPressed: () => Navigator.of(context).push(
-                        MaterialPageRoute(
-                            builder: (context) => const AboutPage())),
-                    icon: const Icon(Icons.info_outline),
-                  ),
-                ),
-              ],
-            ),
-            const Center(
-              child: Text(
-                "© 2025 Andreno. All rights reserved.",
-                style: TextStyle(fontSize: 14),
-              ),
-            ),
-            const SizedBox(
-              height: 20,
-            )
-          ],
-        ),
-      ),
+      appBar: const StalkerAppBar(),
       bottomNavigationBar: Watch((_) => initialized.value
           ? ClipRRect(
               borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(28), topRight: Radius.circular(28)),
               child: NavigationBar(
                 backgroundColor:
-                    Theme.of(context).colorScheme.surface.withOpacity(0.9),
+                    Theme.of(context).colorScheme.surface.withValues(alpha: 0.9),
                 surfaceTintColor: Theme.of(context).colorScheme.surfaceTint,
                 indicatorColor:
                     Theme.of(context).colorScheme.secondaryContainer,
