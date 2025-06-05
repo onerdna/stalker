@@ -16,6 +16,8 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
+import 'package:stalker/equipment_type.dart';
+
 enum ItemTrait {
   boss,
   unobtainable,
@@ -25,6 +27,7 @@ enum ItemTrait {
   hw14,
   hw15,
   hw16,
+  hw17,
   hw18,
   hw19,
   hw20,
@@ -129,6 +132,8 @@ extension ItemTraitExtension on ItemTrait {
         return "Halloween 2015";
       case ItemTrait.hw16:
         return "Halloween 2016";
+      case ItemTrait.hw17:
+        return "Halloween 2017";
       case ItemTrait.hw18:
         return "Halloween 2018";
       case ItemTrait.hw19:
@@ -269,6 +274,8 @@ extension ItemTraitExtension on ItemTrait {
         return 0xFB9E3A;
       case ItemTrait.hw16:
         return 0xFB9E3A;
+      case ItemTrait.hw17:
+        return 0xFB9E3A;
       case ItemTrait.hw18:
         return 0xFB9E3A;
       case ItemTrait.hw19:
@@ -351,7 +358,7 @@ extension ItemTraitExtension on ItemTrait {
 
 class ItemDatabase {
   static var dictionary = {};
-  static String resolveName(String id) {
+  static String getName(String id) {
     var name = dictionary[id]?["name"];
     if (name == "") {
       name = id;
@@ -359,11 +366,15 @@ class ItemDatabase {
     return name ?? id;
   }
 
-  static String resolveDescription(String id) =>
+  static String getDescription(String id) =>
       dictionary[id]?["description"] ?? "";
 
   static Iterable<ItemTrait> getTraits(String id) {
     List<String> traits = (dictionary[id]?["traits"] ?? []).cast<String>();
     return traits.map((e) => ItemTrait.values.byName(e));
   }
+
+  static Iterable<String> getEquipment(EquipmentType type) => dictionary.entries
+      .where((e) => EquipmentTypeExtension.fromId(e.key) == type)
+      .map((e) => e.key);
 }

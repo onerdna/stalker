@@ -22,7 +22,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:stalker/equipment_type.dart';
 import 'package:stalker/equipment.dart';
-import 'package:stalker/pages/inventory_view.dart';
+import 'package:stalker/pages/inventory_view/inventory_view.dart';
 import 'package:stalker/records_manager.dart';
 
 class EquipmentPage extends StatefulWidget {
@@ -143,7 +143,7 @@ class _EquipmentPageState extends State<EquipmentPage> {
                   color: Theme.of(context)
                       .colorScheme
                       .surfaceTint
-                      .withOpacity(0.1),
+                      .withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(16)),
               child: TextButton(
                 style: TextButton.styleFrom(

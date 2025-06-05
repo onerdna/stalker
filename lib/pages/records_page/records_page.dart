@@ -27,9 +27,9 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:stalker/app.dart';
+import 'package:stalker/pages/records_page/new_record.dart';
 import 'package:stalker/record.dart';
 import 'package:stalker/records_manager.dart';
-import 'package:uuid/uuid.dart';
 import 'package:xml/xml.dart';
 
 class RecordsPage extends StatefulWidget {
@@ -248,63 +248,17 @@ class _RecordsPageState extends State<RecordsPage> {
           ..._generateSaveEntries(context),
           FilledButton.icon(
               onPressed: () {
-                _showNewRecordDialog(context);
+                showDialog(
+                    context: context,
+                    builder: (ctx) => NewRecord(onCreated: () {
+                          setState(() {});
+                        }));
+                ;
               },
               label: const Icon(Icons.add))
         ],
       ),
     );
-  }
-
-  Future<void> _showNewRecordDialog(BuildContext context) async {
-    final controller = TextEditingController();
-    await showDialog(
-        context: context,
-        builder: (ctx) => AlertDialog(
-              title: const Text("Create a new save record"),
-              content: SizedBox(
-                width: 400,
-                height: 80,
-                child: Column(
-                  children: [
-                    TextField(
-                      controller: controller,
-                      autofocus: true,
-                      decoration: const InputDecoration(
-                          hintText: "Enter the name here..."),
-                    )
-                  ],
-                ),
-              ),
-              actions: [
-                TextButton(
-                    onPressed: () {
-                      Navigator.of(ctx).pop();
-                    },
-                    child: const Text("Cancel")),
-                TextButton(
-                    onPressed: () async {
-                      final asset = await rootBundle
-                          .loadString("assets/xml/defaultRecord.xml");
-                      final record = Record(
-                          XmlDocument.parse(asset),
-                          RecordMetadata(
-                              controller.text, const Uuid().v8(), false));
-
-                      setState(() {
-                        RecordsManager.records.add(record);
-                        RecordsManager.saveRecord(record);
-                        Fluttertoast.showToast(
-                            msg: "Created a new save record");
-                      });
-                      Navigator.of(ctx).pop();
-                    },
-                    child: const Text("Continue"))
-              ],
-            ));
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      controller.dispose();
-    });
   }
 
   Future<void> _showRecordDeletionDialog(

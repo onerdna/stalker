@@ -39,13 +39,13 @@ class Equipment {
     level = int.parse(upgradeLevel.substring(0, upgradeLevel.length - 2));
     upgrade = int.parse(upgradeLevel.substring(
         upgradeLevel.length - 2, upgradeLevel.length - 1));
-    name = ItemDatabase.resolveName(id);
-    description = ItemDatabase.resolveDescription(id);
+    name = ItemDatabase.getName(id);
+    description = ItemDatabase.getDescription(id);
   }
 
   Equipment(this.type, this.id, this.level, this.upgrade) {
-    name = ItemDatabase.resolveName(id);
-    description = ItemDatabase.resolveDescription(id);
+    name = ItemDatabase.getName(id);
+    description = ItemDatabase.getDescription(id);
   }
 
   String get _upgradeLevel {
