@@ -1,62 +1,75 @@
 [WEAPON_HUNGER_SCYTHE]
 name = "Hunger Sickles"
-traits = ["unobtainable"]
+description = "A pair of sickles that have the appearance of enlarged Sickles but with the moveset of Mowers with a greater reach. It is used by Karcer."
+traits = ["unlocktainable"]
 
 [WEAPON_WAR_SHUANG_GOU]
-name = "War Shuang Gou"
+description = "A pair of large fearsome hook swords with two prongs and serrated blades. It has the same moveset as Shuang Gou albeit with a much longer range. It is used by Drakaina and Architect."
 traits = ["unobtainable"]
 
 [WEAPON_ELECTRO_BATONS]
 name = "Electric Batons"
+description = "A pair of two spiked clubs with plugs on its ends. It has the same moveset as with Flame Clubs but its strong slash and super slash moves eject blasts of electricity instead of flames. The second blast of electricity in its super slash move has the same electrocution effect to the player as with the Shocker Claws. It is used by Saturn."
 traits = ["unobtainable"]
 
 [WEAPON_TRIANGLE_KNIVES]
 name = "Triangular Knives"
+description = " A pair of knives with long triangle-shaped blades that can be encountered in Act I (and occasionally in Act II). They have the same moves as Knives, but with a different appearance. Thorn, Spark and a ninja wield this weapon."
 traits = ["unobtainable"]
 
 [WEAPON_TWO_HANDED_SWORD]
-name = ""
-description = ""
+name = "Two-Handed Sword"
+description = "Kraken wields a Two-handed Sword that appears to be identical to a Dadao in its appearance and moveset. However it is coded separately from Dadao within the files, technically making it a distinct weapon."
 traits = [""]
 
 [WEAPON_HEAVY_HAMMER]
 name = "Heavy Hammer"
+description = "Bear wields a large two-handed hammer that visually resembles the Northern Hammer, albeit without the ornamental feathers. Contrary to its appearance, the Heavy Hammer functions more like a Dadao instead."
 traits = ["unobtainable"]
 
 [WEAPON_SENTINEL_KUSARIGAMA]
 name = "Sentinel Kusarigama"
+description = "Puma's Kusarigama is a variant of the Kusarigama that is depicted in Puma's avatar with a notched sickle that sports a toothed blade, a chain in place of rope, and a claw for its weight. However, the sickle and chain are only realistic to Puma's avatar as in the weapon's actual in-game model, her kusarigama appears to be just like the normal variant only with the claw attached."
 traits = ["unobtainable"]
 
 [WEAPON_BG_YARI]
 name = "Jumonji Yari"
+description = "Corporal wields a yari with a pair of curved protrusions at the sides of its central blade. It functions the same as a Yari."
 traits = ["unobtainable"]
 
 [WEAPON_NODACHI]
 name = "Nodachi"
+description = "Captain wields a two-handed sword that resembles a very long Katana, but it functions akin to other two-handed weapons in the game, particularly to the Dadao with its super slash."
 traits = ["unobtainable"]
 
 [WEAPON_WAKIDZASHI]
 name = "Wakidzashis"
+description = "Major wields a pair of short swords with slightly curved blades that function the same as Swords. The shorter secondary sword of the Daisho shares a similar appearance to the wakizashis."
 traits = ["unobtainable"]
 
 [WEAPON_BG_NAGINATA]
 name = "Bisento"
+description = "Colonel wields a polearm with a large blade that resembles that of a naginata, albeit the size difference. It functions the same as a regular Naginata."
 traits = ["unobtainable"]
 
 [WEAPON_BG_GLAIVE]
 name = "Glaive"
+description = "General uses a glaive that has an appearance of two swords conjoined at the ends of their handles (essentially making it a double-bladed sword). It functions the same as other glaives in the game, particular to the Sapphire Fang with its super slash."
 traits = ["unobtainable"]
 
 [WEAPON_MERCENARY_CLAWS]
 name = "Three-pronged Claws"
+description = "The fourth mercenary uses Three-pronged Claws which functions identically to Lynx's Claws. They are thinner and shorter in appearance."
 traits = ["unobtainable"]
 
 [WEAPON_MERCENARY_AXES]
 name = "Spiked Axes"
+description = "The fifth mercenary uses Spiked Axes which function identically to every other axe in the game."
 traits = ["unobtainable"]
 
 [WEAPON_SAWBLADE]
 name = "Sawblade"
+description = "A unique weapon with its stance and moves completely different from any known weapons. It has a long range, very fast movements and high mobility, as well as a signature sound effect. This weapon is wielded by the ghost Mephisto and the soldier Emerald from Act VII. Later, two weapons with identical movesets were added - Devotion and Neutron Howl."
 traits = ["unobtainable"]
 
 [WEAPON_GIANT_SWORD]
@@ -71,10 +84,12 @@ traits = ["unobtainable"]
 
 [WEAPON_CRUSHER]
 name = "Crusher"
+description = "The Crusher is a two-handed weapon with a moveset similar to that of a Dadao. It resembles the Two-handed Cudgel from Act IV, albeit with spikes instead of studs and a distinct super slash from the Cudgel. A ninja from Act VI and Bonebreaker from Interlude wield this weapon. Crusher is also one of the random weapons duels offer during and after the Interlude."
 traits = ["unobtainable"]
 
 [WEAPON_DRAGON_KNIVES]
 name = "Dragon Knives"
+description = "The weapon of the unused Dragon Set. It functions exactly like the Knives. The weapon Snowpiercer uses a modified model of this weapon."
 traits = ["setDragon", "unobtainable"]
 
 [WEAPON_TITAN_GIANT_SWORD]
@@ -84,20 +99,22 @@ traits = ["boss", "unobtainable"]
 
 [WEAPON_RAVANA]
 name = "Ravana's Fists"
+description = "Used by Ravana, the special raid-boss for the Ram Navami Event, these fists resemble Panda Cuddles, but have a larger appearance."
 traits = ["unobtainable"]
 
 [WEAPON_MORGANA_SCYTHE]
-name = ""
+name = "Morgana's Scythe"
 description = ""
 traits = [""]
 
 [WEAPON_REAL_CLAWS]
-name = ""
-description = ""
+name = "Real Claws"
+description = "This weapon has the appearance of very sharp overgrown fingernails which has a moveset same as that of Steel Claws. It also has a unique starting stance. It is used by The Blackness."
 traits = [""]
 
 [WEAPON_DIRECTOR_HUNGER]
 name = "Architect's Sickles"
+description = "A pair of sickles with an appearance identical to Hunger Sickles, however it has the moveset of regular Sickles instead of Mowers as with its original counterpart."
 traits = ["unobtainable"]
 
 [WEAPON_SHOCKER_CLAWS_ARC]
@@ -107,8 +124,9 @@ traits = [""]
 
 [WEAPON_SUPER_BIG_SWORD]
 name = "Devastator"
-description = ""
+description = "Devastator is the first two-handed weapon which can be bought with gems, unlocked at level 16."
 traits = [""]
+enchantments = ["Lifesteal"]
 
 [WEAPON_TITAN_SWORD]
 name = "Titan's Desolator"
@@ -138,6 +156,7 @@ traits = ["offer"]
 
 [WEAPON_HUNTER_CLAWS]
 name = "Insectile Claws"
+description = "The weapon consists of curved, flat claws. It is used by Stalker."
 traits = ["unobtainable"]
 
 [WEAPON_NUNCHAKU_DANCEOFSTATIC_25]
@@ -146,6 +165,7 @@ traits = ["offer"]
 
 [BODY_BRICK]
 name = "Brick's Body"
+description = ""
 traits = ["unobtainable"]
 
 [BODY_CANDY]
@@ -190,6 +210,7 @@ traits = ["unobtainable"]
 
 [BODY_SHIN]
 name = "Shin's Body"
+description = "Lynx's bodyguard Shin wears a signature armor/clothing that is reflective of his own avatar. The overhanging half sleeves and bottom linings are visually seen during battle against him."
 traits = ["unobtainable"]
 
 [BODY_SMOTHER]
@@ -212,6 +233,7 @@ traits = [""]
 
 [BODY_LYNX]
 name = "Lynx's Body"
+description = "Lynx wears a customized Leather Jacket with a denser appearance and a belt attached to it."
 traits = ["unobtainable"]
 
 [BODY_BUTCHER]
@@ -220,21 +242,23 @@ traits = ["unobtainable"]
 
 [ARMOR_WASP]
 name = "Wasp's Armor"
+description = "Wasp seems to wear a highly-stylized feminine Snake Harness, with added cuffed long sleeves and trousers."
 traits = ["unobtainable"]
 
 [ARMOR_HUNTRESS]
-name = ""
-description = ""
-traits = [""]
+name = "Huntress's Armor"
+description = "Widow seems to wear a highly-stylized feminine Snake Harness, which has draping sleeves and a skirt."
+traits = ["unobtainable"]
 
 [ARMOR_SHOGUN]
 name = "Shogun's Armor"
+description = "Shogun wears a type of Centurion Mail, which is bigger in size, has visible pants without the hanging plates, and a wakizashi sheath."
 traits = ["unobtainable"]
 
 [BODY_FUTURE_MAY]
-name = ""
+name = "Future May's Body"
 description = ""
-traits = [""]
+traits = ["unobtainable"]
 
 [BODY_TITAN]
 name = "Titan's Body"
@@ -297,18 +321,18 @@ traits = [""]
 
 [ARMOR_BIG_SHROUD]
 name = ""
-description = ""
-traits = [""]
+description = "Shroud wears an armor that resembles an enlarged version of Half-Life Armor."
+traits = ["unobtainable"]
 
 [ARMOR_BIG_SPIKE]
 name = ""
 description = ""
-traits = [""]
+traits = ["unobtainable"]
 
 [ARMOR_REDSHIFT_BIG]
 name = ""
-description = ""
-traits = [""]
+description = "An enlarged version of the Redshift armor that was supposed to be worn by some male enemies, though no one wears it."
+traits = ["unobtainable"]
 
 [ARMOR_XENOMORPH]
 name = "Alien Cloak"
@@ -331,6 +355,7 @@ traits = [""]
 
 [ARMOR_ANCIENT]
 name = "Ancient's Armor"
+description = "Ancient wears a masculine version of Wasp's custom Snake Harness."
 traits = ["unobtainable"]
 
 [BODY_VULCAN]
@@ -346,9 +371,9 @@ name = "Fungus's Body"
 traits = ["unobtainable"]
 
 [BODY_FISH]
-name = ""
+name = "Fish's Body"
 description = ""
-traits = [""]
+traits = ["unobtainable"]
 
 [BODY_HUNGER]
 name = "Karcer's Body"
@@ -394,7 +419,7 @@ description = ""
 traits = [""]
 
 [HEAD_SCAVEN]
-name = ""
+name = "Scaven's Head"
 description = ""
 traits = [""]
 
@@ -411,16 +436,18 @@ name = "Ravana's Head"
 traits = ["unobtainable"]
 
 [HEAD_MEPHISTO]
-name = ""
+name = "Mephisto's Head"
 description = ""
-traits = [""]
+traits = ["unobtainable"]
 
 [HEAD_LYNX]
 name = "Lynx's Head"
+description = "Lynx wears a modified Light Helm with an additional bandana."
 traits = ["unobtainable"]
 
 [HEAD_HERMIT]
 name = "Hermit's Head"
+description = "Hermit wears a wider Conical Hat with visible hair under the hat and a beard and moustache."
 traits = ["unobtainable"]
 
 [HEAD_BUTCHER]
@@ -428,18 +455,18 @@ name = "Butcher's Head"
 traits = ["unobtainable"]
 
 [HEAD_RHINO]
-name = ""
+name = "Rhino's Head"
 description = ""
-traits = [""]
+traits = ["unobtainable"]
 
 [HEAD_WASP]
 name = "Wasp's Head"
 traits = ["unobtainable"]
 
 [HEAD_HUNTRESS]
-name = ""
+name = "Huntress's Head"
 description = ""
-traits = [""]
+traits = ["unobtainable"]
 
 [HEAD_TITAN]
 name = "Titan's Head"
@@ -462,9 +489,9 @@ name = "Corsair's Head"
 traits = ["unobtainable"]
 
 [HEAD_FUTURE_MAY]
-name = ""
+name = "Future May's Head"
 description = ""
-traits = [""]
+traits = ["unobtainable"]
 
 [HEAD_TITANS_ARMY1]
 name = ""
@@ -495,9 +522,9 @@ name = "Fungus's Head"
 traits = ["unobtainable"]
 
 [HEAD_FISH]
-name = ""
+name = "Fish's Head"
 description = ""
-traits = [""]
+traits = ["unobtainable"]
 
 [HEAD_FATUM]
 name = "Fatum's Head"
@@ -545,6 +572,7 @@ traits = ["unobtainable"]
 
 [HEAD_CANDY]
 name = "Candy's Head"
+description = "Candy wears a Fur-Ear Flap helm with strips attached made to resemble long hair."
 traits = ["unobtainable"]
 
 [HEAD_NIGHT]
@@ -714,6 +742,7 @@ traits = [""]
 
 [MAGIC_GAZEOFTHEVOID_25]
 name = "Gaze of the Void"
+description = "Gaze of the Void is a magic in Shadow Fight 2. This magic was available in a weekly offer for $2.99. "
 traits = ["offer"]
 
 [HELM_FINAL_HARMONY]
@@ -828,8 +857,10 @@ traits = ["nintendoSwitchEdition", "xmas18", "xmas19"]
 
 [WEAPON_NY18_MACE]
 name = "Caramel Boom"
-description = ""
-traits = [""]
+description = """Caramel Boom is a New Year 2018 and 2019 special weapon in Shadow Fight 2. It is a giant green lollipop with red spikes on it. The weapon could be obtained as a possible reward by purchasing the Gingerbread Chest during New Year 2018. In order to purchase the chest, players needed 250 New Year coins or 199 gems. New Year coins could be obtained by defeating Candy, the New Year 2018 special raid-boss. Caramel Boom was also obtainable during New Year 2019, as a possible first place reward for defeating Karcer. The weapon comes enchanted with the Poisoning enchantment. Caramel Boom functions like the Two-handed Mace.
+In the 2019 Christmas update, Caramel Boom comes with a new appearance. It can be obtained after defeating Freeze or from the Gingerbread Chest.
+The Caramel Boom can also be purchased as an regular weapon in the Nintendo Switch version of SF2."""
+traits = ["nintendoSwitchEdition", "xmas18", "xmas19"]
 
 [RANGED_NY18_DONUT]
 name = "Juicy Donut"
@@ -946,12 +977,12 @@ traits = ["setMonk"]
 
 [WEAPON_KNIVES]
 name = "Knives"
-description = ""
+description = "The Knives are the first pair of weapons available for purchase to the player in Shadow Fight 2. Players will be prompted to buy the Knives after defeating Kenji, as a part of the tutorial. They are used by the fighters Jester and Vulture, as well as the bodyguard Bird."
 traits = [""]
 
 [WEAPON_KNUCKLES]
 name = "Knuckles"
-description = ""
+description = "The Knuckles are a pair of weapons in Shadow Fight 2, unlocked at Level 2. The Knuckles have extremely limited range and its basic moves are the same as characters' bare fists, but they are very quick and powerful. Their Super Slash, when used at the right time, is extremely lethal and is capable of giving high damage to the enemies. They are used by the fighter Madman, the fighter Iron, their ninja counterpart and by Cleric, a character from the Special Edition."
 traits = [""]
 
 [WEAPON_SAI]
@@ -971,7 +1002,7 @@ traits = [""]
 
 [WEAPON_DAGGERS]
 name = "Daggers"
-description = ""
+description = "The Daggers are a pair of weapons unlocked in Act I of Shadow Fight 2. They have the same function as the Knives. The Daggers are the last weapon that can be bought with golds in the first Act, unlocked at level 6 along with the Blood Reaper. They are used by the fighter Seer."
 traits = [""]
 
 [WEAPON_NINJA_SWORD]
@@ -1011,7 +1042,7 @@ traits = [""]
 
 [WEAPON_CRESCENT_KNIVES]
 name = "Crescent Knives"
-description = ""
+description = "The Crescent Knives are a pair of weapons in Shadow Fight 2 that are unlocked at Level 7. The Crescent Knives have the same move set as the Knuckles, with a different super slash. They are used by the bodyguards Buffalo and Rhino as well as the fighter Brawler and their Ninja counterpart."
 traits = [""]
 
 [WEAPON_STILETTOS]
@@ -1021,12 +1052,12 @@ traits = [""]
 
 [WEAPON_HEAVY_STAFF]
 name = "Heavy Staff"
-description = ""
+description = "Heavy Staff is a weapon unlocked in Act III at level 14 in Shadow Fight 2. It functions like the Staff from Act II, and has rope-shaped clothes attached on it. It is used by the fighter Scourge and his Ninja counterpart."
 traits = [""]
 
 [WEAPON_AXES]
 name = "Axes"
-description = ""
+description = "Axes are a pair of weapons from Act III in Shadow Fight 2. They are unlocked at level 15, along with Big Swords. Axes swing slowly, have moderate range and high damage. They are used by the fighter Exile and his Ninja counterpart."
 traits = [""]
 
 [WEAPON_STEEL_CLAWS]
@@ -1036,13 +1067,15 @@ traits = [""]
 
 [WEAPON_KATANA]
 name = "Katana"
-description = ""
+description = "Katana is a weapon in Shadow Fight 2. Defeating the challenger Rose in Act III rewards the player with this weapon. It comes enchanted with the Overheat enchantment."
 traits = [""]
+enchantments = ["Overheat"]
 
 [WEAPON_BIG_SWORDS]
 name = "Big Swords"
-description = ""
+description = "Big Swords are a pair of gem weapons unlocked at level 15 in Shadow Fight 2. They are enchanted with the Bloodrage enchantment, they are unlocked along with the Axes. Big Swords function the same as Swords, with the exception of the Super Slash Move, despites named 'Big'. They are used by Cleaver, Wasp's second bodyguard and the fighter Hazzard from Act VII: Chapter 1."
 traits = [""]
+enchantments = ["Bloodrage"]
 
 [WEAPON_NAGINATA]
 name = "Naginata"
@@ -1056,27 +1089,27 @@ traits = [""]
 
 [WEAPON_BUTTERFLY_SWORDS]
 name = "Butterfly Swords"
-description = ""
+description = "Butterfly Swords are a pair of weapons unlocked during Act IV: Pirate Throne at level 19 in Shadow Fight 2. They are used by the fighter Lily and her Ninja counterpart. These have the same function as the Knives."
 traits = [""]
 
 [WEAPON_GOLDEN_KATANA]
 name = "Golden Katana"
-description = ""
+description = "Golden Katana is a weapon from Shadow Fight 2. It is unlocked at level 21 in Act IV: Pirate Throne, along with the Pharaoh's Khopeshes. Golden Katana functions the same as the Katana from Act III: Trail of Blood, it has moderate damage, moderate speed, and moderate range. It is used by the fighter Vixen and her Ninja counterpart."
 traits = [""]
 
 [WEAPON_MACES]
 name = "Maces"
-description = ""
+description = "Maces are a pair of weapons unlocked at level 22 in Shadow Fight 2. They are unlocked along with the Two-handed Cudgel. Maces function like the Steel Batons. They are used by the fighter Plague and his Ninja counterpart."
 traits = [""]
 
 [WEAPON_GLAIVE]
 name = "Glaive"
-description = ""
+description = "Glaive is a weapon unlocked at level 23 in Shadow Fight 2. It consists of two long blades connected to each other at its handle forming a quarterstaff-like weapon and has somewhat-high damage, moderate range, and somewhat fast speed. Glaive is used by Wasp's fourth bodyguard, Bosun, the fighter Oldman, and their Ninja counterpart."
 traits = [""]
 
 [WEAPON_KUSARIGAMA]
 name = "Kusarigama"
-description = ""
+description = "Kusarigama is a weapon unlocked at level 24 in Act IV: Pirate Throne of Shadow Fight 2. It consists of a sickle and a weight, both of them connected with a rope. Kusarigama is the last weapon unlocked in Act IV, along with Coral Prickles. It has a long range, slow attacks, and high damage. It is used by the bodyguard Reaper (although Reaper's Kusarigama has a chain, not a string), the fighter Viper, and their Ninja counterpart."
 traits = [""]
 
 [WEAPON_SICKLES]
@@ -1096,7 +1129,7 @@ traits = [""]
 
 [WEAPON_DADAO]
 name = "Dadao"
-description = ""
+description = "Dadao is a weapon in Shadow Fight 2. It is the second Two-handed Weapon which can be bought with coins, the first one being the Two-handed Mace. Like the other Two-handed Weapons, Dadao is heavy and slow, but it is compensated by its high damage, it functions the same as the Devastator from Act III. It is used by the fighter Backsword and his Ninja counterpart. It is also used by Ermine, an enemy from the Special Edition."
 traits = [""]
 
 [WEAPON_MAGARI_YARI]
@@ -1106,7 +1139,7 @@ traits = [""]
 
 [WEAPON_BATTLE_HAMMERS]
 name = "Battle Hammers"
-description = ""
+description = "Battle Hammers are a pair of weapons from Act V in Shadow Fight 2. They are unlocked at level 30, along with the Harbinger Sai. Battle Hammers function like the Steel Batons, albeit with a different super slash. They are used by the fighter Gypsy and her Ninja counterpart."
 traits = [""]
 
 [WEAPON_SILVER_GLAIVE]
@@ -1116,17 +1149,19 @@ traits = [""]
 
 [WEAPON_HEAVY_KUSARIGAMA]
 name = "Heavy Kusarigama"
-description = ""
+description = "Heavy Kusarigama is a weapon in Shadow Fight 2. Defeating the challenger Outcast in Act V rewards the player with this weapon."
 traits = [""]
+enchantments = ["Precision"]
 
 [WEAPON_SUPER_KUSARIGAMA]
 name = "Blood Reaper"
-description = ""
+description = "The Blood Reaper is a super weapon from Act I in Shadow Fight 2. It has a decorated sickle and a barbed circle-shaped weight, connected with a chain. It is unlocked at level 6, along with Daggers. The Blood Reaper is the second weapon that is purchased through gems in the store, with the first one being the Ninja Sword. The weapon has long range, slow attack speed and, as the name suggests, comes with the Bleeding enchantment. Although a slow attack speed, the Blood Reaper can easily inflict headshots and combos."
 traits = [""]
+enchantments = ["Bleeding"]
 
 [WEAPON_SUPER_AXES]
 name = "Harrier Hooks"
-description = ""
+description = "Harrier Hooks are a pair of super weapons from Act II: Secret Path in Shadow Fight 2. They are unlocked at level 10, along with Krises. Harrier Hooks have high damage, slow speed and medium range. They are used by Hoaxen and Adanti."
 traits = [""]
 
 [WEAPON_SUPER_KHOPESH]
@@ -1376,27 +1411,29 @@ traits = [""]
 
 [MAGIC_ENERGY_BALL]
 name = "Energy Ball"
-description = ""
+description = "Energy Ball is a magic amulet in Shadow Fight 2. It is the second magic unlocked in Act III: Trail of Blood at level 16. It is used by Widow, various fighters and Ninja, and Kali, which she uses to immobilize Shroud."
 traits = [""]
 
 [MAGIC_FIRE_BALL]
 name = "Fire Ball"
-description = ""
+description = "Fire Ball is the first available Magic in Shadow Fight 2. It is purchased through gems in the store. Fire Ball is unlocked at level 14. It is used by various fighters and by Butcher and Shogun."
 traits = [""]
+enchantments = ["Weakness"]
 
 [MAGIC_LIGHTNING_ARROW]
 name = "Lightning Arrow"
-description = ""
+description = "Lightning Arrow is a magic in Shadow Fight 2. It is the first magic on Act V: The Greatest Temptation, unlocked at level 25. Lightning Arrow is used by Hermit, Wasp (after losing one round), and by various fighters and ninjas."
 traits = [""]
 
 [MAGIC_FIRE_PILLAR]
 name = "Fire Pillar"
-description = ""
+description = "Fire Pillar is a magic in Shadow Fight 2. It is the second magic available in Act V: The Greatest Temptation, unlocked at level 27. Fire Pillar is used by Wasp (after losing twice and at the Gates of Shadows and during the Interlude), Shogun (after losing once), and by some fighters during the Interlude. It is also used by the Eternal Volcano."
 traits = [""]
+enchantments = ["Bloodrage"]
 
 [WEAPON_KERIS]
 name = "Krises"
-description = ""
+description = "Krises are a pair of weapons from Act II in Shadow Fight 2. They are unlocked at level 10, along with the Harrier Hooks. They are used by the bodyguard Shark, the fighter Mountain and their Ninja counterpart. Their basic moves are the same as the Knives, however the Super Slash is vastly different."
 traits = [""]
 
 [WEAPON_TONFA]
@@ -1406,7 +1443,7 @@ traits = [""]
 
 [WEAPON_LABRYS_AXES]
 name = "Labryses"
-description = ""
+description = "Labryses are a pair of weapons unlocked in Act IV: Pirate Throne at level 20 in Shadow Fight 2. They work like the Axes. Labryses are used by the fighter Lumberjack and his Ninja counterpart."
 traits = [""]
 
 [WEAPON_TWO_HANDED_CUDGEL]
@@ -1621,17 +1658,18 @@ traits = [""]
 
 [WEAPON_INDIAN_KATAR]
 name = "Katars"
-description = ""
+description = "Katars are a pair of gem weapons from Act VI in Shadow Fight 2. They are unlocked at level 32, along with the Silver Spear. Katars have the same move sets as the Knuckles. However, they have a slightly higher range than the Knuckles, while inflicting slightly weaker damage comparatively. Katars are wielded by the fighter Thief and his Ninja counterpart."
 traits = [""]
+enchantments = ["Weakness"]
 
 [WEAPON_CEREMONIAL_SHUANG_GOU]
 name = "Ceremonial Shuang Gou"
-description = ""
+description = "Ceremonial Shuang Gou are a pair of weapons in Shadow Fight 2. They become available along with the Ornamental Sabers and the Daisho at level 37, after defeating Shogun and unlocking the Gates of Shadows. They are used by the fighter Fury (despite her avatar showing her wielding regular Shuang Gou) and her Ninja counterpart. They are not used by Son of Heaven in battle, though his avatar suggests otherwise; he uses regular Shuang Gou instead."
 traits = [""]
 
 [WEAPON_SHARP_TONFA]
 name = "Blade Tonfas"
-description = ""
+description = "Blade Tonfas are a pair of weapons unlocked at level 36 in Act VI: Iron Reign in Shadow Fight 2. Despites named 'Blade Tonfas', it functions exactly the same as the Tonfas from Act II: Secret Path. It is used by the fighter Nomad, a mercenary, and their Ninja counterpart."
 traits = [""]
 
 [WEAPON_NORTHERN_HAMMER]
@@ -1871,12 +1909,12 @@ traits = [""]
 
 [MAGIC_BOMB]
 name = "Dark Blast"
-description = ""
+description = "Dark Blast is a magic in Shadow Fight 2. It is unlocked at level 19, the first level of Act IV: Pirate Throne. Butcher uses this magic after he loses one round. It is also used by various fighters and ninjas."
 traits = [""]
 
 [MAGIC_MASS_BOMB]
 name = "Dark Implosion"
-description = ""
+description = "Dark Implosion is a Magic in Shadow Fight 2. It is unlocked at level 21 in Act IV: Pirate Throne. Butcher uses this magic after he loses twice and during Gates of Shadows and Interlude. It is also used by Wasp and by various fighters during Interlude."
 traits = [""]
 
 [MAGIC_WATER_BALL]
@@ -1886,27 +1924,29 @@ traits = [""]
 
 [MAGIC_ASTEROID]
 name = "Asteroid"
-description = ""
+description = "Asteroid is a magic in Shadow Fight 2. It is unlocked at level 33 in Act VI: Iron Reign, and can only be purchased with gems. Asteroid is used by Shogun (after losing twice and at the Gates of Shadows and during the Interlude), and by the Eternal Hoaxen. "
 traits = [""]
 
 [WEAPON_SUPER_HAMMERS]
 name = "Imhotep Pounders"
-description = ""
+description = "The Imhotep Pounders are a pair of super weapons from Act II: Secret Path in Shadow Fight 2. They are unlocked at level 8, along with the Tonfas. The Imhotep Pounders have the appearance of a pair of hammers. They work like the Steel Batons with the Battle Hammers Super Slash."
 traits = [""]
+enchantments = ["Stun"]
 
 [WEAPON_SUPER_KNUCKLES]
 name = "Coral Prickles"
-description = ""
+description = "Coral Prickles are a pair of super weapons from Act IV in Shadow Fight 2. They are unlocked at level 24, along with Kusarigama. They work like the Knuckles from act I. They are used by the Eternal Megalith."
 traits = [""]
+enchantments = ["Enfeeble"]
 
 [WEAPON_SUPER_FANS]
 name = "Emerald Cutters"
-description = ""
+description = "Emerald Cutters are a pair of super weapons unlocked at level 43 in Shadow Fight 2 and the last weapon in the Interlude. They are unlocked along with the Keen Katana. They are used by Lotus, a character from the Special Edition."
 traits = [""]
 
 [WEAPON_Z6_NUNCHAKU]
 name = "Heavy Nunchacku"
-description = ""
+description = "Heavy Nunchacku are a pair of weapons in Shadow Fight 2. It is unlocked at level 33 in Act VI: Iron Reign. It is used by the fighter Whirlwind and his Ninja counterpart."
 traits = [""]
 
 [WEAPON_SUPER_SPEAR]
@@ -1921,8 +1961,9 @@ traits = [""]
 
 [WEAPON_SUPER_SAI]
 name = "Harbinger Sai"
-description = ""
+description = "Harbinger Sai are a pair of super weapons in Shadow Fight 2. They are the last weapon in Act V: The Greatest Temptation, unlocked at level 30, along with the Battle Hammers."
 traits = [""]
+enchantments = ["Bleeding"]
 
 [ARMOR_SUPER_SPIKED]
 name = "Fury Carapace"
@@ -1971,32 +2012,35 @@ traits = [""]
 
 [WEAPON_SUPER_LEECHES]
 name = "Leeches"
-description = ""
+description = "Leeches are a pair of super weapons from Interlude in Shadow Fight 2. They are one of the two first weapons available in the Interlude, unlocked at level 38 along with the Morning Stars. As the name suggest, Leeches are enchanted with the Lifesteal enchantment."
 traits = [""]
+enchantments = ["Lifesteal"]
 
 [WEAPON_ELEGANT_STAFF]
 name = "Elegant Staff"
-description = ""
+description = "Elegant Staff is a weapon unlocked during the Interlude at level 39 in Shadow Fight 2. This weapon functions similar to the Staff from act: II."
 traits = [""]
 
 [WEAPON_FLAYER_CLAWS]
 name = "Flayer Claws"
-description = ""
+description = "Flayer Claws are a pair of gem weapons unlocked during the Interlude in Shadow Fight 2. They are unlocked at level 41 along with Kukris and come enchanted with the Overheat enchantment. They have the same moveset as Steel Claws. They can be bought for 109 gems."
 traits = [""]
+enchantments = ["Overheat"]
 
 [WEAPON_BARBED_GLAIVE]
 name = "Barbed Glaive"
-description = ""
+description = "Barbed Glaive is a weapon from Interlude in Shadow Fight 2. It is unlocked at level 40, along with the Dragon Teeth. It functions the same as the Glaive from Act IV: Pirate Throne."
 traits = [""]
 
 [WEAPON_SUPER_DRAGON_TEETH]
 name = "Dragon Teeth"
-description = ""
+description = "Dragon Teeth are a pair of super weapons from the Interlude in Shadow Fight 2. They are unlocked at level 40 along with the Barbed Glaive. They work like the Machetes from Act I. They are used by Puppeteer."
 traits = [""]
+enchantments = ["Bleeding"]
 
 [WEAPON_KUKRIS]
 name = "Kukris"
-description = ""
+description = "Kukris are a pair of weapons unlocked in Interlude at level 41 in Shadow Fight 2. They are unlocked along with the Flayer Claws. Kukris function like the Swords from Act II."
 traits = [""]
 
 [WEAPON_QUENCHED_SAI]
@@ -2006,13 +2050,15 @@ traits = [""]
 
 [WEAPON_KEEN_KATANA]
 name = "Keen Katana"
-description = ""
+description = "Keen Katana is a weapon from Interlude in Shadow Fight 2. It is the last weapon in Interlude, unlocked at level 43 along with the Emerald Cutters. Keen Katana is the weapon used by Prince, a character which appear in the Special Edition. It works like the normal Katana."
 traits = [""]
 
 [WEAPON_SUPER_DAISHO]
 name = "Daisho"
-description = ""
+description = """Daisho is a super weapon in Shadow Fight 2. It is unlocked at level 37, along with the Ornamental Sabers and the Ceremonial Shuang Gou. Daisho, along with the other two weapons, becomes available in the shop after Shogun is defeated and the Gates of Shadows are unlocked. It is a unique weapon because it has two enchantments: Precision and Poisoning.
+The weapon is a combination of a katana and a wakizashi blade. The katana is used to perform normal attacks, while the wakizashi is only used during the last strikes of the double slash and the super slash. The Precision enchantment allows players to deal higher damage to enemies, while the Poisoning can decrease enemy's health slowly."""
 traits = [""]
+enchantments = ["Precision", "Poisoning"]
 
 [ARMOR_PIT_MASTER]
 name = "Pit Master"
@@ -2141,13 +2187,14 @@ traits = [""]
 
 [MAGIC_WAVE]
 name = "Force Wave"
-description = ""
+description = "Force Wave is a magic in Shadow Fight 2. It is the first magic available in the Interlude, unlocked at level 38. It is used by the Demon Lynx during Gates of Shadows, Interlude and later fights. It is also used by some fighters during Interlude and by the ghost Harpy from Act VII: Chapter 2."
 traits = [""]
 
 [MAGIC_FIRE_SPLASH]
 name = "Fire Splash"
-description = ""
+description = "Fire Splash is a magic in Shadow Fight 2. Fire Splash is used by some fighters. It is unlocked at level 40 in the Interlude."
 traits = [""]
+enchantments = ["Overheat"]
 
 [WEAPON_HW14_BROOM]
 name = "Broomstick"
@@ -2171,32 +2218,45 @@ traits = [""]
 
 [WEAPON_HW14_SCYTHE]
 name = "Grim Scythe"
-description = ""
+description = "Grim Scythe is a gem weapon in Shadow Fight 2. It is one of the last weapons of Act II, unlocked at level 12 along with Steel Nunchacku and The Sting. Grim Scythe's movement is slow, however it packs powerful hits. It is used by the Eternal Fatum. It is enchanted with Lifesteal enchantment."
 traits = [""]
+enchantments = ["Lifesteal"]
 
 [WEAPON_LYNX_CLAWS]
 name = "Lynx's Claws"
+description = "Lynx's Claws are a pair of boss weapons in Shadow Fight 2. They are obtained by beating Lynx again in Eclipse mode, after the player has completed Act I. Upon obtaining, the claws automatically adapt to the player's level. The claws have a longer range compared to the other claws in the game. They are enchanted with Time Bomb."
 traits = ["boss"]
+enchantments = ["Time Bomb"]
 
 [WEAPON_HERMIT_SWORDS]
 name = "Hermit's Swords"
+description = "Hermit's Swords are a pair of boss weapons in Shadow Fight 2. They are the weapons of Hermit, the second demon boss. They are obtained by defeating Hermit in eclipse mode, after completing Act II. Though Hermit's Swords are refered to as swords, they are part of the Sai class. They have the same movesets, as the other Sai class weapons, with the Super Slash being the only different attack. They are longer than any other weapon in the Sai class. Hermit's Swords generally perform medium to long range attacks. Their attacks are rapid and fast, albeit the damage is high unlike other sai-class weapons. Hermit's Swords are enchanted with the Enfeeble enchantment."
 traits = ["boss"]
+enchantments = ["Enfeeble"]
 
 [WEAPON_BUTCHER_KNIVES]
 name = "Butcher's Cleavers"
+description = "Butcher's Knives are a pair of boss weapons in Shadow Fight 2. They are obtained by defeating Butcher once more in Eclipse mode. Butcher's Knives have very high damage, medium speed and low range. They work like axes, but have a different super slash. The weapon is enchanted with the Bleeding enchantment."
 traits = ["boss"]
+enchantments = ["Bleeding"]
 
 [WEAPON_WASP_NAGINATA]
 name = "Wasp's Naginata"
+description = "Butcher's Knives are a pair of boss weapons in Shadow Fight 2. They are obtained by defeating Butcher once more in Eclipse mode. Butcher's Knives have very high damage, medium speed and low range. They work like axes, but have a different super slash. The weapon is enchanted with the Bleeding enchantment."
 traits = ["boss"]
+enchantments = ["Bleeding"]
 
 [WEAPON_WIDOW_FANS]
 name = "Widow's Fans"
+description = "Widow's Fans are a pair of boss weapons in Shadow Fight 2. They are obtained by defeating Widow once again in Eclipse mode. The fans function like Swords from Act II, except for their super slash, even though they look nothing like Swords. Some of their attacks are also slightly stronger than any other swords. These fans have variable stats and enchantment power depending upon the player's level. They are enchanted with the Lifesteal Enchantment."
 traits = ["boss"]
+enchantments = ["Lifesteal"]
 
 [WEAPON_SHOGUN_KATANA]
 name = "Shogun's Katana"
+description = "Shogun's Katana is a boss weapon in Shadow Fight 2. It is used by Shogun, the sixth demon boss in Act VI: Iron Reign. It is obtained after beating him again in eclipse mode. The weapon is a combination of a katana and a wakizashi blade. The katana is used to perform normal attacks and inflicts enchantments, while the wakizashi is only used during the last strikes of the double slash and the super slash. It is enchanted with the Overheat enchantment."
 traits = ["boss"]
+enchantments = ["Overheat"]
 
 [WEAPON_SECTIONAL_SCYTHE]
 name = "Mowers"
@@ -2205,12 +2265,13 @@ traits = [""]
 
 [WEAPON_TONFA_GUNS]
 name = "Blaster Tonfas"
-description = ""
+description = """Blaster Tonfas are a pair of super weapons unlocked at level 46 in Shadow Fight 2. They are the last weapons unlocked at the chapter 1 of Act VII: Revelation, along with Fretsaw. Blaster Tonfas' super slash fires two energy projectiles, which works similar to most ranged weapons but has higher damage, and can be blocked. The super slash is not categorized as any weapon, ranged weapon or magic; thus, it does not follow any enchantments on any piece of equipment used.
+Blaster Tonfas are used by Cronos and May. """
 traits = [""]
 
 [WEAPON_TEC_GLAIVE]
 name = "Fretsaw"
-description = ""
+description = "Fretsaw is a weapon from Act VII: Chapter 1 in Shadow Fight 2. It is one of the last weapons available in Chapter 1, unlocked at level 46 along with the Blaster Tonfas. Fretsaw has the same moves like the Sapphire Fang and Silver Glaive; it is thus the first non-gem Glaive to have the unique triple-hits Super Slash. It is used by the fighter Aquaris and her Looter counterpart."
 traits = [""]
 
 [ARMOR_LUMINOSITY]
@@ -2340,7 +2401,7 @@ traits = [""]
 
 [MAGIC_DEATH_RAY]
 name = "Force Ray"
-description = ""
+description = "Force Ray is a magic in Shadow Fight 2. It is unlocked at level 44 in Chapter 1 of Act VII: Revelation. Force Ray is used by some fighters in Act VII and by the Halloween 2016 and 2018 raid-boss, Morgana."
 traits = [""]
 
 [MAGIC_ACID_CLOUD]
@@ -2375,7 +2436,7 @@ traits = [""]
 
 [WEAPON_TEC_KNIVES]
 name = "Hack Knives"
-description = ""
+description = "Hack Knives are a pair of weapons in Act VII of Shadow Fight 2. They are the first pair of weapons available in Act VII, unlocked at level 44. Hack Knives are used by the fighter Raptor and his Looter counterpart."
 traits = [""]
 
 [WEAPON_COMPOSITE_SCYTHE]
@@ -2400,8 +2461,10 @@ traits = [""]
 
 [WEAPON_SUPER_COMPOSITE_SWORD]
 name = "Composite Sword"
-description = ""
+description = """The Composite Sword is a super weapon in Shadow Fight 2. It is unlocked at level 49 in Act VII: Chapter 2, along with the Shocker Claws.
+This weapon consists of nine segmented blades, with each segment connected by a stretchable thread. When swung hard, the segments are disconnected from each other, making the Composite Sword work like a whip instead of a sword. Due to how it functions, the Composite Sword has insanely long range with a reasonably quick attack speed but is subpar in close combat compared to usual sword type weapons, and much longer endlag due to having to wait for the segments to connect after each swing. It is wielded by Ancient, the ghost Whiplash and Titan's second bodyguard, Master."""
 traits = [""]
+enchantments = ["Bleeding"]
 
 [WEAPON_SHOCKER_CLAWS]
 name = "Shocker Claws"
@@ -2494,8 +2557,8 @@ description = ""
 traits = [""]
 
 [WEAPON_FIRE_BATONS]
-name = "Flame clubs"
-description = ""
+name = "Flame Clubs"
+description = "Flame Clubs are a pair of weapons from Act VII: Chapter 3 in Shadow Fight 2. They are the last weapon unlocked in the game, unlocked at level 52. Unique in their usage, their heavy slash and super slash causes flames to erupt from the tips of the clubs. They are used by a Scavenger and by the ghost Wraith. They appear as flame throwers with the gas containers connected close to the handle."
 traits = [""]
 
 [WEAPON_KNOBSTICKS]
@@ -2505,7 +2568,7 @@ traits = [""]
 
 [WEAPON_GLAIVEBOW]
 name = "Cobra's Tooth"
-description = ""
+description = "Cobra's Tooth is a gem weapon unlocked at level 50 in Shadow Fight 2. It is one of the first weapons unlocked at the chapter three of Act VII: Revelation, along with the Orbs of Pain. Cobra's Tooth functions like a glaive but its super slash shoots an arrow to the opponent. The arrow has higher damage than most ranged weapons, and it cannot be blocked. The arrow is not categorized as weapon, ranged weapons, and magic. Thus, it does not follow any enchantments on these equipment. Cobra's Tooth is wielded by some enemies in the Spaceship Challenge and the Stone Grove Tournament. It is also wielded by Titan's fifth bodyguard, Emperor."
 traits = [""]
 
 [WEAPON_RIFLE]
@@ -2570,8 +2633,9 @@ traits = [""]
 
 [WEAPON_2_HW19_SET]
 name = "Blade of Eternal Pain"
-description = ""
+description = "Blade of the Eternal Pain are a Halloween 2019 special weapon in Shadow Fight 2. They were obtainable during Halloween 2019 update, as a possible reward by purchasing the Chest of Nightmares. In order to purchase the chest, players needed 350 Raven tokens or 149 gems."
 traits = [""]
+enchantments = ["Poisoning"]
 
 [ARMOR_CHNY20_HOODIE]
 name = "Game Fan`s Hoodie"
@@ -2590,8 +2654,9 @@ traits = [""]
 
 [WEAPON_CHNY20_STAFF]
 name = "Chinese Dragon Staff"
-description = ""
+description = "Chinese Dragon Staff is the 2018 Chinese New Year special weapon in Shadow Fight 2. It was obtainable by purchasing the Dragon's Chest for 250 Coins of Love or 149 gems. Coin of Love was the special currency for the 2018 Valentine's Day and the Chinese New Year update, which could be obtained by defeating raid-bosses, with stronger bosses giving more Coins of Love. Chinese Dragon Staff works like the Staff and comes enchanted with Overheat."
 traits = [""]
+enchantments = ["Overheat"]
 
 [ARMOR_CHNY20_TRADITIONAL]
 name = "Dragon's Scale"
@@ -2620,8 +2685,9 @@ traits = ["specialEdition", "vd17", "vd20", "vd21", "vd23"]
 
 [WEAPON_VAL20_TRIDENT]
 name = "Fatemaker"
-description = ""
-traits = [""]
+description = "Fatemaker is a 2017 Valentine's Day special weapon in Shadow Fight 2. It was obtainable during the Valentine's Day 2017, 2020, 2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest. Fatemaker is enchanted with Enfeeble. In the Special Edition, it is available in the shop to be bought."
+traits = ["nintendoSwitchEdition"]
+enchantments = ["Enfeeble"]
 
 [WEAPON_VAL20_SAI]
 name = "Vermeil Fangs"
@@ -2665,7 +2731,7 @@ traits = [""]
 
 [MAGIC_HW17_VOODOO]
 name = "Dark Blood Magic"
-description = ""
+description = "Dark Blood Magic is the Halloween 2017 special magic amulet in Shadow Fight 2. It was obtainable during Halloween 2017 update, as a possible reward by purchasing the Mystical Chest. In order to purchase the chest, players need 250 bone coins or spend 199 gems. Bone coins can be obtained by defeating Whisper, the Halloween 2017 special raid-boss. Whisper herself also uses this magic. It is enchanted with the Bleeding enchantment. Dark Blood Magic functions like the Medium Charges of Darkness."
 traits = [""]
 
 [HELM_WOODOO_HW20]
@@ -2694,17 +2760,18 @@ description = ""
 traits = [""]
 
 [WEAPON_CHNY21_FAN]
-name = "Festive fans"
-description = ""
+name = "Festive Fans"
+description = "Festive Fans is the 2021 Chinese New Year special weapon in Shadow Fight 2. It was obtainable by purchasing the Dragon's Chest for 600 Patterned coins or 249 gems. Patterned coins was the special currency for the 2021 Valentine's Day and the Chinese New Year update, which could be obtained by defeating Son of Heaven. Festive Fans is enchanted with Poisoning."
 traits = [""]
+enchantments = ["Poisoning"]
 
 [WEAPON_CHNY21_JIAN]
-name = "Victorious jian"
+name = "Victorious Jian"
 description = ""
 traits = [""]
 
 [RANGED_IND21_CHAKRAM]
-name = "Chackrams of Overlord"
+name = "Chakrams of Overlord"
 description = ""
 traits = [""]
 
@@ -2730,13 +2797,15 @@ traits = [""]
 
 [WEAPON_IND21_KERIS]
 name = "Krises of an Intercessor"
-description = ""
+description = "Krises of an Intercessor are the Ram Navami 2021 special weapon in Shadow Fight 2. They were obtainable during Ram Navami 2021 update, as a possible reward by purchasing the Casket of Elephant's King. In order to purchase the chest, players needed 600 flower coins or 199 Gems. Flower coins could be obtained by defeating Ravana. The weapons are come with Overheat enchantment."
 traits = [""]
+enchantments = ["Overheat"]
 
 [WEAPON_IND21_GLAIVEBOW]
 name = "Demon Slayer"
-description = ""
+description = "Demon Slayer is the Ram Navami 2021 special weapon in Shadow Fight 2. They were obtainable during Ram Navami 2021 update, as a possible reward by purchasing the Casket of Elephant's King. In order to purchase the chest, players needed 600 flower coins or 199 Gems. Flower coins could be obtained by defeating Ravana. The weapon comes with Frenzy enchantment."
 traits = [""]
+enchantments = ["Frenzy"]
 
 [RANGED_IND21_KUNAI]
 name = "Blades of the Dawn"
@@ -2745,8 +2814,9 @@ traits = [""]
 
 [WEAPON_AE21_SPEAR]
 name = "Hand of Prairie"
-description = ""
+description = "Hand of Prairie is the 2021 Independence Day special weapon in Shadow Fight 2. It can be obtainable by purchasing the Casket of Anchestors for 600 feather coins or 219 gems. Feather coins was the special currency for the Independence Day update, which could be obtained by defeating Adanti. Hand of Prairie is enchanted with Lifesteal."
 traits = [""]
+enchantments = ["Lifesteal"]
 
 [RANGED_AE21_TOMAHAWK]
 name = "Сhieftain's Tomahawk"
@@ -2800,8 +2870,9 @@ traits = [""]
 
 [WEAPON_SUMMER21_TRIDENT]
 name = "Conqueror Of The Seas"
-description = ""
+description = "Conqueror of the Seas is the 2021 Summer event special weapon in Shadow Fight 2. It can be obtainable by purchasing the Treasury of Cold for 600 shells or 219 gems. Shells are the special currency for the event update, which could be obtained by defeating Freeze Jr.. Freeze Jr himself wields these weapons. Conqueror of the Seas is enchanted with Enfeeble."
 traits = [""]
+enchantments = ["Enfeeble"]
 
 [RANGED_SUMMER21_ANCIENT_CHAKRAM]
 name = "Breakwaters"
@@ -2914,8 +2985,9 @@ traits = ["setSkanda"]
 
 [WEAPON_MINI_EVENT_PERNACH]
 name = "Finger of God"
-description = ""
+description = "Finger of God is a special weapon in Shadow Fight 2 during the Ritual event 2022. It can be obtained from the Ritual Chest for 150 Face of Darkness coins or 119 gems. Face of Darkness coins was the special currency for the Ritual event, which could be obtained by defeating The Lamb. Finger of God is enchanted with Magic Recharge."
 traits = [""]
+enchantments = ["Magic Recharge"]
 
 [RANGED_BOAT_FESTIVAL_SUPER_SHURIKEN]
 name = "Whirlpool of Petals"
@@ -2976,8 +3048,9 @@ traits = ["setDirector"]
 
 [WEAPON_MINI_EVENT_KNIFE]
 name = "Insatiable Blades"
-description = ""
+description = "Insatiable Blade is a weapon obtained in The Lamb event 2022. These knives appeared to be obtained legally after a Battle Pass with the Architect."
 traits = [""]
+enchantments = ["Lifesteal"]
 
 [RANGED_BP_S5_TIME_SHIFTER]
 name = "Chronos's Razor"
@@ -3034,7 +3107,7 @@ traits = ["setNeoWanderer"]
 
 [MAGIC_ANNIVERSARY_10TH]
 name = "Inmate's Shackles"
-description = ""
+description = "Inmate's Shackles is the exclusive 10th Anniversary magic in Shadow Fight 2. This magic is available exclusive from an offer via in-game purchase."
 traits = [""]
 
 [HELM_ANNIVERSARY_10TH]
@@ -3084,17 +3157,18 @@ traits = [""]
 
 [WEAPON_NY2024_MUSKET]
 name = "Fury of Austerlitz"
-description = ""
+description = "Fury of Austerlitz this is an exclusive weapon in Shadow Fight 2 for the New Year 2024. It is a musket from the 1700s British soldier, with gold patterns that are visible on it. Despite its appearance, the Fury of Austerlitz is mostly used as a polearm with its bayonet, rather than a ranged weapon. When performing the super slash, it fires a bullet that is weaker than ranged weapons, and cannot be blocked. The bullets deal weapon damage but are not categorized as weapons, ranged weapons, or magic attack. Thus, they do not follow any enchantments on these equipment."
 traits = [""]
+enchantments = ["Precision"]
 
 [MAGIC_NY2024_AMULET]
 name = "Cold Fusion"
-description = ""
+description = "Cold Fusion is a special magic amulet in Shadow Fight 2, available exclusive during 2023 Christmas and New Year event. It can be obtained from Sly's Bag of Rarities or in game offer."
 traits = [""]
 
 [MAGIC_CYBER_DRAGON_RAY]
 name = "Isotope Reactor"
-description = ""
+description = "Isotope Reactor is a special paid magic that was introduced in the New Year 2024 update of Shadow Fight 2. It can be acquired by purchasing the Cyber-Dragon Pack for $7.99, which also includes the Matter Splitter weapon and Dragon's Thirst helm. The weapon and the bundle were initially available to all players upon the release of the New Year 2024 update. It is now only available to players who have reached level 5 or to returning players who were not there at its initial release."
 traits = [""]
 
 [HELM_CYBER_DRAGON_HEAD]
@@ -3147,8 +3221,10 @@ traits = ["setSporeSoul"]
 
 [MAGIC_INDIA_24]
 name = "Highest Measure"
-description = ""
+description = """Highest Measure is a special event magic exclusive to the Destiny in Red 2024 event in Shadow Fight 2. It can be acquired as a a random reward from opening a Casket of Elephant's King, which costs 600 All-seeing Coins or 249 gems to open.
+This magic is used by Nrityu, the grim reaper."""
 traits = [""]
+enchantments = ["Bloodrage"]
 
 [WEAPON_INDIA_24]
 name = "Soul's Lot"
@@ -3194,8 +3270,9 @@ traits = ["offer"]
 
 [WEAPON_SCYTHE_FALL_24]
 name = "Hope Eater"
-description = ""
+description = "Hope Eater is a special event weapon exclusive to the Shadow of Eternity 2024 event in Shadow Fight 2. It can be acquired as a random reward from opening a Distorted Prophecy, which costs 600 Coins or 249 gems to open."
 traits = [""]
+enchantments = ["Lifesteal"]
 
 [HELM_FALL_24]
 name = "Poisonеd Wisdom"
@@ -3203,8 +3280,9 @@ description = ""
 traits = [""]
 
 [WEAPON_DAGGERS_HW_24]
+description = """Loa Twins is a special event weapon exclusive to the Shadow of Eternity 2024 Halloween event in Shadow Fight 2. It can be acquired as a random reward from opening a Spirit Trap, which costs 600 Coins or 99 gems to open.
+This weapon is used by Whisper, the fortune teller."""
 name = "Loa Twins"
-description = ""
 traits = [""]
 
 [ARMOR_TRIBAL_HW_24]
@@ -3324,8 +3402,9 @@ traits = ["setKarcer"]
 
 [WEAPON_FUTURIST_25]
 name = "Hadronic Decay"
-description = "triking Falcon is a weapon that can be purchased in a special offer in Shadow Fight 2. It can be purchased for real money."
+description = "Hadronic Decay is a weapon that can be purchased in a special offer in Shadow Fight 2. It can be purchased for $2.99 USD."
 traits = ["offer"]
+enchantments = ["Weakness"]
 
 [ARMOR_FUTURIST_25]
 name = "Crimson Hunter"
@@ -3350,3 +3429,4 @@ traits = [""]
 [WEAPON_RITUAL_25]
 name = "Ashes of Generation"
 traits = ["offer"]
+name = "War Shuang Gou"
