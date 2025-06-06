@@ -40,10 +40,10 @@ weapon = "PERK_ITEM_SPECIAL_STUN_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_STUN_RANGED"
 magic = "PERK_ITEM_SPECIAL_STUN_MAGIC"
 
-["timeBomb"]
+["time_bomb"]
 name = "Time Bomb"
 
-[timeBomb.equipment_ids]
+[time_bomb.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_TIME_BOMB_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_TIME_BOMB_RANGED"
 magic = "PERK_ITEM_SPECIAL_TIME_BOMB_MAGIC"
@@ -62,9 +62,9 @@ name = "Shielding"
 armor = "PERK_ITEM_SPECIAL_SHIELDING_ARMOR"
 helm = "PERK_ITEM_SPECIAL_SHIELDING_HELM"
 
-[damageReturn]
+[damage_return]
 name = "Damage Return"
 
-[damageReturn.equipment_ids]
+[damage_return.equipment_ids]
 armor = "PERK_ITEM_SPECIAL_DAMAGE_RETURN_ARMOR"
 helm = "PERK_ITEM_SPECIAL_DAMAGE_RETURN_HELM"

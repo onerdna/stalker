@@ -32,10 +32,10 @@ weapon = "PERK_ITEM_SPECIAL_WEAKNESS_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_WEAKNESS_RANGED"
 magic = "PERK_ITEM_SPECIAL_WEAKNESS_MAGIC"
 
-["magicRecharge"]
+["magic_recharge"]
 name = "Magic Recharge"
 
-[magicRecharge.equipment_ids]
+[magic_recharge.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_MAGIC_DAMAGE_RECHARGE_WEAPON"
 armor = "PERK_ITEM_SPECIAL_MAGIC_PAIN_RECHARGE_ARMOR"
 helm = "PERK_ITEM_SPECIAL_MAGIC_PAIN_RECHARGE_HELM"
@@ -55,9 +55,9 @@ name = "Rejuvenation"
 armor = "PERK_ITEM_SPECIAL_REJUVENATION_ARMOR"
 helm = "PERK_ITEM_SPECIAL_REJUVENATION_HELM"
 
-[damageAbsorption]
+[damage_absorption]
 name = "Damage Absorption"
 
-[damageAbsorption.equipment_ids]
+[damage_absorption.equipment_ids]
 armor = "PERK_ITEM_SPECIAL_DAMAGE_ABSORPTION_BODY_ARMOR"
 helm = "PERK_ITEM_SPECIAL_DAMAGE_ABSORPTION_HEAD_HELM"

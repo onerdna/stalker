@@ -1,24 +1,24 @@
-[stoneFetters]
+[stone_fetters]
 name = "Stone Fetters"
 id = "PERK_DRAGON_SET_STONE"
 
-[tempestRage]
+[tempest_rage]
 name = "Tempest Rage"
 id = "PERK_MONK_SET_WHIRL"
 
-[typhoonOfSpirits]
+[typhoon_of_spirits]
 name = "Typhoon Of Spirits"
 id = "PERK_SENTINEL_SET_SUPER_RETURN"
 
-[arcaneMartialArts]
+[arcane_martial_arts]
 name = "Arcane Martial Arts"
 id = "PERK_ARCANE_MARTIAL_ART_SET_NEO_WANDERER"
 
-[timeShift]
+[time_shift]
 name = "Time Shift"
 id = "PERK_TIME_SHIFT_SET_TIME_SHIFTER"
 
-[crimsonCorruption]
+[crimson_corruption]
 name = "Crimson Corruption"
 id = "PERK_WARLOCK_SET_CURSE"
 
@@ -26,11 +26,11 @@ id = "PERK_WARLOCK_SET_CURSE"
 name = "Karma"
 id = "PERK_SKANDA_SET_KARMA"
 
-[icyResistance]
+[icy_resistance]
 name = "Icy Resistance"
 id = "PERK_GUARDIAN_SET_PROTECTION"
 
-[plotTwist]
+[plot_twist]
 name = "Plot Twist"
 id = "PERK_DIRECTOR_SET_PLOT_TWIST"
 
@@ -42,10 +42,10 @@ id = "PERK_GUST_SET_WIND_MAKER"
 name = "Cordyceps"
 id = "PERK_CORDYCEPS_FUNGUS_SET"
 
-[roaringLuminary]
+[roaring_luminary]
 name = "Roaring Luminary"
 id = "PERK_MAGMA_VOLCANO_SET"
 
-[predatorsFury]
+[predators_fury]
 name = "Predator's Fury"
 id = "PERK_KARCER_HUNGER_SET"
