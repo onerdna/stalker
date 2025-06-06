@@ -201,10 +201,13 @@ class Record {
       final enchantments = element
           .findAllElements("Enchantments")
           .expand((n) => n.findElements("Perk"))
-          .where(
-              (ench) => findById(type, ench.getAttribute("Name") ?? "") != null)
+          .where((ench) =>
+              EnchantmentsManager.findByEquipmentTypeId(
+                  type, ench.getAttribute("Name") ?? "") !=
+              null)
           .map((ench) {
-        final enchantment = findById(type, ench.getAttribute("Name")!)!;
+        final enchantment = EnchantmentsManager.findByEquipmentTypeId(
+            type, ench.getAttribute("Name")!)!;
         final aspect = enchantment.tier == EnchantmentTier.mythical
             ? null
             : int.tryParse(

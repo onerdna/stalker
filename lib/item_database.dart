@@ -16,6 +16,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
+import 'package:stalker/enchantment.dart';
 import 'package:stalker/equipment_type.dart';
 
 enum ItemTrait {
@@ -216,142 +217,142 @@ extension ItemTraitExtension on ItemTrait {
   int get color {
     switch (this) {
       case ItemTrait.boss:
-        return 0xFFD66B;
+        return 0xFFFFD66B;
       case ItemTrait.unobtainable:
-        return 0xFF3F33;
+        return 0xFFFF3F33;
       case ItemTrait.specialEdition:
-        return 0xE7EFC7;
+        return 0xFFE7EFC7;
       case ItemTrait.nintendoSwitchEdition:
-        return 0x00CAFF;
+        return 0xFF00CAFF;
       case ItemTrait.challenger:
-        return 0xFFAAAA;
+        return 0xFFFFAAAA;
       case ItemTrait.offer:
-        return 0xDC8BE0;
+        return 0xFFDC8BE0;
       case ItemTrait.replica:
-        return 0x7F8CAA;
+        return 0xFF7F8CAA;
       case ItemTrait.setMonk:
-        return 0x3CB371;
+        return 0xFF3CB371;
 
       case ItemTrait.setSentinel:
-        return 0xCD5C5C;
+        return 0xFFCD5C5C;
 
       case ItemTrait.setWarlock:
-        return 0x8B0000;
+        return 0xFF8B0000;
 
       case ItemTrait.setForestGuardian:
-        return 0x4B0082;
+        return 0xFF4B0082;
 
       case ItemTrait.setSkanda:
-        return 0xFFD700;
+        return 0xFFFFD700;
 
       case ItemTrait.setCreatorsOfTheWind:
-        return 0x708090;
+        return 0xFF708090;
 
       case ItemTrait.setDirector:
-        return 0x808080;
+        return 0xFF808080;
 
       case ItemTrait.setChronos:
-        return 0x1E90FF;
+        return 0xFF1E90FF;
 
       case ItemTrait.setNeoWanderer:
-        return 0x00FFFF;
+        return 0xFF00FFFF;
 
       case ItemTrait.setSporeSoul:
-        return 0xFFFF00;
+        return 0xFFFFFF00;
 
       case ItemTrait.setVolcano:
-        return 0xFF4500;
+        return 0xFFFF4500;
 
       case ItemTrait.setKarcer:
-        return 0xFFFFFF;
+        return 0xFFFFFFFF;
 
       case ItemTrait.setDragon:
-        return 0xFF3F33;
+        return 0xFFFF3F33;
 
       case ItemTrait.hw14:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.hw15:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.hw16:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.hw17:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.hw18:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.hw19:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.hw20:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.hw21:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.hw22:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.hw23:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.hw24:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.hw25:
-        return 0xFB9E3A;
+        return 0xFFFB9E3A;
       case ItemTrait.xmas14:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.xmas15:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.xmas16:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.xmas17:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.xmas18:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.xmas19:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.xmas20:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.xmas21:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.xmas22:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.xmas23:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.xmas24:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.xmas25:
-        return 0xA9D2F3;
+        return 0xFFA9D2F3;
       case ItemTrait.vd17:
-        return 0xF7A5C1;
+        return 0xFFF7A5C1;
       case ItemTrait.vd18:
-        return 0xF7A5C1;
+        return 0xFFF7A5C1;
       case ItemTrait.vd19:
-        return 0xF7A5C1;
+        return 0xFFF7A5C1;
       case ItemTrait.vd20:
-        return 0xF7A5C1;
+        return 0xFFF7A5C1;
       case ItemTrait.vd21:
-        return 0xF7A5C1;
+        return 0xFFF7A5C1;
       case ItemTrait.vd22:
-        return 0xF7A5C1;
+        return 0xFFF7A5C1;
       case ItemTrait.vd23:
-        return 0xF7A5C1;
+        return 0xFFF7A5C1;
       case ItemTrait.vd24:
-        return 0xF7A5C1;
+        return 0xFFF7A5C1;
       case ItemTrait.vd25:
-        return 0xF7A5C1;
+        return 0xFFF7A5C1;
       case ItemTrait.chny18:
-        return 0xE57373;
+        return 0xFFE57373;
       case ItemTrait.chny21:
-        return 0xE57373;
+        return 0xFFE57373;
       case ItemTrait.chny22:
-        return 0xE57373;
+        return 0xFFE57373;
       case ItemTrait.chny24:
-        return 0xE57373;
+        return 0xFFE57373;
       case ItemTrait.ramNavami21:
-        return 0xFFE082;
+        return 0xFFFFE082;
       case ItemTrait.independence21:
-        return 0xFFE082;
+        return 0xFFFFE082;
       case ItemTrait.summer21:
-        return 0xFFE082;
+        return 0xFFFFE082;
       case ItemTrait.anniversary10:
-        return 0x254D70;
+        return 0xFF254D70;
       case ItemTrait.gift:
-        return 0x3F7D58;
+        return 0xFF3F7D58;
     }
   }
 }
@@ -377,4 +378,10 @@ class ItemDatabase {
   static Iterable<String> getEquipment(EquipmentType type) => dictionary.entries
       .where((e) => EquipmentTypeExtension.fromId(e.key) == type)
       .map((e) => e.key);
+
+  static Iterable<Enchantment> getEnchantments(String id) {
+    final enchantments =
+        (dictionary[id]?["enchantments"] ?? []) as List<dynamic>;
+    return enchantments.map((e) => EnchantmentsManager.findById(e)!);
+  }
 }

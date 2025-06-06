@@ -23,49 +23,101 @@ import 'package:xml/xml.dart';
 
 enum EnchantmentTier { simple, medium, mythical }
 
+extension EnchantmentTierExtension on EnchantmentTier {
+  String get fileName {
+    switch (this) {
+      case EnchantmentTier.simple:
+        return "simple";
+      case EnchantmentTier.medium:
+        return "medium";
+      case EnchantmentTier.mythical:
+        return "mythical";
+    }
+  }
+
+  int get color {
+    switch (this) {
+      case EnchantmentTier.simple:
+        return 0xFF254D70;
+      case EnchantmentTier.medium:
+        return 0xFFE6521F;
+      case EnchantmentTier.mythical:
+        return 0xFF441752;
+    }
+  }
+}
+
 class Enchantment {
   final String name;
+  final String id;
   final EnchantmentTier tier;
   final Map<EquipmentType, String> ids;
 
-  const Enchantment(this.name, this.tier, this.ids);
+  const Enchantment(this.name, this.id, this.tier, this.ids);
 
-  factory Enchantment.fromToml(MapEntry<String, Map<String, String>> entry, EnchantmentTier tier) {
-    return Enchantment(entry.key, tier, entry.value.map((k, v) => MapEntry(EquipmentType.values.byName(k), v)));
+  factory Enchantment.fromToml(
+      MapEntry<String, dynamic> entry, EnchantmentTier tier) {
+    if (tier == EnchantmentTier.mythical) {
+      final id = entry.value["id"] as String;
+      return Enchantment(
+        entry.value["name"] as String,
+        entry.key,
+        tier,
+        {
+          EquipmentType.weapon: id,
+          EquipmentType.ranged: id,
+          EquipmentType.magic: id,
+          EquipmentType.armor: id,
+          EquipmentType.helm: id,
+        },
+      );
+    } else {
+      final equipmentIdsRaw =
+          entry.value["equipment_ids"] as Map<String, dynamic>;
+      final equipmentIds = equipmentIdsRaw.map(
+        (k, v) => MapEntry(EquipmentType.values.byName(k), v as String),
+      );
+
+      return Enchantment(
+        entry.value["name"] as String,
+        entry.key,
+        tier,
+        equipmentIds,
+      );
+    }
   }
 
   String? idFor(EquipmentType type) => ids[type];
 }
 
-List<Enchantment> enchantments = [];
+class EnchantmentsManager {
+  static List<Enchantment> enchantments = [];
 
-Future<void> loadEnchantments() async {
-  enchantments.clear();
-  for (final tier in EnchantmentTier.values) {
-    final Map tomlMap = TomlDocument.parse(await rootBundle
-            .loadString("assets/enchantments/${_mapFileNames(tier)}.toml"))
-        .toMap();
-    enchantments.addAll(tomlMap.entries.map((e) => Enchantment.fromToml(MapEntry(e.key as String, (e.value as Map).cast<String, String>()), tier)));
+  static Future<void> loadFromFiles() async {
+    enchantments.clear();
+    for (final tier in EnchantmentTier.values) {
+      final tomlString = await rootBundle
+          .loadString("assets/enchantments/${tier.fileName}.toml");
+      final tomlMap = TomlDocument.parse(tomlString).toMap();
+      enchantments.addAll(tomlMap.entries.map((e) {
+        final id = e.key;
+        final data = e.value as Map<String, dynamic>;
+        return Enchantment.fromToml(MapEntry(id, data), tier);
+      }));
+    }
   }
-}
 
-Enchantment? findById(EquipmentType type, String id) {
-  return enchantments.where((e) => e.idFor(type) == id).firstOrNull;
-}
-
-String _mapFileNames(EnchantmentTier tier) {
-  switch (tier) {
-    case EnchantmentTier.simple:
-      return "simple";
-    case EnchantmentTier.medium:
-      return "medium";
-    case EnchantmentTier.mythical:
-      return "mythical";
+  static Enchantment? findByEquipmentTypeId(EquipmentType type, String id) {
+    return enchantments.where((e) => e.idFor(type) == id).firstOrNull;
   }
-}
 
-Enchantment? enchantmentFromId(String id) {
-  return enchantments.where((e) => e.ids.values.contains(id)).firstOrNull;
+  static Enchantment? findByAnyEquipmentTypeId(String id) {
+    return enchantments.where((e) => e.ids.values.contains(id)).firstOrNull;
+  }
+
+  static Enchantment? findById(String id) {
+    return enchantments.where((e) => e.id == id).firstOrNull;
+  }
 }
 
 class AppliedEnchantment {

@@ -253,7 +253,6 @@ class _RecordsPageState extends State<RecordsPage> {
                     builder: (ctx) => NewRecord(onCreated: () {
                           setState(() {});
                         }));
-                ;
               },
               label: const Icon(Icons.add))
         ],

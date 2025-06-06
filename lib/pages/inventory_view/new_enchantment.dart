@@ -58,7 +58,7 @@ class _NewEnchantmentDialogState extends State<NewEnchantmentDialog> {
                           style: const TextStyle(fontSize: 20),
                         ),
                       ),
-                      ...enchantments
+                      ...EnchantmentsManager.enchantments
                           .where((e) =>
                               e.idFor(widget.type) != null && e.tier == ench.$1)
                           .map((e) => FilledButton(
