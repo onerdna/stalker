@@ -27,40 +27,43 @@ class StalkerAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       toolbarHeight: 90,
-      title: Column(
-        children: [
-          Stack(
-            alignment: Alignment.center,
-            children: [
-              Align(
-                  alignment: Alignment.centerLeft,
-                  child: package.value?.version == null
-                      ? null
-                      : Text(
-                          "v${package.value?.version}",
-                          style: const TextStyle(fontSize: 16),
-                        )),
-              const Center(child: Text("Stalker")),
-              Align(
-                alignment: Alignment.centerRight,
-                child: IconButton(
-                  onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const AboutPage())),
-                  icon: const Icon(Icons.info_outline),
+      title: Padding(
+        padding: const EdgeInsets.only(top: 8.0),
+        child: Column(
+          children: [
+            Stack(
+              alignment: Alignment.center,
+              children: [
+                Align(
+                    alignment: Alignment.centerLeft,
+                    child: package.value?.version == null
+                        ? null
+                        : Text(
+                            "v${package.value?.version}",
+                            style: const TextStyle(fontSize: 16),
+                          )),
+                const Center(child: Text("Stalker")),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: IconButton(
+                    onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const AboutPage())),
+                    icon: const Icon(Icons.info_outline),
+                  ),
                 ),
-              ),
-            ],
-          ),
-          const Center(
-            child: Text(
-              "© 2025 Andreno. All rights reserved.",
-              style: TextStyle(fontSize: 14),
+              ],
             ),
-          ),
-          const SizedBox(
-            height: 20,
-          )
-        ],
+            const Center(
+              child: Text(
+                "© 2025 Andreno. All rights reserved.",
+                style: TextStyle(fontSize: 14),
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            )
+          ],
+        ),
       ),
     );
   }

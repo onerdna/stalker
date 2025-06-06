@@ -18,7 +18,6 @@
 
 import 'package:flutter/services.dart';
 import 'package:stalker/equipment_type.dart';
-import 'package:stalker/main.dart';
 import 'package:toml/toml.dart';
 import 'package:xml/xml.dart';
 
@@ -58,10 +57,6 @@ class Enchantment {
 
   factory Enchantment.fromToml(
       MapEntry<String, dynamic> entry, EnchantmentTier tier) {
-    if (tier != EnchantmentTier.mythical) {
-      logger.i('entry.key=${entry.key}');
-    }
-
     if (tier == EnchantmentTier.mythical) {
       final id = entry.value["id"] as String;
       return Enchantment(
