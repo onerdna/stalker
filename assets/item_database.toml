@@ -293,7 +293,7 @@ description = ""
 traits = ["unobtainable"]
 
 [ARMOR_WOMAN_ALLOY]
-traits = [""unobtainable]
+traits = ["unobtainable"]
 
 name = ""
 description = ""
