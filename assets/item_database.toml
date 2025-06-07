@@ -287,6 +287,14 @@ traits = ["unobtainable"]
 name = "Titan's Body"
 traits = ["unobtainable"]
 
+[BERSTUUK_BODY]
+name = "Berstuuk's Body"
+traits = ["unobtainable"]
+
+[BERSTUUK_HEAD]
+name = "Berstuuk's Head"
+traits = ["unobtainable"]
+
 [ARMOR_UNKNOWN]
 name = "Unknown Armor"
 description = ""
@@ -903,7 +911,7 @@ enchantments = ["shielding"]
 [HELM_NY18_HAT]
 name = "Fur Ear-Flap"
 description = ""
-traits = ["nintendoSwitchEdition"]
+traits = ["xmas18", "xmas21", "nintendoSwitchEdition"]
 enchantments = ["critical_protection"]
 
 [WEAPON_NY18_AXES]
@@ -3849,7 +3857,7 @@ enchantments = ["shielding"]
 [NY20_HELM_HAT]
 name = "Fur Ear-Flap"
 description = ""
-traits = ["nintendoSwitchEdition"]
+traits = ["xmas19", "nintendoSwitchEdition"]
 enchantments = ["critical_protection"]
 
 [NY20_HELM_HORNS]
