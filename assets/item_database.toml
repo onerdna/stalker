@@ -171,6 +171,18 @@ name = "Dance of Static"
 description = "Dance of Static is a weapon that can be purchased in a special offer in Shadow Fight 2. It can be purchased for real money for $2.99."
 traits = ["offer"]
 
+[WEAPON_KUSARIGAMA_SILENT_MOON_25]
+name = "Silent Moon"
+traits = ["offer"]
+
+[RANGED_NEEDLES_NEMESIS_STINGER_25]
+name = "Sting of Nemesis"
+traits = ["offer"]
+
+[MAGIC_BOMB_SEED_OF_CREATION_25]
+name = "Seed of Creation"
+traits = ["offer"]
+
 [BODY_BRICK]
 name = "Brick's Body"
 description = ""

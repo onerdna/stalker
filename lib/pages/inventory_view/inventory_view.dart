@@ -28,6 +28,7 @@ import 'package:stalker/equipment_type.dart';
 import 'package:stalker/item_database.dart';
 import 'package:stalker/pages/inventory_view/equipment_search_bar.dart';
 import 'package:stalker/pages/inventory_view/new_enchantment.dart';
+import 'package:stalker/pages/inventory_view/new_item.dart';
 import 'package:stalker/records_manager.dart';
 
 class InventoryView extends StatefulWidget {
@@ -112,8 +113,28 @@ class _InventoryViewState extends State<InventoryView> {
           ],
         ),
       ...suggested,
+      SizedBox(
+        width: double.maxFinite,
+        child: FilledButton(
+          onPressed: () {
+            showDialog(
+                context: context,
+                builder: (ctx) => NewItem(
+                    equipmentType: widget.equipmentType,
+                    onPressed: (text) {
+                      RecordsManager
+                          .activeRecord!.equipment[widget.equipmentType]!
+                          .add(Equipment(widget.equipmentType, text, 1, 0));
+                      setState(() {
+                        _searchEquipment(query);
+                      });
+                    }));
+          },
+          child: const Text("Add by ID"),
+        ),
+      ),
       const SizedBox(
-        height: 20,
+        height: 90,
       )
     ];
 
@@ -177,8 +198,8 @@ class _InventoryViewState extends State<InventoryView> {
               isEquipped
                   ? const Text(
                       "Equipped",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold, fontSize: 14),
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                     )
                   : ConfirmButton(
                       onConfirmed: () {
@@ -206,13 +227,14 @@ class _InventoryViewState extends State<InventoryView> {
             if (item.description.isNotEmpty) ...[
               const Divider(),
               Padding(
-                padding:
-                    const EdgeInsets.only(top: 8, bottom: 16, left: 16, right: 16),
+                padding: const EdgeInsets.only(
+                    top: 8, bottom: 16, left: 16, right: 16),
                 child: Text(
                   item.description,
                   style: const TextStyle(fontSize: 14),
                 ),
-              )],
+              )
+            ],
             Padding(
               padding: const EdgeInsets.only(left: 16.0),
               child: ExpansionTile(
