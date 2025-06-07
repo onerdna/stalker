@@ -50,10 +50,11 @@ extension EnchantmentTierExtension on EnchantmentTier {
 class Enchantment {
   final String name;
   final String id;
+  final String? description;
   final EnchantmentTier tier;
   final Map<EquipmentType, String> ids;
 
-  const Enchantment(this.name, this.id, this.tier, this.ids);
+  const Enchantment(this.name, this.id, this.description, this.tier, this.ids);
 
   factory Enchantment.fromToml(
       MapEntry<String, dynamic> entry, EnchantmentTier tier) {
@@ -62,6 +63,7 @@ class Enchantment {
       return Enchantment(
         entry.value["name"] as String,
         entry.key,
+        entry.value["description"] as String?,
         tier,
         {
           EquipmentType.weapon: id,
@@ -81,6 +83,7 @@ class Enchantment {
       return Enchantment(
         entry.value["name"] as String,
         entry.key,
+        entry.value["description"] as String?,
         tier,
         equipmentIds,
       );

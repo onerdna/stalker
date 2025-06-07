@@ -21,6 +21,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:stalker/app.dart';
+import 'package:stalker/click_tooltip.dart';
 import 'package:stalker/confirm_button.dart';
 import 'package:stalker/enchantment.dart';
 import 'package:stalker/equipment.dart';
@@ -84,7 +85,7 @@ class _InventoryViewState extends State<InventoryView> {
                 ),
               ),
               const SizedBox(width: 8),
-              Tooltip(
+              ClickTooltip(
                 message:
                     "RANGED_SUPER_MINE - Search by ID\nReaver - Search by name\nUnobtainable - Search by traits\nBecomes immobile - Search by description\nEquipped - Find currently equipped item",
                 decoration: BoxDecoration(
@@ -92,7 +93,6 @@ class _InventoryViewState extends State<InventoryView> {
                     borderRadius: BorderRadius.circular(16),
                     color: Theme.of(context).canvasColor),
                 textStyle: const TextStyle(color: Colors.white, fontSize: 14),
-                showDuration: const Duration(seconds: 8),
                 child: const Icon(Icons.info_outline),
               ),
             ],

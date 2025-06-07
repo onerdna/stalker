@@ -1,6 +1,15 @@
 [stone_fetters]
 name = "Stone Fetters"
 id = "PERK_DRAGON_SET_STONE"
+description = "The mythical enchantment of the unused Dragon Set. Its mechanics are unknown."
+
+[searing_luminary]
+name = "Searing Luminary"
+id = "PERK_HEAVEN_SET_BURN"
+description = """
+The mythical enchantment of the Heavenly Steel Set, which was later reused and rebranded as the Neo-wanderer Set with a new mythical enchantment associated to it (Arcane Martial Art).
+Its mechanics are unknown, but judging from the word "Burn" in its code name. it might've worked similarly to Bleeding or Burning.
+"""
 
 [tempest_rage]
 name = "Tempest Rage"
