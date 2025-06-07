@@ -17,6 +17,7 @@
  */
 
 import 'package:flutter/material.dart';
+import 'package:stalker/click_tooltip.dart';
 import 'package:stalker/enchantment.dart';
 import 'package:stalker/equipment_type.dart';
 
@@ -61,9 +62,32 @@ class _NewEnchantmentDialogState extends State<NewEnchantmentDialog> {
                       ...EnchantmentsManager.enchantments
                           .where((e) =>
                               e.idFor(widget.type) != null && e.tier == ench.$1)
-                          .map((e) => FilledButton(
-                              onPressed: () => widget.onPressed(e),
-                              child: Text(e.name)))
+                          .map((e) => Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Expanded(
+                                    child: FilledButton(
+                                        onPressed: () => widget.onPressed(e),
+                                        child: Text(e.name)),
+                                  ),
+                                  if (e.description != null) ...[
+                                    const SizedBox(
+                                      width: 8,
+                                    ),
+                                    ClickTooltip(
+                                      message: e.description,
+                                      decoration: BoxDecoration(
+                                          border: Border.all(width: 1),
+                                          borderRadius:
+                                              BorderRadius.circular(16),
+                                          color: Theme.of(context).canvasColor),
+                                      textStyle: const TextStyle(
+                                          color: Colors.white, fontSize: 14),
+                                      child: const Icon(Icons.info_outline),
+                                    )
+                                  ]
+                                ],
+                              ))
                     ])
                 .expand((e) => e)
                 .toList()),

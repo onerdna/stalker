@@ -914,6 +914,12 @@ description = ""
 traits = ["xmas18", "xmas21", "nintendoSwitchEdition"]
 enchantments = ["critical_protection"]
 
+[NY20_HELM_HAT]
+name = "Fur Ear-Flap"
+description = ""
+traits = ["xmas19"]
+enchantments = ["critical_protection"]
+
 [WEAPON_NY18_AXES]
 name = "Surprise Waffles"
 description = """
