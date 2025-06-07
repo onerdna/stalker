@@ -914,12 +914,6 @@ description = ""
 traits = ["xmas18", "xmas21", "nintendoSwitchEdition"]
 enchantments = ["critical_protection"]
 
-[NY20_HELM_HAT]
-name = "Fur Ear-Flap"
-description = ""
-traits = ["xmas19"]
-enchantments = ["critical_protection"]
-
 [WEAPON_NY18_AXES]
 name = "Surprise Waffles"
 description = """
@@ -2699,7 +2693,7 @@ enchantments = ["enfeeble"]                                                     
 [WEAPON_COMPOSITE_SCYTHE]
 name = "Reaver"
 description = "The Reaver is a weapon from Act VII: Chapter 1 in Shadow Fight 2. It is unlocked at level 45, along with the Mowers. The Reaver is a large, long, heavy hybrid of a dane axe and a scythe with a foldable blade, which will fold out when the user performs a certain attack. It functions like the Two-handed Weapons, albeit with some difference. The Reaver is used by the mini-boss Shroud and a Looter from the Factory."
-traits = ["bleeding"]                                                                                                                                                                                                                                                                                                                                                                                                                          # Only on NS Edition
+enchantments = ["bleeding"]                                                                                                                                                                                                                                                                                                                                                                                                                          # Only on NS Edition
 
 [WEAPON_COMPOSITE_STAFF]
 name = "Telescopic Staff"
@@ -3449,28 +3443,28 @@ enchantments = ["lifesteal"]
 name = "Neutron Howl"
 description = "Neutron Howl is a special weapon in Shadow Fight 2. It is the weapon of the New-wanderer Set. This weapon is obtainable only through purchasing the Neo-wanderer Chest in the raid shop for 399 gems or 8500 shards. Upon purchase, the players may receive the Neutron Howl or other Neo-wanderer item, along with some Charges of Darkness, elixirs or Mystical Coupon. Neutron Howl is enchanted with the mythical enchantment Arcane Martial Art."
 traits = ["setNeoWanderer"]
-enchantments = ["arcane_martial_art"]
+enchantments = ["arcane_martial_arts"]
 
 [ARMOR_C1_Z4_NEO_WANDERER]
 name = "Electrostatic"
 traits = ["setNeoWanderer"]
-enchantments = ["arcane_martial_art"]
+enchantments = ["arcane_martial_arts"]
 
 [HELM_C1_Z4_NEO_WANDERER]
 name = "Solar Corona"
 traits = ["setNeoWanderer"]
-enchantments = ["arcane_martial_art"]
+enchantments = ["arcane_martial_arts"]
 
 [RANGED_C1_Z4_NEO_WANDERER]
 name = "Photons"
 traits = ["setNeoWanderer"]
-enchantments = ["arcane_martial_art"]
+enchantments = ["arcane_martial_arts"]
 
 [MAGIC_C1_Z4_NEO_WANDERER]
 name = "Quantum Leap"
 description = "Quantum Leap is a special magic amulet in Shadow Fight 2. It is the magic amulet of the Neo-wanderer Set. Quantum Leap is obtainable only through purchasing the Neo-wanderer Chest in the raid shop for 399 gems or 8500 shards. Upon purchase, the players may receive the Quantum Leap or other Neo-wanderer item, along with some Charges of Darkness, elixirs or Mystical Coupon. Quantum Leap is enchanted with the mythical enchantment Arcane Martial Art."
 traits = ["setNeoWanderer"]
-enchantments = ["arcane_martial_art"]
+enchantments = ["arcane_martial_arts"]
 
 [MAGIC_ANNIVERSARY_10TH]
 name = "Inmate's Shackles"
