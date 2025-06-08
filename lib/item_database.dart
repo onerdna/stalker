@@ -16,349 +16,31 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
+import 'package:flutter/services.dart';
 import 'package:stalker/enchantment.dart';
 import 'package:stalker/equipment_type.dart';
+import 'package:toml/toml.dart';
 
-enum ItemTrait {
-  boss,
-  unobtainable,
-  specialEdition,
-  nintendoSwitchEdition,
-  challenger,
-  hw14,
-  hw15,
-  hw16,
-  hw17,
-  hw18,
-  hw19,
-  hw20,
-  hw21,
-  hw22,
-  hw23,
-  hw24,
-  hw25,
-  xmas14,
-  xmas15,
-  xmas16,
-  xmas17,
-  xmas18,
-  xmas19,
-  xmas20,
-  xmas21,
-  xmas22,
-  xmas23,
-  xmas24,
-  xmas25,
-  vd17,
-  vd18,
-  vd19,
-  vd20,
-  vd21,
-  vd22,
-  vd23,
-  vd24,
-  vd25,
-  chny18,
-  chny21,
-  chny22,
-  chny24,
-  ramNavami21,
-  independence21,
-  summer21,
-  offer,
-  replica,
-  gift,
-  setMonk,
-  setSentinel,
-  setWarlock,
-  setForestGuardian,
-  setSkanda,
-  setCreatorsOfTheWind,
-  setDirector,
-  setChronos,
-  setNeoWanderer,
-  setSporeSoul,
-  setVolcano,
-  setKarcer,
-  setDragon,
-  anniversary10
-}
+class ItemTrait {
+  final String display;
+  final String id;
+  final int color;
 
-extension ItemTraitExtension on ItemTrait {
-  String get display {
-    switch (this) {
-      case ItemTrait.boss:
-        return "Boss Weapon";
-      case ItemTrait.unobtainable:
-        return "Unobtainable";
-      case ItemTrait.specialEdition:
-        return "Special Edition";
-      case ItemTrait.nintendoSwitchEdition:
-        return "Nintendo Switch Edition";
-      case ItemTrait.challenger:
-        return "Challenger Weapon";
-      case ItemTrait.offer:
-        return "Offer Exclusive Item";
-      case ItemTrait.replica:
-        return "Replica";
-      case ItemTrait.setMonk:
-        return "Monk Set";
-      case ItemTrait.setSentinel:
-        return "Sentinel Set";
-      case ItemTrait.setWarlock:
-        return "Warlock Set";
-      case ItemTrait.setForestGuardian:
-        return "Forest Guardian Set";
-      case ItemTrait.setSkanda:
-        return "Skanda Set";
-      case ItemTrait.setCreatorsOfTheWind:
-        return "Creator of the Winds Set";
-      case ItemTrait.setDirector:
-        return "Director Set";
-      case ItemTrait.setChronos:
-        return "Chronos Set";
-      case ItemTrait.setNeoWanderer:
-        return "Neo-Wanderer Set";
-      case ItemTrait.setSporeSoul:
-        return "Spore Soul Set";
-      case ItemTrait.setVolcano:
-        return "Volcano Set";
-      case ItemTrait.setKarcer:
-        return "Karcer Set";
-      case ItemTrait.setDragon:
-        return "Dragon Set";
-      case ItemTrait.hw14:
-        return "Halloween 2014";
-      case ItemTrait.hw15:
-        return "Halloween 2015";
-      case ItemTrait.hw16:
-        return "Halloween 2016";
-      case ItemTrait.hw17:
-        return "Halloween 2017";
-      case ItemTrait.hw18:
-        return "Halloween 2018";
-      case ItemTrait.hw19:
-        return "Halloween 2019";
-      case ItemTrait.hw20:
-        return "Halloween 2020";
-      case ItemTrait.hw21:
-        return "Halloween 2021";
-      case ItemTrait.hw22:
-        return "Halloween 2022";
-      case ItemTrait.hw23:
-        return "Halloween 2023";
-      case ItemTrait.hw24:
-        return "Halloween 2024";
-      case ItemTrait.hw25:
-        return "Halloween 2025";
-      case ItemTrait.xmas14:
-        return "Christmas 2014";
-      case ItemTrait.xmas15:
-        return "Christmas 2015";
-      case ItemTrait.xmas16:
-        return "Christmas 2016";
-      case ItemTrait.xmas17:
-        return "Christmas 2017";
-      case ItemTrait.xmas18:
-        return "Christmas 2018";
-      case ItemTrait.xmas19:
-        return "Christmas 2019";
-      case ItemTrait.xmas20:
-        return "Christmas 2020";
-      case ItemTrait.xmas21:
-        return "Christmas 2021";
-      case ItemTrait.xmas22:
-        return "Christmas 2022";
-      case ItemTrait.xmas23:
-        return "Christmas 2023";
-      case ItemTrait.xmas24:
-        return "Christmas 2024";
-      case ItemTrait.xmas25:
-        return "Christmas 2025";
-      case ItemTrait.vd17:
-        return "Valentine's Day 2017";
-      case ItemTrait.vd18:
-        return "Valentine's Day 2018";
-      case ItemTrait.vd19:
-        return "Valentine's Day 2019";
-      case ItemTrait.vd20:
-        return "Valentine's Day 2020";
-      case ItemTrait.vd21:
-        return "Valentine's Day 2021";
-      case ItemTrait.vd22:
-        return "Valentine's Day 2022";
-      case ItemTrait.vd23:
-        return "Valentine's Day 2023";
-      case ItemTrait.vd24:
-        return "Valentine's Day 2024";
-      case ItemTrait.vd25:
-        return "Valentine's Day 2025";
-      case ItemTrait.chny18:
-        return "Chinese New Year 2018";
-      case ItemTrait.chny21:
-        return "Chinese New Year 2021";
-      case ItemTrait.chny22:
-        return "Chinese New Year 2022";
-      case ItemTrait.chny24:
-        return "Chinese New Year 2024";
-      case ItemTrait.ramNavami21:
-        return "Ram Navami 2021";
-      case ItemTrait.independence21:
-        return "Independence Day 2021";
-      case ItemTrait.summer21:
-        return "Summer 2021";
-      case ItemTrait.gift:
-        return "Gift";
-      case ItemTrait.anniversary10:
-        return "10th Anniversary";
-    }
-  }
-
-  int get color {
-    switch (this) {
-      case ItemTrait.boss:
-        return 0xFFFFD66B;
-      case ItemTrait.unobtainable:
-        return 0xFFFF3F33;
-      case ItemTrait.specialEdition:
-        return 0xFFE7EFC7;
-      case ItemTrait.nintendoSwitchEdition:
-        return 0xFF00CAFF;
-      case ItemTrait.challenger:
-        return 0xFFFFAAAA;
-      case ItemTrait.offer:
-        return 0xFFDC8BE0;
-      case ItemTrait.replica:
-        return 0xFF7F8CAA;
-      case ItemTrait.setMonk:
-        return 0xFF3CB371;
-
-      case ItemTrait.setSentinel:
-        return 0xFFCD5C5C;
-
-      case ItemTrait.setWarlock:
-        return 0xFF8B0000;
-
-      case ItemTrait.setForestGuardian:
-        return 0xFF4B0082;
-
-      case ItemTrait.setSkanda:
-        return 0xFFFFD700;
-
-      case ItemTrait.setCreatorsOfTheWind:
-        return 0xFF708090;
-
-      case ItemTrait.setDirector:
-        return 0xFF808080;
-
-      case ItemTrait.setChronos:
-        return 0xFF1E90FF;
-
-      case ItemTrait.setNeoWanderer:
-        return 0xFF00FFFF;
-
-      case ItemTrait.setSporeSoul:
-        return 0xFFFFFF00;
-
-      case ItemTrait.setVolcano:
-        return 0xFFFF4500;
-
-      case ItemTrait.setKarcer:
-        return 0xFFFFFFFF;
-
-      case ItemTrait.setDragon:
-        return 0xFFFF3F33;
-
-      case ItemTrait.hw14:
-        return 0xFFFB9E3A;
-      case ItemTrait.hw15:
-        return 0xFFFB9E3A;
-      case ItemTrait.hw16:
-        return 0xFFFB9E3A;
-      case ItemTrait.hw17:
-        return 0xFFFB9E3A;
-      case ItemTrait.hw18:
-        return 0xFFFB9E3A;
-      case ItemTrait.hw19:
-        return 0xFFFB9E3A;
-      case ItemTrait.hw20:
-        return 0xFFFB9E3A;
-      case ItemTrait.hw21:
-        return 0xFFFB9E3A;
-      case ItemTrait.hw22:
-        return 0xFFFB9E3A;
-      case ItemTrait.hw23:
-        return 0xFFFB9E3A;
-      case ItemTrait.hw24:
-        return 0xFFFB9E3A;
-      case ItemTrait.hw25:
-        return 0xFFFB9E3A;
-      case ItemTrait.xmas14:
-        return 0xFFA9D2F3;
-      case ItemTrait.xmas15:
-        return 0xFFA9D2F3;
-      case ItemTrait.xmas16:
-        return 0xFFA9D2F3;
-      case ItemTrait.xmas17:
-        return 0xFFA9D2F3;
-      case ItemTrait.xmas18:
-        return 0xFFA9D2F3;
-      case ItemTrait.xmas19:
-        return 0xFFA9D2F3;
-      case ItemTrait.xmas20:
-        return 0xFFA9D2F3;
-      case ItemTrait.xmas21:
-        return 0xFFA9D2F3;
-      case ItemTrait.xmas22:
-        return 0xFFA9D2F3;
-      case ItemTrait.xmas23:
-        return 0xFFA9D2F3;
-      case ItemTrait.xmas24:
-        return 0xFFA9D2F3;
-      case ItemTrait.xmas25:
-        return 0xFFA9D2F3;
-      case ItemTrait.vd17:
-        return 0xFFF7A5C1;
-      case ItemTrait.vd18:
-        return 0xFFF7A5C1;
-      case ItemTrait.vd19:
-        return 0xFFF7A5C1;
-      case ItemTrait.vd20:
-        return 0xFFF7A5C1;
-      case ItemTrait.vd21:
-        return 0xFFF7A5C1;
-      case ItemTrait.vd22:
-        return 0xFFF7A5C1;
-      case ItemTrait.vd23:
-        return 0xFFF7A5C1;
-      case ItemTrait.vd24:
-        return 0xFFF7A5C1;
-      case ItemTrait.vd25:
-        return 0xFFF7A5C1;
-      case ItemTrait.chny18:
-        return 0xFFE57373;
-      case ItemTrait.chny21:
-        return 0xFFE57373;
-      case ItemTrait.chny22:
-        return 0xFFE57373;
-      case ItemTrait.chny24:
-        return 0xFFE57373;
-      case ItemTrait.ramNavami21:
-        return 0xFFFFE082;
-      case ItemTrait.independence21:
-        return 0xFFFFE082;
-      case ItemTrait.summer21:
-        return 0xFFFFE082;
-      case ItemTrait.anniversary10:
-        return 0xFF254D70;
-      case ItemTrait.gift:
-        return 0xFF3F7D58;
-    }
-  }
+  const ItemTrait(this.id, this.display, this.color);
 }
 
 class ItemDatabase {
   static var dictionary = {};
+  static List<ItemTrait> traits = [];
+
+  static Future<Iterable<ItemTrait>> loadTraits() async {
+    final tomlContent = await rootBundle.loadString("assets/traits.toml");
+    final tomlMap = TomlDocument.parse(tomlContent).toMap();
+
+    return tomlMap.entries.map((e) =>
+        ItemTrait(e.key, e.value["display"], int.parse(e.value["color"])));
+  }
+
   static String getName(String id) {
     var name = dictionary[id]?["name"];
     if (name == "") {
@@ -371,8 +53,8 @@ class ItemDatabase {
       dictionary[id]?["description"] ?? "";
 
   static Iterable<ItemTrait> getTraits(String id) {
-    List<String> traits = (dictionary[id]?["traits"] ?? []).cast<String>();
-    return traits.map((e) => ItemTrait.values.byName(e));
+    List<String> itemTraits = (dictionary[id]?["traits"] ?? []).cast<String>();
+    return itemTraits.map((e) => traits.where((t) => t.id == e).first);
   }
 
   static Iterable<String> getEquipment(EquipmentType type) => dictionary.entries

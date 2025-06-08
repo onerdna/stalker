@@ -1,0 +1,295 @@
+[boss]
+display = "Boss Weapon"
+color = "0xFFFFD66B"
+
+[unobtainable]
+display = "Unobtainable"
+color = "0xFFFF3F33"
+
+[specialEdition]
+display = "Special Edition"
+color = "0xFFE7EFC7"
+
+[nintendoSwitchEdition]
+display = "Nintendo Switch Edition"
+color = "0xFF00CAFF"
+
+[challenger]
+display = "Challenger Weapon"
+color = "0xFFFFAAAA"
+
+[hw14]
+display = "Halloween 2014"
+color = "0xFFFB9E3A"
+
+[hw15]
+display = "Halloween 2015"
+color = "0xFFFB9E3A"
+
+[hw16]
+display = "Halloween 2016"
+color = "0xFFFB9E3A"
+
+[hw17]
+display = "Halloween 2017"
+color = "0xFFFB9E3A"
+
+[hw18]
+display = "Halloween 2018"
+color = "0xFFFB9E3A"
+
+[hw19]
+display = "Halloween 2019"
+color = "0xFFFB9E3A"
+
+[hw20]
+display = "Halloween 2020"
+color = "0xFFFB9E3A"
+
+[hw21]
+display = "Halloween 2021"
+color = "0xFFFB9E3A"
+
+[hw22]
+display = "Halloween 2022"
+color = "0xFFFB9E3A"
+
+[hw23]
+display = "Halloween 2023"
+color = "0xFFFB9E3A"
+
+[hw24]
+display = "Halloween 2024"
+color = "0xFFFB9E3A"
+
+[hw25]
+display = "Halloween 2025"
+color = "0xFFFB9E3A"
+
+[xmas14]
+display = "Christmas 2014"
+color = "0xFFA9D2F3"
+
+[xmas15]
+display = "Christmas 2015"
+color = "0xFFA9D2F3"
+
+[xmas16]
+display = "Christmas 2016"
+color = "0xFFA9D2F3"
+
+[xmas17]
+display = "Christmas 2017"
+color = "0xFFA9D2F3"
+
+[xmas18]
+display = "Christmas 2018"
+color = "0xFFA9D2F3"
+
+[xmas19]
+display = "Christmas 2019"
+color = "0xFFA9D2F3"
+
+[xmas20]
+display = "Christmas 2020"
+color = "0xFFA9D2F3"
+
+[xmas21]
+display = "Christmas 2021"
+color = "0xFFA9D2F3"
+
+[xmas22]
+display = "Christmas 2022"
+color = "0xFFA9D2F3"
+
+[xmas23]
+display = "Christmas 2023"
+color = "0xFFA9D2F3"
+
+[xmas24]
+display = "Christmas 2024"
+color = "0xFFA9D2F3"
+
+[xmas25]
+display = "Christmas 2025"
+color = "0xFFA9D2F3"
+
+[ny14]
+display = "New Year 2014"
+color = "0xFF0ABAB5"
+
+[ny15]
+display = "New Year 2015"
+color = "0xFF0ABAB5"
+
+[ny16]
+display = "New Year 2016"
+color = "0xFF0ABAB5"
+
+[ny17]
+display = "New Year 2017"
+color = "0xFF0ABAB5"
+
+[ny18]
+display = "New Year 2018"
+color = "0xFF0ABAB5"
+
+[ny19]
+display = "New Year 2019"
+color = "0xFF0ABAB5"
+
+[ny20]
+display = "New Year 2020"
+color = "0xFF0ABAB5"
+
+[ny21]
+display = "New Year 2021"
+color = "0xFF0ABAB5"
+
+[ny22]
+display = "New Year 2022"
+color = "0xFF0ABAB5"
+
+[ny23]
+display = "New Year 2023"
+color = "0xFF0ABAB5"
+
+[ny24]
+display = "New Year 2024"
+color = "0xFF0ABAB5"
+
+[ny25]
+display = "New Year 2025"
+color = "0xFF0ABAB5"
+
+[vd17]
+display = "Valentine's Day 2017"
+color = "0xFFF7A5C1"
+
+[vd18]
+display = "Valentine's Day 2018"
+color = "0xFFF7A5C1"
+
+[vd19]
+display = "Valentine's Day 2019"
+color = "0xFFF7A5C1"
+
+[vd20]
+display = "Valentine's Day 2020"
+color = "0xFFF7A5C1"
+
+[vd21]
+display = "Valentine's Day 2021"
+color = "0xFFF7A5C1"
+
+[vd22]
+display = "Valentine's Day 2022"
+color = "0xFFF7A5C1"
+
+[vd23]
+display = "Valentine's Day 2023"
+color = "0xFFF7A5C1"
+
+[vd24]
+display = "Valentine's Day 2024"
+color = "0xFFF7A5C1"
+
+[vd25]
+display = "Valentine's Day 2025"
+color = "0xFFF7A5C1"
+
+[chny18]
+display = "Chinese New Year 2018"
+color = "0xFFE57373"
+
+[chny21]
+display = "Chinese New Year 2021"
+color = "0xFFE57373"
+
+[chny22]
+display = "Chinese New Year 2022"
+color = "0xFFE57373"
+
+[chny24]
+display = "Chinese New Year 2024"
+color = "0xFFE57373"
+
+[ramNavami21]
+display = "Ram Navami 2021"
+color = "0xFFFFE082"
+
+[independence21]
+display = "Independence Day 2021"
+color = "0xFFFFE082"
+
+[summer21]
+display = "Summer 2021"
+color = "0xFFFFE082"
+
+[offer]
+display = "Offer Exclusive Item"
+color = "0xFFDC8BE0"
+
+[replica]
+display = "Replica"
+color = "0xFF7F8CAA"
+
+[gift]
+display = "Gift"
+color = "0xFF3F7D58"
+
+[setMonk]
+display = "Monk Set"
+color = "0xFF3CB371"
+
+[setSentinel]
+display = "Sentinel Set"
+color = "0xFFCD5C5C"
+
+[setWarlock]
+display = "Warlock Set"
+color = "0xFF8B0000"
+
+[setForestGuardian]
+display = "Forest Guardian Set"
+color = "0xFF4B0082"
+
+[setSkanda]
+display = "Skanda Set"
+color = "0xFFFFD700"
+
+[setCreatorsOfTheWind]
+display = "Creator of the Winds Set"
+color = "0xFF708090"
+
+[setDirector]
+display = "Director Set"
+color = "0xFF808080"
+
+[setChronos]
+display = "Chronos Set"
+color = "0xFF1E90FF"
+
+[setNeoWanderer]
+display = "Neo-Wanderer Set"
+color = "0xFF00FFFF"
+
+[setSporeSoul]
+display = "Spore Soul Set"
+color = "0xFFFFFF00"
+
+[setVolcano]
+display = "Volcano Set"
+color = "0xFFFF4500"
+
+[setKarcer]
+display = "Karcer Set"
+color = "0xFFFFFFFF"
+
+[setDragon]
+display = "Dragon Set"
+color = "0xFFFF3F33"
+
+[anniversary10]
+display = "10th Anniversary"
+color = "0xFF254D70"
