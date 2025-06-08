@@ -1,6 +1,6 @@
 [critical_protection]
 name = "Critical Protection"
-description = "This enchantment is currently available to only two helms: both versions of Fur-Ear Flap helm from New Year 2018 and 2021. The helm Iron Mask which was obtainable from the Starter Pack prior to version 1.6.1 was also initially enchanted with Critical Protection, however it still can be added via Stalker."
+description = "This enchantment is currently available to only two helms: both versions of Fur-Ear Flap helm from New Year 2018 and 2021. The helm Iron Mask which was obtainable from the Starter Pack prior to version 1.6.1 was also initially enchanted with Critical Protection, however, it still can be added with Stalker."
 
 [critical_protection.equipment_ids]
 armor = "PERK_ITEM_SPECIAL_CRITICAL_PROTECTION_ARMOR"

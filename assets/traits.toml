@@ -6,11 +6,11 @@ color = "0xFFFFD66B"
 display = "Unobtainable"
 color = "0xFFFF3F33"
 
-[specialEdition]
+[special_edition]
 display = "Special Edition"
 color = "0xFFE7EFC7"
 
-[nintendoSwitchEdition]
+[nintendo_switch_edition]
 display = "Nintendo Switch Edition"
 color = "0xFF00CAFF"
 
@@ -214,7 +214,7 @@ color = "0xFFE57373"
 display = "Chinese New Year 2024"
 color = "0xFFE57373"
 
-[ramNavami21]
+[ram_navami21]
 display = "Ram Navami 2021"
 color = "0xFFFFE082"
 
@@ -238,58 +238,62 @@ color = "0xFF7F8CAA"
 display = "Gift"
 color = "0xFF3F7D58"
 
-[setMonk]
+[set_monk]
 display = "Monk Set"
 color = "0xFF3CB371"
 
-[setSentinel]
+[set_sentinel]
 display = "Sentinel Set"
 color = "0xFFCD5C5C"
 
-[setWarlock]
+[set_warlock]
 display = "Warlock Set"
 color = "0xFF8B0000"
 
-[setForestGuardian]
+[set_forest_guardian]
 display = "Forest Guardian Set"
 color = "0xFF4B0082"
 
-[setSkanda]
+[set_skanda]
 display = "Skanda Set"
 color = "0xFFFFD700"
 
-[setCreatorsOfTheWind]
+[set_creators_of_the_wind]
 display = "Creator of the Winds Set"
 color = "0xFF708090"
 
-[setDirector]
+[set_director]
 display = "Director Set"
 color = "0xFF808080"
 
-[setChronos]
+[set_chronos]
 display = "Chronos Set"
 color = "0xFF1E90FF"
 
-[setNeoWanderer]
+[set_neo_wanderer]
 display = "Neo-Wanderer Set"
 color = "0xFF00FFFF"
 
-[setSporeSoul]
+[set_spore_soul]
 display = "Spore Soul Set"
 color = "0xFFFFFF00"
 
-[setVolcano]
+[set_volcano]
 display = "Volcano Set"
 color = "0xFFFF4500"
 
-[setKarcer]
+[set_karcer]
 display = "Karcer Set"
 color = "0xFFFFFFFF"
 
-[setDragon]
+[set_dragon]
 display = "Dragon Set"
 color = "0xFFFF3F33"
 
 [anniversary10]
 display = "10th Anniversary"
 color = "0xFF254D70"
+
+[deceased]
+display = "Deceased"
+color = "0xFFD3D3D3"

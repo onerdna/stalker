@@ -88,10 +88,26 @@ name = "Crusher"
 description = "The Crusher is a two-handed weapon with a moveset similar to that of a Dadao. It resembles the Two-handed Cudgel from Act IV, albeit with spikes instead of studs and a distinct super slash from the Cudgel. A ninja from Act VI and Bonebreaker from Interlude wield this weapon. Crusher is also one of the random weapons duels offer during and after the Interlude."
 traits = ["unobtainable"]
 
-[WEAPON_DRAGON_KNIVES]
+[WEAPON_C2_Z5_DRAGON_KNIVES]
 name = "Dragon Knives"
 description = "The weapon of the unused Dragon Set. It functions exactly like the Knives. The weapon Snowpiercer uses a modified model of this weapon."
-traits = ["setDragon", "unobtainable"]
+traits = ["set_dragon", "unobtainable", "deceased"]
+
+[ARMOR_C2_Z5_DRAGON]
+name = "Dragon Armor"
+traits = ["set_dragon", "unobtainable", "deceased"]
+
+[HELM_C2_Z5_DRAGON]
+name = "Dragon Helm"
+traits = ["set_dragon", "unobtainable", "deceased"]
+
+[RANGED_C2_Z5_DRAGON_BOOMERANG]
+name = "Dragon Fang"
+traits = ["set_dragon", "unobtainable", "deceased"]
+
+[MAGIC_C2_Z5_DRAGON_EARTHQUAKE]
+name = "Dragon Roar"
+traits = ["set_dragon", "unobtainable", "deceased"]
 
 [WEAPON_TITAN_GIANT_SWORD]
 name = "Titan's Desolator"
@@ -101,7 +117,7 @@ traits = ["boss", "unobtainable"]
 [WEAPON_RAVANA]
 name = "Ravana's Fists"
 description = "Used by Ravana, the special raid-boss for the Ram Navami Event, these fists resemble Panda Cuddles, but have a larger appearance."
-traits = ["ramNavami21", "unobtainable"]
+traits = ["ram_navami21", "unobtainable"]
 
 [WEAPON_MORGANA_SCYTHE]
 name = "Morgana's Scythe"
@@ -142,17 +158,17 @@ traits = []
 name = "Claws of Perversity"
 description = """Claws of Perversity is a special set weapon in Shadow Fight 2. It is the weapon of the Karcer Set, which comes with the mythical enchantment Predator's Fury.
 This weapon can be acquired by chance from opening a Ritual Chest during the 8th part of the Ritual Battles Event in 2024. Opening a chest costs 600Blessings of the Cult, the exclusive currency of the event."""
-traits = ["setKarcer"]
+traits = ["set_karcer"]
 enchantments = ["predators_fury"]
 
 [MAGIC_KARCER_HUNGER_SET]
 name = "Mandibula"
 description = "Mandibula is a magic in Shadow Fight 2. It is the magic amulet of the Karcer Set and can be obtained from Ritual Chest."
-traits = ["setKarcer"]
+traits = ["set_karcer"]
 enchantments = ["predators_fury"]
 
 [WEAPON_C3_z3]
-name = ""        # Probably dragon set items
+name = ""
 description = ""
 traits = []
 
@@ -301,7 +317,7 @@ description = ""
 traits = []
 
 [ARMOR_C3_z3]
-name = ""                 # Probably dragon set item
+name = ""
 description = ""
 traits = ["unobtainable"]
 
@@ -377,7 +393,7 @@ traits = ["offer"]
 
 [ARMOR_RAID_KARCER_SET]
 name = "Legarthy"
-traits = ["setKarcer"]
+traits = ["set_karcer"]
 enchantments = ["predators_fury"]
 
 [ARMOR_ZONE7_HERO1]
@@ -641,7 +657,7 @@ description = ""
 traits = ["unobtainable"]
 
 [HEAD_C3_z3]
-name = ""        # Probably dragon set item
+name = ""
 description = ""
 traits = []
 
@@ -658,7 +674,7 @@ traits = ["offer"]
 [HELM_RAID_KARCER_SET]
 name = "Comatosis"
 description = ""
-traits = ["setKarcer"]
+traits = ["set_karcer"]
 enchantments = ["predators_fury"]
 
 [RANGED_TITANS_HARPOON]
@@ -677,7 +693,7 @@ description = "Big sharp-toothed fishes that will follow a straight line when th
 traits = ["unobtainable"]
 
 [RANGED_C3_z3]
-name = ""        # Probably dragon set item
+name = ""
 description = ""
 traits = []
 
@@ -712,7 +728,7 @@ description = ""
 traits = []
 
 [MAGIC_C3_z3]
-name = ""        # Probably dragon set item
+name = ""
 description = ""
 traits = []
 
@@ -800,28 +816,28 @@ enchantments = ["typhoon_of_spirits", "overheat"]
 [WEAPON_C2_Z3_SENTINEL_SPEAR]
 name = "Sentinel's Hand"
 description = "Sentinel's Hand is a special weapon in Shadow Fight 2. It is the weapon of the Sentinel's Set. This weapon is obtainable only through purchasing the Chest of Souls Keeper in the raid shop for 1199 gems. Upon purchase, the players may receive the Sentinel's Hand, along with some Charges of Darkness. Sentinel's Hand is enchanted with the mythical enchantment Typhoon of Spirits. It works like the standard Spears, namely The Sting, Yari, and Silver Spear. Sentinel's Hand, however, has a blade with twice the length than other Spears, making it the Spear with the longest reach, as well as one of the weapons with the longest range in the game."
-traits = ["setSentinel"]
+traits = ["set_sentinel"]
 enchantments = ["typhoon_of_spirits"]
 
 [ARMOR_C2_Z3_SENTINEL]
 name = "Sentinel's Armor"
-traits = ["setSentinel"]
+traits = ["set_sentinel"]
 enchantments = ["typhoon_of_spirits"]
 
 [HELM_C2_Z3_SENTINEL]
 name = "Sentinel's Conical Helm"
-traits = ["setSentinel"]
+traits = ["set_sentinel"]
 enchantments = ["typhoon_of_spirits"]
 
 [RANGED_C2_Z3_SENTINEL_SHURIKEN]
 name = "Sentinel's Blades"
-traits = ["setSentinel"]
+traits = ["set_sentinel"]
 enchantments = ["typhoon_of_spirits"]
 
 [MAGIC_C2_Z3_SENTINEL_DRAGON]
 name = "Sentinel's Spirit"
 description = "Sentinel's Spirit is a special magic amulet in Shadow Fight 2. It is the magic amulet of the Sentinel's Set. Sentinel's Spirit is obtainable only through purchasing the Chest of Souls Keeper in the raid shop for 1199 gems. Upon purchase, the players may receive the Sentinel's Spirit, along with some Charges of Darkness. Sentinel's Spirit is enchanted with the mythical enchantment Typhoon of Spirits."
-traits = ["setSentinel"]
+traits = ["set_sentinel"]
 enchantments = ["typhoon_of_spirits"]
 
 [ARMOR_XMAS16_SANTA]
@@ -869,49 +885,49 @@ enchantments = ["time_bomb"]
 [ARMOR_VAL18_HOODIE]
 name = "Game Fan's Hoodie"
 description = ""
-traits = ["vd18", "nintendoSwitchEdition"]
+traits = ["vd18", "nintendo_switch_edition"]
 enchantments = ["regeneration"]
 
 [HELM_VAL18_PANDA]
 name = "Adorable Panda"
 description = ""
-traits = ["vd18", "nintendoSwitchEdition"]
+traits = ["vd18", "nintendo_switch_edition"]
 enchantments = ["magic_recharge"]
 
 [WEAPON_VAL18_PANDA]
 name = "Panda Cuddles"
 description = "Panda Cuddles are the 2018 Valentine's Day special weapon in Shadow Fight 2. They were obtained by purchasing the Dragon's Chest for 250 Coins of Love or 149 gems. Coin of Love was the special currency for the 2018 Valentine and Chinese New Year, Chinese New Year 2020,2021,2022 and 2023 updates, which could be obtained by defeating raid-bosses, with stronger bosses giving more Coins. Panda Cuddles are a pair of gloves with the shape of Panda's claws. They work like the Katars and come enchanted with the Time Bomb enchantment.In the version for Nintendo Switch consoles, you can buy them on the third act."
-traits = ["vd18", "chny18", "chny21", "chny22", "nintendoSwitchEdition"]
+traits = ["vd18", "chny18", "chny21", "chny22", "nintendo_switch_edition"]
 enchantments = ["time_bomb"]
 
 [WEAPON_CHNY18_STAFF]
 name = "Chinese Dragon Staff"
 description = "Chinese Dragon Staff is the 2018 Chinese New Year special weapon in Shadow Fight 2. It was obtainable by purchasing the Dragon's Chest for 250 Coins of Love or 149 gems. Coin of Love was the special currency for the 2018 Valentine's Day and the Chinese New Year update, which could be obtained by defeating raid-bosses, with stronger bosses giving more Coins of Love. Chinese Dragon Staff works like the Staff and comes enchanted with Overheat."
-traits = ["vd18", "chny18", "nintendoSwitchEdition"]
+traits = ["vd18", "chny18", "nintendo_switch_edition"]
 enchantments = ["overheat"]
 
 [ARMOR_CHNY18_TRADITIONAL]
 name = "Dragon's Scale"
 description = ""
-traits = ["chny18", "nintendoSwitchEdition"]
+traits = ["chny18", "nintendo_switch_edition"]
 enchantments = ["damage_return"]
 
 [HELM_CHNY18_TRADITIONAL]
 name = "Hat of Generous Gifts"
 description = ""
-traits = ["chny18", "nintendoSwitchEdition"]
+traits = ["chny18", "nintendo_switch_edition"]
 enchantments = ["frenzy"]
 
 [ARMOR_NY18_MANTLE]
 name = "Padded Jacket"
 description = ""
-traits = ["xmas17", "xmas19", "nintendoSwitchEdition"]
+traits = ["xmas17", "xmas19", "nintendo_switch_edition"]
 enchantments = ["shielding"]
 
 [HELM_NY18_HAT]
 name = "Fur Ear-Flap"
 description = ""
-traits = ["xmas17", "xmas21", "nintendoSwitchEdition"]
+traits = ["xmas17", "xmas21", "nintendo_switch_edition"]
 enchantments = ["critical_protection"]
 
 [WEAPON_NY18_AXES]
@@ -920,7 +936,7 @@ description = """
 Surprise Waffles are a New Year 2018 and 2019 special weapon in Shadow Fight 2. They are a pair of giant rooster-shaped lollipops. Surprise Waffles could be obtained as a possible reward by purchasing the Gingerbread Chest during New Year 2018. In order to purchase the chest, players needed 250 new year coins or 199 gems. New year coins could be obtained by defeating Candy, the New Year 2018 special raid-boss. Candy herself wields these weapons. Surprise Waffles were also obtainable during New Year 2019, as a possible first place reward for defeating Karcer. The weapons come enchanted with the Stun enchantment.
 In the 2019 Christmas update, Surprise Waffles comes with a new appearance. It can be obtained after defeating Freeze or from the Gingerbread Chest. 
 """
-traits = ["nintendoSwitchEdition", "xmas17", "xmas19"]
+traits = ["nintendo_switch_edition", "xmas17", "xmas19"]
 enchantments = ["stun"]
 
 [WEAPON_NY18_MACE]
@@ -928,13 +944,13 @@ name = "Caramel Boom"
 description = """Caramel Boom is a New Year 2018 and 2019 special weapon in Shadow Fight 2. It is a giant green lollipop with red spikes on it. The weapon could be obtained as a possible reward by purchasing the Gingerbread Chest during New Year 2018. In order to purchase the chest, players needed 250 New Year coins or 199 gems. New Year coins could be obtained by defeating Candy, the New Year 2018 special raid-boss. Caramel Boom was also obtainable during New Year 2019, as a possible first place reward for defeating Karcer. The weapon comes enchanted with the Poisoning enchantment. Caramel Boom functions like the Two-handed Mace.
 In the 2019 Christmas update, Caramel Boom comes with a new appearance. It can be obtained after defeating Freeze or from the Gingerbread Chest.
 The Caramel Boom can also be purchased as an regular weapon in the Nintendo Switch version of SF2."""
-traits = ["nintendoSwitchEdition", "xmas17", "xmas19"]
+traits = ["nintendo_switch_edition", "xmas17", "xmas19"]
 enchantments = ["poisoning"]
 
 [RANGED_NY18_DONUT]
 name = "Juicy Donut"
 description = ""
-traits = ["xmas17", "nintendoSwitchEdition"]
+traits = ["xmas17", "nintendo_switch_edition"]
 enchantments = ["poisoning"]
 
 [MAGIC_NY18_SNOWBALL]
@@ -959,19 +975,19 @@ enchantments = ["magic_recharge"]
 [HELM_2_HW16_SET]
 name = "Nightmare Hat"
 description = ""
-traits = ["hw16", "specialEdition", "nintendoSwitchEdition"]
+traits = ["hw16", "special_edition", "nintendo_switch_edition"]
 enchantments = ["magic_recharge"]
 
 [RANGED_HW16_SET]
 name = "Demon's Wing"
 description = ""
-traits = ["hw16", "specialEdition", "nintendoSwitchEdition"]
+traits = ["hw16", "special_edition", "nintendo_switch_edition"]
 enchantments = ["stun"]
 
 [WEAPON_1_HW16_SET]
 name = "Dissector of hopes"
 description = "Dissector of Hopes is a 2016 Halloween special weapon in Shadow Fight 2. It was obtainable during Halloween 2016 update. It was obtained either as a drop by defeating Morgana, the Halloween 2016 special raid-boss, or by buying the Spider Chest for 149 gems. Dissector of Hopes is also available in the Special Edition, where it can be bought from the shop."
-traits = ["specialEdition", "nintendoSwitchEdition", "hw16", "hw18", "hw23"]
+traits = ["special_edition", "nintendo_switch_edition", "hw16", "hw18", "hw23"]
 enchantments = [
   "poisoning", # Only on SE and NS Edition
   "bleeding",
@@ -980,28 +996,28 @@ enchantments = [
 [WEAPON_2_HW16_SET]
 name = "Pain and Panic"
 description = "Pain and Panic are a 2016 Halloween special weapon in Shadow Fight 2. They were obtainable during Halloween 2016 update either as a drop by defeating Morgana, the Halloween 2016 special raid-boss, or by buying the Spider Chest for 149 gems. Morgana herself also wields this weapon. In the Special Edition, Pain and Panic are available in the shop to be bought. The weapons come enchanted with the Bleeding enchantment. They function similar to the Sickles."
-traits = ["specialEdition", "nintendoSwitchEdition", "hw16", "hw18", "hw23"]
+traits = ["special_edition", "nintendo_switch_edition", "hw16", "hw18", "hw23"]
 enchantments = ["bleeding"]
 
 [MAGIC_XMAS16_ICEBALL]
 name = "Shard of Eternal Ice"
 description = """Shard of Eternal Ice is a magic in Shadow Fight 2. It was obtainable from the Christmas 2016 Special chest. In the Special Edition, this magic is available in the shop. It is used by the Christmas 2016 special Raid-boss, Freeze.
 In the 2019 Christmas update, Shard of Eternal Ice comes with a new appearance. It can be obtained after defeating Freeze or from the Gingerbread Chest."""
-traits = ["xmas16", "specialEdition", "nintendoSwitchEdition"]
+traits = ["xmas16", "special_edition", "nintendo_switch_edition"]
 enchantments = ["bloodrage"]
 
 [RANGED_VAL17_AXE]
 name = "Broken Hearts"
 description = ""
-traits = ["vd17", "specialEdition", "nintendoSwitchEdition"]
+traits = ["vd17", "special_edition", "nintendo_switch_edition"]
 enchantments = ["precision"]
 
 [WEAPON_VAL17_FANS]
 name = "Fans Of Passion"
 description = "Fans of Passion are a 2017 Valentine's Day special weapon in Shadow Fight 2. They were obtainable during the Valentine's Day 2017, 2020, 2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest. Fans of Passion are enchanted with Poisoning. In the Special Edition, they can be bought from the shop."
 traits = [
-  "specialEdition",
-  "nintendoSwitchEdition",
+  "special_edition",
+  "nintendo_switch_edition",
   "vd17",
   "vd20",
   "vd21",
@@ -1016,8 +1032,8 @@ enchantments = [
 name = "Fatemaker"
 description = "Fatemaker is a 2017 Valentine's Day special weapon in Shadow Fight 2. It was obtainable during the Valentine's Day 2017, 2020, 2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest. Fatemaker is enchanted with Enfeeble. In the Special Edition, it is available in the shop to be bought."
 traits = [
-  "specialEdition",
-  "nintendoSwitchEdition",
+  "special_edition",
+  "nintendo_switch_edition",
   "vd17",
   "vd20",
   "vd21",
@@ -1031,7 +1047,7 @@ enchantments = [
 [WEAPON_VAL17_SAI]
 name = "Vermeil Fangs"
 description = "Vermeil Fangs are a 2017 Valentine's Day special weapon in Shadow Fight 2. They were obtainable during the Valentine's Day 2017,2020,2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest. Vermeil Fangs are enchanted with Magic Recharge. In the Special Edition, they are available in the shop to be bought."
-traits = ["specialEdition", "vd17", "vd20", "vd21", "vd23"]
+traits = ["special_edition", "vd17", "vd20", "vd21", "vd23"]
 enchantments = [
   "magic_recharge", # (2017-2023)
   "poisoning",      # (2024-present)
@@ -1040,19 +1056,19 @@ enchantments = [
 [HELM_VAL17_WINGS]
 name = "Helm of Inspiration"
 description = ""
-traits = ["vd17", "specialEdition", "nintendoSwitchEdition"]
+traits = ["vd17", "special_edition", "nintendo_switch_edition"]
 enchantments = ["regeneration"]
 
 [ARMOR_VAL17_MANTLE]
 name = "Poetic Mantle"
 description = ""
-traits = ["vd17", "specialEdition", "nintendoSwitchEdition"]
+traits = ["vd17", "special_edition", "nintendo_switch_edition"]
 enchantments = ["damage_absorption", "rejuvenation"]
 
 [WEAPON_C2_Z2_MONK_KATAR]
 name = "Monk's Katars"
 description = "Monk's Katars are a pair of special weapons in Shadow Fight 2. Monk's Katars are one of the possible rewards in the Raid chest at the end of each season. It is necessary to get this weapon, along with other equipment from the Monk's Set, to unlock the mythical enchantment Tempest Rage. Monk's Katars work like the knuckles, with a different super slash from other knuckle-type weapons. Each hit from the super slash is strong, but it is difficult to hit the enemy with all the hits. The weapon is enchanted with Tempest Rage."
-traits = ["setMonk"]
+traits = ["set_monk"]
 enchantments = [
   "tempest_rage",
   "weakness",
@@ -1060,7 +1076,7 @@ enchantments = [
 
 [ARMOR_C2_Z2_MONK]
 name = "Monk's Robe"
-traits = ["setMonk"]
+traits = ["set_monk"]
 enchantments = [
   "tempest_rage",
   "damage_absorption",
@@ -1068,7 +1084,7 @@ enchantments = [
 
 [HELM_C2_Z2_MONK]
 name = "Monk's Helm"
-traits = ["setMonk"]
+traits = ["set_monk"]
 enchantments = [
   "tempest_rage",
   "rejuvenation",
@@ -1076,7 +1092,7 @@ enchantments = [
 
 [RANGED_C2_Z2_MONK_SHURIKEN]
 name = "Monk's Shurikens"
-traits = ["setMonk"]
+traits = ["set_monk"]
 enchantments = [
   "tempest_rage",
   "bloodrage",
@@ -1085,7 +1101,7 @@ enchantments = [
 [MAGIC_C2_Z2_MONK_ROOT_STUN]
 name = "Monk's Amulet"
 description = "Monk's Amulet is a special magic amulet in Shadow Fight 2. Monk's Amulet is one of the possible rewards in the Raid chest at the end of each season. It is necessary to get this magic amulet, along with other equipment from the Monk Set, to unlock the mythical enchantment Tempest Rage. It is enchanted with Poisoning in addition to Tempest Rage (if obtained from Raid, it will not come enchanted with Poisoning)."
-traits = ["setMonk"]
+traits = ["set_monk"]
 enchantments = [
   "tempest_rage",
   "poisoning",
@@ -2608,7 +2624,7 @@ traits = ["xmas14"]
 [HELM_XMAS14_SANTA]
 name = "Beard of Frost"
 description = ""
-traits = ["xms14"]
+traits = ["xmas14"]
 
 [RANGED_XMAS14_SNOWBALLS]
 name = "Snowballs"
@@ -2913,25 +2929,25 @@ enchantments = ["poisoning"]
 [ARMOR_CHNY20_HOODIE]
 name = "Game Fan's Hoodie"
 description = ""
-traits = ["nintendoSwitchEdition"]
+traits = ["nintendo_switch_edition"]
 enchantments = ["regeneration"]
 
 [HELM_CHNY20_PANDA]
 name = "Adorable Panda"
 description = ""
-traits = ["nintendoSwitchEdition"]
+traits = ["nintendo_switch_edition"]
 enchantments = ["magic_recharge"]
 
 [WEAPON_CHNY20_PANDA]
 name = "Panda Cuddles"
 description = "Panda Cuddles are the 2018 Valentine's Day special weapon in Shadow Fight 2. They were obtained by purchasing the Dragon's Chest for 250 Coins of Love or 149 gems. Coin of Love was the special currency for the 2018 Valentine and Chinese New Year, Chinese New Year 2020,2021,2022 and 2023 updates, which could be obtained by defeating raid-bosses, with stronger bosses giving more Coins. Panda Cuddles are a pair of gloves with the shape of Panda's claws. They work like the Katars and come enchanted with the Time Bomb enchantment.In the version for Nintendo Switch consoles, you can buy them on the third act."
-traits = ["vd18", "chny18", "chny21", "chny22", "nintendoSwitchEdition"]
+traits = ["vd18", "chny18", "chny21", "chny22", "nintendo_switch_edition"]
 enchantments = ["time_bomb"]
 
 [WEAPON_CHNY20_STAFF]
 name = "Chinese Dragon Staff"
 description = "Chinese Dragon Staff is the 2018 Chinese New Year special weapon in Shadow Fight 2. It was obtainable by purchasing the Dragon's Chest for 250 Coins of Love or 149 gems. Coin of Love was the special currency for the 2018 Valentine's Day and the Chinese New Year update, which could be obtained by defeating raid-bosses, with stronger bosses giving more Coins of Love. Chinese Dragon Staff works like the Staff and comes enchanted with Overheat."
-traits = ["vd18", "chny18", "nintendoSwitchEdition"]
+traits = ["vd18", "chny18", "nintendo_switch_edition"]
 enchantments = ["overheat"]
 
 [ARMOR_CHNY20_TRADITIONAL]
@@ -2942,7 +2958,7 @@ traits = []
 [HELM_CHNY20_TRADITIONAL]
 name = "Hat of Generous Gifts"
 description = ""
-traits = ["nintendoSwitchEdition"]
+traits = ["nintendo_switch_edition"]
 enchantments = ["frenzy"]
 
 [RANGED_CHNY20_TRADITIONAL]
@@ -2960,8 +2976,8 @@ traits = ["vd20"]
 name = "Fans Of Passion"
 description = "Fans of Passion are a 2017 Valentine's Day special weapon in Shadow Fight 2. They were obtainable during the Valentine's Day 2017, 2020, 2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest . Fans of Passion are enchanted with Poisoning. In the Special Edition, they can be bought from the shop."
 traits = [
-  "specialEdition",
-  "nintendoSwitchEdition",
+  "special_edition",
+  "nintendo_switch_edition",
   "vd17",
   "vd20",
   "vd21",
@@ -2976,33 +2992,33 @@ traits = [
   "vd20",
   "vd21",
   "vd23",
-  "nintendoSwitchEdition",
-  "specialEdition",
+  "nintendo_switch_edition",
+  "special_edition",
 ]
 enchantments = ["enfeeble"]
 
 [WEAPON_VAL20_SAI]
 name = "Vermeil Fangs"
 description = "Vermeil Fangs are a 2017 Valentine's Day special weapon in Shadow Fight 2. They were obtainable during the Valentine's Day 2017,2020,2021 and 2023 updates, as a first-place reward by defeating raid-bosses (Vortex, Fatum, Arkhos, or Hoaxen), or by purchasing the Casket of Fates and Ruby Treasure Chest . Vermeil Fangs are enchanted with Magic Recharge. In the Special Edition, they are available in the shop to be bought."
-traits = ["vd17", "vd20", "vd21", "vd23", "specialEdition"]
+traits = ["vd17", "vd20", "vd21", "vd23", "special_edition"]
 enchantments = ["magic_recharge"]
 
 [HELM_VAL20_WINGS]
 name = "Helm of Inspiration"
 description = ""
-traits = ["vd20", "specialEdition", "nintendoSwitchEdition"]
+traits = ["vd20", "special_edition", "nintendo_switch_edition"]
 enchantments = ["regeneration"]
 
 [ARMOR_VAL20_MANTLE]
 name = "Poetic Mantle"
 description = ""
-traits = ["vd20", "specialEdition", "nintendoSwitchEdition"]
+traits = ["vd20", "special_edition", "nintendo_switch_edition"]
 enchantments = ["damage_absorption", "rejuvenation"]
 
 [WEAPON_HW17_DAGGERS]
 name = "Death's Jaw"
 description = "Death's Jaw are a pair of Halloween 2017 special weapons in Shadow Fight 2. They were obtainable during the Halloween 2017 update, as a possible reward by purchasing the Mystical Chest. In order to purchase the chest, players needed 250 bone coins or 199 gems. Bone coins could be obtained by defeating Whisper, the Halloween 2017 special raid-boss. Whisper herself wields these weapons. These weapons came enchanted with the Bleeding enchantment. Death's Jaw have the same mechanics as the Hack Knives from Act VII. This weapon is also available on the Nintendo Switch."
-traits = ["nintendoSwitchEdition", "hw17", "hw20"]
+traits = ["nintendo_switch_edition", "hw17", "hw20"]
 enchantments = [
   "enfeeble", # Only on NS Edition
   "bleeding",
@@ -3011,13 +3027,13 @@ enchantments = [
 [WEAPON_HW17_STAFF]
 name = "Voodoo Spine"
 description = "Voodoo Spine is a Halloween 2017 special weapon in Shadow Fight 2. It was obtainable during Halloween 2017 update, as a possible reward by purchasing the Mystical Chest. In order to purchase the chest, players needed 250 bone coins or 199 gems. Bone coins could be obtained by defeating Whisper, the Halloween 2017 special raid-boss. Voodoo Spine is a stick with a bird's skull attached on it. The weapon came enchanted with the Magic Recharge enchantment. It functions similar to Staff."
-traits = ["nintendoSwitchEdition", "hw17", "hw20"]
+traits = ["nintendo_switch_edition", "hw17", "hw20"]
 enchantments = ["magic_recharge"]
 
 [RANGED_HW17_NEEDLES]
 name = "Cursed Pins"
 description = ""
-traits = ["hw17", "nintendoSwitchEdition"]
+traits = ["hw17", "nintendo_switch_edition"]
 enchantments = ["frenzy"]
 
 [HELM_HW17_CYLINDER]
@@ -3029,13 +3045,13 @@ enchantments = ["damage_return"]
 [ARMOR_HW17_CLOAK]
 name = "Voodoo Vest"
 description = ""
-traits = ["hw17", "nintendoSwitchEdition"]
+traits = ["hw17", "nintendo_switch_edition"]
 enchantments = ["damage_return"]
 
 [MAGIC_HW17_VOODOO]
 name = "Dark Blood Magic"
 description = "Dark Blood Magic is the Halloween 2017 special magic amulet in Shadow Fight 2. It was obtainable during Halloween 2017 update, as a possible reward by purchasing the Mystical Chest. In order to purchase the chest, players need 250 bone coins or spend 199 gems. Bone coins can be obtained by defeating Whisper, the Halloween 2017 special raid-boss. Whisper herself also uses this magic. It is enchanted with the Bleeding enchantment. Dark Blood Magic functions like the Medium Charges of Darkness."
-traits = ["hw17", "nintendoSwitchEdition"]
+traits = ["hw17", "nintendo_switch_edition"]
 enchantments = ["bleeding"]
 
 [HELM_WOODOO_HW20]
@@ -3082,49 +3098,49 @@ enchantments = ["time_bomb"]
 [RANGED_IND21_CHAKRAM]
 name = "Chakrams of Overlord"
 description = ""
-traits = ["offer", "ramNavami21"]
+traits = ["offer", "ram_navami21"]
 enchantments = ["precision"]
 
 [ARMOR_IND21_TWILIGHT]
 name = "Unbreakable Gift of Gods"
 description = ""
-traits = ["ramNavami21"]
+traits = ["ram_navami21"]
 enchantments = ["shielding"]
 
 [ARMOR_IND21_HOODIE]
 name = "Festive Hoody"
 description = ""
-traits = ["ramNavami21"]
+traits = ["ram_navami21"]
 enchantments = ["damage_absorption"]
 
 [HELM_IND21_BLOOD]
 name = "Helm of Heaven Keeper"
 description = ""
-traits = ["ramNavami21"]
+traits = ["ram_navami21"]
 enchantments = ["regeneration"]
 
 [HELM_IND21_TURBAN]
 name = "Festive Turban"
 description = ""
-traits = ["ramNavami21"]
+traits = ["ram_navami21"]
 enchantments = ["rejuvenation"]
 
 [WEAPON_IND21_KERIS]
 name = "Krises of an Intercessor"
 description = "Krises of an Intercessor are the Ram Navami 2021 special weapon in Shadow Fight 2. They were obtainable during Ram Navami 2021 update, as a possible reward by purchasing the Casket of Elephant's King. In order to purchase the chest, players needed 600 flower coins or 199 Gems. Flower coins could be obtained by defeating Ravana. The weapons are come with Overheat enchantment."
-traits = ["ramNavami21"]
+traits = ["ram_navami21"]
 enchantments = ["overheat"]
 
 [WEAPON_IND21_GLAIVEBOW]
 name = "Demon Slayer"
 description = "Demon Slayer is the Ram Navami 2021 special weapon in Shadow Fight 2. They were obtainable during Ram Navami 2021 update, as a possible reward by purchasing the Casket of Elephant's King. In order to purchase the chest, players needed 600 flower coins or 199 Gems. Flower coins could be obtained by defeating Ravana. The weapon comes with Frenzy enchantment."
-traits = ["ramNavami21"]
+traits = ["ram_navami21"]
 enchantments = ["frenzy"]
 
 [RANGED_IND21_KUNAI]
 name = "Blades of the Dawn"
 description = ""
-traits = ["ramNavami21"]
+traits = ["ram_navami21"]
 enchantments = ["precision"]
 
 [WEAPON_AE21_SPEAR]
@@ -3211,28 +3227,28 @@ enchantments = ["magic_recharge"]
 [WEAPON_C4_Z1_WARLOCK_STAFF]
 name = "Shepherd's Staff"
 description = "Shepherd's Staff is a special weapon in Shadow Fight 2. It is the weapon of the Warlock's Set. This weapon is obtainable through the Battle Pass during Halloween 2021 event, by purchase Premium Pass to unlock VIP rewards. Shepherd's Staff has a nearly identical design to the Wanderer's Staff, as well as having the same super slash."
-traits = ["setWarlock", "hw21"]
+traits = ["set_warlock", "hw21"]
 enchantments = ["crimson_corruption"]
 
 [ARMOR_C4_Z1_WARLOCK]
 name = "Evening Sunset"
-traits = ["setWarlock", "hw21"]
+traits = ["set_warlock", "hw21"]
 enchantments = ["crimson_corruption"]
 
 [HELM_C4_Z1_WARLOCK]
 name = "Face of Tragedy"
-traits = ["setWarlock", "hw21"]
+traits = ["set_warlock", "hw21"]
 enchantments = ["crimson_corruption"]
 
 [RANGED_C4_Z1_WARLOCK_SHURIKEN]
 name = "Morning Star"
-traits = ["setWarlock", "hw21"]
+traits = ["set_warlock", "hw21"]
 enchantments = ["crimson_corruption"]
 
 [MAGIC_C4_Z1_WARLOCK_DARK_WAVE]
 name = "Sloe Thorn"
 description = "Sloe Thorn is a special magic amulet in Shadow Fight 2. This weapon is obtainable through the Battle Pass during Halloween 2021 event, by purchasing Premium Pass to unlock VIP rewards."
-traits = ["setWarlock", "hw21"]
+traits = ["set_warlock", "hw21"]
 enchantments = ["crimson_corruption"]
 
 [WEAPON_LYNX_CLAWS_PAID]
@@ -3261,29 +3277,29 @@ enchantments = ["time_bomb"]
 
 [HELM_BP_S1_GUARDIAN]
 name = "Heartwood"
-traits = ["setForestGuardian", "xmas21"]
+traits = ["set_forest_guardian", "xmas21"]
 enchantments = ["icy_resistance"]
 
 [ARMOR_BP_S1_GUARDIAN]
 name = "Deadfall"
-traits = ["setForestGuardian", "xmas21"]
+traits = ["set_forest_guardian", "xmas21"]
 enchantments = ["icy_resistance"]
 
 [WEAPON_BP_S1_GUARDIAN]
 name = "Beast's Fury"
 description = "Beast's Fury is a special weapon in Shadow Fight 2. It is the weapon of the Forest Guardian Set. This weapon is obtainable through the Battle Pass during Christmas and New Year 2022 and 2025 event, by purchase Premium Pass to unlock VIP rewards. Beast's Fury was wielded by Shurale, who was the main boss of the event."
-traits = ["setForestGuardian", "xmas21"]
+traits = ["set_forest_guardian", "xmas21"]
 enchantments = ["icy_resistance"]
 
 [MAGIC_BP_S1_GUARDIAN]
 name = "Death Grip"
 description = "Death Grip is a special magic amulet in Shadow Fight 2. This magic is obtainable through the Battle Pass during New Year 2022 and 2025 event, by purchasing Premium Pass to unlock VIP rewards."
-traits = ["setForestGuardian", "xmas21"]
+traits = ["set_forest_guardian", "xmas21"]
 enchantments = ["icy_resistance"]
 
 [RANGED_BP_S1_GUARDIAN]
 name = "Marten's Bite"
-traits = ["setForestGuardian", "xmas21"]
+traits = ["set_forest_guardian", "xmas21"]
 enchantments = ["icy_resistance"]
 
 [WEAPON_CHNY22_SPEAR]
@@ -3306,29 +3322,29 @@ enchantments = ["poisoning"]
 
 [HELM_BP_S2_SKANDA]
 name = "Crown of Kali"
-traits = ["setSkanda"]
+traits = ["set_skanda"]
 enchantments = ["karma"]
 
 [ARMOR_BP_S2_SKANDA]
 name = "Heart of Kshatriya"
-traits = ["setSkanda"]
+traits = ["set_skanda"]
 enchantments = ["karma"]
 
 [WEAPON_BP_S2_SKANDA]
 name = "Rage of Indra"
 description = "Rage Of Indra is a special weapon in Shadow Fight 2. It is the weapon of the Skanda Set. This weapon is obtainable through the Battle Pass during Bihu festival event 2022, by purchase Premium Pass to unlock VIP rewards. Rage Of Indra wielded by Rakshasa, main boss of the event."
-traits = ["setSkanda"]
+traits = ["set_skanda"]
 enchantments = ["karma"]
 
 [MAGIC_BP_S2_SKANDA]
 name = "Kundalini"
 description = "Kundalini is a special magic amulet in Shadow Fight 2. It is the magic of the Skanda Set. This magic is obtainable through the Battle Pass during Bihu festival event 2022, by purchase Premium Pass to unlock VIP rewards."
-traits = ["setSkanda"]
+traits = ["set_skanda"]
 enchantments = ["karma"]
 
 [RANGED_BP_S2_SKANDA]
 name = "Sky Shard"
-traits = ["setSkanda"]
+traits = ["set_skanda"]
 enchantments = ["karma"]
 
 [WEAPON_MINI_EVENT_PERNACH]
@@ -3345,29 +3361,29 @@ enchantments = ["weakness"]
 
 [HELM_BP_S3_WIND_MAKER]
 name = "Furious Bull"
-traits = ["setCreatorsOfTheWind"]
+traits = ["set_creators_of_the_wind"]
 enchantments = ["squall"]
 
 [ARMOR_BP_S3_WIND_MAKER]
 name = "Shaman's Whisper"
-traits = ["setCreatorsOfTheWind"]
+traits = ["set_creators_of_the_wind"]
 enchantments = ["squall"]
 
 [WEAPON_BP_S3_WIND_MAKER]
 name = "Wolf's Grin"
 description = "Wolf Grin is a special weapon. It is part of the Creator of the Winds set. This item was obtainable during an event in 2022 through a battle pass. Wolf's Grin was wielded by Wolf Wind."
-traits = ["setCreatorsOfTheWind"]
+traits = ["set_creators_of_the_wind"]
 enchantments = ["squall"]
 
 [MAGIC_BP_S3_WIND_MAKER]
 name = "Eye of the Storm"
 description = "Eye of the Storm is a special magic amulet in Shadow Fight 2. It is the magic of the Creators of the Wind Set. This magic is obtainable through the Battle Pass during American Independence Day event 2022, by purchase Premium Pass to unlock VIP rewards. "
-traits = ["setCreatorsOfTheWind"]
+traits = ["set_creators_of_the_wind"]
 enchantments = ["squall"]
 
 [RANGED_BP_S3_WIND_MAKER]
 name = "Tears of the Wind"
-traits = ["setCreatorsOfTheWind"]
+traits = ["set_creators_of_the_wind"]
 enchantments = ["squall"]
 
 [WEAPON_MINI_EVENT_STUFF]
@@ -3378,12 +3394,12 @@ enchantments = ["poisoning"]
 
 [HELM_BP_S4_SCRIPTWRITER]
 name = "Lights, camera, action!"
-traits = ["setDirector"]
+traits = ["set_director"]
 enchantments = ["plot_twist"]
 
 [ARMOR_BP_S4_SCRIPTWRITER]
 name = "Fourth Wall"
-traits = ["setDirector"]
+traits = ["set_director"]
 enchantments = ["plot_twist"]
 
 [WEAPON_BP_S4_SCRIPTWRITER]
@@ -3392,18 +3408,18 @@ description = """
 Don't cross the director! is a special weapon in Shadow Fight 2. It is the weapon of the Director Set. Two-handed Blunt is heavy and slow, but its attacks deal high damage, and has medium range. This weapon wielded by Architect, main boss of the event.
 This weapon is obtainable through the Battle Pass during Halloween event 2022, by purchase Premium Pass to unlock VIP rewards.
 """
-traits = ["setDirector"]
+traits = ["set_director"]
 enchantments = ["plot_twist"]
 
 [MAGIC_BP_S4_SCRIPTWRITER]
 name = "Smoke and mirrors"
 description = "Smoke and Mirrors is a special magic amulet in Shadow Fight 2. It is the magic of the Director Set. This magic is obtainable through the Battle Pass during Halloween event 2022, by purchase Premium Pass to unlock VIP rewards."
-traits = ["setDirector"]
+traits = ["set_director"]
 enchantments = ["plot_twist"]
 
 [RANGED_BP_S4_SCRIPTWRITER]
 name = "Film Damage"
-traits = ["setDirector"]
+traits = ["set_director"]
 enchantments = ["plot_twist"]
 
 [WEAPON_MINI_EVENT_KNIFE]
@@ -3415,17 +3431,17 @@ enchantments = ["lifesteal"]
 [RANGED_BP_S5_TIME_SHIFTER]
 name = "Chronos's Razor"
 description = ""
-traits = ["setChronos", "xmas22"]
+traits = ["set_chronos", "xmas22"]
 enchantments = ["time_shift"]
 
 [HELM_BP_S5_TIME_SHIFTER]
 name = "Stonecold"
-traits = ["setChronos", "xmas22"]
+traits = ["set_chronos", "xmas22"]
 enchantments = ["time_shift"]
 
 [ARMOR_BP_S5_TIME_SHIFTER]
 name = "Biting Frost"
-traits = ["setChronos", "xmas22"]
+traits = ["set_chronos", "xmas22"]
 enchantments = ["time_shift"]
 
 [WEAPON_BP_S5_TIME_SHIFTER]
@@ -3434,13 +3450,13 @@ description = """
 Snowpiercer is a special weapon in Shadow Fight 2. It is the weapon of the Director Set. This weapon wielded by Freeze Jr., main boss of the event.
 This weapon is obtainable through the Battle Pass during New Year event 2023, by purchase Premium Pass to unlock VIP rewards.
 """
-traits = ["setChronos", "xmas22"]
+traits = ["set_chronos", "xmas22"]
 enchantments = ["time_shift"]
 
 [MAGIC_BP_S5_TIME_SHIFTER]
 name = "Continuum"
 description = "Continuum is a special magic amulet in Shadow Fight 2. It is the magic of the Chronos Set. This magic is obtainable through the Battle Pass during New Year event 2023, by purchase Premium Pass to unlock VIP rewards. "
-traits = ["setChronos", "xmas22"]
+traits = ["set_chronos", "xmas22"]
 enchantments = ["time_shift"]
 
 [WEAPON_SWORD_NY23_PAID_OFFER]
@@ -3452,28 +3468,28 @@ enchantments = ["lifesteal"]
 [WEAPON_C1_Z4_NEO_WANDERER]
 name = "Neutron Howl"
 description = "Neutron Howl is a special weapon in Shadow Fight 2. It is the weapon of the New-wanderer Set. This weapon is obtainable only through purchasing the Neo-wanderer Chest in the raid shop for 399 gems or 8500 shards. Upon purchase, the players may receive the Neutron Howl or other Neo-wanderer item, along with some Charges of Darkness, elixirs or Mystical Coupon. Neutron Howl is enchanted with the mythical enchantment Arcane Martial Art."
-traits = ["setNeoWanderer"]
+traits = ["set_neo_wanderer"]
 enchantments = ["arcane_martial_arts"]
 
 [ARMOR_C1_Z4_NEO_WANDERER]
 name = "Electrostatic"
-traits = ["setNeoWanderer"]
+traits = ["set_neo_wanderer"]
 enchantments = ["arcane_martial_arts"]
 
 [HELM_C1_Z4_NEO_WANDERER]
 name = "Solar Corona"
-traits = ["setNeoWanderer"]
+traits = ["set_neo_wanderer"]
 enchantments = ["arcane_martial_arts"]
 
 [RANGED_C1_Z4_NEO_WANDERER]
 name = "Photons"
-traits = ["setNeoWanderer"]
+traits = ["set_neo_wanderer"]
 enchantments = ["arcane_martial_arts"]
 
 [MAGIC_C1_Z4_NEO_WANDERER]
 name = "Quantum Leap"
 description = "Quantum Leap is a special magic amulet in Shadow Fight 2. It is the magic amulet of the Neo-wanderer Set. Quantum Leap is obtainable only through purchasing the Neo-wanderer Chest in the raid shop for 399 gems or 8500 shards. Upon purchase, the players may receive the Quantum Leap or other Neo-wanderer item, along with some Charges of Darkness, elixirs or Mystical Coupon. Quantum Leap is enchanted with the mythical enchantment Arcane Martial Art."
-traits = ["setNeoWanderer"]
+traits = ["set_neo_wanderer"]
 enchantments = ["arcane_martial_arts"]
 
 [MAGIC_ANNIVERSARY_10TH]
@@ -3595,12 +3611,12 @@ enchantments = ["bloodrage"]
 
 [HELM_RAID_FUNGUS_SET]
 name = "All-Seeing Eye"
-traits = ["setSporeSoul"]
+traits = ["set_spore_soul"]
 enchantments = ["cordyceps"]
 
 [ARMOR_RAID_FUNGUS_SET]
 name = "Mycelium Guardian"
-traits = ["setSporeSoul"]
+traits = ["set_spore_soul"]
 enchantments = ["cordyceps"]
 
 [MAGIC_INDIA_24]
@@ -3625,7 +3641,7 @@ enchantments = ["shielding"]
 
 [RANGED_RAID_FUNGUS_SET]
 name = "Spore Carriers"
-traits = ["setSporeSoul"]
+traits = ["set_spore_soul"]
 enchantments = ["cordyceps"]
 
 [WEAPON_RAID_FUNGUS_SET]
@@ -3634,23 +3650,23 @@ description = """
 Guardian's Wrath is a special set weapon in Shadow Fight 2. It is the weapon of the Spore Soul Set, which comes with the mythical enchantment Cordyceps.
 This weapon can be acquired by chance from opening a Ritual Chest during the 3rd part of the Ritual Battles Event in 2024. Opening a chest costs 600 Blessings of the Cult, the exclusive currency of the event.
 """
-traits = ["setSporeSoul"]
+traits = ["set_spore_soul"]
 enchantments = ["cordyceps"]
 
 [ARMOR_RAID_VOLCANO_SET]
 name = "Ash Whisper"
-traits = ["setVolcano"]
+traits = ["set_volcano"]
 enchantments = ["roaring_luminary"]
 
 [HELM_RAID_VOLCANO_SET]
 name = "Burning Wreath"
-traits = ["setVolcano"]
+traits = ["set_volcano"]
 enchantments = ["roaring_luminary"]
 
 [MAGIC_RAID_FUNGUS_SET]
 name = "Spores of Discord"
 description = "Spores of Discord is a special magic amulet in Shadow Fight 2. It is the magic amulet of the Spore Soul Set and is wielded by the Fungus version of The Lamb."
-traits = ["setSporeSoul"]
+traits = ["set_spore_soul"]
 enchantments = ["cordyceps"]
 
 [WEAPON_SICKLE_FALL_24]
@@ -3709,12 +3725,12 @@ description = """
 Phoenix Song is a special set weapon in Shadow Fight 2. It is the weapon of the Abyss Mark Set, which comes with the mythical enchantment Roaring Luminary.
 This weapon can be acquired by chance from opening a Ritual Chest during the 8th part of the Ritual Battles Event in 2024. Opening a chest costs 600 Blessings of the Cult, the exclusive currency of the event.
 """
-traits = ["setVolcano"]
+traits = ["set_volcano"]
 enchantments = ["roaring_luminary"]
 
 [RANGED_RAID_VOLCANO_SET]
 name = "Dragon's Tear"
-traits = ["setVolcano"]
+traits = ["set_volcano"]
 enchantments = ["roaring_luminary"]
 
 [WEAPON_AZTEC_24]
@@ -3773,7 +3789,7 @@ enchantments = ["enfeeble"]
 [MAGIC_RAID_VOLCANO_SET]
 name = "Roaring Caldera"
 description = "Roaring Caldera is a magic in Shadow Fight 2. It is the magic amulet of the Spore Soul Set and can be obtained from Ritual Chest."
-traits = ["setVolcano"]
+traits = ["set_volcano"]
 enchantments = ["roaring_luminary"]
 
 [RANGED_AZTEC_24]
@@ -3814,7 +3830,7 @@ enchantments = ["overheat"]
 
 [RANGED_KARCER_HUNGER_SET]
 name = "Snake Reaper"
-traits = ["setKarcer"]
+traits = ["set_karcer"]
 enchantments = ["predators_fury"]
 
 [WEAPON_FUTURIST_25]
@@ -3861,13 +3877,13 @@ enchantments = ["regeneration"]
 [NY20_ARMOR_MANTLE]
 name = "Padded Jacket"
 description = ""
-traits = ["nintendoSwitchEdition", "xmas17", "xmas19"]
+traits = ["nintendo_switch_edition", "xmas17", "xmas19"]
 enchantments = ["shielding"]
 
 [NY20_HELM_HAT]
 name = "Fur Ear-Flap"
 description = ""
-traits = ["xmas19", "nintendoSwitchEdition"]
+traits = ["xmas19", "nintendo_switch_edition"]
 enchantments = ["critical_protection"]
 
 [NY20_HELM_HORNS]
@@ -3885,13 +3901,13 @@ enchantments = ["regeneration"]
 [NY20_MAGIC_ICEBALL]
 name = "Shard of Eternal Ice"
 description = ""
-traits = ["specialEdition", "nintendoSwitchEdition"]
+traits = ["special_edition", "nintendo_switch_edition"]
 enchantments = ["bloodrage"]
 
 [NY20_MAGIC_SNOWBALL]
 name = "Sugar Flash"
 description = ""
-traits = ["nintendoSwitchEdition"]
+traits = ["nintendo_switch_edition"]
 enchantments = ["stun"]
 
 [NY20_RANGED_COOKIE]
@@ -3903,13 +3919,13 @@ enchantments = ["time_bomb"]
 [NY20_RANGED_DONUT]
 name = "Juicy Donut"
 description = ""
-traits = ["nintendoSwitchEdition"]
+traits = ["nintendo_switch_edition"]
 enchantments = ["poisoning"]
 
 [NY20_WEAPON_AXES]
 name = "Surprise Waffles"
 description = ""
-traits = ["nintendoSwitchEdition", "xmas18", "xmas19"]
+traits = ["nintendo_switch_edition", "xmas18", "xmas19"]
 enchantments = ["stun"]
 
 [NY20_WEAPON_CANDY]
@@ -3927,7 +3943,7 @@ enchantments = ["enfeeble"]
 [NY20_WEAPON_MACE]
 name = "Caramel Boom"
 description = ""
-traits = ["nintendoSwitchEdition", "xmas18", "xmas19"]
+traits = ["nintendo_switch_edition", "xmas18", "xmas19"]
 enchantments = ["poisoning"]
 
 [NY21_ARMOR_CUIRASS]
