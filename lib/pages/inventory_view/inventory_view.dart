@@ -473,7 +473,7 @@ class _InventoryViewState extends State<InventoryView> {
             ItemDatabase.getTraits(e.id)
                 .where((t) =>
                     t.display.toLowerCase().contains(text) ||
-                    t.name.toLowerCase().contains(text))
+                    t.id.toLowerCase().contains(text))
                 .isNotEmpty ||
             ("equipped".contains(text) &&
                 RecordsManager.activeRecord!.isEquipped(e)))
@@ -487,7 +487,7 @@ class _InventoryViewState extends State<InventoryView> {
             ItemDatabase.getTraits(e)
                 .where((t) =>
                     t.display.toLowerCase().contains(text) ||
-                    t.name.toLowerCase().contains(text))
+                    t.id.toLowerCase().contains(text))
                 .isNotEmpty)
         .toSet()
         .difference(foundEquipment.map((e) => e.id).toSet());

@@ -67,3 +67,4 @@ flutter:
     - assets/enchantments/medium.toml
     - assets/enchantments/mythical.toml
     - assets/item_database.toml
+    - assets/traits.toml

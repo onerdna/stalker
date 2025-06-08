@@ -46,6 +46,9 @@ class _RootAppState extends State<RootApp> {
     rootBundle.loadString("assets/item_database.toml").then((names) {
       ItemDatabase.dictionary = TomlDocument.parse(names).toMap();
     });
+    ItemDatabase.loadTraits().then((traits) {
+      ItemDatabase.traits = traits.toList();
+    });
   }
 
   @override
