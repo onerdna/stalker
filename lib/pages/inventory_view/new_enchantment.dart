@@ -81,8 +81,7 @@ class _NewEnchantmentDialogState extends State<NewEnchantmentDialog> {
                                           borderRadius:
                                               BorderRadius.circular(16),
                                           color: Theme.of(context).canvasColor),
-                                      textStyle: const TextStyle(
-                                          color: Colors.white, fontSize: 14),
+                                      textStyle: Theme.of(context).textTheme.bodySmall,
                                       child: const Icon(Icons.info_outline),
                                     )
                                   ]
