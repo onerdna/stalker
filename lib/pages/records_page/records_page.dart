@@ -54,128 +54,125 @@ class _RecordsPageState extends State<RecordsPage> {
     return RecordsManager.records.map((record) {
       controllers["${record.metadata.uuid}_name"] =
           TextEditingController(text: record.metadata.name);
-      return Padding(
-        padding: const EdgeInsets.only(bottom: 16.0),
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: const BorderRadius.all(Radius.circular(16)),
-            border: Border.all(
-                width: 1,
-                color: record.metadata.isActive
-                    ? Theme.of(context).colorScheme.primary
-                    : (Theme.of(context).brightness == Brightness.light
-                        ? Colors.black
-                        : Colors.white)),
-          ),
-          child: ExpansionTile(
-            initiallyExpanded: true,
-            title: Row(
-              children: [
-                IconButton(
-                    onPressed: () {
-                      if (record.metadata.isActive) {
-                        Fluttertoast.showToast(
-                            msg:
-                                "You can’t delete a save slot while it’s set as active");
-                      } else {
-                        _showRecordDeletionDialog(context, record);
-                      }
-                    },
-                    icon: const Icon(Icons.delete)),
-                SizedBox(
-                  width: 100,
-                  child: TextField(
-                    controller: controllers["${record.metadata.uuid}_name"],
-                    style: const TextStyle(fontSize: 19),
-                    decoration:
-                        const InputDecoration.collapsed(hintText: "Name..."),
-                    onSubmitted: (value) {
-                      record.metadata.name = value;
-                      RecordsManager.saveRecord(record);
-                    },
-                  ),
-                ),
-                const Spacer(),
-                record.metadata.isActive
-                    ? const Padding(
-                        padding: EdgeInsets.only(right: 16.0),
-                        child: Padding(
-                          padding: EdgeInsets.only(top: 8.0),
-                          child: Text(
-                            "Active",
-                            style: TextStyle(
-                                fontSize: 12, fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                      )
-                    : const Text(""),
-              ],
-            ),
-            subtitle: TextButton(
-              child: Text(
-                record.metadata.uuid,
-                style: const TextStyle(fontSize: 13.8),
-              ),
-              onPressed: () {
-                Clipboard.setData(ClipboardData(text: record.metadata.uuid));
-              },
-            ),
-            childrenPadding: const EdgeInsets.only(left: 20),
+      return Container(
+        decoration: BoxDecoration(
+          borderRadius: const BorderRadius.all(Radius.circular(16)),
+          border: Border.all(
+              width: 1,
+              color: record.metadata.isActive
+                  ? Theme.of(context).colorScheme.primary
+                  : (Theme.of(context).brightness == Brightness.light
+                      ? Colors.black
+                      : Colors.white)),
+        ),
+        child: ExpansionTile(
+          initiallyExpanded: true,
+          title: Row(
             children: [
-              _statTile(
-                  "assets/images/shuriken.png", "Level", "${record.level}"),
-              _statTile("assets/images/coin.png", "Coins",
-                  "${record.getCurrency(Currency.coins)}"),
-              _statTile("assets/images/ruby.png", "Gems",
-                  "${record.getCurrency(Currency.gems)}"),
-              _statTile("assets/images/forge_green.png", "Green orbs",
-                  "${record.getCurrency(Currency.greenOrbs)}"),
-              _statTile("assets/images/forge_red.png", "Red orbs",
-                  "${record.getCurrency(Currency.redOrbs)}"),
-              _statTile("assets/images/forge_purple.png", "Purple orbs",
-                  "${record.getCurrency(Currency.purpleOrbs)}"),
-              Padding(
-                padding: const EdgeInsets.only(right: 16.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    IconButton.filled(
-                        onPressed: () {
-                          setState(() {
-                            import(record);
-                          });
-                        },
-                        icon: const Icon(Icons.download)),
-                    const SizedBox(
-                      width: 4,
-                    ),
-                    record.metadata.isActive
-                        ? FilledButton(
-                            onPressed: () {
-                              RecordsManager.saveRecordWithToast(
-                                  RecordsManager.activeRecord!);
-                            },
-                            child: const Text("Regenerate hash file"))
-                        : FilledButton(
-                            onPressed: () {
-                              setState(() {
-                                RecordsManager.activeRecord = record;
-                                RecordsManager.saveRecord(record);
-                              });
-                            },
-                            child: const Text("Set as active")),
-                    const SizedBox(
-                      width: 4,
-                    ),
-                    IconButton.filled(
-                        onPressed: () => export(record),
-                        icon: const Icon(Icons.upload)),
-                  ],
+              IconButton(
+                  onPressed: () {
+                    if (record.metadata.isActive) {
+                      Fluttertoast.showToast(
+                          msg:
+                              "You can’t delete a save slot while it’s set as active");
+                    } else {
+                      _showRecordDeletionDialog(context, record);
+                    }
+                  },
+                  icon: const Icon(Icons.delete)),
+              SizedBox(
+                width: 100,
+                child: TextField(
+                  controller: controllers["${record.metadata.uuid}_name"],
+                  style: const TextStyle(fontSize: 19),
+                  decoration:
+                      const InputDecoration.collapsed(hintText: "Name..."),
+                  onSubmitted: (value) {
+                    record.metadata.name = value;
+                    RecordsManager.saveRecord(record);
+                  },
                 ),
               ),
-              const SizedBox(height: 16)
+              const Spacer(),
+              record.metadata.isActive
+                  ? const Padding(
+                      padding: EdgeInsets.only(right: 16.0),
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 8.0),
+                        child: Text(
+                          "Active",
+                          style: TextStyle(
+                              fontSize: 12, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    )
+                  : const Text(""),
             ],
           ),
+          subtitle: TextButton(
+            child: Text(
+              record.metadata.uuid,
+              style: const TextStyle(fontSize: 13.8),
+            ),
+            onPressed: () {
+              Clipboard.setData(ClipboardData(text: record.metadata.uuid));
+            },
+          ),
+          childrenPadding: const EdgeInsets.only(left: 20),
+          children: [
+            _statTile(
+                "assets/images/shuriken.png", "Level", "${record.level}"),
+            _statTile("assets/images/coin.png", "Coins",
+                "${record.getCurrency(Currency.coins)}"),
+            _statTile("assets/images/ruby.png", "Gems",
+                "${record.getCurrency(Currency.gems)}"),
+            _statTile("assets/images/forge_green.png", "Green orbs",
+                "${record.getCurrency(Currency.greenOrbs)}"),
+            _statTile("assets/images/forge_red.png", "Red orbs",
+                "${record.getCurrency(Currency.redOrbs)}"),
+            _statTile("assets/images/forge_purple.png", "Purple orbs",
+                "${record.getCurrency(Currency.purpleOrbs)}"),
+            Padding(
+              padding: const EdgeInsets.only(right: 16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconButton.filled(
+                      onPressed: () {
+                        setState(() {
+                          import(record);
+                        });
+                      },
+                      icon: const Icon(Icons.download)),
+                  const SizedBox(
+                    width: 4,
+                  ),
+                  record.metadata.isActive
+                      ? FilledButton(
+                          onPressed: () {
+                            RecordsManager.saveRecordWithToast(
+                                RecordsManager.activeRecord!);
+                          },
+                          child: const Text("Regenerate hash file"))
+                      : FilledButton(
+                          onPressed: () {
+                            setState(() {
+                              RecordsManager.activeRecord = record;
+                              RecordsManager.saveRecord(record);
+                            });
+                          },
+                          child: const Text("Set as active")),
+                  const SizedBox(
+                    width: 4,
+                  ),
+                  IconButton.filled(
+                      onPressed: () => export(record),
+                      icon: const Icon(Icons.upload)),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16)
+          ],
         ),
       );
     }).toList();
@@ -241,21 +238,32 @@ class _RecordsPageState extends State<RecordsPage> {
 
   @override
   Widget build(BuildContext context) {
+    final children = [
+      const Center(
+        child: Text(
+          "© 2025 Andreno. All rights reserved.",
+          style: TextStyle(fontSize: 14),
+        ),
+      ),
+      ..._generateSaveEntries(context),
+      FilledButton.icon(
+          onPressed: () {
+            showDialog(
+                context: context,
+                builder: (ctx) => NewRecord(onCreated: () {
+                      setState(() {});
+                    }));
+          },
+          label: const Icon(Icons.add))
+    ];
     return Padding(
       padding: const EdgeInsets.all(16.0),
-      child: ListView(
-        children: [
-          ..._generateSaveEntries(context),
-          FilledButton.icon(
-              onPressed: () {
-                showDialog(
-                    context: context,
-                    builder: (ctx) => NewRecord(onCreated: () {
-                          setState(() {});
-                        }));
-              },
-              label: const Icon(Icons.add))
-        ],
+      child: ListView.separated(
+        itemBuilder: (context, index) => children[index],
+        itemCount: children.length,
+        separatorBuilder: (context, index) => const SizedBox(
+          height: 16,
+        ),
       ),
     );
   }

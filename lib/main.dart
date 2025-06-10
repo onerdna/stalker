@@ -22,11 +22,10 @@ import 'package:flutter/services.dart';
 import 'package:logger/web.dart';
 import 'package:stalker/app.dart';
 import 'package:stalker/item_database.dart';
+import 'package:stalker/logcat.dart';
 import 'package:toml/toml.dart';
 
-final logger = Logger(
-  printer: PrettyPrinter(),
-);
+final logger = Logger(printer: SimplePrinter(colors: false));
 
 void main() {
   runApp(const RootApp());
@@ -43,6 +42,8 @@ class _RootAppState extends State<RootApp> {
   @override
   void initState() {
     super.initState();
+    Logcat.init();
+    logger.i("Initialized logcat stream");
     rootBundle.loadString("assets/item_database.toml").then((names) {
       ItemDatabase.dictionary = TomlDocument.parse(names).toMap();
     });

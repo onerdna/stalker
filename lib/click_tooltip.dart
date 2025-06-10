@@ -31,7 +31,6 @@ class ClickTooltipState extends State<ClickTooltip> {
       message: widget.message,
       decoration: widget.decoration,
       textStyle: widget.textStyle,
-      showDuration: const Duration(seconds: 2),
       child: GestureDetector(
         onTap: _showTooltip,
         child: widget.child,

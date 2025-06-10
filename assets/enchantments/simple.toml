@@ -1,6 +1,6 @@
 [critical_protection]
 name = "Critical Protection"
-description = "This enchantment is currently available to only two helms: both versions of Fur-Ear Flap helm from New Year 2018 and 2021. The helm Iron Mask which was obtainable from the Starter Pack prior to version 1.6.1 was also initially enchanted with Critical Protection, however, it still can be added with Stalker."
+description = "This enchantment is currently available to only two helms: both versions of Fur-Ear Flap helm from New Year 2018 and 2021. The helm Iron Mask which was obtainable from the Starter Pack prior to version 1.6.1 was also initially enchanted with Critical Protection. This enchantment can still be applied to the listed helmets with Stalker."
 
 [critical_protection.equipment_ids]
 armor = "PERK_ITEM_SPECIAL_CRITICAL_PROTECTION_ARMOR"
@@ -8,6 +8,10 @@ helm = "PERK_ITEM_SPECIAL_CRITICAL_PROTECTION_HELM"
 
 [precision]
 name = "Precision"
+description = """
+A chance to make a Critical Hit with 100% more damage. This chance depends on the power of the enchantment.
+Available on Melee Weapons and Ranged Weapons.
+"""
 
 [precision.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_PRECISION_WEAPON"
@@ -16,6 +20,10 @@ magic = "PERK_ITEM_SPECIAL_PRECISION_MAGIC"
 
 [overheat]
 name = "Overheat"
+description = """
+Each strike dealt or each hit taken has a chance to put a buff on you that makes your next strike inflict 200% more damage. This chance depends on the power of the enchantment.
+Available on all types of equipment.
+"""
 
 [overheat.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_OVERHEAT_WEAPON"
@@ -26,6 +34,10 @@ helm = "PERK_ITEM_SPECIAL_OVERHEAT_DEFENSE_HELM"
 
 [poisoning]
 name = "Poisoning"
+description = """
+A chance that your enemy will start to lose 3% health (10.2% for magic) per second over 5 seconds after being hit. This chance is proportional to the damage dealt and the power of the enchantment.
+Available on Melee Weapons, Ranged Weapons and Magic.
+"""
 
 [poisoning.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_INTOXICATION_WEAPON"
@@ -34,14 +46,22 @@ magic = "PERK_ITEM_SPECIAL_INTOXICATION_MAGIC"
 
 [weakness]
 name = "Weakness"
+description = """
+A chance to weaken your enemy's attacks by 75% from a successful hit. This chance depends on the power of the enchantment.
+Available on Melee Weapons, Ranged Weapons and Magic.
+"""
 
 [weakness.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_WEAKNESS_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_WEAKNESS_RANGED"
 magic = "PERK_ITEM_SPECIAL_WEAKNESS_MAGIC"
 
-["magic_recharge"]
+[magic_recharge]
 name = "Magic Recharge"
+description = """
+A chance to increase your magic recharge from a successful hit by 300% and from taking a hit by 700%. This chance depends on the power of this enchantment.
+Available on Melee Weapons, Armor and Helms.
+"""
 
 [magic_recharge.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_MAGIC_DAMAGE_RECHARGE_WEAPON"
@@ -50,6 +70,10 @@ helm = "PERK_ITEM_SPECIAL_MAGIC_PAIN_RECHARGE_HELM"
 
 [bloodrage]
 name = "Bloodrage"
+description = """
+A chance that you will deal 200% more damage on your hit, but would also lose 30% of damage dealt in own health (10% for Naginata and Ronin's Dadao). This enchantment won't work if it would cause you to lose. This chance depends on the power of the enchantment.
+Available on Melee Weapons, Ranged Weapons and Magic.
+"""
 
 [bloodrage.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_BLOODRAGE_WEAPON"
@@ -58,6 +82,10 @@ magic = "PERK_ITEM_SPECIAL_BLOODRAGE_MAGIC"
 
 [rejuvenation]
 name = "Rejuvenation"
+description = """
+A chance to regenerate 3% of your health for 5 seconds after being hit. This chance is proportional to the damage received and the power of the enchantment.
+Available on Armor and Helms.
+"""
 
 [rejuvenation.equipment_ids]
 armor = "PERK_ITEM_SPECIAL_REJUVENATION_ARMOR"
@@ -65,6 +93,10 @@ helm = "PERK_ITEM_SPECIAL_REJUVENATION_HELM"
 
 [damage_absorption]
 name = "Damage Absorption"
+description = """
+A chance to absorb all damage dealt to your body or head by a single strike. This chance depends on the power of the enchantment.
+Available on Armor and Helms.
+"""
 
 [damage_absorption.equipment_ids]
 armor = "PERK_ITEM_SPECIAL_DAMAGE_ABSORPTION_BODY_ARMOR"
