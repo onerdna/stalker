@@ -34,7 +34,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:signals/signals_flutter.dart';
 import 'package:stalker/app_bar.dart';
 import 'package:stalker/enchantment.dart';
-import 'package:stalker/pages/logcat_stream_page.dart';
 import 'package:stalker/main.dart';
 import 'package:stalker/pages/edit_xml_page.dart';
 import 'package:stalker/pages/equipment_page.dart';
@@ -132,31 +131,13 @@ class _AppState extends State<App> {
     await showDialog(
         context: context,
         builder: (context) => AlertDialog(
-              title: Row(
-                children: [
-                  Align(
-                      alignment: Alignment.centerLeft,
-                      child: IconButton(
-                        onPressed: () => Navigator.of(context).push(
-                            MaterialPageRoute(
-                                builder: (ctx) => const LogcatStreamPage())),
-                        icon: const Icon(Icons.bug_report),
-                        iconSize: 22,
-                      )),
-                  const SizedBox(
-                    width: 8,
-                  ),
-                  const Expanded(
-                      child: Text(
-                    "Additional setup required",
-                    style: TextStyle(fontSize: 24),
-                    softWrap: true,
-                    overflow: TextOverflow.visible,
-                  )),
-                ],
+              title: const Text(
+                "Additional setup required",
+                style: TextStyle(fontSize: 24)
               ),
               content: const MarkdownBody(
-                  data: "This application requires additional setup to run. Tap 'Start the service', **minimize** this window and open the game **until it fully loads**. Then close the game, return to the app and tap 'Reinitialize'."),
+                  data:
+                      "This application requires additional setup to run. Tap 'Start the service', **minimize** this window and open the game **until it fully loads**. Then close the game, return to the app and tap 'Reinitialize'."),
               actions: [
                 TextButton(
                     onPressed: () {
@@ -342,13 +323,17 @@ class _AppState extends State<App> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  void initState() {
+    super.initState();
     if (!initialized.value) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         _tryToInitializeApp(context);
       });
     }
+  }
 
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: const StalkerAppBar(),
       bottomNavigationBar: Watch((_) => initialized.value

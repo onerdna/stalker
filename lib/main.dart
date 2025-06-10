@@ -19,13 +19,18 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:logger/web.dart';
+import 'package:logger/logger.dart';
 import 'package:stalker/app.dart';
 import 'package:stalker/item_database.dart';
 import 'package:stalker/logcat.dart';
 import 'package:toml/toml.dart';
 
-final logger = Logger(printer: SimplePrinter(colors: false));
+class AlwaysLogFilter extends LogFilter {
+  @override
+  bool shouldLog(LogEvent event) => true;
+}
+
+final logger = Logger(printer: SimplePrinter(colors: false), filter: AlwaysLogFilter());
 
 void main() {
   runApp(const RootApp());

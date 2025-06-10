@@ -6,6 +6,7 @@ import io.flutter.plugin.common.EventChannel
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import android.os.Handler
+import android.os.Process
 
 class LogcatReader(private val context: Context, private val eventSink: EventChannel.EventSink) {
     private var logcatThread: Thread? = null
@@ -15,18 +16,7 @@ class LogcatReader(private val context: Context, private val eventSink: EventCha
 
         logcatThread = Thread {
             try {
-                val packageName = context.packageName
-                val pidProcess = Runtime.getRuntime().exec("pidof $packageName")
-                val pidReader = BufferedReader(InputStreamReader(pidProcess.inputStream))
-                val pid = pidReader.readLine()?.trim()
-
-                if (pid.isNullOrEmpty()) {
-                    mainHandler.post {
-                        eventSink.error("PID_ERROR", "Could not find PID for package: $packageName", null)
-                    }
-                    return@Thread
-                }
-
+                val pid = Process.myPid().toString()
                 val logcatProcess = Runtime.getRuntime().exec("logcat -T 0 --pid=$pid")
                 val logReader = BufferedReader(InputStreamReader(logcatProcess.inputStream))
 
