@@ -158,6 +158,7 @@ class RecordsManager {
     for (final record in records) {
       final metadataFile =
           File("${directory.path}/${record.metadata.uuid}/metadata.toml");
+      await metadataFile.create();
       await metadataFile.writeAsString(
           TomlDocument.fromMap(record.metadata.toMap()).toString());
     }
