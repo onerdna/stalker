@@ -220,8 +220,9 @@ class Record {
       }).toList();
       final upgradeLevel = element.getAttribute("UpgradeLevel")!;
       final id = element.getAttribute("Name")!;
+      final acquireType = element.getAttribute("AcquireType")!;
       final item = Equipment.fromUpgradeString(
-          type, id, upgradeLevel == "0" ? "100" : upgradeLevel);
+          type, id, upgradeLevel == "0" ? "100" : upgradeLevel, acquireType: acquireType);
       item.enchantments = enchantments;
       if (id == selectedId) {
         setEquipped(item);

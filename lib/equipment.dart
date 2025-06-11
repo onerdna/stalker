@@ -27,12 +27,14 @@ class Equipment {
   final String id;
   late final String name;
   late final String description;
+  final String? acquireType;
   int level = 0;
   int upgrade = 0;
 
   List<AppliedEnchantment> enchantments = [];
 
-  Equipment.fromUpgradeString(this.type, this.id, String upgradeLevel) {
+  Equipment.fromUpgradeString(this.type, this.id, String upgradeLevel,
+      {this.acquireType}) {
     if (int.parse(upgradeLevel) < 0 || int.parse(upgradeLevel) > 5240) {
       upgradeLevel = "100";
     }
@@ -43,7 +45,7 @@ class Equipment {
     description = ItemDatabase.getDescription(id);
   }
 
-  Equipment(this.type, this.id, this.level, this.upgrade) {
+  Equipment(this.type, this.id, this.level, this.upgrade, {this.acquireType}) {
     name = ItemDatabase.getName(id);
     description = ItemDatabase.getDescription(id);
   }
@@ -58,15 +60,12 @@ class Equipment {
         [
           XmlAttribute(XmlName("Name"), id),
           XmlAttribute(
-              XmlName("Equipped"),
-              (record.isEquipped(this) && type == EquipmentType.weapon)
-                  ? "1"
-                  : "0"),
+              XmlName("Equipped"), record.isEquipped(this) ? "1" : "0"),
           XmlAttribute(XmlName("Count"), "1"),
           XmlAttribute(XmlName("UpgradeLevel"), _upgradeLevel),
           XmlAttribute(XmlName("DeliveryTime"), "-1"),
           XmlAttribute(XmlName("DeliveryUpgradeLevel"), "-1"),
-          XmlAttribute(XmlName("AcquireType"), "Upgrade"),
+          XmlAttribute(XmlName("AcquireType"), acquireType ?? "Upgrade"),
         ],
         enchantments.isEmpty
             ? []

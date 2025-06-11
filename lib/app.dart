@@ -131,10 +131,8 @@ class _AppState extends State<App> {
     await showDialog(
         context: context,
         builder: (context) => AlertDialog(
-              title: const Text(
-                "Additional setup required",
-                style: TextStyle(fontSize: 24)
-              ),
+              title: const Text("Additional setup required",
+                  style: TextStyle(fontSize: 24)),
               content: const MarkdownBody(
                   data:
                       "This application requires additional setup to run. Tap 'Start the service', **minimize** this window and open the game **until it fully loads**. Then close the game, return to the app and tap 'Reinitialize'."),
@@ -203,50 +201,54 @@ class _AppState extends State<App> {
   Future<void> _tryToInitializeApp(BuildContext context) async {
     await getExternalStorageDirectory(); // to generate the data folder
     package.value = await PackageInfo.fromPlatform();
-    if (!await _isUpdateAvailable()) {
-      await _tryToShowNotice();
-      if (await _tryToConnectToShizuku(context)) {
-        if (await _tryToLoadUserID(context)) {
-          EnchantmentsManager.loadFromFiles().then((_) async {
-            if (await _tryToLoadRecords(context)) {
-              setState(() {
-                initialized.value = true;
-              });
-            } else {
-              Fluttertoast.showToast(msg: "Unable to load save file");
-            }
-          }).onError((error, stacktrace) {
-            Fluttertoast.showToast(msg: "Unable to load enchantments");
-            logger.e("$error\n$stacktrace");
-          });
-        }
-      } else {
-        Fluttertoast.showToast(msg: "Shizuku is not available");
+    _isUpdateAvailable().then((updateAvailable) {
+      if (updateAvailable) {
+        logger.i("New update is available");
+        _showUpdateDialog();
+      }
+    });
+    await _tryToShowNotice();
+    if (await _tryToConnectToShizuku(context)) {
+      logger.i("Shizuku is available");
+      if (await _tryToLoadUserID(context)) {
+        logger.i("Loaded user id");
+        EnchantmentsManager.loadFromFiles().then((_) async {
+          logger.i("Loaded the enchantments");
+          try {
+            await _tryToLoadRecords();
+            logger.i("Loaded ${RecordsManager.records.length} record(s)");
+            setState(() {
+              initialized.value = true;
+            });
+          } catch (e, s) {
+            logger.e("Unable to load the save file");
+            logger.e("$e\n$s");
+            showFatalErrorDialog(context, "Unable to load the save file",
+                "Stalker can't load your save. If you've just installed the game, open it once.\n$e}");
+          }
+        }).onError((e, s) {
+          logger.e("Unable to load enchantments");
+          logger.e("$e\n$s");
+          Fluttertoast.showToast(msg: "Unable to load enchantments");
+        });
       }
     } else {
-      _showUpdateDialog();
+      logger.e("Shizuku is not available");
+      Fluttertoast.showToast(msg: "Shizuku is not available");
     }
   }
 
-  Future<bool> _tryToLoadRecords(BuildContext context) async {
-    try {
-      RecordsManager.records = await RecordsManager.loadRecords();
-      if (RecordsManager.activeRecord == null) {
-        logger.i("There are no records to load, creating a new one...");
-        const path = "${RecordsManager.userdataPath}/users.xml";
-        final tree = XmlDocument.parse(await readFile(path));
-        final record =
-            Record(tree, RecordMetadata("Save #1", const Uuid().v8(), true));
-        RecordsManager.records.add(record);
-        RecordsManager.activeRecord = record;
-        RecordsManager.saveRecord(record);
-      }
-
-      return true;
-    } catch (e) {
-      showFatalErrorDialog(context, "Unable to load the save file",
-          "Stalker can't load your save. If you've just installed the game, open it once.\n$e}");
-      return false;
+  Future<void> _tryToLoadRecords() async {
+    RecordsManager.records = await RecordsManager.loadRecords();
+    if (RecordsManager.activeRecord == null) {
+      logger.i("There are no records to load, creating a new one...");
+      const path = "${RecordsManager.userdataPath}/users.xml";
+      final tree = XmlDocument.parse(await readFile(path));
+      final record =
+          Record(tree, RecordMetadata("Save #1", const Uuid().v8(), true));
+      RecordsManager.records.add(record);
+      RecordsManager.activeRecord = record;
+      RecordsManager.saveRecord(record);
     }
   }
 
@@ -341,13 +343,7 @@ class _AppState extends State<App> {
               borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(28), topRight: Radius.circular(28)),
               child: NavigationBar(
-                backgroundColor: Theme.of(context)
-                    .colorScheme
-                    .surface
-                    .withValues(alpha: 0.9),
-                surfaceTintColor: Theme.of(context).colorScheme.surfaceTint,
-                indicatorColor:
-                    Theme.of(context).colorScheme.secondaryContainer,
+                backgroundColor: Theme.of(context).colorScheme.surface,
                 destinations: [
                   NavigationDestination(
                       icon: Image.asset('assets/images/house.png',

@@ -22,11 +22,13 @@ import 'package:flutter/material.dart';
 class ConfirmButton extends StatefulWidget {
   final VoidCallback onConfirmed;
   final Widget child;
+  final ButtonStyle style;
 
   const ConfirmButton({
     super.key,
     required this.onConfirmed,
     required this.child,
+    this.style = const ButtonStyle()
   });
 
   @override
@@ -72,11 +74,12 @@ class _ConfirmButtonState extends State<ConfirmButton> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: _confirming ? Colors.red : null,
-      ),
+      style: widget.style.copyWith(backgroundColor: WidgetStatePropertyAll(_confirming ? Colors.red : null)),
       onPressed: _onPressed,
-      child: _confirming ? const Text('Are you sure?') : widget.child,
+      child: _confirming ? const Padding(
+        padding: EdgeInsets.all(6.0),
+        child: Text('Are you sure?'),
+      ) : widget.child,
     );
   }
 }

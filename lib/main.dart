@@ -20,9 +20,11 @@ import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:logger/logger.dart';
+import 'package:signals/signals_flutter.dart';
 import 'package:stalker/app.dart';
 import 'package:stalker/item_database.dart';
 import 'package:stalker/logcat.dart';
+import 'package:stalker/themes.dart';
 import 'package:toml/toml.dart';
 
 class AlwaysLogFilter extends LogFilter {
@@ -30,9 +32,12 @@ class AlwaysLogFilter extends LogFilter {
   bool shouldLog(LogEvent event) => true;
 }
 
-final logger = Logger(printer: SimplePrinter(colors: false), filter: AlwaysLogFilter());
+final logger =
+    Logger(printer: SimplePrinter(colors: false), filter: AlwaysLogFilter());
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await loadThemeFromPrefs();
   runApp(const RootApp());
 }
 
@@ -51,34 +56,59 @@ class _RootAppState extends State<RootApp> {
     logger.i("Initialized logcat stream");
     rootBundle.loadString("assets/item_database.toml").then((names) {
       ItemDatabase.dictionary = TomlDocument.parse(names).toMap();
+      logger.i("Loaded item databse");
     });
     ItemDatabase.loadTraits().then((traits) {
       ItemDatabase.traits = traits.toList();
+      logger.i("Loaded item traits");
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return DynamicColorBuilder(
-        builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
-      ColorScheme lightColorScheme = lightDynamic ??
-          ColorScheme.fromSeed(
-            seedColor: Colors.blue,
-          );
-      ColorScheme darkColorScheme = darkDynamic ??
-          ColorScheme.fromSeed(
-            seedColor: Colors.blue,
-            brightness: Brightness.dark,
-          );
-      return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          theme:
-              ThemeData.from(useMaterial3: true, colorScheme: lightColorScheme),
-          darkTheme:
-              ThemeData.from(useMaterial3: true, colorScheme: darkColorScheme),
-          themeMode: ThemeMode.system,
-          title: "Stalker",
-          home: const App());
-    });
+    return Watch(
+      (context) {
+        final brightness_ = brightness.value;
+        final useSystemColors_ = useSystemColors.value;
+        final primaryColor_ = primaryColor.value;
+        return DynamicColorBuilder(
+            builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
+          ColorScheme lightColorScheme;
+          ColorScheme darkColorScheme;
+
+          if (lightDynamic != null && darkDynamic != null && useSystemColors_) {
+            lightColorScheme = ColorScheme.fromSeed(
+              seedColor: lightDynamic.primary,
+              brightness: Brightness.light,
+            );
+            darkColorScheme = ColorScheme.fromSeed(
+              seedColor: darkDynamic.primary,
+              brightness: Brightness.dark,
+            );
+          } else {
+            lightColorScheme = ColorScheme.fromSeed(seedColor: primaryColor_);
+            darkColorScheme = ColorScheme.fromSeed(
+                seedColor: primaryColor_, brightness: Brightness.dark);
+          }
+
+          final lightTheme = ThemeData(
+              colorScheme: lightColorScheme,
+              useMaterial3: true,
+              scaffoldBackgroundColor: lightColorScheme.surfaceContainer);
+
+          final darkTheme = ThemeData(
+              colorScheme: darkColorScheme,
+              useMaterial3: true,
+              scaffoldBackgroundColor: darkColorScheme.surfaceContainer);
+          return MaterialApp(
+              debugShowCheckedModeBanner: false,
+              theme: lightTheme,
+              darkTheme: darkTheme,
+              themeMode: brightness_,
+              title: "Stalker",
+              home: const App());
+        });
+      },
+    );
   }
 }

@@ -16,7 +16,6 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:stalker/record.dart';
@@ -61,26 +60,38 @@ class _EditXmlPageState extends State<EditXmlPage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const SizedBox(height: 10),
-        FilledButton(onPressed: save, child: const Text("Save")),
-        const SizedBox(height: 10),
+        const SizedBox(height: 16),
+        FilledButton(
+            onPressed: save,
+            child: const Wrap(
+              spacing: 8,
+              children: [
+                Icon(
+                  Icons.save,
+                  size: 24,
+                ),
+                Text(
+                  "Save",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ],
+            )),
         Expanded(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Scrollbar(
               thumbVisibility: true,
-              thickness: 10,
+              thickness: 8,
               interactive: true,
               child: SingleChildScrollView(
                 child: TextField(
                   controller: textController,
                   maxLines: null,
                   decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            color: Theme.of(context).colorScheme.primary)),
+                    filled: true,
+                    fillColor: Theme.of(context).colorScheme.surfaceContainer,
+                    border: const OutlineInputBorder(),
                     hintText: 'Type here...',
-                    labelText: "File contents",
                   ),
                 ),
               ),

@@ -50,23 +50,26 @@ class _RecordsPageState extends State<RecordsPage> {
     }
   }
 
-  List<Widget> _generateSaveEntries(BuildContext context) {
+  Iterable<Widget> _generateSaveEntries(BuildContext context) {
+    final theme = Theme.of(context);
     return RecordsManager.records.map((record) {
-      controllers["${record.metadata.uuid}_name"] =
-          TextEditingController(text: record.metadata.name);
+      final controllerKey = "${record.metadata.uuid}_name";
+      if (controllers[controllerKey] == null) {
+        controllers[controllerKey] =
+            TextEditingController(text: record.metadata.name);
+      }
       return Container(
-        decoration: BoxDecoration(
-          borderRadius: const BorderRadius.all(Radius.circular(16)),
-          border: Border.all(
-              width: 1,
-              color: record.metadata.isActive
-                  ? Theme.of(context).colorScheme.primary
-                  : (Theme.of(context).brightness == Brightness.light
-                      ? Colors.black
-                      : Colors.white)),
-        ),
+        color: theme.brightness == Brightness.light
+            ? theme.colorScheme.surfaceContainerLowest
+            : theme.colorScheme.surfaceTint.withValues(alpha: 0.1),
         child: ExpansionTile(
-          initiallyExpanded: true,
+          initiallyExpanded: RecordsManager.activeRecord! == record,
+          collapsedShape: const RoundedRectangleBorder(
+            side: BorderSide(color: Colors.transparent, width: 0),
+          ),
+          shape: const RoundedRectangleBorder(
+            side: BorderSide(color: Colors.transparent, width: 0),
+          ),
           title: Row(
             children: [
               IconButton(
@@ -81,15 +84,17 @@ class _RecordsPageState extends State<RecordsPage> {
                   },
                   icon: const Icon(Icons.delete)),
               SizedBox(
-                width: 100,
+                width: 160,
                 child: TextField(
                   controller: controllers["${record.metadata.uuid}_name"],
                   style: const TextStyle(fontSize: 19),
                   decoration:
                       const InputDecoration.collapsed(hintText: "Name..."),
                   onSubmitted: (value) {
-                    record.metadata.name = value;
-                    RecordsManager.saveRecord(record);
+                    if (record.metadata.name != value) {
+                      record.metadata.name = value;
+                      RecordsManager.saveRecord(record);
+                    }
                   },
                 ),
               ),
@@ -120,8 +125,7 @@ class _RecordsPageState extends State<RecordsPage> {
           ),
           childrenPadding: const EdgeInsets.only(left: 20),
           children: [
-            _statTile(
-                "assets/images/shuriken.png", "Level", "${record.level}"),
+            _statTile("assets/images/shuriken.png", "Level", "${record.level}"),
             _statTile("assets/images/coin.png", "Coins",
                 "${record.getCurrency(Currency.coins)}"),
             _statTile("assets/images/ruby.png", "Gems",
@@ -167,7 +171,7 @@ class _RecordsPageState extends State<RecordsPage> {
                   ),
                   IconButton.filled(
                       onPressed: () => export(record),
-                      icon: const Icon(Icons.upload)),
+                      icon: const Icon(Icons.share)),
                 ],
               ),
             ),
@@ -175,7 +179,7 @@ class _RecordsPageState extends State<RecordsPage> {
           ],
         ),
       );
-    }).toList();
+    });
   }
 
   Widget _statTile(String iconPath, String label, String value) {
@@ -238,32 +242,48 @@ class _RecordsPageState extends State<RecordsPage> {
 
   @override
   Widget build(BuildContext context) {
-    final children = [
-      const Center(
-        child: Text(
-          "© 2025 Andreno. All rights reserved.",
-          style: TextStyle(fontSize: 14),
-        ),
-      ),
-      ..._generateSaveEntries(context),
-      FilledButton.icon(
-          onPressed: () {
-            showDialog(
-                context: context,
-                builder: (ctx) => NewRecord(onCreated: () {
-                      setState(() {});
-                    }));
-          },
-          label: const Icon(Icons.add))
-    ];
+    final entries = _generateSaveEntries(context).toList();
     return Padding(
       padding: const EdgeInsets.all(16.0),
-      child: ListView.separated(
-        itemBuilder: (context, index) => children[index],
-        itemCount: children.length,
-        separatorBuilder: (context, index) => const SizedBox(
-          height: 16,
-        ),
+      child: ListView(
+        children: [
+          const Center(
+            child: Text(
+              "© 2025 Andreno. All rights reserved.",
+              style: TextStyle(fontSize: 14),
+            ),
+          ),
+          const SizedBox(height: 16),
+          ListView.separated(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemBuilder: (context, index) {
+              final borderRadius = BorderRadius.vertical(
+                top: Radius.circular(index == 0 ? 24 : 4),
+                bottom: Radius.circular(index == entries.length - 1 ? 24 : 4)
+              );
+              return ClipRRect(
+                  borderRadius: borderRadius, child: entries[index]);
+            },
+            itemCount: entries.length,
+            separatorBuilder: (context, index) => const SizedBox(
+              height: 1,
+            ),
+          ),
+          const SizedBox(height: 16),
+          SizedBox(
+            width: double.maxFinite,
+            child: FilledButton.icon(
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (ctx) => NewRecord(onCreated: () {
+                            setState(() {});
+                          }));
+                },
+                label: const Icon(Icons.add)),
+          )
+        ],
       ),
     );
   }

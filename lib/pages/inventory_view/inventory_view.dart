@@ -32,6 +32,40 @@ import 'package:stalker/pages/inventory_view/new_enchantment.dart';
 import 'package:stalker/pages/inventory_view/new_item.dart';
 import 'package:stalker/records_manager.dart';
 
+class InventoryTile extends StatelessWidget {
+  final Widget title;
+  final Widget subtitle;
+  final List<Widget> children;
+  const InventoryTile(
+      {super.key,
+      required this.title,
+      required this.subtitle,
+      required this.children});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Container(
+        color: theme.brightness == Brightness.light
+            ? theme.colorScheme.surfaceContainerLowest
+            : theme.colorScheme.surfaceTint.withValues(alpha: 0.1),
+        child: ExpansionTile(
+          collapsedShape: const RoundedRectangleBorder(
+            side: BorderSide(color: Colors.transparent, width: 0),
+          ),
+          shape: const RoundedRectangleBorder(
+            side: BorderSide(color: Colors.transparent, width: 0),
+          ),
+          title: Padding(padding: const EdgeInsets.only(top: 8), child: title),
+          subtitle: Padding(
+            padding: const EdgeInsets.only(left: 32.0),
+            child: subtitle,
+          ),
+          children: children,
+        ));
+  }
+}
+
 class InventoryView extends StatefulWidget {
   final EquipmentType equipmentType;
 
@@ -63,7 +97,10 @@ class _InventoryViewState extends State<InventoryView> {
 
   @override
   Widget build(BuildContext context) {
-    final suggested = _generateSuggestedEntries();
+    final suggested = _generateSuggestedEntries().toList();
+    final found = _generateFoundEntries().toList();
+    const foundOffset = 1;
+    final suggestedOffset = foundOffset + found.length + 1;
     final children = [
       Padding(
           padding: const EdgeInsets.only(bottom: 8.0, left: 8, right: 8),
@@ -92,12 +129,12 @@ class _InventoryViewState extends State<InventoryView> {
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(16),
                     color: Theme.of(context).canvasColor),
-                textStyle: const TextStyle(color: Colors.white, fontSize: 14),
+                textStyle: Theme.of(context).textTheme.bodyMedium,
                 child: const Icon(Icons.info_outline),
               ),
             ],
           )),
-      ..._generateFoundEntries(),
+      ...found,
       if (suggested.isNotEmpty)
         const Row(
           children: [
@@ -134,25 +171,41 @@ class _InventoryViewState extends State<InventoryView> {
         ),
       ),
       const SizedBox(
-        height: 90,
+        height: 120,
       )
     ];
-
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(top: 64.0),
+        padding: const EdgeInsets.only(top: 32.0, left: 8, right: 8),
         child: Scrollbar(
-          interactive: true,
-          thickness: 10,
-          child: ListView.separated(
-            itemCount: children.length,
-            padding: const EdgeInsets.all(4),
-            separatorBuilder: (_, __) => const SizedBox(
-              height: 10,
-            ),
-            itemBuilder: (_, index) => children.elementAt(index),
-          ),
-        ),
+            interactive: true,
+            thickness: 10,
+            child: ListView.separated(
+                itemBuilder: (context, index) {
+                  if ((index >= foundOffset &&
+                          index < foundOffset + found.length) ||
+                      (index >= suggestedOffset &&
+                          index < suggestedOffset + suggested.length)) {
+                    final borderRadius = BorderRadius.vertical(
+                        top: Radius.circular(
+                            (index == foundOffset || index == suggestedOffset)
+                                ? 24
+                                : 4),
+                        bottom: Radius.circular(
+                            (index == found.length - foundOffset + 1) ||
+                                    (index ==
+                                        suggestedOffset + suggested.length - 1)
+                                ? 24
+                                : 4));
+                    return ClipRRect(
+                        borderRadius: borderRadius, child: children[index]);
+                  } else {
+                    return children[index];
+                  }
+                },
+                separatorBuilder: (_, __) => const SizedBox(height: 2),
+                itemCount: children.length,
+                shrinkWrap: true)),
       ),
       floatingActionButton: const FloatingActionButton(
         onPressed: InventoryView.save,
@@ -162,24 +215,18 @@ class _InventoryViewState extends State<InventoryView> {
   }
 
   Iterable<Widget> _generateFoundEntries() {
+    final theme = Theme.of(context);
     return foundEquipment.asMap().entries.map((entry) {
       final item = entry.value;
       final isEquipped = RecordsManager.activeRecord!.isEquipped(item);
 
-      return DecoratedBox(
-        decoration: BoxDecoration(
-            border: Border.all(
-                color: isEquipped
-                    ? Theme.of(context).colorScheme.primary
-                    : Theme.of(context).colorScheme.outline,
-                width: isEquipped ? 2 : 1),
-            borderRadius: const BorderRadius.all(Radius.circular(16))),
-        child: ExpansionTile(
-          title: Row(
-            children: [
-              IconButton(
-                icon: const Icon(Icons.delete),
-                onPressed: () => showConfirmationDialog(
+      return InventoryTile(
+        title: Row(
+          spacing: 8,
+          children: [
+            InkResponse(
+              onTap: () {
+                showConfirmationDialog(
                     const Text("Are you sure?"),
                     const Text(
                       "This item will be deleted from your inventory",
@@ -192,175 +239,201 @@ class _InventoryViewState extends State<InventoryView> {
                     ownedEquipment.remove(item);
                     _searchEquipment(query);
                   });
-                }),
-              ),
-              Expanded(child: Text(item.name)),
-              isEquipped
-                  ? const Text(
-                      "Equipped",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
-                    )
-                  : ConfirmButton(
-                      onConfirmed: () {
-                        setState(() {
-                          RecordsManager.activeRecord!.setEquipped(item);
-                        });
-                      },
-                      child: const Text("Equip"),
-                    )
-            ],
-          ),
-          subtitle: Padding(
-            padding: const EdgeInsets.only(left: 8.0),
-            child: Column(
-              children: [
-                Align(alignment: Alignment.centerLeft, child: Text(item.id)),
-                const SizedBox(
-                  height: 12,
-                ),
-                _generateTraitsFor(item.id)
-              ],
+                });
+              },
+              radius: 16,
+              containedInkWell: true,
+              child: const Icon(Icons.delete),
             ),
-          ),
-          children: [
-            if (item.description.isNotEmpty) ...[
-              const Divider(),
-              Padding(
-                padding: const EdgeInsets.only(
-                    top: 8, bottom: 16, left: 16, right: 16),
-                child: Text(
-                  item.description,
-                  style: const TextStyle(fontSize: 14),
-                ),
+            Text(item.name),
+            const Spacer(),
+            if (isEquipped)
+              const Text(
+                "Equipped",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
               )
-            ],
+            else
+              ConfirmButton(
+                onConfirmed: () {
+                  setState(() {
+                    RecordsManager.activeRecord!.setEquipped(item);
+                  });
+                },
+                style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                    minimumSize: Size.zero,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap),
+                child: const Text("Equip"),
+              )
+          ],
+        ),
+        subtitle: Column(
+          children: [
+            Align(
+                alignment: Alignment.centerLeft,
+                child: Text(item.id, style: const TextStyle(fontSize: 13))),
+            const SizedBox(
+              height: 12,
+            ),
+            _generateTraitsFor(item.id)
+          ],
+        ),
+        children: [
+          if (item.description.isNotEmpty)
             Padding(
-              padding: const EdgeInsets.only(left: 16.0),
-              child: ExpansionTile(
-                initiallyExpanded: true,
-                title: const Text("Enchantments"),
-                children: [
-                  ...item.enchantments.map((applied) => Padding(
-                        padding: const EdgeInsets.only(left: 24.0),
-                        child: ListTile(
-                          contentPadding: EdgeInsets.zero,
-                          title: Row(
-                            children: [
-                              Expanded(child: Text(applied.enchantment.name)),
-                              const Spacer(),
-                              IconButton(
-                                onPressed: () {
-                                  setState(() {
-                                    item.enchantments.remove(applied);
-                                  });
-                                },
-                                icon: const Icon(
-                                  Icons.delete,
-                                ),
-                              ),
-                              const SizedBox(width: 20),
-                            ],
-                          ),
-                          subtitle: applied.aspect == null
-                              ? null
-                              : Padding(
-                                  padding: const EdgeInsets.only(left: 12.0),
-                                  child: Row(
-                                    children: [
-                                      Text("Aspect: ${applied.aspect}"),
-                                      Expanded(
-                                        child: Slider(
-                                          value: applied.aspect!.toDouble(),
-                                          onChanged: (v) {
-                                            setState(() {
-                                              applied.aspect = v.toInt();
-                                            });
-                                          },
-                                          min: 0,
-                                          max: AppliedEnchantment.maxAspect
-                                              .toDouble(),
-                                          divisions:
-                                              AppliedEnchantment.maxAspect,
-                                        ),
-                                      ),
-                                    ],
+              padding: const EdgeInsets.only(
+                  top: 8, bottom: 16, left: 16, right: 16),
+              child: ClipRRect(
+                borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                    bottomLeft: Radius.circular(4),
+                    bottomRight: Radius.circular(4)),
+                child: Container(
+                    color: theme.colorScheme.surfaceContainerLow,
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Text(item.description),
+                    )),
+              ),
+            ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16.0, right: 16),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(16),
+              child: Container(
+                color: theme.colorScheme.surfaceContainerLow,
+                child: ExpansionTile(
+                  initiallyExpanded: true,
+                  collapsedShape: const RoundedRectangleBorder(
+                    side: BorderSide(color: Colors.transparent, width: 0),
+                  ),
+                  shape: const RoundedRectangleBorder(
+                    side: BorderSide(color: Colors.transparent, width: 0),
+                  ),
+                  title: const Text("Enchantments"),
+                  children: [
+                    ...item.enchantments.map((applied) => Padding(
+                          padding: const EdgeInsets.only(left: 24.0),
+                          child: ListTile(
+                            contentPadding: EdgeInsets.zero,
+                            title: Row(
+                              children: [
+                                Expanded(child: Text(applied.enchantment.name)),
+                                const Spacer(),
+                                IconButton(
+                                  onPressed: () {
+                                    setState(() {
+                                      item.enchantments.remove(applied);
+                                    });
+                                  },
+                                  icon: const Icon(
+                                    Icons.delete,
                                   ),
                                 ),
-                        ),
-                      )),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16.0),
-                    child: ListTile(
-                      title: OutlinedButton(
-                        onPressed: () {
-                          showDialog(
-                              context: context,
-                              builder: (ctx) => NewEnchantmentDialog(
-                                  enchantments:
-                                      EnchantmentsManager.enchantments,
-                                  type: widget.equipmentType,
-                                  onPressed: (selected) {
-                                    setState(() {
-                                      item.enchantments.add(
-                                        AppliedEnchantment(
-                                          selected,
-                                          selected.tier ==
-                                                  EnchantmentTier.mythical
-                                              ? null
-                                              : 0,
+                                const SizedBox(width: 20),
+                              ],
+                            ),
+                            subtitle: applied.aspect == null
+                                ? null
+                                : Padding(
+                                    padding: const EdgeInsets.only(left: 12.0),
+                                    child: Row(
+                                      children: [
+                                        Text("Aspect: ${applied.aspect}"),
+                                        Expanded(
+                                          child: Slider(
+                                            value: applied.aspect!.toDouble(),
+                                            onChanged: (v) {
+                                              setState(() {
+                                                applied.aspect = v.toInt();
+                                              });
+                                            },
+                                            min: 0,
+                                            max: AppliedEnchantment.maxAspect
+                                                .toDouble(),
+                                            divisions:
+                                                AppliedEnchantment.maxAspect,
+                                          ),
                                         ),
-                                      );
-                                    });
-                                    Navigator.of(ctx).pop();
-                                  }));
-                        },
-                        child: const Text("Add..."),
+                                      ],
+                                    ),
+                                  ),
+                          ),
+                        )),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16.0),
+                      child: ListTile(
+                        title: OutlinedButton(
+                          onPressed: () {
+                            showDialog(
+                                context: context,
+                                builder: (ctx) => NewEnchantmentDialog(
+                                    enchantments:
+                                        EnchantmentsManager.enchantments,
+                                    type: widget.equipmentType,
+                                    onPressed: (selected) {
+                                      setState(() {
+                                        item.enchantments.add(
+                                          AppliedEnchantment(
+                                            selected,
+                                            selected.tier ==
+                                                    EnchantmentTier.mythical
+                                                ? null
+                                                : 0,
+                                          ),
+                                        );
+                                      });
+                                      Navigator.of(ctx).pop();
+                                    }));
+                          },
+                          child: const Text("Add..."),
+                        ),
                       ),
                     ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16.0),
+            child: ListTile(
+              title: Row(
+                children: [
+                  Text("Level: ${item.level}"),
+                  Slider(
+                    value: item.level.toDouble(),
+                    onChanged: (n) {
+                      setState(() => item.level = n.toInt());
+                    },
+                    min: 1,
+                    max: 52,
+                    divisions: 51,
                   ),
                 ],
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 16.0),
-              child: ListTile(
-                title: Row(
-                  children: [
-                    Text("Level: ${item.level}"),
-                    Slider(
-                      value: item.level.toDouble(),
+              subtitle: Row(
+                children: [
+                  Text(
+                      "Upgrade level: ${item.upgrade == 0 ? "Not upgraded" : item.upgrade}"),
+                  Expanded(
+                    child: Slider(
+                      value: item.upgrade.toDouble(),
                       onChanged: (n) {
-                        setState(() => item.level = n.toInt());
+                        setState(() => item.upgrade = n.toInt());
                       },
-                      min: 1,
-                      max: 52,
-                      divisions: 51,
+                      min: 0,
+                      max: 4,
+                      divisions: 4,
                     ),
-                  ],
-                ),
-                subtitle: Row(
-                  children: [
-                    Text(
-                        "Upgrade level: ${item.upgrade == 0 ? "Not upgraded" : item.upgrade}"),
-                    Expanded(
-                      child: Slider(
-                        value: item.upgrade.toDouble(),
-                        onChanged: (n) {
-                          setState(() => item.upgrade = n.toInt());
-                        },
-                        min: 0,
-                        max: 4,
-                        divisions: 4,
-                      ),
-                    ),
-                    const SizedBox(width: 40),
-                  ],
-                ),
+                  ),
+                  const SizedBox(width: 40),
+                ],
               ),
-            )
-          ],
-        ),
+            ),
+          )
+        ],
       );
     });
   }
@@ -382,84 +455,86 @@ class _InventoryViewState extends State<InventoryView> {
               )));
       final description = ItemDatabase.getDescription(e);
 
-      return DecoratedBox(
-        decoration: BoxDecoration(
-            border: Border.all(
-              width: 1,
-              color: Theme.of(context).colorScheme.outline,
-            ),
-            borderRadius: BorderRadius.circular(16)),
-        child: ExpansionTile(
-          title: Row(
-            children: [
-              IconButton(
-                onPressed: () {
-                  final equipment = Equipment(widget.equipmentType, e, 1, 0);
-                  equipment.enchantments = ItemDatabase.getEnchantments(e)
-                      .map((ench) => AppliedEnchantment(
-                          ench,
-                          ench.tier == EnchantmentTier.mythical
-                              ? null
-                              : AppliedEnchantment.maxAspect))
-                      .toList();
-                  setState(() {
-                    RecordsManager
-                        .activeRecord!.equipment[widget.equipmentType]!
-                        .add(equipment);
-                    _searchEquipment(query);
-                  });
-                  Fluttertoast.showToast(msg: "Added to the inventory");
-                },
-                icon: const Icon(Icons.add, size: 32),
-              ),
-              Text(ItemDatabase.getName(e)),
-            ],
-          ),
-          subtitle: Padding(
-            padding: const EdgeInsets.only(left: 8.0),
-            child: Column(
-              children: [
-                Align(alignment: Alignment.centerLeft, child: Text(e)),
-                const SizedBox(
-                  height: 12,
-                ),
-                _generateTraitsFor(e)
-              ],
-            ),
-          ),
+      return InventoryTile(
+        title: Row(
+          spacing: 8,
           children: [
-            if (description.isNotEmpty) ...[
-              const Divider(),
-              Padding(
-                padding: const EdgeInsets.only(
-                    left: 16, right: 16, top: 8, bottom: 16),
-                child: Text(description),
-              )
-            ],
-            if (enchantments.isNotEmpty) ...[
-              const Divider(),
-              const Align(
-                alignment: Alignment.center,
-                child: Text(
-                  "Enchantments: ",
-                  style: TextStyle(fontSize: 17),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                    top: 8, bottom: 24, left: 8, right: 8),
-                child: Center(
-                  child: Wrap(
-                    alignment: WrapAlignment.center,
-                    spacing: 8,
-                    runSpacing: 8,
-                    children: enchantments.toList(),
-                  ),
-                ),
-              )
-            ],
+            InkResponse(
+              onTap: () {
+                final equipment = Equipment(widget.equipmentType, e, 1, 0);
+                equipment.enchantments = ItemDatabase.getEnchantments(e)
+                    .map((ench) => AppliedEnchantment(
+                        ench,
+                        ench.tier == EnchantmentTier.mythical
+                            ? null
+                            : AppliedEnchantment.maxAspect))
+                    .toList();
+                setState(() {
+                  RecordsManager.activeRecord!.equipment[widget.equipmentType]!
+                      .add(equipment);
+                  _searchEquipment(query);
+                });
+                Fluttertoast.showToast(msg: "Added to the inventory");
+              },
+              radius: 16,
+              containedInkWell: true,
+              child: const Icon(Icons.add, size: 32),
+            ),
+            Text(ItemDatabase.getName(e)),
           ],
         ),
+        subtitle: Column(
+          children: [
+            Align(
+                alignment: Alignment.centerLeft,
+                child: Text(e, style: const TextStyle(fontSize: 13))),
+            const SizedBox(
+              height: 12,
+            ),
+            _generateTraitsFor(e)
+          ],
+        ),
+        children: [
+          if (description.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.only(
+                  top: 8, bottom: 16, left: 16, right: 16),
+              child: ClipRRect(
+                borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                    bottomLeft: Radius.circular(4),
+                    bottomRight: Radius.circular(4)),
+                child: Container(
+                    color: Theme.of(context).colorScheme.surfaceContainerLow,
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Text(description),
+                    )),
+              ),
+            ),
+          if (enchantments.isNotEmpty) ...[
+            const Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Enchantments: ",
+                style: TextStyle(fontSize: 17),
+              ),
+            ),
+            Padding(
+              padding:
+                  const EdgeInsets.only(top: 8, bottom: 24, left: 8, right: 8),
+              child: Center(
+                child: Wrap(
+                  alignment: WrapAlignment.center,
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: enchantments.toList(),
+                ),
+              ),
+            )
+          ],
+        ],
       );
     });
   }
