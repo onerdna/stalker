@@ -35,7 +35,10 @@ class LogcatStreamPageState extends State<LogcatStreamPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Logs Viewer')),
+      appBar: AppBar(
+        title: const Text('Logs Viewer'),
+        backgroundColor: Theme.of(context).colorScheme.surfaceContainer,
+      ),
       floatingActionButton: SizedBox(
         width: 64,
         height: 64,

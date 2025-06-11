@@ -16,7 +16,6 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:stalker/record.dart';
@@ -132,75 +131,112 @@ class _GeneralPageState extends State<GeneralPage> {
     );
   }
 
-  ExpansionTile _generateSection(
-      String title, String description, List<Field> fields) {
-    return ExpansionTile(
-        title: Text(title),
-        subtitle: Text(description),
-        childrenPadding: const EdgeInsets.only(left: 32),
-        children: fields.map((field) {
-          return Row(
-            children: [
-              Image.asset(field.iconPath, width: 24, height: 24),
-              const SizedBox(width: 5),
-              Text(field.name),
-              const SizedBox(width: 10),
-              SizedBox(
-                height: 50,
-                width: 150,
-                child: TextField(
-                  controller: field.controller,
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.only(top: 16, bottom: 0),
-                    border: UnderlineInputBorder(),
-                    isDense: true,
+  Container _generateSection(
+      String title, Widget icon, String description, List<Field> fields, {bool initiallyExpanded = false}) {
+    final theme = Theme.of(context);
+    return Container(
+      color: theme.brightness == Brightness.light
+            ? theme.colorScheme.surfaceContainerLowest
+            : theme.colorScheme.surfaceTint.withValues(alpha: 0.1),
+      child: ExpansionTile(
+          title: Wrap(spacing: 8, children: [icon, Text(title)]),
+          initiallyExpanded: initiallyExpanded,
+          subtitle: Padding(
+            padding: const EdgeInsets.only(left: 32.0),
+            child: Text(description),
+          ),
+          childrenPadding: const EdgeInsets.only(left: 32),
+          collapsedShape: const RoundedRectangleBorder(
+            side: BorderSide(color: Colors.transparent, width: 0),
+          ),
+          shape: const RoundedRectangleBorder(
+            side: BorderSide(color: Colors.transparent, width: 0),
+          ),
+          children: fields.map((field) {
+            return Row(
+              children: [
+                Image.asset(field.iconPath, width: 24, height: 24),
+                const SizedBox(width: 5),
+                Text(field.name),
+                const SizedBox(width: 10),
+                SizedBox(
+                  height: 50,
+                  width: 150,
+                  child: TextField(
+                    controller: field.controller,
+                    decoration: const InputDecoration(
+                      contentPadding: EdgeInsets.only(top: 16, bottom: 0),
+                      border: UnderlineInputBorder(),
+                      isDense: true,
+                    ),
                   ),
-                ),
-              )
-            ],
-          );
-        }).toList());
+                )
+              ],
+            );
+          }).toList()),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Center(
-            child: Column(children: [
-              _generateSection(
-                  "Currencies", "Coins, Gems and Forge Materials", currencies),
-              _generateSection(
-                  "Progression", "Levels and experience", progression),
-              const SizedBox(height: 20),
-              _generateCheckbox("Dojo Disciple", "assets/images/dojo.png",
-                  RecordsManager.activeRecord!.isDiscipleEnabled, (value) {
-                setState(() {
-                  RecordsManager.activeRecord!.isDiscipleEnabled =
-                      value ?? false;
-                });
-              }),
-              const SizedBox(height: 6),
-              _generateCheckbox(
-                  "Unlimited Energy",
-                  "assets/images/lighting.png",
-                  RecordsManager.activeRecord!.isEnergyUnlimited, (value) {
-                setState(() {
-                  RecordsManager.activeRecord!.isEnergyUnlimited =
-                      value ?? false;
-                });
-              }),
-              const SizedBox(height: 6),
-              _generateCheckbox("Show Forge", "assets/images/anvil.png",
-                  RecordsManager.activeRecord!.showForge, (value) {
-                setState(() {
-                  RecordsManager.activeRecord!.showForge = value ?? false;
-                });
-              })
-            ]),
+    final sections = [
+      _generateSection(
+          "Currencies",
+          Image.asset(
+            "assets/images/treasure-chest.png",
+            width: 24,
+            height: 24,
           ),
+          "Coins, Gems and Forge Materials",
+          currencies,
+          initiallyExpanded: true),
+      _generateSection(
+          "Progression",
+          const Icon(Icons.arrow_upward, color: Colors.lightGreen, size: 24),
+          "Levels and Experience",
+          progression)
+    ];
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Center(
+          child: ListView(children: [
+            ListView.separated(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              separatorBuilder: (_, index) => const SizedBox(height: 2),
+              itemBuilder: (context, index) {
+                final borderRadius = BorderRadius.vertical(
+                    top: Radius.circular(index == 0 ? 24 : 4),
+                    bottom:
+                        Radius.circular(index == sections.length - 1 ? 24 : 4));
+                return ClipRRect(
+                    borderRadius: borderRadius, child: sections[index]);
+              },
+              itemCount: sections.length,
+            ),
+            const SizedBox(height: 20),
+            _generateCheckbox("Dojo Disciple", "assets/images/dojo.png",
+                RecordsManager.activeRecord!.isDiscipleEnabled, (value) {
+              setState(() {
+                RecordsManager.activeRecord!.isDiscipleEnabled = value ?? false;
+              });
+            }),
+            const SizedBox(height: 6),
+            _generateCheckbox("Unlimited Energy", "assets/images/lighting.png",
+                RecordsManager.activeRecord!.isEnergyUnlimited, (value) {
+              setState(() {
+                RecordsManager.activeRecord!.isEnergyUnlimited = value ?? false;
+              });
+            }),
+            const SizedBox(height: 6),
+            _generateCheckbox("Show Forge", "assets/images/anvil.png",
+                RecordsManager.activeRecord!.showForge, (value) {
+              setState(() {
+                RecordsManager.activeRecord!.showForge = value ?? false;
+              });
+            })
+          ]),
         ),
       ),
       floatingActionButton:

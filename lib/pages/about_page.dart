@@ -18,8 +18,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:signals/signals_flutter.dart';
-import 'package:stalker/app.dart';
-import 'package:stalker/records_manager.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class AboutPage extends StatefulWidget {
@@ -74,15 +72,6 @@ class _AboutPageState extends State<AboutPage> {
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.bold)),
                     const Divider(),
-                    Text("Version: ${(package.value)!.version}",
-                        style: const TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    Text(
-                      "User ID: ${RecordsManager.userid}",
-                      style: const TextStyle(
-                          fontSize: 16, fontWeight: FontWeight.bold),
-                    ),
-                    const Divider(),
                     const Text("Original author: Andreno",
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.bold)),
@@ -133,7 +122,6 @@ class _AboutPageState extends State<AboutPage> {
                     const Text("Contributors",
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold)),
-                    const Divider(),
                     const Text("sametaor",
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.bold)),
@@ -203,6 +191,10 @@ class _AboutPageState extends State<AboutPage> {
                       (
                         "Botnet icons created by juicy_fish - Flaticon",
                         "https://www.flaticon.com/free-icons/botnet"
+                      ),
+                      (
+                        "Treasure icons created by kliwir art - Flaticon",
+                        "https://www.flaticon.com/free-icons/treasure"
                       )
                     ].map(
                       (e) => Column(

@@ -20,7 +20,7 @@ import 'package:flutter/material.dart';
 import 'package:signals/signals_flutter.dart';
 import 'package:stalker/app.dart';
 import 'package:stalker/pages/logcat_stream_page.dart';
-import 'package:stalker/pages/about_page.dart';
+import 'package:stalker/pages/settings_page.dart';
 
 class StalkerAppBar extends StatelessWidget implements PreferredSizeWidget {
   const StalkerAppBar({super.key});
@@ -29,6 +29,7 @@ class StalkerAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext _) {
     return Watch((context) => AppBar(
           toolbarHeight: 200,
+          backgroundColor: Theme.of(context).colorScheme.surfaceContainer,
           title: Stack(
             alignment: Alignment.center,
             children: [
@@ -57,8 +58,8 @@ class StalkerAppBar extends StatelessWidget implements PreferredSizeWidget {
                 alignment: Alignment.centerRight,
                 child: IconButton(
                   onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const AboutPage())),
-                  icon: const Icon(Icons.info_outline),
+                      builder: (context) => const SettingsPage())),
+                  icon: const Icon(Icons.settings),
                 ),
               ),
             ],
