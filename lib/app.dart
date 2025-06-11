@@ -25,7 +25,6 @@ import 'dart:io';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:path_provider/path_provider.dart';
@@ -133,9 +132,28 @@ class _AppState extends State<App> {
         builder: (context) => AlertDialog(
               title: const Text("Additional setup required",
                   style: TextStyle(fontSize: 24)),
-              content: const MarkdownBody(
-                  data:
-                      "This application requires additional setup to run. Tap 'Start the service', **minimize** this window and open the game **until it fully loads**. Then close the game, return to the app and tap 'Reinitialize'."),
+              content: RichText(
+                text: TextSpan(
+                  style: Theme.of(context).textTheme.bodyMedium,
+                  children: const [
+                    TextSpan(
+                        text:
+                            "This application requires additional setup to run. Tap 'Start the service', "),
+                    TextSpan(
+                      text: 'minimize',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    TextSpan(text: " this window and open the game "),
+                    TextSpan(
+                      text: 'until it fully loads',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    TextSpan(
+                        text:
+                            ". Then close the game, return to the app and tap 'Reinitialize'."),
+                  ],
+                ),
+              ),
               actions: [
                 TextButton(
                     onPressed: () {

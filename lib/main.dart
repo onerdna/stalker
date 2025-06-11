@@ -91,6 +91,8 @@ class _RootAppState extends State<RootApp> {
                 seedColor: primaryColor_, brightness: Brightness.dark);
           }
 
+          supportsDynamicColors.value = lightDynamic != null && darkDynamic != null;
+
           final lightTheme = ThemeData(
               colorScheme: lightColorScheme,
               useMaterial3: true,

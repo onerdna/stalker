@@ -70,7 +70,8 @@ class _SettingsPageState extends State<SettingsPage> {
                     ),
                   ],
                 ),
-                Row(
+                if (supportsDynamicColors.value)
+                  Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   spacing: 8,
                   children: [
@@ -85,7 +86,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     runSpacing: 16,
                     children: colors
                         .map((color) => GestureDetector(
-                              onTap: () => setState(() => primaryColor.value = color),
+                              onTap: () => setState(() => setPrimaryColor(color)),
                               child: Container(
                                   width: 32,
                                   height: 32,

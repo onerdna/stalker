@@ -23,6 +23,7 @@ import 'package:signals/signals.dart';
 Signal<ThemeMode> brightness = signal(ThemeMode.system);
 Signal<Color> primaryColor = signal(Colors.lightBlue);
 Signal<bool> useSystemColors = signal(true);
+Signal<bool> supportsDynamicColors = signal(false);
 
 const colors = [
   Colors.red,
