@@ -30,12 +30,16 @@ class Equipment {
   final String? acquireType;
   int level = 0;
   int upgrade = 0;
+  static const minLevel = 1;
+  static const maxLevel = 52;
+  static const minUpgrade = 0;
+  static const maxUpgrade = 4;
 
   List<AppliedEnchantment> enchantments = [];
 
   Equipment.fromUpgradeString(this.type, this.id, String upgradeLevel,
       {this.acquireType}) {
-    if (int.parse(upgradeLevel) < 0 || int.parse(upgradeLevel) > 5240) {
+    if (int.parse(upgradeLevel) < 0 || int.parse(upgradeLevel) > maxLevel * 100 + maxUpgrade * 100) {
       upgradeLevel = "100";
     }
     level = int.parse(upgradeLevel.substring(0, upgradeLevel.length - 2));

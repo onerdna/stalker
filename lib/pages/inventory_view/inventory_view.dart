@@ -61,7 +61,13 @@ class InventoryTile extends StatelessWidget {
             padding: const EdgeInsets.only(left: 32.0),
             child: subtitle,
           ),
-          children: children,
+          children: [
+            Divider(
+              color: theme.colorScheme.surfaceContainer,
+              thickness: 1,
+            ),
+            ...children
+          ],
         ));
   }
 }
@@ -279,10 +285,9 @@ class _InventoryViewState extends State<InventoryView> {
           ],
         ),
         children: [
-          if (item.description.isNotEmpty)
+          if (item.description.isNotEmpty) ...[
             Padding(
-              padding: const EdgeInsets.only(
-                  top: 8, bottom: 16, left: 16, right: 16),
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               child: ClipRRect(
                 borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(16),
@@ -297,8 +302,13 @@ class _InventoryViewState extends State<InventoryView> {
                     )),
               ),
             ),
+            Divider(
+              color: theme.colorScheme.surfaceContainer,
+              thickness: 1,
+            ),
+          ],
           Padding(
-            padding: const EdgeInsets.only(left: 16.0, right: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(16),
               child: Container(
@@ -396,6 +406,10 @@ class _InventoryViewState extends State<InventoryView> {
               ),
             ),
           ),
+          Divider(
+            color: theme.colorScheme.surfaceContainer,
+            thickness: 1,
+          ),
           Padding(
             padding: const EdgeInsets.only(left: 16.0),
             child: ListTile(
@@ -407,9 +421,9 @@ class _InventoryViewState extends State<InventoryView> {
                     onChanged: (n) {
                       setState(() => item.level = n.toInt());
                     },
-                    min: 1,
-                    max: 52,
-                    divisions: 51,
+                    min: Equipment.minLevel.toDouble(),
+                    max: Equipment.maxLevel.toDouble(),
+                    divisions: Equipment.maxLevel - Equipment.minLevel,
                   ),
                 ],
               ),
@@ -423,9 +437,9 @@ class _InventoryViewState extends State<InventoryView> {
                       onChanged: (n) {
                         setState(() => item.upgrade = n.toInt());
                       },
-                      min: 0,
-                      max: 4,
-                      divisions: 4,
+                      min: Equipment.minUpgrade.toDouble(),
+                      max: Equipment.maxUpgrade.toDouble(),
+                      divisions: Equipment.maxUpgrade - Equipment.minUpgrade,
                     ),
                   ),
                   const SizedBox(width: 40),
@@ -553,6 +567,14 @@ class _InventoryViewState extends State<InventoryView> {
             ("equipped".contains(text) &&
                 RecordsManager.activeRecord!.isEquipped(e)))
         .toList();
+
+    final equipped = foundEquipment
+        .indexWhere((item) => RecordsManager.activeRecord!.isEquipped(item));
+
+    if (equipped != -1) {
+      final equippedItem = foundEquipment.removeAt(equipped);
+      foundEquipment.insert(0, equippedItem);
+    }
 
     suggestedEquipment = existingEquipment
         .where((e) =>

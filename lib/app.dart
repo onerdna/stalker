@@ -34,10 +34,10 @@ import 'package:signals/signals_flutter.dart';
 import 'package:stalker/app_bar.dart';
 import 'package:stalker/enchantment.dart';
 import 'package:stalker/main.dart';
-import 'package:stalker/pages/edit_xml_page.dart';
+import 'package:stalker/pages/edit_xml/edit_xml.dart';
 import 'package:stalker/pages/equipment_page.dart';
 import 'package:stalker/pages/general_page.dart';
-import 'package:stalker/pages/records_page/records_page.dart';
+import 'package:stalker/pages/records/records.dart';
 import 'package:stalker/pages/report_page.dart';
 import 'package:stalker/record.dart';
 import 'package:stalker/records_manager.dart';
@@ -217,7 +217,7 @@ class _AppState extends State<App> {
   }
 
   Future<void> _tryToInitializeApp(BuildContext context) async {
-    await getExternalStorageDirectory(); // to generate the data folder
+    await getExternalStorageDirectory(); // to create the data folder
     package.value = await PackageInfo.fromPlatform();
     _isUpdateAvailable().then((updateAvailable) {
       if (updateAvailable) {
@@ -229,7 +229,6 @@ class _AppState extends State<App> {
     if (await _tryToConnectToShizuku(context)) {
       logger.i("Shizuku is available");
       if (await _tryToLoadUserID(context)) {
-        logger.i("Loaded user id");
         EnchantmentsManager.loadFromFiles().then((_) async {
           logger.i("Loaded the enchantments");
           try {
@@ -361,7 +360,10 @@ class _AppState extends State<App> {
               borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(28), topRight: Radius.circular(28)),
               child: NavigationBar(
-                backgroundColor: Theme.of(context).colorScheme.surface,
+                backgroundColor: Theme.of(context)
+                    .colorScheme
+                    .surfaceTint
+                    .withValues(alpha: 0.1),
                 destinations: [
                   NavigationDestination(
                       icon: Image.asset('assets/images/house.png',

@@ -18,6 +18,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:stalker/click_tooltip.dart';
 import 'package:stalker/record.dart';
 import 'package:stalker/records_manager.dart';
 
@@ -31,10 +32,12 @@ class GeneralPage extends StatefulWidget {
 class Field {
   final String iconPath;
   final String name;
+  final String? tooltip;
   final TextEditingController controller;
   final void Function(String) callback;
 
-  Field(this.iconPath, this.name, this.controller, this.callback);
+  Field(this.iconPath, this.name, this.controller, this.callback,
+      {this.tooltip});
 }
 
 class _GeneralPageState extends State<GeneralPage> {
@@ -65,7 +68,7 @@ class _GeneralPageState extends State<GeneralPage> {
                   .toString()), (value) {
         RecordsManager.activeRecord!
             .setCurrency(Currency.gems, int.tryParse(value) ?? 0);
-      }),
+      }, tooltip: "Setting a value higher that 999 999 999 is not recommended"),
       Field(
           "assets/images/forge_green.png",
           "Green orbs",
@@ -75,7 +78,7 @@ class _GeneralPageState extends State<GeneralPage> {
                   .toString()), (value) {
         RecordsManager.activeRecord!
             .setCurrency(Currency.greenOrbs, int.tryParse(value) ?? 0);
-      }),
+      }, tooltip: "Setting a value higher that 999 999 999 is not recommended"),
       Field(
           "assets/images/forge_red.png",
           "Red orbs",
@@ -85,7 +88,7 @@ class _GeneralPageState extends State<GeneralPage> {
                   .toString()), (value) {
         RecordsManager.activeRecord!
             .setCurrency(Currency.redOrbs, int.tryParse(value) ?? 0);
-      }),
+      }, tooltip: "Setting a value higher that 999 999 999 is not recommended"),
       Field(
           "assets/images/forge_purple.png",
           "Purple orbs",
@@ -95,7 +98,7 @@ class _GeneralPageState extends State<GeneralPage> {
                   .toString()), (value) {
         RecordsManager.activeRecord!
             .setCurrency(Currency.purpleOrbs, int.tryParse(value) ?? 0);
-      }),
+      }, tooltip: "Setting a value higher that 999 999 999 is not recommended"),
     ];
 
     progression = [
@@ -132,12 +135,13 @@ class _GeneralPageState extends State<GeneralPage> {
   }
 
   Container _generateSection(
-      String title, Widget icon, String description, List<Field> fields, {bool initiallyExpanded = false}) {
+      String title, Widget icon, String description, List<Field> fields,
+      {bool initiallyExpanded = false}) {
     final theme = Theme.of(context);
     return Container(
       color: theme.brightness == Brightness.light
-            ? theme.colorScheme.surfaceContainerLowest
-            : theme.colorScheme.surfaceTint.withValues(alpha: 0.1),
+          ? theme.colorScheme.surfaceContainerLowest
+          : theme.colorScheme.surfaceTint.withValues(alpha: 0.1),
       child: ExpansionTile(
           title: Wrap(spacing: 8, children: [icon, Text(title)]),
           initiallyExpanded: initiallyExpanded,
@@ -170,7 +174,22 @@ class _GeneralPageState extends State<GeneralPage> {
                       isDense: true,
                     ),
                   ),
-                )
+                ),
+                if (field.tooltip != null) ...[
+                  const Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 16.0),
+                    child: ClickTooltip(
+                      message: field.tooltip,
+                      decoration: BoxDecoration(
+                          border: Border.all(width: 1),
+                          borderRadius: BorderRadius.circular(16),
+                          color: Theme.of(context).canvasColor),
+                      textStyle: Theme.of(context).textTheme.bodyMedium,
+                      child: const Icon(Icons.info_outline),
+                    ),
+                  )
+                ]
               ],
             );
           }).toList()),
