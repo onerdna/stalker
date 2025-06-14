@@ -222,7 +222,8 @@ class Record {
       final id = element.getAttribute("Name")!;
       final acquireType = element.getAttribute("AcquireType")!;
       final item = Equipment.fromUpgradeString(
-          type, id, upgradeLevel == "0" ? "100" : upgradeLevel, acquireType: acquireType);
+          type, id, upgradeLevel == "0" ? "100" : upgradeLevel,
+          acquireType: acquireType);
       item.enchantments = enchantments;
       if (id == selectedId) {
         setEquipped(item);
@@ -254,6 +255,13 @@ class Record {
 
   bool isEquipped(Equipment equipment) =>
       equippedEquipment[equipment.type] == equipment.id;
+
+  String get gameVersion =>
+      getAttribute("/Root/Versions/Version/@Value") ?? "1.0.0";
+  String get dataVersion =>
+      getAttribute("/Root/Versions/DataVersion/@Value") ?? "1.0.0";
+  int get launchIndex =>
+      int.parse(getAttribute("/Root/GameLaunchIndex/@Value") ?? "0");
 
   String get xml {
     _saveEquipment();

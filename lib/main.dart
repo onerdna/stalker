@@ -79,11 +79,11 @@ class _RootAppState extends State<RootApp> {
           if (lightDynamic != null && darkDynamic != null && useSystemColors_) {
             lightColorScheme = ColorScheme.fromSeed(
               seedColor: lightDynamic.primary,
-              brightness: Brightness.light,
+              brightness: Brightness.light
             );
             darkColorScheme = ColorScheme.fromSeed(
               seedColor: darkDynamic.primary,
-              brightness: Brightness.dark,
+              brightness: Brightness.dark
             );
           } else {
             lightColorScheme = ColorScheme.fromSeed(seedColor: primaryColor_);

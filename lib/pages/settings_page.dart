@@ -58,7 +58,9 @@ class _SettingsPageState extends State<SettingsPage> {
                     DropdownButton<ThemeMode>(
                       value: brightness.value,
                       onChanged: (ThemeMode? value) =>
-                          setState(() => setBrightness(value!)),
+                          setState(() {
+                            setBrightness(value!);
+                          }),
                       items: ThemeMode.values
                           .map<DropdownMenuItem<ThemeMode>>((ThemeMode value) {
                         return DropdownMenuItem<ThemeMode>(
@@ -86,7 +88,9 @@ class _SettingsPageState extends State<SettingsPage> {
                     runSpacing: 16,
                     children: colors
                         .map((color) => GestureDetector(
-                              onTap: () => setState(() => setPrimaryColor(color)),
+                              onTap: () => setState(() {
+                                setPrimaryColor(color);
+                              }),
                               child: Container(
                                   width: 32,
                                   height: 32,

@@ -37,7 +37,13 @@ const colors = [
   Colors.lightBlue,
   Colors.amber,
   Colors.deepPurple,
-  Colors.teal
+  Colors.teal,
+  Color(0xffb33791),
+  Color(0xff328e6e),
+  Color(0xff00809d),
+  Color(0xfffbdb93),
+  Color(0xff511d43),
+  Color(0xff222831)
 ];
 
 Future<void> loadThemeFromPrefs() async {
