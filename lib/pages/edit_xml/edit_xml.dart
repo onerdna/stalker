@@ -80,13 +80,22 @@ class _EditXmlPageState extends State<EditXmlPage> {
               spacing: 8,
               children: [
                 Expanded(
-                  child: TextSearchBar(onSubmitted: (query) {
-                    if (query.trim().isEmpty) return;
-                    setState(() {
-                      _updateMatches(query.trim());
-                      _jumpToMatch(currentMatchIndex);
-                    });
-                  }),
+                  child: TextSearchBar(
+                    onSubmitted: (query) {
+                      if (query.trim().isEmpty) return;
+                      setState(() {
+                        _updateMatches(query.trim());
+                        _jumpToMatch(currentMatchIndex);
+                      });
+                    },
+                    onCleared: () {
+                      setState(() {
+                        currentMatchIndex = 0;
+                        searchMatches.clear();
+                      });
+                      focusNode.unfocus();
+                    },
+                  ),
                 ),
                 Column(children: [
                   Row(children: [

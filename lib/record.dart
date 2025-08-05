@@ -221,9 +221,27 @@ class Record {
       final upgradeLevel = element.getAttribute("UpgradeLevel")!;
       final id = element.getAttribute("Name")!;
       final acquireType = element.getAttribute("AcquireType")!;
+      UpgradeDelivery? upgradeDelivery = int.parse(
+                      element.getAttribute("DeliveryTime") ?? "0") >
+                  0 &&
+              int.parse(element.getAttribute("DeliveryUpgradeLevel") ?? "0") > 0
+          ? UpgradeDelivery.fromXml(
+              element.getAttribute("DeliveryUpgradeLevel")!,
+              element.getAttribute("DeliveryTime") ?? "0")
+          : null;
+      XmlElement? recipeDeliveryElement = element.getElement("RecipeDelivery");
+      RecipeDelivery? recipeDelivery = recipeDeliveryElement == null
+          ? null
+          : RecipeDelivery.fromXml(
+              recipeDeliveryElement.getAttribute("Name")!,
+              recipeDeliveryElement.getAttribute("DeliveryTime")!,
+              recipeDeliveryElement.getAttribute("ItemLevel")!,
+              recipeDeliveryElement.getAttribute("PlayerLevel")!);
       final item = Equipment.fromUpgradeString(
           type, id, upgradeLevel == "0" ? "100" : upgradeLevel,
-          acquireType: acquireType);
+          acquireType: acquireType,
+          upgradeDelivery: upgradeDelivery,
+          recipeDelivery: recipeDelivery);
       item.enchantments = enchantments;
       if (id == selectedId) {
         setEquipped(item);

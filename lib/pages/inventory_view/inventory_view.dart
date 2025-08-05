@@ -104,9 +104,9 @@ class _InventoryViewState extends State<InventoryView> {
   @override
   Widget build(BuildContext context) {
     final suggested = _generateSuggestedEntries().toList();
-    final found = _generateFoundEntries().toList();
+    final owned = _generateOwnedEntries().toList();
     const foundOffset = 1;
-    final suggestedOffset = foundOffset + found.length + 1;
+    final suggestedOffset = foundOffset + owned.length + 1;
     final children = [
       Padding(
           padding: const EdgeInsets.only(bottom: 8.0, left: 8, right: 8),
@@ -140,7 +140,7 @@ class _InventoryViewState extends State<InventoryView> {
               ),
             ],
           )),
-      ...found,
+      ...owned,
       if (suggested.isNotEmpty)
         const Row(
           children: [
@@ -189,7 +189,7 @@ class _InventoryViewState extends State<InventoryView> {
             child: ListView.separated(
                 itemBuilder: (context, index) {
                   if ((index >= foundOffset &&
-                          index < foundOffset + found.length) ||
+                          index < foundOffset + owned.length) ||
                       (index >= suggestedOffset &&
                           index < suggestedOffset + suggested.length)) {
                     final borderRadius = BorderRadius.vertical(
@@ -198,7 +198,7 @@ class _InventoryViewState extends State<InventoryView> {
                                 ? 24
                                 : 4),
                         bottom: Radius.circular(
-                            (index == found.length - foundOffset + 1) ||
+                            (index == owned.length - foundOffset + 1) ||
                                     (index ==
                                         suggestedOffset + suggested.length - 1)
                                 ? 24
@@ -209,7 +209,7 @@ class _InventoryViewState extends State<InventoryView> {
                     return children[index];
                   }
                 },
-                separatorBuilder: (_, __) => const SizedBox(height: 2),
+                separatorBuilder: (_, __) => const SizedBox(height: 2.5),
                 itemCount: children.length,
                 shrinkWrap: true)),
       ),
@@ -220,7 +220,7 @@ class _InventoryViewState extends State<InventoryView> {
     );
   }
 
-  Iterable<Widget> _generateFoundEntries() {
+  Iterable<Widget> _generateOwnedEntries() {
     final theme = Theme.of(context);
     return foundEquipment.asMap().entries.map((entry) {
       final item = entry.value;
@@ -406,6 +406,197 @@ class _InventoryViewState extends State<InventoryView> {
               ),
             ),
           ),
+          if (item.recipeDelivery != null) ...[
+            Divider(
+              color: theme.colorScheme.surfaceContainer,
+              thickness: 1,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(16),
+                child: Container(
+                  color: theme.colorScheme.surfaceContainerLow,
+                  child: Padding(
+                    padding: const EdgeInsets.all(24.0),
+                    child: Column(spacing: 8, children: [
+                      Row(
+                        spacing: 16,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  item.recipeDelivery = null;
+                                });
+                              },
+                              icon: const Icon(Icons.delete)),
+                          Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                              "Recipe in progress",
+                              style: theme.textTheme.titleLarge,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Text("Recipe: ${item.recipeDelivery!.tier.recipeDeliveryName}",
+                          style: theme.textTheme.bodyLarge),
+                      Text(
+                        "Finishes: ${item.recipeDelivery!.time.toString()}",
+                        style: theme.textTheme.bodyLarge,
+                      ),
+                      if (item.recipeDelivery!.time
+                          .isAfter(DateTime.now())) ...[
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                                "Time left: ${item.recipeDelivery!.time.difference(DateTime.now())}",
+                                style: theme.textTheme.bodyLarge),
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 4.0),
+                              child: IconButton(
+                                  onPressed: () {
+                                    setState(() {});
+                                  },
+                                  icon: const Icon(Icons.replay)),
+                            )
+                          ],
+                        ),
+                        FilledButton.icon(
+                          onPressed: () {
+                            setState(() {
+                              item.recipeDelivery!.time = DateTime.now();
+                              Fluttertoast.showToast(msg: "Meido In Hebun!");
+                            });
+                          },
+                          label: const Text("Skip"),
+                          icon: const Icon(Icons.fast_forward),
+                        )
+                      ] else
+                        Row(
+                          spacing: 4,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Icon(Icons.check, color: Colors.green),
+                            Text("Already Done",
+                                style: theme.textTheme.titleMedium),
+                          ],
+                        )
+                    ]),
+                  ),
+                ),
+              ),
+            )
+          ],
+          if (item.upgradeDelivery != null) ...[
+            Divider(
+              color: theme.colorScheme.surfaceContainer,
+              thickness: 1,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(16),
+                child: Container(
+                  color: theme.colorScheme.surfaceContainerLow,
+                  child: Padding(
+                    padding: const EdgeInsets.all(24.0),
+                    child: Column(spacing: 8, children: [
+                      Row(
+                        spacing: 16,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  item.upgradeDelivery = null;
+                                });
+                              },
+                              icon: const Icon(Icons.delete)),
+                          Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                              "Upgrade in progress",
+                              style: theme.textTheme.titleLarge,
+                            ),
+                          ),
+                        ],
+                      ),
+                      if (item.upgradeDelivery!.level != item.level)
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          spacing: 4,
+                          children: [
+                            Text("Level: ${item.level}",
+                                style: theme.textTheme.bodyLarge),
+                            const Icon(Icons.arrow_right_alt),
+                            Text("${item.upgradeDelivery!.level}",
+                                style: theme.textTheme.bodyLarge)
+                          ],
+                        ),
+                      if (item.upgradeDelivery!.upgrade != item.upgrade &&
+                          item.upgrade != 0)
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          spacing: 4,
+                          children: [
+                            Text("Upgrade level: ${item.upgrade}",
+                                style: theme.textTheme.bodyLarge),
+                            const Icon(Icons.arrow_right_alt),
+                            Text("${item.upgradeDelivery!.upgrade}",
+                                style: theme.textTheme.bodyLarge)
+                          ],
+                        ),
+                      Text(
+                        "Finishes: ${item.upgradeDelivery!.time.toString()}",
+                        style: theme.textTheme.bodyLarge,
+                      ),
+                      if (item.upgradeDelivery!.time
+                          .isAfter(DateTime.now())) ...[
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                                "Time left: ${item.upgradeDelivery!.time.difference(DateTime.now())}",
+                                style: theme.textTheme.bodyLarge),
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 4.0),
+                              child: IconButton(
+                                  onPressed: () {
+                                    setState(() {});
+                                  },
+                                  icon: const Icon(Icons.replay)),
+                            )
+                          ],
+                        ),
+                        FilledButton.icon(
+                          onPressed: () {
+                            setState(() {
+                              item.upgradeDelivery!.time = DateTime.now();
+                              Fluttertoast.showToast(msg: "Meido In Hebun!");
+                            });
+                          },
+                          label: const Text("Skip"),
+                          icon: const Icon(Icons.fast_forward),
+                        )
+                      ] else
+                        Row(
+                          spacing: 4,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Icon(Icons.check, color: Colors.green),
+                            Text("Already Done",
+                                style: theme.textTheme.titleMedium),
+                          ],
+                        )
+                    ]),
+                  ),
+                ),
+              ),
+            )
+          ],
           Divider(
             color: theme.colorScheme.surfaceContainer,
             thickness: 1,
