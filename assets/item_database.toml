@@ -3804,6 +3804,42 @@ description = "Striking Falcon is a weapon that can be purchased in a special of
 traits = ["offer"]
 enchantments = ["precision"]
 
+[WEAPON_ORDERS_OATH_25]
+name = "Order's Oath"
+description = "Order's Oath is a weapon that can be purchased in a special offer in Shadow Fight 2. It can be purchased for real money."
+traits = ["offer"]
+enchantments = ["bleeding"]
+
+[HELM_VEIL_OF_DAWN_25]
+name = "Veil of Dawn"
+description = ""
+traits = ["offer"]
+enchantments = ["shielding"]
+
+[RANGED_WINDS_HARMONY_25]
+name = "Winds Harmony"
+description = ""
+traits = ["offer"]
+enchantments = ["precision"]
+
+[RANGED_PATH_OF_HERESY_25]
+name = "Path of Heresy"
+description = ""
+traits = ["offer"]
+enchantments = ["stun"]
+
+[WEAPON_SEERS_STAFF_25]
+name = "Seer's Staff"
+description = "Seer's Staff is a weapon that can be purchased in a special offer in Shadow Fight 2. It can be purchased for real money."
+traits = ["offer"]
+enchantments = ["weakness"]
+
+[MAGIC_SONG_OF_THE_TIDE_25]
+name = "Song of the Tide"
+description = "Song of the Tide is a magic in Shadow Fight 2. This magic was available in a weekly offer for real money. The player makes a water wave with both hands, simultaneously extending both arms, then leans forward and launches magic at the enemy. Song of the Tide will move horizontally across the battlefield. When the magic hits the target, the opponent is thrown back and takes 45 points of damage."
+traits = ["offer"]
+enchantments = ["frenzy"]
+
 [HELM_HOAXEN_25]
 name = "Сhimera Paradox"
 description = ""

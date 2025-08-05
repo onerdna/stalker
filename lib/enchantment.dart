@@ -45,6 +45,23 @@ extension EnchantmentTierExtension on EnchantmentTier {
         return 0xFF441752;
     }
   }
+
+  String get recipeDeliveryName {
+    switch (this) {
+      case EnchantmentTier.simple:
+        return "Simple";
+      case EnchantmentTier.medium:
+        return "Medium";
+      case EnchantmentTier.mythical:
+        return "Mythical"; // either Mythical or Mythic, not tested
+    }
+  }
+
+  static EnchantmentTier? tierFromRecipeName(String recipeDeliveryName) {
+    return EnchantmentTier.values
+        .where((c) => c.recipeDeliveryName == recipeDeliveryName)
+        .firstOrNull;
+  }
 }
 
 class Enchantment {
