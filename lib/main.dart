@@ -22,7 +22,7 @@ import 'package:flutter/services.dart';
 import 'package:logger/logger.dart';
 import 'package:signals/signals_flutter.dart';
 import 'package:stalker/app.dart';
-import 'package:stalker/item_database.dart';
+import 'package:stalker/logic/item_database.dart';
 import 'package:stalker/logcat.dart';
 import 'package:stalker/themes.dart';
 import 'package:toml/toml.dart';

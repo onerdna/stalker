@@ -16,9 +16,9 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-import 'package:stalker/enchantment.dart';
-import 'package:stalker/equipment_type.dart';
-import 'package:stalker/equipment.dart';
+import 'package:stalker/logic/enchantment.dart';
+import 'package:stalker/logic/equipment_type.dart';
+import 'package:stalker/logic/equipment.dart';
 import 'package:xml/xml.dart';
 import 'package:xml/xpath.dart';
 

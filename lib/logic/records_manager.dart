@@ -22,7 +22,7 @@ import 'dart:io';
 import 'package:crypto/crypto.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:stalker/record.dart';
+import 'package:stalker/logic/record.dart';
 import 'package:stalker/shizuku_api.dart';
 import 'package:stalker/shizuku_file.dart';
 import 'package:toml/toml.dart';

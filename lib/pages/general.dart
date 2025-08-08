@@ -18,9 +18,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:stalker/click_tooltip.dart';
-import 'package:stalker/record.dart';
-import 'package:stalker/records_manager.dart';
+import 'package:stalker/ui/click_tooltip.dart';
+import 'package:stalker/logic/record.dart';
+import 'package:stalker/logic/records_manager.dart';
 
 class GeneralPage extends StatefulWidget {
   const GeneralPage({super.key});

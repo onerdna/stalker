@@ -17,8 +17,8 @@
  */
 
 import 'package:flutter/services.dart';
-import 'package:stalker/enchantment.dart';
-import 'package:stalker/equipment_type.dart';
+import 'package:stalker/logic/enchantment.dart';
+import 'package:stalker/logic/equipment_type.dart';
 import 'package:toml/toml.dart';
 
 class ItemTrait {
