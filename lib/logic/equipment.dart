@@ -16,10 +16,10 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-import 'package:stalker/enchantment.dart';
-import 'package:stalker/equipment_type.dart';
-import 'package:stalker/item_database.dart';
-import 'package:stalker/record.dart';
+import 'package:stalker/logic/enchantment.dart';
+import 'package:stalker/logic/equipment_type.dart';
+import 'package:stalker/logic/item_database.dart';
+import 'package:stalker/logic/record.dart';
 import 'package:xml/xml.dart';
 
 class UpgradeDelivery {

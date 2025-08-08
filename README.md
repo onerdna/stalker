@@ -29,22 +29,22 @@ Stalker allows users to inspect and optionally tweak various aspects of their Sh
 - Download and install the APK file from [releases](https://github.com/onerdna/stalker/releases) page
 - Install [Shizuku](https://shizuku.rikka.app/)
 - Start Shizuku service if it's not already running. There are great tutorials on the internet of doing so.
-- Launch the app, grant Shizuku permissions
-- Proceed to the additional setup step. Before that, ensure that the game is fully closed. Minimize the app (do not fully close it!), open the game and wait until it fully loads. Then, close the game, go back to the app and press "Reinitialize" button.
+- Launch the app, grant Shizuku permissions.
+- Proceed to the additional setup step. Before that, ensure that the game is fully closed. Minimize the app (do not fully close it!), open the game and wait until it fully loads. Then, close the game, go back to the app and tap "Reinitialize" button.
 
 ### ❗ Before using...
-- Fully close the game and only then open the app
-- If you make any tweaks to the save, then press "Save" button after doing any modifications
+- Completely close the game before opening the app.
+- If you make any changes, you must tap the 'Save' button for them to take effect.
 
 ## ❓ FaQ
-- **Will there be an IOS version?**
+- **Will there ever be an IOS version?**
   - No.
-- **Why the app uses Shizuku?**
-  - Shizuku is required to access save files (because it's not accessible for regular apps) and it's used to launch setup service binary.
-- **Can you add verified gems/raid consumables or damage hack?**
+- **Why does the app use Shizuku?**
+  - Shizuku is required to access save files, which aren't normally accessible to regular apps. It's also used to launch the setup service binary.
+- **Can you add verified gems, raid consumables or a damage hack?**
   - No.
-- **What setup service actually does? I'm concerned about running high-privelleged compiled binaries.**
-  - The only purpose of setup service is to tamper your user id from the game's process. After doing so, it will automatically close itself (or after two minutes of inactivity). User ID is different for each device and it's just a random string that does not contain any information about your device. I won't share the process of acquiring the ID here nor the source code of the service because it's the only possible way of doing that, so it can be patched easily by the developers if they know. 
+- **What does the setup service actually do? I'm concerned about running high-privileged compiled binaries.**
+  - The setup service’s only purpose is to tamper with your user ID inside the game’s process. Once it does that, it automatically closes — or after two minutes of inactivity. The user ID is just a random string unique to each device. It doesn’t contain any personal or device-identifiable information. I won’t share the exact method used to get the ID, or the source code for the service, because this is the only known working method. If it becomes public, the developers could easily patch it.
 
 ### ❤ Special thanks to:
 - [**Shizuku**](https://shizuku.rikka.app/)

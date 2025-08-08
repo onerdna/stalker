@@ -17,9 +17,9 @@
  */
 
 import 'package:flutter/material.dart';
-import 'package:stalker/click_tooltip.dart';
-import 'package:stalker/enchantment.dart';
-import 'package:stalker/equipment_type.dart';
+import 'package:stalker/ui/click_tooltip.dart';
+import 'package:stalker/logic/enchantment.dart';
+import 'package:stalker/logic/equipment_type.dart';
 
 class NewEnchantmentDialog extends StatefulWidget {
   final List<Enchantment> enchantments;

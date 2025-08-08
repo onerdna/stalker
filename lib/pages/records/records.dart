@@ -28,8 +28,8 @@ import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:stalker/app.dart';
 import 'package:stalker/pages/records/new_record.dart';
-import 'package:stalker/record.dart';
-import 'package:stalker/records_manager.dart';
+import 'package:stalker/logic/record.dart';
+import 'package:stalker/logic/records_manager.dart';
 import 'package:xml/xml.dart';
 
 class RecordsPage extends StatefulWidget {

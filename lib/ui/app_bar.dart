@@ -19,8 +19,8 @@
 import 'package:flutter/material.dart';
 import 'package:signals/signals_flutter.dart';
 import 'package:stalker/app.dart';
-import 'package:stalker/pages/logcat_stream_page.dart';
-import 'package:stalker/pages/settings_page.dart';
+import 'package:stalker/pages/logcat_stream.dart';
+import 'package:stalker/pages/settings.dart';
 
 class StalkerAppBar extends StatelessWidget implements PreferredSizeWidget {
   const StalkerAppBar({super.key});

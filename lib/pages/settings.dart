@@ -19,8 +19,8 @@
 import 'package:flutter/material.dart';
 import 'package:signals/signals_flutter.dart';
 import 'package:stalker/app.dart';
-import 'package:stalker/pages/about_page.dart';
-import 'package:stalker/records_manager.dart';
+import 'package:stalker/pages/about.dart';
+import 'package:stalker/logic/records_manager.dart';
 import 'package:stalker/themes.dart';
 
 class SettingsPage extends StatefulWidget {

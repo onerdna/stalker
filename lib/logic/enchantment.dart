@@ -17,7 +17,7 @@
  */
 
 import 'package:flutter/services.dart';
-import 'package:stalker/equipment_type.dart';
+import 'package:stalker/logic/equipment_type.dart';
 import 'package:toml/toml.dart';
 import 'package:xml/xml.dart';
 

@@ -21,16 +21,16 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:stalker/app.dart';
-import 'package:stalker/click_tooltip.dart';
-import 'package:stalker/confirm_button.dart';
-import 'package:stalker/enchantment.dart';
-import 'package:stalker/equipment.dart';
-import 'package:stalker/equipment_type.dart';
-import 'package:stalker/item_database.dart';
+import 'package:stalker/ui/click_tooltip.dart';
+import 'package:stalker/ui/confirm_button.dart';
+import 'package:stalker/logic/enchantment.dart';
+import 'package:stalker/logic/equipment.dart';
+import 'package:stalker/logic/equipment_type.dart';
+import 'package:stalker/logic/item_database.dart';
 import 'package:stalker/pages/inventory_view/equipment_search_bar.dart';
 import 'package:stalker/pages/inventory_view/new_enchantment.dart';
 import 'package:stalker/pages/inventory_view/new_item.dart';
-import 'package:stalker/records_manager.dart';
+import 'package:stalker/logic/records_manager.dart';
 
 class InventoryTile extends StatelessWidget {
   final Widget title;

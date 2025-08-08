@@ -20,10 +20,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:stalker/equipment_type.dart';
-import 'package:stalker/equipment.dart';
+import 'package:stalker/logic/equipment_type.dart';
+import 'package:stalker/logic/equipment.dart';
 import 'package:stalker/pages/inventory_view/inventory_view.dart';
-import 'package:stalker/records_manager.dart';
+import 'package:stalker/logic/records_manager.dart';
 
 class EquipmentPage extends StatefulWidget {
   const EquipmentPage({super.key});

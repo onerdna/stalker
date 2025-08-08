@@ -19,8 +19,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:stalker/pages/edit_xml/text_search_bar.dart';
-import 'package:stalker/record.dart';
-import 'package:stalker/records_manager.dart';
+import 'package:stalker/logic/record.dart';
+import 'package:stalker/logic/records_manager.dart';
 import 'package:xml/xml.dart';
 
 class EditXmlPage extends StatefulWidget {

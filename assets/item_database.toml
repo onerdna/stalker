@@ -3840,8 +3840,14 @@ description = "Song of the Tide is a magic in Shadow Fight 2. This magic was ava
 traits = ["offer"]
 enchantments = ["frenzy"]
 
+[WEAPON_SWORD_SUMMER_FEST_25]
+name = "Moon Oath"
+description = "Nekki Summer Fest 2025 gift"
+traits = ["gift"]
+enchantments = ["lifesteal"]
+
 [HELM_HOAXEN_25]
-name = "Сhimera Paradox"
+name = "Chimera Paradox"
 description = ""
 traits = ["offer"]
 enchantments = ["damage_absorption"]
