@@ -1,10 +1,14 @@
-[boss]
-display = "Boss Weapon"
-color = "0xFFFFD66B"
-
 [unobtainable]
 display = "Unobtainable"
 color = "0xFFFF3F33"
+
+[deceased]
+display = "Deceased"
+color = "0xFFD3D3D3"
+
+[boss]
+display = "Boss Weapon"
+color = "0xFFFFD66B"
 
 [special_edition]
 display = "Special Edition"
@@ -17,6 +21,86 @@ color = "0xFF00CAFF"
 [challenger]
 display = "Challenger Weapon"
 color = "0xFFFFAAAA"
+
+[offer]
+display = "Offer Exclusive Item"
+color = "0xFFDC8BE0"
+
+[replica]
+display = "Replica"
+color = "0xFF7F8CAA"
+
+[gift]
+display = "Gift"
+color = "0xFF3F7D58"
+
+[anniversary10]
+display = "10th Anniversary"
+color = "0xFF254D70"
+
+[ram_navami21]
+display = "Ram Navami 2021"
+color = "0xFFFFE082"
+
+[independence21]
+display = "Independence Day 2021"
+color = "0xFFFFE082"
+
+[summer21]
+display = "Summer 2021"
+color = "0xFFFFE082"
+
+[set_monk]
+display = "Monk Set"
+color = "0xFF3CB371"
+
+[set_sentinel]
+display = "Sentinel Set"
+color = "0xFFCD5C5C"
+
+[set_warlock]
+display = "Warlock Set"
+color = "0xFF8B0000"
+
+[set_forest_guardian]
+display = "Forest Guardian Set"
+color = "0xFF4B0082"
+
+[set_skanda]
+display = "Skanda Set"
+color = "0xFFFFD700"
+
+[set_creators_of_the_wind]
+display = "Creator of the Winds Set"
+color = "0xFF708090"
+
+[set_director]
+display = "Director Set"
+color = "0xFF808080"
+
+[set_chronos]
+display = "Chronos Set"
+color = "0xFF1E90FF"
+
+[set_neo_wanderer]
+display = "Neo-Wanderer Set"
+color = "0xFF00FFFF"
+
+[set_spore_soul]
+display = "Spore Soul Set"
+color = "0xFFFFFF00"
+
+[set_volcano]
+display = "Volcano Set"
+color = "0xFFFF4500"
+
+[set_karcer]
+display = "Karcer Set"
+color = "0xFFFFFFFF"
+
+[set_dragon]
+display = "Dragon Set"
+color = "0xFFFF3F33"
 
 [hw14]
 display = "Halloween 2014"
@@ -213,87 +297,3 @@ color = "0xFFE57373"
 [chny24]
 display = "Chinese New Year 2024"
 color = "0xFFE57373"
-
-[ram_navami21]
-display = "Ram Navami 2021"
-color = "0xFFFFE082"
-
-[independence21]
-display = "Independence Day 2021"
-color = "0xFFFFE082"
-
-[summer21]
-display = "Summer 2021"
-color = "0xFFFFE082"
-
-[offer]
-display = "Offer Exclusive Item"
-color = "0xFFDC8BE0"
-
-[replica]
-display = "Replica"
-color = "0xFF7F8CAA"
-
-[gift]
-display = "Gift"
-color = "0xFF3F7D58"
-
-[set_monk]
-display = "Monk Set"
-color = "0xFF3CB371"
-
-[set_sentinel]
-display = "Sentinel Set"
-color = "0xFFCD5C5C"
-
-[set_warlock]
-display = "Warlock Set"
-color = "0xFF8B0000"
-
-[set_forest_guardian]
-display = "Forest Guardian Set"
-color = "0xFF4B0082"
-
-[set_skanda]
-display = "Skanda Set"
-color = "0xFFFFD700"
-
-[set_creators_of_the_wind]
-display = "Creator of the Winds Set"
-color = "0xFF708090"
-
-[set_director]
-display = "Director Set"
-color = "0xFF808080"
-
-[set_chronos]
-display = "Chronos Set"
-color = "0xFF1E90FF"
-
-[set_neo_wanderer]
-display = "Neo-Wanderer Set"
-color = "0xFF00FFFF"
-
-[set_spore_soul]
-display = "Spore Soul Set"
-color = "0xFFFFFF00"
-
-[set_volcano]
-display = "Volcano Set"
-color = "0xFFFF4500"
-
-[set_karcer]
-display = "Karcer Set"
-color = "0xFFFFFFFF"
-
-[set_dragon]
-display = "Dragon Set"
-color = "0xFFFF3F33"
-
-[anniversary10]
-display = "10th Anniversary"
-color = "0xFF254D70"
-
-[deceased]
-display = "Deceased"
-color = "0xFFD3D3D3"

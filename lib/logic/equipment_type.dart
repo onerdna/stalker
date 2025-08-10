@@ -49,4 +49,6 @@ extension EquipmentTypeExtension on EquipmentType {
         return "Helm";
     }
   }
+
+  String get display => slot;
 }

@@ -66,6 +66,7 @@ class Equipment {
   int upgrade = 0;
   UpgradeDelivery? upgradeDelivery;
   RecipeDelivery? recipeDelivery;
+  
   static const minLevel = 1;
   static const maxLevel = 52;
   static const minUpgrade = 0;

@@ -26,6 +26,9 @@ class ItemTrait {
   final String id;
   final int color;
 
+  @override
+  bool operator ==(Object other) => other is ItemTrait && other.id == id;
+
   const ItemTrait(this.id, this.display, this.color);
 }
 
@@ -57,9 +60,13 @@ class ItemDatabase {
     return itemTraits.map((e) => traits.where((t) => t.id == e).first);
   }
 
-  static Iterable<String> getEquipment(EquipmentType type) => dictionary.entries
-      .where((e) => EquipmentTypeExtension.fromId(e.key) == type)
-      .map((e) => e.key);
+  static Iterable<String> getEquipmentByType(EquipmentType type) =>
+      dictionary.entries
+          .where((e) => EquipmentTypeExtension.fromId(e.key) == type)
+          .map((e) => e.key);
+
+  static Iterable<String> getAllEquipment() =>
+      dictionary.entries.map((e) => e.key);
 
   static Iterable<Enchantment> getEnchantments(String id) {
     final enchantments =
