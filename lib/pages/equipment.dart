@@ -22,6 +22,8 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:stalker/logic/equipment_type.dart';
 import 'package:stalker/logic/equipment.dart';
+import 'package:stalker/logic/item_database.dart';
+import 'package:stalker/pages/equipment_manager.dart';
 import 'package:stalker/pages/inventory_view/inventory_view.dart';
 import 'package:stalker/logic/records_manager.dart';
 
@@ -75,93 +77,130 @@ class _EquipmentPageState extends State<EquipmentPage> {
 
   @override
   Widget build(BuildContext context) {
+    final gridItems = [
+      (
+        "Weapon",
+        "assets/images/katana.png",
+        () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const InventoryView(EquipmentType.weapon),
+            ),
+          );
+        }
+      ),
+      (
+        "Ranged",
+        "assets/images/shuriken.png",
+        () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const InventoryView(EquipmentType.ranged),
+            ),
+          );
+        }
+      ),
+      (
+        "Magic",
+        "assets/images/amulet.png",
+        () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const InventoryView(EquipmentType.magic),
+            ),
+          );
+        }
+      ),
+      (
+        "Armor",
+        "assets/images/armor.png",
+        () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const InventoryView(EquipmentType.armor),
+            ),
+          );
+        }
+      ),
+      (
+        "Helm",
+        "assets/images/helm.png",
+        () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const InventoryView(EquipmentType.helm),
+            ),
+          );
+        }
+      ),
+      (
+        "Equipment Manager",
+        "assets/images/weapons.png",
+        () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => EquipmentManager(
+                existingEquipment: ItemDatabase.getAllEquipment(),
+                ownedEquipment: RecordsManager.activeRecord!.equipment.values
+                    .expand((e) => e)
+                    .toList(),
+              ),
+            ),
+          );
+        }
+      ),
+      (
+        "Become Titan",
+        "assets/images/robot-assistant.png",
+        () {
+          _becomeTitan(context);
+        }
+      ),
+    ];
     return Scaffold(
-        body: GridView.count(
-      crossAxisCount: 3,
-      mainAxisSpacing: 8,
-      crossAxisSpacing: 8,
-      childAspectRatio: 1,
+        body: GridView.builder(
       padding: EdgeInsets.zero,
-      shrinkWrap: false,
-      children: [
-        (
-          "Weapon",
-          "assets/images/katana.png",
-          () => {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) =>
-                        const InventoryView(EquipmentType.weapon)))
-              }
-        ),
-        (
-          "Ranged",
-          "assets/images/shuriken.png",
-          () => {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) =>
-                        const InventoryView(EquipmentType.ranged)))
-              }
-        ),
-        (
-          "Magic",
-          "assets/images/amulet.png",
-          () => {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) =>
-                        const InventoryView(EquipmentType.magic)))
-              }
-        ),
-        (
-          "Armor",
-          "assets/images/armor.png",
-          () => {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) =>
-                        const InventoryView(EquipmentType.armor)))
-              }
-        ),
-        (
-          "Helm",
-          "assets/images/helm.png",
-          () => {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) =>
-                        const InventoryView(EquipmentType.helm)))
-              }
-        ),
-        (
-          "Become Titan",
-          "assets/images/robot-assistant.png",
-          () => _becomeTitan(context)
-        ),
-      ].map((entry) {
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 3,
+        mainAxisSpacing: 0,
+        crossAxisSpacing: 8,
+        childAspectRatio: 0.88
+      ),
+      itemCount: gridItems.length,
+      itemBuilder: (context, index) {
+        final (label, imagePath, onTap) = gridItems[index];
         return Column(
+          mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
               decoration: BoxDecoration(
-                  color: Theme.of(context)
-                      .colorScheme
-                      .surfaceTint
-                      .withValues(alpha: 0.1),
-                  borderRadius: BorderRadius.circular(16)),
+                color: Theme.of(context)
+                    .colorScheme
+                    .surfaceTint
+                    .withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(16),
+              ),
               child: TextButton(
                 style: TextButton.styleFrom(
-                    padding: const EdgeInsets.all(12),
-                    shape: const ContinuousRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(24)))),
-                onPressed: () => entry.$3(),
-                child: Image.asset(entry.$2, width: 64, height: 64),
+                  padding: const EdgeInsets.all(12),
+                  shape: const ContinuousRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(24)),
+                  ),
+                ),
+                onPressed: onTap,
+                child: Image.asset(imagePath, width: 64, height: 64),
               ),
             ),
             const SizedBox(height: 8),
             Text(
-              entry.$1,
+              label,
+              textAlign: TextAlign.center,
               style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
           ],
         );
-      }).toList(),
+      },
     ));
   }
 }

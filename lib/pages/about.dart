@@ -195,6 +195,10 @@ class _AboutPageState extends State<AboutPage> {
                       (
                         "Treasure icons created by kliwir art - Flaticon",
                         "https://www.flaticon.com/free-icons/treasure"
+                      ),
+                      (
+                        "Weapon icons created by Smashicons - Flaticon",
+                        "https://www.flaticon.com/free-icons/weapon"
                       )
                     ].map(
                       (e) => Column(

@@ -97,7 +97,7 @@ class _InventoryViewState extends State<InventoryView> {
     ownedEquipment =
         RecordsManager.activeRecord!.equipment[widget.equipmentType]!;
     foundEquipment = ownedEquipment;
-    existingEquipment = ItemDatabase.getEquipment(widget.equipmentType);
+    existingEquipment = ItemDatabase.getEquipmentByType(widget.equipmentType);
     _searchEquipment(query);
   }
 
@@ -177,7 +177,7 @@ class _InventoryViewState extends State<InventoryView> {
         ),
       ),
       const SizedBox(
-        height: 120,
+        height: 80,
       )
     ];
     return Scaffold(
@@ -227,51 +227,77 @@ class _InventoryViewState extends State<InventoryView> {
       final isEquipped = RecordsManager.activeRecord!.isEquipped(item);
 
       return InventoryTile(
-        title: Row(
-          spacing: 8,
-          children: [
-            InkResponse(
-              onTap: () {
-                showConfirmationDialog(
-                    const Text("Are you sure?"),
-                    const Text(
-                      "This item will be deleted from your inventory",
-                      style: TextStyle(fontSize: 16),
-                    ),
-                    context, (ctx) {
-                  Navigator.of(ctx).pop();
-                  setState(() {
-                    foundEquipment.remove(item);
-                    ownedEquipment.remove(item);
-                    _searchEquipment(query);
-                  });
-                });
-              },
-              radius: 16,
-              containedInkWell: true,
-              child: const Icon(Icons.delete),
-            ),
-            Text(item.name),
-            const Spacer(),
-            if (isEquipped)
-              const Text(
-                "Equipped",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
-              )
-            else
-              ConfirmButton(
-                onConfirmed: () {
-                  setState(() {
-                    RecordsManager.activeRecord!.setEquipped(item);
-                  });
-                },
-                style: TextButton.styleFrom(
-                    padding: EdgeInsets.zero,
-                    minimumSize: Size.zero,
-                    tapTargetSize: MaterialTapTargetSize.shrinkWrap),
-                child: const Text("Equip"),
-              )
-          ],
+        title: LayoutBuilder(
+          builder: (context, constraints) {
+            return Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                InkResponse(
+                  onTap: () {
+                    showConfirmationDialog(
+                      const Text("Are you sure?"),
+                      const Text(
+                        "This item will be deleted from your inventory",
+                        style: TextStyle(fontSize: 16),
+                      ),
+                      context,
+                      (ctx) {
+                        Navigator.of(ctx).pop();
+                        setState(() {
+                          foundEquipment.remove(item);
+                          ownedEquipment.remove(item);
+                          _searchEquipment(query);
+                        });
+                      },
+                    );
+                  },
+                  radius: 16,
+                  containedInkWell: true,
+                  child: const Icon(Icons.delete),
+                ),
+                Expanded(
+                  child: Stack(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(
+                            right: 70),
+                        child: Text(
+                          item.name,
+                          softWrap: true,
+                          overflow: TextOverflow.fade,
+                        ),
+                      ),
+                      Positioned(
+                        right: 0,
+                        top: 0,
+                        child: isEquipped
+                            ? const Text(
+                                "Equipped",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 14),
+                              )
+                            : ConfirmButton(
+                                onConfirmed: () {
+                                  setState(() {
+                                    RecordsManager.activeRecord!
+                                        .setEquipped(item);
+                                  });
+                                },
+                                style: TextButton.styleFrom(
+                                  padding: EdgeInsets.zero,
+                                  minimumSize: Size.zero,
+                                  tapTargetSize:
+                                      MaterialTapTargetSize.shrinkWrap,
+                                ),
+                                child: const Text("Equip"),
+                              ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            );
+          },
         ),
         subtitle: Column(
           children: [
@@ -440,7 +466,8 @@ class _InventoryViewState extends State<InventoryView> {
                           ),
                         ],
                       ),
-                      Text("Recipe: ${item.recipeDelivery!.tier.recipeDeliveryName}",
+                      Text(
+                          "Recipe: ${item.recipeDelivery!.tier.recipeDeliveryName}",
                           style: theme.textTheme.bodyLarge),
                       Text(
                         "Finishes: ${item.recipeDelivery!.time.toString()}",
