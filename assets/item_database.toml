@@ -137,7 +137,7 @@ traits = ["unobtainable"]
 [WEAPON_SHOCKER_CLAWS_ARC]
 name = ""
 description = ""
-traits = ["unobtainable"]
+traits = ["defunct"]
 
 [WEAPON_SUPER_BIG_SWORD]
 name = "Devastator"
@@ -147,12 +147,12 @@ enchantments = ["lifesteal"]
 
 [WEAPON_TITAN_SWORD]
 name = "Titan's Desolator"
-traits = ["unobtainable"]
+traits = ["unobtainable", "deceased"]
 
 [WEAPON_UNKNOWN]
 name = "Unknown Weapon"
 description = ""
-traits = []
+traits = ["defunct"]
 
 [WEAPON_RAID_KARCER_SET]
 name = "Claws of Perversity"
@@ -169,8 +169,8 @@ enchantments = ["predators_fury"]
 
 [WEAPON_C3_z3]
 name = ""
-description = ""
-traits = []
+description = "An obsolete equipment code for Sentinel's set early prototype."
+traits = ["defunct"]
 
 [WEAPON_GLAIVE_25]
 name = "God Eater"
@@ -314,12 +314,12 @@ traits = ["unobtainable"]
 [ARMOR_UNKNOWN]
 name = "Unknown Armor"
 description = ""
-traits = []
+traits = ["defunct"]
 
 [ARMOR_C3_z3]
 name = ""
-description = ""
-traits = ["unobtainable"]
+description = "An obsolete equipment code for Sentinel's set early prototype."
+traits = ["defunct"]
 
 [ARMOR_WOMAN_RONIN]
 name = ""
@@ -333,9 +333,9 @@ traits = ["unobtainable"]
 
 [ARMOR_WOMAN_ALLOY]
 traits = ["unobtainable"]
-
 name = ""
 description = ""
+
 [ARMOR_WOMAN_GREEN]
 name = ""
 description = ""
@@ -658,13 +658,13 @@ traits = ["unobtainable"]
 
 [HEAD_C3_z3]
 name = ""
-description = ""
-traits = []
+description = "An obsolete equipment code for Sentinel's set early prototype."
+traits = ["defunct"]
 
 [HELM_UNKNOWN]
 name = "Unknown Helm"
 description = ""
-traits = ["unobtainable"]
+traits = ["defunct"]
 
 [HELM_AGNISSEAL]
 name = "Agni's Seal"
@@ -694,12 +694,12 @@ traits = ["unobtainable"]
 
 [RANGED_C3_z3]
 name = ""
-description = ""
+description = "An obsolete equipment code for Sentinel's set early prototype."
 traits = []
 
 [RANGED_UNKNOWN]
 name = "Unknown Ranged Weapon"
-traits = ["unobtainable"]
+traits = ["defunct"]
 
 [RANGED_BLASTER_ROGUESFORTUNE_25]
 name = "Rogue's Fortune"
@@ -720,56 +720,56 @@ traits = ["unobtainable"]
 [MAGIC_BUTCHER_EARTHQUAKE]
 name = ""
 description = ""
-traits = []
+traits = ["defunct"]
 
 [MAGIC_ARCANE_BALL]
 name = ""
 description = ""
-traits = []
+traits = ["defunct"]
 
 [MAGIC_C3_z3]
 name = ""
-description = ""
-traits = []
+description = "An obsolete equipment code for Sentinel's set early prototype."
+traits = ["defunct"]
 
 [MAGIC_HIT_BOX]
 name = ""
 description = ""
-traits = []
+traits = ["defunct"]
 
 [MAGIC_HUNGER_CLAWS]
 name = "Hunger Claws"
 description = ""
-traits = ["unobtainable"]
+traits = ["defunct"]
 
 [MAGIC_MINE]
 name = ""
 description = ""
-traits = []
+traits = ["defunct"]
 
 [MAGIC_RAT_WAVE]
 name = "Rat Wave"
 description = ""
-traits = ["unobtainable"]
+traits = ["defunct"]
 
 [MAGIC_RESURRECTED_25]
 name = "Inner Rebellion"
-description = ""
-traits = []
+description = "It is mentioned in the game files. The functionality of magic is unknown"
+traits = ["defunct"]
 
 [MAGIC_UNKNOWN]
 name = "Unknown Power"
-traits = ["unobtainable"]
+traits = ["defunct"]
 
 [MAGIC_VERTICAL_TRIGGER]
 name = ""
 description = ""
-traits = []
+traits = ["defunct"]
 
 [MAGIC_WAR_WHIRL]
 name = "War Whirl"
 description = ""
-traits = ["unobtainable"]
+traits = ["defunct"]
 
 [MAGIC_DARK_WAVE]
 name = "Dark Wave"
@@ -778,13 +778,13 @@ traits = ["unobtainable"]
 
 [MAGIC_ENERGY_BALL_PINK_25]
 name = "Thorn Dome"
-description = "Thorn Dome is a magic in Shadow Fight 2. This magic was available in a weekly offer for real money for $2.99."
-traits = []
+description = "Thorn Dome is a magic in Shadow Fight 2. This magic was available in a weekly offer for real money for $2.99. This magic is the same magic found on Shadow Fight: Shades called Flower Sphere. This magic primarily used by Kanade."
+traits = ["offer"]
 
 [MAGIC_FEAR_RAY]
 name = "Fear Ray"
 description = ""
-traits = ["unobtainable"]
+traits = ["defunct"]
 
 [MAGIC_ICE_BALL]
 name = "Ice Ball"
@@ -794,7 +794,12 @@ traits = ["unobtainable"]
 [MAGIC_PROJECTILE]
 name = ""
 description = ""
-traits = []
+traits = ["defunct"]
+
+[TENEBRIS_MAGIC]
+name = "Medium Charge of Darkness"
+description = ""
+traits = ["unobtainable"]
 
 [MAGIC_GAZEOFTHEVOID_25]
 name = "Gaze of the Void"
@@ -3843,8 +3848,23 @@ enchantments = ["frenzy"]
 [WEAPON_SWORD_SUMMER_FEST_25]
 name = "Moon Oath"
 description = "Nekki Summer Fest 2025 gift"
-traits = ["gift"]
+traits = ["gift", "summer_fest_25"]
 enchantments = ["lifesteal"]
+
+[ARMOR_RAID_SUMMER_FEST_25]
+name = "K3vlar"
+description = ""
+traits = ["summer_fest_25"]
+
+[HELM_RAID_SUMMER_FEST_25]
+name = "Street Tempest"
+description = ""
+traits = ["summer_fest_25"]
+
+[WEAPON_KNUCKLES_RAID_SUMMER_FEST_25]
+name = "Urban Predator"
+description = ""
+traits = ["summer_fest_25"]
 
 [HELM_HOAXEN_25]
 name = "Chimera Paradox"

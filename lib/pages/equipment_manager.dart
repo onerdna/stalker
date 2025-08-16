@@ -46,7 +46,7 @@ class TraitItem {
   }
 
   bool enabledByDefault() {
-    return !["unobtainable", "deceased", "set_dragon"].contains(trait.id);
+    return !["unobtainable", "defunct", "deceased", "set_dragon"].contains(trait.id);
   }
 }
 
@@ -247,7 +247,7 @@ class _EquipmentManagerState extends State<EquipmentManager> {
                           var itemTraits = ItemDatabase.getTraits(e.id);
                           return itemTraits
                                   .any((t) => enabledTraits.contains(t)) ||
-                              (equipmentWithoutTraits && itemTraits.isEmpty);
+                              equipmentWithoutTraits && itemTraits.isEmpty;
                         }).toList();
                         for (var equipment in equipmentToRemove) {
                           RecordsManager.activeRecord!.equipment[equipment.type]

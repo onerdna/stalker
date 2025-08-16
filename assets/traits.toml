@@ -6,6 +6,10 @@ color = "0xFFFF3F33"
 display = "Deceased"
 color = "0xFFD3D3D3"
 
+[defunct]
+display = "Defunct"
+color = "0xFF3E0703"
+
 [boss]
 display = "Boss Weapon"
 color = "0xFFFFD66B"
@@ -49,6 +53,10 @@ color = "0xFFFFE082"
 [summer21]
 display = "Summer 2021"
 color = "0xFFFFE082"
+
+[summer_fest_25]
+display = "Summer Fest 2025"
+color = "0xFFFFE100"
 
 [set_monk]
 display = "Monk Set"
