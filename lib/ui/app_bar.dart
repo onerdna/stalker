@@ -19,7 +19,7 @@
 import 'package:flutter/material.dart';
 import 'package:signals/signals_flutter.dart';
 import 'package:stalker/app.dart';
-import 'package:stalker/pages/logcat_stream.dart';
+import 'package:stalker/pages/debug.dart';
 import 'package:stalker/pages/settings.dart';
 
 class StalkerAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -43,8 +43,7 @@ class StalkerAppBar extends StatelessWidget implements PreferredSizeWidget {
                             icon: const Icon(Icons.bug_report),
                             onPressed: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) =>
-                                        const LogcatStreamPage())),
+                                    builder: (context) => const DebugPage())),
                           )),
                       if (package.value?.version != null)
                         Text(

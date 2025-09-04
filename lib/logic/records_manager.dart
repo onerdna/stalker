@@ -23,6 +23,7 @@ import 'package:crypto/crypto.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:stalker/logic/record.dart';
+import 'package:stalker/main.dart';
 import 'package:stalker/shizuku_api.dart';
 import 'package:stalker/shizuku_file.dart';
 import 'package:toml/toml.dart';
@@ -42,7 +43,11 @@ class RecordsManager {
       e.metadata.isActive = false;
     }
     record?.metadata.isActive = true;
-    _updateRecordsMetadata();
+    try {
+      _updateRecordsMetadata();
+    } catch (e) {
+      logger.e("updateRecordsMetadata: $e");
+    }
   }
 
   static Future<void> saveRecord(Record record) async {
