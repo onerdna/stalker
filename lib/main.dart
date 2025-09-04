@@ -19,21 +19,19 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:logger/logger.dart';
+import 'package:log_plus/log_plus.dart';
 import 'package:signals/signals_flutter.dart';
 import 'package:stalker/app.dart';
 import 'package:stalker/logic/item_database.dart';
-import 'package:stalker/logcat.dart';
 import 'package:stalker/themes.dart';
 import 'package:toml/toml.dart';
 
-class AlwaysLogFilter extends LogFilter {
-  @override
-  bool shouldLog(LogEvent event) => true;
-}
-
-final logger =
-    Logger(printer: SimplePrinter(colors: false), filter: AlwaysLogFilter());
+final logger = Logs(
+  storeLogLevel: LogLevel.verbose,
+  printLogLevelWhenDebug: LogLevel.verbose,
+  printLogLevelWhenRelease: LogLevel.verbose,
+  storeLimit: 500,
+);
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -52,8 +50,6 @@ class _RootAppState extends State<RootApp> {
   @override
   void initState() {
     super.initState();
-    Logcat.init();
-    logger.i("Initialized logcat stream");
     rootBundle.loadString("assets/item_database.toml").then((names) {
       ItemDatabase.dictionary = TomlDocument.parse(names).toMap();
       logger.i("Loaded item databse");
@@ -78,20 +74,17 @@ class _RootAppState extends State<RootApp> {
 
           if (lightDynamic != null && darkDynamic != null && useSystemColors_) {
             lightColorScheme = ColorScheme.fromSeed(
-              seedColor: lightDynamic.primary,
-              brightness: Brightness.light
-            );
+                seedColor: lightDynamic.primary, brightness: Brightness.light);
             darkColorScheme = ColorScheme.fromSeed(
-              seedColor: darkDynamic.primary,
-              brightness: Brightness.dark
-            );
+                seedColor: darkDynamic.primary, brightness: Brightness.dark);
           } else {
             lightColorScheme = ColorScheme.fromSeed(seedColor: primaryColor_);
             darkColorScheme = ColorScheme.fromSeed(
                 seedColor: primaryColor_, brightness: Brightness.dark);
           }
 
-          supportsDynamicColors.value = lightDynamic != null && darkDynamic != null;
+          supportsDynamicColors.value =
+              lightDynamic != null && darkDynamic != null;
 
           final lightTheme = ThemeData(
               colorScheme: lightColorScheme,

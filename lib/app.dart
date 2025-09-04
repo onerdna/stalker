@@ -31,6 +31,8 @@ import 'package:path_provider/path_provider.dart';
 import 'package:pub_semver/pub_semver.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:signals/signals_flutter.dart';
+import 'package:stalker/github.dart';
+import 'package:stalker/pages/debug.dart';
 import 'package:stalker/ui/app_bar.dart';
 import 'package:stalker/logic/enchantment.dart';
 import 'package:stalker/main.dart';
@@ -38,7 +40,6 @@ import 'package:stalker/pages/edit_xml/edit_xml.dart';
 import 'package:stalker/pages/equipment.dart';
 import 'package:stalker/pages/general.dart';
 import 'package:stalker/pages/records/records.dart';
-import 'package:stalker/pages/report.dart';
 import 'package:stalker/logic/record.dart';
 import 'package:stalker/logic/records_manager.dart';
 import 'package:signals/signals.dart' as signals_core;
@@ -105,8 +106,7 @@ class _AppState extends State<App> {
     const RecordsPage(),
     const EditXmlPage(),
     const GeneralPage(),
-    const EquipmentPage(),
-    const ReportPage()
+    const EquipmentPage()
   ];
 
   Future<bool> _tryToConnectToShizuku(BuildContext context) async {
@@ -275,8 +275,6 @@ class _AppState extends State<App> {
       return;
     }
 
-    String link = "https://github.com/onerdna/stalker";
-
     await showDialog(
         context: context,
         builder: (context) => AlertDialog(
@@ -287,7 +285,8 @@ class _AppState extends State<App> {
                   const Text(
                       "This app is completely free and always will be. If you paid for it, you were scammed. Download only from the official source:"),
                   TextButton(
-                      onPressed: () => launchUrlString(link), child: Text(link))
+                      onPressed: () => launchUrlString(GitHub.repoUrl),
+                      child: const Text(GitHub.repoUrl))
                 ],
               ),
               actions: [
@@ -302,7 +301,7 @@ class _AppState extends State<App> {
 
   Future<bool> _isUpdateAvailable() async {
     final url = Uri.parse(
-        'https://api.github.com/repos/onerdna/stalker/releases/latest');
+        'https://api.github.com/repos/${GitHub.repoUser}/${GitHub.repoName}/releases/latest');
     final client = HttpClient();
 
     try {
@@ -327,7 +326,6 @@ class _AppState extends State<App> {
   }
 
   Future<void> _showUpdateDialog() async {
-    const link = "https://github.com/onerdna/stalker/releases/latest";
     showFatalErrorDialog(
         context,
         "New version available",
@@ -335,7 +333,7 @@ class _AppState extends State<App> {
         [
           TextButton(
               onPressed: () {
-                launchUrlString(link);
+                launchUrlString(GitHub.latestRelease);
               },
               child: const Text("Update"))
         ]);
@@ -380,11 +378,7 @@ class _AppState extends State<App> {
                   NavigationDestination(
                       icon: Image.asset('assets/images/sword.png',
                           width: 24, height: 24),
-                      label: "Equipment"),
-                  NavigationDestination(
-                      icon: Image.asset('assets/images/bug.png',
-                          width: 24, height: 24),
-                      label: "Bug Reports"),
+                      label: "Equipment")
                 ],
                 selectedIndex: currentPageIndex.value,
                 onDestinationSelected: (int index) {
@@ -408,6 +402,21 @@ class _AppState extends State<App> {
                     ],
                   ),
                   const Text("This app requires Shizuku to run"),
+                  TextButton(
+                    child: const Text("Not working? Check README"),
+                    onPressed: () {
+                      launchUrlString(
+                          "${GitHub.repoUrl}/blob/master/README.md#-troubleshooting");
+                    },
+                  ),
+                  TextButton(
+                      onPressed: () {
+                        launchUrlString(
+                            "${GitHub.repoUrl}/issues/new?title=${Uri.encodeComponent("Additional setup not working")}&body=${Uri.encodeComponent("--- APP LOGS, DO NOT DELETE! ---\n${logger.getStoredLogs().map((e) => formatLogEntry(e)).join("\n")}\n--- LOGS END ---\nAndroid version: [fill here]\nPhone model (or emulator): [fill here]\nAny additional information: [fill here]\nI acknowledge that I've followed the instruction steps and read the README's troubleshooting section.")}");
+                      },
+                      child: const Text(
+                          textAlign: TextAlign.center,
+                          "If it's still not working, tap here")),
                   TextButton.icon(
                     onPressed: () async {
                       await _tryToInitializeApp(context);

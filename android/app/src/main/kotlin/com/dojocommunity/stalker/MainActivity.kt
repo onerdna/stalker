@@ -15,7 +15,6 @@ import java.io.InputStreamReader
 
 class MainActivity : FlutterActivity() {
     private val shizukuChannel = "com.dojocommunity.stalker/shizuku"
-    private var logcatReader: LogcatReader? = null
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
@@ -47,21 +46,6 @@ class MainActivity : FlutterActivity() {
                 }
             }
         }
-
-        EventChannel(flutterEngine.dartExecutor.binaryMessenger, "logcat_channel")
-            .setStreamHandler(object : EventChannel.StreamHandler {
-                override fun onListen(arguments: Any?, events: EventChannel.EventSink?) {
-                    events?.let {
-                        logcatReader = LogcatReader(this@MainActivity, it)
-                        logcatReader?.start()
-                    }
-                }
-
-                override fun onCancel(arguments: Any?) {
-                    logcatReader?.stop()
-                }
-            })
-
     }
 
     private fun runCommand(command: String): String {

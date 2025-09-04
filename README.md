@@ -46,6 +46,14 @@ Stalker allows users to inspect and optionally tweak various aspects of their Sh
 - **What does the setup service actually do? I'm concerned about running high-privileged compiled binaries.**
   - The setup service’s only purpose is to tamper with your user ID inside the game’s process. Once it does that, it automatically closes — or after two minutes of inactivity. The user ID is just a random string unique to each device. It doesn’t contain any personal or device-identifiable information. I won’t share the exact method used to get the ID, or the source code for the service, because this is the only known working method. If it becomes public, the developers could easily patch it.
 
+## 🔧 Troubleshooting
+- Tapping 'Reinitialize' after the 'Additional setup' step does nothing.
+  1. Make sure that you are following the given instructions.
+  2. For some devices, changing the 'Logger buffer size' in Developer Options from 256K to 8M might help.
+  3. For Huawei and Honor devices, you need to enable logcat in the device settings. Search online for: 'enable logcat honor/huawei'
+  4. If this does not help, report a bug [here](https://github.com/onerdna/stalker/issues/new?template=additional-setup-bug-report.md)
+
+
 ### ❤ Special thanks to:
 - [**Shizuku**](https://shizuku.rikka.app/)
 - **ShadowFight2dojo community**

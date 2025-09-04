@@ -21,17 +21,22 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:stalker/logcat.dart';
+import 'package:stalker/github.dart';
+import 'package:stalker/main.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 import 'package:uuid/uuid.dart';
 
-class LogcatStreamPage extends StatefulWidget {
-  const LogcatStreamPage({super.key});
+class DebugPage extends StatefulWidget {
+  const DebugPage({super.key});
 
   @override
-  LogcatStreamPageState createState() => LogcatStreamPageState();
+  DebugPageState createState() => DebugPageState();
 }
 
-class LogcatStreamPageState extends State<LogcatStreamPage> {
+String formatLogEntry(e) =>
+    "[${e['level'].toString().toUpperCase()}] ${e['message']}";
+
+class DebugPageState extends State<DebugPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,20 +44,42 @@ class LogcatStreamPageState extends State<LogcatStreamPage> {
         title: const Text('Logs Viewer'),
         backgroundColor: Theme.of(context).colorScheme.surfaceContainer,
       ),
-      floatingActionButton: SizedBox(
-        width: 64,
-        height: 64,
-        child: FilledButton(
-          onPressed: () => _exportLogs(),
-          style: FilledButton.styleFrom(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(16),
+      floatingActionButton: Stack(
+        children: [
+          Positioned(
+            left: 40,
+            bottom: 16,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text("Share"),
+                FloatingActionButton(
+                  onPressed: () => _exportLogs(),
+                  tooltip: "Share",
+                  heroTag: "btn-share",
+                  child: const Icon(Icons.share),
+                ),
+              ],
             ),
-            padding: const EdgeInsets.all(0),
-            minimumSize: const Size(48, 48),
           ),
-          child: const Icon(Icons.share),
-        ),
+          Positioned(
+            right: 0,
+            bottom: 16,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text("Report a bug"),
+                FloatingActionButton(
+                  heroTag: "btn-report",
+                  onPressed: () {
+                    launchUrlString(GitHub.issueGeneral);
+                  },
+                  child: const Icon(Icons.report),
+                ),
+              ],
+            ),
+          )
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -64,9 +91,10 @@ class LogcatStreamPageState extends State<LogcatStreamPage> {
               scrollDirection: Axis.vertical,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: Logcat.logs
+                children: logger
+                    .getStoredLogs()
                     .map((e) => Text(
-                          e,
+                          formatLogEntry(e),
                           softWrap: false,
                           overflow: TextOverflow.visible,
                         ))
@@ -83,7 +111,8 @@ class LogcatStreamPageState extends State<LogcatStreamPage> {
     final temp = await getTemporaryDirectory();
     final fileName = "log-${const Uuid().v8()}.txt";
     final file = File("${temp.path}/$fileName");
-    file.writeAsString(Logcat.logs.join("\n"));
+    await file.writeAsString(
+        logger.getStoredLogs().map((e) => formatLogEntry(e)).join("\n"));
     await SharePlus.instance.share(ShareParams(
         files: [XFile(file.path, name: fileName, mimeType: "text/plain")]));
   }

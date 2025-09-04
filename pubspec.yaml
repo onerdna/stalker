@@ -2,7 +2,7 @@ name: stalker
 description: "An android application to view and optionally modify the save files of Shadow Fight 2 game"
 publish_to: 'none'
 
-version: 1.2.4
+version: 1.2.5
 
 environment:
   sdk: ^3.5.4
@@ -26,9 +26,9 @@ dependencies:
   file_picker: ^10.1.9
   toml: ^0.16.0
   uuid: ^4.5.1
-  logger: ^2.5.0
   crypto: ^3.0.6
   pub_semver: ^2.2.0
+  log_plus: ^0.0.6
 
 dev_dependencies:
   flutter_test:
@@ -43,7 +43,6 @@ flutter:
     - assets/images/house.png
     - assets/images/file.png
     - assets/images/wrench.png
-    - assets/images/bug.png
     - assets/images/coin.png
     - assets/images/ruby.png
     - assets/images/forge_green.png
@@ -63,7 +62,6 @@ flutter:
     - assets/binaries/setup_service_arm64
     - assets/binaries/setup_service_arm
     - assets/binaries/setup_service_x86_64
-    - assets/binaries/setup_service_x86
     - assets/xml/defaultRecord.xml
     - assets/enchantments/simple.toml
     - assets/enchantments/medium.toml
