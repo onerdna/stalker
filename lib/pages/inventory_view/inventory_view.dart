@@ -259,8 +259,7 @@ class _InventoryViewState extends State<InventoryView> {
                   child: Stack(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(
-                            right: 70),
+                        padding: const EdgeInsets.only(right: 70),
                         child: Text(
                           item.name,
                           softWrap: true,
@@ -408,17 +407,19 @@ class _InventoryViewState extends State<InventoryView> {
                                     enchantments:
                                         EnchantmentsManager.enchantments,
                                     type: widget.equipmentType,
-                                    onPressed: (selected) {
+                                    onPressed: (selected, amount) {
                                       setState(() {
-                                        item.enchantments.add(
-                                          AppliedEnchantment(
-                                            selected,
-                                            selected.tier ==
-                                                    EnchantmentTier.mythical
-                                                ? null
-                                                : 0,
-                                          ),
-                                        );
+                                        for (var i = 0; i < amount; i++) {
+                                          item.enchantments.add(
+                                            AppliedEnchantment(
+                                              selected,
+                                              selected.tier ==
+                                                      EnchantmentTier.mythical
+                                                  ? null
+                                                  : AppliedEnchantment.maxAspect,
+                                            ),
+                                          );
+                                        }
                                       });
                                       Navigator.of(ctx).pop();
                                     }));
