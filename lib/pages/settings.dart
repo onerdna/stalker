@@ -17,11 +17,14 @@
  */
 
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:signals/signals_flutter.dart';
 import 'package:stalker/app.dart';
 import 'package:stalker/pages/about.dart';
 import 'package:stalker/logic/records_manager.dart';
 import 'package:stalker/themes.dart';
+
+final ignoreUpdates = signal(false);
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -36,10 +39,9 @@ class _SettingsPageState extends State<SettingsPage> {
     final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: theme.colorScheme.surfaceContainer,
-        title: const Text("Settings"),
-        centerTitle: true,
-      ),
+          backgroundColor: theme.colorScheme.surfaceContainer,
+          title: const Text("Settings"),
+          centerTitle: true),
       body: Watch((context) => Padding(
             padding:
                 const EdgeInsets.only(top: 16, bottom: 32, left: 16, right: 16),
@@ -54,13 +56,15 @@ class _SettingsPageState extends State<SettingsPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   spacing: 8,
                   children: [
-                    Text("Theme: ", style: theme.textTheme.bodyLarge,),
+                    Text(
+                      "Theme: ",
+                      style: theme.textTheme.bodyLarge,
+                    ),
                     DropdownButton<ThemeMode>(
                       value: brightness.value,
-                      onChanged: (ThemeMode? value) =>
-                          setState(() {
-                            setBrightness(value!);
-                          }),
+                      onChanged: (ThemeMode? value) => setState(() {
+                        setBrightness(value!);
+                      }),
                       items: ThemeMode.values
                           .map<DropdownMenuItem<ThemeMode>>((ThemeMode value) {
                         return DropdownMenuItem<ThemeMode>(
@@ -74,13 +78,16 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
                 if (supportsDynamicColors.value)
                   Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  spacing: 8,
-                  children: [
-                    Text("Use system color scheme", style: theme.textTheme.bodyLarge),
-                    Switch(value: useSystemColors.value, onChanged: (value) => setUseSystemColors(value)),
-                  ],
-                ),
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    spacing: 8,
+                    children: [
+                      Text("Use system color scheme",
+                          style: theme.textTheme.bodyLarge),
+                      Switch(
+                          value: useSystemColors.value,
+                          onChanged: (value) => setUseSystemColors(value)),
+                    ],
+                  ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 32.0),
                   child: Wrap(
@@ -110,6 +117,22 @@ class _SettingsPageState extends State<SettingsPage> {
                   ),
                 ),
                 const Divider(),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  spacing: 8,
+                  children: [
+                    Text("Ignore updates", style: theme.textTheme.bodyLarge),
+                    Watch(
+                      (_) => Switch(
+                          value: ignoreUpdates.value,
+                          onChanged: (newValue) async {
+                            final prefs = await SharedPreferences.getInstance();
+                            prefs.setBool("ignoreUpdates", newValue);
+                            ignoreUpdates.value = newValue;
+                          }),
+                    )
+                  ],
+                ),
                 TextButton(
                   style: TextButton.styleFrom(
                     padding: const EdgeInsets.symmetric(

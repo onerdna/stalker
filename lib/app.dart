@@ -67,6 +67,7 @@ void showFatalErrorDialog(
     [List<Widget> actions = const []]) {
   showDialog(
       context: context,
+      barrierDismissible: false,
       builder: (_) => AlertDialog(
             title: Text(title),
             content: Text(description),
@@ -219,12 +220,18 @@ class _AppState extends State<App> {
   Future<void> _tryToInitializeApp(BuildContext context) async {
     await getExternalStorageDirectory(); // to create the data folder
     package.value = await PackageInfo.fromPlatform();
-    _isUpdateAvailable().then((updateAvailable) {
-      if (updateAvailable) {
-        logger.i("New update is available");
-        _showUpdateDialog();
-      }
-    });
+    final prefs = await SharedPreferences.getInstance();
+
+    if (prefs.getBool('ignoreUpdates') ?? false) {
+      logger.i("Ignoring updates");
+    } else {
+      _isUpdateAvailable().then((updateAvailable) {
+        if (updateAvailable) {
+          logger.i("New update is available");
+          _showUpdateDialog();
+        }
+      });
+    }
     await _tryToShowNotice();
     if (await _tryToConnectToShizuku(context)) {
       logger.i("Shizuku is available");
@@ -326,17 +333,32 @@ class _AppState extends State<App> {
   }
 
   Future<void> _showUpdateDialog() async {
-    showFatalErrorDialog(
-        context,
-        "New version available",
-        "In order for the app to function correctlty, please update it to the latest version.",
-        [
-          TextButton(
-              onPressed: () {
-                launchUrlString(GitHub.latestRelease);
-              },
-              child: const Text("Update"))
-        ]);
+    showDialog(
+        context: context,
+        builder: (_) => AlertDialog(
+              title: const Text("New version available"),
+              content: const Text(
+                  "In order for the app to function correctlty, please update it to the latest version."),
+              actions: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    TextButton(
+                        onPressed: () {
+                          launchUrlString(GitHub.latestRelease);
+                        },
+                        child: const Text("Update")),
+                    TextButton(
+                        onPressed: () async {
+                          final prefs = await SharedPreferences.getInstance();
+                          prefs.setBool('ignoreUpdates', true);
+                          Navigator.of(context).pop();
+                        },
+                        child: const Text("Do not show again"))
+                  ],
+                )
+              ],
+            ));
   }
 
   @override
