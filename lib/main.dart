@@ -20,9 +20,11 @@ import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:log_plus/log_plus.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:signals/signals_flutter.dart';
 import 'package:stalker/app.dart';
 import 'package:stalker/logic/item_database.dart';
+import 'package:stalker/pages/settings.dart';
 import 'package:stalker/themes.dart';
 import 'package:toml/toml.dart';
 
@@ -35,8 +37,14 @@ final logger = Logs(
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await loadThemeFromPrefs();
+  await loadPrefsValues();
   runApp(const RootApp());
+}
+
+Future<void> loadPrefsValues() async {
+  final prefs = await SharedPreferences.getInstance();
+  await loadThemeFromPrefs(prefs);
+  ignoreUpdates.value = prefs.getBool("ignoreUpdates") ?? false;
 }
 
 class RootApp extends StatefulWidget {

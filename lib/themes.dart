@@ -46,8 +46,7 @@ const colors = [
   Color(0xff222831)
 ];
 
-Future<void> loadThemeFromPrefs() async {
-  final prefs = await SharedPreferences.getInstance();
+Future<void> loadThemeFromPrefs(SharedPreferences prefs) async {
   int colorValue = prefs.getInt('primaryColor') ?? Colors.blue.toARGB32();
   brightness.value = ThemeMode.values
           .where((e) => prefs.getString("brightness") == e.toString())
