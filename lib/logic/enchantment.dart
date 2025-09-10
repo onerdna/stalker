@@ -21,7 +21,7 @@ import 'package:stalker/logic/equipment_type.dart';
 import 'package:toml/toml.dart';
 import 'package:xml/xml.dart';
 
-enum EnchantmentTier { simple, medium, mythical }
+enum EnchantmentTier { simple, medium, mythical, perk }
 
 extension EnchantmentTierExtension on EnchantmentTier {
   String get fileName {
@@ -32,6 +32,8 @@ extension EnchantmentTierExtension on EnchantmentTier {
         return "medium";
       case EnchantmentTier.mythical:
         return "mythical";
+      case EnchantmentTier.perk:
+        return "perk";
     }
   }
 
@@ -43,6 +45,8 @@ extension EnchantmentTierExtension on EnchantmentTier {
         return 0xFFE6521F;
       case EnchantmentTier.mythical:
         return 0xFF441752;
+      case EnchantmentTier.perk:
+        return 0xFFB45253;
     }
   }
 
@@ -54,6 +58,8 @@ extension EnchantmentTierExtension on EnchantmentTier {
         return "Medium";
       case EnchantmentTier.mythical:
         return "Mythical"; // either Mythical or Mythic, not tested
+      case EnchantmentTier.perk:
+        return "";
     }
   }
 
@@ -75,7 +81,7 @@ class Enchantment {
 
   factory Enchantment.fromToml(
       MapEntry<String, dynamic> entry, EnchantmentTier tier) {
-    if (tier == EnchantmentTier.mythical) {
+    if (tier == EnchantmentTier.mythical || tier == EnchantmentTier.perk) {
       final id = entry.value["id"] as String;
       return Enchantment(
         entry.value["name"] as String,

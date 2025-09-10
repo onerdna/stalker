@@ -24,7 +24,7 @@ import 'package:stalker/logic/equipment_type.dart';
 class NewEnchantmentDialog extends StatefulWidget {
   final List<Enchantment> enchantments;
   final EquipmentType type;
-  final void Function(Enchantment) onPressed;
+  final void Function(Enchantment, int) onPressed;
 
   const NewEnchantmentDialog(
       {required this.enchantments,
@@ -40,8 +40,10 @@ class _NewEnchantmentDialogState extends State<NewEnchantmentDialog> {
   static const sections = [
     (EnchantmentTier.simple, "Simple Enchantments"),
     (EnchantmentTier.medium, "Medium Enchantments"),
-    (EnchantmentTier.mythical, "Mythical Enchantments")
+    (EnchantmentTier.mythical, "Mythical Enchantments"),
+    (EnchantmentTier.perk, "[MOD] Perks")
   ];
+  int amountSliderValue = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -50,46 +52,58 @@ class _NewEnchantmentDialogState extends State<NewEnchantmentDialog> {
       content: SizedBox(
         width: double.maxFinite,
         height: double.maxFinite,
-        child: ListView(
-            children: sections
-                .map((ench) => [
-                      Center(
-                        child: Text(
-                          ench.$2,
-                          style: const TextStyle(fontSize: 20),
-                        ),
+        child: ListView(children: [
+          Text("Amount: $amountSliderValue",
+              style: Theme.of(context).textTheme.bodyLarge,
+              textAlign: TextAlign.center),
+          Slider(
+              min: 1,
+              max: 100,
+              value: amountSliderValue.toDouble(),
+              onChanged: (v) {
+                setState(() {
+                  amountSliderValue = v.toInt();
+                });
+              }),
+          ...sections
+              .map((ench) => [
+                    Center(
+                      child: Text(
+                        ench.$2,
+                        style: const TextStyle(fontSize: 20),
                       ),
-                      ...EnchantmentsManager.enchantments
-                          .where((e) =>
-                              e.idFor(widget.type) != null && e.tier == ench.$1)
-                          .map((e) => Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Expanded(
-                                    child: FilledButton(
-                                        onPressed: () => widget.onPressed(e),
-                                        child: Text(e.name)),
+                    ),
+                    ...EnchantmentsManager.enchantments
+                        .where((e) =>
+                            e.idFor(widget.type) != null && e.tier == ench.$1)
+                        .map((e) => Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Expanded(
+                                  child: FilledButton(
+                                      onPressed: () => widget.onPressed(e, amountSliderValue),
+                                      child: Text(e.name)),
+                                ),
+                                if (e.description != null) ...[
+                                  const SizedBox(
+                                    width: 8,
                                   ),
-                                  if (e.description != null) ...[
-                                    const SizedBox(
-                                      width: 8,
-                                    ),
-                                    ClickTooltip(
-                                      message: e.description,
-                                      decoration: BoxDecoration(
-                                          border: Border.all(width: 1),
-                                          borderRadius:
-                                              BorderRadius.circular(16),
-                                          color: Theme.of(context).canvasColor),
-                                      textStyle: Theme.of(context).textTheme.bodySmall,
-                                      child: const Icon(Icons.info_outline),
-                                    )
-                                  ]
-                                ],
-                              ))
-                    ])
-                .expand((e) => e)
-                .toList()),
+                                  ClickTooltip(
+                                    message: e.description,
+                                    decoration: BoxDecoration(
+                                        border: Border.all(width: 1),
+                                        borderRadius: BorderRadius.circular(16),
+                                        color: Theme.of(context).canvasColor),
+                                    textStyle:
+                                        Theme.of(context).textTheme.bodySmall,
+                                    child: const Icon(Icons.info_outline),
+                                  )
+                                ]
+                              ],
+                            ))
+                  ])
+              .expand((e) => e)
+        ]),
       ),
     );
   }
