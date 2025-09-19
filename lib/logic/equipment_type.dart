@@ -16,19 +16,25 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
+import 'package:stalker/logic/item_database.dart';
+
 enum EquipmentType { weapon, ranged, magic, armor, helm }
 
 extension EquipmentTypeExtension on EquipmentType {
-  static EquipmentType? fromId(String prefix) {
-    if (prefix.contains("WEAPON")) {
+  static EquipmentType? fromId(String equipmentId) {
+    final overrideType = ItemDatabase.getOverrideType(equipmentId);
+    if (overrideType != null) {
+      return overrideType;
+    }
+    if (equipmentId.contains("WEAPON")) {
       return EquipmentType.weapon;
-    } else if (prefix.contains("RANGED")) {
+    } else if (equipmentId.contains("RANGED")) {
       return EquipmentType.ranged;
-    } else if (prefix.contains("MAGIC")) {
+    } else if (equipmentId.contains("MAGIC")) {
       return EquipmentType.magic;
-    } else if (prefix.contains("ARMOR") || prefix.contains("BODY")) {
+    } else if (equipmentId.contains("ARMOR") || equipmentId.contains("BODY")) {
       return EquipmentType.armor;
-    } else if (prefix.contains("HELM") || prefix.contains("HEAD")) {
+    } else if (equipmentId.contains("HELM") || equipmentId.contains("HEAD")) {
       return EquipmentType.helm;
     } else {
       return null;

@@ -73,3 +73,8 @@ description = "Ability used by Blackness"
 name = "Hunter Fly"
 id = "PERK_HUNTERFLY"
 description = "Flight ability used by Stalker"
+
+[time_surge]
+name = "Time Surge"
+id = "PERK_TIME_SURGE"
+description = "Ability used by Morgana"

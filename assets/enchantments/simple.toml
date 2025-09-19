@@ -16,7 +16,6 @@ Available on Melee Weapons and Ranged Weapons.
 [precision.equipment_ids]
 weapon = "PERK_ITEM_SPECIAL_PRECISION_WEAPON"
 ranged = "PERK_ITEM_SPECIAL_PRECISION_RANGED"
-magic = "PERK_ITEM_SPECIAL_PRECISION_MAGIC"
 
 [overheat]
 name = "Overheat"
