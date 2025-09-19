@@ -1,0 +1,792 @@
+[HELM_FINAL_HARMONY]
+name = "Crown of Harmony"
+enchantments = [ "tempest_rage", "regeneration",]
+
+[HELM_FINAL_CHAOS]
+name = "Crown of Chaos"
+enchantments = [ "typhoon_of_spirits", "overheat",]
+
+[HELM_KENDO_MASK]
+name = "Kendo Mask"
+
+[HELM_CONICAL_HAT]
+name = "Conical Hat"
+enchantments = [ "damage_absorption",]
+
+[HELM_SOLDIER_KABUTO]
+name = "Soldier's Kabuto"
+
+[HELM_GABLED]
+name = "Pointed Helm"
+
+[HELM_GREEN_MASK]
+name = "Snake Mask"
+enchantments = [ "overheat",]
+
+[HELM_LOBSTER]
+name = "Lobster Helm"
+
+[HELM_KABUTO]
+name = "Kabuto"
+
+[HELM_HARDENED]
+name = "Hardened Helm"
+
+[HELM_STEEL]
+name = "Steel Helm"
+
+[HELM_HORNED]
+name = "Horned Helm"
+enchantments = [ "rejuvenation",]
+
+[HELM_CRESCENT]
+name = "Crescent Helm"
+
+[HELM_SPIKE]
+name = "Spike Helm"
+enchantments = [ "magic_recharge",]
+
+[HELM_DAWN]
+name = "Dawn Tiara"
+
+[HELM_CROWN_OF_NIGHT]
+name = "Crown of Night"
+
+[HELM_SAMURAIS]
+name = "Samurai Helm"
+
+[HELM_TWO_FACED]
+name = "Two-faced Helm"
+
+[HELM_BEAST]
+name = "Beast Helm"
+enchantments = [ "overheat",]
+
+[HELM_SUPER_MASK]
+name = "Sacral Mask"
+enchantments = [ "regeneration",]
+
+[HELM_SUPER_JOKER]
+name = "Jester’s Benediction"
+enchantments = [ "frenzy",]
+
+[HELM_BLOOD]
+name = "Blood Casque"
+
+[HELM_TAIL]
+name = "Plumed Headpiece"
+enchantments = [ "damage_absorption",]
+
+[HELM_BRONZE]
+name = "Bronze Casque"
+
+[HELM_VIKING]
+name = "Longhorn"
+enchantments = [ "overheat",]
+
+[HELM_MANTIS]
+name = "Mantis Cap"
+
+[HELM_GENERAL]
+name = "General’s Kabuto"
+
+[HELM_MOON]
+name = "Moon Crown"
+
+[HELM_LEGIONER]
+name = "Legionnaire Helm"
+
+[HELM_IRON]
+name = "Iron Casque"
+
+[HELM_SUN]
+name = "Radiant Headpiece"
+enchantments = [ "rejuvenation",]
+
+[HELM_EMERALD]
+name = "Emerald Cap"
+
+[HELM_SILVER]
+name = "Silver Kabuto"
+
+[HELM_ASSASSIN]
+name = "Assassin's Cowl"
+enchantments = [ "overheat",]
+
+[HELM_SNOW]
+name = "Snow Cap"
+
+[HELM_DARKNESS]
+name = "Twilight Crown"
+
+[HELM_SUPER_HORNED]
+name = "Doom Crest"
+enchantments = [ "frenzy",]
+
+[HELM_STARTER_PACK]
+name = "Iron Mask"
+enchantments = [ "critical_protection",]
+
+[HELM_LIGHT]
+name = "Light Helm"
+
+[HELM_CLOSED]
+name = "Close Helm"
+
+[HELM_SMART_GABLED]
+name = "Parade Helm"
+
+[HELM_CRIMSON]
+name = "Copper Helm"
+
+[HELM_DARK_LEGIONER]
+name = "Dark Legionnaire Helm"
+
+[HELM_TRITON]
+name = "Dreadening Mask"
+
+[HELM_DARK]
+name = "Dark Mask"
+enchantments = [ "damage_absorption",]
+
+[HELM_GOLDEN]
+name = "Gilded Helm"
+
+[HELM_KNIGHTLY]
+name = "Paragon Armet"
+
+[HELM_ICARUS]
+name = "Avian Sallet"
+enchantments = [ "rejuvenation",]
+
+[HELM_IFRIT]
+name = "Ifrit Shell"
+
+[HELM_CELESTIAL]
+name = "Celestial Crown"
+
+[HELM_DEMON]
+name = "Demon Crest"
+
+[HELM_SPARTIAN]
+name = "Spartan Coif"
+
+[HELM_RITUAL]
+name = "Ritual Headpiece"
+enchantments = [ "magic_recharge",]
+
+[HELM_CEREMONIAL]
+name = "Ceremonial Mask"
+
+[HELM_SUPER_SCARAB]
+name = "Scarab Shell"
+enchantments = [ "damage_return",]
+
+[HELM_SUPER_STRIPS]
+name = "Goldenhorn"
+enchantments = [ "shielding",]
+
+[HELM_SUPER_PLUMED]
+name = "Imperial Plume"
+enchantments = [ "shielding",]
+
+[HELM_TAILED_CASQUE]
+name = "Tailed Casque"
+
+[HELM_NIGHTFALL_HEADPIECE]
+name = "Nightfall Headpiece"
+
+[HELM_SUPER_SECOND_WIND]
+name = "Second Wind"
+enchantments = [ "regeneration",]
+
+[HELM_GUARDIAN]
+name = "Guardian Helm"
+
+[HELM_HEXAPOD]
+name = "Hexapod"
+enchantments = [ "damage_absorption",]
+
+[HELM_STOUT_CASQUE]
+name = "Stout Casque"
+
+[HELM_ADAMANTINE_ARMET]
+name = "Adamantine Armet"
+
+[HELM_MASK_OF_HORROR]
+name = "Mask of Horror"
+enchantments = [ "overheat",]
+
+[HELM_ASCENDANCY]
+name = "Ascendancy Helm"
+
+[HELM_SUPER_SAMURAI]
+name = "Mempo"
+enchantments = [ "frenzy",]
+
+[HELM_INFERNO]
+name = "Inferno Headpiece"
+
+[HELM_ADVANCED_CONICAL]
+name = "Advanced Conical Helmet"
+
+[HELM_SUPER_PREDATOR]
+name = "Mask of Prey"
+enchantments = [ "damage_return",]
+
+[HELM_QUASAR]
+name = "Quasar"
+
+[HELM_ANGER]
+name = "Marauder"
+enchantments = [ "overheat",]
+
+[HELM_CRYSTALLINE]
+name = "Crystalloid Visor"
+
+[HELM_SUPER_LASER]
+name = "Laserbeam Mask"
+enchantments = [ "frenzy",]
+
+[HELM_TUBES]
+name = "Xenon Helm"
+
+[HELM_CYBER_MASK]
+name = "Mandible Mask"
+
+[HELM_CYBER_SAMURAI]
+name = "Formics Headgear"
+enchantments = [ "magic_recharge",]
+
+[HELM_NAVIGATORS_BREATH_MASK]
+name = "Navigator's Breath Mask"
+enchantments = [ "damage_return",]
+
+[HELM_FACELESS_MASK]
+name = "Faceless's Mask"
+
+[HELM_VISOR]
+name = "Elders' Visor"
+
+[HELM_PROTECTOR]
+name = "Protector's Headgear"
+enchantments = [ "damage_absorption",]
+
+[HELM_FALL_24]
+name = "Poisonеd Wisdom"
+
+[NY20_HELM_HORNS]
+name = "Christmas Trophy"
+enchantments = [ "damage_return",]
+
+[NY20_HELM_SANTA]
+name = "Frost Beard"
+enchantments = [ "regeneration",]
+
+[HELM_CHNY21_BULL]
+name = "Helmet of Ferocity"
+traits = [ "chny21",]
+enchantments = [ "regeneration",]
+
+[HELM_CNY2024_MASK]
+name = "Daybreak's Visage"
+traits = [ "chny24",]
+enchantments = [ "overheat",]
+
+[HEAD_ARKXEN]
+name = "Arkxen's Head"
+description = "Head of an unknown raid boss, "
+traits = [ "deceased",]
+
+[HELM_C3_z3]
+name = ""
+description = "An obsolete equipment code for Sentinel's set early prototype."
+traits = [ "defunct",]
+
+[HEAD_C3_z3]
+name = ""
+description = "An obsolete equipment code for Sentinel's set early prototype."
+traits = [ "defunct",]
+
+[HELM_UNKNOWN]
+name = "Unknown Helm"
+traits = [ "defunct",]
+
+[HELM_HW14_PUMPKIN]
+name = "Pumpkinhead"
+traits = [ "hw14",]
+
+[HELM_HW14_WITCH]
+name = "Witch Hat"
+traits = [ "hw14",]
+
+[HELM_HW15_WITCH]
+name = "Witch Hat"
+traits = [ "hw15",]
+
+[HELM_HW15_PUMPKIN]
+name = "Obsessed Pumpkin"
+traits = [ "hw15",]
+enchantments = [ "damage_absorption",]
+
+[HELM_1_HW16_SET]
+name = "Pumpkin of Madness"
+traits = [ "hw16",]
+enchantments = [ "magic_recharge",]
+
+[HELM_HW17_CYLINDER]
+name = "Baroness Cylinder"
+traits = [ "hw17",]
+enchantments = [ "damage_return",]
+
+[HELM_1_HW19_SET]
+name = "Feisty Vegetable"
+traits = [ "hw19",]
+enchantments = [ "regeneration",]
+
+[HELM_2_HW19_SET]
+name = "Ghost Cap"
+traits = [ "hw19",]
+enchantments = [ "damage_return",]
+
+[HELM_WOODOO_HW20]
+name = "Face of the Grim Baron"
+traits = [ "hw20",]
+
+[HELM_CHNY20_PANDA]
+name = "Adorable Panda"
+traits = [ "nintendo_switch_edition",]
+enchantments = [ "magic_recharge",]
+
+[HELM_CHNY20_TRADITIONAL]
+name = "Hat of Generous Gifts"
+traits = [ "nintendo_switch_edition",]
+enchantments = [ "frenzy",]
+
+[HELM_AGNISSEAL]
+name = "Agni's Seal"
+traits = [ "offer",]
+
+[HELM_ANNIVERSARY_10TH]
+name = "Lunatic's Eye"
+traits = [ "offer",]
+
+[HELM_CYBER_DRAGON_HEAD]
+name = "Dragon's Thirst"
+traits = [ "offer",]
+
+[HELM_AZTEC_24]
+name = "Face of Metztli"
+traits = [ "offer",]
+enchantments = [ "magic_recharge",]
+
+[HELM_FOREST_DEMON_25]
+name = "Satyr's Amusement"
+traits = [ "offer",]
+enchantments = [ "regeneration",]
+
+[HELM_NEW_YEAR_25]
+name = "Blinding Truth"
+traits = [ "offer",]
+enchantments = [ "regeneration",]
+
+[HELM_VEIL_OF_DAWN_25]
+name = "Veil of Dawn"
+traits = [ "offer",]
+enchantments = [ "shielding",]
+
+[HELM_HOAXEN_25]
+name = "Chimera Paradox"
+traits = [ "offer",]
+enchantments = [ "damage_absorption",]
+
+[HELM_FUTURIST_25]
+name = "GlitchMask"
+traits = [ "offer",]
+enchantments = [ "frenzy",]
+
+[HELM_IND21_BLOOD]
+name = "Helm of Heaven Keeper"
+traits = [ "ram_navami21",]
+enchantments = [ "regeneration",]
+
+[HELM_IND21_TURBAN]
+name = "Festive Turban"
+traits = [ "ram_navami21",]
+enchantments = [ "rejuvenation",]
+
+[HELM_BP_S3_WIND_MAKER]
+name = "Furious Bull"
+traits = [ "set_creators_of_the_wind",]
+enchantments = [ "squall",]
+
+[HELM_BP_S4_SCRIPTWRITER]
+name = "Lights, camera, action!"
+traits = [ "set_director",]
+enchantments = [ "plot_twist",]
+
+[HELM_RAID_KARCER_SET]
+name = "Comatosis"
+traits = [ "set_karcer",]
+enchantments = [ "predators_fury",]
+
+[HELM_C2_Z2_MONK]
+name = "Monk's Helm"
+traits = [ "set_monk",]
+enchantments = [ "tempest_rage", "rejuvenation",]
+
+[HELM_C1_Z4_NEO_WANDERER]
+name = "Solar Corona"
+traits = [ "set_neo_wanderer",]
+enchantments = [ "arcane_martial_arts",]
+
+[HELM_C2_Z3_SENTINEL]
+name = "Sentinel's Conical Helm"
+traits = [ "set_sentinel",]
+enchantments = [ "typhoon_of_spirits",]
+
+[HELM_BP_S2_SKANDA]
+name = "Crown of Kali"
+traits = [ "set_skanda",]
+enchantments = [ "karma",]
+
+[HELM_RAID_FUNGUS_SET]
+name = "All-Seeing Eye"
+traits = [ "set_spore_soul",]
+enchantments = [ "cordyceps",]
+
+[HELM_RAID_VOLCANO_SET]
+name = "Burning Wreath"
+traits = [ "set_volcano",]
+enchantments = [ "roaring_luminary",]
+
+[HELM_SUMMER21_SANTA]
+name = "Unyielding Face of Winter"
+traits = [ "summer21",]
+enchantments = [ "damage_return",]
+
+[HELM_RAID_SUMMER_FEST_25]
+name = "Street Tempest"
+traits = [ "summer_fest_25",]
+
+[HEAD_FEAR]
+name = "Tenebris's Head"
+traits = [ "unobtainable",]
+
+[BERSTUUK_HEAD]
+name = "Berstuuk's Head"
+traits = [ "unobtainable",]
+
+[HEAD_SCAVENGER_1]
+name = "Scavenger's Head"
+traits = [ "unobtainable",]
+
+[HEAD_SCAVENGER_2]
+name = "Scavenger's Head"
+traits = [ "unobtainable",]
+
+[HEAD_SCAVENGER_4]
+name = "Scavenger's Head"
+traits = [ "unobtainable",]
+
+[HEAD_SCAVEN]
+name = "Scaven's Head"
+traits = [ "unobtainable",]
+
+[HEAD_DISCIPLE]
+name = "Disciple's Head"
+traits = [ "unobtainable",]
+
+[HEAD_KENJI]
+name = "Kenji's Head"
+traits = [ "unobtainable",]
+
+[HEAD_RAVANA]
+name = "Ravana's Head"
+traits = [ "unobtainable",]
+
+[HEAD_MEPHISTO]
+name = "Mephisto's Head"
+traits = [ "unobtainable",]
+
+[HEAD_LYNX]
+name = "Lynx's Head"
+description = "Lynx wears a modified Light Helm with an additional bandana."
+traits = [ "unobtainable",]
+
+[HEAD_HERMIT]
+name = "Hermit's Head"
+description = "Hermit wears a wider Conical Hat with visible hair under the hat and a beard and moustache."
+traits = [ "unobtainable",]
+
+[HEAD_BUTCHER]
+name = "Butcher's Head"
+traits = [ "unobtainable",]
+
+[HEAD_RHINO]
+name = "Rhino's Head"
+traits = [ "unobtainable",]
+
+[HEAD_WASP]
+name = "Wasp's Head"
+traits = [ "unobtainable",]
+
+[HEAD_HUNTRESS]
+name = "Widow's Head"
+traits = [ "unobtainable",]
+
+[HEAD_TITAN]
+name = "Titan's Head"
+traits = [ "unobtainable",]
+
+[HEAD_SHROUD]
+name = "Shroud's Head"
+traits = [ "unobtainable",]
+
+[HEAD_CYPHER]
+name = "Cypher's Head"
+traits = [ "unobtainable",]
+
+[HEAD_ANCIENT]
+name = "Ancient's Head"
+traits = [ "unobtainable",]
+
+[HEAD_CORSAIR]
+name = "Corsair's Head"
+traits = [ "unobtainable",]
+
+[HEAD_FUTURE_MAY]
+name = "Future May's Head"
+traits = [ "unobtainable",]
+
+[HEAD_TITANS_ARMY1]
+name = ""
+traits = [ "unobtainable",]
+
+[HEAD_TITANS_ARMY2]
+name = ""
+traits = [ "unobtainable",]
+
+[HEAD_TITANS_ARMY3]
+name = ""
+traits = [ "unobtainable",]
+
+[HEAD_TITANS_ARMY4]
+name = ""
+traits = [ "unobtainable",]
+
+[HEAD_VULCAN]
+name = "Vulcan's Head"
+traits = [ "unobtainable",]
+
+[HEAD_MEGALITH]
+name = "Megalith's Head"
+traits = [ "unobtainable",]
+
+[HEAD_FUNGUS]
+name = "Fungus's Head"
+traits = [ "unobtainable",]
+
+[HEAD_FISH]
+name = "Fish's Head"
+traits = [ "unobtainable",]
+
+[HEAD_FATUM]
+name = "Fatum's Head"
+traits = [ "unobtainable",]
+
+[HEAD_HOAXEN]
+name = "Hoaxen's Head"
+traits = [ "unobtainable",]
+
+[HEAD_HUNGER]
+name = "Karcer's Head"
+traits = [ "unobtainable",]
+
+[HEAD_WAR]
+name = "Drakaina's Head"
+traits = [ "unobtainable",]
+
+[HEAD_SATURN]
+name = "Saturn's Head"
+traits = [ "unobtainable",]
+
+[HEAD_HUNTER]
+name = "Stalker's Head"
+traits = [ "unobtainable",]
+
+[HEAD_ZONE7_HERO1]
+name = ""
+traits = [ "unobtainable",]
+
+[HEAD_ZONE7_HERO2]
+name = ""
+traits = [ "unobtainable",]
+
+[HEAD_ZONE7_HERO3]
+name = ""
+traits = [ "unobtainable",]
+
+[HEAD_BISON_V2]
+name = ""
+traits = [ "unobtainable",]
+
+[HEAD_BISON_SPIRIT]
+name = ""
+traits = [ "unobtainable",]
+
+[HEAD_CANDY]
+name = "Candy's Head"
+description = "Candy wears a Fur-Ear Flap helm with strips attached made to resemble long hair."
+traits = [ "unobtainable",]
+
+[HEAD_NIGHT]
+name = ""
+traits = [ "unobtainable",]
+
+[HEAD_SMOTHER]
+name = "Smother's Head"
+traits = [ "unobtainable",]
+
+[HEAD_VILLAIN]
+name = ""
+traits = [ "unobtainable",]
+
+[HEAD_WHISPER]
+name = "Whisper's Head"
+traits = [ "unobtainable",]
+
+[HEAD_MONKEY]
+name = "Monkey's Head"
+traits = [ "unobtainable",]
+
+[HEAD_BRICK]
+name = "Brick's Head"
+traits = [ "unobtainable",]
+
+[HEAD_HYPERION]
+name = "Cronos's Head"
+traits = [ "unobtainable",]
+
+[HEAD_INVISIBLE]
+name = "Invisible's Head"
+traits = [ "unobtainable",]
+
+[HEAD_RAKSHASA]
+name = "Raksha's Head"
+traits = [ "unobtainable",]
+
+[HEAD_PRISTESS]
+name = "Pristess's Head"
+traits = [ "unobtainable",]
+
+[HEAD_FOREST_SPIRIT]
+name = "Forest Spirit"
+description = "Shurale's head"
+traits = [ "unobtainable",]
+
+[HEAD_CRANE]
+name = "Crane's Head"
+traits = [ "unobtainable",]
+
+[HELM_XMAS14_HORNS]
+name = "Reindeer Horns"
+traits = [ "xmas14",]
+
+[HELM_XMAS14_SANTA]
+name = "Beard of Frost"
+traits = [ "xmas14",]
+
+[HELM_XMAS15_HORNS]
+name = "Antlers Of The Forest Spirit"
+traits = [ "xmas15",]
+enchantments = [ "overheat",]
+
+[HELM_XMAS15_SANTA]
+name = "Face of Christmas"
+traits = [ "xmas15",]
+enchantments = [ "damage_absorption",]
+
+[HELM_XMAS16_HORNS]
+name = "Christmas Trophy"
+traits = [ "xmas16",]
+enchantments = [ "damage_return",]
+
+[HELM_XMAS16_SANTA]
+name = "Frost Beard"
+traits = [ "xmas16",]
+enchantments = [ "regeneration",]
+
+[NY21_HELM_BREAD]
+name = "Croissant Hat"
+traits = [ "xmas20",]
+enchantments = [ "frenzy",]
+
+[NY21_HELM_ICED]
+name = "Ice Crown"
+traits = [ "xmas20",]
+enchantments = [ "regeneration",]
+
+[HELM_NY2024_SHAKO]
+name = "Grenadier's Shako"
+traits = [ "xmas23",]
+enchantments = [ "damage_absorption",]
+
+[HELM_CHNY18_TRADITIONAL]
+name = "Hat of Generous Gifts"
+traits = [ "chny18", "nintendo_switch_edition",]
+enchantments = [ "frenzy",]
+
+[HELM_AE21_ROACH]
+name = "Sachem's  Roach"
+traits = [ "offer", "independence21",]
+enchantments = [ "regeneration",]
+
+[HELM_BP_S5_TIME_SHIFTER]
+name = "Stonecold"
+traits = [ "set_chronos", "xmas22",]
+enchantments = [ "time_shift",]
+
+[HELM_BP_S1_GUARDIAN]
+name = "Heartwood"
+traits = [ "set_forest_guardian", "xmas21",]
+enchantments = [ "icy_resistance",]
+
+[HELM_C4_Z1_WARLOCK]
+name = "Face of Tragedy"
+traits = [ "set_warlock", "hw21",]
+enchantments = [ "crimson_corruption",]
+
+[HELM_VAL18_PANDA]
+name = "Adorable Panda"
+traits = [ "vd18", "nintendo_switch_edition",]
+enchantments = [ "magic_recharge",]
+
+[NY20_HELM_HAT]
+name = "Fur Ear-Flap"
+traits = [ "xmas19", "nintendo_switch_edition",]
+enchantments = [ "critical_protection",]
+
+[HELM_2_HW16_SET]
+name = "Nightmare Hat"
+traits = [ "hw16", "special_edition", "nintendo_switch_edition",]
+enchantments = [ "magic_recharge",]
+
+[HELM_C2_Z5_DRAGON]
+name = "Dragon Helm"
+traits = [ "set_dragon", "unobtainable", "deceased",]
+
+[HELM_VAL17_WINGS]
+name = "Helm of Inspiration"
+traits = [ "vd17", "special_edition", "nintendo_switch_edition",]
+enchantments = [ "regeneration",]
+
+[HELM_VAL20_WINGS]
+name = "Helm of Inspiration"
+traits = [ "vd20", "special_edition", "nintendo_switch_edition",]
+enchantments = [ "regeneration",]
+
+[HELM_NY18_HAT]
+name = "Fur Ear-Flap"
+traits = [ "xmas17", "xmas21", "nintendo_switch_edition",]
+enchantments = [ "critical_protection",]

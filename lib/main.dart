@@ -26,7 +26,6 @@ import 'package:stalker/app.dart';
 import 'package:stalker/logic/item_database.dart';
 import 'package:stalker/pages/settings.dart';
 import 'package:stalker/themes.dart';
-import 'package:toml/toml.dart';
 
 final logger = Logs(
   storeLogLevel: LogLevel.verbose,
@@ -58,8 +57,7 @@ class _RootAppState extends State<RootApp> {
   @override
   void initState() {
     super.initState();
-    rootBundle.loadString("assets/item_database.toml").then((names) {
-      ItemDatabase.dictionary = TomlDocument.parse(names).toMap();
+    ItemDatabase.load().then((_) {
       logger.i("Loaded item databse");
     });
     ItemDatabase.loadTraits().then((traits) {

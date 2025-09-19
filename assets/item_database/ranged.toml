@@ -1,0 +1,363 @@
+[RANGED_SHURIKENS]
+name = "Shurikens"
+
+[RANGED_THROWING_DAGGERS]
+name = "Throwing Daggers"
+enchantments = [ "precision",]
+
+[RANGED_KUNAI]
+name = "Kunai"
+
+[RANGED_HUNTERS_KNIVES]
+name = "Hunter's Knives"
+
+[RANGED_SILVER_SHURIKENS]
+name = "Silver Shurikens"
+
+[RANGED_THROWING_SPIKES]
+name = "Throwing Spikes"
+
+[RANGED_CHAKRAM]
+name = "Chakram"
+enchantments = [ "bloodrage",]
+
+[RANGED_GHOST_KUNAI]
+name = "Ghostly Kunai"
+
+[RANGED_ANCIENT_CHAKRAM]
+name = "Ancient Chakram"
+
+[RANGED_SUPER_SHURIKEN]
+name = "Star Blade"
+enchantments = [ "bleeding",]
+
+[RANGED_SUPER_AXES]
+name = "Bat Wings"
+enchantments = [ "stun",]
+
+[RANGED_SUPER_CHAKRAM_JEWELS]
+name = "Jewel of the East"
+
+[RANGED_SUPER_CHAKRAM_BLADES]
+name = "Harvester of Souls"
+enchantments = [ "lifesteal",]
+
+[RANGED_ASSASSIN_KUNAI]
+name = "Assassin's Kunai"
+enchantments = [ "poisoning",]
+
+[RANGED_HUNTING_KUNAI]
+name = "Steel Darts"
+
+[RANGED_NEEDLE]
+name = "Needles"
+
+[RANGED_HEAVY_SHURIKENS]
+name = "Weighted Shurikens"
+
+[RANGED_SHURIKEN_OF_DARKNESS]
+name = "Shurikens of Night"
+enchantments = [ "weakness",]
+
+[RANGED_ASSASSINS_DAGGER]
+name = "Assassin's Daggers"
+
+[RANGED_SUPER_KUNAI]
+name = "Lunar Knives"
+enchantments = [ "frenzy",]
+
+[RANGED_BEAST_AXES]
+name = "Beast Axes"
+enchantments = [ "bloodrage",]
+
+[RANGED_KUNAI_OF_WIND]
+name = "Kunai of the Wind"
+
+[RANGED_DRAGON_WINGS]
+name = "Dragon Wings"
+
+[RANGED_CHAKRAM_OF_MASTER]
+name = "Keen Chakram"
+
+[RANGED_SUPER_DAGGERS]
+name = "Crystalline Spikes"
+enchantments = [ "bleeding",]
+
+[RANGED_WEIGHED_KUNAI]
+name = "Weighed Kunai"
+
+[RANGED_THROWING_SICKLES]
+name = "Throwing Sickles"
+
+[RANGED_THROWING_AXE]
+name = "Throwing Axes"
+
+[RANGED_SUPER_BOOMERANG]
+name = "Piercers"
+enchantments = [ "time_bomb",]
+
+[RANGED_CIRCULAR_SAW]
+name = "Circular Saws"
+
+[RANGED_SUPER_MINE]
+name = "Landmines"
+enchantments = [ "enfeeble",]
+
+[RANGED_BLASTER]
+name = "Incinerator"
+enchantments = [ "precision",]
+
+[RANGED_SUPER_BLADE]
+name = "Dissecting Blade"
+enchantments = [ "bleeding",]
+
+[RANGED_THORNS]
+name = "Mortal Thorns"
+enchantments = [ "weakness",]
+
+[RANGED_LOTOS]
+name = "Lotos of Pain"
+
+[RANGED_CHNY20_TRADITIONAL]
+name = "Burning Battle Citrus"
+enchantments = [ "bleeding",]
+
+[NY20_RANGED_COOKIE]
+name = "Gingerbread Surprises"
+enchantments = [ "time_bomb",]
+
+[RANGED_CHNY22_WEIGHED_KUNAI]
+name = "Steal Fang"
+traits = [ "chny22",]
+enchantments = [ "poisoning",]
+
+[RANGED_C3_z3]
+name = ""
+description = "An obsolete equipment code for Sentinel's set early prototype."
+traits = [ "defunct",]
+
+[RANGED_UNKNOWN]
+name = "Unknown Ranged Weapon"
+traits = [ "defunct",]
+
+[RANGED_HW15_SKULL]
+name = "Flame Skull"
+traits = [ "hw15",]
+enchantments = [ "overheat",]
+
+[RANGED_HW19_SET]
+name = "Harbinger of Madness"
+traits = [ "hw19",]
+enchantments = [ "precision",]
+
+[RANGED_HW20_SKULL]
+name = "Grim Baron's Mark"
+traits = [ "hw20",]
+enchantments = [ "frenzy",]
+
+[RANGED_AE21_TOMAHAWK]
+name = "Сhieftain's Tomahawk"
+traits = [ "independence21",]
+enchantments = [ "precision",]
+
+[NY20_RANGED_DONUT]
+name = "Juicy Donut"
+traits = [ "nintendo_switch_edition",]
+enchantments = [ "poisoning",]
+
+[RANGED_NEEDLES_NEMESIS_STINGER_25]
+name = "Sting of Nemesis"
+traits = [ "offer",]
+
+[RANGED_BLASTER_ROGUESFORTUNE_25]
+name = "Rogue's Fortune"
+traits = [ "offer",]
+enchantments = [ "time_bomb",]
+
+[RANGED_BOAT_FESTIVAL_SUPER_SHURIKEN]
+name = "Whirlpool of Petals"
+traits = [ "offer",]
+enchantments = [ "weakness",]
+
+[RANGED_SUN_CHAKRAM]
+name = "Zenith"
+traits = [ "offer",]
+
+[RANGED_AZTEC_24]
+name = "Pain Bound"
+traits = [ "offer",]
+enchantments = [ "poisoning",]
+
+[RANGED_WINDS_HARMONY_25]
+name = "Winds Harmony"
+traits = [ "offer",]
+enchantments = [ "precision",]
+
+[RANGED_PATH_OF_HERESY_25]
+name = "Path of Heresy"
+traits = [ "offer",]
+enchantments = [ "stun",]
+
+[RANGED_FUTURIST_25]
+name = "Furious Maria"
+traits = [ "offer",]
+enchantments = [ "stun",]
+
+[RANGED_SHADES_25]
+name = "Sons of the Eclipse"
+traits = [ "offer",]
+enchantments = [ "precision",]
+
+[RANGED_IND21_KUNAI]
+name = "Blades of the Dawn"
+traits = [ "ram_navami21",]
+enchantments = [ "precision",]
+
+[RANGED_BP_S3_WIND_MAKER]
+name = "Tears of the Wind"
+traits = [ "set_creators_of_the_wind",]
+enchantments = [ "squall",]
+
+[RANGED_BP_S4_SCRIPTWRITER]
+name = "Film Damage"
+traits = [ "set_director",]
+enchantments = [ "plot_twist",]
+
+[RANGED_KARCER_HUNGER_SET]
+name = "Snake Reaper"
+traits = [ "set_karcer",]
+enchantments = [ "predators_fury",]
+
+[RANGED_C2_Z2_MONK_SHURIKEN]
+name = "Monk's Shurikens"
+traits = [ "set_monk",]
+enchantments = [ "tempest_rage", "bloodrage",]
+
+[RANGED_C1_Z4_NEO_WANDERER]
+name = "Photons"
+traits = [ "set_neo_wanderer",]
+enchantments = [ "arcane_martial_arts",]
+
+[RANGED_C2_Z3_SENTINEL_SHURIKEN]
+name = "Sentinel's Blades"
+traits = [ "set_sentinel",]
+enchantments = [ "typhoon_of_spirits",]
+
+[RANGED_BP_S2_SKANDA]
+name = "Sky Shard"
+traits = [ "set_skanda",]
+enchantments = [ "karma",]
+
+[RANGED_RAID_FUNGUS_SET]
+name = "Spore Carriers"
+traits = [ "set_spore_soul",]
+enchantments = [ "cordyceps",]
+
+[RANGED_RAID_VOLCANO_SET]
+name = "Dragon's Tear"
+traits = [ "set_volcano",]
+enchantments = [ "roaring_luminary",]
+
+[RANGED_SUMMER21_DONUT]
+name = "Unbroken Donut"
+traits = [ "summer21",]
+
+[RANGED_SUMMER21_SQUID]
+name = "Furious Squid"
+traits = [ "summer21",]
+
+[RANGED_TITANS_HARPOON]
+name = "Titan's Harpoon"
+description = "Titan uses his extendable hand as his ranged weapon. A mechanical hand shoots out from Titan's arm like a harpoon, which hooks onto Shadow and pulls him towards Titan. He then impales Shadow with his sword and kicks him, knocking him backward. In case the player manages to dodge it, the hand still can hook onto them when it is returning back to Titan."
+traits = [ "unobtainable",]
+
+[RANGED_WAR_AXES]
+name = "War Axes"
+description = "Functions similarly to Needles; when thrown, three small axes follow a straight line spreading apart from each other the further they go, making it almost impossible to dodge at a certain distance. The axes itself are identical to Bat Wings appearance-wise. Used by Drakaina."
+traits = [ "unobtainable",]
+
+[RANGED_FISH]
+name = "Fishes"
+description = "Big sharp-toothed fishes that will follow a straight line when thrown, similar to a dart. Used by Vortex."
+traits = [ "unobtainable",]
+
+[RANGED_VAL20_AXE]
+name = "Broken Hearts"
+traits = [ "vd20",]
+
+[RANGED_XMAS14_SNOWBALLS]
+name = "Snowballs"
+traits = [ "xmas14",]
+
+[RANGED_XMAS15_SNOWBALLS]
+name = "Snow Charges"
+traits = [ "xmas15",]
+enchantments = [ "stun",]
+
+[RANGED_XMAS16_COOKIE]
+name = "Gingerbread Surprises"
+traits = [ "xmas16",]
+enchantments = [ "time_bomb",]
+
+[NY21_RANGED_SNOWRIKENS]
+name = "Fluffy Snowflakes"
+traits = [ "xmas20",]
+enchantments = [ "bloodrage",]
+
+[RANGED_NY2024_AXE]
+name = "Hel's Kiss"
+traits = [ "xmas23",]
+enchantments = [ "bleeding",]
+
+[RANGED_HW17_NEEDLES]
+name = "Cursed Pins"
+traits = [ "hw17", "nintendo_switch_edition",]
+enchantments = [ "frenzy",]
+
+[RANGED_ANNIVERSARY_10TH]
+name = "Harpy's Bite"
+traits = [ "offer", "anniversary10",]
+
+[RANGED_IND21_CHAKRAM]
+name = "Chakrams of Overlord"
+traits = [ "offer", "ram_navami21",]
+enchantments = [ "precision",]
+
+[RANGED_SUMMER21_ANCIENT_CHAKRAM]
+name = "Breakwaters"
+traits = [ "offer", "summer21",]
+enchantments = [ "lifesteal",]
+
+[RANGED_BP_S5_TIME_SHIFTER]
+name = "Chronos's Razor"
+traits = [ "set_chronos", "xmas22",]
+enchantments = [ "time_shift",]
+
+[RANGED_BP_S1_GUARDIAN]
+name = "Marten's Bite"
+traits = [ "set_forest_guardian", "xmas21",]
+enchantments = [ "icy_resistance",]
+
+[RANGED_C4_Z1_WARLOCK_SHURIKEN]
+name = "Morning Star"
+traits = [ "set_warlock", "hw21",]
+enchantments = [ "crimson_corruption",]
+
+[RANGED_NY18_DONUT]
+name = "Juicy Donut"
+traits = [ "xmas17", "nintendo_switch_edition",]
+enchantments = [ "poisoning",]
+
+[RANGED_HW16_SET]
+name = "Demon's Wing"
+traits = [ "hw16", "special_edition", "nintendo_switch_edition",]
+enchantments = [ "stun",]
+
+[RANGED_C2_Z5_DRAGON_BOOMERANG]
+name = "Dragon Fang"
+traits = [ "set_dragon", "unobtainable", "deceased",]
+
+[RANGED_VAL17_AXE]
+name = "Broken Hearts"
+traits = [ "vd17", "special_edition", "nintendo_switch_edition",]
+enchantments = [ "precision",]

@@ -1,0 +1,390 @@
+[MAGIC_ENERGY_BALL]
+name = "Energy Ball"
+description = "Energy Ball is a magic amulet in Shadow Fight 2. It is the second magic unlocked in Act III: Trail of Blood at level 16. It is used by Widow, various fighters and Ninja, and Kali, which she uses to immobilize Shroud."
+
+[MAGIC_FIRE_BALL]
+name = "Fire Ball"
+description = "Fire Ball is the first available Magic in Shadow Fight 2. It is purchased through gems in the store. Fire Ball is unlocked at level 14. It is used by various fighters and by Butcher and Shogun."
+enchantments = [ "weakness",]
+
+[MAGIC_LIGHTNING_ARROW]
+name = "Lightning Arrow"
+description = "Lightning Arrow is a magic in Shadow Fight 2. It is the first magic on Act V: The Greatest Temptation, unlocked at level 25. Lightning Arrow is used by Hermit, Wasp (after losing one round), and by various fighters and ninjas."
+
+[MAGIC_FIRE_PILLAR]
+name = "Fire Pillar"
+description = "Fire Pillar is a magic in Shadow Fight 2. It is the second magic available in Act V: The Greatest Temptation, unlocked at level 27. Fire Pillar is used by Wasp (after losing twice and at the Gates of Shadows and during the Interlude), Shogun (after losing once), and by some fighters during the Interlude. It is also used by the Eternal Volcano."
+enchantments = [ "bloodrage",]
+
+[MAGIC_BOMB]
+name = "Dark Blast"
+description = "Dark Blast is a magic in Shadow Fight 2. It is unlocked at level 19, the first level of Act IV: Pirate Throne. Butcher uses this magic after he loses one round. It is also used by various fighters and ninjas."
+
+[MAGIC_MASS_BOMB]
+name = "Dark Implosion"
+description = "Dark Implosion is a Magic in Shadow Fight 2. It is unlocked at level 21 in Act IV: Pirate Throne. Butcher uses this magic after he loses twice and during Gates of Shadows and Interlude. It is also used by Wasp and by various fighters during Interlude."
+enchantments = [ "overheat",]
+
+[MAGIC_WATER_BALL]
+name = "Water Ball"
+description = "Water Ball is a magic in Shadow Fight 2. It is unlocked at level 31, in Act VI: Iron Reign. Water Ball is used by Hermit (after losing twice and at Gates of Shadows and Interlude), and by some fighters and ninjas. It is also used by the Eternal Vortex."
+
+[MAGIC_ASTEROID]
+name = "Asteroid"
+description = "Asteroid is a magic in Shadow Fight 2. It is unlocked at level 33 in Act VI: Iron Reign, and can only be purchased with gems. Asteroid is used by Shogun (after losing twice and at the Gates of Shadows and during the Interlude), and by the Eternal Hoaxen. "
+enchantments = [ "weakness",]
+
+[MAGIC_WAVE]
+name = "Force Wave"
+description = "Force Wave is a magic in Shadow Fight 2. It is the first magic available in the Interlude, unlocked at level 38. It is used by the Demon Lynx during Gates of Shadows, Interlude and later fights. It is also used by some fighters during Interlude and by the ghost Harpy from Act VII: Chapter 2."
+
+[MAGIC_FIRE_SPLASH]
+name = "Fire Splash"
+description = "Fire Splash is a magic in Shadow Fight 2. Fire Splash is used by some fighters. It is unlocked at level 40 in the Interlude."
+enchantments = [ "overheat",]
+
+[MAGIC_DEATH_RAY]
+name = "Force Ray"
+description = "Force Ray is a magic in Shadow Fight 2. It is unlocked at level 44 in Chapter 1 of Act VII: Revelation. Force Ray is used by some fighters in Act VII and by the Halloween 2016 and 2018 raid-boss, Morgana."
+
+[MAGIC_ACID_CLOUD]
+name = "Toxic Cloud"
+description = "Toxic Cloud is a magic in Shadow Fight 2. It is unlocked at level 47 in Act VII: Chapter 2. It is used by some fighters from Chapter 2 and 3 of Act VII. It is also used by Assassin, Titan's first bodyguard, and the Eternal Arkhos."
+enchantments = [ "weakness",]
+
+[MAGIC_SAWMILL]
+name = "Torturer's Rage"
+description = "Torturer's Rage is the last magic amulet available in Shadow Fight 2. It is unlocked in Act VII: Chapter 3 at Level 51. It is used by Guru, Corsair, and some Fighters from Act VII: Chapter 3. It is also used by the Eternal Drakaina."
+enchantments = [ "lifesteal",]
+
+[MAGIC_FIRE_AURA]
+name = "Wrath of Flame"
+description = "Wrath of Flame is a magic in Shadow Fight 2. It is unlocked at level 50 in Act VII: Chapter 3. It is used by Master, Emperor, May, and a Scavenger. Some fighters from Act VII: Chapter 3 also use this magic."
+enchantments = [ "overheat",]
+
+[MAGIC_8MARCH_24]
+name = "Shivering Earth"
+description = "Shivering Earth is a special event magic exclusively dedicated for International Women's Day 2024 in Shadow Fight 2. It can be obtained by purchasing the Women's Day special paid offer for $8.99 USD, which also comes with the weapon - Weeper's Sorrow, and armor - Poison Petal. The offer was available for a week starting from March 8, 2024."
+enchantments = [ "bloodrage",]
+
+[MAGIC_INDIA_24]
+name = "Highest Measure"
+description = "Highest Measure is a special event magic exclusive to the Destiny in Red 2024 event in Shadow Fight 2. It can be acquired as a a random reward from opening a Casket of Elephant's King, which costs 600 All-seeing Coins or 249 gems to open.\nThis magic is used by Nrityu, the grim reaper."
+enchantments = [ "bloodrage",]
+
+[MAGIC_FOREST_DEMON_25]
+name = "Requiem"
+description = "Requiem is a magic in Shadow Fight 2. This magic was available in a weekly offer."
+enchantments = [ "frenzy",]
+
+[MAGIC_AZTEC_24]
+name = "Redemptive Gift"
+description = "Redemptive Gift is a magic in Shadow Fight 2. This magic was available in a weekly offer via an in-game offer."
+enchantments = [ "enfeeble",]
+
+[MAGIC_CHNY22_WATERBALL]
+name = "Tamer of the Elements"
+description = "Tamer of the Elements is the Chinese New Year 2022 magic in Shadow Fight 2. This magic was available exclusively from an offer via in-game purchase. It was also made obtainable again during Chinese New Year 2024. Tamer of the Elements was initially enchanted with Weakness in 2022 before it is enchanted with Lifesteal."
+traits = [ "chny22",]
+enchantments = [ "lifesteal",]
+
+[MAGIC_CNY2024]
+name = "Star's Breath"
+description = "Star's Breath is a special magic amulet in Shadow Fight 2, available exclusive during 2024 Lunar New Year event. It can be obtained from Plasma Box or ingame offer."
+traits = [ "chny24",]
+enchantments = [ "overheat",]
+
+[MAGIC_BUTCHER_EARTHQUAKE]
+name = ""
+traits = [ "defunct",]
+
+[MAGIC_ARCANE_BALL]
+name = ""
+traits = [ "defunct",]
+
+[MAGIC_C3_z3]
+name = ""
+description = "An obsolete equipment code for Sentinel's set early prototype."
+traits = [ "defunct",]
+
+[MAGIC_HIT_BOX]
+name = ""
+traits = [ "defunct",]
+
+[MAGIC_HUNGER_CLAWS]
+name = "Hunger Claws"
+traits = [ "defunct",]
+
+[MAGIC_MINE]
+name = ""
+traits = [ "defunct",]
+
+[MAGIC_RAT_WAVE]
+name = "Rat Wave"
+traits = [ "defunct",]
+
+[MAGIC_RESURRECTED_25]
+name = "Inner Rebellion"
+description = "It is mentioned in the game files. The functionality of magic is unknown"
+traits = [ "defunct",]
+
+[MAGIC_UNKNOWN]
+name = "Unknown Power"
+traits = [ "defunct",]
+
+[MAGIC_VERTICAL_TRIGGER]
+name = ""
+traits = [ "defunct",]
+
+[MAGIC_WAR_WHIRL]
+name = "War Whirl"
+traits = [ "defunct",]
+
+[MAGIC_FEAR_RAY]
+name = "Fear Ray"
+traits = [ "defunct",]
+
+[MAGIC_PROJECTILE]
+name = ""
+traits = [ "defunct",]
+
+[LIGHTNING]
+name = "Lightning"
+description = "Appears in game's files and has no known use"
+traits = ["defunct"]
+override_type = "magic"
+
+[ABILITY_SATURN_BLASTER]
+name = "Saturn's Blaster"
+description = "used by a \"Player\" entity as a weapon"
+traits = ["defunct"]
+override_type = "ranged"
+
+[ABILITY_SPORE]
+name = "Spore"
+description = "Appears in game's files and has no known use"
+traits = ["defunct"]
+override_type = "magic"
+
+[HERMIT_STORM]
+name = "Hermit Storm"
+description = "used by a \"Player\" entity as a weapon"
+traits = ["defunct"]
+override_type = "magic"
+
+[POWER_FISTS_EARTHQAKE]
+name = "Power Fists Earthquake"
+description = "used by a \"Player\" entity as a weapon"
+traits = ["defunct"]
+override_type = "magic"
+
+[RULE_EARTHQUAKE]
+name = "Earthquake"
+description = "used by a \"Player\" entity as a weapon"
+traits = ["defunct"]
+override_type = "magic"
+
+[ENERGY_PILLAR]
+name = "Energy Pillar"
+description = "used by a \"Player\" entity as a weapon"
+traits = ["defunct"]
+override_type = "magic"
+
+[BOMB]
+name = "Bomb"
+description = "used by a \"Player\" entity as a weapon"
+traits = ["defunct"]
+override_type = "magic"
+
+[MAGIC_CARDS_HW_24]
+name = "Major Arcana"
+description = "Major Arcana is a magic in Shadow Fight 2. This magic was available during the Halloween 2024/Shadow of Eternity event via in-game offer."
+traits = [ "hw24",]
+enchantments = [ "lifesteal",]
+
+[MAGIC_AE21_SPIRIT_PILLAR]
+name = "Spirits' Wrath"
+description = "Spirits' Wrath is the 2021 Independence Day special magic amulet in Shadow Fight 2. It can be obtainable by purchasing the Casket of Anchestors for 600 feather coins or 219 gems. Feather coins was the special currency for the Independence Day update, which could be obtained by defeating Adanti. Spirits' Wrath is enchanted with Bloodrage and the function is similar to Fire Pillar."
+traits = [ "independence21",]
+enchantments = [ "bloodrage",]
+
+[NY20_MAGIC_SNOWBALL]
+name = "Sugar Flash"
+traits = [ "nintendo_switch_edition",]
+enchantments = [ "stun",]
+
+[MAGIC_BOMB_SEED_OF_CREATION_25]
+name = "Seed of Creation"
+traits = [ "offer",]
+
+[MAGIC_ENERGY_BALL_PINK_25]
+name = "Thorn Dome"
+description = "Thorn Dome is a magic in Shadow Fight 2. This magic was available in a weekly offer for real money for $2.99. This magic is the same magic found on Shadow Fight: Shades called Flower Sphere. This magic primarily used by Kanade."
+traits = [ "offer",]
+
+[MAGIC_GAZEOFTHEVOID_25]
+name = "Gaze of the Void"
+description = "Gaze of the Void is a magic in Shadow Fight 2. This magic was available in a weekly offer for $2.99. "
+traits = [ "offer",]
+
+[MAGIC_CYBER_DRAGON_RAY]
+name = "Isotope Reactor"
+description = "Isotope Reactor is a special paid magic that was introduced in the New Year 2024 update of Shadow Fight 2. It can be acquired by purchasing the Cyber-Dragon Pack for $7.99, which also includes the Matter Splitter weapon and Dragon's Thirst helm. The weapon and the bundle were initially available to all players upon the release of the New Year 2024 update. It is now only available to players who have reached level 5 or to returning players who were not there at its initial release."
+traits = [ "offer",]
+
+[MAGIC_NEW_YEAR_25]
+name = "Martyr's Sacrifice"
+description = "Martyr's Sacrifice is a special magic amulet in Shadow Fight 2, available exclusive during 2025 Christmas and New Year event. This magic is available exclusive from an offer via in-game purchase."
+traits = [ "offer",]
+enchantments = [ "bleeding",]
+
+[MAGIC_SONG_OF_THE_TIDE_25]
+name = "Song of the Tide"
+description = "Song of the Tide is a magic in Shadow Fight 2. This magic was available in a weekly offer for real money. The player makes a water wave with both hands, simultaneously extending both arms, then leans forward and launches magic at the enemy. Song of the Tide will move horizontally across the battlefield. When the magic hits the target, the opponent is thrown back and takes 45 points of damage."
+traits = [ "offer",]
+enchantments = [ "frenzy",]
+
+[MAGIC_FUTURIST_25]
+name = "Plasma Cutter"
+description = "Plasma Cutter is a magic in Shadow Fight 2. This magic is available in a weekly offer for $2.99"
+traits = [ "offer",]
+enchantments = [ "time_bomb",]
+
+[MAGIC_BP_S3_WIND_MAKER]
+name = "Eye of the Storm"
+description = "Eye of the Storm is a special magic amulet in Shadow Fight 2. It is the magic of the Creators of the Wind Set. This magic is obtainable through the Battle Pass during American Independence Day event 2022, by purchase Premium Pass to unlock VIP rewards. "
+traits = [ "set_creators_of_the_wind",]
+enchantments = [ "squall",]
+
+[MAGIC_BP_S4_SCRIPTWRITER]
+name = "Smoke and mirrors"
+description = "Smoke and Mirrors is a special magic amulet in Shadow Fight 2. It is the magic of the Director Set. This magic is obtainable through the Battle Pass during Halloween event 2022, by purchase Premium Pass to unlock VIP rewards."
+traits = [ "set_director",]
+enchantments = [ "plot_twist",]
+
+[MAGIC_KARCER_HUNGER_SET]
+name = "Mandibula"
+description = "Mandibula is a magic in Shadow Fight 2. It is the magic amulet of the Karcer Set and can be obtained from Ritual Chest."
+traits = [ "set_karcer",]
+enchantments = [ "predators_fury",]
+
+[MAGIC_C2_Z2_MONK_ROOT_STUN]
+name = "Monk's Amulet"
+description = "Monk's Amulet is a special magic amulet in Shadow Fight 2. Monk's Amulet is one of the possible rewards in the Raid chest at the end of each season. It is necessary to get this magic amulet, along with other equipment from the Monk Set, to unlock the mythical enchantment Tempest Rage. It is enchanted with Poisoning in addition to Tempest Rage (if obtained from Raid, it will not come enchanted with Poisoning)."
+traits = [ "set_monk",]
+enchantments = [ "tempest_rage", "poisoning",]
+
+[MAGIC_C1_Z4_NEO_WANDERER]
+name = "Quantum Leap"
+description = "Quantum Leap is a special magic amulet in Shadow Fight 2. It is the magic amulet of the Neo-wanderer Set. Quantum Leap is obtainable only through purchasing the Neo-wanderer Chest in the raid shop for 399 gems or 8500 shards. Upon purchase, the players may receive the Quantum Leap or other Neo-wanderer item, along with some Charges of Darkness, elixirs or Mystical Coupon. Quantum Leap is enchanted with the mythical enchantment Arcane Martial Art."
+traits = [ "set_neo_wanderer",]
+enchantments = [ "arcane_martial_arts",]
+
+[MAGIC_C2_Z3_SENTINEL_DRAGON]
+name = "Sentinel's Spirit"
+description = "Sentinel's Spirit is a special magic amulet in Shadow Fight 2. It is the magic amulet of the Sentinel's Set. Sentinel's Spirit is obtainable only through purchasing the Chest of Souls Keeper in the raid shop for 1199 gems. Upon purchase, the players may receive the Sentinel's Spirit, along with some Charges of Darkness. Sentinel's Spirit is enchanted with the mythical enchantment Typhoon of Spirits."
+traits = [ "set_sentinel",]
+enchantments = [ "typhoon_of_spirits",]
+
+[MAGIC_BP_S2_SKANDA]
+name = "Kundalini"
+description = "Kundalini is a special magic amulet in Shadow Fight 2. It is the magic of the Skanda Set. This magic is obtainable through the Battle Pass during Bihu festival event 2022, by purchase Premium Pass to unlock VIP rewards."
+traits = [ "set_skanda",]
+enchantments = [ "karma",]
+
+[MAGIC_RAID_FUNGUS_SET]
+name = "Spores of Discord"
+description = "Spores of Discord is a special magic amulet in Shadow Fight 2. It is the magic amulet of the Spore Soul Set and is wielded by the Fungus version of The Lamb."
+traits = [ "set_spore_soul",]
+enchantments = [ "cordyceps",]
+
+[MAGIC_RAID_VOLCANO_SET]
+name = "Roaring Caldera"
+description = "Roaring Caldera is a magic in Shadow Fight 2. It is the magic amulet of the Spore Soul Set and can be obtained from Ritual Chest."
+traits = [ "set_volcano",]
+enchantments = [ "roaring_luminary",]
+
+[MAGIC_ICE_PINS]
+name = "Ice Pillar"
+description = " Despite the name, it does not function similarly to Fire Pillar. Instead, it resembles Dark Implosion, albeit it takes longer for the user to strike the conjuration into the ground and has taller area of effect. The user smashes an ice crystal into the ground to trigger a straight chain of sharp ice stalagmites and upon hitting the opponent, forms a larger stalagmite underneath causing damage and then crumbling back to the ground. It is hard to dodge without an extremely well timed jump, like all magics with a similar function. Used by Widow, Megalith and Ninja."
+traits = [ "unobtainable",]
+
+[MAGIC_MIND_THROW]
+name = "Mind Throw"
+description = "Titan forms a blue energy orb in his hand, then sends another towards the player while holding the original. On impact, Shadow is choked and becomes immobile. Titan then uses the orb to lift Shadow, hold him slightly and slam him back onto the ground."
+traits = [ "unobtainable",]
+
+[MAGIC_DARK_WAVE]
+name = "Dark Wave"
+description = "Magic that looks like Force Wave, but is black in color instead of white. The magic then became available to the player as Sloe Thorn. Used by Fatum, Karcer, The Blackness, Morgana, Banshee, Puppeteer, Faradeya and Ninja."
+traits = [ "unobtainable",]
+
+[MAGIC_ICE_BALL]
+name = "Ice Ball"
+description = "The user creates a spiky ice ball in both hands, then launches it towards the opponent where it shatters on impact. It functions similarly to all straight-path thrown magics like Fire Ball. Later, the magic became available as Shard of Eternal Ice and Continuum special event magics which are just functionally identical. Used by Widow and Corporal."
+traits = [ "unobtainable",]
+
+[TENEBRIS_MAGIC]
+name = "Medium Charge of Darkness"
+traits = [ "unobtainable",]
+
+[MAGIC_NY18_SNOWBALL]
+name = "Sugar Flash"
+description = "Sugar Flash is the New Year 2018 and 2019 special magic amulet in Shadow Fight 2. It can be obtained as a possible reward by purchasing the Gingerbread Chest during New Year 2018. In order to purchase the chest, players need 250 mint coins or 199 gems. Mint coins can be obtained by defeating Candy, the New Year 2018 special raid-boss. Candy herself uses this magic. It is enchanted with the Stun enchantment, and functions like the Minor Charge of Darkness.\nIn the 2019 Christmas update, Sugar Flash comes with a new appearance. It can be obtained after defeating Freeze or from the Gingerbread Chest."
+traits = [ "xmas17",]
+enchantments = [ "stun",]
+
+[NY21_MAGIC_SNOW_CLOUD]
+name = "Prisoned Blizzard"
+traits = [ "xmas20",]
+enchantments = [ "bloodrage",]
+
+[MAGIC_NY2024_AMULET]
+name = "Cold Fusion"
+description = "Cold Fusion is a special magic amulet in Shadow Fight 2, available exclusive during 2023 Christmas and New Year event. It can be obtained from Sly's Bag of Rarities or in game offer."
+traits = [ "xmas23",]
+enchantments = [ "enfeeble",]
+
+[MAGIC_HW17_VOODOO]
+name = "Dark Blood Magic"
+description = "Dark Blood Magic is the Halloween 2017 special magic amulet in Shadow Fight 2. It was obtainable during Halloween 2017 update, as a possible reward by purchasing the Mystical Chest. In order to purchase the chest, players need 250 bone coins or spend 199 gems. Bone coins can be obtained by defeating Whisper, the Halloween 2017 special raid-boss. Whisper herself also uses this magic. It is enchanted with the Bleeding enchantment. Dark Blood Magic functions like the Medium Charges of Darkness."
+traits = [ "hw17", "nintendo_switch_edition",]
+enchantments = [ "bleeding",]
+
+[MAGIC_ANNIVERSARY_10TH]
+name = "Inmate's Shackles"
+description = "Inmate's Shackles is the exclusive 10th Anniversary magic in Shadow Fight 2. This magic is available exclusive from an offer via in-game purchase."
+traits = [ "offer", "anniversary10",]
+
+[MAGIC_BP_S5_TIME_SHIFTER]
+name = "Continuum"
+description = "Continuum is a special magic amulet in Shadow Fight 2. It is the magic of the Chronos Set. This magic is obtainable through the Battle Pass during New Year event 2023, by purchase Premium Pass to unlock VIP rewards. "
+traits = [ "set_chronos", "xmas22",]
+enchantments = [ "time_shift",]
+
+[MAGIC_BP_S1_GUARDIAN]
+name = "Death Grip"
+description = "Death Grip is a special magic amulet in Shadow Fight 2. This magic is obtainable through the Battle Pass during New Year 2022 and 2025 event, by purchasing Premium Pass to unlock VIP rewards."
+traits = [ "set_forest_guardian", "xmas21",]
+enchantments = [ "icy_resistance",]
+
+[MAGIC_C4_Z1_WARLOCK_DARK_WAVE]
+name = "Sloe Thorn"
+description = "Sloe Thorn is a special magic amulet in Shadow Fight 2. This weapon is obtainable through the Battle Pass during Halloween 2021 event, by purchasing Premium Pass to unlock VIP rewards."
+traits = [ "set_warlock", "hw21",]
+enchantments = [ "crimson_corruption",]
+
+[NY20_MAGIC_ICEBALL]
+name = "Shard of Eternal Ice"
+traits = [ "special_edition", "nintendo_switch_edition",]
+enchantments = [ "bloodrage",]
+
+[MAGIC_C2_Z5_DRAGON_EARTHQUAKE]
+name = "Dragon Roar"
+traits = [ "set_dragon", "unobtainable", "deceased",]
+
+[MAGIC_XMAS16_ICEBALL]
+name = "Shard of Eternal Ice"
+description = "Shard of Eternal Ice is a magic in Shadow Fight 2. It was obtainable from the Christmas 2016 Special chest. In the Special Edition, this magic is available in the shop. It is used by the Christmas 2016 special Raid-boss, Freeze.\nIn the 2019 Christmas update, Shard of Eternal Ice comes with a new appearance. It can be obtained after defeating Freeze or from the Gingerbread Chest."
+traits = [ "xmas16", "special_edition", "nintendo_switch_edition",]
+enchantments = [ "bloodrage",]
