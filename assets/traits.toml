@@ -42,6 +42,10 @@ color = "0xFF3F7D58"
 display = "10th Anniversary"
 color = "0xFF254D70"
 
+[anniversary12]
+display = "12th Anniversary"
+color = "0xFF254D70"
+
 [ram_navami21]
 display = "Ram Navami 2021"
 color = "0xFFFFE082"

@@ -154,12 +154,6 @@ description = "Appears in game's files and has no known use"
 traits = ["defunct"]
 override_type = "magic"
 
-[ABILITY_SATURN_BLASTER]
-name = "Saturn's Blaster"
-description = "used by a \"Player\" entity as a weapon"
-traits = ["defunct"]
-override_type = "ranged"
-
 [ABILITY_SPORE]
 name = "Spore"
 description = "Appears in game's files and has no known use"

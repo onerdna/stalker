@@ -643,6 +643,7 @@ enchantments = [ "weakness",]
 [WEAPON_KNUCKLES_SPARKS_OF_PROMETHEUS_25]
 name = "Sparks of Prometheus"
 traits = [ "offer",]
+enchantments = ["time_bomb"]
 
 [WEAPON_FUTURIST_25]
 name = "Hadronic Decay"
@@ -902,6 +903,12 @@ name = "Victorious Jian"
 description = "Victorious Jian is the 2021 Chinese New Year special weapon in Shadow Fight 2. It was obtainable by purchasing the Dragon's Chest for 600 Patterned coins or 249 gems. Patterned coins was the special currency for the 2021 Valentine's Day and the Chinese New Year update, which could be obtained by defeating Son of Heaven. Victorious Jian comes enchanted with Time Bomb."
 traits = [ "chny21", "vd21",]
 enchantments = [ "time_bomb",]
+
+[WEAPON_NAGINATA_GIFT_25]
+name = "Curse of Teramori"
+description = "Anniversary 12th gift"
+traits = [ "gift", "anniversary12",]
+enchantments = ["bloodrage"]
 
 [WEAPON_SHADOW_DAISHO]
 name = "Hero's Will"

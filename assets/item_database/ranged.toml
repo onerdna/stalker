@@ -140,6 +140,12 @@ traits = [ "defunct",]
 name = "Unknown Ranged Weapon"
 traits = [ "defunct",]
 
+[ABILITY_SATURN_BLASTER]
+name = "Saturn's Blaster"
+description = "used by a \"Player\" entity as a weapon"
+traits = ["defunct"]
+override_type = "ranged"
+
 [RANGED_HW15_SKULL]
 name = "Flame Skull"
 traits = [ "hw15",]

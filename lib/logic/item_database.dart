@@ -39,7 +39,6 @@ class ItemDatabase {
   static Future<Iterable<ItemTrait>> loadTraits() async {
     final tomlContent = await rootBundle.loadString("assets/traits.toml");
     final tomlMap = TomlDocument.parse(tomlContent).toMap();
-    print(tomlMap);
     return tomlMap.entries.map((e) =>
         ItemTrait(e.key, e.value["display"], int.parse(e.value["color"])));
   }
