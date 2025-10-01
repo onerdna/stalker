@@ -263,7 +263,7 @@ name = "Navigator's Breath Mask"
 enchantments = [ "damage_return",]
 
 [HELM_FACELESS_MASK]
-name = "Faceless's Mask"
+name = "Faceless Mask"
 
 [HELM_VISOR]
 name = "Elders' Visor"
@@ -470,7 +470,7 @@ name = "Street Tempest"
 traits = [ "summer_fest_25",]
 
 [HEAD_FEAR]
-name = "Tenebris's Head"
+name = "Tenebris' Head"
 traits = [ "unobtainable",]
 
 [BERSTUUK_HEAD]
@@ -584,11 +584,11 @@ name = "Megalith's Head"
 traits = [ "unobtainable",]
 
 [HEAD_FUNGUS]
-name = "Fungus's Head"
+name = "Fungus' Head"
 traits = [ "unobtainable",]
 
 [HEAD_FISH]
-name = "Fish's Head"
+name = "Vortex's Head"
 traits = [ "unobtainable",]
 
 [HEAD_FATUM]
@@ -665,7 +665,7 @@ name = "Brick's Head"
 traits = [ "unobtainable",]
 
 [HEAD_HYPERION]
-name = "Cronos's Head"
+name = "Cronos' Head"
 traits = [ "unobtainable",]
 
 [HEAD_INVISIBLE]
@@ -677,7 +677,7 @@ name = "Raksha's Head"
 traits = [ "unobtainable",]
 
 [HEAD_PRISTESS]
-name = "Pristess's Head"
+name = "Pristess' Head"
 traits = [ "unobtainable",]
 
 [HEAD_FOREST_SPIRIT]

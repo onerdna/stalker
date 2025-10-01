@@ -254,7 +254,7 @@ enchantments = [ "damage_absorption",]
 name = "Outworld Vest"
 
 [ARMOR_FACELESS_TUNIC]
-name = "Faceless's Tunic"
+name = "Faceless Tunic"
 
 [ARMOR_MEMBRANE_CUIRASS]
 name = "Membrane Cuirass"
@@ -431,7 +431,7 @@ name = "Candy's Body"
 traits = [ "unobtainable",]
 
 [BODY_FEAR]
-name = "Tenebris's Body"
+name = "Tenebris' Body"
 traits = [ "unobtainable",]
 
 [BODY_HUNTER]
@@ -494,7 +494,7 @@ description = "Wasp seems to wear a highly-stylized feminine Snake Harness, with
 traits = [ "unobtainable",]
 
 [ARMOR_HUNTRESS]
-name = "Huntress's Armor"
+name = "Widow's Armor"
 description = "Widow seems to wear a highly-stylized feminine Snake Harness, which has draping sleeves and a skirt."
 traits = [ "unobtainable",]
 
@@ -504,7 +504,7 @@ description = "Shogun wears a type of Centurion Mail, which is bigger in size, h
 traits = [ "unobtainable",]
 
 [BODY_FUTURE_MAY]
-name = "Future May's Body"
+name = "Blackness' Body"
 traits = [ "unobtainable",]
 
 [BODY_TITAN]
@@ -552,7 +552,7 @@ name = ""
 traits = [ "unobtainable",]
 
 [ARMOR_BIG_SHROUD]
-name = ""
+name = "Shroud's Armor"
 description = "Shroud wears an armor that resembles an enlarged version of Half-Life Armor."
 traits = [ "unobtainable",]
 
@@ -583,11 +583,11 @@ name = "Megalith's Body"
 traits = [ "unobtainable",]
 
 [BODY_FUNGUS]
-name = "Fungus's Body"
+name = "Fungus' Body"
 traits = [ "unobtainable",]
 
 [BODY_FISH]
-name = "Fish's Body"
+name = "Vortex's Body"
 traits = [ "unobtainable",]
 
 [BODY_HUNGER]
@@ -619,11 +619,11 @@ name = "Whisper's Body"
 traits = [ "unobtainable",]
 
 [BODY_PRISTESS]
-name = "Pristess's Body"
+name = "Pristess' Body"
 traits = [ "unobtainable",]
 
 [ARMOR_HYPERION]
-name = "Cronos's Armor"
+name = "Cronos' Armor"
 traits = [ "unobtainable",]
 
 [ARMOR_XMAS14_SANTA]

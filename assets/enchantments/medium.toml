@@ -1,3 +1,5 @@
+tier = "medium"
+
 [shockingStrike]
 name = "Shocking Strike"
 description = "This enchantment is used only by the raid-bosses Tenebris, Banshee, Gatekeeper, and Power Mode Megalith. Currently has no known weapons that work with this enchantment, the game's Anti-Cheat instantly discards it."

@@ -1,3 +1,5 @@
+tier = "perk"
+
 # For the rest of perks
 [invisibility]
 name = "Invisibility"

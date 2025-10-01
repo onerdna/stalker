@@ -335,7 +335,7 @@ traits = [ "offer", "summer21",]
 enchantments = [ "lifesteal",]
 
 [RANGED_BP_S5_TIME_SHIFTER]
-name = "Chronos's Razor"
+name = "Chronos' Razor"
 traits = [ "set_chronos", "xmas22",]
 enchantments = [ "time_shift",]
 

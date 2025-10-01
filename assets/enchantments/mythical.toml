@@ -1,3 +1,5 @@
+tier = "mythical"
+
 [stone_fetters]
 name = "Stone Fetters"
 id = "PERK_DRAGON_SET_STONE"

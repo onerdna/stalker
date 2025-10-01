@@ -16,6 +16,8 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
+import 'dart:convert';
+
 import 'package:flutter/services.dart';
 import 'package:stalker/logic/equipment_type.dart';
 import 'package:toml/toml.dart';
@@ -24,19 +26,6 @@ import 'package:xml/xml.dart';
 enum EnchantmentTier { simple, medium, mythical, perk }
 
 extension EnchantmentTierExtension on EnchantmentTier {
-  String get fileName {
-    switch (this) {
-      case EnchantmentTier.simple:
-        return "simple";
-      case EnchantmentTier.medium:
-        return "medium";
-      case EnchantmentTier.mythical:
-        return "mythical";
-      case EnchantmentTier.perk:
-        return "perk";
-    }
-  }
-
   int get color {
     switch (this) {
       case EnchantmentTier.simple:
@@ -121,10 +110,16 @@ class EnchantmentsManager {
 
   static Future<void> loadFromFiles() async {
     enchantments.clear();
-    for (final tier in EnchantmentTier.values) {
-      final tomlString = await rootBundle
-          .loadString("assets/enchantments/${tier.fileName}.toml");
+    final manifestContent = await rootBundle.loadString('AssetManifest.json');
+    final Map<String, dynamic> manifestMap = json.decode(manifestContent);
+
+    for (final file in manifestMap.keys
+        .where((key) => key.startsWith("assets/enchantments"))
+        .toList()) {
+      final tomlString = await rootBundle.loadString(file);
       final tomlMap = TomlDocument.parse(tomlString).toMap();
+      final tier = EnchantmentTier.values.byName(tomlMap["tier"]);
+      tomlMap.remove("tier");
       enchantments.addAll(tomlMap.entries.map((e) {
         final id = e.key;
         final data = e.value as Map<String, dynamic>;
