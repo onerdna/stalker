@@ -23,39 +23,18 @@ import 'package:stalker/logic/equipment_type.dart';
 import 'package:toml/toml.dart';
 import 'package:xml/xml.dart';
 
-enum EnchantmentTier { simple, medium, mythical, perk }
+class EnchantmentGroup {
+  final String id;
+  final String displayName;
+  final int color;
+  final int order;
+  final bool hasAspect;
 
-extension EnchantmentTierExtension on EnchantmentTier {
-  int get color {
-    switch (this) {
-      case EnchantmentTier.simple:
-        return 0xFF254D70;
-      case EnchantmentTier.medium:
-        return 0xFFE6521F;
-      case EnchantmentTier.mythical:
-        return 0xFF441752;
-      case EnchantmentTier.perk:
-        return 0xFFB45253;
-    }
-  }
+  EnchantmentGroup(this.id, this.displayName, this.color, this.order, this.hasAspect);
 
-  String get recipeDeliveryName {
-    switch (this) {
-      case EnchantmentTier.simple:
-        return "Simple";
-      case EnchantmentTier.medium:
-        return "Medium";
-      case EnchantmentTier.mythical:
-        return "Mythical"; // either Mythical or Mythic, not tested
-      case EnchantmentTier.perk:
-        return "";
-    }
-  }
-
-  static EnchantmentTier? tierFromRecipeName(String recipeDeliveryName) {
-    return EnchantmentTier.values
-        .where((c) => c.recipeDeliveryName == recipeDeliveryName)
-        .firstOrNull;
+  factory EnchantmentGroup.fromToml(Map<String, dynamic> tomlMap) {
+    return EnchantmentGroup(tomlMap["id"], tomlMap["displayName"],
+        int.parse(tomlMap["color"]), tomlMap["order"], tomlMap["hasAspect"] ?? true);
   }
 }
 
@@ -63,28 +42,27 @@ class Enchantment {
   final String name;
   final String id;
   final String? description;
-  final EnchantmentTier tier;
   final Map<EquipmentType, String> ids;
+  final EnchantmentGroup group;
 
-  const Enchantment(this.name, this.id, this.description, this.tier, this.ids);
+  const Enchantment(this.name, this.id, this.description, this.ids, this.group);
 
   factory Enchantment.fromToml(
-      MapEntry<String, dynamic> entry, EnchantmentTier tier) {
-    if (tier == EnchantmentTier.mythical || tier == EnchantmentTier.perk) {
+      MapEntry<String, dynamic> entry, EnchantmentGroup group) {
+    if (entry.value.containsKey("id")) {
       final id = entry.value["id"] as String;
       return Enchantment(
-        entry.value["name"] as String,
-        entry.key,
-        entry.value["description"] as String?,
-        tier,
-        {
-          EquipmentType.weapon: id,
-          EquipmentType.ranged: id,
-          EquipmentType.magic: id,
-          EquipmentType.armor: id,
-          EquipmentType.helm: id,
-        },
-      );
+          entry.value["name"] as String,
+          entry.key,
+          entry.value["description"] as String?,
+          {
+            EquipmentType.weapon: id,
+            EquipmentType.ranged: id,
+            EquipmentType.magic: id,
+            EquipmentType.armor: id,
+            EquipmentType.helm: id,
+          },
+          group);
     } else {
       final equipmentIdsRaw =
           entry.value["equipment_ids"] as Map<String, dynamic>;
@@ -92,13 +70,8 @@ class Enchantment {
         (k, v) => MapEntry(EquipmentType.values.byName(k), v as String),
       );
 
-      return Enchantment(
-        entry.value["name"] as String,
-        entry.key,
-        entry.value["description"] as String?,
-        tier,
-        equipmentIds,
-      );
+      return Enchantment(entry.value["name"] as String, entry.key,
+          entry.value["description"] as String?, equipmentIds, group);
     }
   }
 
@@ -107,9 +80,11 @@ class Enchantment {
 
 class EnchantmentsManager {
   static List<Enchantment> enchantments = [];
+  static List<EnchantmentGroup> groups = [];
 
   static Future<void> loadFromFiles() async {
     enchantments.clear();
+    groups.clear();
     final manifestContent = await rootBundle.loadString('AssetManifest.json');
     final Map<String, dynamic> manifestMap = json.decode(manifestContent);
 
@@ -118,13 +93,14 @@ class EnchantmentsManager {
         .toList()) {
       final tomlString = await rootBundle.loadString(file);
       final tomlMap = TomlDocument.parse(tomlString).toMap();
-      final tier = EnchantmentTier.values.byName(tomlMap["tier"]);
-      tomlMap.remove("tier");
+      final group = EnchantmentGroup.fromToml(tomlMap["group"]);
+      tomlMap.remove("group");
+      groups.add(group);
       enchantments.addAll(tomlMap.entries.map((e) {
-        final id = e.key;
         final data = e.value as Map<String, dynamic>;
-        return Enchantment.fromToml(MapEntry(id, data), tier);
+        return Enchantment.fromToml(MapEntry(e.key, data), group);
       }));
+      groups.sort((a, b) => a.order.compareTo(b.order));
     }
   }
 

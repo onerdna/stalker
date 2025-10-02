@@ -1,4 +1,8 @@
-tier = "medium"
+[group]
+id = "medium"
+displayName = "Medium"
+color = "0xFFE6521F"
+order = 1
 
 [shockingStrike]
 name = "Shocking Strike"

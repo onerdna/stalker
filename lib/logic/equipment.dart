@@ -40,9 +40,18 @@ class UpgradeDelivery {
   }
 }
 
+enum RecipeEnchantmentTier {
+  simple("Simple"),
+  medium("Medium"),
+  mythical("Mythical");
+
+  final String name;
+  const RecipeEnchantmentTier(this.name);
+}
+
 class RecipeDelivery {
   DateTime time = DateTime.fromMillisecondsSinceEpoch(0);
-  late EnchantmentTier tier;
+  late RecipeEnchantmentTier tier;
   int itemLevel = 0;
   int playerLevel = 0;
 
@@ -52,7 +61,7 @@ class RecipeDelivery {
     time = DateTime.fromMillisecondsSinceEpoch(int.parse(deliveryTime) * 1000);
     this.itemLevel = int.parse(itemLevel);
     this.playerLevel = int.parse(playerLevel);
-    this.tier = EnchantmentTierExtension.tierFromRecipeName(tier)!;
+    this.tier = RecipeEnchantmentTier.values.firstWhere((e) => e.name == tier);
   }
 }
 
@@ -66,7 +75,7 @@ class Equipment {
   int upgrade = 0;
   UpgradeDelivery? upgradeDelivery;
   RecipeDelivery? recipeDelivery;
-  
+
   static const minLevel = 1;
   static const maxLevel = 52;
   static const minUpgrade = 0;
@@ -104,8 +113,7 @@ class Equipment {
             enchantments.map((e) => e.toXml(type))),
       if (recipeDelivery != null)
         XmlElement(XmlName("RecipeDelivery"), [
-          XmlAttribute(
-              XmlName("Name"), recipeDelivery!.tier.recipeDeliveryName),
+          XmlAttribute(XmlName("Name"), recipeDelivery!.tier.name),
           XmlAttribute(
               XmlName("ItemLevel"), recipeDelivery!.itemLevel.toString()),
           XmlAttribute(

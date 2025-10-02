@@ -380,10 +380,10 @@ packages:
     dependency: transitive
     description:
       name: preact_signals
-      sha256: a5b445796a02244b85fa43d79a7030fbfbbb08f7c48277ee93c636140a8fb2e0
+      sha256: "8bf3cec7fe784d224f1a1132ae7b2f9f3852609046ccb71c4f450a13dd811abf"
       url: "https://pub.dev"
     source: hosted
-    version: "1.8.3"
+    version: "1.9.3"
   pub_semver:
     dependency: "direct main"
     description:
@@ -420,10 +420,10 @@ packages:
     dependency: transitive
     description:
       name: shared_preferences_android
-      sha256: a2608114b1ffdcbc9c120eb71a0e207c71da56202852d4aab8a5e30a82269e74
+      sha256: bd14436108211b0d4ee5038689a56d4ae3620fd72fd6036e113bf1345bc74d9e
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.12"
+    version: "2.4.13"
   shared_preferences_foundation:
     dependency: transitive
     description:
@@ -468,26 +468,26 @@ packages:
     dependency: "direct main"
     description:
       name: signals
-      sha256: "85225d03e71720b6fff62a8296ba7328a3e363d1ffbb9f3a85efaa05d9e85e67"
+      sha256: a7f5fea3f27708b2705cff501aa0eb32f893552943a7fa8b2851401164459d13
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.2"
+    version: "6.2.0"
   signals_core:
     dependency: transitive
     description:
       name: signals_core
-      sha256: "5668ff1fb953fe48c88b03d50d43c5fe128cd7c831b932a4157f5f6be868b80f"
+      sha256: "10e527cda3c400703e4156da16aeaea274644ecb7db11abeec7dc7cc9bec9abd"
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.2"
+    version: "6.2.0"
   signals_flutter:
     dependency: transitive
     description:
       name: signals_flutter
-      sha256: "66b36ed0b5961cc7d8d0606813bc3fd66758dc1728cbfcffef0d2a97c7a706a2"
+      sha256: d04c973e3feeaddd7d8428f3a8af911297febb3c083091217e1a1fc0c4d6504f
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.2"
+    version: "6.2.0"
   sky_engine:
     dependency: transitive
     description: flutter

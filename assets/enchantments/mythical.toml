@@ -1,4 +1,9 @@
-tier = "mythical"
+[group]
+id = "mythical"
+displayName = "Mythical"
+color = "0xFF441752"
+order = 2
+hasAspect = false
 
 [stone_fetters]
 name = "Stone Fetters"

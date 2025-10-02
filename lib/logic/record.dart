@@ -89,7 +89,7 @@ class Record {
   @override
   int get hashCode => metadata.uuid.hashCode;
 
-  String? getAttribute(String xpath) {
+  String? _getAttribute(String xpath) {
     return tree.xpath(xpath).whereType<XmlAttribute>().firstOrNull?.value;
   }
 
@@ -104,7 +104,7 @@ class Record {
   }
 
   int getCurrency(Currency currency) {
-    return int.parse(getAttribute(_getCurrencyPath(currency)) ?? "0");
+    return int.parse(_getAttribute(_getCurrencyPath(currency)) ?? "0");
   }
 
   String _getCurrencyPath(Currency currency) {
@@ -135,7 +135,7 @@ class Record {
   }
 
   bool get isDiscipleEnabled {
-    return getAttribute(_disciplePath) == "1";
+    return _getAttribute(_disciplePath) == "1";
   }
 
   set isDiscipleEnabled(bool value) {
@@ -143,7 +143,7 @@ class Record {
   }
 
   int get experience {
-    return int.tryParse(getAttribute(_experiencePath) ?? "0") ?? 0;
+    return int.tryParse(_getAttribute(_experiencePath) ?? "0") ?? 0;
   }
 
   set experience(int value) {
@@ -174,7 +174,7 @@ class Record {
   }
 
   bool get showForge {
-    return (getAttribute("$_warriorPath/@ShowForge") ?? "0") == "1";
+    return (_getAttribute("$_warriorPath/@ShowForge") ?? "0") == "1";
   }
 
   set showForge(bool value) {
@@ -208,13 +208,13 @@ class Record {
           .map((ench) {
         final enchantment = EnchantmentsManager.findByEquipmentTypeId(
             type, ench.getAttribute("Name")!)!;
-        final aspect = enchantment.tier == EnchantmentTier.mythical
-            ? null
-            : int.tryParse(
+        final aspect = enchantment.group.hasAspect
+            ? int.tryParse(
                     (ench.getElement("Set") ?? XmlElement(XmlName("Set")))
                             .getAttribute("Aspect") ??
                         "0") ??
-                0;
+                0
+            : null;
         return AppliedEnchantment(
             enchantment, aspect?.clamp(0, AppliedEnchantment.maxAspect));
       }).toList();
@@ -275,11 +275,11 @@ class Record {
       equippedEquipment[equipment.type] == equipment.id;
 
   String get gameVersion =>
-      getAttribute("/Root/Versions/Version/@Value") ?? "1.0.0";
+      _getAttribute("/Root/Versions/Version/@Value") ?? "1.0.0";
   String get dataVersion =>
-      getAttribute("/Root/Versions/DataVersion/@Value") ?? "1.0.0";
+      _getAttribute("/Root/Versions/DataVersion/@Value") ?? "1.0.0";
   int get launchIndex =>
-      int.parse(getAttribute("/Root/GameLaunchIndex/@Value") ?? "0");
+      int.parse(_getAttribute("/Root/GameLaunchIndex/@Value") ?? "0");
 
   String get xml {
     _saveEquipment();

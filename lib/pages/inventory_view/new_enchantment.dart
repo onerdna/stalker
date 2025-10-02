@@ -37,12 +37,6 @@ class NewEnchantmentDialog extends StatefulWidget {
 }
 
 class _NewEnchantmentDialogState extends State<NewEnchantmentDialog> {
-  static const sections = [
-    (EnchantmentTier.simple, "Simple Enchantments"),
-    (EnchantmentTier.medium, "Medium Enchantments"),
-    (EnchantmentTier.mythical, "Mythical Enchantments"),
-    (EnchantmentTier.perk, "[MOD] Perks")
-  ];
   int amountSliderValue = 1;
 
   @override
@@ -65,31 +59,32 @@ class _NewEnchantmentDialogState extends State<NewEnchantmentDialog> {
                   amountSliderValue = v.toInt();
                 });
               }),
-          ...sections
-              .map((ench) => [
+          ...EnchantmentsManager.groups
+              .map((group) => [
                     Center(
                       child: Text(
-                        ench.$2,
+                        group.displayName,
                         style: const TextStyle(fontSize: 20),
                       ),
                     ),
                     ...EnchantmentsManager.enchantments
                         .where((e) =>
-                            e.idFor(widget.type) != null && e.tier == ench.$1)
-                        .map((e) => Row(
+                            e.idFor(widget.type) != null && e.group == group)
+                        .map((ench) => Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Expanded(
                                   child: FilledButton(
-                                      onPressed: () => widget.onPressed(e, amountSliderValue),
-                                      child: Text(e.name)),
+                                      onPressed: () => widget.onPressed(
+                                          ench, amountSliderValue),
+                                      child: Text(ench.name)),
                                 ),
-                                if (e.description != null) ...[
+                                if (ench.description != null) ...[
                                   const SizedBox(
                                     width: 8,
                                   ),
                                   ClickTooltip(
-                                    message: e.description,
+                                    message: ench.description,
                                     decoration: BoxDecoration(
                                         border: Border.all(width: 1),
                                         borderRadius: BorderRadius.circular(16),

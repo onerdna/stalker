@@ -413,10 +413,9 @@ class _InventoryViewState extends State<InventoryView> {
                                           item.enchantments.add(
                                             AppliedEnchantment(
                                               selected,
-                                              selected.tier ==
-                                                      EnchantmentTier.mythical
-                                                  ? null
-                                                  : AppliedEnchantment.maxAspect,
+                                              selected.group.hasAspect
+                                                  ? AppliedEnchantment.maxAspect
+                                                  : null,
                                             ),
                                           );
                                         }
@@ -467,8 +466,7 @@ class _InventoryViewState extends State<InventoryView> {
                           ),
                         ],
                       ),
-                      Text(
-                          "Recipe: ${item.recipeDelivery!.tier.recipeDeliveryName}",
+                      Text("Recipe: ${item.recipeDelivery!.tier.name}",
                           style: theme.textTheme.bodyLarge),
                       Text(
                         "Finishes: ${item.recipeDelivery!.time.toString()}",
@@ -676,7 +674,7 @@ class _InventoryViewState extends State<InventoryView> {
       final enchantments = ItemDatabase.getEnchantments(e).map((ench) =>
           DecoratedBox(
               decoration: BoxDecoration(
-                  border: Border.all(width: 2, color: Color(ench.tier.color)),
+                  border: Border.all(width: 2, color: Color(ench.group.color)),
                   borderRadius: BorderRadius.circular(16)),
               child: Padding(
                 padding: const EdgeInsets.only(
@@ -696,11 +694,8 @@ class _InventoryViewState extends State<InventoryView> {
               onTap: () {
                 final equipment = Equipment(widget.equipmentType, e, 1, 0);
                 equipment.enchantments = ItemDatabase.getEnchantments(e)
-                    .map((ench) => AppliedEnchantment(
-                        ench,
-                        ench.tier == EnchantmentTier.mythical
-                            ? null
-                            : AppliedEnchantment.maxAspect))
+                    .map((ench) =>
+                        AppliedEnchantment(ench, AppliedEnchantment.maxAspect))
                     .toList();
                 setState(() {
                   RecordsManager.activeRecord!.equipment[widget.equipmentType]!

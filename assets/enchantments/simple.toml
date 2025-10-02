@@ -1,4 +1,8 @@
-tier = "simple"
+[group]
+id = "simple"
+displayName = "Simple"
+color = "0xFF254D70"
+order = 0
 
 [critical_protection]
 name = "Critical Protection"

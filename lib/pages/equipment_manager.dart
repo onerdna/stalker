@@ -46,7 +46,8 @@ class TraitItem {
   }
 
   bool enabledByDefault() {
-    return !["unobtainable", "defunct", "deceased", "set_dragon"].contains(trait.id);
+    return !["unobtainable", "defunct", "deceased", "set_dragon"]
+        .contains(trait.id);
   }
 }
 
@@ -218,9 +219,9 @@ class _EquipmentManagerState extends State<EquipmentManager> {
                               ItemDatabase.getEnchantments(equipmentId)
                                   .map((ench) => AppliedEnchantment(
                                       ench,
-                                      ench.tier == EnchantmentTier.mythical
-                                          ? null
-                                          : AppliedEnchantment.maxAspect))
+                                      ench.group.hasAspect
+                                          ? AppliedEnchantment.maxAspect
+                                          : null))
                                   .toList();
                           RecordsManager.activeRecord!.equipment[equipmentType]!
                               .add(equipment);
