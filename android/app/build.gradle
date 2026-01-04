@@ -5,9 +5,9 @@ plugins {
 }
 
 android {
-    namespace = "com.dojocommunity.stalker"
+    namespace = "com.onerdna.stalker"
     compileSdk = 36
-    ndkVersion = "27.0.12077973"
+    ndkVersion = "29.0.14206865"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -18,8 +18,14 @@ android {
         jvmTarget = JavaVersion.VERSION_17
     }
 
+    sourceSets {
+        main {
+            aidl.srcDirs = ['src/main/aidl']
+        }
+    }
+
     defaultConfig {
-        applicationId = "com.dojocommunity.stalker"
+        applicationId = "com.onerdna.stalker"
         minSdk = 26
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
@@ -41,7 +47,7 @@ flutter {
     source = "../.."
 }
 dependencies {
-    def shizuku_version = "13.1.0"
+    def shizuku_version = "13.1.5"
     implementation "dev.rikka.shizuku:api:$shizuku_version"
     implementation "dev.rikka.shizuku:provider:$shizuku_version"
 }

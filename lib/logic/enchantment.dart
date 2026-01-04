@@ -16,8 +16,6 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-import 'dart:convert';
-
 import 'package:flutter/services.dart';
 import 'package:stalker/logic/equipment_type.dart';
 import 'package:toml/toml.dart';
@@ -30,11 +28,16 @@ class EnchantmentGroup {
   final int order;
   final bool hasAspect;
 
-  EnchantmentGroup(this.id, this.displayName, this.color, this.order, this.hasAspect);
+  EnchantmentGroup(
+      this.id, this.displayName, this.color, this.order, this.hasAspect);
 
   factory EnchantmentGroup.fromToml(Map<String, dynamic> tomlMap) {
-    return EnchantmentGroup(tomlMap["id"], tomlMap["displayName"],
-        int.parse(tomlMap["color"]), tomlMap["order"], tomlMap["hasAspect"] ?? true);
+    return EnchantmentGroup(
+        tomlMap["id"],
+        tomlMap["displayName"],
+        int.parse(tomlMap["color"]),
+        tomlMap["order"],
+        tomlMap["hasAspect"] ?? true);
   }
 }
 
@@ -85,10 +88,9 @@ class EnchantmentsManager {
   static Future<void> loadFromFiles() async {
     enchantments.clear();
     groups.clear();
-    final manifestContent = await rootBundle.loadString('AssetManifest.json');
-    final Map<String, dynamic> manifestMap = json.decode(manifestContent);
-
-    for (final file in manifestMap.keys
+    final assets =
+        (await AssetManifest.loadFromAssetBundle(rootBundle)).listAssets();
+    for (final file in assets
         .where((key) => key.startsWith("assets/enchantments"))
         .toList()) {
       final tomlString = await rootBundle.loadString(file);

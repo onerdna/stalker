@@ -80,8 +80,10 @@ class _AboutPageState extends State<AboutPage> {
                         const Text("Reddit: ",
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
-                        _makeHyperlink(
-                            "https://www.reddit.com/user/XAndrenoX/"),
+                        Expanded(
+                          child: _makeHyperlink(
+                              "https://www.reddit.com/user/XAndrenoX/"),
+                        ),
                       ],
                     ),
                     Row(
@@ -89,33 +91,9 @@ class _AboutPageState extends State<AboutPage> {
                         const Text("GitHub: ",
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
-                        Flexible(
-                            child: _makeHyperlink(
-                                "https://github.com/onerdna")),
-                      ],
-                    ),
-                    const Divider(),
-                    const Text("Special thanks to ShadowFight2dojo community",
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    Row(
-                      children: [
-                        const Text("Reddit: ",
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold)),
-                        Flexible(
-                            child: _makeHyperlink(
-                                "https://www.reddit.com/r/ShadowFight2dojo/")),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        const Text("Discord: ",
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold)),
-                        Flexible(
-                            child: _makeHyperlink(
-                                "https://discord.gg/ThDBZztuJu")),
+                        Expanded(
+                            child:
+                                _makeHyperlink("https://github.com/onerdna")),
                       ],
                     ),
                     const Divider(),
@@ -131,8 +109,8 @@ class _AboutPageState extends State<AboutPage> {
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
                         Flexible(
-                            child: _makeHyperlink(
-                                "https://github.com/sametaor/")),
+                            child:
+                                _makeHyperlink("https://github.com/sametaor/")),
                       ],
                     ),
                     const Divider(),
@@ -187,10 +165,6 @@ class _AboutPageState extends State<AboutPage> {
                       (
                         "Virus icons created by Freepik - Flaticon",
                         "https://www.flaticon.com/free-icons/virus"
-                      ),
-                      (
-                        "Botnet icons created by juicy_fish - Flaticon",
-                        "https://www.flaticon.com/free-icons/botnet"
                       ),
                       (
                         "Treasure icons created by kliwir art - Flaticon",

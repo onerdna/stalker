@@ -16,7 +16,6 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-
 import 'dart:io';
 import 'dart:math';
 
@@ -29,10 +28,10 @@ Future<String> readFile(String path) async {
   final file = makeTempFile(directory.path);
 
   validateCpOutput(
-      file.path, await ShizukuApi.runCommand("cp $path ${file.path}"));
+      file.path, await BridgeApi.runCommand("cp $path ${file.path}"));
 
   final contents = await file.readAsString();
-  await ShizukuApi.runCommand("rm ${file.path}");
+  await BridgeApi.runCommand("rm ${file.path}");
 
   return contents;
 }
@@ -66,6 +65,6 @@ Future<void> writeFile(String targetPath, String contents) async {
   final file = makeTempFile(directory.path);
   await file.writeAsString(contents);
   validateCpOutput(
-      targetPath, await ShizukuApi.runCommand("cp ${file.path} $targetPath"));
-  await ShizukuApi.runCommand("rm ${file.path}");
+      targetPath, await BridgeApi.runCommand("cp ${file.path} $targetPath"));
+  await BridgeApi.runCommand("rm ${file.path}");
 }

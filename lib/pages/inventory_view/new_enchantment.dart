@@ -50,15 +50,53 @@ class _NewEnchantmentDialogState extends State<NewEnchantmentDialog> {
           Text("Amount: $amountSliderValue",
               style: Theme.of(context).textTheme.bodyLarge,
               textAlign: TextAlign.center),
-          Slider(
-              min: 1,
-              max: 100,
-              value: amountSliderValue.toDouble(),
-              onChanged: (v) {
-                setState(() {
-                  amountSliderValue = v.toInt();
-                });
-              }),
+          LayoutBuilder(
+            builder: (ctx, constaints) {
+              return Row(spacing: 0, children: [
+                TextButton(
+                  onPressed: () {
+                    setState(() {
+                      amountSliderValue = (amountSliderValue - 1).clamp(1, 100);
+                    });
+                  },
+                  style: TextButton.styleFrom(
+                      padding: EdgeInsets.zero,
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      minimumSize: Size(constaints.maxWidth * 0.15, 64)),
+                  child: const Text("-",
+                      style:
+                          TextStyle(fontWeight: FontWeight.w700, fontSize: 24)),
+                ),
+                SizedBox(
+                  width: constaints.maxWidth * 0.7,
+                  height: 64,
+                  child: Slider(
+                      min: 1,
+                      max: 100,
+                      value: amountSliderValue.toDouble(),
+                      onChanged: (v) {
+                        setState(() {
+                          amountSliderValue = v.toInt();
+                        });
+                      }),
+                ),
+                TextButton(
+                  onPressed: () {
+                    setState(() {
+                      amountSliderValue = (amountSliderValue + 1).clamp(1, 100);
+                    });
+                  },
+                  style: TextButton.styleFrom(
+                      padding: EdgeInsets.zero,
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      minimumSize: Size(constaints.maxWidth * 0.15, 64)),
+                  child: const Text("+",
+                      style:
+                          TextStyle(fontWeight: FontWeight.w700, fontSize: 24)),
+                )
+              ]);
+            },
+          ),
           ...EnchantmentsManager.groups
               .map((group) => [
                     Center(

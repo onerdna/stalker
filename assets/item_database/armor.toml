@@ -21,11 +21,15 @@ name = "Apprentice’s Chainmail"
 
 [ARMOR_BRONZE]
 name = "Bronze Armor"
-enchantments = [ "damage_absorption",]
+enchantments = [
+  "damage_absorption",
+]
 
 [ARMOR_IMHOTEP]
 name = "Imhotep Cuirass"
-enchantments = [ "magic_recharge",]
+enchantments = [
+  "magic_recharge",
+]
 
 [ARMOR_SHADOW]
 name = "Shadow Armor"
@@ -41,15 +45,21 @@ name = "Dragon Blood"
 
 [ARMOR_BEAST_SHELL]
 name = "Beast Shell"
-enchantments = [ "overheat",]
+enchantments = [
+  "overheat",
+]
 
 [ARMOR_SUPER_CROW]
 name = "Crow's Bane"
-enchantments = [ "damage_return",]
+enchantments = [
+  "damage_return",
+]
 
 [ARMOR_SUPER_CLOAK]
 name = "Sentinel Coat"
-enchantments = [ "shielding",]
+enchantments = [
+  "shielding",
+]
 
 [ARMOR_RONIN]
 name = "Ronin Doublet"
@@ -62,7 +72,9 @@ name = "Chainmail"
 
 [ARMOR_BLOOD_MASTER]
 name = "Scarlet Leather"
-enchantments = [ "overheat",]
+enchantments = [
+  "overheat",
+]
 
 [ARMOR_STRONG_BARBARIAN]
 name = "Sturdy Barbarian Armor"
@@ -84,11 +96,15 @@ name = "Moon Shroud"
 
 [ARMOR_DRAGON]
 name = "Radiant Platemail"
-enchantments = [ "rejuvenation",]
+enchantments = [
+  "rejuvenation",
+]
 
 [ARMOR_ASSASSIN]
 name = "Assassin's Robe"
-enchantments = [ "overheat",]
+enchantments = [
+  "overheat",
+]
 
 [ARMOR_HAWK]
 name = "Hawk Mantle"
@@ -104,14 +120,18 @@ name = "Aegis of Winds"
 
 [ARMOR_QUILTED]
 name = "Riveted Jacket"
-enchantments = [ "damage_absorption",]
+enchantments = [
+  "damage_absorption",
+]
 
 [ARMOR_FOREIGN]
 name = "Red Doublet"
 
 [ARMOR_GREEN]
 name = "Snake Harness"
-enchantments = [ "rejuvenation",]
+enchantments = [
+  "rejuvenation",
+]
 
 [ARMOR_SENSEI_KENDO]
 name = "Kendo Armor"
@@ -124,7 +144,9 @@ name = "Grand Chainmail"
 
 [ARMOR_SPIKE]
 name = "Spike Breastplate"
-enchantments = [ "overheat",]
+enchantments = [
+  "overheat",
+]
 
 [ARMOR_GILDED_CENTURION]
 name = "Gilded Centurion Mail"
@@ -134,7 +156,9 @@ name = "Raven Mantle"
 
 [ARMOR_DARK]
 name = "Dark Cuirass"
-enchantments = [ "damage_return",]
+enchantments = [
+  "damage_return",
+]
 
 [ARMOR_SHADOW_MASTER]
 name = "Shadow Carapace"
@@ -147,7 +171,9 @@ name = "Scale Breastplate"
 
 [ARMOR_CELESTIAL]
 name = "Celestial Gown"
-enchantments = [ "rejuvenation",]
+enchantments = [
+  "rejuvenation",
+]
 
 [ARMOR_HARBINGER_CUIRASS]
 name = "Harbinger Cuirass"
@@ -157,30 +183,42 @@ name = "Death Mark"
 
 [ARMOR_BLACK_BUFFALO]
 name = "Black Buffalo"
-enchantments = [ "overheat",]
+enchantments = [
+  "overheat",
+]
 
 [ARMOR_SUPER_BANSHEE]
 name = "Banshee's Cry"
-enchantments = [ "frenzy",]
+enchantments = [
+  "frenzy",
+]
 
 [ARMOR_CEREMONIAL]
 name = "Ceremonial Armor"
 
 [ARMOR_SUPER_SPIKED]
 name = "Fury Carapace"
-enchantments = [ "frenzy",]
+enchantments = [
+  "frenzy",
+]
 
 [ARMOR_SUPER_HALO]
 name = "Hallow Aegis"
-enchantments = [ "regeneration",]
+enchantments = [
+  "regeneration",
+]
 
 [ARMOR_SUPER_FEATHERED]
 name = "Ravenheart"
-enchantments = [ "regeneration",]
+enchantments = [
+  "regeneration",
+]
 
 [ARMOR_PIT_MASTER]
 name = "Pit Master"
-enchantments = [ "damage_absorption",]
+enchantments = [
+  "damage_absorption",
+]
 
 [ARMOR_PATRIARCH_MANTLE]
 name = "Patriarch Mantle"
@@ -196,21 +234,27 @@ name = "Adamantine Platemail"
 
 [ARMOR_BRUTE_BREASTPLATE]
 name = "Brute Breastplate"
-enchantments = [ "magic_recharge",]
+enchantments = [
+  "magic_recharge",
+]
 
 [ARMOR_VINDICATOR_MAIL]
 name = "Vindicator Mail"
 
 [ARMOR_SUPER_NIGHTFALL]
 name = "Nightfall Cuirass"
-enchantments = [ "damage_return",]
+enchantments = [
+  "damage_return",
+]
 
 [ARMOR_VIPER]
 name = "Viper Armor"
 
 [ARMOR_SUPER_SAMURAI]
 name = "O-yoroi"
-enchantments = [ "shielding",]
+enchantments = [
+  "shielding",
+]
 
 [ARMOR_SHAMAN]
 name = "Shamanic Harness"
@@ -220,14 +264,18 @@ name = "Luminosity Plate"
 
 [ARMOR_REDSHIFT]
 name = "Redshift"
-enchantments = [ "damage_return",]
+enchantments = [
+  "damage_return",
+]
 
 [ARMOR_ALLOY]
 name = "Alloy Armor"
 
 [ARMOR_SUPER_FUSION]
 name = "Fusion Core"
-enchantments = [ "frenzy",]
+enchantments = [
+  "frenzy",
+]
 
 [ARMOR_INFERNO]
 name = "Inferno Carapace"
@@ -237,18 +285,24 @@ name = "Polytoxine Lorica"
 
 [ARMOR_SPACE_GOWN]
 name = "Space Gown"
-enchantments = [ "damage_absorption",]
+enchantments = [
+  "damage_absorption",
+]
 
 [ARMOR_GALAXY_TUNIC]
 name = "Galaxy Tunic"
 
 [ARMOR_SUPER_MERC_SUIT]
 name = "Mercenary Vest"
-enchantments = [ "shielding",]
+enchantments = [
+  "shielding",
+]
 
 [ARMOR_HALF-LIFE]
 name = "Half-life Armor"
-enchantments = [ "damage_absorption",]
+enchantments = [
+  "damage_absorption",
+]
 
 [ARMOR_OUTWORLD_VEST]
 name = "Outworld Vest"
@@ -261,449 +315,731 @@ name = "Membrane Cuirass"
 
 [ARMOR_NAVIGATORS_COAT]
 name = "Navigator's Coat"
-enchantments = [ "regeneration",]
+enchantments = [
+  "regeneration",
+]
 
 [ARMOR_CHNY20_TRADITIONAL]
 name = "Dragon's Scale"
 
 [ARMOR_INDIA_24]
 name = "Root of Grief"
-enchantments = [ "shielding",]
+enchantments = [
+  "shielding",
+]
 
 [NY20_ARMOR_SANTA]
 name = "Winter Breath Jacket"
-enchantments = [ "regeneration",]
+enchantments = [
+  "regeneration",
+]
 
 [ARMOR_CHNY21_BULL]
 name = "Armor of Majesty"
-traits = [ "chny21",]
-enchantments = [ "damage_absorption",]
+traits = [
+  "chny21",
+]
+enchantments = [
+  "damage_absorption",
+]
 
 [ARMOR_UNKNOWN]
 name = "Unknown Armor"
-traits = [ "defunct",]
+traits = [
+  "defunct",
+]
 
 [ARMOR_C3_z3]
 name = ""
 description = "An obsolete equipment code for Sentinel's set early prototype."
-traits = [ "defunct",]
+traits = [
+  "defunct",
+]
 
 [ARMOR_HW14_WICKED_VEIL]
 name = "Wicked Veil"
-traits = [ "hw14",]
+traits = [
+  "hw14",
+]
 
 [ARMOR_HW15_WICKED_VEIL]
 name = "Mist Cloak"
-traits = [ "hw15",]
+traits = [
+  "hw15",
+]
 
 [ARMOR_HW16_SET]
 name = "Spider-king Coat"
-traits = [ "hw16",]
-enchantments = [ "overheat",]
+traits = [
+  "hw16",
+]
+enchantments = [
+  "overheat",
+]
 
 [ARMOR_HW19_SET]
 name = "Grim Mantle"
-traits = [ "hw19",]
+traits = ["hw19", "hw23"]  # verified
 
 [ARMOR_WOODOO_HW20]
 name = "Grim Baron's Coat"
-traits = [ "hw20",]
-enchantments = [ "shielding",]
+traits = [
+  "hw20",
+]
+enchantments = [
+  "shielding",
+]
 
 [ARMOR_TRIBAL_HW_24]
 name = "Mist Lord"
-traits = [ "hw24",]
+traits = [
+  "hw24",
+]
 
 [ARMOR_AE21_WARRIOR]
 name = "Robe of Courage"
-traits = [ "independence21",]
-enchantments = [ "magic_recharge",]
+traits = [
+  "independence21",
+]
+enchantments = [
+  "magic_recharge",
+]
 
 [ARMOR_CHNY20_HOODIE]
 name = "Game Fan's Hoodie"
-traits = [ "nintendo_switch_edition",]
-enchantments = [ "regeneration",]
+traits = [
+  "nintendo_switch_edition",
+]
+enchantments = [
+  "regeneration",
+]
 
 [ARMOR_EGYPT_25]
 name = "Scarab's Dream"
-traits = [ "offer",]
+traits = [
+  "offer",
+]
 
 [ARMOR_8MARCH_24]
 name = "Poison Petal"
-traits = [ "offer",]
-enchantments = [ "shielding",]
+traits = [
+  "offer",
+]
+enchantments = [
+  "shielding",
+]
 
 [ARMOR_AZTEC_24]
 name = "Ancestral Pride"
-traits = [ "offer",]
-enchantments = [ "rejuvenation",]
+traits = [
+  "offer",
+]
+enchantments = [
+  "rejuvenation",
+]
 
 [ARMOR_HOAXEN_25]
 name = "Fate Cocoon"
-traits = [ "offer",]
-enchantments = [ "damage_absorption",]
+traits = [
+  "offer",
+]
+enchantments = [
+  "damage_absorption",
+]
 
 [ARMOR_REVENANT_25]
 name = "Will's Prisoner"
-traits = [ "offer",]
-enchantments = [ "overheat",]
+traits = [
+  "offer",
+]
+enchantments = [
+  "overheat",
+]
 
 [ARMOR_FUTURIST_25]
 name = "Crimson Hunter"
-traits = [ "offer",]
-enchantments = [ "damage_return",]
+traits = [
+  "offer",
+]
+enchantments = [
+  "damage_return",
+]
 
 [ARMOR_IND21_TWILIGHT]
 name = "Unbreakable Gift of Gods"
-traits = [ "ram_navami21",]
-enchantments = [ "shielding",]
+traits = [
+  "ram_navami21",
+]
+enchantments = [
+  "shielding",
+]
 
 [ARMOR_IND21_HOODIE]
 name = "Festive Hoody"
-traits = [ "ram_navami21",]
-enchantments = [ "damage_absorption",]
+traits = [
+  "ram_navami21",
+]
+enchantments = [
+  "damage_absorption",
+]
 
 [ARMOR_BP_S3_WIND_MAKER]
 name = "Shaman's Whisper"
-traits = [ "set_creators_of_the_wind",]
-enchantments = [ "squall",]
+traits = [
+  "set_creators_of_the_wind",
+]
+enchantments = [
+  "squall",
+]
 
 [ARMOR_BP_S4_SCRIPTWRITER]
 name = "Fourth Wall"
-traits = [ "set_director",]
-enchantments = [ "plot_twist",]
+traits = [
+  "set_director",
+]
+enchantments = [
+  "plot_twist",
+]
 
 [ARMOR_RAID_KARCER_SET]
 name = "Legarthy"
-traits = [ "set_karcer",]
-enchantments = [ "predators_fury",]
+traits = [
+  "set_karcer",
+]
+enchantments = [
+  "predators_fury",
+]
 
 [ARMOR_C2_Z2_MONK]
 name = "Monk's Robe"
-traits = [ "set_monk",]
-enchantments = [ "tempest_rage", "damage_absorption",]
+traits = [
+  "set_monk",
+]
+enchantments = [
+  "tempest_rage",
+  "damage_absorption",
+]
 
 [ARMOR_C1_Z4_NEO_WANDERER]
 name = "Electrostatic"
-traits = [ "set_neo_wanderer",]
-enchantments = [ "arcane_martial_arts",]
+traits = [
+  "set_neo_wanderer",
+]
+enchantments = [
+  "arcane_martial_arts",
+]
 
 [ARMOR_C2_Z3_SENTINEL]
 name = "Sentinel's Armor"
-traits = [ "set_sentinel",]
-enchantments = [ "typhoon_of_spirits",]
+traits = [
+  "set_sentinel",
+]
+enchantments = [
+  "typhoon_of_spirits",
+]
 
 [ARMOR_BP_S2_SKANDA]
 name = "Heart of Kshatriya"
-traits = [ "set_skanda",]
-enchantments = [ "karma",]
+traits = [
+  "set_skanda",
+]
+enchantments = [
+  "karma",
+]
 
 [ARMOR_RAID_FUNGUS_SET]
 name = "Mycelium Guardian"
-traits = [ "set_spore_soul",]
-enchantments = [ "cordyceps",]
+traits = [
+  "set_spore_soul",
+]
+enchantments = [
+  "cordyceps",
+]
 
 [ARMOR_RAID_VOLCANO_SET]
 name = "Ash Whisper"
-traits = [ "set_volcano",]
-enchantments = [ "roaring_luminary",]
+traits = [
+  "set_volcano",
+]
+enchantments = [
+  "roaring_luminary",
+]
 
 [ARMOR_SUMMER21_SANTA]
 name = "Jacket of Icy Tenacity"
-traits = [ "summer21",]
-enchantments = [ "regeneration",]
+traits = [
+  "summer21",
+]
+enchantments = [
+  "regeneration",
+]
 
 [ARMOR_SUMMER21_LEGIONER]
 name = "Coastal Sunset"
-traits = [ "summer21",]
-enchantments = [ "magic_recharge",]
+traits = [
+  "summer21",
+]
+enchantments = [
+  "magic_recharge",
+]
 
 [ARMOR_RAID_SUMMER_FEST_25]
 name = "K3vlar"
-traits = [ "summer_fest_25",]
+traits = [
+  "summer_fest_25",
+]
 
 [BODY_BRICK]
 name = "Brick's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_CANDY]
 name = "Candy's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_FEAR]
 name = "Tenebris' Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_HUNTER]
 name = "Stalker's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_INVISIBLE]
 name = "Invisible's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_KENJI]
 name = "Kenji's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_MONKEY]
 name = "Monkey's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_SCAVENGER_1]
 name = "Scavenger's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_SCAVENGER_2]
 name = "Scavenger's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_SCAVENGER_4]
 name = "Scavenger's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_SHIN]
 name = "Shin's Body"
 description = "Lynx's bodyguard Shin wears a signature armor/clothing that is reflective of his own avatar. The overhanging half sleeves and bottom linings are visually seen during battle against him."
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_SMOTHER]
 name = "Smother's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_SON_OF_THE_SUN]
 name = "Son of the Sun's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_WOMAN]
 name = ""
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_LYNX]
 name = "Lynx's Body"
 description = "Lynx wears a customized Leather Jacket with a denser appearance and a belt attached to it."
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_BUTCHER]
 name = "Butcher's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_WASP]
 name = "Wasp's Armor"
 description = "Wasp seems to wear a highly-stylized feminine Snake Harness, with added cuffed long sleeves and trousers."
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_HUNTRESS]
 name = "Widow's Armor"
 description = "Widow seems to wear a highly-stylized feminine Snake Harness, which has draping sleeves and a skirt."
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_SHOGUN]
 name = "Shogun's Armor"
 description = "Shogun wears a type of Centurion Mail, which is bigger in size, has visible pants without the hanging plates, and a wakizashi sheath."
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_FUTURE_MAY]
 name = "Blackness' Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_TITAN]
 name = "Titan's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BERSTUUK_BODY]
 name = "Berstuuk's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_WOMAN_RONIN]
 name = ""
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_WOMAN_LUMINOSITY]
 name = ""
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_WOMAN_ALLOY]
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 name = ""
 
 [ARMOR_WOMAN_GREEN]
 name = ""
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_WOMAN_REDSHIFT]
 name = ""
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_WOMAN_BARBARIAN]
 name = ""
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_BIG_BEAST_SHELL]
 name = ""
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_BIG_CENTURION]
 name = ""
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_BIG_QUILTED]
 name = ""
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_BIG_SHROUD]
 name = "Shroud's Armor"
 description = "Shroud wears an armor that resembles an enlarged version of Half-Life Armor."
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_BIG_SPIKE]
 name = ""
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_REDSHIFT_BIG]
 name = ""
 description = "An enlarged version of the Redshift armor that was supposed to be worn by some male enemies, though no one wears it."
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_ZONE7_HERO1]
 name = ""
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_ANCIENT]
 name = "Ancient's Armor"
 description = "Ancient wears a masculine version of Wasp's custom Snake Harness."
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_VULCAN]
 name = "Vulcan's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_MEGALITH]
 name = "Megalith's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_FUNGUS]
 name = "Fungus' Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_FISH]
 name = "Vortex's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_HUNGER]
 name = "Karcer's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_HOAXEN]
 name = "Hoaxen's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_WAR]
 name = "Drakaina's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_GATEKEEPER]
 name = "Gatekeeper's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_SATURN]
 name = "Saturn's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_RAVANA]
 name = "Ravana's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_WHISPER]
 name = "Whisper's Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [BODY_PRISTESS]
 name = "Pristess' Body"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_HYPERION]
 name = "Cronos' Armor"
-traits = [ "unobtainable",]
+traits = [
+  "unobtainable",
+]
 
 [ARMOR_XMAS14_SANTA]
 name = "Christmas Spirit"
-traits = [ "xmas14",]
+traits = [
+  "xmas14",
+]
 
 [ARMOR_XMAS15_SANTA]
 name = "Frosty Breastplate"
-traits = [ "xmas15",]
-enchantments = [ "rejuvenation",]
+traits = [
+  "xmas15",
+]
+enchantments = [
+  "rejuvenation",
+]
 
 [ARMOR_XMAS16_SANTA]
 name = "Winter Breath Jacket"
-traits = [ "xmas16",]
-enchantments = [ "regeneration",]
+traits = [
+  "xmas16",
+]
+enchantments = [
+  "regeneration",
+]
 
 [NY21_ARMOR_CUIRASS]
 name = "Sweet Cuirass"
-traits = [ "xmas20",]
-enchantments = [ "regeneration",]
+traits = [
+  "ny21",
+]
+enchantments = [
+  "regeneration",
+]
 
 [ARMOR_NY2024_VIKING_CLOTHES]
 name = "Berserk's Legacy"
-traits = [ "xmas23",]
-enchantments = [ "frenzy",]
+traits = [
+  "ny24",
+]
+enchantments = [
+  "frenzy",
+]
 
 [ARMOR_CHNY18_TRADITIONAL]
 name = "Dragon's Scale"
-traits = [ "chny18", "nintendo_switch_edition",]
-enchantments = [ "damage_return",]
+traits = [
+  "chny18",
+  "nintendo_switch_edition",
+]
+enchantments = [
+  "damage_return",
+]
 
 [ARMOR_HW17_CLOAK]
 name = "Voodoo Vest"
-traits = [ "hw17", "nintendo_switch_edition",]
-enchantments = [ "damage_return",]
+traits = [
+  "hw17",
+  "nintendo_switch_edition",
+]
+enchantments = [
+  "damage_return",
+]
 
 [ARMOR_ANNIVERSARY_10TH]
 name = "Snow Blind"
-traits = [ "offer", "anniversary10",]
+traits = [
+  "offer",
+  "anniversary10",
+]
 
 [ARMOR_BP_S5_TIME_SHIFTER]
 name = "Biting Frost"
-traits = [ "set_chronos", "xmas22",]
-enchantments = [ "time_shift",]
+traits = [
+  "set_chronos",
+  "ny23",
+]
+enchantments = [
+  "time_shift",
+]
 
 [ARMOR_BP_S1_GUARDIAN]
 name = "Deadfall"
-traits = [ "set_forest_guardian", "xmas21",]
-enchantments = [ "icy_resistance",]
+traits = ["set_forest_guardian", "ny22", "ny25"]
+enchantments = [
+  "icy_resistance",
+]
 
 [ARMOR_C4_Z1_WARLOCK]
 name = "Evening Sunset"
-traits = [ "set_warlock", "hw21",]
-enchantments = [ "crimson_corruption",]
+traits = [
+  "set_warlock",
+  "hw21",
+]
+enchantments = [
+  "crimson_corruption",
+]
 
 [ARMOR_VAL18_HOODIE]
 name = "Game Fan's Hoodie"
-traits = [ "vd18", "nintendo_switch_edition",]
-enchantments = [ "regeneration",]
+traits = [
+  "vd18",
+  "nintendo_switch_edition",
+]
+enchantments = [
+  "regeneration",
+]
 
 [NY20_ARMOR_MANTLE]
 name = "Padded Jacket"
-traits = [ "nintendo_switch_edition", "xmas17", "xmas19",]
-enchantments = [ "shielding",]
+traits = ["ny20", "ny21"]
+enchantments = [
+  "shielding",
+]
 
 [ARMOR_C2_Z5_DRAGON]
 name = "Dragon Armor"
-traits = [ "set_dragon", "unobtainable", "deceased",]
+traits = [
+  "set_dragon",
+  "unobtainable",
+  "deceased",
+]
 
 [ARMOR_VAL17_MANTLE]
 name = "Poetic Mantle"
-traits = [ "vd17", "special_edition", "nintendo_switch_edition",]
-enchantments = [ "damage_absorption", "rejuvenation",]
+traits = [
+  "vd17",
+  "special_edition",
+  "nintendo_switch_edition",
+]
+enchantments = [
+  "damage_absorption",
+  "rejuvenation",
+]
 
 [ARMOR_VAL20_MANTLE]
 name = "Poetic Mantle"
-traits = [ "vd20", "special_edition", "nintendo_switch_edition",]
-enchantments = [ "damage_absorption", "rejuvenation",]
+traits = [
+  "vd20",
+]
+enchantments = [
+  "damage_absorption",
+  "rejuvenation",
+]
 
 [ARMOR_NY18_MANTLE]
 name = "Padded Jacket"
-traits = [ "xmas17", "xmas19", "nintendo_switch_edition",]
-enchantments = [ "shielding",]
+traits = [
+  "ny18",
+  "nintendo_switch_edition",
+]
+enchantments = [
+  "shielding",
+]

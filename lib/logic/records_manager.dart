@@ -150,7 +150,7 @@ class RecordsManager {
     final dataPath =
         metadata.isActive ? "$userdataPath/users.xml" : "$path/data.xml";
     if (metadata.isActive) {
-      ShizukuApi.runCommand("cp $userdataPath/users.xml $path/data.xml");
+      BridgeApi.runCommand("cp $userdataPath/users.xml $path/data.xml");
     }
 
     final tree = XmlDocument.parse(await readFile(dataPath));

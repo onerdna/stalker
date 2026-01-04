@@ -1,5 +1,3 @@
-// ignore_for_file: use_build_context_synchronously
-
 /* 
  * Stalker
  * Copyright (C) 2025 Andreno
@@ -17,6 +15,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
+
+// ignore_for_file: use_build_context_synchronously
 
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -253,7 +253,10 @@ class _InventoryViewState extends State<InventoryView> {
                   },
                   radius: 16,
                   containedInkWell: true,
-                  child: const Icon(Icons.delete),
+                  child: const Padding(
+                    padding: EdgeInsets.only(right: 4),
+                    child: Icon(Icons.delete),
+                  ),
                 ),
                 Expanded(
                   child: Stack(
@@ -346,7 +349,30 @@ class _InventoryViewState extends State<InventoryView> {
                   shape: const RoundedRectangleBorder(
                     side: BorderSide(color: Colors.transparent, width: 0),
                   ),
-                  title: const Text("Enchantments"),
+                  title: Row(
+                    children: [
+                      if (item.enchantments.isNotEmpty)
+                        IconButton(
+                          onPressed: () {
+                            showConfirmationDialog(
+                                const Text("Are you sure?"),
+                                const Text(
+                                    "This will discard all enchantments from this item"),
+                                context, (ctx) {
+                              Navigator.of(ctx).pop();
+                              setState(() {
+                                item.enchantments.clear();
+                              });
+                            });
+                          },
+                          icon: const Icon(
+                            Icons.close,
+                            size: 16,
+                          ),
+                        ),
+                      const Text("Enchantments"),
+                    ],
+                  ),
                   children: [
                     ...item.enchantments.map((applied) => Padding(
                           padding: const EdgeInsets.only(left: 24.0),
@@ -692,17 +718,17 @@ class _InventoryViewState extends State<InventoryView> {
           children: [
             InkResponse(
               onTap: () {
-                final equipment = Equipment(widget.equipmentType, e, 1, 0);
+                final record = RecordsManager.activeRecord!;
+                final equipment =
+                    Equipment(widget.equipmentType, e, record.level, 0);
                 equipment.enchantments = ItemDatabase.getEnchantments(e)
                     .map((ench) =>
                         AppliedEnchantment(ench, AppliedEnchantment.maxAspect))
                     .toList();
                 setState(() {
-                  RecordsManager.activeRecord!.equipment[widget.equipmentType]!
-                      .add(equipment);
+                  record.equipment[widget.equipmentType]!.add(equipment);
                   _searchEquipment(query);
                 });
-                Fluttertoast.showToast(msg: "Added to the inventory");
               },
               radius: 16,
               containedInkWell: true,

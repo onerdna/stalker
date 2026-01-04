@@ -298,12 +298,20 @@ color = "0xFFF7A5C1"
 display = "Chinese New Year 2018"
 color = "0xFFE57373"
 
+[chny20]
+display = "Chinese New Year 2020"
+color = "0xFFE57373"
+
 [chny21]
 display = "Chinese New Year 2021"
 color = "0xFFE57373"
 
 [chny22]
 display = "Chinese New Year 2022"
+color = "0xFFE57373"
+
+[chny23]
+display = "Chinese New Year 2023"
 color = "0xFFE57373"
 
 [chny24]

@@ -24,12 +24,11 @@ class ConfirmButton extends StatefulWidget {
   final Widget child;
   final ButtonStyle style;
 
-  const ConfirmButton({
-    super.key,
-    required this.onConfirmed,
-    required this.child,
-    this.style = const ButtonStyle()
-  });
+  const ConfirmButton(
+      {super.key,
+      required this.onConfirmed,
+      required this.child,
+      this.style = const ButtonStyle()});
 
   @override
   State<ConfirmButton> createState() => _ConfirmButtonState();
@@ -74,12 +73,16 @@ class _ConfirmButtonState extends State<ConfirmButton> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      style: widget.style.copyWith(backgroundColor: WidgetStatePropertyAll(_confirming ? Colors.red : null)),
+      style: widget.style.copyWith(
+          backgroundColor:
+              WidgetStatePropertyAll(_confirming ? Colors.red : null)),
       onPressed: _onPressed,
-      child: _confirming ? const Padding(
-        padding: EdgeInsets.all(6.0),
-        child: Text('Are you sure?'),
-      ) : widget.child,
+      child: _confirming
+          ? const Padding(
+              padding: EdgeInsets.only(left: 6, right: 6, top: 1, bottom: 1),
+              child: Text('Are you sure?'),
+            )
+          : widget.child,
     );
   }
 }

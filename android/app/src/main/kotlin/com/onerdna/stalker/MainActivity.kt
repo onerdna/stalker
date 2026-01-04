@@ -1,21 +1,25 @@
-package com.dojocommunity.stalker
+package com.onerdna.stalker
 
-import android.annotation.SuppressLint
+import android.content.ComponentName
+import android.content.ServiceConnection
 import android.content.pm.PackageManager
-import android.os.Build
+import android.os.IBinder
+import androidx.annotation.Keep
+import io.flutter.Log
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
-import io.flutter.plugin.common.EventChannel
 import io.flutter.plugin.common.MethodChannel
 import rikka.shizuku.Shizuku
-import rikka.shizuku.ShizukuRemoteProcess
-import java.io.BufferedReader
-import java.io.InputStreamReader
+import rikka.shizuku.Shizuku.UserServiceArgs
 
 
 class MainActivity : FlutterActivity() {
-    private val shizukuChannel = "com.dojocommunity.stalker/shizuku"
+    @Keep
+    private val shizukuChannel = "com.onerdna.stalker/shizuku"
+    @Keep
+    private var binderService: IBinderService? = null
 
+    @Keep
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
 
@@ -38,7 +42,24 @@ class MainActivity : FlutterActivity() {
                 "runCommand" -> {
                     val command = call.argument<String>("command")
                         ?: throw IllegalArgumentException("Invalid command argument")
-                    result.success(runCommand(command))
+                    if (binderService == null) {
+                        result.error("BINDER_SERVICE_NOT_AVAILABLE", "Binder service is not available", "binderService is null")
+                    } else {
+                        result.success(binderService?.runCommand(command))
+                    }
+                }
+
+                "isBinderServiceAvailable" -> {
+                    result.success(binderService != null)
+                }
+
+                "startBinderService" -> {
+                    try {
+                        startBinderService()
+                        result.success("")
+                    } catch (e: Exception) {
+                        result.error("START_BINDER_SERVICE_ERROR", e.toString(), "exception in startBindService")
+                    }
                 }
 
                 else -> {
@@ -48,37 +69,7 @@ class MainActivity : FlutterActivity() {
         }
     }
 
-    private fun runCommand(command: String): String {
-        val outputBuilder = StringBuilder()
-        var process: ShizukuRemoteProcess? = null
-        try {
-            require(command.isNotEmpty()) { "Command cannot be null or empty" }
-
-            process = Shizuku.newProcess(arrayOf("sh", "-c", command), null, "/")
-            val input = BufferedReader(InputStreamReader(process.getInputStream()))
-            val error = BufferedReader(InputStreamReader(process.errorStream))
-
-            var line: String?
-            while ((input.readLine().also { line = it }) != null) {
-                outputBuilder.append(line).append("\n")
-            }
-
-            while ((error.readLine().also { line = it }) != null) {
-                outputBuilder.append(line).append("\n")
-            }
-
-            process.waitFor()
-        } catch (e: java.lang.IllegalArgumentException) {
-            outputBuilder.append("Error: ").append(e.message)
-        } catch (e: Exception) {
-            outputBuilder.append("Unexpected error: ").append(e.message)
-            e.printStackTrace()
-        } finally {
-            process?.destroy()
-        }
-        return outputBuilder.toString().trim { it <= ' ' }
-    }
-
+    @Keep
     private fun requestPermission(code: Int, result: MethodChannel.Result) {
         if (Shizuku.isPreV11()) {
             result.success(false)
@@ -107,5 +98,26 @@ class MainActivity : FlutterActivity() {
         })
 
         Shizuku.requestPermission(code)
+    }
+
+    @Keep
+    private fun startBinderService() {
+        Log.i("BinderService", "Trying to start the service...")
+        Shizuku.bindUserService(
+            UserServiceArgs(
+                ComponentName(context, BinderService::class.java)
+            )
+                .processNameSuffix("shell")
+                .debuggable(false)
+                .daemon(false),
+            object : ServiceConnection {
+                override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
+                    this@MainActivity.binderService = IBinderService.Stub.asInterface(service)
+                    Log.i("BinderService", "service connected")
+                }
+
+                override fun onServiceDisconnected(name: ComponentName?) {}
+            }
+        )
     }
 }

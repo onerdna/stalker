@@ -53,28 +53,6 @@ class _EquipmentPageState extends State<EquipmentPage> {
     );
   }
 
-  void _becomeTitan(BuildContext context) {
-    for (var e in [
-      (EquipmentType.weapon, "WEAPON_TITAN_GIANT_SWORD"),
-      (EquipmentType.ranged, "RANGED_TITANS_HARPOON"),
-      (EquipmentType.magic, "MAGIC_MIND_THROW"),
-      (EquipmentType.armor, "BODY_TITAN"),
-      (EquipmentType.helm, "HEAD_TITAN")
-    ]) {
-      var equipment = RecordsManager.activeRecord!.equipment[e.$1]
-          ?.where((i) => i.id == e.$2)
-          .firstOrNull;
-      if (equipment == null) {
-        equipment = Equipment(e.$1, e.$2, 52, 4);
-        RecordsManager.activeRecord!.equipment[e.$1]!.add(equipment);
-      }
-      RecordsManager.activeRecord!.setEquipped(equipment);
-    }
-
-    RecordsManager.saveRecord(RecordsManager.activeRecord!)
-        .then((_) => Fluttertoast.showToast(msg: "Became Titan!"));
-  }
-
   @override
   Widget build(BuildContext context) {
     final gridItems = [
@@ -149,23 +127,15 @@ class _EquipmentPageState extends State<EquipmentPage> {
           );
         }
       ),
-      (
-        "Become Titan",
-        "assets/images/robot-assistant.png",
-        () {
-          _becomeTitan(context);
-        }
-      ),
     ];
     return Scaffold(
         body: GridView.builder(
       padding: EdgeInsets.zero,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
-        mainAxisSpacing: 0,
-        crossAxisSpacing: 8,
-        childAspectRatio: 0.88
-      ),
+          crossAxisCount: 3,
+          mainAxisSpacing: 0,
+          crossAxisSpacing: 8,
+          childAspectRatio: 0.88),
       itemCount: gridItems.length,
       itemBuilder: (context, index) {
         final (label, imagePath, onTap) = gridItems[index];

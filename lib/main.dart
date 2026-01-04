@@ -26,12 +26,16 @@ import 'package:stalker/logic/item_database.dart';
 import 'package:stalker/pages/settings.dart';
 import 'package:stalker/themes.dart';
 
-final logger = Logs(
-  storeLogLevel: LogLevel.verbose,
-  printLogLevelWhenDebug: LogLevel.verbose,
-  printLogLevelWhenRelease: LogLevel.verbose,
-  storeLimit: 500,
-);
+Logs constructLogger() {
+  return logger = Logs(
+    storeLogLevel: LogLevel.verbose,
+    printLogLevelWhenDebug: LogLevel.verbose,
+    printLogLevelWhenRelease: LogLevel.verbose,
+    storeLimit: 500,
+  );
+}
+
+var logger = constructLogger();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

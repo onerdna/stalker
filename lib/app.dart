@@ -62,29 +62,6 @@ class App extends StatefulWidget {
   State<App> createState() => _AppState();
 }
 
-void showFatalErrorDialog(
-    BuildContext context, String title, String description,
-    [List<Widget> actions = const []]) {
-  showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (_) => AlertDialog(
-            title: Text(title),
-            content: Text(description),
-            actions: [
-              TextButton(
-                onPressed: () {
-                  SystemNavigator.pop();
-                },
-                child: const Text("Exit"),
-              ),
-              ...actions
-            ],
-          )).then((_) {
-    exit(0);
-  });
-}
-
 Future<void> showConfirmationDialog(Widget title, Widget content,
     BuildContext context, void Function(BuildContext) onConfirm) async {
   showDialog(
@@ -111,17 +88,13 @@ class _AppState extends State<App> {
   ];
 
   Future<bool> _tryToConnectToShizuku(BuildContext context) async {
-    if (!(await ShizukuApi.pingBinder() ?? false)) {
+    if (!(await BridgeApi.pingBinder() ?? false)) {
       return false;
     }
-    bool hasPermission = await ShizukuApi.checkPermission() ?? false;
 
-    if (!hasPermission) {
-      await ShizukuApi.requestPermission(0);
-      hasPermission = await ShizukuApi.checkPermission() ?? false;
-      if (!hasPermission) {
-        return false;
-      }
+    if (!(await BridgeApi.checkPermission() ?? false)) {
+      await BridgeApi.requestPermission(0);
+      return await BridgeApi.checkPermission() ?? false;
     }
 
     return true;
@@ -170,31 +143,29 @@ class _AppState extends State<App> {
   Future<String> _getArchitecture() async {
     final abis = (await (DeviceInfoPlugin()).androidInfo).supportedAbis;
     if (abis.contains("x86_64")) {
-      return "x86_64";
-    } else if (abis.contains("x86")) {
-      return "x86";
+      return "_x86_64";
     } else if (abis.contains("arm64-v8a")) {
-      return "arm64";
+      return "64";
     } else {
-      return "arm";
+      return "32";
     }
   }
 
   Future<void> _runSetupService() async {
     final architecture = await _getArchitecture();
     logger.i("Detected architecture $architecture");
-    final fileName = "setup_service_$architecture";
+    final fileName = "setup_service$architecture";
     final directory = (await getExternalStorageDirectory())!;
     final byteData = await rootBundle.load("assets/binaries/$fileName");
 
     final file = File('${directory.path}/setup_service');
     await file.writeAsBytes(byteData.buffer.asUint8List());
     logger.i(
-        "cp output: ${await ShizukuApi.runCommand("sh -c \"cp ${directory.path}/setup_service /data/local/tmp/._stalker_setup_service\"")}");
+        "cp output: ${await BridgeApi.runCommand("sh -c \"cp ${directory.path}/setup_service /data/local/tmp/._stalker_setup_service\"")}");
     logger.i(
-        "chmod output: ${await ShizukuApi.runCommand("chmod +x /data/local/tmp/._stalker_setup_service")}");
+        "chmod output: ${await BridgeApi.runCommand("chmod +x /data/local/tmp/._stalker_setup_service")}");
     logger.i(
-        "Service output: ${await ShizukuApi.runCommand("/data/local/tmp/._stalker_setup_service >/dev/null 2>&1 &")}");
+        "Service output: ${await BridgeApi.runCommand("/data/local/tmp/._stalker_setup_service >/dev/null 2>&1 &")}");
   }
 
   Future<bool> _tryToLoadUserID(BuildContext context) async {
@@ -203,10 +174,6 @@ class _AppState extends State<App> {
 
     if (await file.exists()) {
       final id = await file.readAsString();
-      if (id.length != 16) {
-        showFatalErrorDialog(context, "Invalid User ID", "");
-      }
-      logger.i("Loaded userid $id");
       RecordsManager.userid = id;
     } else {
       if (!isSetupServiceRunning) {
@@ -218,6 +185,7 @@ class _AppState extends State<App> {
   }
 
   Future<void> _tryToInitializeApp(BuildContext context) async {
+    logger = constructLogger();
     await getExternalStorageDirectory(); // to create the data folder
     package.value = await PackageInfo.fromPlatform();
     final prefs = await SharedPreferences.getInstance();
@@ -232,34 +200,79 @@ class _AppState extends State<App> {
         }
       });
     }
+
     await _tryToShowNotice();
+
     if (await _tryToConnectToShizuku(context)) {
       logger.i("Shizuku is available");
-      if (await _tryToLoadUserID(context)) {
-        EnchantmentsManager.loadFromFiles().then((_) async {
-          logger.i("Loaded the enchantments");
-          try {
-            await _tryToLoadRecords();
-            logger.i("Loaded ${RecordsManager.records.length} record(s)");
-            setState(() {
-              initialized.value = true;
-            });
-          } catch (e, s) {
-            logger.e("Unable to load the save file");
-            logger.e("$e\n$s");
-            showFatalErrorDialog(context, "Unable to load the save file",
-                "Stalker can't load your save. If you've just installed the game, open it once.\n$e}");
-          }
-        }).onError((e, s) {
-          logger.e("Unable to load enchantments");
-          logger.e("$e\n$s");
-          Fluttertoast.showToast(msg: "Unable to load enchantments");
-        });
-      }
     } else {
       logger.e("Shizuku is not available");
-      Fluttertoast.showToast(msg: "Shizuku is not available");
+      return;
     }
+
+    var startResult = await BridgeApi.startBinderService();
+    if (startResult.isNotEmpty) {
+      logger.e("Error while starting binder service: $startResult");
+      return;
+    }
+    var serviceAvailable = await BridgeApi.isBinderServiceAvailable();
+    var tries = 0;
+    while (!serviceAvailable && tries < 10) {
+      setState(() {
+        logger.i("Waiting for binder service...");
+      });
+      await Future.delayed(const Duration(milliseconds: 500));
+      serviceAvailable = await BridgeApi.isBinderServiceAvailable();
+      tries++;
+    }
+    if (serviceAvailable) {
+      setState(() {
+        logger.i("Binder service available");
+      });
+    } else {
+      setState(() {
+        logger.e("Timed out! Can't connect to the binder service");
+      });
+      return;
+    }
+
+    if (await _tryToLoadUserID(context)) {
+      if (RecordsManager.userid.length != 16) {
+        setState(() {
+          logger.e("Invalid userid: ${RecordsManager.userid}");
+        });
+        return;
+      }
+      setState(() {
+        logger.i("Read userid: ${RecordsManager.userid}");
+      });
+    } else {
+      setState(() {
+        logger.e("Unable to read userid");
+      });
+      return;
+    }
+
+    EnchantmentsManager.loadFromFiles().then((_) async {
+      logger.i("Loaded enchantments");
+      try {
+        await _tryToLoadRecords();
+        logger.i("Loaded ${RecordsManager.records.length} record(s)");
+        setState(() {
+          initialized.value = true;
+        });
+      } catch (e, s) {
+        setState(() {
+          logger.e("Unable to load the save file");
+          logger.e("$e\n$s");
+        });
+      }
+    }).onError((e, s) {
+      setState(() {
+        logger.e("Unable to load enchantments");
+        logger.e("$e\n$s");
+      });
+    });
   }
 
   Future<void> _tryToLoadRecords() async {
@@ -290,7 +303,7 @@ class _AppState extends State<App> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const Text(
-                      "This app is completely free and always will be. If you paid for it, you were scammed. Download only from the official source:"),
+                      "This app is FOSS (free), but this build includes three (3) proprietary binaries (see README). Download only from the official GitHub repository: "),
                   TextButton(
                       onPressed: () => launchUrlString(GitHub.repoUrl),
                       child: const Text(GitHub.repoUrl))
@@ -366,13 +379,16 @@ class _AppState extends State<App> {
     super.initState();
     if (!initialized.value) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        _tryToInitializeApp(context);
+        _tryToInitializeApp(context).then((_) {
+          setState(() {});
+        });
       });
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final logs = logger.getStoredLogs();
     return Scaffold(
       appBar: const StalkerAppBar(),
       bottomNavigationBar: Watch((_) => initialized.value
@@ -439,6 +455,34 @@ class _AppState extends State<App> {
                       child: const Text(
                           textAlign: TextAlign.center,
                           "If it's still not working, tap here")),
+                  Expanded(
+                    child: LayoutBuilder(
+                      builder: (ctx, constraints) {
+                        final theme = Theme.of(ctx);
+                        return Center(
+                            child: Container(
+                          width: constraints.maxWidth * 0.9 - 32,
+                          height: constraints.maxHeight,
+                          color: theme.brightness == Brightness.light
+                              ? theme.colorScheme.surfaceContainerLowest
+                              : theme.colorScheme.surfaceTint
+                                  .withValues(alpha: 0.1),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ListView.builder(
+                              itemBuilder: (ctx, i) {
+                                return Text(formatLogEntry(logs[i]));
+                              },
+                              itemCount: logs.length,
+                            ),
+                          ),
+                        ));
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 32,
+                  ),
                   TextButton.icon(
                     onPressed: () async {
                       await _tryToInitializeApp(context);
@@ -447,7 +491,9 @@ class _AppState extends State<App> {
                     label: const Text("Reinitialize"),
                     icon: const Icon(Icons.restart_alt),
                   ),
-                  const CircularProgressIndicator()
+                  const SizedBox(
+                    height: 64,
+                  ),
                 ],
               ),
       ),
