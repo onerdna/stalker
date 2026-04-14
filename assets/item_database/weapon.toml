@@ -1395,6 +1395,21 @@ name = "Flavor of Demise"
 traits = ["offer"]
 enchantments = ["stun"]
 
+[WEAPON_KUSARIGAMA_CLAW_OF_WISDOM_26]
+name = "Claw of Wisdom"
+traits = ["offer"]
+enchantments = ["weakness"]
+
+[WEAPON_BLADES_OF_FAITH_26]
+name = "Iris Warblade"
+traits = ["offer"]
+enchantments = ["precision"]
+
+[WEAPON_HEART_OF_LILY_26]
+name = "Lily's Heart"
+traits = ["offer"]
+enchantments = ["magic_recharge"]
+
 [WEAPON_1_HW19_SET]
 name = "Winged Darkness` Claws"
 description = "Claws of Winged Darkness is a Halloween 2019 special weapon in Shadow Fight 2. It was obtainable during Halloween 2019 update, as a possible reward by purchasing the Chest of Nightmare. In order to purchase the chest, players needed 350 Raven tokens or 149 gems. Raven coins could be obtained by defeating the witch sisters, the Halloween 2019 special raid-bosses. The scythe came enchanted with the Magic Recharge enchantment."

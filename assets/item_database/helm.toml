@@ -1089,6 +1089,11 @@ enchantments = [
   "regeneration",
 ]
 
+[HELM_CROWN_OF_DESPAIR_26]
+name = "Diadem of Despair"
+traits = ["offer"]
+enchantments = ["shielding"]
+
 [HELM_BP_S5_TIME_SHIFTER]
 name = "Stonecold"
 traits = [

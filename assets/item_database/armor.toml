@@ -960,6 +960,11 @@ traits = [
   "anniversary10",
 ]
 
+[ARMOR_DEPTH_OF_HOLINESS_26]
+name = "Depths of Sanctity"
+traits = ["offer"]
+enchantments = ["damage_return"]
+
 [ARMOR_BP_S5_TIME_SHIFTER]
 name = "Biting Frost"
 traits = [
