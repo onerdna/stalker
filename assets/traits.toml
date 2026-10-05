@@ -66,6 +66,10 @@ color = "0xFFFFE100"
 display = "Summer Fest 2026"
 color = "0xFFFFE100"
 
+[mid_autumn_festival_26]
+display = "Mid-Autumn Festival 2026"
+color = "0xFFFF8C52"
+
 [set_monk]
 display = "Monk Set"
 color = "0xFF3CB371"

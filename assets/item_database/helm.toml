@@ -1099,6 +1099,21 @@ name = "Rh1thm"
 traits = ["offer", "summer_fest_26"]
 enchantments = ["damage_absorption"]
 
+[HELM_FALL_26]
+name = "Elden Keeper"
+traits = ["offer"]
+# enchantments = ["???"] TODO: figure out what enchantments this helm had
+
+[HELM_SHADOW_DJ_26]
+name = "Shadow DJ"
+traits = ["offer"]
+enchantments = ["shielding"]
+
+[HELM_CHENGZIGUAN]
+name = "Lawmaker"
+traits = ["offer", "mid_autumn_festival_26"]
+enchantments = ["frenzy"]
+
 [HELM_BP_S5_TIME_SHIFTER]
 name = "Stonecold"
 traits = [

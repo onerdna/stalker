@@ -248,6 +248,16 @@ enchantments = [
   "time_bomb",
 ]
 
+[RANGED_VALOR_AND_DISCIPLINE_26]
+name = "Valor and Discipline"
+traits = ["offer"]
+enchantments = ["stun"]
+
+[RANGED_LOTUS_MINE]
+name = "Lotus Unleashed"
+traits = ["offer", "mid_autumn_festival_26"]
+enchantments = ["weakness"]
+
 [RANGED_BOAT_FESTIVAL_SUPER_SHURIKEN]
 name = "Whirlpool of Petals"
 traits = [

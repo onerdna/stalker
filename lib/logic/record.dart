@@ -212,8 +212,7 @@ class Record {
                         "0") ??
                 0
             : null;
-        return AppliedEnchantment(
-            enchantment, aspect?.clamp(0, AppliedEnchantment.maxAspect));
+        return AppliedEnchantment(enchantment, aspect);
       }).toList();
       final upgradeLevel = element.getAttribute("UpgradeLevel")!;
       final id = element.getAttribute("Name")!;

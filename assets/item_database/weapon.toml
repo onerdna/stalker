@@ -1415,6 +1415,56 @@ name = "Imp4ct"
 traits = ["offer", "summer_fest_26"]
 enchantments = ["time_bomb"]
 
+[WEAPON_DIESEL_SCREAM_26]
+name = "Diesel's Roar"
+traits = ["offer"]
+enchantments = ["magic_recharge"]
+
+[WEAPON_JASPER_SUNSET_26]
+name = "Jasper Sunset"
+traits = ["offer"]
+enchantments = ["poisoning"]
+
+[WEAPON_DRAGONS_GIFT_26]
+name = "Dragon's Gift"
+traits = ["offer"]
+enchantments = ["overheat"]
+
+[WEAPON_SICKLE_FALL_26]
+name = "Last Harvest"
+traits = ["offer"]
+enchantments = ["bleeding"]
+
+[WEAPON_SCYTHE_FALL_26]
+name = "Guardian of the Fall"
+traits = ["offer"]
+# enchantments = ["???"] TODO: Figure out what enchantments this weapon had
+
+[WEAPON_SONG_OF_INEVITABILITY_26]
+name = "Song of Inevitability"
+traits = ["offer"]
+enchantments = ["precision"]
+
+[WEAPON_DANCE_OF_DRAGONS_26]
+name = "Dance of Dragons"
+traits = ["offer"]
+enchantments = ["magic_recharge"]
+
+[WEAPON_DYNASTY_SWORD]
+name = "Legacy of the Dynasty"
+traits = ["offer", "mid_autumn_festival_26"]
+enchantments = ["lifesteal"]
+
+[WEAPON_BRINGER_OF_OPULENCE]
+name = "Abundance Bearer"
+traits = ["offer", "mid_autumn_festival_26"]
+enchantments = ["weakness"]
+
+[WEAPON_DEATH_GOU]
+name = "Death Bearers"
+traits = ["offer", "mid_autumn_festival_26"]
+enchantments = ["poisoning"]
+
 [WEAPON_1_HW19_SET]
 name = "Winged Darkness` Claws"
 description = "Claws of Winged Darkness is a Halloween 2019 special weapon in Shadow Fight 2. It was obtainable during Halloween 2019 update, as a possible reward by purchasing the Chest of Nightmare. In order to purchase the chest, players needed 350 Raven tokens or 149 gems. Raven coins could be obtained by defeating the witch sisters, the Halloween 2019 special raid-bosses. The scythe came enchanted with the Magic Recharge enchantment."

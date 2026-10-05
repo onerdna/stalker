@@ -965,6 +965,16 @@ name = "Depths of Sanctity"
 traits = ["offer"]
 enchantments = ["damage_return"]
 
+[ARMOR_DARK_FUGUE_26]
+name = "Dark Fugue"
+traits = ["offer"]
+enchantments = ["magic_recharge"]
+
+[ARMOR_BARRIER_REEF_26]
+name = "Barrier Reef"
+traits = ["offer"]
+enchantments = ["regeneration"]
+
 [ARMOR_BP_S5_TIME_SHIFTER]
 name = "Biting Frost"
 traits = [
