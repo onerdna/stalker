@@ -27,7 +27,7 @@ Stalker allows users to inspect and optionally tweak various aspects of their Sh
 
 ## How to install
 - Download and install the APK file from [releases](https://github.com/onerdna/stalker/releases) page
-- Install [Shizuku](https://shizuku.rikka.app/)
+- Install [Shizuku](https://shizuku.rikka.app/) or [this unofficial fork by thedjchi](https://github.com/thedjchi/Shizuku)
 - Start Shizuku service if it's not already running. There are great tutorials on the internet of doing so.
 - Launch the app, grant Shizuku permissions.
 - Proceed to the additional setup step. Before that, ensure that the game is fully closed. Minimize the app (do not fully close it!), open the game and wait until it fully loads. Then, close the game, go back to the app and tap "Reinitialize" button.
@@ -41,7 +41,7 @@ Stalker allows users to inspect and optionally tweak various aspects of their Sh
   - No.
 - **Why does the app use Shizuku?**
   - Shizuku is required to access save files, which aren't normally accessible to regular apps. It's also used to launch the setup service binary.
-- **Can you add verified gems, raid consumables or a damage hack?**
+- **Can you add verified gems, raid consumables or enable damage hacks?**
   - No.
 - **What does the setup service actually do? I'm concerned about running high-privileged compiled binaries.**
   - The setup service’s only purpose is to tamper with your user ID inside the game’s process. Once it does that, it automatically closes — or after two minutes of inactivity. The user ID is just a random string unique to each device. It doesn’t contain any personal or device-identifiable information. I won’t share the exact method used to get the ID, or the source code for the service, because this is the only known working method. If it becomes public, the developers could easily patch it.
@@ -49,6 +49,7 @@ Stalker allows users to inspect and optionally tweak various aspects of their Sh
 ## Troubleshooting
 - Tapping 'Reinitialize' after the 'Additional setup' step does nothing.
   1. Make sure that you are following the given instructions.
+  2. **Try using** [this Shizuku fork by thedjchi](https://github.com/thedjchi/Shizuku)
   2. For some devices, changing the 'Logger buffer size' in Developer Options from 256K to 8M might help.
   3. For Huawei and Honor devices, you need to enable logcat in the device settings. Search online for: 'enable logcat honor/huawei'
   4. If this does not help, report a bug [here](https://github.com/onerdna/stalker/issues/new?template=additional-setup-bug-report.md)
