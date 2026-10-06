@@ -32,6 +32,11 @@ Stalker allows users to inspect and optionally tweak various aspects of their Sh
 - Launch the app, grant Shizuku permissions.
 - Proceed to the additional setup step. Before that, ensure that the game is fully closed. Minimize the app (do not fully close it!), open the game and wait until it fully loads. Then, close the game, go back to the app and tap "Reinitialize" button.
 
+
+## Official builds
+Builds built and signed by repository's author (onerdna) can be downloaded from [releases](https://github.com/onerdna/stalker/releases). They are considered to be the only official builds. All of the builds are signed by onerdna's signing keys: SHA256 `2fecba51d988722e707e4dff2d6315491f8a61197a55860a7377f945c44df295`
+
+
 ### Before using...
 - Completely close the game before opening the app.
 - If you make any changes, you must tap the 'Save' button for them to take effect.
