@@ -27,8 +27,8 @@ Stalker allows users to inspect and optionally tweak various aspects of their Sh
 
 ## How to install
 - Download and install the APK file from [releases](https://github.com/onerdna/stalker/releases) page
-- Install [Shizuku](https://shizuku.rikka.app/) or [this unofficial fork by thedjchi](https://github.com/thedjchi/Shizuku)
-- Start Shizuku service if it's not already running. There are great tutorials on the internet of doing so.
+- Install either official [Shizuku](https://shizuku.rikka.app/) or [this unofficial fork by thedjchi](https://github.com/thedjchi/Shizuku)
+- Start Shizuku service if it's not already running. There is a lot of useful information on the internet on how to do it correctly.
 - Launch the app, grant Shizuku permissions.
 - Proceed to the additional setup step. Before that, ensure that the game is fully closed. Minimize the app (do not fully close it!), open the game and wait until it fully loads. Then, close the game, go back to the app and tap "Reinitialize" button.
 
