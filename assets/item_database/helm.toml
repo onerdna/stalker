@@ -1114,6 +1114,16 @@ name = "Lawmaker"
 traits = ["offer", "mid_autumn_festival_26"]
 enchantments = ["frenzy"]
 
+[HELM_HW26_VISAGE_OF_DESOLATION]
+name = "Visage of Desolation"
+traits = ["offer", "hw26"]
+enchantments = ["regeneration"]
+
+[HELM_HW26_WITCH]
+name = "Last Coven"
+traits = ["offer", "hw26"]
+enchantments = ["magic_recharge"]
+
 [HELM_BP_S5_TIME_SHIFTER]
 name = "Stonecold"
 traits = [

@@ -106,6 +106,11 @@ name = "Jade Judgement"
 traits = ["offer", "mid_autumn_festival_26"]
 enchantments = ["frenzy"]
 
+[MAGIC_HW26_CROW]
+name = "Raven’s Feast"
+traits = ["offer", "hw26"]
+enchantments = ["bleeding"]
+
 [MAGIC_INDIA_24]
 name = "Highest Measure"
 description = "Highest Measure is a special event magic exclusive to the Destiny in Red 2024 event in Shadow Fight 2. It can be acquired as a a random reward from opening a Casket of Elephant's King, which costs 600 All-seeing Coins or 249 gems to open.\nThis magic is used by Nrityu, the grim reaper."

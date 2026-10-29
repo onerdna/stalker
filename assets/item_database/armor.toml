@@ -975,6 +975,11 @@ name = "Barrier Reef"
 traits = ["offer"]
 enchantments = ["regeneration"]
 
+[ARMOR_HW26_WICKED_VEIL]
+name = "Endless Night"
+traits = ["offer", "hw26"]
+enchantments = ["damage_absorption"]
+
 [ARMOR_BP_S5_TIME_SHIFTER]
 name = "Biting Frost"
 traits = [

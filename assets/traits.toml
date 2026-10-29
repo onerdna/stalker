@@ -170,6 +170,10 @@ color = "0xFFFB9E3A"
 display = "Halloween 2025"
 color = "0xFFFB9E3A"
 
+[hw26]
+display = "Halloween 2026"
+color = "0xFFFB9E3A"
+
 [xmas14]
 display = "Christmas 2014"
 color = "0xFFA9D2F3"
