@@ -303,7 +303,7 @@ class _AppState extends State<App> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const Text(
-                      "This app is FOSS (free), but this build includes three (3) proprietary binaries (see README). Download only from the official GitHub repository: "),
+                      "This app is FOSS (free). Download only from the official GitHub repository: "),
                   TextButton(
                       onPressed: () => launchUrlString(GitHub.repoUrl),
                       child: const Text(GitHub.repoUrl))

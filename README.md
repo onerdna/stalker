@@ -1,6 +1,6 @@
 # Stalker – Shadow Fight 2 Save Viewer & Modifier
 
-**Stalker** is a android utility application designed to **view and optionally modify save files** for the mobile game **Shadow Fight 2**.
+**Stalker** is a FOSS android utility application designed to **view and optionally modify save files** for the mobile game **Shadow Fight 2**.
 
 > **Disclaimer:** Shadow Fight 2 is a trademark of **Nekki Limited**. This application is not affiliated with, endorsed by, or associated with Nekki in any way. Use of this application is at your own risk. You are solely responsible for ensuring your use complies with Nekki’s terms of service and any applicable laws.
 
@@ -34,7 +34,25 @@ Stalker allows users to inspect and optionally tweak various aspects of their Sh
 
 
 ## Official builds
-Builds built and signed by repository's author (onerdna) can be downloaded from [releases](https://github.com/onerdna/stalker/releases). They are considered to be the only official builds. All of the builds are signed by onerdna's signing keys: SHA256 `2fecba51d988722e707e4dff2d6315491f8a61197a55860a7377f945c44df295`
+Builds created and signed by the repository's author can be downloaded from [releases](https://github.com/onerdna/stalker/releases). They are considered to be the only official builds; they are signed with onerdna's signing key (SHA256 `2fecba51d988722e707e4dff2d6315491f8a61197a55860a7377f945c44df295`)
+
+## Building yourself
+1. Ensure that you have Nix package manager installed with flakes support enabled. In project's root directory, run:
+```bash
+nix develop .
+```
+2. In `setup_service/`, build the setup service crate and copy the binaries to the assets folder:
+```bash
+cargo ndk -t arm64-v8a -t armeabi-v7a -t x86_64 build --release
+cp target/aarch64-linux-android/release/setup_service ../assets/binaries/setup_service64
+cp target/armv7-linux-androideabi/release/setup_service ../assets/binaries/setup_service32
+cp target/x86_64-linux-android/release/setup_service ../assets/binaries/setup_service_x86_64
+```
+3. In project's root directory, build the flutter application:
+```bash
+flutter build --release --split-per-abi
+```
+The output APK files are going to be generated at `build/app/outputs/flutter-apk/`.
 
 
 ### Before using...
@@ -48,8 +66,6 @@ Builds built and signed by repository's author (onerdna) can be downloaded from 
   - Shizuku is required to access save files, which aren't normally accessible to regular apps. It's also used to launch the setup service binary.
 - **Can you add verified gems, raid consumables or enable damage hacks?**
   - No.
-- **What does the setup service actually do? I'm concerned about running high-privileged compiled binaries.**
-  - The setup service’s only purpose is to tamper with your user ID inside the game’s process. Once it does that, it automatically closes — or after two minutes of inactivity. The user ID is just a random string unique to each device. It doesn’t contain any personal or device-identifiable information. I won’t share the exact method used to get the ID, or the source code for the service, because this is the only known working method. If it becomes public, the developers could easily patch it.
 
 ## Troubleshooting
 - Tapping 'Reinitialize' after the 'Additional setup' step does nothing.
