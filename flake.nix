@@ -3,16 +3,22 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    rust-overlay = {
+      url = "github:oxalica/rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
-    { self, nixpkgs }:
+    {
+      self,
+      nixpkgs,
+      rust-overlay,
+    }:
     let
       systems = [
         "x86_64-linux"
         "aarch64-linux"
-        "aarch64-android"
-        "armv7a-android"
       ];
 
       forAllSystems =
@@ -22,6 +28,7 @@
           f (
             import nixpkgs {
               inherit system;
+              overlays = [ rust-overlay.overlays.default ];
               config = {
                 android_sdk.accept_license = true;
                 allowUnfree = true;
@@ -42,7 +49,10 @@
               "28.2.13676358" # required by one of dependencies (possibly jni)
             ];
             platformVersions = [ "37" ];
-            buildToolsVersions = [ "36.0.0" "37.0.0" ];
+            buildToolsVersions = [
+              "36.0.0"
+              "37.0.0"
+            ];
             abiVersions = [
               "arm64-v8a"
               "armeabi-v7a"
@@ -55,10 +65,25 @@
           };
 
           androidSdk = androidComposition.androidsdk;
+
+          rustToolchain = pkgs.rust-bin.stable.latest.default.override {
+            extensions = [
+              "rust-src"
+              "rust-analyzer"
+              "clippy"
+              "rustfmt"
+            ];
+            targets = [
+              "aarch64-linux-android"
+              "armv7-linux-androideabi"
+              "x86_64-linux-android"
+            ];
+          };
+
         in
         {
           default = pkgs.mkShell {
-            buildInputs = with pkgs; [
+            packages = with pkgs; [
               flutter
               androidSdk
               jdk17
@@ -67,6 +92,8 @@
               cmake
               ninja
               pkg-config
+              rustToolchain
+              cargo-ndk
             ];
 
             ANDROID_HOME = "${androidSdk}/libexec/android-sdk";

@@ -42,6 +42,10 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-/setup_service
+setup_service/target
+setup_service/.cargo
+assets/binaries/setup_service64
+assets/binaries/setup_service32
+assets/binaries/setup_service_x86_64
 /android/build/reports
 .direnv
