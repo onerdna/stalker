@@ -3,9 +3,6 @@ name = "setup_service"
 version = "0.1.0"
 edition = "2021"
 
-[package.metadata.android]
-default-target = "aarch64-linux-android"
-
 [profile.release]
 strip = true
 

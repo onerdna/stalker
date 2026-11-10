@@ -71,9 +71,8 @@ fn wait_for_game() -> Option<String> {
 }
 
 fn extract_userid(pid: &str) -> Result<Option<String>> {
-    let arg = format!("--pid={}", pid.trim());
     let mut child = Command::new("logcat")
-        .arg(arg)
+        .arg(format!("--pid={}", pid.trim()))
         .stdout(Stdio::piped())
         .spawn()
         .context("while spawning logcat process")?;

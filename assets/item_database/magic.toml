@@ -106,6 +106,10 @@ name = "Jade Judgement"
 traits = ["offer", "mid_autumn_festival_26"]
 enchantments = ["frenzy"]
 
+[MAGIC_DEATH_DARK_WAVE]
+name = "Death Dark Wave"
+traits = ["unobtainable", "mid_autumn_festival_26"]
+
 [MAGIC_HW26_CROW]
 name = "Raven’s Feast"
 traits = ["offer", "hw26"]
