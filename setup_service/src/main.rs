@@ -111,10 +111,10 @@ fn write_userid(id: &str) -> anyhow::Result<()> {
 
 fn main() -> anyhow::Result<()> {
     init_logging();
-    if let Err(e) = kill_game() {
-        error!("while trying to kill the game: {}", e);
+    match kill_game() {
+        Ok(_) => info!("killed the game"),
+        Err(e) => error!("while trying to kill the game: {}", e),
     };
-    info!("killed the game");
     let pid = wait_for_game().context("timeout while waiting the game to start")?;
     info!("got PID of the game: {}", pid);
     let userid = extract_userid(&pid)?.context("unable to find userid in the logcat output")?;
